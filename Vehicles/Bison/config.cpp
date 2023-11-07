@@ -48,11 +48,16 @@ class CfgVehicles
 			{
 				weapons[]=
 				{
+					"OPTRE_M247H_RCWS",
 					"OPTRE_M230",
 					"OPTRE_M670_ATGM_Launcher"
 				};
 				magazines[]=
 				{
+					"OPTRE_200Rnd_127x99_M247H",
+					"OPTRE_200Rnd_127x99_M247H",
+					"OPTRE_200Rnd_127x99_M247H",
+					"OPTRE_200Rnd_127x99_M247H",
 					"OPTRE_100Rnd_50mm_HE",
 					"OPTRE_100Rnd_50mm_APFSDS",
 					"OPTRE_100Rnd_50mm_HE",
@@ -79,120 +84,6 @@ class CfgVehicles
 					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
 					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
 					"53rd_SC_aux\Vehicles\Bison\Bison_90mm_blk_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class FiftyThird
-			{
-				displayName="53rd";
-				author="1Lt. Body";
-				textures[]=
-				{
-					"53rd_SC_aux\Vehicles\Bison\Bison_HEP_Body_blk_CO.paa",
-					"53rd_SC_aux\Vehicles\Bison\Bison_53rd_Misc_CO.paa",
-					"53rd_SC_aux\Vehicles\Bison\Bison_wheelsCannon_blk_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"53rd_SC_aux\Vehicles\Bison\Bison_90mm_blk_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class standard
-			{
-				displayName="Standard";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colorgreen
-			{
-				displayName="Green";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colortan
-			{
-				displayName="Tan";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colorblack
-			{
-				displayName="Black";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_blk_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_blk_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colorsnow
-			{
-				displayName="Snow";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_snow_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_snow_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_snow_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
 				};
 				factions[]=
 				{
@@ -237,42 +128,31 @@ class CfgVehicles
 			{
 				weapons[]=
 				{
+					"OPTRE_M247H_RCWS",
 					"OPTRE_M230",
 					"OPTRE_M670_ATGM_Launcher"
 				};
 				magazines[]=
 				{
+					"OPTRE_200Rnd_127x99_M247H",
+					"OPTRE_200Rnd_127x99_M247H",
+					"OPTRE_200Rnd_127x99_M247H",
+					"OPTRE_200Rnd_127x99_M247H",
 					"OPTRE_100Rnd_50mm_HE",
 					"OPTRE_100Rnd_50mm_APFSDS",
 					"OPTRE_100Rnd_50mm_HE",
 					"OPTRE_100Rnd_50mm_APFSDS",
 					"OPTRE_100Rnd_50mm_HE",
 					"OPTRE_100Rnd_50mm_APFSDS",
-					"OPTRE_2Rnd_GAT_missiles"
+					"OPTRE_2Rnd_GAT_missiles",
+					"OPTRE_2Rnd_GAT_missiles",
+					"OPTRE_2Rnd_GAT_missiles",
+					"OPTRE_2Rnd_GAT_missiles",
 				};
 			};
 		};
 		class textureSources
 		{
-			class FiftyThirdPL
-			{
-				displayName="53rd PL";
-				author="1Lt. Body";
-				textures[]=
-				{
-					"53rd_SC_aux\Vehicles\Bison\Bison_PL_Body_blk_CO.paa",
-					"53rd_SC_aux\Vehicles\Bison\Bison_53rd_Misc_CO.paa",
-					"53rd_SC_aux\Vehicles\Bison\Bison_wheelsCannon_blk_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"53rd_SC_aux\Vehicles\Bison\Bison_90mm_blk_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
 			class FiftyThird
 			{
 				displayName="53rd";
@@ -286,101 +166,6 @@ class CfgVehicles
 					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
 					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
 					"53rd_SC_aux\Vehicles\Bison\Bison_90mm_blk_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class standard
-			{
-				displayName="Standard";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_standard_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_standard_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colorgreen
-			{
-				displayName="Green";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colortan
-			{
-				displayName="Tan";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_tan_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_tan_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colorblack
-			{
-				displayName="Black";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_blk_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_blk_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
-				};
-				factions[]=
-				{
-					"OPTRE_UNSC"
-				};
-			};
-			class colorsnow
-			{
-				displayName="Snow";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"OPTRE_Vehicles\Bison\data\Bison_Body_snow_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Misc_snow_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_WheelsCannon_snow_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_MFCDScreens_CO.paa",
-					"OPTRE_Vehicles\Bison\data\Bison_90mm_CO.paa"
 				};
 				factions[]=
 				{

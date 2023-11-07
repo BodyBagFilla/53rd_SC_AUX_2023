@@ -13,7 +13,6 @@ class CfgPatches
 #include "..\xtdGear.hpp"	
 class cfgWeapons
 {
-	/////HELMETS/////
 	class ItemCore;
 	class ItemInfo;
 	class HaloInf_Marine_WDL_headgear: ItemCore
@@ -24,8 +23,7 @@ class cfgWeapons
 	{
 	 class ItemInfo;
 	};
-//////Base
-	class 53rd_Apollo_Helmet_Base_Visor: HaloInf_Marine_WDL_headgear
+	class 53rd_Base_headgear: HaloInf_Marine_WDL_headgear
 	{
 		scope=1;
 		scopeArsenal=1;
@@ -64,7 +62,7 @@ class cfgWeapons
 			};
 		};
 	};
-	class 53rd_Apollo_Helmet_Base_NVisor: HaloInf_Marine_WDL_NV_headgear
+	class 53rd_Base_NV_headgear: HaloInf_Marine_WDL_NV_headgear
 	{
 		scope=1;
 		scopeArsenal=1;
@@ -119,11 +117,12 @@ class cfgWeapons
 			};
 		};
 	};
-///////////////////////////////Apollo Helmets/////////////////////////////////
-	class 53rd_Apollo_Helmet_Urban_No_Visor: 53rd_Apollo_Helmet_Base_NVisor 
+	/////HELMETS/////
+	class 53rd_Apollo_Helmet_Urban_No_Visor: 53rd_Base_NV_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Urban / No Visor)";
@@ -139,10 +138,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_Apollo_Helmet_Urban_Visor: 53rd_Apollo_Helmet_Base_Visor 
+		class 53rd_Apollo_Helmet_Urban_Visor: 53rd_Base_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Urban / Visor)";
@@ -159,10 +159,11 @@ class cfgWeapons
 		};
 	};
 	//Woodland
-	class 53rd_Apollo_Helmet_Woodland_No_Visor: 53rd_Apollo_Helmet_Base_NVisor 
+	class 53rd_Apollo_Helmet_Woodland_No_Visor: 53rd_Base_NV_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Woodland / No Visor)";
@@ -178,10 +179,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Helmet_Woodland.paa"
 		};
 	};
-	class 53rd_Apollo_Helmet_Woodland_Visor: 53rd_Apollo_Helmet_Base_Visor 
+		class 53rd_Apollo_Helmet_Woodland_Visor: 53rd_Base_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Woodland / Visor)";
@@ -198,10 +200,11 @@ class cfgWeapons
 		};
 	};
 	//Desert
-	class 53rd_Apollo_Helmet_Desert_No_Visor: 53rd_Apollo_Helmet_Base_NVisor 
+	class 53rd_Apollo_Helmet_Desert_No_Visor: 53rd_Base_NV_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Desert / No Visor)";
@@ -217,10 +220,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Helmet_Desert.paa"
 		};
 	};
-	class 53rd_Apollo_Helmet_Desert_Visor: 53rd_Apollo_Helmet_Base_Visor 
+	class 53rd_Apollo_Helmet_Desert_Visor: 53rd_Base_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Desert / Visor)";
@@ -237,10 +241,11 @@ class cfgWeapons
 		};
 	};
 	//Winter
-	class 53rd_Apollo_Helmet_Winter_No_Visor: 53rd_Apollo_Helmet_Base_NVisor 
+	class 53rd_Apollo_Helmet_Winter_No_Visor: 53rd_Base_NV_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Winter / No Visor)";
@@ -256,10 +261,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Helmet_Winter.paa"
 		};
 	};
-	class 53rd_Apollo_Helmet_Winter_Visor: 53rd_Apollo_Helmet_Base_Visor 
+	class 53rd_Apollo_Helmet_Winter_Visor: 53rd_Base_headgear 
 	{
 		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Helmet (Winter / Visor)";
@@ -290,12 +296,12 @@ class cfgWeapons
 		scope=1;
 		scopeArsenal=1;
 		side=1;
-		displayName = "[53rd] Apollo Base";
+		displayName = "[53rd] Body Base";
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
 			uniformModel="-";
-			uniformClass="53rd_Apollo_base_F";
+			uniformClass="53rd_base_F";
 			containerClass="Supply100";
 			mass=80;
 		};
@@ -312,10 +318,12 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Apollo_WT: 53rd_U_Base_uniform
+	//Winter
+	class 53rd_Apollo_SN: 53rd_U_Base_uniform
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -349,15 +357,16 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Apollo_Urban";
+			uniformClass="53rd_Apollo_Winter";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Apollo_UB: 53rd_U_Base_uniform
+	class 53rd_Apollo_UB: 53rd_Apollo_SN
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -396,10 +405,13 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Apollo_WD: 53rd_U_Base_uniform
+	class 53rd_Apollo_WD: 53rd_Apollo_SN
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
+		scopeArsenal=2;
+		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Apollo Woodland";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
@@ -436,10 +448,11 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Apollo_DS: 53rd_U_Base_uniform
+	class 53rd_Apollo_DS: 53rd_Apollo_SN
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -483,6 +496,7 @@ class cfgWeapons
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -519,10 +533,11 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Apollo_WD_NS: 53rd_U_Base_uniform
+	class 53rd_Apollo_WD_NS: 53rd_Apollo_UB_NS
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -559,10 +574,11 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Apollo_DS_NS: 53rd_U_Base_uniform
+	class 53rd_Apollo_DS_NS: 53rd_Apollo_UB_NS
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -599,10 +615,11 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Apollo_WT_NS: 53rd_U_Base_uniform
+	class 53rd_Apollo_WT_NS: 53rd_Apollo_UB_NS
 	{
 		author="Cherryy";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -644,18 +661,18 @@ class CfgVehicles
 {
 	class B_Soldier_base_F;
 	class haloinf_Marine_Soldier_base_F: B_Soldier_base_F{};
-	class haloinfmar_U_WDL_uniform: haloinf_Marine_Soldier_base_F
+	class HaloInf_Marine_WDL_F: haloinf_Marine_Soldier_base_F
 	{
 	class UniformItem;
 	};
-	class 53rd_Apollo_base_F: haloinfmar_U_WDL_uniform
+	class 53rd_base_F: HaloInf_Marine_WDL_F
 	{
-		displayName = "Apollo Uniform Base";
+		displayName="[53rd] Base Uniform";
 		class ItemInfo: UniformItem
 		{
 			uniformType = "Neopren";
 			uniformModel="-";
-			uniformClass="53rd_U_Base_uniform";
+			uniformClass="53rd_Unit_Base";
 			containerClass="Supply100";
 			mass=80;
 		};
@@ -672,30 +689,11 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
 		};
 	};
-	//Winter
-	class 53rd_Apollo_Snow: 53rd_Apollo_base_F
-	{
-		scope=2;
-		scopeArsenal=2;
-		side=1;
-		displayName="[53rd] Apollo Snow";
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"Camo2",
-			"Camo3"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
-			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
-		};
-	};
 	//Urban
-	class 53rd_Apollo_Urban: 53rd_Apollo_base_F
+	class 53rd_Apollo_Urban: 53rd_base_F
 	{
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Urban";
@@ -714,10 +712,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Apollo_UB";
 	};
-	//Woodland
-	class 53rd_Apollo_Woodland: 53rd_Apollo_base_F
+	class 53rd_Apollo_Woodland: 53rd_Apollo_Urban
 	{
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Woodland";
@@ -736,10 +734,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Apollo_WD";
 	};
-	//Desert
-	class 53rd_Apollo_Desert: 53rd_Apollo_base_F
+	class 53rd_Apollo_Desert: 53rd_Apollo_Urban
 	{
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Desert";
@@ -758,10 +756,33 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Apollo_DS";
 	};
-	//No Shoulders
-	class 53rd_Apollo_Urban_NS: 53rd_Apollo_base_F
+	class 53rd_Apollo_Winter: 53rd_Apollo_Urban
 	{
 		scope=2;
+		scopeCurator=0;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Apollo Winter";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Apollo_Camo\53rd_Apollo_Armor_Winter.paa"
+		};
+		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
+		uniformClass="53rd_Apollo_SN";
+	};
+	//No Shoulders
+	class 53rd_Apollo_Urban_NS: 53rd_Apollo_Urban
+	{
+		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Urban (No Shoulders)";
@@ -779,9 +800,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Apollo_UB_NS";
 	};
-	class 53rd_Apollo_Desert_NS: 53rd_Apollo_base_F
+	class 53rd_Apollo_Desert_NS: 53rd_Apollo_Urban
 	{
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Desert (No Shoulders)";
@@ -799,9 +821,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Apollo_DS_NS";
 	};
-	class 53rd_Apollo_Woodland_NS: 53rd_Apollo_base_F
+	class 53rd_Apollo_Woodland_NS: 53rd_Apollo_Urban
 	{
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Woodland (No Shoulders)";
@@ -819,9 +842,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Apollo_WD_NS";
 	};
-	class 53rd_Apollo_Winter_NS: 53rd_Apollo_base_F
+	class 53rd_Apollo_Winter_NS: 53rd_Apollo_Urban
 	{
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Apollo Winter (No Shoulders)";

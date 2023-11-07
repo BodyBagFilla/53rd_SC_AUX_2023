@@ -702,82 +702,6 @@ class OPTRE_M875_SPH;
 		};
 		class Turrets: Turrets
 		{
-			class CargoTurret1: CargoTurret
-			{
-				gunnerAction="passenger_inside_3";
-				gunnerCompartments="Compartment2";
-				memoryPointsGetInGunner="pos cargo1";
-				memoryPointsGetInGunnerDir="pos cargo1 dir";
-				memoryPointGunnerOptics="gunnerview";
-				gunnerName="Passenger Gunner 1";
-				proxyIndex=1;
-				maxElev=15;
-				minElev=-25;
-				maxTurn=60;
-				minTurn=-60;
-				isPersonTurret=2;
-				ejectDeadGunner=1;
-				gunnerInAction="passenger_inside_3";
-				startEngine=0;
-				allowLauncherIn=1;
-				allowLauncherOut=1;
-			};
-			class CargoTurret2: CargoTurret1
-			{
-				gunnerCompartments="Compartment2";
-				memoryPointsGetInGunner="pos cargo2";
-				memoryPointsGetInGunnerDir="pos cargo2 dir";
-				gunnerName="Passenger Gunner 2";
-				proxyIndex=2;
-			};
-			class CargoTurret3: CargoTurret1
-			{
-				proxyIndex=3;
-				gunnerName="Passenger Gunner 3";
-				gunnerCompartments="Compartment3";
-				memoryPointsGetInGunner="pos cargo3";
-				memoryPointsGetInGunnerDir="pos cargo3 dir";
-			};
-			class CargoTurret4: CargoTurret1
-			{
-				proxyIndex=4;
-				gunnerName="Passenger Gunner 4";
-				gunnerCompartments="Compartment3";
-				memoryPointsGetInGunner="pos cargo4";
-				memoryPointsGetInGunnerDir="pos cargo4 dir";
-			};
-			class CargoTurret5: CargoTurret1
-			{
-				proxyIndex=5;
-				gunnerName="Passenger Gunner 5";
-				gunnerCompartments="Compartment4";
-				memoryPointsGetInGunner="pos cargo5";
-				memoryPointsGetInGunnerDir="pos cargo6 dir";
-			};
-			class CargoTurret6: CargoTurret1
-			{
-				proxyIndex=6;
-				gunnerName="Passenger Gunner 6";
-				gunnerCompartments="Compartment4";
-				memoryPointsGetInGunner="pos cargo6";
-				memoryPointsGetInGunnerDir="pos cargo6 dir";
-			};
-			class CargoTurret7: CargoTurret1
-			{
-				proxyIndex=7;
-				gunnerName="Passenger Gunner 7";
-				gunnerCompartments="Compartment5";
-				memoryPointsGetInGunner="pos cargo7";
-				memoryPointsGetInGunnerDir="pos cargo7 dir";
-			};
-			class CargoTurret8: CargoTurret1
-			{
-				proxyIndex=8;
-				gunnerName="Passenger Gunner 8";
-				gunnerCompartments="Compartment5";
-				memoryPointsGetInGunner="pos cargo8";
-				memoryPointsGetInGunnerDir="pos cargo8 dir";
-			};
 			class MainTurret: MainTurret
 			{
 				class Turrets
@@ -823,44 +747,6 @@ class OPTRE_M875_SPH;
 				gunnerOutOpticsModel="";
 				gunnerOutOpticsEffect[]={};
 				gunnerOpticsEffect[]={};
-				class OpticsIn
-				{
-					class Wide: ViewOptics
-					{
-						initAngleX=0;
-						minAngleX=-30;
-						maxAngleX=30;
-						initAngleY=0;
-						minAngleY=-100;
-						maxAngleY=100;
-						initFov=0.30000001;
-						minFov=0.30000001;
-						maxFov=0.30000001;
-						visionMode[]=
-						{
-							"Normal",
-							"NVG",
-							"Ti"
-						};
-						thermalMode[]={0};
-						gunnerOpticsModel="\A3\Weapons_F\acc\reticle_mortar_01_f.p3d";
-						gunnerOpticsEffect[]={};
-					};
-					class Medium: Wide
-					{
-						gunnerOpticsModel="\A3\Weapons_F\acc\reticle_mortar_01_f.p3d";
-						initFov=0.07;
-						minFov=0.07;
-						maxFov=0.07;
-					};
-					class Narrow: Wide
-					{
-						gunnerOpticsModel="\A3\Weapons_F\acc\reticle_mortar_01_f.p3d";
-						initFov=0.028000001;
-						minFov=0.028000001;
-						maxFov=0.028000001;
-					};
-				};
 				gunnerAction="Gunner_OPTRE_M808B";
 				gunnerInAction="Gunner_OPTRE_M808B";
 				gunnerGetInAction="GetInAMV_cargo";
@@ -871,31 +757,6 @@ class OPTRE_M875_SPH;
 				forceHideGunner=1;
 				gunnerForceOptics=1;
 				usepip=1;
-				class HitPoints
-				{
-					class HitTurret
-					{
-						armor=4.5;
-						material=-1;
-						name="otocVez";
-						visual="vez";
-						passThrough=0;
-						minimalHit=0.02;
-						explosionShielding=0.60000002;
-						radius=0.25;
-					};
-					class HitGun
-					{
-						armor=4.5;
-						material=-1;
-						name="otocHlaven";
-						visual="Hlaven";
-						passThrough=0;
-						minimalHit=0;
-						explosionShielding=0.60000002;
-						radius=0.25;
-					};
-				};
 			};
 			class CommanderTurret: MainTurret
 			{

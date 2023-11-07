@@ -59,7 +59,7 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Platoon"};
+				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Platoon","NoShoulders"};
 				class Regular
 				{
 					label = "Rifleman";
@@ -93,6 +93,11 @@ class XtdGearModels
 				class Platoon
 				{
 					label = "Platoon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class NoShoulders
+				{
+					label = "NoShoulders";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -2652,6 +2657,63 @@ class XtdGearInfos
 		};
 		
 		//Apollo Armor
+		class 53rd_Apollo_UB
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Urban";
+		Type = "Rifleman";
+		};
+		class 53rd_Apollo_DS:53rd_Apollo_UB
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Desert";
+		Type = "Rifleman";
+		};
+		class 53rd_Apollo_WD:53rd_Apollo_UB
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Woodland";
+		Type = "Rifleman";
+		};
+		class 53rd_Apollo_SN:53rd_Apollo_UB
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Winter";
+		Type = "Rifleman";
+		};
+		//Apollo Armor - No Shoulders
+		class 53rd_Apollo_UB_NS
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Urban";
+		Type = "NoShoulders";
+		};
+		class 53rd_Apollo_DS_NS:53rd_Apollo_UB_NS
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Desert";
+		Type = "NoShoulders";
+		};
+		class 53rd_Apollo_WD_NS:53rd_Apollo_UB_NS
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Woodland";
+		Type = "NoShoulders";
+		};
+		class 53rd_Apollo_WT_NS:53rd_Apollo_UB_NS
+		{
+		model = "HephaestusCamoArmor";
+		Section = "Apollo";
+		Camo = "Winter";
+		Type = "NoShoulders";
+		};
 		
 		//Hephaestus Armors
 		//Urban
@@ -2905,13 +2967,13 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Hellfire";
 		};
-		class 53rd_Atlas_Hellfire_Custom_Helmet_DS
+		class 53rd_Atlas_Hellfire_Custom_Helmet_DS:53rd_Atlas_Hellfire_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Desert";
 		Person = "Hellfire";
 		}; 
-		class 53rd_Atlas_Hellfire_Custom_Helmet_WD
+		class 53rd_Atlas_Hellfire_Custom_Helmet_WD:53rd_Atlas_Hellfire_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Woodland";
@@ -2931,13 +2993,13 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "LoneWulf";
 		};
-		class 53rd_Atlas_LoneWulf_Custom_Helmet_DS
+		class 53rd_Atlas_LoneWulf_Custom_Helmet_DS:53rd_Atlas_LoneWulf_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Desert";
 		Person = "LoneWulf";
 		}; 
-		class 53rd_Atlas_LoneWulf_Custom_Helmet_WD
+		class 53rd_Atlas_LoneWulf_Custom_Helmet_WD:53rd_Atlas_LoneWulf_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Woodland";
@@ -2957,13 +3019,13 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Serpent";
 		};
-		class 53rd_Atlas_Serpent_Custom_Helmet_DS
+		class 53rd_Atlas_Serpent_Custom_Helmet_DS:53rd_Atlas_Serpent_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Desert";
 		Person = "Serpent";
 		}; 
-		class 53rd_Atlas_Serpent_Custom_Helmet_WD
+		class 53rd_Atlas_Serpent_Custom_Helmet_WD:53rd_Atlas_Serpent_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
 		Camo = "Woodland";
@@ -3009,6 +3071,18 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Texas";
 		};
+		class 53rd_Atlas_Texas_Custom_Helmet_Desert:53rd_Atlas_Texas_Custom_Helmet
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Desert";
+		Person = "Texas";
+		};
+		class 53rd_Atlas_Texas_Custom_Helmet_WD:53rd_Atlas_Texas_Custom_Helmet
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Woodland";
+		Person = "Texas";
+		};
 
 		//Armors
 		
@@ -3025,13 +3099,13 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Hellfire";
 		};
-		class 53rd_Atlas_Hellfire_Armor_DS
+		class 53rd_Atlas_Hellfire_Armor_DS:53rd_Atlas_Hellfire_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Desert";
 		Person = "Hellfire";
 		};
-		class 53rd_Atlas_Hellfire_Armor_WD
+		class 53rd_Atlas_Hellfire_Armor_WD:53rd_Atlas_Hellfire_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Woodland";
@@ -3051,13 +3125,13 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "LoneWulf";
 		};
-		class 53rd_Atlas_LoneWulf_Armor_DS
+		class 53rd_Atlas_LoneWulf_Armor_DS:53rd_Atlas_LoneWulf_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Desert";
 		Person = "LoneWulf";
 		};
-		class 53rd_Atlas_LoneWulf_Armor_WD
+		class 53rd_Atlas_LoneWulf_Armor_WD:53rd_Atlas_LoneWulf_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Woodland";
@@ -3077,13 +3151,13 @@ class XtdGearInfos
 		Camo = "Snow";
 		Person = "Serpent";
 		};
-		class 53rd_Atlas_Serpent_Armor_DS
+		class 53rd_Atlas_Serpent_Armor_DS:53rd_Atlas_Serpent_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Desert";
 		Person = "Serpent";
 		};
-		class 53rd_Atlas_Serpent_Armor_WD
+		class 53rd_Atlas_Serpent_Armor_WD:53rd_Atlas_Serpent_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Woodland";
@@ -3124,10 +3198,22 @@ class XtdGearInfos
 		Camo = "Urban";
 		Person = "Texas";
 		};
-		class 53rd_Atlas_Texas_Armor_SN:53rd_Atlas_Texas_Armor
+		class 53rd_Atlas_Texas_Armor_Winter:53rd_Atlas_Texas_Armor
 		{
 		model = "AtlasCustomArmors";
 		Camo = "Snow";
+		Person = "Texas";
+		};
+		class 53rd_Atlas_Texas_Armor_Desert:53rd_Atlas_Texas_Armor
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Desert";
+		Person = "Texas";
+		};
+		class 53rd_Atlas_Texas_Armor_Woodland:53rd_Atlas_Texas_Armor
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Woodland";
 		Person = "Texas";
 		};
         

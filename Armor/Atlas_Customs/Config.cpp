@@ -1,10 +1,10 @@
 #include "BIS_AddonInfo.hpp"
-class CfgPatches {
-	class 53rd_Atlas_Customs
+class CfgPatches 
+{
+	class 53rd_Atlas_Camo_Customs
 	{
 			units[] = 
 			{
-
 			};
 			weapons[] = 
 			{
@@ -13,45 +13,33 @@ class CfgPatches {
 			requiredAddons[] = {};
 	};
 };
-#include "..\..\xtdGear.hpp"
-class Mode_SemiAuto;
-class Mode_Burst;
-class Mode_FullAuto;
-class WeaponSlotsInfo;
-class MuzzleSlot;
-class CowsSlot;
-class PointerSlot;
-class UnderBarrelSlot;
+#include "..\xtdGear.hpp"
 class cfgWeapons 
 {
     class ItemInfo;
-    class UniformItem;
 	class VestItem;
 	class HeadgearItem;
-	class VES_CH252D;
-	class VES_CH252D_dp;
-	class OPTRE_UNSC_M52A_Armor_Base;
 	class Hands;
 	class Pelvis;
-	class VES_CH252_MAR_Vacuum;
-	class VES_CH252_MAR_Vacuum_dp;
-    class VES_CH252A_dp;
-	class OPTRE_UNSC_CH252D_Helmet_Base;
-	class H_Booniehat_khk;
-	class OPTRE_UNSC_PatrolCap_Army;
-	class MA_M56R_Vest;
-	class OPTRE_CPD_Cap;
+	class ItemCore;
 	class haloinfodst_U_uniform;
-	class Uniform_Base;
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
 	class TCF_Reach_Scout_Helmet;
 	//Custom Armor
-	class 53rd_Atlas_Hellfire_Armor: Uniform_Base
+	class UniformItem;
+	class Uniform_Base: ItemCore
+	{
+		class ItemInfo;
+	};
+	class haloinfmar_U_WDL_uniform: Uniform_Base
+	{
+		class ItemInfo;
+	};
+	class 53rd_Atlas_Hellfire_Armor: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -66,9 +54,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Urban\Hellfire_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Urban\Hellfire_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Armor_Urban.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -80,9 +68,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Armor_Urban.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -91,11 +79,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Atlas_Hellfire_Armor_SN: Uniform_Base
+	class 53rd_Atlas_Hellfire_Armor_SN: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -110,9 +97,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Armor_SN.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Armor_Winter.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -124,9 +111,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Armor_SN.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Armor_Winter.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -135,11 +122,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Atlas_Hellfire_Armor_WD: Uniform_Base
+	class 53rd_Atlas_Hellfire_Armor_WD: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -154,9 +140,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Armor_WD.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Armor_Woodland.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -168,9 +154,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Armor_WD.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Armor_Woodland.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -179,11 +165,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Atlas_Hellfire_Armor_DS: Uniform_Base
+	class 53rd_Atlas_Hellfire_Armor_DS: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -198,9 +183,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Armor_DS.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Armor_Desert.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -212,9 +197,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Armor_DS.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Armor_Desert.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -223,15 +208,14 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Atlas_LoneWulf_Armor: Uniform_Base
+	class 53rd_Atlas_LoneWulf_Armor: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (LoneWulf / Urban)";
+		displayName="[53rd] LoneWulf Custom Armor (Urban)";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -242,9 +226,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\LoneWulf_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\LoneWulf_Custom_Armor_Urban.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -256,23 +240,21 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\LoneWulf_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\LoneWulf_Custom_Armor_Urban.paa" 
 			};
-			uniformModel="-";
-			uniformType = "Neopren";
-			uniformClass="53rd_LoneWulf_V";
-			containerClass="Supply150";
-			mass=80;
+		uniformModel="-";
+		uniformType = "Neopren";
+		uniformClass="53rd_LoneWulf_V";
+		containerClass="Supply150";
+		mass=80;
 		};
 	};
-	
-	class 53rd_Atlas_LoneWulf_Armor_SN: Uniform_Base
+	class 53rd_Atlas_LoneWulf_Armor_SN: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -287,9 +269,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Armor_SN.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\LoneWulf_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\LoneWulf_Custom_Armor_Winter.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -301,9 +283,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Armor_SN.paa"  
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\LoneWulf_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\LoneWulf_Custom_Armor_Winter.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -313,11 +295,10 @@ class cfgWeapons
 		};
 	
 	};
-	class 53rd_Atlas_LoneWulf_Armor_DS: Uniform_Base
+	class 53rd_Atlas_LoneWulf_Armor_DS: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -332,9 +313,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_DS.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\LoneWulf_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_Desert.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -346,9 +327,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_DS.paa"  
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\LoneWulf_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_Desert.paa"  
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -357,12 +338,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	
-	class 53rd_Atlas_LoneWulf_Armor_WD: Uniform_Base
+	class 53rd_Atlas_LoneWulf_Armor_WD: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -377,9 +356,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Armor_WD.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\LoneWulf_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\LoneWulf_Custom_Armor_Woodland.paa"  
 		};
 		class ItemInfo: UniformItem
 		{
@@ -391,9 +370,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Armor_WD.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\LoneWulf_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\LoneWulf_Custom_Armor_Woodland.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -402,12 +381,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	
-		class 53rd_Atlas_Serpent_Armor: Uniform_Base
+	class 53rd_Atlas_Serpent_Armor: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -422,9 +399,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Armor_Urban.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -436,23 +413,21 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Armor_Urban.paa" 
 			};
-			uniformModel="-";
-			uniformType = "Neopren";
-			uniformClass="53rd_Serpent_V";
-			containerClass="Supply150";
-			mass=80;
+		uniformModel="-";
+		uniformType = "Neopren";
+		uniformClass="53rd_Serpent_V";
+		containerClass="Supply150";
+		mass=80;
 		};
 	};
-	
-	class 53rd_Atlas_Serpent_Armor_SN: Uniform_Base
+	class 53rd_Atlas_Serpent_Armor_SN: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -467,9 +442,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Armor_SN.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Armor_Winter.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -481,9 +456,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Armor_SN.paa"   
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Armor_Winter.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -492,12 +467,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	
-	class 53rd_Atlas_Serpent_Armor_DS: Uniform_Base
+	class 53rd_Atlas_Serpent_Armor_DS: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -512,9 +485,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Armor_DS.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Armor_Desert.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -526,9 +499,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Armor_DS.paa"   
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Armor_Desert.paa"  
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -537,12 +510,10 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	
-	class 53rd_Atlas_Serpent_Armor_WD: Uniform_Base
+	class 53rd_Atlas_Serpent_Armor_WD: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -557,9 +528,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Armor_WD.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Armor_Woodland.paa"  
 		};
 		class ItemInfo: UniformItem
 		{
@@ -571,9 +542,9 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Armor_WD.paa"   
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Armor_Woodland.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
@@ -583,7 +554,7 @@ class cfgWeapons
 		};
 	};
 		
-	class 53rd_Atlas_Tsuki_Armor: Uniform_Base
+/*class 53rd_Atlas_Tsuki_Armor: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
@@ -761,13 +732,12 @@ class cfgWeapons
 			containerClass="Supply150";
 			mass=80;
 		};
-	};
+	};*/
 	
-	class 53rd_Atlas_Texas_Armor: Uniform_Base
+	class 53rd_Atlas_Texas_Armor: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
@@ -782,9 +752,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Armor.paa" 
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Urban\A_Armor_Texas_Custom_Urban.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -796,27 +766,25 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Ranger_02_top_woodland_AS_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Armor.paa"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Urban\A_Armor_Texas_Custom_Urban.paa" 
 			};
-			uniformModel="-";
-			uniformType = "Neopren";
-			uniformClass="53rd_Texas_V";
-			containerClass="Supply150";
-			mass=80;
+		uniformModel="-";
+		uniformType = "Neopren";
+		uniformClass="53rd_Texas_V";
+		containerClass="Supply150";
+		mass=80;
 		};
 	};
-	
-	class 53rd_Atlas_Texas_Armor_SN: Uniform_Base
+	class 53rd_Atlas_Texas_Armor_Winter: haloinfmar_U_WDL_uniform
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Texas / Snow)";
+		displayName="[53rd] Custom Armors (Texas / Winter)";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -827,9 +795,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Gold_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Armor_SN.paa" 
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Snow\A_Armor_Texas_Custom_Winter.paa" 
 		};
 		class ItemInfo: UniformItem
 		{
@@ -841,18 +809,105 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Gold_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Armor_SN.paa"    
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Snow\A_Armor_Texas_Custom_Winter.paa" 
+			};
+		uniformModel="-";
+		uniformType = "Neopren";
+		uniformClass="53rd_Texas_SN_V";
+		containerClass="Supply150";
+		mass=80;
+		};
+	};
+	class 53rd_Atlas_Texas_Armor_Desert: haloinfmar_U_WDL_uniform
+	{
+		author="Tsuki";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Texas / Desert)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Desert\A_Armor_Texas_Custom_Desert.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Desert\A_Armor_Texas_Custom_Desert.paa" 
+			};
+		uniformModel="-";
+		uniformType = "Neopren";
+		uniformClass="53rd_Texas_DS_V";
+		containerClass="Supply150";
+		mass=80;
+		};
+		
+	};
+	class 53rd_Atlas_Texas_Armor_Woodland: haloinfmar_U_WDL_uniform
+	{
+		author="Tsuki";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Texas / Woodland)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Woodland\A_Armor_Texas_Custom_Woodland.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Woodland\A_Armor_Texas_Custom_Woodland.paa" 
 			};
 			uniformModel="-";
 			uniformType = "Neopren";
-			uniformClass="53rd_Texas_SN_V";
+			uniformClass="53rd_Texas_WD_V";
 			containerClass="Supply150";
 			mass=80;
 		};
 	};
-		//Custom Helmets
+	//Custom Helmets
 	class 53rd_Atlas_Hellfire_Custom_Helmet: TCF_Reach_Scout_Helmet
 	{
 		dlc="53rd";
@@ -865,8 +920,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Urban\Hellfire_Custom_Helmet.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Helmet.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_dp: TCF_Reach_Scout_Helmet
@@ -881,8 +936,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Urban\Hellfire_Custom_Helmet.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Helmet.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_SN: TCF_Reach_Scout_Helmet
@@ -897,8 +952,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Helmet_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Helmet_SN.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet
@@ -913,8 +968,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Helmet_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Helmet_SN.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_WD: TCF_Reach_Scout_Helmet
@@ -929,8 +984,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Helmet_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Helmet_WD.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_WD_dp: TCF_Reach_Scout_Helmet
@@ -945,8 +1000,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Helmet_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Helmet_WD.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_DS: TCF_Reach_Scout_Helmet
@@ -961,8 +1016,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Helmet_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Helmet_DS.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_Hellfire_Custom_Helmet_DS_dp: TCF_Reach_Scout_Helmet
@@ -977,8 +1032,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Helmet_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Helmet_DS.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet: TCF_Reach_Scout_Helmet
@@ -993,8 +1048,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Helmet.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\A_Lonewulf_Scout_Custom_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_dp: TCF_Reach_Scout_Helmet
@@ -1009,8 +1064,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Helmet.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\A_Lonewulf_Scout_Custom_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN: TCF_Reach_Scout_Helmet
@@ -1025,8 +1080,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Helmet_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\A_Lonewulf_Scout_Custom_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet
@@ -1041,8 +1096,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Helmet_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\A_Lonewulf_Scout_Custom_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_DS: TCF_Reach_Scout_Helmet
@@ -1057,8 +1112,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Helmet_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\A_Lonewulf_Scout_Custom_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_DS_dp: TCF_Reach_Scout_Helmet
@@ -1073,8 +1128,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Helmet_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\A_Lonewulf_Scout_Custom_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_WD: TCF_Reach_Scout_Helmet
@@ -1089,8 +1144,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Helmet_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\A_Lonewulf_Scout_Custom_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_WD_dp: TCF_Reach_Scout_Helmet
@@ -1105,8 +1160,8 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Helmet_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\A_Lonewulf_Scout_Custom_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet: HaloInf_Marine_WDL_headgear
@@ -1126,7 +1181,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Helmet.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Helmet_Urban.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_dp: HaloInf_Marine_WDL_headgear
@@ -1146,7 +1201,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Helmet.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Helmet_Urban.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_SN: HaloInf_Marine_WDL_headgear
@@ -1166,7 +1221,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Helmet_SN.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Helmet_Winter.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_SN_dp: HaloInf_Marine_WDL_headgear
@@ -1186,7 +1241,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Helmet_SN.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Helmet_Winter.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_DS: HaloInf_Marine_WDL_headgear
@@ -1206,7 +1261,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Helmet_DS.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Helmet_Desert.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_DS_dp: HaloInf_Marine_WDL_headgear
@@ -1226,7 +1281,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Helmet_DS.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Helmet_Desert.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_WD: HaloInf_Marine_WDL_headgear
@@ -1246,7 +1301,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Helmet_WD.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Helmet_Woodland.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet_WD_dp: HaloInf_Marine_WDL_headgear
@@ -1266,142 +1321,13 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Helmet_WD.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Urban)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Urban\Tsuki_Custom_Helmet.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Urban) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Urban\Tsuki_Custom_Helmet.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_SN: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Snow)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Snow\Tsuki_Custom_Helmet_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Snow) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Snow\Tsuki_Custom_Helmet_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_DS: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Desert)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Desert\Tsuki_Custom_Helmet_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_DS_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Desert) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Desert\Tsuki_Custom_Helmet_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_WD: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Woodland)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Woodland\Tsuki_Custom_Helmet_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_Tsuki_Custom_Helmet_WD_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Tsuki / Woodland) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Woodland\Tsuki_Custom_Helmet_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Helmet_Woodland.paa"
 		};
 	};
 	class 53rd_Atlas_Texas_Custom_Helmet: TCF_Reach_Scout_Helmet 
 	{ 
 		dlc="53rd"; 
 		scope=2; 
-		scopeCurator=2; 
 		scopeArsenal=2; 
 		side=1; 
 		author="Tsuki"; 
@@ -1409,15 +1335,14 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Helmet.paa", 
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa" 
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Urban\A_Texas_Scout_Custom_Urban.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		}; 
 	}; 
 	class 53rd_Atlas_Texas_Custom_Helmet_dp: TCF_Reach_Scout_Helmet 
 	{ 
 		dlc="53rd"; 
 		scope=1; 
-		scopeCurator=1; 
 		scopeArsenal=1; 
 		side=1; 
 		author="Tsuki"; 
@@ -1425,15 +1350,14 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Helmet.paa", 
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Desert\A_Texas_Scout_Custom_Urban.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		}; 
 	}; 
 	class 53rd_Atlas_Texas_Custom_Helmet_SN: TCF_Reach_Scout_Helmet 
 	{ 
 		dlc="53rd"; 
 		scope=2; 
-		scopeCurator=2; 
 		scopeArsenal=2; 
 		side=1; 
 		author="Tsuki"; 
@@ -1441,15 +1365,14 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Helmet_SN.paa", 
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Snow\A_Texas_Scout_Custom_Winter.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		}; 
 	}; 
 	class 53rd_Atlas_Texas_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet 
 	{ 
 		dlc="53rd"; 
 		scope=1; 
-		scopeCurator=1; 
 		scopeArsenal=1; 
 		side=1; 
 		author="Tsuki"; 
@@ -1457,8 +1380,68 @@ class cfgWeapons
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Helmet_SN.paa", 
-			"53rd_SC_aux\Armor\Atlas Armor\Visor_CO.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Snow\A_Texas_Scout_Custom_Winter.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		}; 
+	};
+	class 53rd_Atlas_Texas_Custom_Helmet_Desert: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Desert)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Desert\A_Texas_Scout_Custom_Desert.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet_Desert_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1;  
+		scopeArsenal=1; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Desert) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Desert\A_Texas_Scout_Custom_Desert.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet_WD: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=2; 
+		scopeArsenal=2; 
+		side=1; 
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Woodland)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Woodland\A_Texas_Scout_Custom_Woodland.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		}; 
+	}; 
+	class 53rd_Atlas_Texas_Custom_Helmet_WD_dp: TCF_Reach_Scout_Helmet 
+	{ 
+		dlc="53rd"; 
+		scope=1;  
+		scopeArsenal=1; 
+		side=1;  
+		author="Tsuki"; 
+		displayName="[53rd] Custom Helmet (Texas / Woodland) (Dp)"; 
+		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
+		hiddenSelectionsTextures[]= 
+		{ 
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Woodland\A_Texas_Scout_Custom_Woodland.paa", 
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		}; 
 	}; 
 };
@@ -1466,408 +1449,188 @@ class cfgWeapons
 //Rifleman 2
 class cfgvehicles
 {
-	class haloinf_Marine_Soldier_base_F;
-	class 53rd_Hellfire_V: haloinf_Marine_Soldier_base_F
+	class B_Soldier_base_F;
+	class haloinf_Marine_Soldier_base_F: B_Soldier_base_F{};
+	class HaloInf_Marine_WDL_F: haloinf_Marine_Soldier_base_F
+	{
+	class UniformItem;
+	};
+	class 53rd_base_F: HaloInf_Marine_WDL_F
+	{
+		scope=2;
+		scopeCurator=1;
+		scopeArsenal=1;
+		displayName="[53rd] Base Uniform";
+		class ItemInfo: UniformItem
+		{
+			uniformType = "Neopren";
+			uniformModel="-";
+			uniformClass="53rd_Unit_Base";
+			containerClass="Supply100";
+			mass=80;
+		};
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
+		};
+	};
+	class 53rd_Hellfire_V: 53rd_base_F
 	{
 			scope=2;
-			scopeCurator=2;
 			scopeArsenal=2;
 			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
+			displayName="[53rd] Hellfire_Urban_V";
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Urban\Hellfire_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Urban\Hellfire_Custom_Armor.paa"  
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Urban\Hellfire_Custom_Armor_Urban.paa"
 			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
+			uniformClass="53rd_Atlas_Hellfire_Armor";
 	};
-	class 53rd_Hellfire_SN_V: haloinf_Marine_Soldier_base_F
+	class 53rd_Hellfire_SN_V: 53rd_Hellfire_V
+	{
+			displayName="[53rd] Hellfire_Snow_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Snow\Hellfire_Custom_Armor_Winter.paa" 
+			};
+			uniformClass="53rd_Atlas_Hellfire_Armor_SN";
+	};
+	class 53rd_Hellfire_WD_V: 53rd_Hellfire_V
+	{
+			displayName="[53rd] Hellfire_Woodland_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Woodland\Hellfire_Custom_Armor_Woodland.paa" 
+			};
+			uniformClass="53rd_Atlas_Hellfire_Armor_WD";
+	};
+	class 53rd_Hellfire_DS_V: 53rd_Hellfire_V
+	{
+			displayName="[53rd] Hellfire_Desert_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Hellfire\Desert\Hellfire_Custom_Armor_Desert.paa" 
+			};
+			uniformClass="53rd_Atlas_Hellfire_Armor_DS";
+	};
+	class 53rd_LoneWulf_V: 53rd_base_F
 	{
 			scope=2;
-			scopeCurator=2;
 			scopeArsenal=2;
 			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
+			displayName="[53rd] Lone Urban V";
+			hiddenSelectionsTextures[]=
 			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\LoneWulf_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\LoneWulf_Custom_Armor_Urban.paa" 
 			};
+			uniformClass="53rd_Atlas_LoneWulf_Armor";
+	};
+	class 53rd_LoneWulf_SN_V: 53rd_LoneWulf_V
+	{
+			displayName="[53rd] Wulf Winter V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\LoneWulf_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\LoneWulf_Custom_Armor_Winter.paa" 
+			};
+			uniformClass="53rd_Atlas_LoneWulf_Armor_SN";
+	};
+	class 53rd_LoneWulf_DS_V: 53rd_LoneWulf_V
+	{
+			displayName="[53rd] Wulf Desert V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\LoneWulf_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_Desert.paa"  
+			};
+			uniformClass="53rd_Atlas_LoneWulf_Armor_DS";
+	};
+	class 53rd_LoneWulf_WD_V: 53rd_LoneWulf_V
+	{
+			displayName="[53rd] Wulf Woodland V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\LoneWulf_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\LoneWulf_Custom_Armor_Woodland.paa" 
+			};
+			uniformClass="53rd_Atlas_LoneWulf_Armor_WD";
+	};
+	class 53rd_Serpent_V: 53rd_base_F
+	{
+			scope=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Serpent Urban V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Urban\Serpent_Custom_Armor_Urban.paa" 
+			};
+			uniformClass="53rd_Atlas_Serpent_Armor";
+	};
+	class 53rd_Serpent_SN_V: 53rd_Serpent_V
+	{
+			displayName="[53rd] Serpent Winter V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Snow\Serpent_Custom_Armor_Winter.paa" 
+			};
+			uniformClass="53rd_Atlas_Serpent_Armor_SN";
+	};
+	class 53rd_Serpent_DS_V: 53rd_Serpent_V
+	{
+			displayName="[53rd] Serpent Desert V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Desert\Serpent_Custom_Armor_Desert.paa" 
+			};
+			uniformClass="53rd_Atlas_Serpent_Armor_DS";
+	};
+	class 53rd_Serpent_WD_V: 53rd_Serpent_V
+	{
+			displayName="[53rd] Serpent Woodland V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Serpent\Woodland\Serpent_Custom_Armor_Woodland.paa"  
+			};
+			uniformClass="53rd_Atlas_Serpent_Armor_WD";
+	};
+	/*class 53rd_Tsuki_V: haloinf_Marine_Soldier_base_F
+	{
+			displayName="[53rd] Hellfire_Woodland_V";
 			hiddenSelectionsTextures[]=
 			{
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Top_SN.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
 			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Snow\Hellfire_Custom_Armor_SN.paa"  
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Hellfire_WD_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Woodland\Hellfire_Custom_Armor_WD.paa"  
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Hellfire_DS_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Hellfire\Desert\Hellfire_Custom_Armor_DS.paa"  
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_LoneWulf_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Urban\LoneWulf_Custom_Armor.paa"  
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_LoneWulf_SN_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\LoneWulf\Snow\LoneWulf_Custom_Armor_SN.paa" 
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_LoneWulf_DS_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Desert\LoneWulf_Custom_Armor_DS.paa" 
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_LoneWulf_WD_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Lonewulf\Woodland\LoneWulf_Custom_Armor_WD.paa" 
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Serpent_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Urban\Serpent_Custom_Armor.paa"  
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Serpent_SN_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Top_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Snow\Serpent_Custom_Armor_SN.paa" 
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Serpent_DS_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Top_DS.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Desert_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Desert\Serpent_Custom_Armor_DS.paa" 
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Serpent_WD_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Top_WD.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Woodland_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Serpent\Woodland\Serpent_Custom_Armor_WD.paa" 
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
-	};
-	class 53rd_Tsuki_V: haloinf_Marine_Soldier_base_F
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
-			hiddenSelectionsTextures[]=
-			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Urban\Tsuki_Custom_Top.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Tsuki\Urban\Tsuki_Custom_Armor.paa"  
-			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
 			};
 	};
 	class 53rd_Tsuki_SN_V: haloinf_Marine_Soldier_base_F
@@ -1962,67 +1725,52 @@ class cfgvehicles
 				"ItemWatch",
 				"ItemRadio"
 			};
-	};
-	class 53rd_Texas_V: haloinf_Marine_Soldier_base_F
+	};*/
+	class 53rd_Texas_V: 53rd_base_F
 	{
 			scope=2;
-			scopeCurator=0;
 			scopeArsenal=2;
 			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
+			displayName="[53rd] Texas Urban V";
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\53rd_Atlas_top_Urban_AS_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\53rd_Atlas_pants_Urban_two_co.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Urban\Texas_Custom_Armor.paa"  
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Urban\A_Armor_Texas_Custom_Urban.paa" 
 			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
-			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
-			};
+			uniformClass="53rd_Atlas_Texas_Armor";
 	};
-	class 53rd_Texas_SN_V: haloinf_Marine_Soldier_base_F
+	class 53rd_Texas_SN_V: 53rd_Texas_V
 	{
-			scope=2;
-			scopeCurator=0;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ranger - Platoon V";
-			hiddenSelections[]=
-			{
-				"Camo1",
-				"Camo2",
-				"Camo3"
-			};
+			displayName="[53rd] Texas Winter V";
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Rifleman\Atlas_Gold_Armor_SN.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas_Snow_Pants.paa",
-			"53rd_SC_aux\Armor\Atlas Armor\Atlas Customs\Texas\Snow\Texas_Custom_Armor_SN.paa" 
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Snow\A_Armor_Texas_Custom_Winter.paa" 
 			};
-			model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-			uniformClass="53rd_Atlas_PL_uniform";
-			uniformType = "Neopren";
-			linkedItems[]=
+			uniformClass="53rd_Atlas_Texas_Armor_Winter";
+	};
+	class 53rd_Texas_DS_V: 53rd_Texas_V
+	{
+			displayName="[53rd] Texas Desert V";
+			hiddenSelectionsTextures[]=
 			{
-				"HaloInf_Marine_WDL_UNSC_headgear",
-				"ItemMap",
-				"ItemCompass",
-				"ItemWatch",
-				"ItemRadio"
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Desert\A_Armor_Texas_Custom_Desert.paa" 
 			};
-		};
+			uniformClass="53rd_Atlas_Texas_Armor_Desert";
+	};
+	class 53rd_Texas_WD_V: 53rd_Texas_V
+	{
+			displayName="[53rd] Texas Woodland";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Woodland\A_Armor_Texas_Custom_Woodland.paa" 
+			};
+			uniformClass="53rd_Atlas_Texas_Armor_Woodland";
+	};
 };
