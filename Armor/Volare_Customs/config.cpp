@@ -45,6 +45,7 @@ class cfgWeapons
 	class 53rd_VX19_Black_Helmet;
 	class 53rd_VX19_Black_Helmet_dp;
 	class OPTRE_UNSC_Commando_Helmet;
+	class UNSC_PilotHelmet_Black;
 	/////HELMETS/////
 	class 53rd_Custom_Helmet_BigBen : OPTRE_UNSC_Commando_Helmet
 		{
@@ -107,6 +108,42 @@ class cfgWeapons
 			};
         };
     };
+		class 53rd_Custom_Helmet_Lovey : UNSC_PilotHelmet_Black
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Lovey)";
+			model="\UNSCGear\UNSCPilotHelmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Armor\Volare_Customs\Lovey\Lovey_Helmet.paa",
+				
+			};
+		};
+		class 53rd_Custom_Helmet_Ferret : UNSC_PilotHelmet_Black
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Ferret)";
+			model="\UNSCGear\UNSCPilotHelmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Armor\Volare_Customs\Ferret\Ferret_Helmet.paa",
+				
+			};
+		};
+		class 53rd_Custom_Helmet_Ghillie : UNSC_PilotHelmet_Black
+		{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (Ghillie)";
+			model="\UNSCGear\UNSCPilotHelmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Armor\Volare_Customs\Ghillie\Ghillie_Helmet.paa",
+				
+			};
+		};
 };
 
 class CfgVehicles
