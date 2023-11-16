@@ -58,6 +58,7 @@ class Eventhandlers;
 	class Splits_Pelican_base;
 	class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base 
 	{
+	class Components;
 	};
     // Ves Pelican Base
     class 53rd_VES_Pelican_Base: VES_D77HTCI_A
