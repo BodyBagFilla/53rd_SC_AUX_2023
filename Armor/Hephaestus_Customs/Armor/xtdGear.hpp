@@ -324,13 +324,14 @@ class XtdGearInfos
 		{
 		Helm_Camo = "Woodland";
 		};
-/*	
-		class 53rd_Custom_Helmet_Panzer_Pilot_Desert_dp
+
+		class 53rd_Custom_Helmet_Panzer_Pilot_Desert_dp:53rd_Custom_Helmet_Panzer_Pilot_Desert
 		{
 		model = "HephaestusCustomHelm";
 		Helm_Camo = "Desert";
-		Person = "Panzery";
+		Person = "Panzer";
         dp="no";
+		};
 		class 53rd_Custom_Helmet_Panzer_Pilot_Winter_dp:53rd_Custom_Helmet_Panzer_Pilot_Desert_dp
 		{
 		Helm_Camo = "Snow";

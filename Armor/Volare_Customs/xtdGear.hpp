@@ -10,7 +10,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Bigben","Amatsu"};
+				values[] = {"Bigben","Amatsu","Lovey","Ferret","Ghillie"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Bigben
@@ -21,6 +21,21 @@ class XtdGearModels
 				class Amatsu
 				{
 					label = "Amatsu";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Lovey
+				{
+					label = "Lovey";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Ferret
+				{
+					label = "Ferret";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Ghillie
+				{
+					label = "Ghillie";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -75,7 +90,28 @@ class XtdGearInfos
 		Person = "Amatsu";
         dp="no";
 		};
-
+		//Lovey
+		class 53rd_Custom_Helmet_Lovey
+		{
+		model = "VolareCustomHelm";
+		Person = "Lovey";
+        dp="yes";
+		};
+		//Ferret
+		class 53rd_Custom_Helmet_Ferret
+		{
+		model = "VolareCustomHelm";
+		Person = "Ferret";
+        dp="yes";
+		};
+		//Ghillie
+		class 53rd_Custom_Helmet_Ghillie
+		{
+		model = "VolareCustomHelm";
+		Person = "Ghillie";
+        dp="yes";
+		};
+		
         
         //armors
 	};

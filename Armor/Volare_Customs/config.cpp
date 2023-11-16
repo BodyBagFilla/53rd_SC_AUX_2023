@@ -108,8 +108,8 @@ class cfgWeapons
 			};
         };
     };
-		class 53rd_Custom_Helmet_Lovey : UNSC_PilotHelmet_Black
-		{
+	class 53rd_Custom_Helmet_Lovey : UNSC_PilotHelmet_Black
+	{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Lovey)";
@@ -120,8 +120,8 @@ class cfgWeapons
 				
 			};
 		};
-		class 53rd_Custom_Helmet_Ferret : UNSC_PilotHelmet_Black
-		{
+	class 53rd_Custom_Helmet_Ferret : UNSC_PilotHelmet_Black
+	{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Ferret)";
@@ -132,8 +132,8 @@ class cfgWeapons
 				
 			};
 		};
-		class 53rd_Custom_Helmet_Ghillie : UNSC_PilotHelmet_Black
-		{
+	class 53rd_Custom_Helmet_Ghillie : UNSC_PilotHelmet_Black
+	{
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Ghillie)";

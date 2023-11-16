@@ -20,10 +20,15 @@ class CfgPatches {
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
 	};
-};
-#include "..\..\xtdGear.hpp"		
+};	
 class cfgWeapons
 {
+	class ItemCore;
+	class ItemInfo;
+	class VES_CH252_MAR_Vacuum;
+	class VES_CH252_WDL_Heavy;
+	class VES_BDU_Evolved_Slim;
+	class HeadgearItem;
 	class MA_TGE_InvisVest
 	{
 	class Iteminfo;
@@ -32,6 +37,8 @@ class cfgWeapons
 	{
 		author="Scarecrow";
 		scope=2;
+		scopeArsenal=2;
+		side=1;
 		displayName="[53rd] Invisible Vest";
 		picture="\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
 		model="\Halo_marine_02\null.p3d";
@@ -104,8 +111,6 @@ class cfgWeapons
 		};
 	};
 	/////HELMETS/////
-	class ItemCore;
-	class ItemInfo;
 	class HaloInf_Marine_WDL_headgear: ItemCore
 	{
 	 class ItemInfo;
@@ -231,7 +236,6 @@ class cfgWeapons
 	{
 		author="Cherri&Scarecrow";
 		scope=2;
-		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Hephaestus Helmet (Urban / Visor)";
@@ -364,7 +368,6 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Helmet_Winter.paa"
 		};
 	};
-//////////////////////////////////////////////////////////////////////////////////////////
 ////////////////////////ARMOR////////////////////////////////////////////////////////////
 	class UniformItem;
 	class Uniform_Base: ItemCore
@@ -407,6 +410,8 @@ class cfgWeapons
 	{
 		author="Scarecrow";
 		scope=2;
+		scopeArsenal=2;
+		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Winter Rifleman";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
@@ -447,6 +452,8 @@ class cfgWeapons
 	{
 		author="53rd Mod Team";
 		scope=2;
+		scopeArsenal=2;
+		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Woodland Rifleman";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
@@ -487,6 +494,8 @@ class cfgWeapons
 	{
 		author="53rd Mod Team";
 		scope=2;
+		scopeArsenal=2;
+		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Urban Rifleman";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
@@ -527,6 +536,8 @@ class cfgWeapons
 	{
 		author="53rd Mod Team";
 		scope=2;
+		scopeArsenal=2;
+		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Desert Rifleman";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";

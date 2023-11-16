@@ -18,9 +18,9 @@ class CfgPatches {
 #include "..\xtdGear.hpp"	
 class cfgWeapons
 {
-	class OPTRE_UNSC_HRPilot_Helmet;
-	//Panzer Pilot
-	class 53rd_Custom_Helmet_Panzer_Pilot_Woodland: OPTRE_UNSC_HRPilot_Helmet
+		class OPTRE_UNSC_HRPilot_Helmet;
+		//Panzer Pilot
+		class 53rd_Custom_Helmet_Panzer_Pilot_Woodland: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
@@ -32,7 +32,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Urban: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Urban: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
@@ -44,7 +44,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Desert: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Desert: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
@@ -56,7 +56,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Winter: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Winter: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=2;
 			scopeArsenal=2;
@@ -68,7 +68,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Woodland_dp: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Woodland_dp: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=1;
 			scopeArsenal=1;
@@ -80,7 +80,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Urban_dp: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Urban_dp: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=1;
 			scopeArsenal=1;
@@ -92,7 +92,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Desert_dp: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Desert_dp: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=1;
 			scopeArsenal=1;
@@ -104,7 +104,7 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Pazner\Panzer_Visor.paa"
 			};
 		};
-	class 53rd_Custom_Helmet_Panzer_Pilot_Winter_dp: OPTRE_UNSC_HRPilot_Helmet
+		class 53rd_Custom_Helmet_Panzer_Pilot_Winter_dp: OPTRE_UNSC_HRPilot_Helmet
 		{
 			scope=1;
 			scopeArsenal=1;

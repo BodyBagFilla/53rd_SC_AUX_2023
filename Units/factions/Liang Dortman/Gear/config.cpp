@@ -12,12 +12,13 @@ class CfgPatches {
 		requiredAddons[] = {};
 	};
 };
-class cfgWeapons {
-    class ItemInfo;
+class cfgWeapons 
+{
+    class ItemCore;
+	class ItemInfo;
 	class VestItem;
 	class HeadgearItem;
 	class UniformItem;
-
 	class OPTRE_Ins_BJ_Undersuit;
 	class 53rd_Dortman_Uni: OPTRE_Ins_BJ_Undersuit
 	{
@@ -35,7 +36,6 @@ class cfgWeapons {
 			
 		};
 	};
-
 	class OPTRE_UNSC_M52A_Armor3_WDL;
 	class OPTRE_UNSC_M52A_Armor1_WDL;
 	class LD_M52A_Light: OPTRE_UNSC_M52A_Armor1_WDL

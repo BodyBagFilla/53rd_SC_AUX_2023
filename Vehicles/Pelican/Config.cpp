@@ -10,40 +10,349 @@ class CfgPatches {
 class CfgVehicles
 {
 	class Turrets;
-	class CopilotTurret;
 	class ACE_SelfActions;
 	class CargoTurret;
+	class SensorTemplatePassiveRadar;
+	class SensorTemplateAntiRadiation;
+	class SensorTemplateActiveRadar;
+	class SensorTemplateIR;
+	class SensorTemplateVisual;
+	class SensorTemplateMan;
+	class SensorTemplateLaser;
+	class SensorTemplateNV;
+	class SensorTemplateDataLink;
+	class DefaultVehicleSystemsDisplayManagerLeft
+	{
+		class components;
+	};
+	class DefaultVehicleSystemsDisplayManagerRight
+	{
+		class components;
+	};
+	class VehicleSystemsTemplateLeftPilot: DefaultVehicleSystemsDisplayManagerLeft
+	{
+		class components;
+	};
+	class VehicleSystemsTemplateRightPilot: DefaultVehicleSystemsDisplayManagerRight
+	{
+		class components;
+	};
+class Eventhandlers;
 	class TG_Orca_CarryAll_GDI_01;
 	class Optre_Pelican_armed;
 	class VES_D77HTCI_A
-    {
-	class UserActions;
-    };
-	class OPTRE_Pelican_armed_SOCOM
-	{
-	class UserActions;
-    };
-	class Splits_Pelican_base;
-	class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base
 	{
 		class Components
 		{
-			class TransportPylonsComponent
+			class TransportPylonsComponent;
+		};
+		class UserActions
+		{
+
+		};
+		class EventHandlers
+		{};
+
+	};
+	class OPTRE_Pelican_armed_SOCOM;
+	class Splits_Pelican_base;
+	class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base 
+	{
+	};
+    // Ves Pelican Base
+    class 53rd_VES_Pelican_Base: VES_D77HTCI_A
+    {
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;	
+        displayName="[53rd] D77H Pelican/AV";
+        editorPreview="53rd_SC_aux\Vehicles\Pelican\Pelican-Grey.jpg";
+        editorCategory = "53rd_cat_faction";
+        editorSubCategory = "53rd_Rotary";
+        crew="53rd_Volare_airmen_unit";
+		class UserActions: UserActions
+		{
+			class AMS_LiteOpen
 			{
-				class Pylons;
-				class Presets
-					{
-					 class Empty;
-					 class Default;
-					 class AT;
-					 class HAT;
-					 class CAS;
-					}
+			displayName = "<t color='#739eff'>Open AMS Lite</t>";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User3";
+				condition = "player in this and (speed this < 1)";
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\AMS\AMS_Lite\AMS_Lite_GUI_Open.sqf""";
+				onlyforplayer = "false";
+				priority = 6;
+				hideOnUse = 1;
+			};		
+			class Aircraft_MFD_Open_N
+			{
+				displayName="Open I-TGT System";
+				position="pilotcontrol";
+				radius=15;
+				shortcut="User4";
+				condition="('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";
+				statement="this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf""";
+				onlyforplayer="false";
+				hideOnUse=1;
 			};
 		};
-	};
+		class EventHandlers: EventHandlers
+		{
+			class FIR_AWS_Common_EH
+			{
+				Init="[_this select 0,'yes'] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+				hit="_this call bis_fnc_planeAiEject";
+			};
+		};
+		class Components: Components
+		{
+			class TransportPylonsComponent
+			{
+				UIPicture="\A3\Air_F_Jets\Plane_Fighter_01\Data\UI\Fighter_01_3DEN_CA.paa";
+				class pylons
+				{
+					class Pylons_MedusaPod_1
+					{
+						hardpoints[]=
+						{
+							"OPTRE_Hardpoint_SabrePilot"
+						};
+						attachment="OPTRE_STMedusa_6Rnd_AA_Missile";
+						priority=5;
+						maxweight=10000;
+						UIposition[]={0.34,0.079999998};
+						bay=1;
+					};
+					class Pylons_Missile_Bay_1
+					{
+						hardpoints[]=
+						{
+							"OPTRE_Hardpoint_SabreCopilot",
+							"FIR_BLUFOR_Combined_HP",
+							"B_MISSILE_PYLON",
+							"B_BOMB_PYLON"
+						};
+						priority=4;
+						attachment="OPTRE_3Rnd_Jackknife_sabre_missile";
+						maxweight=10000;
+						UIposition[]={0.345,0.13};
+						bay=3;
+					};
+					class Pylons_MedusaPod_2: Pylons_MedusaPod_1
+					{
+						UIposition[]={0.34,0.47999999};
+						mirroredMissilePos=1;
+						bay=2;
+					};
+					class Pylons_Missile_Bay_2: Pylons_Missile_Bay_1
+					{
+						UIposition[]={0.33000001,0.43000001};
+						mirroredMissilePos=2;
+						bay=4;
+					};
+					class Pylons_30mmGun
+					{
+						displayName="M1024 ASW/AC 30mm MLA";
+						priority=2;
+						attachment="OPTRE_M1024_2000Rnd_30mm";
+						maxweight=10000;
+						UIposition[]={0.23999999,0.28};
+						hardpoints[]=
+						{
+							"OPTRE_Hardpoint_M1024_30mm"
+						};
+					};
+				};
+				class Bays
+				{
+					class BayCenter1
+					{
+						bayOpenTime=0.34999999;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=0;
+					};
+					class BayCenter2: BayCenter1
+					{
+					};
+					class BayRight1
+					{
+						bayOpenTime=0.34999999;
+						openBayWhenWeaponSelected=1;
+						autoCloseWhenEmptyDelay=0;
+					};
+					class BayLeft1: BayRight1
+					{
+					};
+				};
+			};
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class IRSensorComponent: SensorTemplateIR
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=2500;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=2000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=360;
+						angleRangeVertical=90;
+						maxTrackableSpeed=400;
+					};
+					class VisualSensorComponent: SensorTemplateVisual
+					{
+						class AirTarget
+						{
+							minRange=500;
+							maxRange=4000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=1;
+						};
+						class GroundTarget
+						{
+							minRange=500;
+							maxRange=3000;
+							objectDistanceLimitCoef=1;
+							viewDistanceLimitCoef=1;
+						};
+						angleRangeHorizontal=26;
+						angleRangeVertical=20;
+						maxTrackableSpeed=100;
+						aimDown=1;
+						animDirection="mainGun";
+					};
+					class PassiveRadarSensorComponent: SensorTemplatePassiveRadar
+					{
+					};
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange=15000;
+							maxRange=15000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=8000;
+							maxRange=8000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						typeRecognitionDistance=8000;
+						angleRangeHorizontal=45;
+						angleRangeVertical=45;
+						groundNoiseDistanceCoef=0.2;
+					};
+					class AntiRadiationSensorComponent: SensorTemplateAntiRadiation
+					{
+						class AirTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						class GroundTarget
+						{
+							minRange=16000;
+							maxRange=16000;
+							objectDistanceLimitCoef=-1;
+							viewDistanceLimitCoef=-1;
+						};
+						maxTrackableATL=100;
+						maxTrackableSpeed=60;
+						angleRangeHorizontal=60;
+						angleRangeVertical=180;
+					};
+					class LaserSensorComponent: SensorTemplateLaser
+					{
+					};
+					class NVSensorComponent: SensorTemplateNV
+					{
+					};
+				};
+			};
+		};
+		class Turrets
+		{
+		};
+		class pilotCamera
+		{
+			class OpticsIn
+			{
+				class Wide
+				{
+					opticsDisplayName="WFOV";
+					initAngleX=0;
+					minAngleX=0;
+					maxAngleX=0;
+					initAngleY=0;
+					minAngleY=0;
+					maxAngleY=0;
+					initFov="(75 / 120)";
+					minFov="(75 / 120)";
+					maxFov="(75 / 120)";
+					directionStabilized=1;
+					visionMode[]=
+					{
+						"Normal",
+						"NVG",
+						"Ti"
+					};
+					thermalMode[]={0,1};
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_wide_F.p3d";
+					opticsPPEffects[]=
+					{
+						"OpticsCHAbera2",
+						"OpticsBlur2"
+					};
+				};
+				class Medium: Wide
+				{
+					opticsDisplayName="MFOV";
+					initFov="(14.4 / 120)";
+					minFov="(14.4 / 120)";
+					maxFov="(14.4 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_medium_F.p3d";
+				};
+				class Narrow: Wide
+				{
+					opticsDisplayName="NFOV";
+					initFov="(4.8 / 120)";
+					minFov="(4.8 / 120)";
+					maxFov="(4.8 / 120)";
+					gunnerOpticsModel="\A3\Drones_F\Weapons_F_Gamma\Reticle\UAV_Optics_Gunner_narrow_F.p3d";
+				};
+			};
+			minTurn=-180;
+			maxTurn=180;
+			initTurn=0;
+			minElev=-10;
+			maxElev=90;
+			initElev=25;
+			maxXRotSpeed=1;
+			maxYRotSpeed=1;
+			maxMouseXRotSpeed=0.5;
+			maxMouseYRotSpeed=0.5;
+			pilotOpticsShowCursor=1;
+			controllable=1;
+		};
+
+    };
 	///////////////////////////////////////////////////////
-	class 53rd_CORP_Pelican: VES_D77HTCI_A
+	class 53rd_CORP_Pelican: 53rd_VES_Pelican_Base
 	{
 		scope=2;
 		scopeCurator=2;
@@ -87,7 +396,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 53rd_Pelican: VES_D77HTCI_A
+	class 53rd_Pelican: 53rd_VES_Pelican_Base
 	{
 		scope=2;
 		scopeCurator=2;
@@ -624,7 +933,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class 53rd_Pelican_FL: VES_D77HTCI_A
+	class 53rd_Pelican_FL: 53rd_VES_Pelican_Base
 	{
 		scope=2;
 		scopeCurator=2;

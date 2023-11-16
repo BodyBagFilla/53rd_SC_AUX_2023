@@ -95,7 +95,7 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-		class 53rd_Uniform_AT_WD: 53rd_U_Base_AT_uniform
+	class 53rd_Uniform_AT_WD: 53rd_U_Base_AT_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;

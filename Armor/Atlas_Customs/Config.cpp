@@ -928,7 +928,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=1;
-		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
 		author="Tsuki";
@@ -944,7 +943,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -976,7 +974,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -1008,7 +1005,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -1040,7 +1036,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -1072,7 +1067,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -1104,7 +1098,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -1136,7 +1129,6 @@ class cfgWeapons
 	{
 		dlc="53rd";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
@@ -1168,7 +1160,6 @@ class cfgWeapons
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Custom Helmet (Serpent / Urban)";
@@ -1208,7 +1199,6 @@ class cfgWeapons
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Custom Helmet (Serpent / Snow)";
@@ -1248,7 +1238,6 @@ class cfgWeapons
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Custom Helmet (Serpent / Desert)";
@@ -1288,7 +1277,6 @@ class cfgWeapons
 	{
 		author="Tsuki";
 		scope=2;
-		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Custom Helmet (Serpent / Woodland)";
@@ -1327,9 +1315,9 @@ class cfgWeapons
 	class 53rd_Atlas_Texas_Custom_Helmet: TCF_Reach_Scout_Helmet 
 	{ 
 		dlc="53rd"; 
-		scope=2; 
-		scopeArsenal=2; 
-		side=1; 
+		scope=2;
+		scopeArsenal=2;
+		side=1;
 		author="Tsuki"; 
 		displayName="[53rd] Custom Helmet (Texas / Urban)"; 
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
@@ -1457,7 +1445,7 @@ class cfgvehicles
 	};
 	class 53rd_base_F: HaloInf_Marine_WDL_F
 	{
-		scope=2;
+		scope=1;
 		scopeCurator=1;
 		scopeArsenal=1;
 		displayName="[53rd] Base Uniform";

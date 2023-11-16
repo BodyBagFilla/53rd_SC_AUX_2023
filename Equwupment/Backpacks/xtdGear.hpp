@@ -149,26 +149,69 @@ class XtdGearInfos
     class CfgVehicles 
     {
         //Rucksacks
-		class 53rd_Hephaestus_Rucksack_Basic
+		class 53rd_Rucksack_Urban
 		{
 		model = "Rucksacks";
 		Type = "Basic_Ruck";
+		Camo = "Urban";
 		};
         
-		class 53rd_Hephaestus_Rucksack_Heavy
+		class 53rd_Rucksack_Woodland
+		{
+		model = "Rucksacks";
+		Type = "Basic_Ruck";
+		Camo = "Woodland";
+		};
+		class 53rd_Rucksack_Desert
+		{
+		model = "Rucksacks";
+		Type = "Basic_Ruck";
+		Camo = "Desert";
+		};
+		class 53rd_Rucksack_Winter
+		{
+		model = "Rucksacks";
+		Type = "Basic_Ruck";
+		Camo = "Winter";
+		};
+		//Heavys Rucksacks
+		class 53rd_Rucksack_Heavy_Urban
 		{
 		model = "Rucksacks";
 		Type = "Heavy_Ruck";
+		Camo = "Urban";
 		};
+        
+		class 53rd_Rucksack_Heavy_Woodland
+		{
+		model = "Rucksacks";
+		Type = "Heavy_Ruck";
+		Camo = "Woodland";
+		};
+		class 53rd_Rucksack_Heavy_Desert
+		{
+		model = "Rucksacks";
+		Type = "Heavy_Ruck";
+		Camo = "Desert";
+		};
+		class 53rd_Rucksack_Heavy_Winter
+		{
+		model = "Rucksacks";
+		Type = "Heavy_Ruck";
+		Camo = "Winter";
+		};
+		//Atlas Packs
 		class 53rd_Atlas_Standard_Pack
 		{
 		model = "Rucksacks";
 		Type = "Atlas_Ruck";
+		Camo = "Urban";
 		};
 		class 53rd_Atlas_Heavy_Pack
 		{
 		model = "Rucksacks";
 		Type = "Atlas_Heavy_Ruck";
+		Camo = "Urban";
 		};
 		
         //NCO_LR
@@ -203,25 +246,25 @@ class XtdGearInfos
 		};
 		
         //JTAC_LR
-		class 53rd_Hephaestus_Rucksack_JTAC_Urban
+		class 53rd_LR_Urban
 		{
 		model = "JTAC_LR";
 		Camo = "Urban";
 		};
         
-		class 53rd_Hephaestus_Rucksack_JTAC_Woodland
+		class 53rd_LR_Woodland
 		{
 		model = "JTAC_LR";
 		Camo = "Woodland";
 		};
 		
-		class 53rd_Hephaestus_Rucksack_JTAC_Desert
+		class 53rd_LR_Desert
 		{
 		model = "JTAC_LR";
 		Camo = "Desert";
 		};
         
-		class 53rd_Hephaestus_Rucksack_JTAC_Snow
+		class 53rd_LR_Winter
 		{
 		model = "JTAC_LR";
 		Camo = "Snow";

@@ -480,7 +480,7 @@ class CfgVehicles
 		};
 		picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
     };	
-//Rucksacks
+/*//Rucksacks
     class 53rd_Hephaestus_Rucksack_Basic: OPTRE_UNSC_Rucksack
     {
         dlc="53rd AUX";
@@ -524,7 +524,7 @@ class CfgVehicles
             "53rd_SC_Aux\tex\Backpacks\Soft_Backpack_co_53rd.paa"
         };
     }; 
-
+*/
 //NCO Stuff
 	class 53rd_Hephaestus_NCO_LR_515: OPTRE_ANPRC_515
     {
@@ -668,7 +668,7 @@ class CfgVehicles
         ace_hasReserveParachute = 1;
 	};
 
-//JTAC LR
+/*//JTAC LR
     class 53rd_Hephaestus_Rucksack_JTAC_Urban: OPTRE_ANPRC_521_Green
     {
         dlc="53rd AUX";
@@ -760,6 +760,7 @@ class CfgVehicles
         tf_hasLRradio=1;
         maximumLoad=450;
     };
+	*/
 
 
 };

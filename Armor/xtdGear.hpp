@@ -474,8 +474,7 @@ class XtdGearModels
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
-		};
-        
+		};   
         class AtlasTeamArmors
 		{
 			label = "Atlas Team Armors"
@@ -1303,7 +1302,7 @@ class XtdGearInfos
 		Visor = "No";
 		};
 		
-				///Beret
+		///Beret
 		class 53rd_Beret_Hephaestus
 		{
 		model = "HephaestusCamoHelmets";
@@ -1336,6 +1335,8 @@ class XtdGearInfos
 		Type = "Beret";
 		Visor = "No";
 		};
+		 
+		 
 		 
 		///No Visor
 		class 53rd_Apollo_Helmet_Urban_No_Visor
