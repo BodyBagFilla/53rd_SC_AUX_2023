@@ -23,8 +23,21 @@ class CfgPatches
 			"53rd_sniper_Hephaestus_unit",
 			"53rd_recon_Hephaestus_unit",
 			"53rd_Volare_airmen_unit",
-			"53rd_Volare_SA_unit",
-			"53rd_crewman_unit"
+			"53rd_crewman_unit",
+			"53rd_rifleman_Atlas_unit",
+			"53rd_rifleman_aa_Atlas_unit",
+			"53rd_rifleman_at_Atlas_unit",
+			"53rd_autorifleman_Atlas_unit",
+			"53rd_corpsman_Atlas_unit",
+			"53rd_recon_Atlas_unit",
+			"53rd_sniper_Atlas_unit",
+			"53rd_smg_Atlas_unit",
+			"53rd_sl_Atlas_unit",
+			"53rd_shotgun_Atlas_unit",
+			"53rd_rto_Atlas_unit",
+			"53rd_gl_Atlas_unit",
+			"53rd_marksman_Atlas_unit",
+			"53rd_officer_Atlas_unit"
 		};
 		weapons[]=
 		{
@@ -58,26 +71,35 @@ class cfgVehicles
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Men_Hephaestus";
 		displayName="(Hephaestus) Rifleman";
-		uniformClass="53rd_Hephaestus_BDU_Slim";
+		uniformClass="53rd_Rifleman_UB";
+		backpack="53rd_Rucksack_Urban";
 		linkedItems[]=
 		{
-			"53rd_Armor_Rifleman_Urban",
-			"53rd_Helmet_Normal_Urban",
+			"53rd_InvisVest",
+			"53rd_Rifleman_Helmet_Urban_No_Visor",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
 			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
 			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_Armor_Rifleman_Urban",
-			"53rd_Helmet_Normal_Urban",
+			"53rd_InvisVest",
+			"53rd_Rifleman_Helmet_Urban_No_Visor",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
 			"OPTRE_Biofoam",
 			"OPTRE_NVG"
 		};
@@ -131,7 +153,7 @@ class cfgVehicles
 	class 53rd_rifleman_aa_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
 		displayName="(Hephaestus) Rifleman AA";
-		backpack="OPTRE_UNSC_Rucksack_M41";
+		backpack="53rd_Rucksack_Heavy_Urban";
 		weapons[]=
 		{
 			"OPTRE_MA5C_AC",
@@ -191,7 +213,7 @@ class cfgVehicles
 	class 53rd_rifleman_at_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
 		displayName="(Hephaestus) Rifleman AT";
-		backpack="OPTRE_UNSC_Rucksack_M41";
+		backpack="53rd_Rucksack_Heavy_Urban";
 		weapons[]=
 		{
 			"OPTRE_MA5C_AC",
@@ -300,26 +322,37 @@ class cfgVehicles
 	class 53rd_corpman_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
 		displayName="(Hephaestus) Medic";
+        uniformClass="53rd_Uniform_Medic_UB"
 		linkedItems[]=
 		{
-			"53rd_Armor_Medic_Urban",
-			"53rd_Helmet_Normal_Urban",
+			"53rd_InvisVest",
+			"53rd_Rifleman_Helmet_Urban_Visor",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
 			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+            "ACE_surgicalKit",
 			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_Armor_Medic_Urban",
-			"53rd_Helmet_Normal_Urban",
+			"53rd_InvisVest",
+			"53rd_Rifleman_Helmet_Urban_Visor",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
 			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+            "ACE_surgicalKit",
 			"OPTRE_NVG"
 		};
 		weapons[]=
@@ -369,7 +402,7 @@ class cfgVehicles
 			"OPTRE_M2_Smoke_Green"
 		};
 		icon="iconManMedic";
-		backpack="OPTRE_UNSC_Rucksack_Medic_53rd";
+		backpack="53rd_Hephaestus_Medical_Satchel";
 	};
 	class 53rd_recon_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
@@ -424,7 +457,7 @@ class cfgVehicles
 		camouflage=0.5;
 		sensitivity=8;
 		threat[]={1.2,0.1,0.1};
-		backpack="OPTRE_ANPRC_515";
+		backpack="53rd_LR_Urban";
 	};
 	class 53rd_sniper_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
@@ -535,9 +568,9 @@ class cfgVehicles
 		displayName="(Hephaestus) Squad Leader";
 		linkedItems[]=
 		{
-			"53rd_Armor_SL_Urban",
-			"53rd_Helmet_Vac_Sealed_SPC_Urban",
-			"G_Aviator",
+			"53rd_InvisVest",
+			"OPTRE_PatrolCap_Navy",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -546,16 +579,16 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_Armor_SL_Urban",
-			"53rd_Helmet_Vac_Sealed_SPC_Urban",
-			"G_Aviator",
+			"53rd_InvisVest",
+			"OPTRE_PatrolCap_Navy",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
 			"OPTRE_NVG"
 		};
-		backpack="OPTRE_ANPRC_515";
+		backpack="53rd_LR_Urban";
 	};
 	class 53rd_shotgun_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
@@ -658,7 +691,7 @@ class cfgVehicles
 			"OPTRE_M2_Smoke",
 			"OPTRE_M2_Smoke_Green"
 		};
-		backpack="53rd_ANPRC_515";
+		backpack="53rd_LR_Urban";
 	};
 	class 53rd_gl_Hephaestus_unit: 53rd_rifleman_Hephaestus_unit
 	{
@@ -786,9 +819,9 @@ class cfgVehicles
 		displayName="(Hephaestus) Officer";
 		linkedItems[]=
 		{
-			"53rd_Armor_SL_Urban",
+			"53rd_InvisVest",
 			"53rd_Beret_Hephaestus",
-			"G_Aviator",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -797,9 +830,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_Armor_SL_Urban",
+			"53rd_InvisVest",
 			"53rd_Beret_Hephaestus",
-			"G_Aviator",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -862,9 +895,9 @@ class cfgVehicles
 		uniformClass="Volare_BDU_Bl";
 		linkedItems[]=
 		{
-			"53rd_V_Pilot_Armor_Black",
-			"53rd_VX19_Black_Helmet",
-			"G_Aviator",
+			"53rd_UNSC_Pilot_Armor_Blue",
+			"53rd_VX19_Blue_Helmet",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -873,9 +906,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_V_Pilot_Armor_Black",
-			"53rd_VX19_Black_Helmet",
-			"G_Aviator",
+			"53rd_UNSC_Pilot_Armor_Blue",
+			"53rd_VX19_Blue_Helmet",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -936,9 +969,9 @@ class cfgVehicles
 		uniformClass="Volare_BDU_Bl_NCO";
 		linkedItems[]=
 		{
-			"53rd_V_Pilot_Armor_Black_NCO",
+			"53rd_UNSC_Pilot_Armor_Black",
 			"53rd_VX19_Black_Helmet",
-			"G_Aviator",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -947,9 +980,9 @@ class cfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"53rd_V_Pilot_Armor_Black_NCO",
+			"53rd_UNSC_Pilot_Armor_Black",
 			"53rd_VX19_Black_Helmet",
-			"G_Aviator",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -958,412 +991,568 @@ class cfgVehicles
 		};
 	};
     
-    //Athena
-	class 53rd_rifleman_Athena_unit: 53rd_rifleman_Hephaestus_unit
-	{
-		displayName="(Athena) Rifleman";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_rifleman_aa_Athena_unit: 53rd_rifleman_aa_Hephaestus_unit
-	{
-		displayName="(Athena) Rifleman AA";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_rifleman_at_Athena_unit: 53rd_rifleman_at_Hephaestus_unit
-	{
-		displayName="(Athena) Rifleman AT";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_autorifleman_Athena_unit: 53rd_autorifleman_Hephaestus_unit
-	{
-		displayName="(Athena) Autorifleman";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_corpsman_Athena_unit: 53rd_corpman_Hephaestus_unit
-	{
-		displayName="(Athena) Corpsman";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Medic",
-			"53rd_Athena_Helmet_Medic",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Medic",
-			"53rd_Athena_Helmet_Medic",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_recon_Athena_unit: 53rd_recon_Hephaestus_unit
-	{
-		displayName="(Athena) Recon";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_sniper_Athena_unit: 53rd_sniper_Hephaestus_unit
-	{
-		displayName="(Athena) Sniper";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_smg_Athena_unit: 53rd_smg_Hephaestus_unit
-	{
-		displayName="(Athena) SMG";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_sl_Athena_unit: 53rd_sl_Hephaestus_unit
-	{
-		displayName="(Athena) Squad Leader";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_SL",
-			"53rd_Athena_Helmet_NCO",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_SL",
-			"53rd_Athena_Helmet_NCO",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_shotgun_Athena_unit: 53rd_shotgun_Hephaestus_unit
-	{
-		displayName="(Athena) Shotgun";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};	
-	class 53rd_rto_Athena_unit: 53rd_rto_Hephaestus_unit
-	{
-		displayName="(Athena) RTO";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	
-	class 53rd_gl_Athena_unit: 53rd_gl_Hephaestus_unit
-	{
-		displayName="(Athena) Grenadier";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"Hephaestus_GL_Armor",
-			"53rd_CH252_GREY_HEV_Sealed_SPC_SLV",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_marksman_Athena_unit: 53rd_marksman_Hephaestus_unit
-	{
-		displayName="(Athena) Marksman";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_Rifleman",
-			"53rd_Athena_Helmet_Rifleman",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
-	class 53rd_officer_Athena_unit: 53rd_officer_Hephaestus_unit
-	{
-		displayName="(Athena) Officer";
-		linkedItems[]=
-		{
-			"53rd_Athena_Armor_SL",
-			"53rd_Beret_Athena",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		respawnLinkedItems[]=
-		{
-			"53rd_Athena_Armor_SL",
-			"53rd_Beret_Athena",
-			"G_Aviator",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio",
-			"OPTRE_NVG"
-		};
-		editorSubcategory="53rd_Men_Athena";
-	};
     
     //Crew
 	class 53rd_crewman_unit: 53rd_smg_Hephaestus_unit
 	{
 		displayName="(Hephaestus) Crewman";
-		uniformClass="VES_BDU_SS_Evolved_Slim";
+		uniformClass="53rd_Apollo_UB_NS";
 		linkedItems[]=
 		{
 			"53rd_Armor_Rifleman_Urban",
-			"H_MilCap_gry",
-			"G_Aviator",
+			"53rd_Apollo_Helmet_Urban_No_Visor",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
 			"OPTRE_NVG"
 		};
 		respawnLinkedItems[]=
 		{
 			"53rd_Armor_Rifleman_Urban",
-			"H_MilCap_gry",
-			"G_Aviator",
+			"53rd_Apollo_Helmet_Urban_No_Visor",
+			"VES_HUD_RayBans",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+    
+    
+    //Atlas
+	class 53rd_rifleman_Atlas_unit: 53rd_rifleman_Hephaestus_unit
+	{
+		displayName="(Atlas) Rifleman";
+ 		uniformClass="53rd_A_Rifleman_UB";
+        editorCategory = "53rd_cat_faction";
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_rifleman_aa_Atlas_unit: 53rd_rifleman_aa_Hephaestus_unit
+	{
+		displayName="(Atlas) Rifleman AA";
+ 		uniformClass="53rd_A_Rifleman_UB";
+        editorCategory = "53rd_cat_faction";
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_rifleman_at_Atlas_unit: 53rd_rifleman_at_Hephaestus_unit
+	{
+		displayName="(Atlas) Rifleman AT";
+ 		uniformClass="53rd_A_Rifleman_UB";
+        editorCategory = "53rd_cat_faction";
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_autorifleman_Atlas_unit: 53rd_autorifleman_Hephaestus_unit
+	{
+		displayName="(Atlas) Autorifleman";
+ 		uniformClass="53rd_A_Rifleman_UB";
+        editorCategory = "53rd_cat_faction";
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_corpsman_Atlas_unit: 53rd_corpman_Hephaestus_unit
+	{
+		displayName="(Atlas) Medic";
+ 		uniformClass="53rd_A_Rifleman_UB";
+        editorCategory = "53rd_cat_faction";
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_Atlas_Armor_Medic",
+			"53rd_A_Medic_Helmet_Urban_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_Atlas_Armor_Medic",
+			"53rd_A_Medic_Helmet_Urban_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_recon_Atlas_unit: 53rd_recon_Hephaestus_unit
+	{
+		displayName="(Atlas) Recon";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Medic_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Medic_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_sniper_Atlas_unit: 53rd_sniper_Hephaestus_unit
+	{
+		displayName="(Atlas) Sniper";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_smg_Atlas_unit: 53rd_smg_Hephaestus_unit
+	{
+		displayName="(Atlas) SMG";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_sl_Atlas_unit: 53rd_sl_Hephaestus_unit
+	{
+		displayName="(Atlas) Squad Leader";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"Atlas_Scout_Urban",
+			"VES_HUD_RayBans",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"Atlas_Scout_Urban",
+			"VES_HUD_RayBans",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_shotgun_Atlas_unit: 53rd_shotgun_Hephaestus_unit
+	{
+		displayName="(Atlas) Shotgun";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};	
+	class 53rd_rto_Atlas_unit: 53rd_rto_Hephaestus_unit
+	{
+		displayName="(Atlas) RTO";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	
+	class 53rd_gl_Atlas_unit: 53rd_gl_Hephaestus_unit
+	{
+		displayName="(Atlas) Grenadier";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"Hephaestus_GL_Armor",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_marksman_Atlas_unit: 53rd_marksman_Hephaestus_unit
+	{
+		displayName="(Atlas) Marksman";
+ 		uniformClass="53rd_A_Rifleman_UB"; 		
+        editorCategory = "53rd_cat_faction"; 		
+        editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"53rd_A_Rifleman_Helmet_Urban_No_Visor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+	};
+	class 53rd_officer_Atlas_unit: 53rd_officer_Hephaestus_unit
+	{
+		displayName="(Atlas) Officer";
+		uniformClass="53rd_A_P_Rifleman_UB";
+		editorCategory = "53rd_cat_faction";
+		editorSubcategory="53rd_Men_Atlas";
+		linkedItems[]=
+		{
+			"53rd_InvisVest",
+			"OPTRE_PatrolCap_Navy",
+			"VES_HUD_RayBans",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_NVG"
+		};
+		respawnLinkedItems[]=
+		{
+			"53rd_InvisVest",
+			"OPTRE_PatrolCap_Navy",
+			"VES_HUD_RayBans",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
+			"OPTRE_Biofoam",
 			"OPTRE_NVG"
 		};
 	};
