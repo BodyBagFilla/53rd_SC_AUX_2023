@@ -110,12 +110,27 @@ class XtdGearModels
 			class Section
 			{
 				label = "Section";
-				values[] = {"Reservist","Atlas","Apollo","OneOne","OneTwo","OneThree","TwoOne","TwoTwo","TwoThree"};
+				values[] = {"Reservist","S1_1","S1_2","S1_3","Atlas","Apollo"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Reservist
 				{
 					label = "Reservist";
+					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class S1_1
+				{
+					label = "1-1";
+					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class S1_2
+				{
+					label = "1-2";
+					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class S1_3
+				{
+					label = "1-3";
 					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
 				};
 				class Atlas
@@ -189,7 +204,7 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Beanies","Booines","Soft_Cap","Beret","CrewHelmet","Platoon","Mike"};
+				values[] = {"Rifleman","Sealed","Medic","Beanies","Booines","Soft_Cap","Beret","CrewHelmet","Platoon","Mike"};
 				class Regular
 				{
 					label = "Rifleman";
@@ -198,26 +213,6 @@ class XtdGearModels
 				class Medic
 				{
 					label = "Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Autorifleman
-				{
-					label = "Autorifleman";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Anti_Tank
-				{
-					label = "Anti_Tank";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class JTAC
-				{
-					label = "JTAC";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Grenadier
-				{
-					label = "Grenadier";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Beanies
@@ -536,8 +531,47 @@ class XtdGearInfos
 {
     class CfgWeapons 
     {
-		//Reservist
-		//Urban
+        
+		class 53rd_Sealed_Urban
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Urban";
+		Type = "Sealed";
+		Visor = "Yes";
+		};
+        class 53rd_Sealed_Desert:53rd_Sealed_Urban
+		{
+		Camo = "Desert";
+		};
+        class 53rd_Sealed_Woodland:53rd_Sealed_Urban
+		{
+		Camo = "Woodland";
+		};
+        class 53rd_Sealed_Winter:53rd_Sealed_Urban
+		{
+		Camo = "Winter";
+		};
+        
+        class 53rd_Sealed_Urban_dp:53rd_Sealed_Urban
+		{
+		Visor = "No";
+		};
+        class 53rd_Sealed_Desert_dp:53rd_Sealed_Urban_dp
+		{
+		Camo = "Desert";
+		};
+        class 53rd_Sealed_Woodland_dp:53rd_Sealed_Urban_dp
+		{
+		Camo = "Woodland";
+		};
+        class 53rd_Sealed_Winter_dp:53rd_Sealed_Urban_dp
+		{
+		Camo = "Winter";
+		};
+        
+        //Urban
+		//Rifleman
 		//No Visor
 		class 53rd_Rifleman_Helmet_Urban_No_Visor
 		{
@@ -547,49 +581,18 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "No";
 		};
-		class 53rd_Medic_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
+		class 53rd_1_1_Rifleman_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Medic";
-		Visor = "No";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
+		class 53rd_1_2_Rifleman_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "JTAC";
-		Visor = "No";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
+		class 53rd_1_3_Rifleman_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Grenadier";
-		Visor = "No";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Autorifleman";
-		Visor = "No";
-		};
-		class 53rd_AT_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Anti_Tank";
-		Visor = "No";
-		};
-		
-		//Reservist
-		//Urban
 		//Visor
 		class 53rd_Rifleman_Helmet_Urban_Visor
 		{
@@ -599,49 +602,21 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "Yes";
 		};
-		class 53rd_Medic_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
+		class 53rd_1_1_Rifleman_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Medic";
-		Visor = "Yes";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
+		class 53rd_1_2_Rifleman_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "JTAC";
-		Visor = "Yes";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
+		class 53rd_1_3_Rifleman_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Grenadier";
-		Visor = "Yes";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Autorifleman";
-		Visor = "Yes";
-		};
-		class 53rd_AT_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Anti_Tank";
-		Visor = "Yes";
-		};
-		
-		//Reservist
-		//Desert
+        
+        //Desert
+		//Rifleman
 		//No Visor
 		class 53rd_Rifleman_Helmet_Desert_No_Visor
 		{
@@ -651,50 +626,19 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "No";
 		};
-		class 53rd_Medic_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
+		class 53rd_1_1_Rifleman_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Medic";
-		Visor = "No";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
+		class 53rd_1_2_Rifleman_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "JTAC";
-		Visor = "No";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
+		class 53rd_1_3_Rifleman_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Grenadier";
-		Visor = "No";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Autorifleman";
-		Visor = "No";
-		};
-		class 53rd_AT_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Anti_Tank";
-		Visor = "No";
-		};
-		
-		//Reservist
-		//Desert
-		//Visor
+        //Visor
 		class 53rd_Rifleman_Helmet_Desert_Visor
 		{
 		model = "HephaestusCamoHelmets";
@@ -703,49 +647,21 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "Yes";
 		};
-		class 53rd_Medic_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
+		class 53rd_1_1_Rifleman_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Medic";
-		Visor = "Yes";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
+		class 53rd_1_2_Rifleman_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "JTAC";
-		Visor = "Yes";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
+		class 53rd_1_3_Rifleman_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Grenadier";
-		Visor = "Yes";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Autorifleman";
-		Visor = "Yes";
-		};
-		class 53rd_AT_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Desert";
-		Type = "Anti_Tank";
-		Visor = "Yes";
-		};
-		
-		//Reservist
-		//Woodland
+        
+        //Woodland
+		//Rifleman
 		//No Visor
 		class 53rd_Rifleman_Helmet_Woodland_No_Visor
 		{
@@ -755,49 +671,18 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "No";
 		};
-		class 53rd_Medic_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
+		class 53rd_1_1_Rifleman_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Medic";
-		Visor = "No";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
+		class 53rd_1_2_Rifleman_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "JTAC";
-		Visor = "No";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
+		class 53rd_1_3_Rifleman_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Grenadier";
-		Visor = "No";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Autorifleman";
-		Visor = "No";
-		};
-		class 53rd_AT_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Anti_Tank";
-		Visor = "No";
-		};
-		
-		//Reservist
-		//Woodland
 		//Visor
 		class 53rd_Rifleman_Helmet_Woodland_Visor
 		{
@@ -807,49 +692,21 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "Yes";
 		};
-		class 53rd_Medic_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
+		class 53rd_1_1_Rifleman_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Medic";
-		Visor = "Yes";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
+		class 53rd_1_2_Rifleman_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "JTAC";
-		Visor = "Yes";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
+		class 53rd_1_3_Rifleman_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Grenadier";
-		Visor = "Yes";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Autorifleman";
-		Visor = "Yes";
-		};
-		class 53rd_AT_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Woodland";
-		Type = "Anti_Tank";
-		Visor = "Yes";
-		};
-		
-		//Reservist
-		//Winter
+        
+        //Winter
+		//Rifleman
 		//No Visor
 		class 53rd_Rifleman_Helmet_Winter_No_Visor
 		{
@@ -859,49 +716,18 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "No";
 		};
-		class 53rd_Medic_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
+		class 53rd_1_1_Rifleman_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Medic";
-		Visor = "No";
+		Section = "S1_1";
 		};
-		class 53rd_JTAC_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
+		class 53rd_1_2_Rifleman_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "JTAC";
-		Visor = "No";
+		Section = "S1_2";
 		};
-		class 53rd_Grenaider_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
+		class 53rd_1_3_Rifleman_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Grenadier";
-		Visor = "No";
+		Section = "S1_3";
 		};
-		class 53rd_Autorifleman_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Autorifleman";
-		Visor = "No";
-		};
-		class 53rd_AT_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Anti_Tank";
-		Visor = "No";
-		};
-		
-		//Reservist
-		//Winter
 		//Visor
 		class 53rd_Rifleman_Helmet_Winter_Visor
 		{
@@ -911,7 +737,179 @@ class XtdGearInfos
 		Type = "Rifleman";
 		Visor = "Yes";
 		};
-		class 53rd_Medic_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		class 53rd_1_1_Rifleman_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Rifleman_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Rifleman_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		{
+		Section = "S1_3";
+		};
+        
+        //Urban
+		//Medic
+		//No Visor
+		class 53rd_Medic_Helmet_Urban_No_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Urban";
+		Type = "Medic";
+		Visor = "No";
+		};
+		class 53rd_1_1_Medic_Helmet_Urban_NVisor:53rd_Medic_Helmet_Urban_No_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Urban_NVisor:53rd_Medic_Helmet_Urban_No_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Urban_NVisor:53rd_Medic_Helmet_Urban_No_Visor
+		{
+		Section = "S1_3";
+		};
+		//Visor
+		class 53rd_Medic_Helmet_Urban_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Urban";
+		Type = "Medic";
+		Visor = "Yes";
+		};
+		class 53rd_1_1_Medic_Helmet_Urban_Visor:53rd_Medic_Helmet_Urban_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Urban_Visor:53rd_Medic_Helmet_Urban_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Urban_Visor:53rd_Medic_Helmet_Urban_Visor
+		{
+		Section = "S1_3";
+		};
+        
+        //Desert
+		//Medic
+		//No Visor
+		class 53rd_Medic_Helmet_Desert_No_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Desert";
+		Type = "Medic";
+		Visor = "No";
+		};
+		class 53rd_1_1_Medic_Helmet_Desert_NVisor:53rd_Medic_Helmet_Desert_No_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Desert_NVisor:53rd_Medic_Helmet_Desert_No_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Desert_NVisor:53rd_Medic_Helmet_Desert_No_Visor
+		{
+		Section = "S1_3";
+		};
+        //Visor
+		class 53rd_Medic_Helmet_Desert_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Desert";
+		Type = "Medic";
+		Visor = "Yes";
+		};
+		class 53rd_1_1_Medic_Helmet_Desert_Visor:53rd_Medic_Helmet_Desert_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Desert_Visor:53rd_Medic_Helmet_Desert_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Desert_Visor:53rd_Medic_Helmet_Desert_Visor
+		{
+		Section = "S1_3";
+		};
+        
+        //Woodland
+		//Medic
+		//No Visor
+		class 53rd_Medic_Helmet_Woodland_No_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Woodland";
+		Type = "Medic";
+		Visor = "No";
+		};
+		class 53rd_1_1_Medic_Helmet_Woodland_NVisor:53rd_Medic_Helmet_Woodland_No_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Woodland_NVisor:53rd_Medic_Helmet_Woodland_No_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Woodland_NVisor:53rd_Medic_Helmet_Woodland_No_Visor
+		{
+		Section = "S1_3";
+		};
+		//Visor
+		class 53rd_Medic_Helmet_Woodland_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Woodland";
+		Type = "Medic";
+		Visor = "Yes";
+		};
+		class 53rd_1_1_Medic_Helmet_Woodland_Visor:53rd_Medic_Helmet_Woodland_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Woodland_Visor:53rd_Medic_Helmet_Woodland_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Woodland_Visor:53rd_Medic_Helmet_Woodland_Visor
+		{
+		Section = "S1_3";
+		};
+        
+        //Winter
+		//Medic
+		//No Visor
+		class 53rd_Medic_Helmet_Winter_No_Visor
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Reservist";
+		Camo = "Winter";
+		Type = "Medic";
+		Visor = "No";
+		};
+		class 53rd_1_1_Medic_Helmet_Winter_NVisor:53rd_Medic_Helmet_Winter_No_Visor
+		{
+		Section = "S1_1";
+		};
+		class 53rd_1_2_Medic_Helmet_Winter_NVisor:53rd_Medic_Helmet_Winter_No_Visor
+		{
+		Section = "S1_2";
+		};
+		class 53rd_1_3_Medic_Helmet_Winter_NVisor:53rd_Medic_Helmet_Winter_No_Visor
+		{
+		Section = "S1_3";
+		};
+		//Visor
+		class 53rd_Medic_Helmet_Winter_Visor
 		{
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
@@ -919,40 +917,20 @@ class XtdGearInfos
 		Type = "Medic";
 		Visor = "Yes";
 		};
-		class 53rd_JTAC_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		class 53rd_1_1_Medic_Helmet_Winter_Visor:53rd_Medic_Helmet_Winter_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "JTAC";
-		Visor = "Yes";
+		Section = "S1_1";
 		};
-		class 53rd_Grenaider_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		class 53rd_1_2_Medic_Helmet_Winter_Visor:53rd_Medic_Helmet_Winter_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Grenadier";
-		Visor = "Yes";
+		Section = "S1_2";
 		};
-		class 53rd_Autorifleman_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
+		class 53rd_1_3_Medic_Helmet_Winter_Visor:53rd_Medic_Helmet_Winter_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Autorifleman";
-		Visor = "Yes";
-		};
-		class 53rd_AT_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Winter";
-		Type = "Anti_Tank";
-		Visor = "Yes";
+		Section = "S1_3";
 		};
 		
-		//Atlas Reservist
+		//Atlas Reservist/////////////////////////////////////
 		//No Visor
 		class 53rd_A_Rifleman_Helmet_Urban_No_Visor
 		{

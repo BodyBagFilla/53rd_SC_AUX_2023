@@ -5,7 +5,7 @@ class cfgPatches
     units[]={"53rd_MEDIC","53rd_AA_RIFLEMAN","53rd_AT_RIFLEMAN","53rd_Sniper","53rd_RIFLEMAN","53rd_OFFICER","53rd_AUTO_RIFLEMAN","53rd_Squad_Leader","53rd_Special_Warfare_Operator","53rd_Special_Weapons_Operator_ARC","53rd_Special_Warfare_Commander","53rd_Pilot","53rd_RIFLEMAN_G","53rd_Marksmen","53rd_Special_Warfare_Operator_Breacher","53rd_Special_Warfare_Operator_Marksman","53rd_Special_Warfare_Operator_AT","53rd_AT_GUN","53rd_UH_144A_FALCON","53rd_D77H_TCI_Pelican","53rd_ZAMAK_MRL","53rd_Tusk","53rd_M12_LRV_MG","53rd_M1015_Mule_Medical","53rd_KATATEL_HMG","53rd_Karatel"};
     weapons[]={};
     requiredVersion=0.1;
-    requiredAddons[]={"OPTRE_Weapons_Items","A3_Weapons_F","Commando","A3_Characters_F_Enoch","A3_Weapons_F_Enoch_Launchers_Titan","OPTRE_Weapons_Rockets","OPTRE_Weapons_SRM77","OPTRE_Weapons_BR","OPTRE_Weapons_Pistol","OPTRE_Weapons_MG","A3_Weapons_F_Exp_Rifles_AK12","A3_Weapons_F_Enoch_Rifles_MSBS","OPTRE_FC_Weapons_Railgun","A3_Weapons_F_Enoch_Machineguns_M200","OPTRE_UNSC_Units_Army","OPTRE_Weapons_DMR","OPTRE_Weapons_AR"};
+    requiredAddons[]={};
   };
 };
 

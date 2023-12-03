@@ -815,44 +815,6 @@ class OPTRE_M875_SPH;
 				gunnerOutOpticsModel="";
 				gunnerOutOpticsEffect[]={};
 				gunnerOpticsEffect[]={};
-				class OpticsIn
-				{
-					class Wide: ViewOptics
-					{
-						initAngleX=0;
-						minAngleX=-30;
-						maxAngleX=30;
-						initAngleY=0;
-						minAngleY=-100;
-						maxAngleY=100;
-						initFov=0.30000001;
-						minFov=0.30000001;
-						maxFov=0.30000001;
-						visionMode[]=
-						{
-							"Normal",
-							"NVG",
-							"Ti"
-						};
-						thermalMode[]={0,1};
-						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
-						gunnerOpticsEffect[]={};
-					};
-					class Medium: Wide
-					{
-						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
-						initFov=0.07;
-						minFov=0.07;
-						maxFov=0.07;
-					};
-					class Narrow: Wide
-					{
-						gunnerOpticsModel="\A3\weapons_f\reticle\Optics_Commander_02_F";
-						initFov=0.028000001;
-						minFov=0.028000001;
-						maxFov=0.028000001;
-					};
-				};
 				gunnerGetInAction="GetInAMV_cargo";
 				gunnerGetOutAction="GetOutLow";
 				gunnerName="Commander";
