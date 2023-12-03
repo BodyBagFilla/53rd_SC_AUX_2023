@@ -16,17 +16,17 @@ class XtdGearModels
 				class Apollo
 				{
 					label = "Apollo";
-					image = "#(rgb210,180,140)color(0.4,0.4,0.4,1)";
+					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
 				};
 				class Hephaestus
 				{
 					label = "Hephaestus";
-					image = "#(rgb113,121,126)color(0.8,0.8,0.8,1)";
+					image = "#(rgb,113,121,126)color(0.8,0.8,0.8,1)";
 				};
 				class Atlas
 				{
 					label = "Atlas";
-					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
 			};
 			class Camo
@@ -116,12 +116,12 @@ class XtdGearModels
 				class Reservist
 				{
 					label = "Reservist";
-					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
 				class S1_1
 				{
 					label = "1-1";
-					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
 				class S1_2
 				{
@@ -131,17 +131,17 @@ class XtdGearModels
 				class S1_3
 				{
 					label = "1-3";
-					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
 				class Atlas
 				{
 					label = "Atlas";
-					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
 				class Apollo
 				{
 					label = "Apollo";
-					image = "#(rgb210,180,140)color(0.4,0.4,0.4,1)";
+					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
 				};
 			};
 			class Camo
