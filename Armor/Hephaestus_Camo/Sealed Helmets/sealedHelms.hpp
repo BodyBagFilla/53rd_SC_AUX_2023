@@ -1,34 +1,3 @@
-class CfgPatches {
-	class Hephaestus_Sealed_Helmets_Redux {
-		units[] = 
-        {
-        };
-		weapons[] = 
-        {	
-        };
-		requiredVersion = 0.100000;
-		requiredAddons[] = {};
-	};
-};
-class cfgWeapons 
-{	
-    class ItemInfo;
-    class UniformItem;
-	class HeadgearItem;
-	class VestItem;
-	class Hands;
-	class Pelvis;
-	class VES_CH252D;
-	class VES_CH252D_dp;
-	class VES_CH252_MAR_Vacuum_dp:VES_CH252D_dp
-	{
-	class ItemInfo;
-	};
-	class VES_CH252_MAR_Vacuum:VES_CH252D
-	{
-	class ItemInfo;
-	};
-///////////////////////////////////////////////////////////
 	class 53rd_Sealed_Urban : VES_CH252_MAR_Vacuum
     {
 		author="Vespade & Baseplate";
@@ -126,6 +95,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Sealed Helmets\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
+///////////////////////////////////////////////////////////////////////////////
     class 53rd_Sealed_Urban_dp: VES_CH252_MAR_Vacuum_dp
 	{
 		author="Vespade & Baseplate & Body";
@@ -223,4 +193,3 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Sealed Helmets\53rd_Hephaestus_Visor_Silver.paa"
 		};
     };
-};

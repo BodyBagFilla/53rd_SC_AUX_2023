@@ -1,0 +1,1019 @@
+////Rifleman///////////////////////////////////////////////////
+class 53rd_Rifleman_SN: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Winter Rifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Snow_Camo_Rifleman";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Rifleman_WD: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Woodland Rifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Woodland_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Woodland_Camo_Rifleman";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Rifleman_UB: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Urban Rifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Urban_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Urban_Camo_Rifleman";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Rifleman_DS: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Desert Rifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Desert_Camo_Rifleman";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+////Medic////
+class 53rd_Uniform_Medic_SN: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Winter Medic";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Winter_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Winter_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Medic_Snow_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_Medic_WD: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Woodland Medic";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Woodland_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Woodland_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Medic_Woodland_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_Medic_UB: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Urban Medic";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Urban_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Urban_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Medic_Urban_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_Medic_DS: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Desert Medic";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Desert_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Desert_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Medic_Desert_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+////Anti-Tank////
+class 53rd_Uniform_AT_SN: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Winter Anti-Tank";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Winter_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Winter_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AT_Snow_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_AT_WD: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Woodland Anti-Tank";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Woodland_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Woodland_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AT_Woodland_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_AT_UB: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Urban Anti-Tank";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Urban_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Urban_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AT_Urban_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_AT_DS: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Desert Anti-Tank";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Desert_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Desert_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AT_Desert_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+////Autorifle////
+class 53rd_Uniform_AR_SN: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Winter AutoRifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Winter_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Winter_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AR_Snow_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_AR_WD: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Woodland AutoRifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Woodland_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Woodland_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AR_Woodland_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_AR_UB: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Urban AutoRifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Urban_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Urban_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AR_Urban_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_AR_DS: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Desert AutoRifleman";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_AR_Desert_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+////Grenadier////
+class 53rd_Uniform_GL_SN: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Winter Grenadier";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_GL_Snow_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_GL_WD: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Woodland Grenadier";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Woodland_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Woodland_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_GL_Woodland_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_GL_UB: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Urban Grenadier";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Urban_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Urban_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_GL_Urban_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_GL_DS: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Desert Grenadier";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Desert_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Desert_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_GL_Desert_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+////JTAC////
+class 53rd_Uniform_JTAC_SN: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Winter JTAC";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Winter_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Winter_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_JTAC_Snow_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_JTAC_WD: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Woodland JTAC";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Woodland_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Woodland_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_JTAC_Woodland_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_JTAC_UB: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Urban JTAC";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Urban_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Urban_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_JTAC_Urban_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_Uniform_JTAC_DS: 53rd_U_Base_uniform_W
+{
+    author="53rd Mod Team";
+    scope=2;
+    scopeArsenal=2;
+    side=1;
+    allowedSlots[]={901};
+    displayName="[53rd] Desert JTAC";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Desert_co.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Desert_co.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_JTAC_Desert_Camo_Test";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
