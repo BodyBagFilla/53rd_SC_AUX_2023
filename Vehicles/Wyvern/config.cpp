@@ -37,7 +37,7 @@ class CfgVehicles
 			"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT01_co.paa",
 			"53rd_SC_aux\Vehicles\Wyvern\53_VTOL_02_EXT02_co.paa",
 			"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT03_L_co.paa",
-			"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"
+			"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT03_L_co.paa",
 		};
 		textureList[]=
 		{
@@ -55,7 +55,7 @@ class CfgVehicles
 				"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT01_co.paa",
 				"53rd_SC_aux\Vehicles\Wyvern\53_VTOL_02_EXT02_co.paa",
 				"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT03_L_co.paa",
-				"\A3\Air_F_Exp\VTOL_02\Data\VTOL_02_EXT03_R_CO.paa"
+				"53rd_SC_aux\Vehicles\Wyvern\53rd_VTOL_02_EXT03_L_co.paa",
 				};
 				materials[]={};
 				factions[]=

@@ -1480,6 +1480,7 @@ class Eventhandlers;
 			};
 		};
 	};
+	/*
 	class 53rd_Pelican_SOCOM: OPTRE_Pelican_armed_SOCOM
 	{
 		displayName="(53rd) SOCOM Pelican";
@@ -1743,6 +1744,7 @@ class Eventhandlers;
 			1
 		};
 	};
+	*/
 	class 53rd_UNSC_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
 	{
 		scope=2;
@@ -2452,6 +2454,7 @@ class Eventhandlers;
 			};
 		};
 	};
+	/*
 	class 53rd_Carryyall: TG_Orca_CarryAll_GDI_01
 		{
 			dlc="53rd";
@@ -2646,4 +2649,5 @@ class Eventhandlers;
 				};
 			};
 		};
+		*/
 };

@@ -1,4 +1,4 @@
-/*	class CfgPatches
+	class CfgPatches
 	{
 		class 53rd_Vehicles_Wildebeest
 		{
@@ -74,7 +74,7 @@
 			};
 			hiddenSelectionsTextures[]=
 			{
-				"53rd_SC_aux\Vehicles\Beast\53rd_Exterior_CO.paa",
+				"53rd_SC_aux\Vehicles\Beast\Exterior_CO.paa",
 				"OPTRE_Vehicles\Wildebeest\data\interior_co.paa"
 			};
 		};

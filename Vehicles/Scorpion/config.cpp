@@ -1,6 +1,6 @@
 class CfgPatches {
 	class 53rd_Land_Scorpion {
-		units[] = {"53rd_Scorpion","53rd_Scorpion_125","53rd_ONI_Scorpion","53rd_CORP_Scorpion","53rd_M875_SPH","53rd_M875_SPH_SPC"};
+		units[] = {"53rd_Scorpion","53rd_Scorpion_125","53rd_M808B_FD","53rd_M808B_Base","53rd_ONI_Scorpion","53rd_CORP_Scorpion","53rd_M875_SPH","53rd_M875_SPH_SPC"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[]={"OPTRE_Core"};
@@ -259,8 +259,8 @@ class CfgVehicles
 		class ViewCargo;
 		class HeadLimits;
 	};
-class OPTRE_M808BM_Base;
-class OPTRE_M875_SPH;
+	class OPTRE_M808BM_Base;
+	class OPTRE_M875_SPH;
 
 	class 53rd_Scorpion: OPTRE_M808BM_Base
 	{
@@ -987,5 +987,273 @@ class OPTRE_M875_SPH;
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa"
 		};
 	};
+	class B_MBT_01_cannon_F;
+	class DMNS_M808B:B_MBT_01_cannon_F
+	{
+		class Turrets
+		{
+			class MainTurret
+			{
+				class Turrets
+				{
+					weapons[]=
+					{
+						"DMNS_90mm_M512",
+						"DMNS_M247T_Coax",
+						"SmokeLauncher"
+					};
+					magazines[]=
+					{
+						"DMNS_64Rnd_90mm_APBC",
+						"DMNS_32Rnd_90mm_SAPHE",
+						"DMNS_32Rnd_90mm_HEAT",
+						"OPTRE_10Rnd_90mm_S1",
+						"DMNS_500Rnd_127x99_Mag_Tracer",
+						"DMNS_500Rnd_127x99_Mag_Tracer",
+						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
+						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
+						"SmokeLauncherMag"
+					};
+				};
+			};
+		};
+	};
+	class DMNS_M808B_F: DMNS_M808B
+	{
+	};
+	class 53rd_M808B_Base: DMNS_M808B_F
+	{
+		author="DemonicOnPc & Body";
+		scope=2;
+		scopeArsenal=2;
+		scopeCurator=2;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Tank";
+		displayName="[53rd] M808B Scorpion MBT";
+		model="\DMNS\DMNS_Armour\M808B_Scorpion\Scoprion_base.p3d";
+		picture="\OPTRE_Vehicles_Tracked\Scorpion\data\UI\M808B_MBT_ca.paa";
+		icon="\OPTRE_Vehicles_Tracked\Scorpion\data\UI\map_M808B_ca.paa";
+		editorPreview="\OPTRE_Vehicles_Tracked\M808B2\data\OPTRE_M808S.jpg";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"clan",
+			"clan_text",
+			"insignia"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BFront.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"
+		};
+		class TextureSources
+        {
+			class colorsStandard
+			{
+				displayName="Standard";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BFront.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"
+				};
+			};
+			class color5_6
+			{
+				displayName="Apollo 5-6 'Undertaker'";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\56Apollo.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"
+				};
+			};
+			class color5_0
+			{
+				displayName="Apollo 5-0 'Helios'";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\50Apollo.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};			
+			class colorApollo1
+			{
+				displayName="Apollo 5-1 'Fafnir'";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\1Apollo.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};				
+			class colorApollo2
+			{
+				displayName="Apollo 5-2 'Jaeger'";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\2Apollo.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};
+/*			
+			class colorApollo3
+			{
+				displayName="Apollo 5-3 'TBD'";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BFront.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};
+*/			
+			class colorApollo4
+			{
+				displayName="Ajax";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\Alpha.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};	
+			class colorBravo
+			{
+				displayName="Basilisk";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\Bravo.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};	
+			class colorCharlie
+			{
+				displayName="Chimera";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\Charlie.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};	
+			class colorDelta
+			{
+				displayName="Dryad";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHull.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurret.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\Delta.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRear.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommander.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};
+			class colorHotelV2
+			{
+				displayName="Hotel Actual 'Anvil'";
+				author="DemonicOnPC";
+				textures[]=
+				{
+			"53rd_SC_aux\Vehicles\Scorpion\M808BHullHQ.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BTurretHQ.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\Callsign\HQAnvil.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BRearHQ.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808BCommanderHQ.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1HQ.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2HQ.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+				};
+			};			
+			
+        };
+        ace_cargo_space = 6;
+        ace_cargo_hasCargo = 6;
+        class ACE_Cargo
+        {
+            class Cargo
+            {
+                class ACE_track
+                {
+                    type = "ACE_track";
+                    amount = 4;
+                };
+            };
+        };
+    };
 };
 

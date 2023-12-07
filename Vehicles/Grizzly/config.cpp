@@ -39,16 +39,16 @@ class OPTRE_M850_UNSC;
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\Grizzly\tex\turret_weapons_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\back_box_standard_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\block_for_tracks_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\body_standard_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\cannon_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\details_standard_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\front_box_standard_co.paa",
-			"53rd_SC_aux\Vehicles\Grizzly\tex\turret_standard_co.paa",
-            "53rd_SC_aux\Vehicles\Grizzly\tex\glass_co.paa",
-            "53rd_SC_aux\Vehicles\Grizzly\tex\lights_co.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\turret_weapons_co.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyRear.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyTracks.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyHull.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyCannon.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyDetails1.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyFront.paa",
+			"53rd_SC_aux\Vehicles\Grizzly\53GrizzlyTurret.paa",
+            "53rd_SC_aux\Vehicles\Grizzly\glass_co.paa",
+            "53rd_SC_aux\Vehicles\Grizzly\lights_co.paa",
 		};
 	};
 };

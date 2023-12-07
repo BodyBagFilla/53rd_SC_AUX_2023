@@ -34,105 +34,17 @@ class CfgVehicles
 				author="Article 2 Studios";
 				textures[]=
 				{
-					"53rd_SC_aux\Vehicles\Oryx\oryx_armor_grey_co.paa",
-					"53rd_SC_aux\Vehicles\Oryx\oryx_main_grey_co.paa",
+					"53rd_SC_aux\Vehicles\Oryx\Oryx_Armor.paa",
+					"53rd_SC_aux\Vehicles\Oryx\Oryx_Hull.paa",
 					"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
 					"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
 					"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
-					"53rd_SC_aux\Vehicles\Oryx\oryx_turret_grye_co.paa",
-					"53rd_SC_aux\Vehicles\Oryx\Scorpion_mg_grey_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
-				};
-			};
-			class colordes
-			{
-				displayName="Tan";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_desert_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_desert_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_desert_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_desert_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_desert_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
-				};
-			};
-			class colortund
-			{
-				displayName="White Digital";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_tundra_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_tundra_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_tundra_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_tundra_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_tundra_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
-				};
-			};
-			class colorjung
-			{
-				displayName="Green Digital";
-				author="Article 2 Studios";
-				textures[]=
-				{
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_armor_jungle_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_main_jungle_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_jungle_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_jungle_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_net_jungle_ca.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\oryx_turret_jungle_co.paa",
-					"\OPTRE_Vehicles\Oryx\data\texture\camo\Scorp_mg_jungle_co.paa",
+					"53rd_SC_aux\Vehicles\Oryx\Oryx_Turret.paa",
+					"53rd_SC_aux\Vehicles\Oryx\Oryx_MG.paa",
 					"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
 				};
 			};
 		};
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"camo6",
-			"camo7",
-			"camo8"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Vehicles\Oryx\oryx_armor_grey_co.paa",
-			"53rd_SC_aux\Vehicles\Oryx\oryx_main_grey_co.paa",
-			"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
-			"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
-			"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
-			"53rd_SC_aux\Vehicles\Oryx\oryx_turret_grye_co.paa",
-			"53rd_SC_aux\Vehicles\Oryx\Scorpion_mg_grey_co.paa",
-			"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
-		};
-        ace_cargo_space = 4;
-        ace_cargo_hasCargo = 1;
-        class ACE_Cargo
-        {
-            class Cargo
-            {
-                class ACE_track
-                {
-                    type = "ACE_track";
-                    amount = 1;
-                };
-                class 53rd_Hardbox_Resupply
-                {
-                    type = "53rd_Hardbox_Resupply";
-                    amount = 1;
-                };
-            };
-        };
     };
     class 53rd_Oryx_50:53rd_Oryx
     {
