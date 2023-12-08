@@ -1,5 +1,5 @@
 class CfgPatches {
-	class 53rd_Custom_Armor_Saiko
+	class 53rd_Custom_Armor_Theta
 	{
 			units[] = 
 			{
@@ -120,13 +120,13 @@ class cfgWeapons
 		};
 	};
 	/////HELMETS/////
-	class 53rd_Saiko_Helmet_Urban_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Urban_NV: 53rd_Base_NV_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Urban / No Visor)";
+		displayName="[53rd] Theta Helmet (Urban / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -136,16 +136,16 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_Saiko_Helmet_Urban: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Urban: 53rd_Base_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Urban / Visor)";
+		displayName="[53rd] Theta Helmet (Urban / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -155,17 +155,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Urban.paa"
 		};
 	};
 	//Woodland
-	class 53rd_Saiko_Helmet_Woodland_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Woodland_NV: 53rd_Base_NV_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Woodland / No Visor)";
+		displayName="[53rd] Theta Helmet (Woodland / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -175,16 +175,16 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Woodland.paa"
 		};
 	};
-	class 53rd_Saiko_Helmet_Woodland: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Woodland: 53rd_Base_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Woodland / Visor)";
+		displayName="[53rd] Theta Helmet (Woodland / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -194,17 +194,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Woodland.paa"
 		};
 	};
 	//Desert
-		class 53rd_Saiko_Helmet_Desert_NV: 53rd_Base_NV_headgear //works
+		class 53rd_Theta_Helmet_Desert_NV: 53rd_Base_NV_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Desert / No Visor)";
+		displayName="[53rd] Theta Helmet (Desert / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -214,16 +214,16 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Desert.paa"
 		};
 	};
-	class 53rd_Saiko_Helmet_Desert: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Desert: 53rd_Base_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Desert / Visor)";
+		displayName="[53rd] Theta Helmet (Desert / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -233,17 +233,17 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Desert.paa"
 		};
 	};
 	//Winter
-	class 53rd_Saiko_Helmet_Winter_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Winter_NV: 53rd_Base_NV_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Winter / No Visor)";
+		displayName="[53rd] Theta Helmet (Winter / No Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -253,16 +253,16 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Winter.paa"
 		};
 	};
-	class 53rd_Saiko_Helmet_Winter: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Winter: 53rd_Base_headgear //works
 	{
 		author="Cherryy";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Saiko Helmet (Winter / Visor)";
+		displayName="[53rd] Theta Helmet (Winter / Visor)";
 		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
@@ -272,7 +272,7 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Saiko\53rd_Saiko_Helmet_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Winter.paa"
 		};
 	};
 /////////////////////ARMOR///////////////////////////
@@ -309,14 +309,14 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Saiko_SN: 53rd_U_Base_uniform
+	class 53rd_Theta_SN: 53rd_U_Base_uniform
 	{
 		author="Body";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Winter Saiko";
+		displayName="[53rd] Winter Theta";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -327,9 +327,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Winter.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -341,24 +341,24 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Winter.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Snow_Camo_Saiko";
+			uniformClass="53rd_Snow_Camo_Theta";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Saiko_WD: 53rd_U_Base_uniform
+	class 53rd_Theta_WD: 53rd_U_Base_uniform
 	{
 		author="Body";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Woodland Saiko";
+		displayName="[53rd] Woodland Theta";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -369,9 +369,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Woodland.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Woodland.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -383,24 +383,24 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Woodland.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Woodland.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Woodland_Camo_Saiko";
+			uniformClass="53rd_Woodland_Camo_Theta";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Saiko_UB: 53rd_U_Base_uniform
+	class 53rd_Theta_UB: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Urban Saiko";
+		displayName="[53rd] Urban Theta";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -411,9 +411,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Urban.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -425,24 +425,24 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Urban.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Urban_Camo_Saiko";
+			uniformClass="53rd_Urban_Camo_Theta";
 			containerClass="Supply90";
 			mass=80;
 		};
 	};
-	class 53rd_Saiko_DS: 53rd_U_Base_uniform
+	class 53rd_Theta_DS: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Desert Saiko";
+		displayName="[53rd] Desert Theta";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -453,9 +453,9 @@ class cfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Desert.paa"
 		};
 		class ItemInfo: ItemInfo
 		{
@@ -467,12 +467,12 @@ class cfgWeapons
 			};
 			hiddenSelectionsTextures[]=
 			{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Desert.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Desert_Camo_Saiko";
+			uniformClass="53rd_Desert_Camo_Theta";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -510,7 +510,7 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Snow_Camo_Saiko: 53rd_base_F
+	class 53rd_Snow_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -524,14 +524,14 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Winter.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Winter.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Winter.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Winter.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Saiko_SN";
+		uniformClass="53rd_Theta_SN";
 	};
-		class 53rd_Woodland_Camo_Saiko: 53rd_base_F
+		class 53rd_Woodland_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -545,14 +545,14 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Woodland.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Woodland.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Woodland.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Woodland.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Saiko_WD";
+		uniformClass="53rd_Theta_WD";
 	};
-		class 53rd_Urban_Camo_Saiko: 53rd_base_F
+		class 53rd_Urban_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -566,14 +566,14 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Urban.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Urban.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Urban.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Saiko_UB";
+		uniformClass="53rd_Theta_UB";
 	};
-		class 53rd_Desert_Camo_Saiko: 53rd_base_F
+		class 53rd_Desert_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -587,11 +587,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Top_Desert.paa",
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Top_Desert.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Saiko\53rd_Saiko_Armor_Desert.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Theta\53rd_Theta_Armor_Desert.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Saiko_DS";
+		uniformClass="53rd_Theta_DS";
 	};
 };
