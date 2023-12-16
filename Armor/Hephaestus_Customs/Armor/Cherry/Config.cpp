@@ -6,66 +6,278 @@ class CfgPatches {
 			weapons[] = 
 			{};
 			requiredVersion = 0.100000;
-			requiredAddons[] = {};
+			requiredAddons[] = 
+			{
+				"A3_Characters_F_Enoch"
+			};
+			addonRootClass="A3_Characters_F_Enoch";
 	};
 };
 #include "..\xtdGear.hpp"	
-class cfgWeapons
-{
-	class OPTRE_UNSC_Operator_Helmet;
+	class cfgWeapons
+	{
+	class ItemCore;
+	class ItemInfo;
+	class HaloInf_Marine_WDL_headgear: ItemCore
+	{
+	 class ItemInfo;
+	};
+	class HaloInf_Marine_WDL_NV_headgear: ItemCore
+	{
+	 class ItemInfo;
+	};
+	class 53rd_Base_headgear: HaloInf_Marine_WDL_headgear
+	{
+		scope=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Base CH252";
+		hiddenSelections[]=
+		{
+			"Camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Halo_marine_02\helmet\textures\halo_marine_02_helmet_green_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=38;
+					passThrough=0.1;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=38;
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=38;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+	class 53rd_Base_NV_headgear: HaloInf_Marine_WDL_NV_headgear
+	{
+		scope=1;
+		scopeArsenal=1;
+		side=1;
+		displayName="[53rd] Base CH252 Visor ";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"Halo_marine_02\helmet\textures\Halo_marine_02_Helmet_green_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			mass=10;
+			uniformModel="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+			allowedSlots[]={801,901,701,605};
+			modelSides[]={6};
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"_Visor"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"Halo_marine_02\helmet\textures\halo_marine_02_helmet_green_co.paa"
+			};
+			class HitpointsProtectionInfo
+			{
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=38;
+					passThrough=0.1;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=38;
+					passThrough=0.1;
+				};
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=38;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
 	/////HELMETS/////
-	class 53rd_OP_Cherry_UB: OPTRE_UNSC_Operator_Helmet
+	class 53rd_Cherry_Helmet_Urban_No_Visor: 53rd_Base_NV_headgear //works
+	{
+		author="Cherry&Scarecrow";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Urban / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
 		{
-			scope=2;
-			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Cherry / Urban)";
-			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Urban.paa",
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Visor.paa",
-			};
+			"Camo1",
+			"_Visor"
 		};
-	class 53rd_OP_Cherry_DS: OPTRE_UNSC_Operator_Helmet
+		hiddenSelectionsTextures[]=
 		{
-			scope=2;
-			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Cherry / Desert)";
-			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Desert.paa",
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Visor.paa",
-			};
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Urban.paa"
 		};
-	class 53rd_OP_Cherry_WN: OPTRE_UNSC_Operator_Helmet
+	};
+	class 53rd_Cherry_Helmet_Urban_Visor: 53rd_Base_headgear
+	{
+		author="Cherri&Scarecrow";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Urban / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
 		{
-			scope=2;
-			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Cherry / Winter)";
-			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Winter.paa",
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Visor.paa",
-			};
+			"Camo1",
+			"_Visor"
 		};
-	class 53rd_OP_Cherry_WD: OPTRE_UNSC_Operator_Helmet
+		hiddenSelectionsTextures[]=
 		{
-			scope=2;
-			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Cherry / Woodland)";
-			model="OPTRE_UNSC_Units\Army\Helmets\Operator_Helmet.p3d";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Woodland.paa",
-				"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Visor.paa",
-			};
-
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Urban.paa"
 		};
+	};
+	//Woodland
+	class 53rd_Cherry_Helmet_Woodland_No_Visor: 53rd_Base_NV_headgear //works
+	{
+		author="Cherry&Scarecrow";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Woodland / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Woodland.paa"
+		};
+	};
+	class 53rd_Cherry_Helmet_Woodland_Visor: 53rd_Base_headgear //works
+	{
+		author="Cherry";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Woodland / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Woodland.paa"
+		};
+	};
+	//Desert
+	class 53rd_Cherry_Helmet_Desert_No_Visor: 53rd_Base_NV_headgear //works
+	{
+		author="Cherry";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Desert / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Desert.paa"
+		};
+	};
+	class 53rd_Cherry_Helmet_Desert_Visor: 53rd_Base_headgear //works
+	{
+		author="Cherry";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Desert / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Desert.paa"
+		};
+	};
+	//Winter
+	class 53rd_Cherry_Helmet_Winter_No_Visor: 53rd_Base_NV_headgear //works
+	{
+		author="Cherry";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Winter / No Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Winter.paa"
+		};
+	};
+	class 53rd_Cherry_Helmet_Winter_Visor: 53rd_Base_headgear //works
+	{
+		author="Cherry&Scarecrow";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		displayName="[53rd] Cherry Helmet (Winter / Visor)";
+		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Cherry\53rd_Cherry_Helmet_Winter.paa"
+		};
+	};
 /////////////////// ARMOR ///////////////////////
 	class UniformItem;
-	class ItemCore;
 	class Uniform_Base: ItemCore
 	{
 		class ItemInfo;
@@ -264,6 +476,33 @@ class cfgWeapons
 			uniformClass="53rd_Desert_Camo_Test";
 			containerClass="Supply90";
 			mass=80;
+		};
+	};
+};
+class CfgGlasses
+{
+	class G_AirPurifyingRespirator_01_base_F; 
+	class G_AirPurifyingRespirator_02_base_F: G_AirPurifyingRespirator_01_base_F
+	{
+		class iteminfo;
+	};
+	class G_AirPurifyingRespirator_02_black_F: G_AirPurifyingRespirator_02_base_F
+	{
+		class iteminfo;
+	};
+	class Cherryy_GAS: G_AirPurifyingRespirator_02_black_F
+	{
+		author="Cherryy";
+		_generalMacro="Cherryy_GAS";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		displayName="[53rd] Cherryy Custom Facewear";
+		picture="\A3\Characters_F_Enoch\Facewear\Data\UI\icon_G_AirPurifyingRespirator_02_black_F_ca.paa";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_sc_aux\Armor\Hephaestus_Camo\Facewear\Cherryy_Custom\Gas_Mask_Cherryy.paa",
+			"53rd_sc_aux\Armor\Hephaestus_Camo\Facewear\Cherryy_Custom\Gas_Visor_Cherryy.paa"
 		};
 	};
 };
