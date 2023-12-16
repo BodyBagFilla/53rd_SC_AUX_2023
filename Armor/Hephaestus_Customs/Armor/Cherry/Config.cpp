@@ -479,33 +479,6 @@ class CfgPatches {
 		};
 	};
 };
-class CfgGlasses
-{
-	class G_AirPurifyingRespirator_01_base_F; 
-	class G_AirPurifyingRespirator_02_base_F: G_AirPurifyingRespirator_01_base_F
-	{
-		class iteminfo;
-	};
-	class G_AirPurifyingRespirator_02_black_F: G_AirPurifyingRespirator_02_base_F
-	{
-		class iteminfo;
-	};
-	class Cherryy_GAS: G_AirPurifyingRespirator_02_black_F
-	{
-		author="Cherryy";
-		_generalMacro="Cherryy_GAS";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		displayName="[53rd] Cherryy Custom Facewear";
-		picture="\A3\Characters_F_Enoch\Facewear\Data\UI\icon_G_AirPurifyingRespirator_02_black_F_ca.paa";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_sc_aux\Armor\Hephaestus_Camo\Facewear\Cherryy_Custom\Gas_Mask_Cherryy.paa",
-			"53rd_sc_aux\Armor\Hephaestus_Camo\Facewear\Cherryy_Custom\Gas_Visor_Cherryy.paa"
-		};
-	};
-};
 class CfgVehicles
 {
 	class B_Soldier_base_F;
