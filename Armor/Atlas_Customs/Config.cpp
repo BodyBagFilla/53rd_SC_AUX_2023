@@ -907,6 +907,179 @@ class cfgWeapons
 			mass=80;
 		};
 	};
+	//Axe
+		class 53rd_Atlas_Axe_Armor: haloinfmar_U_WDL_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Axe / Urban)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Urban.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Urban.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Axe_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Atlas_Axe_Armor_SN: haloinfmar_U_WDL_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Axe / Snow)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Winter.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Winter.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Axe_SN_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Atlas_Axe_Armor_WD: haloinfmar_U_WDL_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Axe / Woodland)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Woodland.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Woodland.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Axe_WD_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Atlas_Axe_Armor_DS: haloinfmar_U_WDL_uniform
+	{
+		author="Cherryy";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Custom Armors (Axe / Desert)";
+		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Desert.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Desert.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Axe_DS_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
 	//Custom Helmets
 	class 53rd_Atlas_Hellfire_Custom_Helmet: TCF_Reach_Scout_Helmet
 	{
@@ -1432,8 +1605,68 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		}; 
 	}; 
+	class 53rd_Atlas_Axe_Custom_Helmet_UB: HaloInf_Marine_WDL_headgear
+	{
+		dlc="53rd";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (Axe / Urban)";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Helmet.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		};
+	};
+	class 53rd_Atlas_Axe_Custom_Helmet_SN: HaloInf_Marine_WDL_headgear
+	{
+		dlc="53rd";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (Axe / Snow)";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Helmet_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		};
+	};
+	class 53rd_Atlas_Axe_Custom_Helmet_WD: HaloInf_Marine_WDL_headgear
+	{
+		dlc="53rd";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (Axe / Woodland)";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Helmet_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		};
+	};
+	class 53rd_Atlas_Axe_Custom_Helmet_DS: HaloInf_Marine_WDL_headgear
+	{
+		dlc="53rd";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		author="Tsuki";
+		displayName="[53rd] Custom Helmet (Axe / Desert)";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Helmet_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
+		};
+	};
 };
-
 //Rifleman 2
 class cfgvehicles
 {
@@ -1760,5 +1993,53 @@ class cfgvehicles
 			"53rd_SC_aux\Armor\Atlas_Customs\Texas\Woodland\A_Armor_Texas_Custom_Woodland.paa" 
 			};
 			uniformClass="53rd_Atlas_Texas_Armor_Woodland";
+	};
+	//Axe
+	class 53rd_Axe_V: 53rd_base_F
+	{
+			scope=2;
+			scopeArsenal=2;
+			side=1;
+			displayName="[53rd] Axe";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Urban.paa"
+			};
+			uniformClass="53rd_Atlas_Axe_Armor";
+	};
+	class 53rd_Axe_SN_V: 53rd_Axe_V
+	{
+			displayName="[53rd] Axe_Snow_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Winter.paa" 
+			};
+			uniformClass="53rd_Atlas_Axe_Armor_SN";
+	};
+	class 53rd_Axe_WD_V: 53rd_Axe_V
+	{
+			displayName="[53rd] Axe_Woodland_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Woodland.paa" 
+			};
+			uniformClass="53rd_Atlas_Axe_Armor_WD";
+	};
+	class 53rd_Axe_DS_V: 53rd_Axe_V
+	{
+			displayName="[53rd] Axe_Desert_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Axe\Axe_Custom_Armor_Desert.paa" 
+			};
+			uniformClass="53rd_Atlas_Axe_Armor_DS";
 	};
 };
