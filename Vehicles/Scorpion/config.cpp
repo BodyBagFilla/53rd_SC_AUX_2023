@@ -1029,7 +1029,7 @@ class CfgVehicles
 		scopeCurator=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		displayName="[53rd] M808B Scorpion MBT";
+	displayName="[53rd][L] M808B Scorpion MBT";
 		model="\DMNS\DMNS_Armour\M808B_Scorpion\Scoprion_base.p3d";
 		picture="\OPTRE_Vehicles_Tracked\Scorpion\data\UI\M808B_MBT_ca.paa";
 		icon="\OPTRE_Vehicles_Tracked\Scorpion\data\UI\map_M808B_ca.paa";
@@ -1225,7 +1225,7 @@ class CfgVehicles
 			};
 			class colorHotelV2
 			{
-				displayName="Hotel Actual 'Anvil'";
+				displayName="Hotel Actual - Anvil";
 				author="DemonicOnPC";
 				textures[]=
 				{
@@ -1234,9 +1234,9 @@ class CfgVehicles
 			"53rd_SC_aux\Vehicles\Scorpion\Callsign\HQAnvil.paa",
 			"53rd_SC_aux\Vehicles\Scorpion\M808BRearHQ.paa",
 			"53rd_SC_aux\Vehicles\Scorpion\M808BCommanderHQ.paa",
-			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1HQ.paa",
-			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2HQ.paa",
-			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"			
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details1.paa",
+			"53rd_SC_aux\Vehicles\Scorpion\M808B_Details2.paa",
+			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa",		
 				};
 			};			
 			

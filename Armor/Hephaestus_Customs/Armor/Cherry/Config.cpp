@@ -347,7 +347,7 @@ class CfgPatches {
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Cherry\53rd_Cherry_Armor_Winter.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Cherryy_Snow";
+			uniformClass="53rd_Snow_Camo_Test";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -389,7 +389,7 @@ class CfgPatches {
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Cherry\53rd_Cherry_Armor_Woodland.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Cherryy_Woodland";
+			uniformClass="53rd_Woodland_Camo_Test";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -431,7 +431,7 @@ class CfgPatches {
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Cherry\53rd_Cherry_Armor_Urban.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Cherryy_Urban";
+			uniformClass="53rd_Urban_Camo_Test";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -473,7 +473,7 @@ class CfgPatches {
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
 			};
 			uniformModel="-";
-			uniformClass="53rd_Cherryy_Desert";
+			uniformClass="53rd_Desert_Camo_Test";
 			containerClass="Supply90";
 			mass=80;
 		};
@@ -511,7 +511,7 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Cherryy_Snow: 53rd_base_F
+	class 53rd_Snow_Camo_Test: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -532,7 +532,7 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Cherry_SN";
 	};
-	class 53rd_Cherryy_Woodland: 53rd_base_F
+	class 53rd_Woodland_Camo_Test: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -553,7 +553,7 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Cherry_WD";
 	};
-	class 53rd_Cherryy_Urban: 53rd_base_F
+	class 53rd_Urban_Camo_Test: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
@@ -574,7 +574,7 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Cherry_UB";
 	};
-	class 53rd_Cherryy_Desert: 53rd_base_F
+	class 53rd_Desert_Camo_Test: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;

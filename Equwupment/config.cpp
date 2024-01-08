@@ -43,6 +43,9 @@ class ace_medical_treatment
     {
 		class Copium
 		{
+			hrIncreaseLow[]={0,5};
+			hrIncreaseNormal[]={5,10};
+			hrIncreaseHigh[]={5,15};
 			painReduce=0.80000001;
 			timeInSystem=180;
 			timeTillMaxEffect=0.1;
@@ -59,6 +62,7 @@ class ace_medical_treatment_actions
 	class Copium: Morphine
 	{
 		displayName="Copium";
+		ACE_isMedicalItem=1;
 		displayNameProgress="My Man Just Needs to Cope tbh...";
 		condition="ace_medical_treatment_advancedMedication";
 		allowedSelections[]=
@@ -74,7 +78,7 @@ class ace_medical_treatment_actions
 			
 			{
 				"53rd_CopiumLitter"
-			}
+			};
 		};
 	};
 	class r_biofoam: OPTRE_Biofoam
@@ -255,6 +259,7 @@ class cfgWeapons
 		picture="\z\ace\addons\medical_treatment\ui\morphine_ca.paa";
 		model="\53rd_SC_aux\Equwupment\Unused_Cope";
         hiddenSelections[]={"camo"};
+		ACE_isMedicalItem=1;
         hiddenSelectionsTextures[]={"\53rd_SC_aux\Equwupment\Copium_CO.paa"};
 		descriptionShort="Desc_Short";
 		descriptionUse="Desc_Use";

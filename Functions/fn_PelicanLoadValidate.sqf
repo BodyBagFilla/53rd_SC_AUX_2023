@@ -26,13 +26,23 @@ switch true do {
 		_veh attachTo [_pelican,[0,-9, -6]];
 		_loaded = true;  
 	};	
+		case (_veh isKindOf "53rd_M808B_FD"):
+	{
+		_veh attachTo [_pelican,[0,-9.5, -1.80]];
+		_loaded = true;  
+	};
+	case (_veh isKindOf "53rd_M808B_Base"):
+	{
+		_veh attachTo [_pelican,[0,-9.5, -1.80]];
+		_loaded = true;  
+	};
 	case (_veh isKindOf "TG_Juggernaut_GDI_01") : 
 	{
 		_veh attachTo [_pelican,[0,-9, -9]];
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "TG_Hover_MLRS_GDI_01") : 
+	case (_veh isKindOf "TG_Hover_MLRS_GDI_01") :
 	{
 		_veh attachTo [_pelican,[0,-9, -6]];
 		_veh setDir 180;

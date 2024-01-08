@@ -1,4 +1,4 @@
-class CfgPatches {
+/*class CfgPatches {
 	class 53rd_Custom_Armor_Theta
 	{
 			units[] = 

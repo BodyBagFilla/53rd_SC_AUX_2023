@@ -26,6 +26,17 @@ class CfgVehicles
 		{
 			"53rd_crewman_unit"
 		};
+		hiddenSelectionsTextures[]=
+		{
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_Armor.paa",
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_Hull.paa",
+		"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
+		"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
+		"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_Turret.paa",
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_MG.paa",
+		"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
+		};
 		class textureSources
 		{
 			class colorstand
@@ -59,6 +70,17 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_IFV";
 		crew="53rd_crewman_unit";
+		hiddenSelectionsTextures[]=
+		{
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_Armor.paa",
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_Hull.paa",
+		"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
+		"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
+		"\OPTRE_Vehicles\Oryx\data\texture\oryx_net_ca.paa",
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_Turret.paa",
+		"53rd_SC_aux\Vehicles\Oryx\Oryx_MG.paa",
+		"\OPTRE_Vehicles\Oryx\data\Texture\oryx_decal_ca.paa"
+		};
 		typicalCargo[]=
 		{
 			"53rd_crewman_unit"

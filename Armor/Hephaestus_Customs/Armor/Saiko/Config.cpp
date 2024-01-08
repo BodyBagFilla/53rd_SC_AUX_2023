@@ -7,6 +7,18 @@ class CfgPatches {
 			};
 			weapons[] = 
 			{
+			"53rd_Saiko_Helmet_Urban_NV",
+			"53rd_Saiko_Helmet_Urban",
+			"53rd_Saiko_Helmet_Woodland_NV",
+			"53rd_Saiko_Helmet_Woodland",
+			"53rd_Saiko_Helmet_Desert_NV",
+			"53rd_Saiko_Helmet_Desert",
+			"53rd_Saiko_Helmet_Winter_NV",
+			"53rd_Saiko_Helmet_Winter",
+			"53rd_Saiko_SN",
+			"53rd_Saiko_WD",
+			"53rd_Saiko_UB",
+			"53rd_Saiko_DS",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
@@ -198,7 +210,7 @@ class cfgWeapons
 		};
 	};
 	//Desert
-		class 53rd_Saiko_Helmet_Desert_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Saiko_Helmet_Desert_NV: 53rd_Base_NV_headgear //works
 	{
 		author="Cherryy";
 		scope=2;

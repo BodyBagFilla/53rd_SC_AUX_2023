@@ -6,6 +6,7 @@
 			{
 				"53rd_CMA_falcon",
 				"53rd_UNSC_falcon_armed",
+				"53rd_UNSC_falcon_Ferret",
 			};
 			weapons[]={};
 			requiredVersion=0.1;
@@ -298,6 +299,31 @@
 				"53rd_SC_aux\Vehicles\Falcon_New\53rd_Falcon_Main_co.paa",
 				"53rd_SC_aux\Vehicles\Falcon_New\53rd_Falcon_Attachments_co.paa",
 				"\optre_vehicles_air\falcon\data\falcon_interior_co.paa"
+			};
+			class textureSources
+			{
+				class Standard
+				{
+					displayName="Grey";
+					author="Body";
+					textures[]=
+					{
+					"53rd_SC_aux\Vehicles\Falcon_New\53rd_Falcon_Main_co.paa",
+					"53rd_SC_aux\Vehicles\Falcon_New\53rd_Falcon_Attachments_co.paa",
+					"\optre_vehicles_air\falcon\data\falcon_interior_co.paa"
+					};
+				};
+				class Ferret
+				{
+					displayName="Ferret Custom";
+					author="Body";
+					textures[]=
+					{
+					"53rd_SC_aux\Vehicles\Falcon_New\Falcon_Hull_Ferret.paa",
+					"53rd_SC_aux\Vehicles\Falcon_New\Falcon_Wings_Ferret.paa",
+					"\optre_vehicles_air\falcon\data\falcon_interior_co.paa"
+					};
+				};
 			};
 			class UserActions
 			{

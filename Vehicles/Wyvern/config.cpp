@@ -14,7 +14,7 @@ class CfgVehicles
 	class 53rd_Wyvern: OPTRE_VTOLV_01
 	{
 		author="1Lt. Body";
-		displayName="[53rd] Amat - Wyvren";
+		displayName="[53rd] Amatus - Wyvren";
 		scope=2;
 		scopeCurator=2;
 		side=1

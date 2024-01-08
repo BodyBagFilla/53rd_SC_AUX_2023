@@ -10,7 +10,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Bigben","Amatsu","Lovey","Ferret","Ghillie"};
+				values[] = {"Bigben","Amatsu","Lovey","Ferret","Ghillie","AK"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Bigben
@@ -34,6 +34,11 @@ class XtdGearModels
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Ghillie
+				{
+					label = "Ghillie";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class AK
 				{
 					label = "Ghillie";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
@@ -109,6 +114,13 @@ class XtdGearInfos
 		{
 		model = "VolareCustomHelm";
 		Person = "Ghillie";
+        dp="yes";
+		};
+		//AK
+		class 53rd_Custom_Helmet_AK
+		{
+		model = "VolareCustomHelm";
+		Person = "AK";
         dp="yes";
 		};
 		

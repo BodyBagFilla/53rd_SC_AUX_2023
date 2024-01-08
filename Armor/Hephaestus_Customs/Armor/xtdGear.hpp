@@ -38,7 +38,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Body","Cherry","Panzer","Ryu","Tikals"};
+				values[] = {"Body","Cherry","Panzer","Ryu","Tikals","Saiko"};
 				class Body
 				{
 					label = "Body";
@@ -62,6 +62,11 @@ class XtdGearModels
 				class Tikals
 				{
 					label = "Tikals";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Saiko
+				{
+					label = "Saiko";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -139,7 +144,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Cherry","Ryu"};
+				values[] = {"Fixer","Body","Panzer","Cherry","Ryu","Saiko"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -163,6 +168,11 @@ class XtdGearModels
 				class Ryu
 				{
 					label = "Ryu";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Saiko
+				{
+					label = "Saiko";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -218,7 +228,29 @@ class XtdGearInfos
 		};
         
 		//Cherryy
-		class 53rd_OP_Cherry_UB
+		//No Visor
+		class 53rd_Cherry_Helmet_Urban_No_Visor
+		{
+		model = "HephaestusCamoCustoms";
+		Helm_Camo = "Snow";
+		Person = "Cherry";
+		Type = "NoVISOR";
+        dp="no";
+		};
+		class 53rd_Cherry_Helmet_Woodland_No_Visor:53rd_Cherry_Helmet_Urban_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Cherry_Helmet_Desert_No_Visor:53rd_Cherry_Helmet_Urban_No_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Cherry_Helmet_Winter_No_Visor:53rd_Cherry_Helmet_Urban_No_Visor
+		{
+		Helm_Camo = "Urban";
+		};
+		//VISOR
+		class 53rd_Cherry_Helmet_Urban_Visor
 		{
 		model = "HephaestusCamoCustoms";
 		Helm_Camo = "Urban";
@@ -226,17 +258,17 @@ class XtdGearInfos
 		Type = "Visor";
         dp="no";
 		};
-		class 53rd_OP_Cherry_DS:53rd_OP_Cherry_UB
+		class 53rd_Cherry_Helmet_Woodland_Visor:53rd_Cherry_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Cherry_Helmet_Desert_Visor:53rd_Cherry_Helmet_Urban_Visor
 		{
 		Helm_Camo = "Desert";
 		};
-		class 53rd_OP_Cherry_WN:53rd_OP_Cherry_UB
+		class 53rd_Cherry_Helmet_Winter_Visor:53rd_Cherry_Helmet_Urban_Visor
 		{
 		Helm_Camo = "Snow";
-		};
-		class 53rd_OP_Cherry_WD:53rd_OP_Cherry_UB
-		{
-		Helm_Camo = "Woodland";
 		};
 		
 		//Tikals
@@ -300,6 +332,49 @@ class XtdGearInfos
 		Helm_Camo = "Desert";
 		};
 		class 53rd_Ryu_Helmet_Winter_Visor:53rd_Ryu_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Snow";
+		};
+		
+		//Saiko
+		class 53rd_Saiko_Helmet_Winter_NV
+		{
+		model = "HephaestusCamoCustoms";
+		Helm_Camo = "Snow";
+		Person = "Saiko";
+		Type = "NoVISOR";
+        dp="no";
+		};
+		class 53rd_Saiko_Helmet_Woodland_NV:53rd_Saiko_Helmet_Winter_NV
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Saiko_Helmet_Desert_NV:53rd_Saiko_Helmet_Winter_NV
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Saiko_Helmet_Urban_NV:53rd_Saiko_Helmet_Winter_NV
+		{
+		Helm_Camo = "Urban";
+		};
+		
+		class 53rd_Saiko_Helmet_Urban
+		{
+		model = "HephaestusCamoCustoms";
+		Helm_Camo = "Urban";
+		Person = "Saiko";
+		Type = "Visor";
+        dp="no";
+		};
+		class 53rd_Saiko_Helmet_Woodland:53rd_Saiko_Helmet_Urban
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Saiko_Helmet_Desert:53rd_Saiko_Helmet_Urban
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Saiko_Helmet_Winter:53rd_Saiko_Helmet_Urban
 		{
 		Helm_Camo = "Snow";
 		};
@@ -391,6 +466,25 @@ class XtdGearInfos
 		Vest_Camo = "Woodland";
 		};
 		
+		//Body
+		class 53rd_Saiko_UB
+		{
+		model = "HephaestusCustomCamo";
+		Vest_Camo = "Urban";
+		Person = "Saiko";
+		};
+		class 53rd_Saiko_DS:53rd_Saiko_UB
+		{
+		Vest_Camo = "Desert";
+		};
+		class 53rd_Saiko_SN:53rd_Saiko_UB
+		{
+		Vest_Camo = "Snow";
+		};
+		class 53rd_Saiko_WD:53rd_Saiko_UB
+		{
+		Vest_Camo = "Woodland";
+		};
 		//RYU
 		class 53rd_Ryu_UB
 		{

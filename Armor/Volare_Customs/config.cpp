@@ -143,7 +143,19 @@ class cfgWeapons
 				"53rd_SC_aux\Armor\Volare_Customs\Ghillie\Ghillie_Helmet.paa",
 				
 			};
-		};
+	};
+	class 53rd_Custom_Helmet_AK : UNSC_PilotHelmet_Black
+	{
+			scope=2;
+			scopeArsenal=2;
+			displayName="[53rd] Custom Helmet (AK)";
+			model="\UNSCGear\UNSCPilotHelmet.p3d";
+			hiddenSelectionsTextures[]=
+			{
+				"53rd_SC_aux\Armor\Volare_Customs\AK\DefaultMaterial_co.paa",
+				
+			};
+	};
 };
 
 class CfgVehicles
