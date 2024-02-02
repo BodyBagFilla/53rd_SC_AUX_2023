@@ -1219,8 +1219,8 @@ class cfgWeapons
 		displayName="[53rd] Custom Helmet (LoneWulf / Urban)";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\53rd_Lonewolf_Custom_Helmet_Urban.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\53rd_Lonewulf_Custom_Helmet_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewulf_Custom_Visor.paa"
 		};
 		class ItemInfo;
 		class HitpointsProtectionInfo
@@ -1257,8 +1257,8 @@ class cfgWeapons
 		displayName="[53rd] Custom Helmet (LoneWulf / Snow)";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\53rd_Lonewolf_Custom_Helmet_Winter.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\53rd_Lonewulf_Custom_Helmet_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewulf_Custom_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_DS: 53rd_Atlas_LoneWulf_Custom_Helmet
@@ -1270,8 +1270,8 @@ class cfgWeapons
 		displayName="[53rd] Custom Helmet (LoneWulf / Desert)";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\53rd_Lonewolf_Custom_Helmet_Desert.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\53rd_Lonewulf_Custom_Helmet_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewulf_Custom_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_LoneWulf_Custom_Helmet_WD: 53rd_Atlas_LoneWulf_Custom_Helmet
@@ -1283,8 +1283,8 @@ class cfgWeapons
 		displayName="[53rd] Custom Helmet (LoneWulf / Woodland)";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\53rd_Lonewolf_Custom_Helmet_Atlas.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\53rd_Lonewulf_Custom_Helmet_Woodland.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewulf_Custom_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet: HaloInf_Marine_WDL_headgear
