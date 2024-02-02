@@ -35,6 +35,7 @@ class CfgPatches
 		};
 	};
 };
+#include "../xtdGear.hpp"
 class CfgWeapons
 {
 	class MA_Vest_Base;
@@ -45,326 +46,281 @@ class CfgWeapons
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////Helmets/////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-	class MA_Helmet_Base
-	{
-	class ItemInfo;
-	};
+	class MA_Helmet_Base;
 	class MA_M56SH_Helmet: MA_Helmet_Base
 	{
-	class ItemInfo;
+		class ItemInfo;
 	};
 	class 53rd_Ares_RA_H3_Helmet: MA_M56SH_Helmet
 	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			class XtdGearInfo
-			{
-			};
-			displayName="[53rd] Ares RA Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Ares_Camo\RA\53rd_3rd_PLT_H3_Helmet_RA.paa",
-				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
-			};
-		class ItemInfo: HeadgearItem
+		dlc="53rd";
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Ride Along Helmet";
+		hiddenSelectionsTextures[]=
 		{
-			uniformModel="";
-			mass=40;
-			modelSides[]={6};
-			allowedSlots[]={801,901,701,605};
-			hiddenSelections[]=
+		"53rd_SC_aux\Armor\Ares_Camo\RA\53rd_3rd_PLT_H3_Helmet_RA.paa",
+		"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+		};
+		class XtdGearInfo
+        {
+        };
+		class ItemInfo;
+		class HitpointsProtectionInfo
+		{
+			class Head
 			{
-				"camo1",
-				"camo2"
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			hiddenSelectionsTextures[]={};
-			class HitpointsProtectionInfo
+			class Face
 			{
-				class Head
-				{
-					hitpointName="HitHead";
-					armor=45;
-					passThrough=0.1;
-				};
-				class Face
-				{
-					hitpointName="HitFace";
-					armor=45;
-					passThrough=0.1;
-				};
-				class Neck
-				{
-					hitpointName="HitNeck";
-					armor=40;
-					passThrough=0.1;
-				};
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
+			};
+			class Neck
+			{
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
 			};
 		};
 	};
 	class 53rd_Ares_Rifleman_H3_Helmet: MA_M56SH_Helmet
 	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			class XtdGearInfo
+		dlc="53rd";
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Helmet";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+		"53rd_SC_aux\Armor\Ares_Camo\Rifleman\53rd_3rd_PLT_H3_Helmet_Slotted_Riflemen.paa",
+		"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+		};
+		class XtdGearInfo
+        {
+        };
+		class ItemInfo;
+		class HitpointsProtectionInfo
+		{
+			class Head
 			{
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			displayName="[53rd] Ares Rifleman Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
-			hiddenSelectionsTextures[]=
+			class Face
 			{
-				"53rd_SC_aux\Armor\Ares_Camo\Rifleman\53rd_3rd_PLT_H3_Helmet_Slotted_Riflemen.paa",
-				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			class ItemInfo: HeadgearItem
+			class Neck
 			{
-				uniformModel="";
-				mass=40;
-				modelSides[]={6};
-				allowedSlots[]={801,901,701,605};
-				hiddenSelections[]=
-				{
-					"camo1",
-					"camo2"
-				};
-				hiddenSelectionsTextures[]={};
-				class HitpointsProtectionInfo
-				{
-					class Head
-					{
-						hitpointName="HitHead";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Face
-					{
-						hitpointName="HitFace";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Neck
-					{
-						hitpointName="HitNeck";
-						armor=40;
-						passThrough=0.1;
-					};
-				};
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
 			};
+		};
 	};
 	class 53rd_Ares_Medic_H3_Helmet: MA_M56SH_Helmet
 	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			class XtdGearInfo
+		dlc="53rd";
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Helmet";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+		"53rd_SC_aux\Armor\Ares_Camo\Medic\53rd_3rd_PLT_H3_Helmet_Medic.paa",
+		"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+		};
+		class XtdGearInfo
+        {
+        };
+		class ItemInfo;
+		class HitpointsProtectionInfo
+		{
+			class Head
 			{
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			displayName="(53rd) Ares Medic Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
-			
-			hiddenSelectionsTextures[]=
+			class Face
 			{
-				"53rd_SC_aux\Armor\Ares_Camo\Medic\53rd_3rd_PLT_H3_Helmet_Medic.paa",
-				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			class ItemInfo: HeadgearItem
+			class Neck
 			{
-				uniformModel="";
-				mass=40;
-				modelSides[]={6};
-				allowedSlots[]={801,901,701,605};
-				hiddenSelections[]=
-				{
-					"camo1",
-					"camo2"
-				};
-				hiddenSelectionsTextures[]={};
-				class HitpointsProtectionInfo
-				{
-					class Head
-					{
-						hitpointName="HitHead";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Face
-					{
-						hitpointName="HitFace";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Neck
-					{
-						hitpointName="HitNeck";
-						armor=40;
-						passThrough=0.1;
-					};
-				};
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
 			};
-	};
-	class 53rd_Ares_TL_H3_Helmet: MA_M56SH_Helmet
-	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			class XtdGearInfo
-			{
-			};
-			displayName="[53rd] Ares TL Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Ares_Camo\TL\53rd_3rd_PLT_H3_Helmet_TL.paa",
-				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
-			};
-			class ItemInfo: HeadgearItem
-			{
-				uniformModel="";
-				mass=40;
-				modelSides[]={6};
-				allowedSlots[]={801,901,701,605};
-				hiddenSelections[]=
-				{
-					"camo1",
-					"camo2"
-				};
-				hiddenSelectionsTextures[]={};
-				class HitpointsProtectionInfo
-				{
-					class Head
-					{
-						hitpointName="HitHead";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Face
-					{
-						hitpointName="HitFace";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Neck
-					{
-						hitpointName="HitNeck";
-						armor=40;
-						passThrough=0.1;
-					};
-				};
-			};
+		};
 	};
 	class 53rd_Ares_SL_H3_Helmet: MA_M56SH_Helmet
 	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			displayName="[53rd] Ares SL Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
-			class XtdGearInfo
+		dlc="53rd";
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares SL Helmet";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+		"53rd_SC_aux\Armor\Ares_Camo\SL\53rd_3rd_PLT_H3_Helmet_SL.paa",
+		"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+		};
+		class XtdGearInfo
+        {
+        };
+		class ItemInfo;
+		class HitpointsProtectionInfo
+		{
+			class Head
 			{
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			hiddenSelectionsTextures[]=
+			class Face
 			{
-				"53rd_SC_aux\Armor\Ares_Camo\SL\53rd_3rd_PLT_H3_Helmet_SL.paa",
-				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
-			class ItemInfo: HeadgearItem
+			class Neck
 			{
-				uniformModel="";
-				mass=40;
-				modelSides[]={6};
-				allowedSlots[]={801,901,701,605};
-				hiddenSelections[]=
-				{
-					"camo1",
-					"camo2"
-				};
-				hiddenSelectionsTextures[]={};
-				class HitpointsProtectionInfo
-				{
-					class Head
-					{
-						hitpointName="HitHead";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Face
-					{
-						hitpointName="HitFace";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Neck
-					{
-						hitpointName="HitNeck";
-						armor=40;
-						passThrough=0.1;
-					};
-				};
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
 			};
+		};
+	};
+	class 53rd_Ares_TL_H3_Helmet: MA_M56SH_Helmet
+	{
+		dlc="53rd";
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares TL Helmet";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+		"53rd_SC_aux\Armor\Ares_Camo\TL\53rd_3rd_PLT_H3_Helmet_TL.paa",
+		"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
+		};
+		class XtdGearInfo
+        {
+        };
+		class ItemInfo;
+		class HitpointsProtectionInfo
+		{
+			class Head
+			{
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
+			};
+			class Face
+			{
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
+			};
+			class Neck
+			{
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
+			};
+		};
 	};
 	class 53rd_Ares_PL_H3_Helmet: MA_M56SH_Helmet
 	{
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			side=1;
-			class XtdGearInfo
-			{
-			};
-			displayName="[53rd] Ares PL Helmet";
-			model="MA_Armor\data\Helmets\H3_ODST\H3_ODST_Helmet.p3d";
-			picture="MA_Armor\data\Icons\H3_ODST_Helmet.paa";
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Armor\Ares_Camo\PL\53rd_3rd_PLT_H3_Helmet_PL.paa",
+		dlc="21st SAB";
+		author="21st SAB";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[21st SAB] Ares PL Helmet";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+					"53rd_SC_aux\Armor\Ares_Camo\PL\53rd_3rd_PLT_H3_Helmet_PL.paa",
 				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
-			};
-			class ItemInfo: HeadgearItem
+		};
+		class XtdGearInfo
+        {
+        };
+		class ItemInfo;
+		class HitpointsProtectionInfo
+		{
+			class Head
 			{
-				uniformModel="";
-				mass=40;
-				modelSides[]={6};
-				allowedSlots[]={801,901,701,605};
-				hiddenSelections[]=
-				{
-					"camo1",
-					"camo2"
-				};
-				hiddenSelectionsTextures[]={};
-				class HitpointsProtectionInfo
-				{
-					class Head
-					{
-						hitpointName="HitHead";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Face
-					{
-						hitpointName="HitFace";
-						armor=45;
-						passThrough=0.1;
-					};
-					class Neck
-					{
-						hitpointName="HitNeck";
-						armor=40;
-						passThrough=0.1;
-					};
-				};
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
 			};
+			class Face
+			{
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
+			};
+			class Neck
+			{
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
+			};
+		};
 	};
 //////////////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////ARMOR///////////////////////////////////////////////////////////////////////////////
@@ -471,43 +427,43 @@ class CfgWeapons
 				class Neck
 				{
 					hitpointName="HitNeck";
-					armor=40;
+					armor=50;
 					passThrough=0.1;
 				};
 				class Arms
 				{
 					hitpointName="HitArms";
-					armor=45;
+					armor=50;
 					passThrough=0.1;
 				};
 				class Chest
 				{
 					hitpointName="HitChest";
-					armor=40;
+					armor=50;
 					passThrough=0.1;
 				};
 				class Diaphragm
 				{
 					hitpointName="HitDiaphragm";
-					armor=45;
+					armor=50;
 					passThrough=0.1;
 				};
 				class Abdomen
 				{
 					hitpointName="HitAbdomen";
-					armor=45;
+					armor=50;
 					passThrough=0.1;
 				};
 				class Body
 				{
 					hitpointName="HitBody";
 					passThrough=0.1;
-					armor=40;
+					armor=50;
 				};
 				class Legs
 				{
 					hitpointName="HitLegs";
-					armor=40;
+					armor=50;
 					passThrough=0.1;
 				};
 			};
@@ -752,7 +708,7 @@ class CfgWeapons
 		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
 		hiddenSelections[]=
 		{
-		"camo1",
+			"camo1",
 			"camo2",
 			"camo3",
 			"camo4",
@@ -1139,7 +1095,7 @@ class CfgWeapons
 			"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
-			"53rd_SC_aux\Armor\Ares_Camo\Rifleman\53rd_3rd_PLT_H3_Snipper_Slotted_Riflemen.paa",
+			"53rd_SC_aux\Armor\Ares_Camo\Rifleman\53rd_3rd_PLT_H3_Sniper_Slotted_Riflemen.paa",
 			"53rd_SC_aux\Armor\Ares_Camo\Rifleman\53rd_3rd_PLT_H3_CQB_Slotted_Riflemen.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
 			};
@@ -2504,7 +2460,7 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Ares_Camo\Medic\53rd_3rd_PLT_H3_Upper_Armor_Medic.paa",       //camo1 (H3 Upper Armor)
-			"53rd_SC_aux\Armor\Ares_Camo\Medic\53rd_3rd_PLT_H3_Upper_Armor_Medic.paa",      //camo2 (H3 Lower Armor)
+            "MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",       //camo2 (H3 Lower Armor)
             "MA_Armor\data\Vests\H3_ODST\Addons\Medic_Thigh_Pouch_co.paa",//camo3 (Thigh Pouch)
 			"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
 			"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",

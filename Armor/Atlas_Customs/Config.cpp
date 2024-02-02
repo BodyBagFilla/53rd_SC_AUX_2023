@@ -26,6 +26,11 @@ class cfgWeapons
 	class HaloInf_Marine_WDL_NV_headgear;
 	class HaloInf_Marine_WDL_headgear;
 	class TCF_Reach_Scout_Helmet;
+	class MA_Helmet_Base;
+	class MA_M56SH_Helmet: MA_Helmet_Base
+	{
+		class ItemInfo;
+	};
 	//Custom Armor
 	class UniformItem;
 	class Uniform_Base: ItemCore
@@ -1205,128 +1210,81 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet: TCF_Reach_Scout_Helmet
+	class 53rd_Atlas_LoneWulf_Custom_Helmet: MA_M56SH_Helmet
 	{
 		dlc="53rd";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
 		displayName="[53rd] Custom Helmet (LoneWulf / Urban)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\A_Lonewulf_Scout_Custom_Urban.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\53rd_Lonewolf_Custom_Helmet_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
 		};
-	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (LoneWulf / Urban) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
+		class ItemInfo;
+		class HitpointsProtectionInfo
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\A_Lonewulf_Scout_Custom_Urban.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
+			class Head
+			{
+				hitpointName="HitHead";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
+			};
+			class Face
+			{
+				hitpointName="HitFace";
+				armor=50;
+				explosionShielding = 3;
+				passThrough=0.3;
+			};
+			class Neck
+			{
+				armor=50;
+				hitpointName="HitNeck";
+				explosionShielding = 3;
+				passThrough=0.1;
+			};
 		};
 	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN: TCF_Reach_Scout_Helmet
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN: 53rd_Atlas_LoneWulf_Custom_Helmet
 	{
 		dlc="53rd";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
 		displayName="[53rd] Custom Helmet (LoneWulf / Snow)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\A_Lonewulf_Scout_Custom_Winter.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\53rd_Lonewolf_Custom_Helmet_Winter.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
 		};
 	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_SN_dp: TCF_Reach_Scout_Helmet
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_DS: 53rd_Atlas_LoneWulf_Custom_Helmet
 	{
 		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (LoneWulf / Snow) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\A_Lonewulf_Scout_Custom_Winter.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_DS: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
 		displayName="[53rd] Custom Helmet (LoneWulf / Desert)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\A_Lonewulf_Scout_Custom_Desert.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\53rd_Lonewolf_Custom_Helmet_Desert.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
 		};
 	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_DS_dp: TCF_Reach_Scout_Helmet
+	class 53rd_Atlas_LoneWulf_Custom_Helmet_WD: 53rd_Atlas_LoneWulf_Custom_Helmet
 	{
 		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (LoneWulf / Desert) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\A_Lonewulf_Scout_Custom_Desert.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_WD: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
-		author="Tsuki";
 		displayName="[53rd] Custom Helmet (LoneWulf / Woodland)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\A_Lonewulf_Scout_Custom_Woodland.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
-		};
-	};
-	class 53rd_Atlas_LoneWulf_Custom_Helmet_WD_dp: TCF_Reach_Scout_Helmet
-	{
-		dlc="53rd";
-		scope=1;
-		scopeCurator=1;
-		scopeArsenal=1;
-		side=1;
-		author="Tsuki";
-		displayName="[53rd] Custom Helmet (LoneWulf / Woodland) (Dp)";
-		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\A_Lonewulf_Scout_Custom_Woodland.paa",
-			"53rd_SC_aux\Armor\Atlas_Customs\Atlas_Custom_PL_Visor.paa"
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\53rd_Lonewolf_Custom_Helmet_Atlas.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\53rd_Lonewolf_Custom_Visor.paa"
 		};
 	};
 	class 53rd_Atlas_Serpent_Custom_Helmet: HaloInf_Marine_WDL_headgear

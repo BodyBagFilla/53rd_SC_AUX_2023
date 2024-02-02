@@ -140,59 +140,48 @@ class cfgWeapons
             mass=80;
             class HitpointsProtectionInfo
             {
-                class Neck
-                {
-                    hitpointName="HitNeck";
-                    armor=38;
-                    passThrough=0.5;
-                };
-                class Legs
-                {
-                    hitpointName="HitLegs";
-                    armor=38;
-                    passThrough=0.5;
-                };
-                class Arms
-                {
-                    hitpointName="HitArms";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Hands
-                {
-                    hitpointName="HitHands";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Chest
-                {
-                    hitpointName="HitChest";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Diaphragm
-                {
-                    hitpointName="HitDiaphragm";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Abdomen
-                {
-                    hitpointName="HitAbdomen";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Pelvis
-                {
-                    hitpointName="HitPelvis";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Body
-                {
-                    hitpointName="HitBody";
-                    passThrough=0.1;
-                };
+               class Neck
+				{
+					hitpointName="HitNeck";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+					armor=50;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=50;
+					passThrough=0.1;
+				};
             };
         };
     };
@@ -226,24 +215,27 @@ class cfgWeapons
         {
             class HitpointsProtectionInfo
             {
-                class Head
-                {
-                    hitpointName="HitHead";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Face
-                {
-                    hitpointName="HitFace";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Neck
-                {
-                    hitpointName="HitNeck";
-                    armor=38;
-                    passThrough=0.1;
-                };
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=50;
+					explosionShielding = 3;
+					passThrough=0.3;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=50;
+					explosionShielding = 3;
+					passThrough=0.3;
+				};
+				class Neck
+				{
+					armor=50;
+					hitpointName="HitNeck";
+					explosionShielding = 3;
+					passThrough=0.1;
+				};
             };
         };
     };
@@ -281,24 +273,27 @@ class cfgWeapons
             };
             class HitpointsProtectionInfo
             {
-                class Head
-                {
-                    hitpointName="HitHead";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Face
-                {
-                    hitpointName="HitFace";
-                    armor=38;
-                    passThrough=0.1;
-                };
-                class Neck
-                {
-                    hitpointName="HitNeck";
-                    armor=38;
-                    passThrough=0.1;
-                };
+				class Head
+				{
+					hitpointName="HitHead";
+					armor=50;
+					explosionShielding = 3;
+					passThrough=0.3;
+				};
+				class Face
+				{
+					hitpointName="HitFace";
+					armor=50;
+					explosionShielding = 3;
+					passThrough=0.3;
+				};
+				class Neck
+				{
+					armor=50;
+					hitpointName="HitNeck";
+					explosionShielding = 3;
+					passThrough=0.1;
+				};
             };
         };
     };

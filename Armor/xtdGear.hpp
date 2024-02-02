@@ -10,7 +10,7 @@ class XtdGearModels
 			class Section
 			{
 				label = "Section";
-				values[] = {"Apollo","Hephaestus","Atlas"};
+				values[] = {"Apollo","Hephaestus","Atlas","Ares"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Apollo
@@ -28,11 +28,16 @@ class XtdGearModels
 					label = "Atlas";
 					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
+				class Ares
+				{
+					label = "Ares";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
 			};
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Winter"};
+				values[] = {"Urban","Woodland","Desert","Winter","None"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -55,11 +60,16 @@ class XtdGearModels
 					label = "Winter";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
+				class None
+				{
+					label = "N/A";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
 			};
 			class Type
 			{
 				label = "Type";
-				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Platoon","NoShoulders"};
+				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Breacher","Marksmen","Platoon","NoShoulders","TL","SL"};
 				class Regular
 				{
 					label = "Rifleman";
@@ -90,6 +100,16 @@ class XtdGearModels
 					label = "Grenadier";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
+				class Breacher
+				{
+					label = "Breacher";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Marksmen
+				{
+					label = "Marksmen";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class Platoon
 				{
 					label = "Platoon";
@@ -98,6 +118,79 @@ class XtdGearModels
 				class NoShoulders
 				{
 					label = "NoShoulders";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class TL
+				{
+					label = "TL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class SL
+				{
+					label = "SL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+		class AresArmor
+		{
+			label = "Ares Vests";
+			author = "Body";
+			options[] = {"Shoulders","Type"};
+			class Shoulders
+			{
+				label = "Shoulders";
+				values[] = {"Normal","CQB","Sniper"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Normal
+				{
+					label = "Normal";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class CQB
+				{
+					label = "CQB";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Sniper
+				{
+					label = "Sniper";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class Type
+			{
+				label = "Type";
+				values[] = {"Rifleman","RA","Medic","PL","TL","SL"};
+				class Regular
+				{
+					label = "Rifleman";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class RA
+				{
+					label = "RA";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Medic
+				{
+					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class PL
+				{
+					label = "Platoon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class TL
+				{
+					label = "TL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class SL
+				{
+					label = "SL";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -110,7 +203,7 @@ class XtdGearModels
 			class Section
 			{
 				label = "Section";
-				values[] = {"Reservist","S1_1","S1_2","S1_3","Atlas","Apollo"};
+				values[] = {"Reservist","S1_1","S1_2","S1_3","Atlas","Apollo","Ares"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Reservist
@@ -143,6 +236,11 @@ class XtdGearModels
 					label = "Apollo";
 					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
 				};
+				class Ares
+				{
+					label = "Ares";
+					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
+				};
 			};
 			class Camo
 			{
@@ -174,7 +272,12 @@ class XtdGearModels
 			class Type
 			{
 				label = "Type";
-				values[] = {"Rifleman","Sealed","Medic","Beanies","Booines","Soft_Cap","Beret","CrewHelmet","Platoon","Mike"};
+				values[] = {"RA","Rifleman","Sealed","Medic","Beanies","Booines","Soft_Cap","Beret","Platoon","Mike","SL","TL"};
+				class RA
+				{
+					label = "RA";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
 				class Regular
 				{
 					label = "Rifleman";
@@ -210,11 +313,6 @@ class XtdGearModels
 					label = "Beret";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class CrewHelmet
-				{
-					label = "Crewman";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
 				class Platoon
 				{
 					label = "Platoon";
@@ -223,6 +321,16 @@ class XtdGearModels
 				class Mike
 				{
 					label = "Mike";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class SL
+				{
+					label = "SL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class TL
+				{
+					label = "TL";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -1157,8 +1265,6 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 		 
-		 
-		 
 		///No Visor
 		class 53rd_Apollo_Helmet_Urban_No_Visor
 		{
@@ -1402,7 +1508,125 @@ class XtdGearInfos
 		{
 		Camo = "Desert";
 		};
-						
+	
+	
+		///Ares Helmets
+		class 53rd_Ares_RA_H3_Helmet
+		{
+		model = "HephaestusCamoHelmets";
+		Section = "Ares";
+		Camo = "Urban";
+		Type = "RA";
+		Visor = "No";
+		};
+		class 53rd_Ares_Rifleman_H3_Helmet:53rd_Ares_RA_H3_Helmet
+		{
+		Type = "Rifleman";
+		};
+		class 53rd_Ares_Medic_H3_Helmet:53rd_Ares_RA_H3_Helmet
+		{
+		Type = "Medic";
+		};
+		class 53rd_Ares_TL_H3_Helmet:53rd_Ares_RA_H3_Helmet
+		{
+		Type = "TL";
+		};
+		class 53rd_Ares_SL_H3_Helmet:53rd_Ares_RA_H3_Helmet
+		{
+		Type = "SL";
+		};
+		
+		class 53rd_Ares_PL_H3_Helmet:53rd_Ares_RA_H3_Helmet
+		{
+		Type = "Platoon";
+		};
+		
+		
+	
+	
+		//Ares Armor
+		//NORMAL
+		class 53rd_Ares_MA_Vest_Rifleman
+		{
+		model = "AresArmor";
+		Shoulders = "Normal";
+		Type = "Rifleman";
+		};
+		class 53rd_Ares_MA_Vest_PL:53rd_Ares_MA_Vest_Rifleman
+		{
+		Type = "PL";
+		};
+		class 53rd_Ares_MA_Vest_RA:53rd_Ares_MA_Vest_Rifleman
+		{
+		Type = "RA";
+		};
+		class 53rd_Ares_MA_Vest_SL:53rd_Ares_MA_Vest_Rifleman
+		{
+		Type = "SL";
+		};
+		class 53rd_Ares_MA_Vest_TL:53rd_Ares_MA_Vest_Rifleman
+		{
+		Type = "TL";
+		};
+		class 53rd_Ares_MA_Vest_Medic:53rd_Ares_MA_Vest_Rifleman
+		{
+		Type = "Medic";
+		};
+		//CQB
+		class 53rd_Ares_MA_Vest_Rifleman_CQB
+		{
+		model = "AresArmor";
+		Shoulders = "CQB";
+		Type = "Rifleman";
+		};
+		class 53rd_Ares_MA_Vest_RA_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
+		{
+		Type = "RA";
+		};
+		class 53rd_Ares_MA_Vest_PL_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
+		{
+		Type = "PL";
+		};
+		class 53rd_Ares_MA_Vest_SL_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
+		{
+		Type = "SL";
+		};
+		class 53rd_Ares_MA_Vest_TL_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
+		{
+		Type = "TL";
+		};
+		class 53rd_Ares_MA_Vest_Medic_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
+		{
+		Type = "Medic";
+		};
+		//SNIPER
+		class 53rd_Ares_MA_Vest_Rifleman_Sniper
+		{
+		model = "AresArmor";
+		Shoulders = "Sniper";
+		Type = "Rifleman";
+		};
+		class 53rd_Ares_MA_Vest_RA_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
+		{
+		Type = "RA";
+		};
+		class 53rd_Ares_MA_Vest_PL_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
+		{
+		Type = "PL";
+		};
+		class 53rd_Ares_MA_Vest_SL_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
+		{
+		Type = "SL";
+		};
+		class 53rd_Ares_MA_Vest_TL_SNIPER:53rd_Ares_MA_Vest_Rifleman_Sniper
+		{
+		Type = "TL";
+		};
+		class 53rd_Ares_MA_Vest_Medic_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
+		{
+		Type = "Medic";
+		};
+		
 		
 		//Atlas Helmets
 		//Hellfire
