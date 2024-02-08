@@ -1,4 +1,4 @@
-/*class CfgPatches {
+class CfgPatches {
 	class 53rd_Custom_Armor_Theta
 	{
 			units[] = 
@@ -7,6 +7,18 @@
 			};
 			weapons[] = 
 			{
+				"53rd_Theta_SN",
+				"53rd_Theta_WD",
+				"53rd_Theta_UB",
+				"53rd_Theta_DS",
+				"53rd_Theta_Helmet_Urban_No_Visor",
+				"53rd_Theta_Helmet_Urban_Visor",
+				"53rd_Theta_Helmet_Woodland_No_Visor",
+				"53rd_Theta_Helmet_Woodland_Visor",
+				"53rd_Theta_Helmet_Desert_No_Visor",
+				"53rd_Theta_Helmet_Desert_Visor",
+				"53rd_Theta_Helmet_Winter_No_Visor",
+				"53rd_Theta_Helmet_Winter_Visor",
 			};
 			requiredVersion = 0.100000;
 			requiredAddons[] = {};
@@ -119,11 +131,14 @@ class cfgWeapons
 			};
 		};
 	};
+ 	/* // PENDING HELMET MODEL UPDATE // 
+
 	/////HELMETS/////
-	class 53rd_Theta_Helmet_Urban_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Urban_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy";
-		scope=2;
+		author="Cherryy&Scarecrow";
+		scope=1;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Urban / No Visor)";
@@ -139,10 +154,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Urban.paa"
 		};
 	};
-	class 53rd_Theta_Helmet_Urban: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Urban_Visor: 53rd_Base_headgear
 	{
-		author="Cherryy";
-		scope=2;
+		author="Cherri&Scarecrow";
+		scope=1;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Urban / Visor)";
@@ -159,10 +175,11 @@ class cfgWeapons
 		};
 	};
 	//Woodland
-	class 53rd_Theta_Helmet_Woodland_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Woodland_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy";
+		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Woodland / No Visor)";
@@ -178,10 +195,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Woodland.paa"
 		};
 	};
-	class 53rd_Theta_Helmet_Woodland: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Woodland_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy";
+		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Woodland / Visor)";
@@ -198,10 +216,11 @@ class cfgWeapons
 		};
 	};
 	//Desert
-		class 53rd_Theta_Helmet_Desert_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Desert_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy";
+		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Desert / No Visor)";
@@ -217,10 +236,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Desert.paa"
 		};
 	};
-	class 53rd_Theta_Helmet_Desert: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Desert_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy";
+		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Desert / Visor)";
@@ -237,10 +257,11 @@ class cfgWeapons
 		};
 	};
 	//Winter
-	class 53rd_Theta_Helmet_Winter_NV: 53rd_Base_NV_headgear //works
+	class 53rd_Theta_Helmet_Winter_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy";
+		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Winter / No Visor)";
@@ -256,10 +277,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Winter.paa"
 		};
 	};
-	class 53rd_Theta_Helmet_Winter: 53rd_Base_headgear //works
+	class 53rd_Theta_Helmet_Winter_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy";
+		author="Cherryy&Scarecrow";
 		scope=2;
+		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Winter / Visor)";
@@ -275,7 +297,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Helmets\Theta\53rd_Theta_Helmet_Winter.paa"
 		};
 	};
-/////////////////////ARMOR///////////////////////////
+		*/ // PENDING HELMET MODEL UPDATE // 
+
+	
+	
+//////////////VEST//////////////////////////////
 	class UniformItem;
 	class Uniform_Base: ItemCore
 	{
@@ -287,37 +313,41 @@ class cfgWeapons
 	};
 	class 53rd_U_Base_uniform: haloinfmar_U_WDL_uniform
 	{
-		displayName = "[53rd] Body Base";
-		class ItemInfo: UniformItem
-		{
-			uniformType = "Neopren";
-			uniformModel="-";
-			uniformClass="53rd_base_F";
-			containerClass="Supply100";
-			mass=80;
-		};
-		hiddenSelections[]=
-		{
-			"Camo1",
-			"Camo2",
-			"Camo3"
-		};
+		author="Body";
+		scope=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Rifleman Base ";
+		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
+			"53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Winter_co.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			uniformType = "Neopren";
+			uniformModel="-";
+			uniformClass="HaloInf_Marine_WDL_F";
+			containerClass="Supply100";
+			mass=80;
 		};
 	};
-	class 53rd_Theta_SN: 53rd_U_Base_uniform
+	class 53rd_Armor_Theta_Winter: 53rd_U_Base_uniform
 	{
-		author="Body";
+		author="Scarecrow";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Winter Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -351,15 +381,14 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Theta_WD: 53rd_U_Base_uniform
+	class 53rd_Armor_Theta_Woodland: 53rd_U_Base_uniform
 	{
-		author="Body";
+		author="53rd Mod Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Woodland Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -393,15 +422,14 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Theta_UB: 53rd_U_Base_uniform
+	class 53rd_Armor_Theta_Urban: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Urban Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -435,15 +463,14 @@ class cfgWeapons
 			mass=80;
 		};
 	};
-	class 53rd_Theta_DS: 53rd_U_Base_uniform
+	class 53rd_Armor_Theta_Desert: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Desert Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -514,7 +541,6 @@ class CfgVehicles
 	{
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		displayName="[53rd] Winter Rifleman";
 		hiddenSelections[]=
 		{
@@ -531,11 +557,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Theta_SN";
 	};
-		class 53rd_Woodland_Camo_Theta: 53rd_base_F
+	class 53rd_Woodland_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		displayName="[53rd] Woodland Rifleman";
 		hiddenSelections[]=
 		{
@@ -552,11 +577,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Theta_WD";
 	};
-		class 53rd_Urban_Camo_Theta: 53rd_base_F
+	class 53rd_Urban_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		displayName="[53rd] Urban Rifleman";
 		hiddenSelections[]=
 		{
@@ -573,11 +597,10 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Theta_UB";
 	};
-		class 53rd_Desert_Camo_Theta: 53rd_base_F
+	class 53rd_Desert_Camo_Theta: 53rd_base_F
 	{
 		scope=2;
 		scopeArsenal=2;
-		side=1;
 		displayName="[53rd] Desert Rifleman";
 		hiddenSelections[]=
 		{
@@ -594,4 +617,5 @@ class CfgVehicles
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Theta_DS";
 	};
+
 };

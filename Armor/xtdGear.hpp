@@ -386,7 +386,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas", "Axe"};
 				class Hellfire
 				{
 					label = "Hellfire";
@@ -412,6 +412,12 @@ class XtdGearModels
 					label = "Texas";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
+				
+				class Axe
+				{
+					label = "Axe";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};				
 			};
 		};
         class Atlashelms
@@ -525,7 +531,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas","Axe"};
 				class Hellfire
 				{
 					label = "Hellfire";
@@ -551,6 +557,11 @@ class XtdGearModels
 					label = "Texas";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
+				class Axe
+				{
+					label = "Axe";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};				
 			};
 		};   
         class AtlasTeamArmors
