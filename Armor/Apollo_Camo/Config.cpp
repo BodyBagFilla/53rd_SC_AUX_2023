@@ -698,8 +698,8 @@ class CfgVehicles
 	//Urban
 	class 53rd_Apollo_Urban: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Urban";
 		hiddenSelections[]=
@@ -719,8 +719,8 @@ class CfgVehicles
 	};
 	class 53rd_Apollo_Woodland: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Woodland";
 		hiddenSelections[]=
@@ -740,8 +740,8 @@ class CfgVehicles
 	};
 	class 53rd_Apollo_Desert: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Desert";
 		hiddenSelections[]=
@@ -761,8 +761,8 @@ class CfgVehicles
 	};
 	class 53rd_Apollo_Winter: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Winter";
 		hiddenSelections[]=
@@ -783,8 +783,8 @@ class CfgVehicles
 	//No Shoulders
 	class 53rd_Apollo_Urban_NS: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Urban (No Shoulders)";
 		hiddenSelections[]=
@@ -803,8 +803,8 @@ class CfgVehicles
 	};
 	class 53rd_Apollo_Desert_NS: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Desert (No Shoulders)";
 		hiddenSelections[]=
@@ -823,8 +823,8 @@ class CfgVehicles
 	};
 	class 53rd_Apollo_Woodland_NS: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Woodland (No Shoulders)";
 		hiddenSelections[]=
@@ -843,8 +843,8 @@ class CfgVehicles
 	};
 	class 53rd_Apollo_Winter_NS: 53rd_Apollo_Urban
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Apollo Winter (No Shoulders)";
 		hiddenSelections[]=

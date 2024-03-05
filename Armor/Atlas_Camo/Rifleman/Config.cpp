@@ -529,8 +529,8 @@ class CfgVehicles
 	
 	class 53rd_A_Snow_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas Winter Rifleman";
 		hiddenSelections[]=
@@ -550,8 +550,8 @@ class CfgVehicles
 	};
 	class 53rd_A_Woodland_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas Woodland Rifleman";
 		hiddenSelections[]=
@@ -571,8 +571,8 @@ class CfgVehicles
 	};
 	class 53rd_A_Urban_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas Urban Rifleman";
 		hiddenSelections[]=
@@ -592,8 +592,8 @@ class CfgVehicles
 	};
 	class 53rd_A_Desert_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas Desert Rifleman";
 		hiddenSelections[]=

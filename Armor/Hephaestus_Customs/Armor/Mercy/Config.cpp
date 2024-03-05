@@ -99,7 +99,7 @@ class CfgPatches {
 			"53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
 		};
 	};
-	class 53rd_Mercy_SN: 53rd_U_Base_uniform
+	class 53rd_Mercy_Armor_Winter: 53rd_U_Base_uniform
 	{
 		author="Scarecrow";
 		scope=2;
@@ -141,7 +141,7 @@ class CfgPatches {
 			mass=80;
 		};
 	};
-	class 53rd_Mercy_WD: 53rd_U_Base_uniform
+	class 53rd_Mercy_Armor_Woodland: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -183,7 +183,7 @@ class CfgPatches {
 			mass=80;
 		};
 	};
-	class 53rd_Mercy_UB: 53rd_U_Base_uniform
+	class 53rd_Mercy_Armor_Urban: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -225,7 +225,7 @@ class CfgPatches {
 			mass=80;
 		};
 	};
-	class 53rd_Mercy_DS: 53rd_U_Base_uniform
+	class 53rd_Mercy_Armor_Desert: 53rd_U_Base_uniform
 	{
 		author="53rd Mod Team";
 		scope=2;
@@ -302,8 +302,8 @@ class CfgVehicles
 	};
 	class 53rd_Snow_Camo_Test: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Winter Rifleman";
 		hiddenSelections[]=
@@ -319,12 +319,12 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Mercy\53rd_Mercy_Armor_Winter.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Mercy_SN";
+		uniformClass="53rd_Mercy_Armor_Winter";
 	};
 	class 53rd_Woodland_Camo_Test: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Woodland Rifleman";
 		hiddenSelections[]=
@@ -340,12 +340,12 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Mercy\53rd_Mercy_Armor_Woodland.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Mercy_WD";
+		uniformClass="53rd_Mercy_Armor_Woodland";
 	};
 	class 53rd_Urban_Camo_Test: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Urban Rifleman";
 		hiddenSelections[]=
@@ -361,12 +361,12 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Mercy\53rd_Mercy_Armor_Urban.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Mercy_UB";
+		uniformClass="53rd_Mercy_Armor_Urban";
 	};
 	class 53rd_Desert_Camo_Test: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Desert Rifleman";
 		hiddenSelections[]=
@@ -382,7 +382,7 @@ class CfgVehicles
 			"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Mercy\53rd_Mercy_Armor_Desert.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
-		uniformClass="53rd_Mercy_DS";
+		uniformClass="53rd_Mercy_Armor_Desert";
 	};
 
 };

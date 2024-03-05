@@ -6,11 +6,12 @@ class XtdGearModels
 		{
 			label = "53rd Armor";
 			author = "Body";
-			options[] = {"Section","Camo","Type"};
+			options[] = {"Section","Camo","MOS"};
 			class Section
 			{
 				label = "Section";
-				values[] = {"Apollo","Hephaestus","Atlas","Ares"};
+				values[] = {"Apollo","Atlas"};
+				alwaysSelectable = 1;
 				changeingame = 1;
                 changedelay  = 0;
 				class Apollo
@@ -18,26 +19,16 @@ class XtdGearModels
 					label = "Apollo";
 					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
 				};
-				class Hephaestus
-				{
-					label = "Hephaestus";
-					image = "#(rgb,113,121,126)color(0.8,0.8,0.8,1)";
-				};
 				class Atlas
 				{
 					label = "Atlas";
-					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
-				};
-				class Ares
-				{
-					label = "Ares";
 					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
 			};
 			class Camo
 			{
 				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Winter","None"};
+				values[] = {"Urban","Woodland","Desert","Winter"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -60,17 +51,101 @@ class XtdGearModels
 					label = "Winter";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
-				class None
+			};
+			class MOS
+			{
+				label = "MOS";
+				values[] = {"Rifleman","Platoon","NoShoulders"};
+				class Rifleman
 				{
-					label = "N/A";
+					label = "Rifleman";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Medic
+				{
+					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Platoon
+				{
+					label = "Platoon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class NoShoulders
+				{
+					label = "NoShoulders";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+
+			};
+		};
+		class HephaestusArmor
+		{
+			label = "53rd Hephaestus Armor";
+			author = "Body";
+			options[] = {"Section","Camo","MOS"};
+			class Section
+			{
+				label = "Section";
+				values[] = {"H1_1","H1_2","H1_3","Reservist"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class H1_1
+				{
+					label = "1-1";
+					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
+				};
+				class H1_2
+				{
+					label = "1-2";
+					image = "#(rgb,113,121,126)color(0.8,0.8,0.8,1)";
+				};
+				class H1_3
+				{
+					label = "1-3";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class Reservist
+				{
+					label = "Reservist";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+			};
+
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Winter"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Winter
+				{
+					label = "Winter";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
-			class Type
+
+			class MOS
 			{
-				label = "Type";
-				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Breacher","Marksmen","Platoon","NoShoulders","TL","SL"};
-				class Regular
+				label = "MOS";
+				values[] = {"Rifleman","Medic","Autorifleman","Anti_Tank","JTAC","Grenadier","Lead"};
+				class Rifleman
 				{
 					label = "Rifleman";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
@@ -87,7 +162,7 @@ class XtdGearModels
 				};
 				class Anti_Tank
 				{
-					label = "Anti_Tank";
+					label = "Anti-Tank";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class JTAC
@@ -100,34 +175,9 @@ class XtdGearModels
 					label = "Grenadier";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Breacher
+				class Lead
 				{
-					label = "Breacher";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Marksmen
-				{
-					label = "Marksmen";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Platoon
-				{
-					label = "Platoon";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class NoShoulders
-				{
-					label = "NoShoulders";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class TL
-				{
-					label = "TL";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class SL
-				{
-					label = "SL";
+					label = "Lead";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};
@@ -136,7 +186,7 @@ class XtdGearModels
 		{
 			label = "Ares Vests";
 			author = "Body";
-			options[] = {"Shoulders","Type"};
+			options[] = {"Shoulders","MOS"};
 			class Shoulders
 			{
 				label = "Shoulders";
@@ -159,9 +209,9 @@ class XtdGearModels
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
-			class Type
+			class MOS
 			{
-				label = "Type";
+				label = "MOS";
 				values[] = {"Rifleman","RA","Medic","PL","TL","SL"};
 				class Regular
 				{
@@ -199,7 +249,7 @@ class XtdGearModels
 		{
 			label = "53rd Headwear";
 			author = "Body";
-			options[] = {"Section","Camo","Type","Visor"};
+			options[] = {"Section","Camo","MOS","Visor"};
 			class Section
 			{
 				label = "Section";
@@ -269,10 +319,10 @@ class XtdGearModels
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
-			class Type
+			class MOS
 			{
-				label = "Type";
-				values[] = {"RA","Rifleman","Sealed","Medic","Beanies","Booines","Soft_Cap","Beret","Platoon","Mike","SL","TL"};
+				label = "MOS";
+				values[] = {"RA","Rifleman","Sealed","Medic","Platoon","Mike","SL","TL"};
 				class RA
 				{
 					label = "RA";
@@ -291,26 +341,6 @@ class XtdGearModels
 				class Medic
 				{
 					label = "Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Beanies
-				{
-					label = "Beanies";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Booines
-				{
-					label = "Booines";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Soft_Cap
-				{
-					label = "Soft Cap";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Beret
-				{
-					label = "Beret";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Platoon
@@ -386,7 +416,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas", "Axe"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas", "Axe","Scarecrow"};
 				class Hellfire
 				{
 					label = "Hellfire";
@@ -411,11 +441,15 @@ class XtdGearModels
 				{
 					label = "Texas";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				
+				};			
 				class Axe
 				{
 					label = "Axe";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};				
+				class Scarecrow
+				{
+					label = "Scarecrow";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};				
 			};
@@ -424,11 +458,11 @@ class XtdGearModels
 		{
 			label = "Atlas Helmets";
 			author = "Tsuki";
-			options[] = {"Type","Camo"};
+			options[] = {"MOS","Camo"};
 			
-			class Type
+			class MOS
 			{
-				label = "Type";
+				label = "MOS";
 				values[] = {"Normal","NormalV","Medic","MedicV","Scout_Gold","Scout_Purple","Scout_PL"};
 				class Normal
 				{
@@ -568,7 +602,7 @@ class XtdGearModels
 		{
 			label = "Atlas Team Armors"
 			author = "Tsuki";
-			options[] = {"Camo","Type"};
+			options[] = {"Camo","MOS"};
 			
 			class Camo
 			{
@@ -597,9 +631,9 @@ class XtdGearModels
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
-			class Type
+			class MOS
 			{
-				label = "Type";
+				label = "MOS";
 				values[] = {"Command","Gold","Purple"};
 				class Command
 				{
@@ -618,7 +652,122 @@ class XtdGearModels
 				};
 			};
 		};
-    };
+
+        class SoftCover
+		{
+			label = "Soft Covers"
+			author = "53 Aux Team";
+			options[] = {"Beret","Boonie","Beanie","Patrol"};
+			
+			class Beret
+			{
+				label = "Beret";
+				values[] = {"Apollo","Ares","Atlas","Hephaestus","Volare","Medical1","Medical2"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Apollo
+				{
+					label = "Apollo";
+				};
+				class Ares
+				{
+					label = "Ares";
+				};
+				class Atlas
+				{
+					label = "Atlas";
+				};
+				class Hephaestus
+				{
+					label = "Hephaestus";
+				};
+				class Volare
+				{
+					label = "Volare";
+				};
+				class Medical1
+				{
+					label = "Medical #1";
+				};				
+				class Medical2
+				{
+					label = "Medical #2";
+				};
+			};
+			class Boonie
+			{
+				label = "Boonie";
+				values[] = {"Urban","Woodland","Desert","Winter"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Winter
+				{
+					label = "Winter";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};			
+
+			class Beanie
+			{
+				label = "Beanie";
+				values[] = {"Urban","Woodland","Desert","Winter"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Winter
+				{
+					label = "Winter";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};		
+
+			class Patrol
+			{
+				label = "Patrol";
+				values[] = {"Cap",};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Cap
+				{
+					label = "Cap";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+			};		
+		};
+	};
 };
 
 class XtdGearInfos
@@ -631,7 +780,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Urban";
-		Type = "Sealed";
+		MOS = "Sealed";
 		Visor = "Yes";
 		};
         class 53rd_Sealed_Desert:53rd_Sealed_Urban
@@ -646,7 +795,6 @@ class XtdGearInfos
 		{
 		Camo = "Winter";
 		};
-        
         class 53rd_Sealed_Urban_dp:53rd_Sealed_Urban
 		{
 		Visor = "No";
@@ -672,7 +820,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "No";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Urban_NVisor:53rd_Rifleman_Helmet_Urban_No_Visor
@@ -693,7 +841,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Urban_Visor:53rd_Rifleman_Helmet_Urban_Visor
@@ -717,7 +865,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Desert";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "No";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Desert_NVisor:53rd_Rifleman_Helmet_Desert_No_Visor
@@ -738,7 +886,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Desert";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Desert_Visor:53rd_Rifleman_Helmet_Desert_Visor
@@ -762,7 +910,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Woodland";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "No";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Woodland_NVisor:53rd_Rifleman_Helmet_Woodland_No_Visor
@@ -783,7 +931,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Woodland";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Woodland_Visor:53rd_Rifleman_Helmet_Woodland_Visor
@@ -807,7 +955,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Winter";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "No";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Winter_NVisor:53rd_Rifleman_Helmet_Winter_No_Visor
@@ -828,7 +976,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Winter";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Rifleman_Helmet_Winter_Visor:53rd_Rifleman_Helmet_Winter_Visor
@@ -852,7 +1000,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Urban";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "No";
 		};
 		class 53rd_1_1_Medic_Helmet_Urban_NVisor:53rd_Medic_Helmet_Urban_No_Visor
@@ -873,7 +1021,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Urban";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Medic_Helmet_Urban_Visor:53rd_Medic_Helmet_Urban_Visor
@@ -897,7 +1045,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Desert";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "No";
 		};
 		class 53rd_1_1_Medic_Helmet_Desert_NVisor:53rd_Medic_Helmet_Desert_No_Visor
@@ -918,7 +1066,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Desert";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Medic_Helmet_Desert_Visor:53rd_Medic_Helmet_Desert_Visor
@@ -942,7 +1090,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Woodland";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "No";
 		};
 		class 53rd_1_1_Medic_Helmet_Woodland_NVisor:53rd_Medic_Helmet_Woodland_No_Visor
@@ -963,7 +1111,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Woodland";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Medic_Helmet_Woodland_Visor:53rd_Medic_Helmet_Woodland_Visor
@@ -987,7 +1135,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Winter";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "No";
 		};
 		class 53rd_1_1_Medic_Helmet_Winter_NVisor:53rd_Medic_Helmet_Winter_No_Visor
@@ -1008,7 +1156,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Reservist";
 		Camo = "Winter";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "Yes";
 		};
 		class 53rd_1_1_Medic_Helmet_Winter_Visor:53rd_Medic_Helmet_Winter_Visor
@@ -1031,7 +1179,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "No";
 		};
 		class 53rd_A_Rifleman_Helmet_Woodland_No_Visor:53rd_A_Rifleman_Helmet_Urban_No_Visor
@@ -1054,7 +1202,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "Yes";
 		};
 		class 53rd_A_Rifleman_Helmet_Woodland_Visor:53rd_A_Rifleman_Helmet_Urban_Visor
@@ -1079,7 +1227,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "No";
 		};
 		class 53rd_A_Medic_Helmet_Woodland_No_Visor:53rd_A_Medic_Helmet_Urban_No_Visor
@@ -1102,7 +1250,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Medic";
+		MOS = "Medic";
 		Visor = "Yes";
 		};
 		class 53rd_A_Medic_Helmet_Woodland_Visor:53rd_A_Medic_Helmet_Urban_Visor
@@ -1125,7 +1273,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Platoon";
+		MOS = "Platoon";
 		Visor = "No";
 		};
 		class 53rd_A_P_Rifleman_Helmet_Woodland_No_Visor:53rd_A_P_Rifleman_Helmet_Urban_No_Visor
@@ -1148,7 +1296,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Platoon";
+		MOS = "Platoon";
 		Visor = "Yes";
 		};
 		class 53rd_A_P_Rifleman_Helmet_Woodland_Visor:53rd_A_P_Rifleman_Helmet_Urban_Visor
@@ -1171,7 +1319,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Mike";
+		MOS = "Mike";
 		Visor = "No";
 		};
 		class 53rd_A_P_M_Rifleman_Helmet_Woodland_No_Visor:53rd_A_P_M_Rifleman_Helmet_Urban_No_Visor
@@ -1194,7 +1342,7 @@ class XtdGearInfos
 		model = "HephaestusCamoHelmets";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Mike";
+		MOS = "Mike";
 		Visor = "Yes";
 		};
 		class 53rd_A_P_M_Rifleman_Helmet_Woodland_Visor:53rd_A_P_M_Rifleman_Helmet_Urban_Visor
@@ -1209,80 +1357,14 @@ class XtdGearInfos
 		{
 		Camo = "Winter";
 		};
-		
-		///Beanies
-		class 53rd_Beanie_Urban
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Beanies";
-		Visor = "No";
-		};
-		class 53rd_Beanie_Woodland:53rd_Beanie_Urban
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Beanie_Desert:53rd_Beanie_Urban
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Beanie_Winter:53rd_Beanie_Urban
-		{
-		Camo = "Winter";
-		};
-		
-		///Booines
-		class 53rd_Boonie_Urban
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Booines";
-		Visor = "No";
-		};
-		class 53rd_Boonie_Woodland:53rd_Boonie_Urban
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Boonie_Desert:53rd_Boonie_Urban
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Boonie_Winter:53rd_Boonie_Urban
-		{
-		Camo = "Winter";
-		};
-		
-		///Beret
-		class 53rd_Beret_Hephaestus
-		{
-		model = "HephaestusCamoHelmets";
-		Section = "Reservist";
-		Camo = "Urban";
-		Type = "Beret";
-		Visor = "No";
-		};
-		class 53rd_Beret_Hephaestus_med:53rd_Beret_Hephaestus
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Beret_Hephaestus_med_led:53rd_Beret_Hephaestus
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Beret_Volare:53rd_Beret_Hephaestus
-		{
-		Camo = "Winter";
-		};
-		 
-		///No Visor
+
+		//No Visor
 		class 53rd_Apollo_Helmet_Urban_No_Visor
 		{
 		model = "HephaestusCamoHelmets";
 		Section = "Apollo";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "No";
 		};
 		class 53rd_Apollo_Helmet_Woodland_No_Visor:53rd_Apollo_Helmet_Urban_No_Visor
@@ -1298,13 +1380,13 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 		
-		///Visor
+		//Visor
 		class 53rd_Apollo_Helmet_Urban_Visor
 		{
 		model = "HephaestusCamoHelmets";
 		Section = "Apollo";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		Visor = "Yes";
 		};
 		class 53rd_Apollo_Helmet_Woodland_Visor:53rd_Apollo_Helmet_Urban_Visor
@@ -1319,14 +1401,486 @@ class XtdGearInfos
 		{
 		Camo = "Winter";
 		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Hephaestus Armor////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Mino Armors////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+		//Urban
+		class 53rd_MinoRifle_Urban
+		{
+		model = "HephaestusArmor";
+		Section = "H1_1";
+		Camo = "Urban";
+		MOS = "Rifleman";
+		};
+		class 53rd_MinoMed_Urban:53rd_MinoRifle_Urban
+		{
+		MOS = "Medic";
+		};
+		class 53rd_MinoJTAC_Urban:53rd_MinoRifle_Urban
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_MinoGren_Urban:53rd_MinoRifle_Urban
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_MinoAutoRifle_Urban:53rd_MinoRifle_Urban
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_MinoAT_Urban:53rd_MinoRifle_Urban
+		{
+		MOS = "Anti_Tank";
+		};
+		class 53rd_MinoSL_Urban:53rd_MinoRifle_Urban
+		{
+		MOS = "Lead";
+		};
+	
+		//Desert
+		class 53rd_MinoRifle_Desert
+		{
+		model = "HephaestusArmor";
+		Section = "H1_1";
+		Camo = "Desert";
+		MOS = "Rifleman";
+		};
+		class 53rd_MinoMed_Desert:53rd_MinoRifle_Desert
+		{
+		MOS = "Medic";
+		};
+		class 53rd_MinoJTAC_Desert:53rd_MinoRifle_Desert
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_MinoGren_Desert:53rd_MinoRifle_Desert
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_MinoAutoRifle_Desert:53rd_MinoRifle_Desert
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_MinoAT_Desert:53rd_MinoRifle_Desert
+		{
+		MOS = "Anti_Tank";
+		};
+		class 53rd_MinoSL_Desert:53rd_MinoRifle_Desert
+		{
+		MOS = "Lead";
+		};
 		
-		//Apollo Armor
+		//Winter
+		class 53rd_MinoRifle_Winter
+		{
+		model = "HephaestusArmor";
+		Section = "H1_1";
+		Camo = "Winter";
+		MOS = "Rifleman";
+		};
+		class 53rd_MinoMed_Winter:53rd_MinoRifle_Winter
+		{
+		MOS = "Medic";
+		};
+		class 53rd_MinoJTAC_Winter:53rd_MinoRifle_Winter
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_MinoGren_Winter:53rd_MinoRifle_Winter
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_MinoAutoRifle_Winter:53rd_MinoRifle_Winter
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_MinoAT_Winter:53rd_MinoRifle_Winter
+		{
+		MOS = "Anti_Tank";
+		};
+		class 53rd_MinoSL_Winter:53rd_MinoRifle_Winter
+		{
+		MOS = "Lead";
+		};		
+	
+		//Woodland
+		class 53rd_MinoRifle_Woodland
+		{
+		model = "HephaestusArmor";
+		Section = "H1_1";
+		Camo = "Woodland";
+		MOS = "Rifleman";
+		};
+		class 53rd_MinoMed_Woodland:53rd_MinoRifle_Woodland
+		{
+		MOS = "Medic";
+		};
+		class 53rd_MinoJTAC_Woodland:53rd_MinoRifle_Woodland
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_MinoGren_Woodland:53rd_MinoRifle_Woodland
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_MinoAutoRifle_Woodland:53rd_MinoRifle_Woodland
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_MinoAT_Woodland:53rd_MinoRifle_Woodland
+		{
+		MOS = "Anti_Tank";
+		};
+		class 53rd_MinoSL_Woodland:53rd_MinoRifle_Woodland
+		{
+		MOS = "Lead";
+		};		
+
+//////////////////////////////////////////////////////////////////////////////
+/////////////////////////////Kerb Armors//////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+		//Urban
+		class 53rd_KerbRifle_Urban
+		{
+		model = "HephaestusArmor";
+		Section = "H1_2";
+		Camo = "Urban";
+		MOS = "Rifleman";
+		};
+		class 53rd_KerbMed_Urban:53rd_KerbRifle_Urban
+		{
+		MOS = "Medic";
+		};
+		class 53rd_KerbJTAC_Urban:53rd_KerbRifle_Urban
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_KerbGren_Urban:53rd_KerbRifle_Urban
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_KerbAutoRifle_Urban:53rd_KerbRifle_Urban
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_KerbAT_Urban:53rd_KerbRifle_Urban
+		{
+		MOS = "Anti_Tank";
+		};	
+		class 53rd_KerbSL_Urban:53rd_KerbRifle_Urban
+		{
+		MOS = "Lead";
+		};		
+	
+		//Desert
+		class 53rd_KerbRifle_Desert
+		{
+		model = "HephaestusArmor";
+		Section = "H1_2";
+		Camo = "Desert";
+		MOS = "Rifleman";
+		};
+		class 53rd_KerbMed_Desert:53rd_KerbRifle_Desert
+		{
+		MOS = "Medic";
+		};
+		class 53rd_KerbJTAC_Desert:53rd_KerbRifle_Desert
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_KerbGren_Desert:53rd_KerbRifle_Desert
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_KerbAutoRifle_Desert:53rd_KerbRifle_Desert
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_KerbAT_Desert:53rd_KerbRifle_Desert
+		{
+		MOS = "Anti_Tank";
+		};
+		class 53rd_KerbSL_Desert:53rd_KerbRifle_Desert
+		{
+		MOS = "Lead";
+		};		
+	
+	
+		//Winter
+		class 53rd_KerbRifle_Winter
+		{
+		model = "HephaestusArmor";
+		Section = "H1_2";
+		Camo = "Winter";
+		MOS = "Rifleman";
+		};
+		class 53rd_KerbMed_Winter:53rd_KerbRifle_Winter
+		{
+		MOS = "Medic";
+		};
+		class 53rd_KerbJTAC_Winter:53rd_KerbRifle_Winter
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_KerbGren_Winter:53rd_KerbRifle_Winter
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_KerbAutoRifle_Winter:53rd_KerbRifle_Winter
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_KerbAT_Winter:53rd_KerbRifle_Winter
+		{
+		MOS = "Anti_Tank";
+		};	
+		class 53rd_KerbSL_Winter:53rd_KerbRifle_Winter
+		{
+		MOS = "Lead";
+		};	
+
+	
+		//Woodland
+		class 53rd_KerbRifle_Woodland
+		{
+		model = "HephaestusArmor";
+		Section = "H1_2";
+		Camo = "Woodland";
+		MOS = "Rifleman";
+		};
+		class 53rd_KerbMed_Woodland:53rd_KerbRifle_Woodland
+		{
+		MOS = "Medic";
+		};
+		class 53rd_KerbJTAC_Woodland:53rd_KerbRifle_Woodland
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_KerbGren_Woodland:53rd_KerbRifle_Woodland
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_KerbAutoRifle_Woodland:53rd_KerbRifle_Woodland
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_KerbAT_Woodland:53rd_KerbRifle_Woodland
+		{
+		MOS = "Anti_Tank";
+		};		
+		class 53rd_KerbSL_Woodland:53rd_KerbRifle_Woodland
+		{
+		MOS = "Lead";
+		};	
+
+//////////////////////////////////////////////////////////////////////////////	
+////////////////////////////Hydra Armors/////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+		//Urban
+		class 53rd_HydraRifle_Urban
+		{
+		model = "HephaestusArmor";
+		Section = "H1_3";
+		Camo = "Urban";
+		MOS = "Rifleman";
+		};
+		class 53rd_HydraMed_Urban:53rd_HydraRifle_Urban
+		{
+		MOS = "Medic";
+		};
+		class 53rd_HydraJTAC_Urban:53rd_HydraRifle_Urban
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_HydraGren_Urban:53rd_HydraRifle_Urban
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_HydraAutoRifle_Urban:53rd_HydraRifle_Urban
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_HydraAT_Urban:53rd_HydraRifle_Urban
+		{
+		MOS = "Anti_Tank";
+		};	
+		class 53rd_HydraSL_Urban:53rd_HydraRifle_Urban
+		{
+		MOS = "Lead";
+		};		
+	
+		//Desert
+		class 53rd_HydraRifle_Desert
+		{
+		model = "HephaestusArmor";
+		Section = "H1_3";
+		Camo = "Desert";
+		MOS = "Rifleman";
+		};
+		class 53rd_HydraMed_Desert:53rd_HydraRifle_Desert
+		{
+		MOS = "Medic";
+		};
+		class 53rd_HydraJTAC_Desert:53rd_HydraRifle_Desert
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_HydraGren_Desert:53rd_HydraRifle_Desert
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_HydraAutoRifle_Desert:53rd_HydraRifle_Desert
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_HydraAT_Desert:53rd_HydraRifle_Desert
+		{
+		MOS = "Anti_Tank";
+		};
+		class 53rd_HydraSL_Desert:53rd_HydraRifle_Desert
+		{
+		MOS = "Lead";
+		};		
+	
+		//Winter
+		class 53rd_HydraRifle_Winter
+		{
+		model = "HephaestusArmor";
+		Section = "H1_3";
+		Camo = "Winter";
+		MOS = "Rifleman";
+		};
+		class 53rd_HydraMed_Winter:53rd_HydraRifle_Winter
+		{
+		MOS = "Medic";
+		};
+		class 53rd_HydraJTAC_Winter:53rd_HydraRifle_Winter
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_HydraGren_Winter:53rd_HydraRifle_Winter
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_HydraAutoRifle_Winter:53rd_HydraRifle_Winter
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_HydraAT_Winter:53rd_HydraRifle_Winter
+		{
+		MOS = "Anti_Tank";
+		};	
+		class 53rd_HydraSL_Winter:53rd_HydraRifle_Winter
+		{
+		MOS = "Lead";
+		};	
+
+	
+		//Woodland
+		class 53rd_HydraRifle_Woodland
+		{
+		model = "HephaestusArmor";
+		Section = "H1_3";
+		Camo = "Woodland";
+		MOS = "Rifleman";
+		};
+		class 53rd_HydraMed_Woodland:53rd_HydraRifle_Woodland
+		{
+		MOS = "Medic";
+		};
+		class 53rd_HydraJTAC_Woodland:53rd_HydraRifle_Woodland
+		{
+		MOS = "JTAC";
+		};
+		class 53rd_HydraGren_Woodland:53rd_HydraRifle_Woodland
+		{
+		MOS = "Grenadier";
+		};
+		class 53rd_HydraAutoRifle_Woodland:53rd_HydraRifle_Woodland
+		{
+		MOS = "Autorifleman";
+		};
+		class 53rd_HydraAT_Woodland:53rd_HydraRifle_Woodland
+		{
+		MOS = "Anti_Tank";
+		};		
+		class 53rd_HydraSL_Woodland:53rd_HydraRifle_Woodland
+		{
+		MOS = "Lead";
+		};	
+
+//////////////////////////////////////////////////////////////////////////////	
+////////////////////////////Reservist Armor/////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+		//Urban
+		class 53rd_Rifleman_UB
+		{
+		model = "HephaestusArmor";
+		Section = "Reservist";
+		Camo = "Urban";
+		MOS = "Rifleman";
+		};
+		class 53rd_Uniform_Medic_UB:53rd_Rifleman_UB
+		{
+		MOS = "Medic";
+		};
+		
+		//Desert
+		class 53rd_Rifleman_DS
+		{
+		model = "HephaestusArmor";
+		Section = "Reservist";
+		Camo = "Desert";
+		MOS = "Rifleman";
+		};
+		class 53rd_Uniform_Medic_DS:53rd_Rifleman_DS
+		{
+		MOS = "Medic";
+		};
+		
+		//Woodland
+		class 53rd_Rifleman_WD
+		{
+		model = "HephaestusArmor";
+		Section = "Reservist";
+		Camo = "Woodland";
+		MOS = "Rifleman";
+		};
+		class 53rd_Uniform_Medic_WD:53rd_Rifleman_WD
+		{
+		MOS = "Medic";
+		};
+		
+		//Winter
+		class 53rd_Rifleman_SN
+		{
+		model = "HephaestusArmor";
+		Section = "Reservist";
+		Camo = "Winter";
+		MOS = "Rifleman";
+		};
+		class 53rd_Uniform_Medic_SN:53rd_Rifleman_SN
+		{
+		MOS = "Medic";
+		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Apollo Helmets////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 		class 53rd_Apollo_UB
 		{
 		model = "HephaestusCamoArmor";
 		Section = "Apollo";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		};
 		class 53rd_Apollo_DS:53rd_Apollo_UB
 		{
@@ -1346,7 +1900,7 @@ class XtdGearInfos
 		model = "HephaestusCamoArmor";
 		Section = "Apollo";
 		Camo = "Urban";
-		Type = "NoShoulders";
+		MOS = "NoShoulders";
 		};
 		class 53rd_Apollo_DS_NS:53rd_Apollo_UB_NS
 		{
@@ -1361,122 +1915,9 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 		
-		//Hephaestus Armors
-		//Urban
-		class 53rd_Rifleman_UB
-		{
-		model = "HephaestusCamoArmor";
-		Section = "Hephaestus";
-		Camo = "Urban";
-		Type = "Rifleman";
-		};
-		class 53rd_Uniform_Medic_UB:53rd_Rifleman_UB
-		{
-		Type = "Medic";
-		};
-		class 53rd_Uniform_JTAC_UB:53rd_Rifleman_UB
-		{
-		Type = "JTAC";
-		};
-		class 53rd_Uniform_GL_UB:53rd_Rifleman_UB
-		{
-		Type = "Grenadier";
-		};
-		class 53rd_Uniform_AR_UB:53rd_Rifleman_UB
-		{
-		Type = "Autorifleman";
-		};
-		class 53rd_Uniform_AT_UB:53rd_Rifleman_UB
-		{
-		Type = "Anti_Tank";
-		};
-		
-		//Desert
-		class 53rd_Rifleman_DS
-		{
-		model = "HephaestusCamoArmor";
-		Section = "Hephaestus";
-		Camo = "Desert";
-		Type = "Rifleman";
-		};
-		class 53rd_Uniform_Medic_DS:53rd_Rifleman_DS
-		{
-		Type = "Medic";
-		};
-		class 53rd_Uniform_JTAC_DS:53rd_Rifleman_DS
-		{
-		Type = "JTAC";
-		};
-		class 53rd_Uniform_GL_DS:53rd_Rifleman_DS
-		{
-		Type = "Grenadier";
-		};
-		class 53rd_Uniform_AR_DS:53rd_Rifleman_DS
-		{
-		Type = "Autorifleman";
-		};
-		class 53rd_Uniform_AT_DS:53rd_Rifleman_DS
-		{
-		Type = "Anti_Tank";
-		};
-		
-		//Woodland
-		class 53rd_Rifleman_WD
-		{
-		model = "HephaestusCamoArmor";
-		Section = "Hephaestus";
-		Camo = "Woodland";
-		Type = "Rifleman";
-		};
-		class 53rd_Uniform_Medic_WD:53rd_Rifleman_WD
-		{
-		Type = "Medic";
-		};
-		class 53rd_Uniform_JTAC_WD:53rd_Rifleman_WD
-		{
-		Type = "JTAC";
-		};
-		class 53rd_Uniform_GL_WD:53rd_Rifleman_WD
-		{
-		Type = "Grenadier";
-		};
-		class 53rd_Uniform_AR_WD:53rd_Rifleman_WD
-		{
-		Type = "Autorifleman";
-		};
-		class 53rd_Uniform_AT_WD:53rd_Rifleman_WD
-		{
-		Type = "Anti_Tank";
-		};
-		
-		//Winter
-		class 53rd_Rifleman_SN
-		{
-		model = "HephaestusCamoArmor";
-		Section = "Hephaestus";
-		Camo = "Winter";
-		Type = "Rifleman";
-		};
-		class 53rd_Uniform_Medic_SN:53rd_Rifleman_SN
-		{
-		Type = "Medic";
-		};
-		class 53rd_Uniform_JTAC_SN:53rd_Rifleman_SN
-		{
-		Type = "JTAC";
-		};
-		class 53rd_Uniform_GL_SN:53rd_Rifleman_SN
-		{
-		Type = "Grenadier";
-		};
-		class 53rd_Uniform_AR_SN:53rd_Rifleman_SN
-		{
-		Type = "Autorifleman";
-		};
-		class 53rd_Uniform_AT_SN:53rd_Rifleman_SN
-		{
-		Type = "Anti_Tank";
-		};
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Atlas Armors////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 		
 		//Atlas Armor
 		class 53rd_A_Rifleman_UB
@@ -1484,7 +1925,7 @@ class XtdGearInfos
 		model = "HephaestusCamoArmor";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		};
 		class 53rd_A_Rifleman_WD:53rd_A_Rifleman_UB
 		{
@@ -1505,7 +1946,7 @@ class XtdGearInfos
 		model = "HephaestusCamoArmor";
 		Section = "Atlas";
 		Camo = "Urban";
-		Type = "Platoon";
+		MOS = "Platoon";
 		};
 		class 53rd_A_P_Rifleman_WD:53rd_A_P_Rifleman_UB
 		{
@@ -1520,126 +1961,130 @@ class XtdGearInfos
 		Camo = "Desert";
 		};
 	
-	
-		///Ares Helmets
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Ares Helmets////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////	
+
 		class 53rd_Ares_RA_H3_Helmet
 		{
 		model = "HephaestusCamoHelmets";
 		Section = "Ares";
 		Camo = "Urban";
-		Type = "RA";
+		MOS = "RA";
 		Visor = "No";
 		};
 		class 53rd_Ares_Rifleman_H3_Helmet:53rd_Ares_RA_H3_Helmet
 		{
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		};
 		class 53rd_Ares_Medic_H3_Helmet:53rd_Ares_RA_H3_Helmet
 		{
-		Type = "Medic";
+		MOS = "Medic";
 		};
 		class 53rd_Ares_TL_H3_Helmet:53rd_Ares_RA_H3_Helmet
 		{
-		Type = "TL";
+		MOS = "TL";
 		};
 		class 53rd_Ares_SL_H3_Helmet:53rd_Ares_RA_H3_Helmet
 		{
-		Type = "SL";
+		MOS = "SL";
 		};
 		
 		class 53rd_Ares_PL_H3_Helmet:53rd_Ares_RA_H3_Helmet
 		{
-		Type = "Platoon";
+		MOS = "Platoon";
 		};
 		
 		
 	
-	
-		//Ares Armor
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Ares Armor////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 		//NORMAL
 		class 53rd_Ares_MA_Vest_Rifleman
 		{
 		model = "AresArmor";
 		Shoulders = "Normal";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		};
 		class 53rd_Ares_MA_Vest_PL:53rd_Ares_MA_Vest_Rifleman
 		{
-		Type = "PL";
+		MOS = "PL";
 		};
 		class 53rd_Ares_MA_Vest_RA:53rd_Ares_MA_Vest_Rifleman
 		{
-		Type = "RA";
+		MOS = "RA";
 		};
 		class 53rd_Ares_MA_Vest_SL:53rd_Ares_MA_Vest_Rifleman
 		{
-		Type = "SL";
+		MOS = "SL";
 		};
 		class 53rd_Ares_MA_Vest_TL:53rd_Ares_MA_Vest_Rifleman
 		{
-		Type = "TL";
+		MOS = "TL";
 		};
 		class 53rd_Ares_MA_Vest_Medic:53rd_Ares_MA_Vest_Rifleman
 		{
-		Type = "Medic";
+		MOS = "Medic";
 		};
 		//CQB
 		class 53rd_Ares_MA_Vest_Rifleman_CQB
 		{
 		model = "AresArmor";
 		Shoulders = "CQB";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		};
 		class 53rd_Ares_MA_Vest_RA_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
 		{
-		Type = "RA";
+		MOS = "RA";
 		};
 		class 53rd_Ares_MA_Vest_PL_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
 		{
-		Type = "PL";
+		MOS = "PL";
 		};
 		class 53rd_Ares_MA_Vest_SL_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
 		{
-		Type = "SL";
+		MOS = "SL";
 		};
 		class 53rd_Ares_MA_Vest_TL_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
 		{
-		Type = "TL";
+		MOS = "TL";
 		};
 		class 53rd_Ares_MA_Vest_Medic_CQB:53rd_Ares_MA_Vest_Rifleman_CQB
 		{
-		Type = "Medic";
+		MOS = "Medic";
 		};
 		//SNIPER
 		class 53rd_Ares_MA_Vest_Rifleman_Sniper
 		{
 		model = "AresArmor";
 		Shoulders = "Sniper";
-		Type = "Rifleman";
+		MOS = "Rifleman";
 		};
 		class 53rd_Ares_MA_Vest_RA_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
 		{
-		Type = "RA";
+		MOS = "RA";
 		};
 		class 53rd_Ares_MA_Vest_PL_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
 		{
-		Type = "PL";
+		MOS = "PL";
 		};
 		class 53rd_Ares_MA_Vest_SL_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
 		{
-		Type = "SL";
+		MOS = "SL";
 		};
 		class 53rd_Ares_MA_Vest_TL_SNIPER:53rd_Ares_MA_Vest_Rifleman_Sniper
 		{
-		Type = "TL";
+		MOS = "TL";
 		};
 		class 53rd_Ares_MA_Vest_Medic_Sniper:53rd_Ares_MA_Vest_Rifleman_Sniper
 		{
-		Type = "Medic";
+		MOS = "Medic";
 		};
 		
-		
-		//Atlas Helmets
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Atlas Custom Helmets////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 		//Hellfire
 		class 53rd_Atlas_Hellfire_Custom_Helmet
 		{
@@ -1740,7 +2185,30 @@ class XtdGearInfos
 		Camo = "Woodland";
 		};
 
-		//Armors
+		//Scarecrow
+		class 53rd_Scarecrow_Helmet_Urban
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Urban";
+		Person = "Scarecrow";
+		};
+		class 53rd_Scarecrow_Helmet_Winter:53rd_Scarecrow_Helmet_Urban
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Scarecrow_Helmet_Desert:53rd_Scarecrow_Helmet_Urban
+		{
+		Camo = "Desert";
+		}; 
+		class 53rd_Scarecrow_Helmet_Woodland:53rd_Scarecrow_Helmet_Urban
+		{
+		Camo = "Woodland";
+		}; 
+		
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Atlas Custom Armor////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
 		
 		//Hellfire
 		class 53rd_Atlas_Hellfire_Armor
@@ -1842,27 +2310,52 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
-        
-        //Atlas Helmets
+ 
+		//Axe
+		class 53rd_Atlas_Axe_Armor
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Urban";
+		Person = "Axe";
+		};
+		class 53rd_Atlas_Axe_Armor_SN:53rd_Atlas_Axe_Armor
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Atlas_Axe_Armor_DS:53rd_Atlas_Axe_Armor
+		{
+		Camo = "Desert";
+		};
+		class 53rd_Atlas_Axe_Armor_WD:53rd_Atlas_Axe_Armor
+		{
+		Camo = "Woodland";
+		};
+
+ 
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Atlas Helmets////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
         class 53rd_Atlas_CH252
 		{
 		model = "Atlashelms";
-		Type = "NormalV";
+		MOS = "NormalV";
         Camo = "Urban";
 		};
 		class 53rd_Ranger_CH252_MD: 53rd_Atlas_CH252
 		{
-		Type = "MedicV";
+		MOS = "MedicV";
 		};
 		class 53rd_Atlas_CH252_NV
 		{
 		model = "Atlashelms";
-		Type = "Normal";
+		MOS = "Normal";
         Camo = "Urban";
 		};
 		class 53rd_HaloInf_Marine_WDL_UNSC_NV_headgear:53rd_Atlas_CH252_NV
 		{
-		Type = "Medic";
+		MOS = "Medic";
 		}; 
         
         //Atlas Team Helmets
@@ -1870,7 +2363,7 @@ class XtdGearInfos
 		class Atlas_Scout_Urban
 		{
 		model = "Atlashelms";
-		Type = "Scout_Gold";
+		MOS = "Scout_Gold";
         Camo = "Urban";
 		};
         class Atlas_Scout_Winter:Atlas_Scout_Urban
@@ -1890,7 +2383,7 @@ class XtdGearInfos
 		class Atlas_P_Scout_Urban
 		{
 		model = "Atlashelms";
-		Type = "Scout_PL";
+		MOS = "Scout_PL";
         Camo = "Urban";
 		};
         class Atlas_P_Scout_Winter:Atlas_P_Scout_Urban
@@ -1912,7 +2405,7 @@ class XtdGearInfos
 		{
 		model = "AtlasTeamArmors";
 		Camo = "Urban";
-		Type = "Command";
+		MOS = "Command";
 		};
 		class 53rd_Atlas_PL_uniform_SN
 		{
@@ -1932,7 +2425,7 @@ class XtdGearInfos
 		{
 		model = "AtlasTeamArmors";
 		Camo = "Urban";
-		Type = "Gold";
+		MOS = "Gold";
 		};
 		class 53rd_Atlas_Gold_uniform_SN
 		{
@@ -1952,7 +2445,7 @@ class XtdGearInfos
 		{
 		model = "AtlasTeamArmors";
 		Camo = "Urban";
-		Type = "Purple";
+		MOS = "Purple";
 		};
 		class 53rd_Atlas_Purple_uniform_SN
 		{
@@ -1966,8 +2459,102 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Soft Covers////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+		 //Beret
+		class 53_Apollo_Beret
+		{
+		model = "SoftCover";
+		Beret = "Apollo";
+		};
+		class 53_Ares_Beret
+		{
+		model = "SoftCover";
+		Beret = "Ares";
+		};
+		class 53_Atlas_Beret
+		{
+		model = "SoftCover";
+		Beret = "Atlas";
+		};
+		class 53_Heph_Beret
+		{
+		model = "SoftCover";
+		Beret = "Hephaestus";
+		};
+		class 53_Volare_Beret
+		{
+		model = "SoftCover";
+		Beret = "Volare";
+		};
+		class 53rd_Med_Beret_Red
+		{
+		model = "SoftCover";
+		Beret = "Medical1";
+		};
+		class 53rd_Med_Beret_Gold
+		{
+		model = "SoftCover";
+		Beret = "Medical2";
+		};
+		//Boonie
+		class 53rd_Boonie_Urban
+		{
+		model = "SoftCover";
+		Boonie = "Urban";
+		};
+		class 53rd_Boonie_Desert
+		{
+		model = "SoftCover";
+		Boonie = "Desert";
+		};
+		class 53rd_Boonie_Woodland
+		{
+		model = "SoftCover";
+		Boonie = "Woodland";
+		};
+		class 53rd_Boonie_Winter
+		{
+		model = "SoftCover";
+		Boonie = "Winter";
+		};		
+		
+		
+			//Beanie
+		class 53rd_Beanie_Urban
+		{
+		model = "SoftCover";
+		Beanie = "Urban";
+		};
+		class 53rd_Beanie_Desert
+		{
+		model = "SoftCover";
+		Beanie = "Desert";
+		};
+		class 53rd_Beanie_Woodland
+		{
+		model = "SoftCover";
+		Beanie = "Woodland";
+		};
+		class 53rd_Beanie_Winter
+		{
+		model = "SoftCover";
+		Beanie = "Winter";
+		};		
+				
+		class 53rd_PCap_Black
+		{
+		model = "SoftCover";
+		Patrol = "Cap";
+		};				
+		
+		
 	};
 };
+
 
 
 

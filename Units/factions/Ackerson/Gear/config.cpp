@@ -25,7 +25,7 @@ class cfgWeapons {
 		author="Sgt. Body";
 		scope=2;
 		side=2;
-		displayName="'Ackerson - Marine BDU";
+		displayName="[AR]'Ackerson - Marine BDU";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		class ItemInfo: UniformItem
 		{
@@ -42,7 +42,7 @@ class 53rd_Rebel_Armor: OPTRE_FC_M52B_Armor_Vest
 		dlc="OPTRE";
 		scope=2;
 		author="Sgt. Body";
-		displayName="Ackerson's - Rebel Vest";
+		displayName="[AR] Ackerson's - Rebel Vest";
 		model="\OPTRE_FC_Units\Marines\h3_vest.p3d";
 		hiddenSelectionsTextures[]=
 		{

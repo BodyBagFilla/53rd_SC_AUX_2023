@@ -38,7 +38,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Body","Cherry","Panzer","Ryu","Tikals","Saiko","Theta","Limitz","Cap","Angel","Dalton","Foster",};
+				values[] = {"Body","Cherry","Panzer","Ryu","Tikals","Saiko","Theta","Limitz","Cap","Angel","Dalton","Foster"};
 				class Body
 				{
 					label = "Body";
@@ -174,7 +174,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Cherry","Ryu","Saiko","Theta","Dalton","Foster"};
+				values[] = {"Fixer","Body","Panzer","Cherry","Ryu","Saiko","Theta","Dalton","Foster","Mercy"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -220,7 +220,12 @@ class XtdGearModels
 					label = "Foster";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};					
-				
+				class Mercy
+				{
+					label = "Mercy";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};					
+							
 			};
 		};
     };
@@ -916,6 +921,27 @@ class XtdGearInfos
 		{
 		Vest_Camo = "Urban";
 		};		
+
+        //Mercy
+		class 53rd_Mercy_Armor_Woodland
+		{
+		model = "HephaestusCustomCamo";
+		Vest_Camo = "Woodland";
+		Person = "Mercy";
+		};
+		class 53rd_Mercy_Armor_Desert:53rd_Mercy_Armor_Woodland
+		{
+		Vest_Camo = "Desert";
+		};
+		class 53rd_Mercy_Armor_Winter:53rd_Mercy_Armor_Woodland
+		{
+		Vest_Camo = "Snow";
+		};
+		class 53rd_Mercy_Armor_Urban:53rd_Mercy_Armor_Woodland
+		{
+		Vest_Camo = "Urban";
+		};		
+
 
 	};
 };

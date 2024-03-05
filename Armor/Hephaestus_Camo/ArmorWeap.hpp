@@ -143,7 +143,7 @@ class 53rd_Rifleman_DS: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
     };
@@ -157,7 +157,7 @@ class 53rd_Rifleman_DS: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_Armor_Desert_co.paa"
         };
@@ -313,7 +313,7 @@ class 53rd_Uniform_Medic_DS: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Desert_co.paa"
     };
@@ -327,7 +327,7 @@ class 53rd_Uniform_Medic_DS: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Medic\53rd_Medic_Armor_Desert_co.paa"
         };
@@ -338,15 +338,17 @@ class 53rd_Uniform_Medic_DS: 53rd_U_Base_uniform_W
     };
 };
 
-////Anti-Tank////
-class 53rd_Uniform_AT_SN: 53rd_U_Base_uniform_W
+
+///////////////////////////////////////////////////
+///////////////////////////////////////////////////Kerb///////////////////////////////////////////////////
+///////////////////////////////////////////////////
+class 53rd_KerbSL_Winter: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Winter Anti-Tank";
+    displayName="[53rd] Kerberus Lead (Winter)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -359,7 +361,7 @@ class 53rd_Uniform_AT_SN: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Winter_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Winter.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -373,22 +375,62 @@ class 53rd_Uniform_AT_SN: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Winter_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Winter.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AT_Snow_Camo_Test";
+        uniformClass="53rd_Kerb_SL_Winter";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_AT_WD: 53rd_U_Base_uniform_W
+class 53rd_KerbSL_Desert: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Woodland Anti-Tank";
+    displayName="[53rd] Kerberus Lead (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Kerb_SL_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbSL_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus Lead (Woodland)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -401,7 +443,7 @@ class 53rd_Uniform_AT_WD: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Woodland_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Woodland.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -415,22 +457,21 @@ class 53rd_Uniform_AT_WD: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Woodland_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Woodland.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AT_Woodland_Camo_Test";
+        uniformClass="53rd_Kerb_SL_Woodland";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_AT_UB: 53rd_U_Base_uniform_W
+class 53rd_KerbSL_Urban: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Urban Anti-Tank";
+    displayName="[53rd] Kerberus Lead (Urban)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -443,7 +484,7 @@ class 53rd_Uniform_AT_UB: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Urban_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Urban.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -457,66 +498,24 @@ class 53rd_Uniform_AT_UB: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Urban_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_SL_Urban.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AT_Urban_Camo_Test";
-        containerClass="Supply90";
-        mass=80;
-    };
-};
-class 53rd_Uniform_AT_DS: 53rd_U_Base_uniform_W
-{
-    author="53rd Mod Team";
-    scope=2;
-    scopeArsenal=2;
-    side=1;
-    allowedSlots[]={901};
-    displayName="[53rd] Desert Anti-Tank";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
-    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-    hiddenSelections[]=
-    {
-        "Camo1",
-        "Camo2",
-        "Camo3"
-    };
-    hiddenSelectionsTextures[]=
-    {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Desert_co.paa"
-    };
-    class ItemInfo: ItemInfo
-    {
-        hiddenSelections[]=
-        {
-            "Camo1",
-            "Camo2",
-            "Camo3"
-        };
-        hiddenSelectionsTextures[]=
-        {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Anti-Tank\53rd_AT_Armor_Desert_co.paa"
-        };
-        uniformModel="-";
-        uniformClass="53rd_AT_Desert_Camo_Test";
+        uniformClass="53rd_Kerb_SL_Urban";
         containerClass="Supply90";
         mass=80;
     };
 };
 
-////Autorifle////
-class 53rd_Uniform_AR_SN: 53rd_U_Base_uniform_W
+///////////Med\\\\\\\\\
+
+class 53rd_KerbMed_Winter: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Winter AutoRifleman";
+    displayName="[53rd] Kerberus Med (Winter)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -527,9 +526,9 @@ class 53rd_Uniform_AR_SN: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Winter_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Kerb_Med_Winter.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -541,24 +540,23 @@ class 53rd_Uniform_AR_SN: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Winter_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Kerb_Med_Winter.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AR_Snow_Camo_Test";
+        uniformClass="53rd_Kerb_Med_Winter";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_AR_WD: 53rd_U_Base_uniform_W
+class 53rd_KerbMed_Desert: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Woodland AutoRifleman";
+    displayName="[53rd] Kerberus Med (Desert)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -569,9 +567,9 @@ class 53rd_Uniform_AR_WD: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Woodland_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Kerb_Med_Desert.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -583,24 +581,23 @@ class 53rd_Uniform_AR_WD: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Woodland_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Kerb_Med_Desert.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AR_Woodland_Camo_Test";
+        uniformClass="53rd_Kerb_Med_Desert";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_AR_UB: 53rd_U_Base_uniform_W
+class 53rd_KerbMed_Woodland: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Urban AutoRifleman";
+    displayName="[53rd] Kerberus Med (Woodland)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -611,9 +608,9 @@ class 53rd_Uniform_AR_UB: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Urban_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Kerb_Med_Woodland.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -625,24 +622,23 @@ class 53rd_Uniform_AR_UB: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Urban_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Kerb_Med_Woodland.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AR_Urban_Camo_Test";
+        uniformClass="53rd_Kerb_Med_Woodland";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_AR_DS: 53rd_U_Base_uniform_W
+class 53rd_KerbMed_Urban: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Desert AutoRifleman";
+    displayName="[53rd] Kerberus Med (Urban)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -653,9 +649,9 @@ class 53rd_Uniform_AR_DS: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_Med_Urban.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -667,26 +663,28 @@ class 53rd_Uniform_AR_DS: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\AutoRifleman\53rd_AutoRifleman_Armor_Desert_co.paa"
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Kerb_Med_Urban.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_AR_Desert_Camo_Test";
+        uniformClass="53rd_Kerb_Med_Urban";
         containerClass="Supply90";
         mass=80;
     };
 };
 
-////Grenadier////
-class 53rd_Uniform_GL_SN: 53rd_U_Base_uniform_W
+
+
+///////////Rifle\\\\\\\\\
+
+class 53rd_KerbRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Winter Grenadier";
+    displayName="[53rd] Kerberus Rifleman (Winter)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -699,7 +697,7 @@ class 53rd_Uniform_GL_SN: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Winter.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -713,22 +711,62 @@ class 53rd_Uniform_GL_SN: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Winter_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Winter.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_GL_Snow_Camo_Test";
+        uniformClass="53_Kerb_Rifle_Winter";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_GL_WD: 53rd_U_Base_uniform_W
+class 53rd_KerbRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Woodland Grenadier";
+    displayName="[53rd] Kerberus Rifleman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_Rifle_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbRifle_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus Rifleman (Woodland)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -741,7 +779,7 @@ class 53rd_Uniform_GL_WD: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Woodland_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Woodland.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -755,22 +793,21 @@ class 53rd_Uniform_GL_WD: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Woodland_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Woodland.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_GL_Woodland_Camo_Test";
+        uniformClass="53_Kerb_Rifle_Woodland";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_GL_UB: 53rd_U_Base_uniform_W
+class 53rd_KerbRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Urban Grenadier";
+    displayName="[53rd] Kerberus Rifleman (Urban)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -783,7 +820,7 @@ class 53rd_Uniform_GL_UB: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Urban_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Urban.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -797,66 +834,25 @@ class 53rd_Uniform_GL_UB: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Urban_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Kerb_Rifle_Urban.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_GL_Urban_Camo_Test";
-        containerClass="Supply90";
-        mass=80;
-    };
-};
-class 53rd_Uniform_GL_DS: 53rd_U_Base_uniform_W
-{
-    author="53rd Mod Team";
-    scope=2;
-    scopeArsenal=2;
-    side=1;
-    allowedSlots[]={901};
-    displayName="[53rd] Desert Grenadier";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
-    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-    hiddenSelections[]=
-    {
-        "Camo1",
-        "Camo2",
-        "Camo3"
-    };
-    hiddenSelectionsTextures[]=
-    {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Desert_co.paa"
-    };
-    class ItemInfo: ItemInfo
-    {
-        hiddenSelections[]=
-        {
-            "Camo1",
-            "Camo2",
-            "Camo3"
-        };
-        hiddenSelectionsTextures[]=
-        {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Grenadier\53rd_Grenadier_Armor_Desert_co.paa"
-        };
-        uniformModel="-";
-        uniformClass="53rd_GL_Desert_Camo_Test";
+        uniformClass="53_Kerb_Rifle_Urban";
         containerClass="Supply90";
         mass=80;
     };
 };
 
-////JTAC////
-class 53rd_Uniform_JTAC_SN: 53rd_U_Base_uniform_W
+
+///////////AutoRifle\\\\\\\\\
+
+class 53rd_KerbAutoRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Winter JTAC";
+    displayName="[53rd] Kerberus AutoRifleman (Winter)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -869,7 +865,7 @@ class 53rd_Uniform_JTAC_SN: 53rd_U_Base_uniform_W
     {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Winter_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Winter.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -883,22 +879,21 @@ class 53rd_Uniform_JTAC_SN: 53rd_U_Base_uniform_W
         {
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Winter_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Winter.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_JTAC_Snow_Camo_Test";
+        uniformClass="53_Kerb_AutoRifle_Winter";
         containerClass="Supply90";
         mass=80;
     };
 };
-class 53rd_Uniform_JTAC_WD: 53rd_U_Base_uniform_W
+class 53rd_KerbAutoRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="53rd Mod Team";
+    author="Scarecrow";
     scope=2;
     scopeArsenal=2;
-    side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Woodland JTAC";
+    displayName="[53rd] Kerberus AutoRifleman (Desert)";
     picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
@@ -909,93 +904,9 @@ class 53rd_Uniform_JTAC_WD: 53rd_U_Base_uniform_W
     };
     hiddenSelectionsTextures[]=
     {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Woodland_co.paa"
-    };
-    class ItemInfo: ItemInfo
-    {
-        hiddenSelections[]=
-        {
-            "Camo1",
-            "Camo2",
-            "Camo3"
-        };
-        hiddenSelectionsTextures[]=
-        {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Woodland_co.paa"
-        };
-        uniformModel="-";
-        uniformClass="53rd_JTAC_Woodland_Camo_Test";
-        containerClass="Supply90";
-        mass=80;
-    };
-};
-class 53rd_Uniform_JTAC_UB: 53rd_U_Base_uniform_W
-{
-    author="53rd Mod Team";
-    scope=2;
-    scopeArsenal=2;
-    side=1;
-    allowedSlots[]={901};
-    displayName="[53rd] Urban JTAC";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
-    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-    hiddenSelections[]=
-    {
-        "Camo1",
-        "Camo2",
-        "Camo3"
-    };
-    hiddenSelectionsTextures[]=
-    {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Urban_co.paa"
-    };
-    class ItemInfo: ItemInfo
-    {
-        hiddenSelections[]=
-        {
-            "Camo1",
-            "Camo2",
-            "Camo3"
-        };
-        hiddenSelectionsTextures[]=
-        {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Urban_co.paa"
-        };
-        uniformModel="-";
-        uniformClass="53rd_JTAC_Urban_Camo_Test";
-        containerClass="Supply90";
-        mass=80;
-    };
-};
-class 53rd_Uniform_JTAC_DS: 53rd_U_Base_uniform_W
-{
-    author="53rd Mod Team";
-    scope=2;
-    scopeArsenal=2;
-    side=1;
-    allowedSlots[]={901};
-    displayName="[53rd] Desert JTAC";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
-    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
-    hiddenSelections[]=
-    {
-        "Camo1",
-        "Camo2",
-        "Camo3"
-    };
-    hiddenSelectionsTextures[]=
-    {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Desert_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Desert.paa"
     };
     class ItemInfo: ItemInfo
     {
@@ -1007,12 +918,2946 @@ class 53rd_Uniform_JTAC_DS: 53rd_U_Base_uniform_W
         };
         hiddenSelectionsTextures[]=
         {
-        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Desert_Camo_Top_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
         "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
-        "53rd_SC_aux\Armor\Hephaestus_Camo\JTAC\53rd_JTAC_Armor_Desert_co.paa"
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Desert.paa"
         };
         uniformModel="-";
-        uniformClass="53rd_JTAC_Desert_Camo_Test";
+        uniformClass="53_Kerb_AutoRifle_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbAutoRifle_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus AutoRifleman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_AutoRifle_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbAutoRifle_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus AutoRifleman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Kerb_AutoRifle_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_AutoRifle_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+///////////Gren\\\\\\\\\
+
+class 53rd_KerbGren_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus Grenman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_Gren_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbGren_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus Grenman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_Gren_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbGren_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus Grenman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_Gren_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbGren_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus Grenman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Kerb_Gren_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_Gren_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////JTAC\\\\\\\\\
+
+class 53rd_KerbJTAC_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus JTACman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_JTAC_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbJTAC_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus JTACman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_JTAC_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbJTAC_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus JTACman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_JTAC_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbJTAC_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus JTACman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Kerb_JTAC_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_JTAC_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////AT\\\\\\\\\
+
+class 53rd_KerbAT_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus ATman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_AT_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbAT_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus ATman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_AT_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbAT_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus ATman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_AT_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_KerbAT_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Kerberus ATman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Kerb_AT_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Kerb_AT_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////////////////
+///////////////////HYDRA///////////////////////
+///////////////////////
+class 53rd_HydraSL_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Lead (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_SL_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraSL_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Lead (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_SL_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraSL_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Lead (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_SL_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraSL_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Lead (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_SL_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_SL_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////Med\\\\\\\\\
+
+class 53rd_HydraMed_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Med (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Hydra_Med_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Hydra_Med_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_Med_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraMed_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Med (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Hydra_Med_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Hydra_Med_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_Med_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraMed_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Med (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Hydra_Med_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Hydra_Med_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_Med_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraMed_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Med (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_Med_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Hydra_Med_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Hydra_Med_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+
+///////////Rifle\\\\\\\\\
+
+class 53rd_HydraRifle_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Rifleman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Rifle_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraRifle_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Rifleman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Rifle_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraRifle_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Rifleman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Rifle_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraRifle_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Rifleman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Hydra_Rifle_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Rifle_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+///////////AutoRifle\\\\\\\\\
+
+class 53rd_HydraAutoRifle_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus AutoRifleman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AutoRifle_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraAutoRifle_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus AutoRifleman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AutoRifle_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraAutoRifle_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus AutoRifleman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AutoRifle_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraAutoRifle_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus AutoRifleman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Hydra_AutoRifle_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AutoRifle_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+///////////Gren\\\\\\\\\
+
+class 53rd_HydraGren_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Grenman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Gren_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraGren_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Grenman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Gren_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraGren_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Grenman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Gren_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraGren_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus Grenman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Hydra_Gren_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_Gren_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////JTAC\\\\\\\\\
+
+class 53rd_HydraJTAC_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus JTACman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_JTAC_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraJTAC_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus JTACman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_JTAC_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraJTAC_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus JTACman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_JTAC_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraJTAC_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus JTACman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Hydra_JTAC_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_JTAC_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////AT\\\\\\\\\
+
+class 53rd_HydraAT_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus ATman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AT_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraAT_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus ATman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AT_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraAT_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus ATman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AT_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_HydraAT_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Hydraerus ATman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Hydra_AT_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Hydra_AT_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+
+///////////////////////
+///////////////////MINO///////////////////////
+///////////////////////
+class 53rd_MinoSL_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Lead (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_SL_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoSL_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Lead (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_SL_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoSL_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Lead (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_SL_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoSL_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Lead (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_SL_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_SL_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////Med\\\\\\\\\
+
+class 53rd_MinoMed_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Med (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Mino_Med_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Mino_Med_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_Med_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoMed_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Med (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Mino_Med_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Mino_Med_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_Med_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoMed_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Med (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Mino_Med_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Med\53_Mino_Med_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_Med_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoMed_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Med (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_Med_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Medman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Medman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\SL\53_Mino_Med_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53rd_Mino_Med_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+
+///////////Rifle\\\\\\\\\
+
+class 53rd_MinoRifle_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Rifleman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Rifle_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoRifle_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Rifleman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Rifle_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoRifle_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Rifleman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Rifle_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoRifle_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Rifleman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Rifle\53_Mino_Rifle_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Rifle_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+///////////AutoRifle\\\\\\\\\
+
+class 53rd_MinoAutoRifle_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus AutoRifleman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AutoRifle_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoAutoRifle_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus AutoRifleman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AutoRifle_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoAutoRifle_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus AutoRifleman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AutoRifle_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoAutoRifle_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus AutoRifleman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AutoRifle\53_Mino_AutoRifle_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AutoRifle_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+
+///////////Gren\\\\\\\\\
+
+class 53rd_MinoGren_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Grenman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Gren_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoGren_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Grenman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Gren_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoGren_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Grenman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Gren_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoGren_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus Grenman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\Gren\53_Mino_Gren_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_Gren_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////JTAC\\\\\\\\\
+
+class 53rd_MinoJTAC_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus JTACman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_JTAC_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoJTAC_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus JTACman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_JTAC_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoJTAC_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus JTACman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_JTAC_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoJTAC_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus JTACman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\JTAC\53_Mino_JTAC_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_JTAC_Urban";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+
+///////////AT\\\\\\\\\
+
+class 53rd_MinoAT_Winter: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus ATman (Winter)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Winter.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Winter_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Winter.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AT_Winter";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoAT_Desert: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus ATman (Desert)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Desert.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Desert_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Desert.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AT_Desert";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoAT_Woodland: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus ATman (Woodland)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Woodland.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Woodland_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Woodland.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AT_Woodland";
+        containerClass="Supply90";
+        mass=80;
+    };
+};
+class 53rd_MinoAT_Urban: 53rd_U_Base_uniform_W
+{
+    author="Scarecrow";
+    scope=2;
+    scopeArsenal=2;
+    allowedSlots[]={901};
+    displayName="[53rd] Minoerus ATman (Urban)";
+    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+    hiddenSelections[]=
+    {
+        "Camo1",
+        "Camo2",
+        "Camo3"
+    };
+    hiddenSelectionsTextures[]=
+    {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Urban.paa"
+    };
+    class ItemInfo: ItemInfo
+    {
+        hiddenSelections[]=
+        {
+            "Camo1",
+            "Camo2",
+            "Camo3"
+        };
+        hiddenSelectionsTextures[]=
+        {
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Rifleman_top_Urban_co.paa",
+        "53rd_SC_aux\Armor\Hephaestus_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+        "53rd_sc_aux\Armor\Hephaestus_Camo\AT\53_Mino_AT_Urban.paa"
+        };
+        uniformModel="-";
+        uniformClass="53_Mino_AT_Urban";
         containerClass="Supply90";
         mass=80;
     };

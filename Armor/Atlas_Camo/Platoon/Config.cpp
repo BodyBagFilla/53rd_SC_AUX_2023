@@ -692,8 +692,8 @@ class CfgVehicles
 ////////////////////PLATOON ARMOR//////////////////////
 	class 53rd_A_P_Snow_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas P Winter Rifleman";
 		hiddenSelections[]=
@@ -713,8 +713,8 @@ class CfgVehicles
 	};
 	class 53rd_A_P_Woodland_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas P Woodland Rifleman";
 		hiddenSelections[]=
@@ -734,8 +734,8 @@ class CfgVehicles
 	};
 	class 53rd_A_P_Urban_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas P Urban Rifleman";
 		hiddenSelections[]=
@@ -755,8 +755,8 @@ class CfgVehicles
 	};
 	class 53rd_A_P_Desert_Camo_Rifleman: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Atlas P Desert Rifleman";
 		hiddenSelections[]=

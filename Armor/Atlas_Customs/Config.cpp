@@ -1663,8 +1663,8 @@ class cfgvehicles
 	};
 	class 53rd_Hellfire_V: 53rd_base_F
 	{
-			scope=2;
-			scopeArsenal=2;
+			scope=1;
+			scopeArsenal=1;
 			side=1;
 			displayName="[53rd] Hellfire_Urban_V";
 			hiddenSelectionsTextures[]=
@@ -1710,8 +1710,8 @@ class cfgvehicles
 	};
 	class 53rd_LoneWulf_V: 53rd_base_F
 	{
-			scope=2;
-			scopeArsenal=2;
+			scope=1;
+			scopeArsenal=1;
 			side=1;
 			displayName="[53rd] Lone Urban V";
 			hiddenSelectionsTextures[]=
@@ -1757,8 +1757,8 @@ class cfgvehicles
 	};
 	class 53rd_Serpent_V: 53rd_base_F
 	{
-			scope=2;
-			scopeArsenal=2;
+			scope=1;
+			scopeArsenal=1;
 			side=1;
 			displayName="[53rd] Serpent Urban V";
 			hiddenSelectionsTextures[]=
@@ -1907,8 +1907,8 @@ class cfgvehicles
 	};*/
 	class 53rd_Texas_V: 53rd_base_F
 	{
-			scope=2;
-			scopeArsenal=2;
+			scope=1;
+			scopeArsenal=1;
 			side=1;
 			displayName="[53rd] Texas Urban V";
 			hiddenSelectionsTextures[]=
@@ -1955,8 +1955,8 @@ class cfgvehicles
 	//Axe
 	class 53rd_Axe_V: 53rd_base_F
 	{
-			scope=2;
-			scopeArsenal=2;
+			scope=1;
+			scopeArsenal=1;
 			side=1;
 			displayName="[53rd] Axe";
 			hiddenSelectionsTextures[]=

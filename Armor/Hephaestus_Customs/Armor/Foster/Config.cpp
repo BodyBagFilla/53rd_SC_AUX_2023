@@ -535,8 +535,8 @@ class CfgVehicles
 	};
 	class 53rd_Snow_Camo_Foster: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		displayName="[53rd] Winter Rifleman";
 		hiddenSelections[]=
 		{
@@ -555,8 +555,8 @@ class CfgVehicles
 	};
 	class 53rd_Woodland_Camo_Foster: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		displayName="[53rd] Woodland Rifleman";
 		hiddenSelections[]=
 		{
@@ -575,8 +575,8 @@ class CfgVehicles
 	};
 	class 53rd_Urban_Camo_Foster: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		displayName="[53rd] Urban Rifleman";
 		hiddenSelections[]=
 		{
@@ -595,8 +595,8 @@ class CfgVehicles
 	};
 	class 53rd_Desert_Camo_Foster: 53rd_base_F
 	{
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		displayName="[53rd] Desert Rifleman";
 		hiddenSelections[]=
 		{

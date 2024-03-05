@@ -108,7 +108,6 @@ class 53rd_Heph_Armors
     requiredAddons[] = {};
 }
 }
-
 #include "../xtdGear.hpp"
 class cfgWeapons 
 {
@@ -355,6 +354,7 @@ class cfgWeapons
     };
 
     #include "ArmorWeap.hpp"
+
 }
 
 class CfgVehicles
