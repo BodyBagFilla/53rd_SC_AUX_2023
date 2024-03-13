@@ -58,7 +58,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[Liang] Dortman Uniform";
+		displayName="[53rd] Dortman Uniform";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
@@ -100,7 +100,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[Liang] Dortman Uniform Worker";
+		displayName="[53rd] Dortman Uniform Worker";
 		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
