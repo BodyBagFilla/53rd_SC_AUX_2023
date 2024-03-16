@@ -1,1325 +1,289 @@
-class CfgPatches {
-	class 53rd_Faction_Sedra {
-		units[] = {"53rd_SEDRA_D77_TC_Pelican","53rd_SEDRA_stallion","53rd_SEDRA_stallion_Covered","53rd_SEDRA_stallion_Ammo","53rd_SEDRA_stallion_Repair","53rd_SEDRA_stallion_Fuel","SEDRA_M808B_Base","53rd_SEDRA_Polaris_MG","53rd_SEDRA_Polaris_AT","53rd_SEDRA_Polaris_Unarmed","53rd_SEDRA_Hornet_AV","53rd_SEDRA_Hornet_Transport","53rd_SEDRA_M12A1_LRV","53rd_SEDRA_M12G1_LRV","53rd_SEDRA_M12R_AA","53rd_SEDRA_M12_FAV","53rd_SEDRA_M12_FAV_APC","53rd_SEDRA_M12_LRV","53rd_SEDRA_M813_TT","53rd_SEDRA_M914_RV","53rd_SEDRA_falcon","53rd_SEDRA_falcon_armed"};
-		weapons[] = {};
-		requiredVersion = 0.100000;
-		requiredAddons[] = {"Splits_Vehicles"};
-	};
-};
-
-class CfgVehicles
+class cfgPatches
 {
-//---------------------------INHERITENCE-------------------------------/
-	class EventHandlers;
-	class OPTRE_m1087_stallion_cover_unsc;
-	class OPTRE_m1087_stallion_unsc;
-	class OPTRE_m1087_stallion_unsc_resupply;
-	class OPTRE_m1087_stallion_unsc_refuel;
-	class OPTRE_m1087_stallion_unsc_repair;
-	class OPTRE_UNSC_falcon 
-	{ 
-		class Components; 
-	}; 
-	class OPTRE_UNSC_falcon_armed_S 
-	{ 
-		class Components; 
-	};
-	class OPTRE_UNSC_hornet;
-	class OPTRE_UNSC_hornet_CAP;
-	class Components;	
-	class OPTRE_M12_FAV;
-	class OPTRE_M813_TT;
-	class OPTRE_M12_FAV_APC;
-	class OPTRE_M12_LRV;
-	class OPTRE_M12R_AA;
-	class OPTRE_M12G1_LRV;
-	class OPTRE_M914_RV;
-	class OPTRE_M12A1_LRV;
-	class O_T_LSV_02_armed_F;
-	class O_T_LSV_02_AT_F;
-	class O_T_LSV_02_unarmed_F;
-	class I_Heli_Transport_02_F;				
-	class I_Heli_light_03_unarmed_F;
-	class B_MBT_01_cannon_F;
-	class DMNS_M808B:B_MBT_01_cannon_F
-	{
-		class Turrets
-		{
-			class MainTurret
-			{
-				class Turrets
-				{
-					weapons[]=
-					{
-						"DMNS_90mm_M512",
-						"DMNS_M247T_Coax",
-						"SmokeLauncher"
-					};
-					magazines[]=
-					{
-						"DMNS_64Rnd_90mm_APBC",
-						"DMNS_32Rnd_90mm_SAPHE",
-						"DMNS_32Rnd_90mm_HEAT",
-						"OPTRE_10Rnd_90mm_S1",
-						"DMNS_500Rnd_127x99_Mag_Tracer",
-						"DMNS_500Rnd_127x99_Mag_Tracer",
-						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
-						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
-						"SmokeLauncherMag"
-					};
-				};
-			};
-		};
-	};
-	class DMNS_M808B_F: DMNS_M808B
-	{
-	};
-	class Splits_Pelican_base;
-	class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base 
-	{
-	class Components;
-	};
-//-------------------------PELICAN-------------------------------------/
-	class 53rd_SEDRA_D77_TC_Pelican: Splits_UNSC_D77_TC_Pelican
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[Sedra] D77-TC Pelican";
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Vehicles\Pelican\53rd_body_co.paa",
-			"53rd_SC_aux\Vehicles\Pelican\53rd_wings_and_gear_co.paa",
-			"Splits\Splits_Vehicles\Pelican\data\weaponry_co.paa"
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="53rd - Sedra D77";
-						author="Body";
-						textures[]=
-						{
-						"53rd_SC_aux\Vehicles\Pelican\53rd_body_co.paa",
-						"53rd_SC_aux\Vehicles\Pelican\53rd_wings_and_gear_co.paa",
-						"Splits\Splits_Vehicles\Pelican\data\weaponry_co.paa"
-						};
-					};
-				};
-				class UserActions
-				{
-					class PelLift_LoadVehicle
-					{
-						condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
-						displayName="<t color='#00BF00'>Maglock Cargo";
-						displayNameDefault="<t color='#00BF00'>Maglock Cargo";
-						onlyForPlayer=0;
-						position="cargo_door_handle";
-						priority=2;
-						radius=15;
-						showWindow=0;
-						statement="0 = [this,vehicle player] spawn F53rd_fnc_PelicanMaglockLoad";
-						textToolTip="<t color='#00BF00'>Maglock Cargo";
-						userActionID=6;
-					};
-					class PelLift_UnLoadVehicle
-					{
-						condition="(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-						displayName="<t color='#DF3A01'>Release Maglock";
-						displayNameDefault="<t color='#DF3A01'>Release Maglock";
-						onlyForPlayer=0;
-						position="cargo_door_handle";
-						priority=3;
-						radius=5;
-						showWindow=0;
-						statement="0 = [this] spawn V_FZ_fnc_PelicanUnLoadValidate;";
-						textToolTip="<t color='#DF3A01'>Release Maglock";
-						userActionID=7;
-					};
-					class PelLift_LoadPodMenu
-					{
-						userActionID=9;
-						displayName="Load Supply Pods";
-						displayNameDefault="Load Supply Pods";
-						textToolTip="Load Supply Pods";
-						position="cargo_door_handle";
-						showWindow=0;
-						radius=15;
-						priority=2;
-						onlyForPlayer=0;
-						condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
-						statement="Splits_pelicanloadSupplyPods_Menu_PelicanObject = this; createDialog ""Splits_pelicanloadSupplyPods_Menu""; Splits_pelicanloadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL Splits_pelicanloadSupplyPods_Menu_PelicanObject;  Splits_pelicanloadSupplyPods_Menu_cam CamSetTarget Splits_pelicanloadSupplyPods_Menu_PelicanObject; Splits_pelicanloadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; Splits_pelicanloadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; Splits_pelicanloadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
-					};
-					class PelLift_LoadDevice
-					{
-						condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player) AND ((vehicle player) isKindOf ""VES_HDV134_Fujikawa"") AND (vehicle player getvariable [""VES_DeviceAvailable"",true])";
-						displayName="<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
-						displayNameDefault="<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
-						onlyForPlayer=0;
-						position="cargo_door_handle";
-						priority=2;
-						radius=4;
-						showWindow=0;
-						statement="0 = [this,vehicle player] spawn V_FZ_fnc_SlipspaceRuptureDetected;";
-						textToolTip="<t color='#FFBF05'>Maglock Shaw-Fujikawa Device";
-						userActionID=6;
-					};
-					class PelLift_OpenDetachPodMenu
-					{
-						userActionID=8;
-						displayName="Detach Individual Supply Pod Menu";
-						displayNameDefault="Detach Individual Supply Pod Menu";
-						textToolTip="Detach Individual Supply Pod Menu";
-						position="cargo_door_handle";
-						showWindow=0;
-						radius=5;
-						priority=3;
-						onlyForPlayer=0;
-						condition="(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
-						statement="0 = this spawn Splits_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
-					};
-					class RampOpen
-					{
-						userActionID=50;
-						displayName="Close Ramp";
-						displayNameDefault="Close Ramp";
-						textToolTip="Close Ramp";
-						position="cargo_door_handle";
-						showWindow=0;
-						radius=100000;
-						priority=4;
-						onlyForPlayer=0;
-						condition="((this animationPhase ""cargoDoor_1"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
-						statement="this animate [""cargoDoor_1"",1]";
-						animPeriod=5;
-					};
-					class RampClose: RampOpen
-					{
-						userActionID=51;
-						displayName="Open Ramp";
-						displayNameDefault="Open Ramp";
-						textToolTip="Open Ramp";
-						priority=4;
-						condition="((this animationPhase ""cargoDoor_1"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
-						statement="this animate [""cargoDoor_1"",0]";
-						animPeriod=5;
-					};
-					class ThrusterEngage
-					{
-						userActionID=122;
-						displayName="ENGAGE FORWARD THRUSTERS";
-						displayNameDefault="ENGAGE FORWARD THRUSTERS";
-						textToolTip="ENGAGE FORWARD THRUSTERS";
-						position="cargo_door_handle";
-						priority=10;
-						radius=3;
-						onlyForPlayer=0;
-						condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-						statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
-						animPeriod=4;
-					};
-					class ThrusterDisengage: ThrusterEngage
-					{
-						userActionID=123;
-						displayName="DISENGAGE FORWARD THRUSTERS";
-						displayNameDefault="DISENGAGE FORWARD THRUSTERS";
-						textToolTip="DISENGAGE FORWARD THRUSTERS";
-						condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-						statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
-					};
-					class AirbrakeEngage: ThrusterEngage
-					{
-						userActionID=124;
-						displayName="ENGAGE AIRBRAKES";
-						displayNameDefault="ENGAGE AIRBRAKES";
-						textToolTip="ENGAGE AIRBRAKES";
-						condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
-						statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
-					};
-					class ECM_ON
-					{
-						displayName = "ECM JAMMER ON";
-						position = "pos cano";
-						radius = 15;
-						shortcut = "User2";
-						condition = "player in this and isengineon this and (this getvariable 'ECMJAMMER' == 'yes' or 'FIR_ECMPOD' in weapons this)";
-						statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
-						onlyforplayer = "False";
-						hideOnUse = 1;
-					};
-				};
-	};
-//-------------------------Trucks-------------------------------------/
-	class 53rd_SEDRA_stallion: OPTRE_m1087_stallion_unsc
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] D77-TC Pelican";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo2.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="53rd - Dortman D77";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo2.paa",
-						};
-					};
-				};
-	};
-	class 53rd_SEDRA_stallion_Covered: OPTRE_m1087_stallion_cover_unsc
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] D77-TC Pelican";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo2.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo2.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="53rd - Dortman D77";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCover.paa",
-
-						};
-					};
-				};
-	};
-	class 53rd_SEDRA_stallion_Ammo: OPTRE_m1087_stallion_unsc_resupply
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] D77-TC Pelican";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckAmmo.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="53rd - Dortman D77";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckAmmo.paa",
-						};
-					};
-				};
-	};
-	class 53rd_SEDRA_stallion_Repair: OPTRE_m1087_stallion_unsc_repair
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] D77-TC Pelican";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo2.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="53rd - Dortman D77";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckCargo2.paa",
-						};
-					};
-				};
-	};
-	class 53rd_SEDRA_stallion_Fuel: OPTRE_m1087_stallion_unsc_refuel
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] D77-TC Pelican";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckFuel.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="53rd - Dortman D77";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckWheel.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Truck\Sedra_TruckFuel.paa",
-						};
-					};
-				};
-	};
-//-------------------------Scorpion-------------------------------------/
-	class SEDRA_M808B_Base: DMNS_M808B_F
-	{
-		author="DemonicOnPc & Body";
-		scope=2;
-		scopeArsenal=2;
-		scopeCurator=2;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Tank";
-		displayName="[SEDRA][L] M808B Scorpion MBT";
-		model="\DMNS\DMNS_Armour\M808B_Scorpion\Scoprion_base.p3d";
-		picture="\OPTRE_Vehicles_Tracked\Scorpion\data\UI\M808B_MBT_ca.paa";
-		icon="\OPTRE_Vehicles_Tracked\Scorpion\data\UI\map_M808B_ca.paa";
-		editorPreview="\OPTRE_Vehicles_Tracked\M808B2\data\OPTRE_M808S.jpg";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"camo2",
-			"camo3",
-			"camo4",
-			"camo5",
-			"camo6",
-			"camo7",
-			"camo8",
-			"clan",
-			"clan_text",
-			"insignia"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Hull.paa",   
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Turret.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_FrontTrack.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_RearTrack.paa", 
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Commander.paa",  
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Details1.paa", 
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Details2.paa",
-			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"
-		};
-		class TextureSources
-        {
-			class colorsStandard
-			{
-				displayName="Standard";
-				author="DemonicOnPC";
-				textures[]=
-				{
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Hull.paa",   
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Turret.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_FrontTrack.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_RearTrack.paa", 
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Commander.paa",  
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Details1.paa", 
-			"53rd_SC_aux\Units\factions\Sedra\Scorpion\Sedra_Scorpion_Details2.paa",
-			"DMNS\DMNS_Armour\M808B_Scorpion\data\M808B_Track_Int_co.paa"
-				};
-			};
-        };
-        ace_cargo_space = 6;
-        ace_cargo_hasCargo = 6;
-        class ACE_Cargo
-        {
-            class Cargo
-            {
-                class ACE_track
-                {
-                    type = "ACE_track";
-                    amount = 4;
-                };
-            };
-        };
-    };
-
-//-------------------------Polaris-------------------------------------/
-	class 53rd_SEDRA_Polaris_MG: O_T_LSV_02_armed_F
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] Growler MG";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisWheels.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisDet.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="Sedra Stanard";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisWheels.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisDet.paa",
-						};
-					};
-				};
-	};
-	class 53rd_SEDRA_Polaris_AT: O_T_LSV_02_AT_F
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] Growler AT";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisWheels.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisDet.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="Sedra Stanard";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisWheels.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisDet.paa",
-						};
-					};
-				};
-	};
-	class 53rd_SEDRA_Polaris_Unarmed: O_T_LSV_02_unarmed_F
-	{
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		forceInGarage=1;
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Rotary";
-		author="SplitJaw & DemonicOnPC,Body";
-		crew="53rd_Volare_airmen_unit";
-		displayName="[SEDRA] Growler Transport";
-		hiddenSelectionsTextures[]=
-		{
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisWheels.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisDet.paa",
-		};
-		tf_range=25000;		
-		tf_isolatedAmount=0.40000001;
-		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-		tf_hasLRradio=1;
-		enableRadio=1;
-				class textureSources
-				{
-					class Standard
-					{
-						displayName="Sedra Stanard";
-						author="Body";
-						textures[]=
-						{
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisHull.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisWheels.paa",
-							"53rd_SC_aux\Units\factions\Sedra\Polaris\Sedra_PolarisDet.paa",
-						};
-					};
-				};
-	};
-//-------------------------Hornet-------------------------------------/
-    class 53rd_SEDRA_Hornet_Transport: OPTRE_UNSC_hornet
-    {
-        dlc="53rd";
-        author="Skywalker";
-        scope=2;
-        scopeCurator=2;
-        scopeArsenal=2;
-        forceInGarage=1;
-        displayName="[SEDRA] AV-14";
-        editorPreview="53rd_SC_aux\Vehicles\Hornet\Hornet-HQ.jpg";
-        editorCategory = "53rd_cat_faction";
-        editorSubCategory = "53rd_Rotary";
-        crew="53rd_Volare_airmen_unit";
-        mainRotorSpeed=3;
-		backRotorSpeed=3;
-		tf_hasLRradio=1;
-		tf_isolatedAmount=0.40000001;
-		tf_range=12000;
-        hiddenSelectionsTextures[]=
-        {
-            "53rd_SC_aux\Units\factions\Sedra\Hornet\Sedra_Hornet_Hull.paa"
-        };
-		weapons[]=
-		{
-			"CMFlareLauncher",
-			"OPTRE_GUA23A",
-			"OPTRE_missiles_C2GMLS",
-            "missiles_ASRAAM"
-		};
-		magazines[]=
-		{
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"OPTRE_2000Rnd_20mm_HEIAP",
-			"OPTRE_8Rnd_C2GMLS_missiles",
-            "4Rnd_AAA_missiles"
-		};
-		class UserActions
-		{
-			class FullAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID=57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID=58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName="<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID=52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID=53;
-			};
-			class Afterburners900Engage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName="<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
-				textToolTip="<t color='#04B45F'>Engage Afterburners";
-				userActionID=54;
-			};
-			class Afterburners900Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Afterburners";
-				userActionID=55;
-			};
-		};
-		class TransportBackpacks
-		{
-			class _xx_B_Parachute
-			{
-				backpack="B_Parachute";
-				count=8;
-			};
-		};
-	};
-	class 53rd_SEDRA_Hornet_AV: OPTRE_UNSC_hornet_CAP
-    {
-        dlc="53rd";
-        author="Skywalker";
-        scope=2;
-        scopeCurator=2;
-        scopeArsenal=2;
-        forceInGarage=1;
-        displayName="[SEDRA] AV-14 (CAP)";
-        editorPreview="53rd_SC_aux\Vehicles\Hornet\Hornet-HQ.jpg";
-        editorCategory = "53rd_cat_faction";
-        editorSubCategory = "53rd_Rotary";
-        crew="53rd_Volare_airmen_unit";
-        mainRotorSpeed=3;
-		backRotorSpeed=3;
-		tf_hasLRradio=1;
-		tf_isolatedAmount=0.40000001;
-		tf_range=12000;
-        hiddenSelectionsTextures[]=
-        {
-            "53rd_SC_aux\Units\factions\Sedra\Hornet\Sedra_Hornet_Hull.paa"
-        };
-		weapons[]=
-		{
-			"CMFlareLauncher",
-			"OPTRE_GUA23A",
-			"OPTRE_missiles_C2GMLS",
-            "missiles_ASRAAM"
-		};
-		magazines[]=
-		{
-			"168Rnd_CMFlare_Chaff_Magazine",
-			"OPTRE_2000Rnd_20mm_HEIAP",
-			"OPTRE_8Rnd_C2GMLS_missiles",
-            "4Rnd_AAA_missiles"
-		};
-		class UserActions
-		{
-			class FullAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes";
-				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
-				userActionID=57;
-			};
-			class HalfAirbrakeEngageFast
-			{
-				animPeriod=5;
-				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
-				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
-				userActionID=58;
-			};
-			class Thruster400Engage
-			{
-				animPeriod=5;
-				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
-				displayName="<t color='#04B45F'>Engage Forward Thrusters";
-				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Engage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
-				userActionID=52;
-			};
-			class Thruster400Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
-				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage; 0 = this spawn V_FZ_fnc_ThrusterDeAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
-				userActionID=53;
-			};
-			class Afterburners900Engage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-				displayName="<t color='#04B45F'>Engage Afterburners";
-				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
-				textToolTip="<t color='#04B45F'>Engage Afterburners";
-				userActionID=54;
-			};
-			class Afterburners900Disengage
-			{
-				animPeriod=5;
-				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-				displayName="<t color='#FCE205'>Disengage Afterburners";
-				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
-				onlyForPlayer=0;
-				position="cargo_door_handle";
-				priority=10;
-				radius=100000;
-				showWindow=0;
-				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage; 0 = this spawn V_FZ_fnc_ThrusterAnimate";
-				textToolTip="<t color='#FCE205'>Disengage Afterburners";
-				userActionID=55;
-			};
-		};
-		class TransportBackpacks
-		{
-			class _xx_B_Parachute
-			{
-				backpack="B_Parachute";
-				count=8;
-			};
-		};
-	};
-//-------------------------Hog-------------------------------------/
-	class 53rd_SEDRA_M12_FAV_APC: OPTRE_M12_FAV_APC
-	{
-		displayName="[SEDRA] M12 APC Warthog";
-		author="Six";
-		dlc = "53rd";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_APCTop_A1.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_APCBay_A1.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-	};
-	class 53rd_SEDRA_M813_TT: OPTRE_M813_TT
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M813 Transport Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_APCTop_A1.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-	};
-	class 53rd_SEDRA_M12A1_LRV: OPTRE_M12A1_LRV
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M12A1 AT Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Turret.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-	};
-	class 53rd_SEDRA_M12_FAV: OPTRE_M12_FAV
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M12 Recon Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-	};
-	class 53rd_SEDRA_M12_LRV: OPTRE_M12_LRV
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M12 LAAG Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Turret.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-	};
-	class 53rd_SEDRA_M12G1_LRV: OPTRE_M12G1_LRV
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M12G1 Gauss Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m68_turret_Grey_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-		};
-	};
-	class 53rd_SEDRA_M12R_AA: OPTRE_M12R_AA
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M12 AA Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_AATurret.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-	};
-	class 53rd_SEDRA_M914_RV: OPTRE_M914_RV
-	{
-		dlc = "53rd";
-		displayName="[SEDRA] M914 RV Warthog";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_Hull.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\Sedra_Hog_HullBot.paa",
-			"53rd_SC_aux\Units\factions\Sedra\Hog\SedraDecal.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-		ace_rearm_defaultSupply=1200;
-		ace_refuel_fuelCargo=1000;
-        ace_cargo_space = 4;
-        ace_cargo_hasCargo = 1;     
-	};
-//-------------------------Falcon-------------------------------------/
-	class 53rd_SEDRA_falcon: OPTRE_UNSC_falcon
-	{
-			editorPreview="\OPTRE_Core\Data\logo_ca.paa";
-			displayName="[SEDRA] UH-144 Jay  (Unarmed)";
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			forceInGarage=1;
-			editorCategory = "53rd_cat_faction";
-			editorSubCategory = "53rd_Rotary";
-			crew="53rd_Volare_airmen_unit";
-			tf_range=25000;
-			tf_isolatedAmount=0.40000001;
-			tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-			tf_hasLRradio=1;
-			enableRadio=1;
-			weapons[]=
-			{
-				"OPTRE_M638",
-				"CMFlareLauncher",
-				"Laserdesignator_pilotCamera"
-			};
-			magazines[]=
-			{
-				"OPTRE_2000Rnd_20mm_HE",
-				"OPTRE_2000Rnd_20mm_HE",
-				"168Rnd_CMFlare_Chaff_Magazine",
-				"Laserbatteries"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Hull.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Wings.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Interior.paa",
-			};
-			class textureSources
-			{
-				class Standard
-				{
-					displayName="Grey";
-					author="Body";
-					textures[]=
-					{
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Hull.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Wings.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Interior.paa",
-					};
-				};
-			class UserActions
-			{
-				class ThrusterEngage
-				{
-					userActionID=122;
-					displayName="ENGAGE FORWARD THRUSTERS";
-					displayNameDefault="ENGAGE FORWARD THRUSTERS";
-					textToolTip="ENGAGE FORWARD THRUSTERS";
-					position="cargo_door_handle";
-					priority=10;
-					radius=3;
-					onlyForPlayer=0;
-					condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-					statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
-					animPeriod=4;
-				};
-				class ThrusterDisengage: ThrusterEngage
-				{
-					userActionID=123;
-					displayName="DISENGAGE FORWARD THRUSTERS";
-					displayNameDefault="DISENGAGE FORWARD THRUSTERS";
-					textToolTip="DISENGAGE FORWARD THRUSTERS";
-					condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-					statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
-				};
-				class AirbrakeEngage: ThrusterEngage
-				{
-					userActionID=124;
-					displayName="ENGAGE AIRBRAKES";
-					displayNameDefault="ENGAGE AIRBRAKES";
-					textToolTip="ENGAGE AIRBRAKES";
-					condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
-					statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
-				};
-				class ECM_ON
-				{
-					displayName = "ECM JAMMER ON";
-					position = "pos cano";
-					radius = 15;
-					shortcut = "User2";
-					condition = "player in this and isengineon this and (this getvariable 'ECMJAMMER' == 'yes' or 'FIR_ECMPOD' in weapons this)";
-					statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
-					onlyforplayer = "False";
-					hideOnUse = 1;
-				};
-			};
-		};
-	};
-	class 53rd_SEDRA_falcon_armed: OPTRE_UNSC_falcon_armed_S
-	{
-			editorPreview="\OPTRE_Core\Data\logo_ca.paa";
-			displayName="[SEDRA] UH-144 Jay  (Armed)";
-			scope=2;
-			scopeCurator=2;
-			scopeArsenal=2;
-			forceInGarage=1;
-			editorCategory = "53rd_cat_faction";
-			editorSubCategory = "53rd_Rotary";
-			crew="53rd_Volare_airmen_unit";
-			tf_range=25000;
-			tf_isolatedAmount=0.40000001;
-			tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
-			tf_hasLRradio=1;
-			enableRadio=1;
-			weapons[]=
-			{
-				"OPTRE_M638",
-				"CMFlareLauncher",
-				"Laserdesignator_pilotCamera"
-			};
-			magazines[]=
-			{
-				"OPTRE_2000Rnd_20mm_HE",
-				"OPTRE_2000Rnd_20mm_HE",
-				"168Rnd_CMFlare_Chaff_Magazine",
-				"Laserbatteries"
-			};
-			hiddenSelectionsTextures[]=
-			{
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Hull.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Wings.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Interior.paa",
-			};
-			class textureSources
-			{
-				class Standard
-				{
-					displayName="Grey";
-					author="Body";
-					textures[]=
-					{
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Hull.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Wings.paa",
-				"53rd_SC_aux\Units\factions\Sedra\Falcon\Sedra_Falcon_Interior.paa",
-					};
-				};
-			class UserActions
-			{
-				class ThrusterEngage
-				{
-					userActionID=122;
-					displayName="ENGAGE FORWARD THRUSTERS";
-					displayNameDefault="ENGAGE FORWARD THRUSTERS";
-					textToolTip="ENGAGE FORWARD THRUSTERS";
-					position="cargo_door_handle";
-					priority=10;
-					radius=3;
-					onlyForPlayer=0;
-					condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
-					statement="0 = this spawn OPTRE_fnc_ThrusterEngage";
-					animPeriod=4;
-				};
-				class ThrusterDisengage: ThrusterEngage
-				{
-					userActionID=123;
-					displayName="DISENGAGE FORWARD THRUSTERS";
-					displayNameDefault="DISENGAGE FORWARD THRUSTERS";
-					textToolTip="DISENGAGE FORWARD THRUSTERS";
-					condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
-					statement="0 = this spawn OPTRE_fnc_ThrusterDisengage";
-				};
-				class AirbrakeEngage: ThrusterEngage
-				{
-					userActionID=124;
-					displayName="ENGAGE AIRBRAKES";
-					displayNameDefault="ENGAGE AIRBRAKES";
-					textToolTip="ENGAGE AIRBRAKES";
-					condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND ((speed this) > 100)";
-					statement="0 = this spawn OPTRE_fnc_AirbrakeEngage";
-				};
-				class ECM_ON
-				{
-					displayName = "ECM JAMMER ON";
-					position = "pos cano";
-					radius = 15;
-					shortcut = "User2";
-					condition = "player in this and isengineon this and (this getvariable 'ECMJAMMER' == 'yes' or 'FIR_ECMPOD' in weapons this)";
-					statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
-					onlyforplayer = "False";
-					hideOnUse = 1;
-				};
-			}; 
-		};
-	};
+  class 53rd_Sedra
+  {
+    units[]={"53rd_Medic","53rd_Rifleman","53rd_Officer","53rd_HeliPilot","53rd_FighterPilot","53rd_Crewman","53rd_AutoRifle","53rd_RTO","53rd_Rifleman_AT","53rd_SEDRA_D77_TC_Pelican","53rd_SEDRA_stallion","53rd_SEDRA_stallion_Covered","53rd_SEDRA_stallion_Ammo","53rd_SEDRA_stallion_Repair","53rd_SEDRA_stallion_Fuel","SEDRA_M808B_Base","53rd_SEDRA_Polaris_MG","53rd_SEDRA_Polaris_AT","53rd_SEDRA_Polaris_Unarmed","53rd_SEDRA_Hornet_AV","53rd_SEDRA_Hornet_Transport","53rd_SEDRA_M12A1_LRV","53rd_SEDRA_M12G1_LRV","53rd_SEDRA_M12R_AA","53rd_SEDRA_M12_FAV","53rd_SEDRA_M12_FAV_APC","53rd_SEDRA_M12_LRV","53rd_SEDRA_M813_TT","53rd_SEDRA_M914_RV","53rd_SEDRA_falcon","53rd_SEDRA_falcon_armed"};
+    weapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","53rd_hgun_Pistol_heavy_02_F","53rd_19_UNSC_M7_19_UNSC_M7_optic","53rd_Dmns_CM_12","53rd_OPTRE_M41_SSR"};
+    requiredVersion=0.1;
+    requiredAddons[]={"OPTRE_Weapons_Items","ace_medical_treatment","A3_Weapons_F","19_UNSC_Weapons","OPTRE_UEG_Units_IND","OPTRE_FC_UEG_Units_IND","A3_Characters_F","A3_Weapons_F_Pistols_Pistol_Heavy_02","53rd_Base_Berets","DMNS_Unit_Headgear","Dmns_Weapons_F_MachineGuns","MSR_Misriah_Armory"};
+  };
 };
+
+class cfgWeapons
+{
+  class 19_UNSC_MA5A;
+  class hgun_Pistol_heavy_02_F;
+  class 19_UNSC_M7;
+  class Dmns_CM_12;
+  class OPTRE_M41_SSR;
+
+  class 53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM: 19_UNSC_MA5A
+  {
+    displayName="[19 - UNSC] MA5A";
+    scope=1;
+    class LinkedItems
+    {
+      class LinkedItemsAcc
+      {
+        slot="PointerSlot";
+        item="19_UNSC_MA5A_LAM";
+      };
+    };
+  };
+
+  class 53rd_hgun_Pistol_heavy_02_F: hgun_Pistol_heavy_02_F
+  {
+    displayName="Chiappa Rhino 60DS";
+    scope=1;
+    class LinkedItems
+    {
+    };
+  };
+
+  class 53rd_19_UNSC_M7_19_UNSC_M7_optic: 19_UNSC_M7
+  {
+    displayName="[19 - UNSC] M7";
+    scope=1;
+    class LinkedItems
+    {
+      class LinkedItemsOptic
+      {
+        slot="CowsSlot";
+        item="19_UNSC_M7_optic";
+      };
+    };
+  };
+
+  class 53rd_Dmns_CM_12: Dmns_CM_12
+  {
+    displayName="CM-12 (Confetti Maker)";
+    scope=1;
+    class LinkedItems
+    {
+    };
+  };
+
+  class 53rd_OPTRE_M41_SSR: OPTRE_M41_SSR
+  {
+    displayName="M41 SSR MAV/AW";
+    scope=1;
+    class LinkedItems
+    {
+    };
+  };
+
+};
+
+class cfgVehicles
+{
+  class OPTRE_UEG_Civilian_Paramedic_IND;
+  class 19th_H2A_marine_backpack_light;
+  class I_soldier_F;
+  class I_officer_F;
+  class I_helipilot_F;
+  class I_pilot_F;
+  class I_crew_F;
+  class I_Soldier_AR_F;
+  class I_soldier_UAV_F;
+  class DMNS_RUCKSACK_UNSC_ANPRC_521_F;
+  class 19th_H2A_marine_backpack_heavy;
+
+  class Sedra_Medic: OPTRE_UEG_Civilian_Paramedic_IND
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="Medic";
+    uniformClass="Sedra_Uniform_Medic_Base";
+    weapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","Put","Throw"};
+    respawnWeapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_surgicalKit","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_surgicalKit","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_epinephrine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_morphine","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet"};
+    magazines[]={"kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller"};
+    respawnMagazines[]={"kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller","kat_Painkiller"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_Corpsman_NV_green"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_Corpsman_NV_green"};
+    backpack="Sedra_Medic_pack";
+  };
+
+  class Sedra_Rifleman: I_soldier_F
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="Rifleman";
+    uniformClass="Sedra_Uniform_Base";
+    weapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","Put","Throw"};
+    respawnWeapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    magazines[]={"32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer"};
+    respawnMagazines[]={"32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    backpack="";
+  };
+
+  class Sedra_Officer: I_officer_F
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="Officer";
+    uniformClass="Sedra_Uniform_Base";
+    weapons[]={"53rd_hgun_Pistol_heavy_02_F","Put","Throw"};
+    respawnWeapons[]={"53rd_hgun_Pistol_heavy_02_F","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    magazines[]={"6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder"};
+    respawnMagazines[]={"6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder","6Rnd_45ACP_Cylinder"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","53_Sedra_Beret"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","53_Sedra_Beret"};
+    backpack="";
+  };
+
+  class Sedra_Crewman: I_crew_F
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="Crewman";
+    uniformClass="Sedra_Uniform_Base";
+    weapons[]={"53rd_19_UNSC_M7_19_UNSC_M7_optic","Put","Throw"};
+    respawnWeapons[]={"53rd_19_UNSC_M7_19_UNSC_M7_optic","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    magazines[]={"60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer"};
+    respawnMagazines[]={"60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer","60Rnd_5x23_m7_fmj_tracer"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","DMNS_IHADSS_HELMET_01"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","DMNS_IHADSS_HELMET_01"};
+    backpack="";
+  };
+
+  class Sedra_AutoRifle: I_Soldier_AR_F
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="AutoRifle";
+    uniformClass="Sedra_Uniform_Base";
+    weapons[]={"53rd_Dmns_CM_12","Put","Throw"};
+    respawnWeapons[]={"53rd_Dmns_CM_12","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam","ACE_plasmaIV","ACE_plasmaIV","ACE_plasmaIV","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet","ACE_fieldDressing","ACE_packingBandage","ACE_morphine","ACE_tourniquet"};
+    magazines[]={"DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer"};
+    respawnMagazines[]={"DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer","DMNS_150Rnd_30x06_Mag_Tracer"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    backpack="Sedra_AutoRifle_pack";
+  };
+
+  class Sedra_RTO: I_soldier_UAV_F
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="RTO";
+    uniformClass="Sedra_Uniform_Base";
+    weapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","Put","Throw"};
+    respawnWeapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    magazines[]={"32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer"};
+    respawnMagazines[]={"32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    backpack="Sedra_RTO_pack";
+  };
+
+  class Sedra_Rifleman_AT: I_soldier_F
+  {
+    faction="53rd_Sedra";
+    side=2;
+    displayName="Rifleman AT";
+    uniformClass="Sedra_Uniform_Base";
+    weapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","53rd_OPTRE_M41_SSR","Put","Throw"};
+    respawnWeapons[]={"53rd_19_UNSC_MA5A_19_UNSC_MA5A_LAM","53rd_OPTRE_M41_SSR","Put","Throw"};
+    items[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    respawnItems[]={"OPTRE_Biofoam","OPTRE_Biofoam","OPTRE_Biofoam"};
+    magazines[]={"32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal"};
+    respawnMagazines[]={"32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","32Rnd_762x51_MA5_tracer","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal","OPTRE_M41_Twin_HEAT_Thermal"};
+    linkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    respawnLinkedItems[]={"ItemMap","ItemCompass","Itemwatch","ItemRadio","19th_Helmet_NV_green"};
+    backpack="Sedra_Rifleman_AT_pack";
+  };
+
+
+  class Sedra_Medic_pack: 19th_H2A_marine_backpack_light
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_kat_Painkiller {count=10;magazine="kat_Painkiller";};
+    };
+    class TransportItems
+    {
+     class _xx_ACE_plasmaIV {count=10;name="ACE_plasmaIV";};
+     class _xx_ACE_surgicalKit {count=1;name="ACE_surgicalKit";};
+     class _xx_ACE_epinephrine {count=10;name="ACE_epinephrine";};
+     class _xx_ACE_morphine {count=40;name="ACE_morphine";};
+     class _xx_ACE_fieldDressing {count=30;name="ACE_fieldDressing";};
+     class _xx_ACE_packingBandage {count=30;name="ACE_packingBandage";};
+     class _xx_ACE_tourniquet {count=30;name="ACE_tourniquet";};
+    };
+    class TransportWeapons{};
+  };
+
+
+  class Sedra_AutoRifle_pack: 19th_H2A_marine_backpack_light
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_DMNS_150Rnd_30x06_Mag_Tracer {count=5;magazine="DMNS_150Rnd_30x06_Mag_Tracer";};
+    };
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class Sedra_RTO_pack: DMNS_RUCKSACK_UNSC_ANPRC_521_F
+  {
+    scope=1;
+    class TransportMagazines{};
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+
+  class Sedra_Rifleman_AT_pack: 19th_H2A_marine_backpack_heavy
+  {
+    scope=1;
+    class TransportMagazines
+    {
+     class _xx_OPTRE_M41_Twin_HEAT_Thermal {count=3;magazine="OPTRE_M41_Twin_HEAT_Thermal";};
+    };
+    class TransportItems{};
+    class TransportWeapons{};
+  };
+
+    #include "SedraVeh.hpp"
+
+};
+
+//////////////// Paste cfgGroups after this line //////////////// 
+
+/*
+	class Sedra_Rotary
+	{
+		displayName="Rotary";
+	};
+	class Sedra_APC
+	{
+		displayName="APC";
+	};
+	class Sedra_Motor
+	{
+		displayName="Motorized";
+	};
+	class Sedra_Tank
+	{
+		displayName="Tanks";
+		
+
+
+		editorSubCategory = "Sedra_Rotary";

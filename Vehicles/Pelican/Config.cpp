@@ -253,6 +253,7 @@ class CfgVehicles
 
     };
 	///////////////////////////////////////////////////////
+/*
 	class 53rd_CORP_Pelican: 53rd_VES_Pelican_Base
 	{
 		scope=2;
@@ -297,6 +298,8 @@ class CfgVehicles
 			};
 		};
 	};
+*/
+
 	class 53rd_Pelican: 53rd_VES_Pelican_Base
 	{
 		scope=2;

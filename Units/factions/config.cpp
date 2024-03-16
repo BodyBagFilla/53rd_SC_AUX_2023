@@ -26,13 +26,13 @@ class CfgFactionClasses
 		side=1;
 		primaryLanguage="EN";
 	};
-	class 53rd_Dortman
+	class 53rd_Liang
 	{
-        displayName="[53rd] Liang Dortman";
+        displayName="[53rd] Liang";
 		icon="\OPTRE_Core\data\icon_UNSC_ca.paa";
 		flag="\OPTRE_Core\Data\flag_UNSC_ca.paa";
 		priority=1;
-		side=1;
+		side=2;
 		primaryLanguage="EN";
 	};
 	class 53rd_ONI
@@ -41,7 +41,7 @@ class CfgFactionClasses
 		icon="\OPTRE_Core\data\icon_UNSC_ca.paa";
 		flag="\OPTRE_Core\Data\flag_UNSC_ca.paa";
 		priority=1;
-		side=1;
+		side=2;
 		primaryLanguage="EN";
 	};
 	class 53rd_MSR
@@ -53,7 +53,18 @@ class CfgFactionClasses
 		side=1;
 		primaryLanguage="EN";
 	};
+  class 53rd_Sedra
+  {
+    displayName="[53rd] Sedran Colonial Guard";
+	icon="\OPTRE_Core\data\icon_UNSC_ca.paa";
+	flag="\OPTRE_Core\Data\flag_UNSC_ca.paa";
+    side=2;
+    priority=1;
+	primaryLanguage="EN";
+  };
 };
+
+
 class CfgEditorCategories
 {
 	class 53rd_cat_faction
@@ -72,6 +83,7 @@ class CfgEditorCategories
 	{ 
         displayName="[53rd] Misriah Armory";
 	};
+
 };
 class CfgEditorSubcategories
 {
@@ -111,4 +123,57 @@ class CfgEditorSubcategories
 	{
 		displayName="Storage/Pods";
 	};
+
+	class Sedra_Rotary
+	{
+		displayName="Rotary";
+	};
+	class Sedra_APC
+	{
+		displayName="APC";
+	};
+	class Sedra_Motor
+	{
+		displayName="Motorized";
+	};
+	class Sedra_Tank
+	{
+		displayName="Tanks";
+	};
+
+	class Liang_Rotary
+	{
+		displayName="Rotary";
+	};
+	class Liang_APC
+	{
+		displayName="APC";
+	};
+	class Liang_Motor
+	{
+		displayName="Motorized";
+	};
+	class Liang_Tank
+	{
+		displayName="Tanks";
+	};
+
+	class ONI_Rotary
+	{
+		displayName="Rotary";
+	};
+	class ONI_APC
+	{
+		displayName="APC";
+	};
+	class ONI_Motor
+	{
+		displayName="Motorized";
+	};
+	class ONI_Tank
+	{
+		displayName="Tanks";
+	};	
+
+
 };

@@ -174,7 +174,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Cherry","Ryu","Saiko","Theta","Dalton","Foster","Mercy"};
+				values[] = {"Fixer","Body","Panzer","Cherry","Ryu","Saiko","Theta","Dalton","Foster","Mercy","Limitz"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -225,6 +225,11 @@ class XtdGearModels
 					label = "Mercy";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};					
+				class Limitz
+				{
+					label = "Limitz";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};	
 							
 			};
 		};
@@ -941,7 +946,26 @@ class XtdGearInfos
 		{
 		Vest_Camo = "Urban";
 		};		
-
+		
+        //Limitz
+		class 53rd_Armor_Limitz_Woodland
+		{
+		model = "HephaestusCustomCamo";
+		Vest_Camo = "Woodland";
+		Person = "Limitz";
+		};
+		class 53rd_Armor_Limitz_Desert:53rd_Armor_Limitz_Woodland
+		{
+		Vest_Camo = "Desert";
+		};
+		class 53rd_Armor_Limitz_Winter:53rd_Armor_Limitz_Woodland
+		{
+		Vest_Camo = "Snow";
+		};
+		class 53rd_Armor_Limitz_Urban:53rd_Armor_Limitz_Woodland
+		{
+		Vest_Camo = "Urban";
+		};
 
 	};
 };
