@@ -147,8 +147,6 @@ class CfgVehicles
 	class Uniform_Base;
 	class ItemInfo;
 	class B_CTRG_Soldier_F;
-	class haloinf_Marine_Soldier_base_F;
-	
 	class haloinf_Marine_Soldier_base_F: B_CTRG_Soldier_F{};
 	class Liang_base_F: haloinf_Marine_Soldier_base_F
 	{

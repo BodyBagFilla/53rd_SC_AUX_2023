@@ -447,7 +447,7 @@ class cfgWeapons
 
 
 
-	class 53rd_PCap_Black: H_MilCap_blue
+	class 53rd_PCap_Black_Two: H_MilCap_blue
 	{
 		author="53rd Texture Team";
 		scope=2;

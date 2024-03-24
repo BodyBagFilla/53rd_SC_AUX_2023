@@ -67,7 +67,6 @@ class cfgWeapons
 
 class cfgVehicles
 {
-  class B_officer_F;
   class B_Soldier_lite_F;
   class B_Soldier_F;
   class B_Soldier_LAT_F;

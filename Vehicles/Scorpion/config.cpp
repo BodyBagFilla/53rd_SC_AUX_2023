@@ -644,7 +644,7 @@ class CfgVehicles
 			"53rd_SC_aux\tex\Scorpion\Corp\Scorpion_mg_Corp_co.paa"
 		};
 	};
-/*
+
 	class 53rd_M875_SPH: OPTRE_M875_SPH
 	{
 		author="53rd & Seven";
@@ -945,8 +945,6 @@ class CfgVehicles
 			};
 		};
 	};
-*/
-
 	class 53rd_M875_SPH_SPC: 53rd_M808B_Arty_Base
 	{
 		author="53rd & Seven";

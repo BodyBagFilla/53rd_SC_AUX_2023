@@ -1088,7 +1088,6 @@
 		{
 		"\53rd_sc_aux\Units\factions\Liang\Huey\Liang_Huey.paa"
 		};
-		side = 0;
 		transportSoldier = 4;
 
 	};
@@ -1541,7 +1540,6 @@
 		crew="Liang_Crewman";
 		displayName = "[Liang] Pandur";
 		picture = "\A3\armor_f_gamma\APC_Wheeled_03\Data\UI\APC_Wheeled_03_CA.paa";
-		forceInGarage = 1;
 		typicalCargo[] = {"Liang_Crewman"};
 		hiddenSelections[] = {"camo1","camo2","camo3","camo4","CamoNet","CamoSlat"};
 		hiddenSelectionsTextures[] = 
