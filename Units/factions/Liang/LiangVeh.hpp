@@ -29,39 +29,7 @@
 	class I_Heli_light_03_F;
 	class B_MBT_01_cannon_F;
 	class I_APC_Wheeled_03_cannon_F;
-	class DMNS_M808B:B_MBT_01_cannon_F
-	{
-		class Turrets
-		{
-			class MainTurret
-			{
-				class Turrets
-				{
-					weapons[]=
-					{
-						"DMNS_90mm_M512",
-						"DMNS_M247T_Coax",
-						"SmokeLauncher"
-					};
-					magazines[]=
-					{
-						"DMNS_64Rnd_90mm_APBC",
-						"DMNS_32Rnd_90mm_SAPHE",
-						"DMNS_32Rnd_90mm_HEAT",
-						"OPTRE_10Rnd_90mm_S1",
-						"DMNS_500Rnd_127x99_Mag_Tracer",
-						"DMNS_500Rnd_127x99_Mag_Tracer",
-						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
-						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
-						"SmokeLauncherMag"
-					};
-				};
-			};
-		};
-	};
-	class DMNS_M808B_F: DMNS_M808B
-	{
-	};
+
 	class Splits_Pelican_base;
 	class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base 
 	{
@@ -1290,6 +1258,41 @@
 	};
 
 //-------------------------Scorpion-------------------------------------/
+
+	class B_MBT_01_cannon_F;
+	class DMNS_M808B:B_MBT_01_cannon_F
+	{
+		class Turrets
+		{
+			class MainTurret
+			{
+				class Turrets
+				{
+					weapons[]=
+					{
+						"DMNS_90mm_M512",
+						"DMNS_M247T_Coax",
+						"SmokeLauncher"
+					};
+					magazines[]=
+					{
+						"DMNS_64Rnd_90mm_APBC",
+						"DMNS_32Rnd_90mm_SAPHE",
+						"DMNS_32Rnd_90mm_HEAT",
+						"OPTRE_10Rnd_90mm_S1",
+						"DMNS_500Rnd_127x99_Mag_Tracer",
+						"DMNS_500Rnd_127x99_Mag_Tracer",
+						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
+						"DMNS_500Rnd_127x99_HE_Mag_Tracer",
+						"SmokeLauncherMag"
+					};
+				};
+			};
+		};
+	};
+	class DMNS_M808B_F: DMNS_M808B
+	{
+	};
 	class Liang_M808B_Base: DMNS_M808B_F
 	{
 		author="DemonicOnPc & Body";
