@@ -1,13 +1,13 @@
 ////Rifleman///////////////////////////////////////////////////
 class 53rd_Rifleman_SN: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Winter Rifleman";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Winter Rifleman";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -48,8 +48,8 @@ class 53rd_Rifleman_WD: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Woodland Rifleman";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Woodland Rifleman";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -90,8 +90,8 @@ class 53rd_Rifleman_UB: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Urban Rifleman";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Urban Rifleman";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -132,8 +132,8 @@ class 53rd_Rifleman_DS: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Desert Rifleman";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Desert Rifleman";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -176,8 +176,8 @@ class 53rd_Uniform_Medic_SN: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Winter Medic";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Winter Medic";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -218,8 +218,8 @@ class 53rd_Uniform_Medic_WD: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Woodland Medic";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Woodland Medic";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -260,8 +260,8 @@ class 53rd_Uniform_Medic_UB: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Urban Medic";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Urban Medic";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -302,8 +302,8 @@ class 53rd_Uniform_Medic_DS: 53rd_U_Base_uniform_W
     scopeArsenal=2;
     side=1;
     allowedSlots[]={901};
-    displayName="[53rd] Desert Medic";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Desert Medic";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -344,12 +344,12 @@ class 53rd_Uniform_Medic_DS: 53rd_U_Base_uniform_W
 ///////////////////////////////////////////////////
 class 53rd_KerbSL_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Lead (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Lead (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -385,12 +385,12 @@ class 53rd_KerbSL_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbSL_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Lead (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Lead (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -426,12 +426,12 @@ class 53rd_KerbSL_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbSL_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Lead (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Lead (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -467,12 +467,12 @@ class 53rd_KerbSL_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbSL_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Lead (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Lead (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -511,12 +511,12 @@ class 53rd_KerbSL_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_KerbMed_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Med (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Med (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -552,12 +552,12 @@ class 53rd_KerbMed_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbMed_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Med (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Med (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -593,12 +593,12 @@ class 53rd_KerbMed_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbMed_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Med (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Med (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -634,12 +634,12 @@ class 53rd_KerbMed_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbMed_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Med (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Med (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -680,12 +680,12 @@ class 53rd_KerbMed_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_KerbRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Rifleman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Rifleman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -721,12 +721,12 @@ class 53rd_KerbRifle_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Rifleman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Rifleman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -762,12 +762,12 @@ class 53rd_KerbRifle_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbRifle_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Rifleman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Rifleman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -803,12 +803,12 @@ class 53rd_KerbRifle_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Rifleman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Rifleman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -848,12 +848,12 @@ class 53rd_KerbRifle_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_KerbAutoRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus AutoRifleman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus AutoRifleman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -889,12 +889,12 @@ class 53rd_KerbAutoRifle_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbAutoRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus AutoRifleman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus AutoRifleman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -930,12 +930,12 @@ class 53rd_KerbAutoRifle_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbAutoRifle_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus AutoRifleman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus AutoRifleman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -971,12 +971,12 @@ class 53rd_KerbAutoRifle_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbAutoRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus AutoRifleman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus AutoRifleman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1016,12 +1016,12 @@ class 53rd_KerbAutoRifle_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_KerbGren_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Grenman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Grenman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1057,12 +1057,12 @@ class 53rd_KerbGren_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbGren_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Grenman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Grenman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1098,12 +1098,12 @@ class 53rd_KerbGren_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbGren_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Grenman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Grenman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1139,12 +1139,12 @@ class 53rd_KerbGren_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbGren_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus Grenman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus Grenman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1183,12 +1183,12 @@ class 53rd_KerbGren_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_KerbJTAC_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus JTACman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus JTACman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1224,12 +1224,12 @@ class 53rd_KerbJTAC_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbJTAC_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus JTACman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus JTACman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1265,12 +1265,12 @@ class 53rd_KerbJTAC_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbJTAC_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus JTACman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus JTACman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1306,12 +1306,12 @@ class 53rd_KerbJTAC_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbJTAC_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus JTACman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus JTACman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1350,12 +1350,12 @@ class 53rd_KerbJTAC_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_KerbAT_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus ATman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus ATman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1391,12 +1391,12 @@ class 53rd_KerbAT_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbAT_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus ATman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus ATman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1432,12 +1432,12 @@ class 53rd_KerbAT_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbAT_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus ATman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus ATman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1473,12 +1473,12 @@ class 53rd_KerbAT_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_KerbAT_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Kerberus ATman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Kerberus ATman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1518,12 +1518,12 @@ class 53rd_KerbAT_Urban: 53rd_U_Base_uniform_W
 ///////////////////////
 class 53rd_HydraSL_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Lead (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Lead (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1559,12 +1559,12 @@ class 53rd_HydraSL_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraSL_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Lead (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Lead (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1600,12 +1600,12 @@ class 53rd_HydraSL_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraSL_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Lead (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Lead (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1641,12 +1641,12 @@ class 53rd_HydraSL_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraSL_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Lead (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Lead (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1685,12 +1685,12 @@ class 53rd_HydraSL_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_HydraMed_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Med (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Med (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1726,12 +1726,12 @@ class 53rd_HydraMed_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraMed_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Med (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Med (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1767,12 +1767,12 @@ class 53rd_HydraMed_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraMed_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Med (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Med (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1808,12 +1808,12 @@ class 53rd_HydraMed_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraMed_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Med (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Med (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1854,12 +1854,12 @@ class 53rd_HydraMed_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_HydraRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Rifleman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Rifleman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1895,12 +1895,12 @@ class 53rd_HydraRifle_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Rifleman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Rifleman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1936,12 +1936,12 @@ class 53rd_HydraRifle_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraRifle_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Rifleman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Rifleman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -1977,12 +1977,12 @@ class 53rd_HydraRifle_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Rifleman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Rifleman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2022,12 +2022,12 @@ class 53rd_HydraRifle_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_HydraAutoRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus AutoRifleman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra AutoRifleman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2063,12 +2063,12 @@ class 53rd_HydraAutoRifle_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraAutoRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus AutoRifleman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra AutoRifleman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2104,12 +2104,12 @@ class 53rd_HydraAutoRifle_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraAutoRifle_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus AutoRifleman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra AutoRifleman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2145,12 +2145,12 @@ class 53rd_HydraAutoRifle_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraAutoRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus AutoRifleman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra AutoRifleman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2190,12 +2190,12 @@ class 53rd_HydraAutoRifle_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_HydraGren_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Grenman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Grenman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2231,12 +2231,12 @@ class 53rd_HydraGren_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraGren_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Grenman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Grenman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2272,12 +2272,12 @@ class 53rd_HydraGren_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraGren_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Grenman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Grenman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2313,12 +2313,12 @@ class 53rd_HydraGren_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraGren_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus Grenman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra Grenman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2357,12 +2357,12 @@ class 53rd_HydraGren_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_HydraJTAC_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus JTACman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra JTACman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2398,12 +2398,12 @@ class 53rd_HydraJTAC_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraJTAC_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus JTACman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra JTACman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2439,12 +2439,12 @@ class 53rd_HydraJTAC_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraJTAC_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus JTACman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra JTACman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2480,12 +2480,12 @@ class 53rd_HydraJTAC_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraJTAC_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus JTACman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra JTACman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2524,12 +2524,12 @@ class 53rd_HydraJTAC_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_HydraAT_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus ATman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra ATman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2565,12 +2565,12 @@ class 53rd_HydraAT_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraAT_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus ATman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra ATman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2606,12 +2606,12 @@ class 53rd_HydraAT_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraAT_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus ATman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra ATman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2647,12 +2647,12 @@ class 53rd_HydraAT_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_HydraAT_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Hydraerus ATman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Hydra ATman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2694,12 +2694,12 @@ class 53rd_HydraAT_Urban: 53rd_U_Base_uniform_W
 ///////////////////////
 class 53rd_MinoSL_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Lead (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Lead (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2735,12 +2735,12 @@ class 53rd_MinoSL_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoSL_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Lead (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Lead (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2776,12 +2776,12 @@ class 53rd_MinoSL_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoSL_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Lead (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Lead (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2817,12 +2817,12 @@ class 53rd_MinoSL_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoSL_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Lead (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Lead (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2861,12 +2861,12 @@ class 53rd_MinoSL_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_MinoMed_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Med (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Med (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2902,12 +2902,12 @@ class 53rd_MinoMed_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoMed_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Med (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Med (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2943,12 +2943,12 @@ class 53rd_MinoMed_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoMed_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Med (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Med (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -2984,12 +2984,12 @@ class 53rd_MinoMed_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoMed_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Med (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Med (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3030,12 +3030,12 @@ class 53rd_MinoMed_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_MinoRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Rifleman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Rifleman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3071,12 +3071,12 @@ class 53rd_MinoRifle_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Rifleman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Rifleman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3112,12 +3112,12 @@ class 53rd_MinoRifle_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoRifle_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Rifleman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Rifleman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3153,12 +3153,12 @@ class 53rd_MinoRifle_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Rifleman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Rifleman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3198,12 +3198,12 @@ class 53rd_MinoRifle_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_MinoAutoRifle_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus AutoRifleman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius AutoRifleman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3239,12 +3239,12 @@ class 53rd_MinoAutoRifle_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoAutoRifle_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus AutoRifleman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius AutoRifleman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3280,12 +3280,12 @@ class 53rd_MinoAutoRifle_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoAutoRifle_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus AutoRifleman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius AutoRifleman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3321,12 +3321,12 @@ class 53rd_MinoAutoRifle_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoAutoRifle_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus AutoRifleman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius AutoRifleman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3366,12 +3366,12 @@ class 53rd_MinoAutoRifle_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_MinoGren_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Grenman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Grenman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3407,12 +3407,12 @@ class 53rd_MinoGren_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoGren_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Grenman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Grenman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3448,12 +3448,12 @@ class 53rd_MinoGren_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoGren_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Grenman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Grenman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3489,12 +3489,12 @@ class 53rd_MinoGren_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoGren_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus Grenman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius Grenman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3533,12 +3533,12 @@ class 53rd_MinoGren_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_MinoJTAC_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus JTACman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius JTACman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3574,12 +3574,12 @@ class 53rd_MinoJTAC_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoJTAC_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus JTACman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius JTACman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3615,12 +3615,12 @@ class 53rd_MinoJTAC_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoJTAC_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus JTACman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius JTACman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3656,12 +3656,12 @@ class 53rd_MinoJTAC_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoJTAC_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus JTACman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius JTACman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3700,12 +3700,12 @@ class 53rd_MinoJTAC_Urban: 53rd_U_Base_uniform_W
 
 class 53rd_MinoAT_Winter: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus ATman (Winter)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius ATman (Winter)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3741,12 +3741,12 @@ class 53rd_MinoAT_Winter: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoAT_Desert: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus ATman (Desert)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius ATman (Desert)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3782,12 +3782,12 @@ class 53rd_MinoAT_Desert: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoAT_Woodland: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus ATman (Woodland)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius ATman (Woodland)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {
@@ -3823,12 +3823,12 @@ class 53rd_MinoAT_Woodland: 53rd_U_Base_uniform_W
 };
 class 53rd_MinoAT_Urban: 53rd_U_Base_uniform_W
 {
-    author="Scarecrow";
+    author="53rd Aux Team";
     scope=2;
     scopeArsenal=2;
     allowedSlots[]={901};
-    displayName="[53rd] Minoerus ATman (Urban)";
-    picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+    displayName="[53rd] Hephaestus Asterius ATman (Urban)";
+    picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
     model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
     hiddenSelections[]=
     {

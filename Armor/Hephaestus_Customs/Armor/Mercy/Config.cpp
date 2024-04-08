@@ -106,8 +106,8 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Winter Mercy";
-		picture="\A3\characters_f\data\ui\icon_U_BasicMercy_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Mercy / Winter)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -148,8 +148,8 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Woodland Mercy";
-		picture="\A3\characters_f\data\ui\icon_U_BasicMercy_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Mercy / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -190,8 +190,8 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Urban Mercy";
-		picture="\A3\characters_f\data\ui\icon_U_BasicMercy_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Mercy / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -232,8 +232,8 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Desert Mercy";
-		picture="\A3\characters_f\data\ui\icon_U_BasicMercy_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Mercy / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

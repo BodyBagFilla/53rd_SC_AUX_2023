@@ -78,7 +78,7 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Base CH252 Visor ";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -130,13 +130,13 @@ class cfgWeapons
 	/////HELMETS/////
 	class 53rd_Cap_Helmet_Urban_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cap Helmet (Urban / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -150,13 +150,13 @@ class cfgWeapons
 	};
 	class 53rd_Cap_Helmet_Urban_Visor: 53rd_Base_headgear
 	{
-		author="Cherri&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Urban / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Urban / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -171,13 +171,13 @@ class cfgWeapons
 	//Woodland
 	class 53rd_Cap_Helmet_Woodland_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Woodland / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Woodland / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -191,13 +191,13 @@ class cfgWeapons
 	};
 	class 53rd_Cap_Helmet_Woodland_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Woodland / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Woodland / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -212,13 +212,13 @@ class cfgWeapons
 	//Desert
 	class 53rd_Cap_Helmet_Desert_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Desert / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Desert / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -232,13 +232,13 @@ class cfgWeapons
 	};
 	class 53rd_Cap_Helmet_Desert_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Desert / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Desert / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -253,13 +253,13 @@ class cfgWeapons
 	//Winter
 	class 53rd_Cap_Helmet_Winter_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Winter / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Winter / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -273,13 +273,13 @@ class cfgWeapons
 	};
 	class 53rd_Cap_Helmet_Winter_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Cap Helmet (Winter / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Cap / Winter / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{

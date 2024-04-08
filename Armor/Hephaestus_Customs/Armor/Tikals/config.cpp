@@ -20,9 +20,9 @@ class cfgWeapons
 		{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Air Assault Helmet Tikals (Urban)";
+		displayName="[53rd] Hephaestus Custom (Tikals / Urban)";
 		model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-		picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Tikals\Tikals_AA_Urban_new.paa",
@@ -33,9 +33,9 @@ class cfgWeapons
 		{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Air Assault Helmet Tikals (Desert)";
+		displayName="[53rd] Hephaestus Custom (Tikals / Desert)";
 		model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-		picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Tikals\Tikals_AA_Desert.paa",
@@ -46,9 +46,9 @@ class cfgWeapons
 		{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Air Assault Tikals (Winter)";
+		displayName="[53rd] Hephaestus Custom (Tikals / Winter)";
 		model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-		picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Tikals\Tikals_AA_Winter.paa",
@@ -59,9 +59,9 @@ class cfgWeapons
 		{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Air Assault Helmet Tikals (Woodland)";
+		displayName="[53rd] Hephaestus Custom (Tikals / Woodland)";
 		model="MA_Armor\data\Helmets\AA\AA_Helmet.p3d";
-		picture="MA_Armor\data\Icons\AA_Helmet.paa"; //TODO: Update this
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa"; //TODO: Update this
 		hiddenSelectionsTextures[]=
 			{
 				"53rd_SC_aux\Armor\Hephaestus_Customs\Armor\Tikals\Tikals_AA_Woodland.paa",

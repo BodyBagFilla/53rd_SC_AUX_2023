@@ -2,10 +2,10 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class HephaestusCamoCustoms
+		class HephaestusCustomHelmets
 		{
 			label = "53rd Custom Helmets";
-			author = "Ithias";
+			author = "53rd Aux Team";
 			options[] = {"Helm_Camo","Person","Type","dp"};
 			
 			class Helm_Camo
@@ -38,25 +38,21 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Body","Cherry","Panzer","Ryu","Tikals","Saiko","Theta","Limitz","Cap","Angel","Dalton","Foster"};
+				values[] = {"Body","Panzer","Tikals","Saiko","Theta","Limitz","Cap","Angel","Dalton","Foster","Roberto","Icon","Lyssa"};
 				class Body
 				{
 					label = "Body";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Cherry
+/*				class Cherry
 				{
 					label = "Cherry";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
+*/				
 				class Panzer
 				{
 					label = "Panzer";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Ryu
-				{
-					label = "Ryu";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Tikals
@@ -98,7 +94,22 @@ class XtdGearModels
 				{
 					label = "Angel";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};	
+				};				
+				class Roberto				
+				{
+					label = "Roberto";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};		
+				class Icon				
+				{
+					label = "Icon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};		
+				class Lyssa				
+				{
+					label = "Lyssa";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};						
 			};
 			class Type
 			{
@@ -174,7 +185,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer","Cherry","Ryu","Saiko","Theta","Dalton","Foster","Mercy","Limitz"};
+				values[] = {"Fixer","Body","Panzer",,"Ryu","Saiko","Theta","Dalton","Foster","Mercy","Limitz"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -190,21 +201,7 @@ class XtdGearModels
 					label = "Panzer";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Cherry
-				{
-					label = "Cherry";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Ryu
-				{
-					label = "Ryu";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Saiko
-				{
-					label = "Saiko";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
+
 				class Theta
 				{
 					label = "Theta";
@@ -229,8 +226,7 @@ class XtdGearModels
 				{
 					label = "Limitz";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};	
-							
+				};					
 			};
 		};
     };
@@ -243,7 +239,7 @@ class XtdGearInfos
 		//Bodyy
 		class 53rd_Body_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Body";
 		Type = "NoVISOR";
@@ -264,7 +260,7 @@ class XtdGearInfos
 		
 		class 53rd_Body_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Body";
 		Type = "Visor";
@@ -283,11 +279,12 @@ class XtdGearInfos
 		Helm_Camo = "Snow";
 		};
         
+/*
 		//Cherryy
 		//No Visor
 		class 53rd_Cherry_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Cherry";
 		Type = "NoVISOR";
@@ -308,7 +305,7 @@ class XtdGearInfos
 		//VISOR
 		class 53rd_Cherry_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Cherry";
 		Type = "Visor";
@@ -326,11 +323,11 @@ class XtdGearInfos
 		{
 		Helm_Camo = "Snow";
 		};
-		
+*/		
 		//Tikals
 		class Tikals_Custom_Helmet_UB
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Tikals";
 		Type = "Visor";
@@ -349,53 +346,10 @@ class XtdGearInfos
 		Helm_Camo = "Woodland";
 		};
 		
-		//RYU
-		class 53rd_Ryu_Helmet_Winter_No_Visor
-		{
-		model = "HephaestusCamoCustoms";
-		Helm_Camo = "Snow";
-		Person = "Ryu";
-		Type = "NoVISOR";
-        dp="no";
-		};
-		class 53rd_Ryu_Helmet_Woodland_No_Visor:53rd_Ryu_Helmet_Winter_No_Visor
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Ryu_Helmet_Desert_No_Visor:53rd_Ryu_Helmet_Winter_No_Visor
-		{
-		Helm_Camo = "Desert";
-		};
-		class 53rd_Ryu_Helmet_Urban_No_Visor:53rd_Ryu_Helmet_Winter_No_Visor
-		{
-		Helm_Camo = "Urban";
-		};
-		
-		class 53rd_Ryu_Helmet_Urban_Visor
-		{
-		model = "HephaestusCamoCustoms";
-		Helm_Camo = "Urban";
-		Person = "Ryu";
-		Type = "Visor";
-        dp="no";
-		};
-		class 53rd_Ryu_Helmet_Woodland_Visor:53rd_Ryu_Helmet_Urban_Visor
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Ryu_Helmet_Desert_Visor:53rd_Ryu_Helmet_Urban_Visor
-		{
-		Helm_Camo = "Desert";
-		};
-		class 53rd_Ryu_Helmet_Winter_Visor:53rd_Ryu_Helmet_Urban_Visor
-		{
-		Helm_Camo = "Snow";
-		};
-		
 		//Saiko
 		class 53rd_Saiko_Helmet_Winter_NV
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Saiko";
 		Type = "NoVISOR";
@@ -416,7 +370,7 @@ class XtdGearInfos
 		
 		class 53rd_Saiko_Helmet_Urban
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Saiko";
 		Type = "Visor";
@@ -439,7 +393,7 @@ class XtdGearInfos
 		//Panzer
 		class 53rd_Panzer_Helmet_Winter_NV
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Panzer";
 		Type = "NoVISOR";
@@ -460,7 +414,7 @@ class XtdGearInfos
 		
 		class 53rd_Panzer_Helmet_Urban
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Panzer";
 		Type = "Visor";
@@ -482,7 +436,7 @@ class XtdGearInfos
 		//Theta
 		class 53rd_Theta_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Theta";
 		Type = "NoVISOR";
@@ -503,7 +457,7 @@ class XtdGearInfos
 
 		class 53rd_Theta_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Theta";
 		Type = "Visor";
@@ -525,7 +479,7 @@ class XtdGearInfos
 		//Cap
 		class 53rd_Cap_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Cap";
 		Type = "NoVISOR";
@@ -546,7 +500,7 @@ class XtdGearInfos
 		
 		class 53rd_Cap_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Cap";
 		Type = "Visor";
@@ -568,7 +522,7 @@ class XtdGearInfos
 		//Limitz
 		class 53rd_Limitz_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Limitz";
 		Type = "NoVISOR";
@@ -589,7 +543,7 @@ class XtdGearInfos
 		
 		class 53rd_Limitz_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Limitz";
 		Type = "Visor";
@@ -613,7 +567,7 @@ class XtdGearInfos
 		//Angel
 		class 53rd_Angel_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Angel";
 		Type = "NoVISOR";
@@ -634,7 +588,7 @@ class XtdGearInfos
 		
 		class 53rd_Angel_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Angel";
 		Type = "Visor";
@@ -653,10 +607,144 @@ class XtdGearInfos
 		Helm_Camo = "Snow";
 		};
 
+
+		//Roberto
+		class 53rd_Roberto_Helmet_Winter_No_Visor
+		{
+		model = "HephaestusCustomHelmets";
+		Helm_Camo = "Snow";
+		Person = "Roberto";
+		Type = "NoVISOR";
+        dp="no";
+		};
+		class 53rd_Roberto_Helmet_Woodland_No_Visor:53rd_Roberto_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Roberto_Helmet_Desert_No_Visor:53rd_Roberto_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Roberto_Helmet_Urban_No_Visor:53rd_Roberto_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Urban";
+		};
+		
+		class 53rd_Roberto_Helmet_Urban_Visor
+		{
+		model = "HephaestusCustomHelmets";
+		Helm_Camo = "Urban";
+		Person = "Roberto";
+		Type = "Visor";
+        dp="no";
+		};
+		class 53rd_Roberto_Helmet_Woodland_Visor:53rd_Roberto_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Roberto_Helmet_Desert_Visor:53rd_Roberto_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Roberto_Helmet_Winter_Visor:53rd_Roberto_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Snow";
+		};
+
+		//Icon
+		class 53rd_Icon_Helmet_Winter_No_Visor
+		{
+		model = "HephaestusCustomHelmets";
+		Helm_Camo = "Snow";
+		Person = "Icon";
+		Type = "NoVISOR";
+        dp="no";
+		};
+		class 53rd_Icon_Helmet_Woodland_No_Visor:53rd_Icon_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Icon_Helmet_Desert_No_Visor:53rd_Icon_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Icon_Helmet_Urban_No_Visor:53rd_Icon_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Urban";
+		};
+		
+		class 53rd_Icon_Helmet_Urban_Visor
+		{
+		model = "HephaestusCustomHelmets";
+		Helm_Camo = "Urban";
+		Person = "Icon";
+		Type = "Visor";
+        dp="no";
+		};
+		class 53rd_Icon_Helmet_Woodland_Visor:53rd_Icon_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Icon_Helmet_Desert_Visor:53rd_Icon_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Icon_Helmet_Winter_Visor:53rd_Icon_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Snow";
+		};
+
+		//Lyssa
+		class 53rd_Lyssa_Helmet_Winter_No_Visor
+		{
+		model = "HephaestusCustomHelmets";
+		Helm_Camo = "Snow";
+		Person = "Lyssa";
+		Type = "NoVISOR";
+        dp="no";
+		};
+		class 53rd_Lyssa_Helmet_Woodland_No_Visor:53rd_Lyssa_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Lyssa_Helmet_Desert_No_Visor:53rd_Lyssa_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Lyssa_Helmet_Urban_No_Visor:53rd_Lyssa_Helmet_Winter_No_Visor
+		{
+		Helm_Camo = "Urban";
+		};
+		
+		class 53rd_Lyssa_Helmet_Urban_Visor
+		{
+		model = "HephaestusCustomHelmets";
+		Helm_Camo = "Urban";
+		Person = "Lyssa";
+		Type = "Visor";
+        dp="no";
+		};
+		class 53rd_Lyssa_Helmet_Woodland_Visor:53rd_Lyssa_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		class 53rd_Lyssa_Helmet_Desert_Visor:53rd_Lyssa_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Desert";
+		};
+		class 53rd_Lyssa_Helmet_Winter_Visor:53rd_Lyssa_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Snow";
+		};
+
+
+
+
+
 		//Foster
 		class 53rd_Foster_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Foster";
 		Type = "NoVISOR";
@@ -677,7 +765,7 @@ class XtdGearInfos
 		
 		class 53rd_Foster_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Foster";
 		Type = "Visor";
@@ -700,7 +788,7 @@ class XtdGearInfos
 		//Dalton
 		class 53rd_Dalton_Helmet_Winter_No_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Snow";
 		Person = "Dalton";
 		Type = "NoVISOR";
@@ -721,7 +809,7 @@ class XtdGearInfos
 		
 		class 53rd_Dalton_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoCustoms";
+		model = "HephaestusCustomHelmets";
 		Helm_Camo = "Urban";
 		Person = "Dalton";
 		Type = "Visor";
@@ -739,6 +827,9 @@ class XtdGearInfos
 		{
 		Helm_Camo = "Snow";
 		};	
+
+
+
 				
 		
 		///////////////////////////////////////////////////////
@@ -847,7 +938,7 @@ class XtdGearInfos
 		Vest_Camo = "Woodland";
 		};
 
-        //Cherry
+/*        //Cherry
 		class 53rd_Cherry_DS
 		{
 		model = "HephaestusCustomCamo";
@@ -866,7 +957,7 @@ class XtdGearInfos
 		{
 		Vest_Camo = "Woodland";
 		};
-
+*/
         //Theta
 		class 53rd_Armor_Theta_Woodland
 		{

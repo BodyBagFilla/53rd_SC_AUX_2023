@@ -33,7 +33,6 @@ class cfgWeapons
 		scope=1;
 		allowedSlots[]={901};
 		displayName="[Liang] Uniform Base ";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 
 		hiddenSelectionsTextures[]=
@@ -64,7 +63,6 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[Liang] Trooper";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -105,7 +103,6 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[Liang] Worker";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

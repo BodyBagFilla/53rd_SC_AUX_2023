@@ -125,7 +125,7 @@ class cfgWeapons
         scopeArsenal=2;
         side=1;
         displayName="[53rd] Invisible Vest";
-        picture="\A3\characters_f\Data\UI\icon_V_BandollierB_CA.paa";
+        picture="\53rd_sc_aux\tex\Arsenal\53rd.paa";
         model="\Halo_marine_02\null.p3d";
         hiddenSelectionsTextures[]=
         {
@@ -244,7 +244,7 @@ class cfgWeapons
         scopeArsenal=1;
         side=1;
         displayName="[53rd] Base CH252 Visor ";
-        picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+        picture="\53rd_sc_aux\tex\Arsenal\53rd.paa";
         model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
         hiddenSelections[]=
         {

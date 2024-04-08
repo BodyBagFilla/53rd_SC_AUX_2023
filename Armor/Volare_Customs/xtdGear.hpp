@@ -40,7 +40,7 @@ class XtdGearModels
 				};
 				class AK
 				{
-					label = "Ghillie";
+					label = "AK";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 			};

@@ -128,7 +128,7 @@ class cfgWeapons
 	/////HELMETS/////
 	class 53rd_A_Medic_Helmet_Urban_No_Visor: 53rd_AM_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
@@ -148,7 +148,7 @@ class cfgWeapons
 	};
 	class 53rd_A_Medic_Helmet_Urban_Visor: 53rd_AM_Base_headgear
 	{
-		author="Cherri&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
@@ -169,7 +169,7 @@ class cfgWeapons
 	//Woodland
 	class 53rd_A_Medic_Helmet_Woodland_No_Visor: 53rd_AM_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -189,7 +189,7 @@ class cfgWeapons
 	};
 	class 53rd_A_Medic_Helmet_Woodland_Visor: 53rd_AM_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
@@ -210,7 +210,7 @@ class cfgWeapons
 	//Desert
 	class 53rd_A_Medic_Helmet_Desert_No_Visor: 53rd_AM_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
@@ -230,7 +230,7 @@ class cfgWeapons
 	};
 	class 53rd_A_Medic_Helmet_Desert_Visor: 53rd_AM_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
@@ -251,7 +251,7 @@ class cfgWeapons
 	//Winter
 	class 53rd_A_Medic_Helmet_Winter_No_Visor: 53rd_AM_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
@@ -271,7 +271,7 @@ class cfgWeapons
 	};
 	class 53rd_A_Medic_Helmet_Winter_Visor: 53rd_AM_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;

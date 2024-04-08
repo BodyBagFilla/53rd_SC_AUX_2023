@@ -82,7 +82,7 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Base CH252 Visor ";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -136,13 +136,13 @@ class cfgWeapons
 	/////HELMETS/////
 	class 53rd_Theta_Helmet_Urban_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Urban / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -156,13 +156,13 @@ class cfgWeapons
 	};
 	class 53rd_Theta_Helmet_Urban_Visor: 53rd_Base_headgear
 	{
-		author="Cherri&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Urban / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -177,13 +177,13 @@ class cfgWeapons
 	//Woodland
 	class 53rd_Theta_Helmet_Woodland_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Woodland / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -197,13 +197,13 @@ class cfgWeapons
 	};
 	class 53rd_Theta_Helmet_Woodland_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Woodland / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -218,13 +218,13 @@ class cfgWeapons
 	//Desert
 	class 53rd_Theta_Helmet_Desert_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Desert / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -238,13 +238,13 @@ class cfgWeapons
 	};
 	class 53rd_Theta_Helmet_Desert_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Desert / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -259,13 +259,13 @@ class cfgWeapons
 	//Winter
 	class 53rd_Theta_Helmet_Winter_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Winter / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -279,13 +279,13 @@ class cfgWeapons
 	};
 	class 53rd_Theta_Helmet_Winter_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Theta Helmet (Winter / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -317,7 +317,7 @@ class cfgWeapons
 		scope=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Rifleman Base ";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelectionsTextures[]=
 		{
@@ -347,7 +347,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Winter Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -388,7 +388,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Woodland Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -429,7 +429,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Urban Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -470,7 +470,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Desert Theta";
-		picture="\A3\characters_f\data\ui\icon_U_BasicTheta_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

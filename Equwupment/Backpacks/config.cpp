@@ -355,7 +355,7 @@ class CfgVehicles
 	};
 	class 53rd_Rucksack_Urban: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack [Urban]";
@@ -374,7 +374,7 @@ class CfgVehicles
 	};
     class 53rd_Rucksack_Woodland: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack [Woodland]";
@@ -393,7 +393,7 @@ class CfgVehicles
 	};
 	class 53rd_Rucksack_Desert: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack [Desert]";
@@ -412,7 +412,7 @@ class CfgVehicles
 	};
 	class 53rd_Rucksack_Winter: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack [Winter]";
@@ -432,7 +432,7 @@ class CfgVehicles
     //Heavy
 	class 53rd_Rucksack_Heavy_Urban: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack Heavy [Urban]";
@@ -453,7 +453,7 @@ class CfgVehicles
 	};
     class 53rd_Rucksack_Heavy_Winter: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack Heavy [Winter]";
@@ -474,7 +474,7 @@ class CfgVehicles
 	};
     class 53rd_Rucksack_Heavy_Desert: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack Heavy [Desert]";
@@ -495,7 +495,7 @@ class CfgVehicles
 	};
     class 53rd_Rucksack_Heavy_Woodland: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Rucksack Heavy [Woodland]";
@@ -517,7 +517,7 @@ class CfgVehicles
     //LR
 	class 53rd_LR_Urban: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Long Range [Urban]";
@@ -543,7 +543,7 @@ class CfgVehicles
 	};
     class 53rd_LR_Woodland: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Long Range [Woodland]";
@@ -569,7 +569,7 @@ class CfgVehicles
 	};
     class 53rd_LR_Desert: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Long Range [Desert]";
@@ -595,7 +595,7 @@ class CfgVehicles
 	};
     class 53rd_LR_Winter: B_Carryall_Base
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		mapSize=0.44999999;
 		scope=2;
 		displayName="53rd Long Range [Winter]";

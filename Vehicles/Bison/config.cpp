@@ -27,7 +27,8 @@ class CfgVehicles
 			class MainTurret;
 		}
 	};
-	class 53rd_PL_IFV_UNSC: OPTRE_M412_IFV_UNSC
+
+/*	class 53rd_PL_IFV_UNSC: OPTRE_M412_IFV_UNSC
 	{
 		vehicleClass="OPTRE_UNSC_Armored_class";
 		dlc="53rd";
@@ -117,6 +118,7 @@ class CfgVehicles
 			1
 		};
 	};
+*/
 	class 53rd_Heph_APC_UNSC: OPTRE_M411_APC_UNSC
 	{
 		vehicleClass="OPTRE_UNSC_Armored_class";
@@ -136,8 +138,8 @@ class CfgVehicles
 		enableRadio=1;
 				hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\Bison\53BisonHull.paa",
-			"53rd_SC_aux\Vehicles\Bison\53BisonTurret.paa",
+			"53rd_SC_aux\Vehicles\Bison\53_Bison_Hull.paa",
+			"53rd_SC_aux\Vehicles\Bison\53_Bison_Turret.paa",
 			"53rd_SC_aux\Vehicles\Bison\Bison_wheelsCannon_blk_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
@@ -152,8 +154,8 @@ class CfgVehicles
 				author="1Lt. Body";
 				textures[]=
 				{
-					"53rd_SC_aux\Vehicles\Bison\53BisonHull.paa",
-					"53rd_SC_aux\Vehicles\Bison\53BisonTurret.paa",
+					"53rd_SC_aux\Vehicles\Bison\53_Bison_Hull.paa",
+					"53rd_SC_aux\Vehicles\Bison\53_Bison_Turret.paa",
 					"53rd_SC_aux\Vehicles\Bison\Bison_wheelsCannon_blk_CO.paa",
 					"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 					"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",
@@ -228,8 +230,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\Bison\53BisonHull.paa",
-			"53rd_SC_aux\Vehicles\Bison\53BisonTurret.paa",
+			"53rd_SC_aux\Vehicles\Bison\53_Bison_Hull.paa",
+			"53rd_SC_aux\Vehicles\Bison\53_Bison_Turret.paa",
 			"53rd_SC_aux\Vehicles\Bison\Bison_wheelsCannon_blk_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Seats_CO.paa",
 			"OPTRE_Vehicles\Bison\data\Bison_Interior_CO.paa",

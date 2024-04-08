@@ -84,8 +84,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Panzer Helmet (Urban)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\OPTRE_UNSC_Units\Army\HRPilot_Helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -105,8 +105,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Panzer Helmet (Woodland)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\OPTRE_UNSC_Units\Army\HRPilot_Helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -127,8 +127,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Panzer Helmet (Winter)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Winter)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\OPTRE_UNSC_Units\Army\HRPilot_Helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -150,8 +150,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Panzer Helmet (Desert)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\OPTRE_UNSC_Units\Army\HRPilot_Helmet.p3d";
 		hiddenSelections[]=
 		{
@@ -207,8 +207,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Winter Panzer";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Winter)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -249,8 +249,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Woodland Panzer";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -291,8 +291,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Urban Panzer";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -333,8 +333,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Desert Panzer";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Panzer / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

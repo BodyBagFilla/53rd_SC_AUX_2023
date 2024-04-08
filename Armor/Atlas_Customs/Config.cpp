@@ -48,8 +48,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Hellfire / Urban)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Hellfire / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -91,8 +91,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Hellfire / Snow)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Hellfire / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -134,8 +134,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Hellfire / Woodland)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Hellfire / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -177,8 +177,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Hellfire / Desert)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Hellfire / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -220,8 +220,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] LoneWulf Custom Armor (Urban)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (LoneWulf / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -263,8 +263,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (LoneWulf / Snow)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (LoneWulf / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -307,8 +307,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (LoneWulf / Desert)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (LoneWulf / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -350,8 +350,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (LoneWulf / Woodland)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (LoneWulf / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -393,8 +393,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Serpent / Urban)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -436,8 +436,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Serpent / Snow)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -479,8 +479,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Serpent / Desert)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -522,8 +522,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Serpent / Woodland)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -568,7 +568,7 @@ class cfgWeapons
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Custom Armors (Tsuki / Urban)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -613,7 +613,7 @@ class cfgWeapons
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Custom Armors (Tsuki / Snow)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -658,7 +658,7 @@ class cfgWeapons
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Custom Armors (Tsuki / Desert)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -703,7 +703,7 @@ class cfgWeapons
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Custom Armors (Tsuki / Woodland)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -746,8 +746,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Texas / Urban)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Texas / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -789,8 +789,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Texas / Winter)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Texas / Winter)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -832,8 +832,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Texas / Desert)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Texas / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -876,8 +876,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Texas / Woodland)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Texas / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -915,13 +915,13 @@ class cfgWeapons
 	//Axe
 		class 53rd_Atlas_Axe_Armor: haloinfmar_U_WDL_uniform
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Axe / Urban)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Axe / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -958,13 +958,13 @@ class cfgWeapons
 	};
 	class 53rd_Atlas_Axe_Armor_SN: haloinfmar_U_WDL_uniform
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Axe / Snow)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Axe / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -1001,13 +1001,13 @@ class cfgWeapons
 	};
 	class 53rd_Atlas_Axe_Armor_WD: haloinfmar_U_WDL_uniform
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Axe / Woodland)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Axe / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -1044,13 +1044,13 @@ class cfgWeapons
 	};
 	class 53rd_Atlas_Axe_Armor_DS: haloinfmar_U_WDL_uniform
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		allowedSlots[]={901};
-		displayName="[53rd] Custom Armors (Axe / Desert)";
-		picture="\A3\characters_f\data\ui\icon_U_BasicBody_CA.paa";
+		displayName="[53rd] Atlas Custom (Axe / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -1094,7 +1094,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Urban)";
+		displayName="[53rd] Atlas Custom (Hellfire / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1109,7 +1110,8 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Urban) (Dp)";
+		displayName="[53rd] Atlas Custom (Hellfire / Urban) (Dp)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1124,7 +1126,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Snow)";
+		displayName="[53rd] Atlas Custom (Hellfire / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1140,7 +1143,8 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Snow) (Dp)";
+		displayName="[53rd] Atlas Custom (Hellfire / Snow) (Dp)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1155,7 +1159,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Woodland)";
+		displayName="[53rd] Atlas Custom (Hellfire / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1171,7 +1176,8 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Woodland) (Dp)";
+		displayName="[53rd] Atlas Custom (Hellfire / Woodland) (Dp)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1186,7 +1192,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Desert)";
+		displayName="[53rd] Atlas Custom (Hellfire / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1202,7 +1209,8 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Hellfire / Desert) (Dp)";
+		displayName="[53rd] Atlas Custom (Hellfire / Desert) (Dp)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1216,7 +1224,8 @@ class cfgWeapons
 		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Custom Helmet (LoneWulf / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
+		displayName="[53rd] Atlas Custom (LoneWulf / Urban)";
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Urban\53rd_Lonewulf_Custom_Helmet_Urban.paa",
@@ -1254,7 +1263,8 @@ class cfgWeapons
 		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Custom Helmet (LoneWulf / Snow)";
+		displayName="[53rd] Atlas Custom (LoneWulf / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Snow\53rd_Lonewulf_Custom_Helmet_Winter.paa",
@@ -1267,7 +1277,8 @@ class cfgWeapons
 		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Custom Helmet (LoneWulf / Desert)";
+		displayName="[53rd] Atlas Custom (LoneWulf / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Desert\53rd_Lonewulf_Custom_Helmet_Desert.paa",
@@ -1280,7 +1291,8 @@ class cfgWeapons
 		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Custom Helmet (LoneWulf / Woodland)";
+		displayName="[53rd] Atlas Custom (LoneWulf / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Armor\Atlas_Customs\Lonewulf\Woodland\53rd_Lonewulf_Custom_Helmet_Woodland.paa",
@@ -1293,8 +1305,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Urban)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1313,8 +1325,8 @@ class cfgWeapons
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Urban) dp";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Urban) dp";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1332,8 +1344,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Snow)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1352,8 +1364,8 @@ class cfgWeapons
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Snow) dp";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Snow) dp";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1371,8 +1383,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Desert)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1391,8 +1403,8 @@ class cfgWeapons
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Desert) dp";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Desert) dp";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1410,8 +1422,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Woodland)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1430,8 +1442,8 @@ class cfgWeapons
 		scopeCurator=1;
 		scopeArsenal=1;
 		side=1;
-		displayName="[53rd] Custom Helmet (Serpent / Woodland) dp";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Atlas Custom (Serpent / Woodland) dp";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -1450,7 +1462,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Urban)"; 
+		displayName="[53rd] Atlas Custom (Texas / Urban)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1465,7 +1478,8 @@ class cfgWeapons
 		scopeArsenal=1; 
 		side=1; 
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Urban) (Dp)"; 
+		displayName="[53rd] Atlas Custom (Texas / Urban) (Dp)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1480,7 +1494,8 @@ class cfgWeapons
 		scopeArsenal=2; 
 		side=1; 
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Snow)"; 
+		displayName="[53rd] Atlas Custom (Texas / Snow)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1495,7 +1510,8 @@ class cfgWeapons
 		scopeArsenal=1; 
 		side=1; 
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Snow) (Dp)"; 
+		displayName="[53rd] Atlas Custom (Texas / Snow) (Dp)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1510,7 +1526,8 @@ class cfgWeapons
 		scopeArsenal=2; 
 		side=1; 
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Desert)"; 
+		displayName="[53rd] Atlas Custom (Texas / Desert)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1525,7 +1542,8 @@ class cfgWeapons
 		scopeArsenal=1; 
 		side=1; 
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Desert) (Dp)"; 
+		displayName="[53rd] Atlas Custom (Texas / Desert) (Dp)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1540,7 +1558,8 @@ class cfgWeapons
 		scopeArsenal=2; 
 		side=1; 
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Woodland)"; 
+		displayName="[53rd] Atlas Custom (Texas / Woodland)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1555,7 +1574,8 @@ class cfgWeapons
 		scopeArsenal=1; 
 		side=1;  
 		author="Tsuki"; 
-		displayName="[53rd] Custom Helmet (Texas / Woodland) (Dp)"; 
+		displayName="[53rd] Atlas Custom (Texas / Woodland) (Dp)"; 
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d"; 
 		hiddenSelectionsTextures[]= 
 		{ 
@@ -1563,7 +1583,7 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		}; 
 	}; 
-	class 53rd_Atlas_Axe_Custom_Helmet_UB: HaloInf_Marine_WDL_headgear
+	class 53rd_Axe_Helmet_Urban: HaloInf_Marine_WDL_headgear
 	{
 		dlc="53rd";
 		scope=2;
@@ -1571,7 +1591,8 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Axe / Urban)";
+		displayName="[53rd] Atlas Custom (Axe / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1579,14 +1600,15 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
-	class 53rd_Atlas_Axe_Custom_Helmet_SN: HaloInf_Marine_WDL_headgear
+	class 53rd_Axe_Helmet_Winter: HaloInf_Marine_WDL_headgear
 	{
 		dlc="53rd";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Axe / Snow)";
+		displayName="[53rd] Atlas Custom (Axe / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1594,14 +1616,15 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
-	class 53rd_Atlas_Axe_Custom_Helmet_WD: HaloInf_Marine_WDL_headgear
+	class 53rd_Axe_Helmet_Woodland: HaloInf_Marine_WDL_headgear
 	{
 		dlc="53rd";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Axe / Woodland)";
+		displayName="[53rd] Atlas Custom (Axe / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -1609,14 +1632,15 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
-	class 53rd_Atlas_Axe_Custom_Helmet_DS: HaloInf_Marine_WDL_headgear
+	class 53rd_Axe_Helmet_Desert: HaloInf_Marine_WDL_headgear
 	{
 		dlc="53rd";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		author="Tsuki";
-		displayName="[53rd] Custom Helmet (Axe / Desert)";
+		displayName="[53rd] Atlas Custom (Axe / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelectionsTextures[]=
 		{

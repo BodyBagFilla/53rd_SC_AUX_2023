@@ -37,7 +37,7 @@ class cfgWeapons
     {
        author = "Moose (Outworld Studios)";
        displayName = "[53rd] Volare Pilot Helmet Black";
-       picture = "UNSCGear\Logo.paa";
+       picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
        model = "\UNSCGear\UNSCPilotHelmet.p3d";
 	   hiddenSelections[] = {"Camo"};
 	   hiddenSelectionsTextures[] = {"53rd_SC_aux\Armor\Volare_Armor\Pilot_Helmet_Plain.paa"};
@@ -67,7 +67,7 @@ class cfgWeapons
     {
        author = "Moose (Outworld Studios) & Body";
        displayName = "[53rd] Volare Pilot Helmet Silver";
-       picture = "UNSCGear\Logo.paa";
+       picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
        model = "\UNSCGear\UNSCPilotHelmet.p3d";
 	   hiddenSelections[] = {"Camo"};
 	   hiddenSelectionsTextures[] = {"53rd_SC_aux\Armor\Volare_Armor\Pilot_Helmet_Silver.paa"};
@@ -76,7 +76,7 @@ class cfgWeapons
     {
        author = "Moose (Outworld Studios) & Body";
        displayName = "[53rd] Volare Pilot Helmet Blue";
-       picture = "UNSCGear\Logo.paa";
+       picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
        model = "\UNSCGear\UNSCPilotHelmet.p3d";
 	   hiddenSelections[] = {"Camo"};
 	   hiddenSelectionsTextures[] = {"53rd_SC_aux\Armor\Volare_Armor\Pilot_Helmet_Blue.paa"};
@@ -85,7 +85,7 @@ class cfgWeapons
     {
        author = "Moose (Outworld Studios) & Body";
        displayName = "[53rd] Volare Pilot Helmet NCO";
-       picture = "UNSCGear\Logo.paa";
+       picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
        model = "\UNSCGear\UNSCPilotHelmet.p3d";
 	   hiddenSelections[] = {"Camo"};
 	   hiddenSelectionsTextures[] = {"53rd_SC_aux\Armor\Volare_Armor\Pilot_Helmet_Red.paa"};
@@ -94,7 +94,7 @@ class cfgWeapons
     {
        author = "Moose (Outworld Studios)";
        displayName = "[53rd] Echo 419 Helmet (Foe Hammer)";
-       picture = "UNSCGear\Logo.paa";
+       picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
        model = "\Echo419\Echo419Helmet.p3d";
 	   hiddenSelections[] = {"Camo"};
 	   hiddenSelectionsTextures[] = {"53rd_SC_aux\Armor\Volare_Armor\CE_Pilot_Helmet.paa"};
@@ -123,7 +123,7 @@ class cfgWeapons
     {
       author = "Moose (Outworld Studios)";
       displayName = "[53rd] Echo 419 Helmet-B (Foe Hammer)";
-      picture = "UNSCGear\Logo.paa";
+      picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
       model = "\Echo419B\Echo419Helmet2.p3d";
 	  hiddenSelections[] = {"Camo"};
 	  hiddenSelectionsTextures[] = {"53rd_SC_aux\Armor\Volare_Armor\CE_Pilot_Helmet.paa"};
@@ -535,7 +535,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		author = "Moose (Outworld Studios) & Body";
 		displayName = "[53rd] Volare Pilot Armor Black";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		model = "UNSCGear\UNSCPilotArmor.p3d";
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = 
@@ -546,7 +546,7 @@ class cfgWeapons
 		class ItemInfo : VestItem
 		{
 			uniformModel = "UNSCGear\UNSCPilotArmor.p3d";
-			picture = "UNSCGear\Logo.paa";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			hiddenSelections[] = {"camo","camo1"};
 		    hiddenSelectionsTextures[] =
 			{
@@ -610,7 +610,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		author = "Moose (Outworld Studios)";
 		displayName = "[53rd] Volare Pilot Armor Blue";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		model = "UNSCGear\UNSCPilotArmor.p3d";
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] =
@@ -628,7 +628,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		author = "Moose (Outworld Studios)";
 		displayName = "[53rd] Volare Pilot Armor NCO";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		model = "UNSCGear\UNSCPilotArmor.p3d";
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] =
@@ -646,7 +646,7 @@ class cfgWeapons
 		weaponPoolAvailable = 1;
 		author = "Moose (Outworld Studios)";
 		displayName = "[53rd] Volare Pilot Armor Silver";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		model = "UNSCGear\UNSCPilotArmor.p3d";
 		hiddenSelections[] = {"camo","camo1"};
 		hiddenSelectionsTextures[] = 
@@ -768,7 +768,7 @@ class CfgVehicles
 		modelSides[] = {0, 1, 2, 3};
 		displayName = "[53rd] UNSC Pilot Uniform Grey";
 		model = "UNSCPilotUniform\UNSCPilotUniform.p3d";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		hiddenSelectionsTextures[] = {"UNSCPilotUniform\uniform\DefaultMaterial_CO.paa"};
 	};
 	class 53rd_Pilot_Uniform_Blue : O_V_Soldier_hex_F 
@@ -777,7 +777,7 @@ class CfgVehicles
 		modelSides[] = {0, 1, 2, 3};
 		displayName = "[53rd] UNSC Pilot Uniform Blue";
 		model = "UNSCPilotUniform\UNSCPilotUniform.p3d";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		hiddenSelectionsTextures[] = {"UNSCPilotUniform\uniform\DefaultMaterial_CO.paa"};
 	};
 	class 53rd_Pilot_Uniform_Red : O_V_Soldier_hex_F 
@@ -786,7 +786,7 @@ class CfgVehicles
 		modelSides[] = {0, 1, 2, 3};
 		displayName = "[53rd] UNSC Pilot Uniform Red";
 		model = "UNSCPilotUniform\UNSCPilotUniform.p3d";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		hiddenSelectionsTextures[] = {"UNSCPilotUniform\uniform\DefaultMaterial_CO.paa"};
 	};
 	class 53rd_Pilot_Uniform_Black : O_V_Soldier_hex_F 
@@ -795,7 +795,7 @@ class CfgVehicles
 		modelSides[] = {0, 1, 2, 3};
 		displayName = "[53rd] UNSC Pilot Uniform Black";
 		model = "UNSCPilotUniform\UNSCPilotUniform.p3d";
-		picture = "UNSCGear\Logo.paa";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		hiddenSelectionsTextures[] = {"UNSCPilotUniform\uniform\DefaultMaterial_CO.paa"};
 	};
 };

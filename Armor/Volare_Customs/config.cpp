@@ -52,6 +52,7 @@ class cfgWeapons
 			scope=2;
 			scopeArsenal=2;
 			displayName="[53rd] Custom Helmet (Big Ben)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			model="OPTRE_UNSC_Units\Army\commando_helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
@@ -63,7 +64,8 @@ class cfgWeapons
 		{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Big Ben)";
+			displayName="[53rd] Volare Custom (Big Ben)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			model="OPTRE_UNSC_Units\Army\commando_helmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
@@ -75,7 +77,8 @@ class cfgWeapons
 		{
 			scope = 2;
 			scopeArsenal = 2;
-			displayName = "[53rd] VX19 Flight Helmet (Amatsu)";
+			displayName = "[53rd] Volare Custom (Amatsu)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			hiddenSelectionsTextures[] = 
 			{
 				"53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Amatsu.paa",
@@ -86,7 +89,8 @@ class cfgWeapons
     {
         scope = 1;
         scopeArsenal = 1;
-		displayName = "[53rd] VX19 Flight Helmet (Amatsu) dp";
+		displayName = "[53rd] Volare Custom (Amatsu) dp";
+		picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 		hiddenSelectionsTextures[] = 
         {
             "53rd_SC_aux\tex\Customs\53rd_Custom_Helmet_Amatsu.paa",
@@ -112,7 +116,8 @@ class cfgWeapons
 	{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Lovey)";
+			displayName="[53rd] Volare Custom (Lovey)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";	
 			model="\UNSCGear\UNSCPilotHelmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
@@ -124,7 +129,8 @@ class cfgWeapons
 	{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Ferret)";
+			displayName="[53rd] Volare Custom (Ferret)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			model="\UNSCGear\UNSCPilotHelmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
@@ -136,7 +142,8 @@ class cfgWeapons
 	{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (Ghillie)";
+			displayName="[53rd] Volare Custom (Ghillie)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			model="\UNSCGear\UNSCPilotHelmet.p3d";
 			hiddenSelectionsTextures[]=
 			{
@@ -148,7 +155,8 @@ class cfgWeapons
 	{
 			scope=2;
 			scopeArsenal=2;
-			displayName="[53rd] Custom Helmet (AK)";
+			displayName="[53rd] Volare Custom (AK)";
+			picture = "\53rd_sc_aux\tex\Arsenal\Volare.paa";
 			model="\UNSCGear\UNSCPilotHelmet.p3d";
 			hiddenSelectionsTextures[]=
 			{

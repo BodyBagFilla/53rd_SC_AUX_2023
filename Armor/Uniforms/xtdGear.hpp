@@ -1,3 +1,5 @@
+
+/*
 class XtdGearModels
 {
 	class CfgWeapons

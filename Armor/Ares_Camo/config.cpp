@@ -2,7 +2,7 @@ class CfgPatches
 {
 	class 53rd_Ares_magear
 	{
-		author="21st SAB & 53rd";
+		author="53rd";
 		requiredAddons[]=
 		{
 		};
@@ -278,11 +278,11 @@ class CfgWeapons
 	};
 	class 53rd_Ares_PL_H3_Helmet: MA_M56SH_Helmet
 	{
-		dlc="21st SAB";
+
 		author="21st SAB";
 		scope=2;
 		scopeArsenal=2;
-		displayName="[21st SAB] Ares PL Helmet";
+		displayName="[53rd] Ares PL Helmet";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -290,7 +290,7 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-					"53rd_SC_aux\Armor\Ares_Camo\PL\53rd_3rd_PLT_H3_Helmet_PL.paa",
+				"53rd_SC_aux\Armor\Ares_Camo\PL\53rd_3rd_PLT_H3_Helmet_PL.paa",
 				"MA_Armor\data\Helmets\H3_ODST\H3_Visor_Black_co.paa"
 		};
 		class XtdGearInfo
@@ -475,7 +475,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares RA Armor";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -590,7 +590,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares RA CQB";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 		"camo1",
@@ -705,7 +705,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares RA Sniper";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -820,7 +820,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares Rifleman Armor";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -935,7 +935,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares Rifleman CQB";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 		"camo1",
@@ -1050,7 +1050,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares Rifleman Sniper";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1165,7 +1165,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares PL Armor";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1280,7 +1280,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares PL Armor CQB";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1395,7 +1395,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares PL Armor Sniper";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1509,7 +1509,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares SL Armor";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1623,7 +1623,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares SL Armor CQB";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1737,7 +1737,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares SL Armor Sniper";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -1851,7 +1851,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares TL Armor";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 						"camo1",
@@ -1965,7 +1965,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares TL Armor CBQ";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -2079,7 +2079,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares TL Armor Sniper";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -2193,7 +2193,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares Medic Armor CQB";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -2307,7 +2307,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares Medic Armor Sniper";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",
@@ -2421,7 +2421,7 @@ class CfgWeapons
 		scopeArsenal=2;
 		displayName="[53rd] Ares Medic Armor";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
-		picture="MA_Armor\data\Icons\H3ODST_Vest.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Ares.paa";
 		hiddenSelections[]=
 		{
 			"camo1",

@@ -1,3 +1,5 @@
+ 
+/* 
 class CfgPatches {
 	class 53rd_Custom_Armor_Cherry
 	{
@@ -71,7 +73,7 @@ class CfgPatches {
 		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Base CH252 Visor ";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -128,7 +130,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Urban / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -142,12 +144,12 @@ class CfgPatches {
 	};
 	class 53rd_Cherry_Helmet_Urban_Visor: 53rd_Base_headgear
 	{
-		author="Cherri&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Urban / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -167,7 +169,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Woodland / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -186,7 +188,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Woodland / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -206,7 +208,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Desert / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -225,7 +227,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Desert / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -245,7 +247,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Winter / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -264,7 +266,7 @@ class CfgPatches {
 		scopeArsenal=2;
 		side=1;
 		displayName="[53rd] Cherry Helmet (Winter / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -318,7 +320,7 @@ class CfgPatches {
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Winter Cherry";
-		picture="\A3\characters_f\data\ui\icon_U_BasicCherry_CA.paa";
+
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -360,7 +362,7 @@ class CfgPatches {
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Woodland Cherry";
-		picture="\A3\characters_f\data\ui\icon_U_BasicCherry_CA.paa";
+
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -402,7 +404,7 @@ class CfgPatches {
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Urban Cherry";
-		picture="\A3\characters_f\data\ui\icon_U_BasicCherry_CA.paa";
+
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -444,7 +446,7 @@ class CfgPatches {
 		side=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Desert Cherry";
-		picture="\A3\characters_f\data\ui\icon_U_BasicCherry_CA.paa";
+
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

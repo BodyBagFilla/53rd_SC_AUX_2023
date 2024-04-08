@@ -33,7 +33,7 @@ class XtdGearModels
 			class Camo
 			{
 				label = "Helmet_Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
+				values[] = {"Urban","Woodland","Desert","Snow","Test"};
 				changeingame = 1;
                 changedelay  = 0;
 				class Urban
@@ -54,6 +54,11 @@ class XtdGearModels
 				class Snow
 				{
 					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+				class Test
+				{
+					label = "Test";
 					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
 				};
 			};
@@ -102,6 +107,10 @@ class XtdGearInfos
 		class 53rd_EOD_Helmet_DS:53rd_EOD_Helmet
 		{
 		Camo = "Desert";
+		};
+		class 53rd_EOD_Helmet_Test:53rd_EOD_Helmet
+		{
+		Camo = "Test";
 		};
 		
 		//MKV

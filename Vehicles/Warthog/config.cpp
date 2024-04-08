@@ -128,6 +128,132 @@ class CfgVehicles
 			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
 		};
 	};
+	
+	
+//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////TEST /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+	class Components;
+	class SensorTemplatePassiveRadar;
+	class SensorTemplateAntiRadiation;
+	class SensorTemplateActiveRadar;
+	class SensorTemplateIR;
+	class SensorTemplateVisual;
+	class SensorTemplateMan;
+	class SensorTemplateLaser;
+	class SensorTemplateNV;
+	class SensorTemplateDataLink;
+	class VehicleSystemsTemplateLeftGunner;
+	class VehicleSystemsTemplateRightGunner;
+	class 53rd_M12_Radar: OPTRE_M12_FAV
+	{
+		dlc = "53rd";
+		displayName="[53rd] M12 Radar TEST ";
+		author="Six";
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		faction="53rd_faction";
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Motor";
+		crew="53rd_crewman_unit";
+		typicalCargo[]=
+		{
+			"53rd_crewman_unit"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
+			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
+			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
+			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
+			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+		};
+
+
+
+		artilleryScanner = 0;
+		irScanGround = 0;
+		irScanRangeMax = 10000;
+		irScanRangeMin = 2000;
+		irScanToEyeFactor = 2;
+		radarType = 2;
+		reportRemoteTargets = 1;
+		receiveRemoteTargets = 1;
+
+		class Components: Components
+		{
+			class SensorsManagerComponent
+			{
+				class Components
+				{
+					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
+					{
+						class AirTarget
+						{
+							minRange = 9000;
+							maxRange = 16000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						class GroundTarget
+						{
+							minRange = 2000;
+							maxRange = 8000;
+							objectDistanceLimitCoef = -1;
+							viewDistanceLimitCoef = -1;
+						};
+						typeRecognitionDistance = 10000;
+						angleRangeHorizontal = 360;
+						angleRangeVertical = 100;
+						aimDown = -45;
+						maxTrackableSpeed = 694.444;
+					};
+					class DataLinkSensorComponent: SensorTemplateDataLink{};
+					class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftGunner
+					{
+						class Components: components
+						{
+							class SensorDisplay
+							{
+								componentType = "SensorsDisplayComponent";
+								range[] = {16000,8000,4000,2000};
+								resource = "RscCustomInfoSensors";
+							};
+						};
+					};
+					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightGunner
+					{
+						defaultDisplay = "SensorDisplay";
+						class Components: components
+						{
+							class SensorDisplay
+							{
+								componentType = "SensorsDisplayComponent";
+								range[] = {16000,8000,4000,2000};
+								resource = "RscCustomInfoSensors";
+							};
+						};
+					};
+				};
+
+			};
+
+		};
+	};
+	
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////TEST END /////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 	class OPTRE_M12_LRV;
 	class 53rd_M12_LRV: OPTRE_M12_LRV
 	{

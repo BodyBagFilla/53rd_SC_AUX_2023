@@ -2,28 +2,30 @@ class XtdGearModels
 {
 	class CfgWeapons
 	{
-		class HephaestusCamoArmor
+
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////// Atlas /////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+		class AtlasArmor
 		{
-			label = "53rd Armor";
+			label = "53rd Atlas Armor";
 			author = "Body";
 			options[] = {"Section","Camo","MOS"};
 			class Section
 			{
 				label = "Section";
-				values[] = {"Apollo","Atlas"};
+				values[] = {"Atlas"};
 				alwaysSelectable = 1;
 				changeingame = 1;
                 changedelay  = 0;
-				class Apollo
-				{
-					label = "Apollo";
-					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
-				};
+
 				class Atlas
 				{
 					label = "Atlas";
 					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
+				
 			};
 			class Camo
 			{
@@ -55,7 +57,7 @@ class XtdGearModels
 			class MOS
 			{
 				label = "MOS";
-				values[] = {"Rifleman","Platoon","NoShoulders"};
+				values[] = {"Rifleman","Platoon"};
 				class Rifleman
 				{
 					label = "Rifleman";
@@ -71,14 +73,719 @@ class XtdGearModels
 					label = "Platoon";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class NoShoulders
-				{
-					label = "NoShoulders";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
 
 			};
 		};
+
+		class AtlasCustomHelms
+		{
+			label = "Atlas Custom Helmets";
+			author = "53rd Aux Team";
+			options[] = {"Camo","Person",};
+			
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class Person
+			{
+				label = "Person";
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas", "Axe","Scarecrow","Toxic"};
+				class Hellfire
+				{
+					label = "Hellfire";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class LoneWulf
+				{
+					label = "LoneWulf";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Serpent
+				{
+					label = "Serpent";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Tsuki
+				{
+					label = "Tsuki";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Texas
+				{
+					label = "Texas";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};			
+				class Axe
+				{
+					label = "Axe";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};				
+				class Scarecrow
+				{
+					label = "Scarecrow";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};	
+				class Toxic
+				{
+					label = "Toxic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};					
+			};
+		};
+
+		class AtlasHelmets
+		{
+			label = "53rd Atlas Helmets";
+			author = "Body";
+			options[] = {"Helmet","Camo","MOS","Visor"};
+			class Helmet
+			{
+				label = "Helmet";
+				values[] = {"Marine","Scout"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+
+				class Marine
+				{
+					label = "Marine";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class Scout
+				{
+					label = "Scout";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Winter"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			
+			class MOS
+			{
+				label = "MOS";
+				values[] = {"Rifleman","Medic","Platoon","PlatoonM"};
+				class Rifleman
+				{
+					label = "Rifleman";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			class Medic
+				{
+					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			class Platoon
+				{
+					label = "Platoon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			class PlatoonM
+				{
+					label = "Platoon Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+			class Visor
+			{
+				label = "Visor";
+				values[] = {"No","Yes"};
+				class No
+				{
+					label = "No";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Yes
+				{
+					label = "Yes";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+
+		class AtlasCustomArmors
+		{
+			label = "Atlas Custom Armors"
+			author = "53rd Aux Team";
+			options[] = {"Camo","Person"};
+			
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class Person
+			{
+				label = "Person";
+				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas","Axe"};
+				class Hellfire
+				{
+					label = "Hellfire";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class LoneWulf
+				{
+					label = "LoneWulf";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Serpent
+				{
+					label = "Serpent";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Tsuki
+				{
+					label = "Tsuki";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Texas
+				{
+					label = "Texas";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Axe
+				{
+					label = "Axe";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};				
+			};
+		};   
+
+        class AtlasTeamArmors
+		{
+			label = "Atlas Team Armors"
+			author = "53rd Aux Team";
+			options[] = {"Camo","MOS"};
+			
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland","Desert","Snow"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class MOS
+			{
+				label = "MOS";
+				values[] = {"Command","Gold","Purple"};
+				class Command
+				{
+					label = "Command";
+					image = "#(rgb,254,50,178)color(0.0000,0.8000,0.2980,0.0039)";
+				};
+				class Gold
+				{
+					label = "Gold";
+					image = "#(rgb,255,215,0)color(0.0000,0.1490,0.8078,0.1373)";
+				};
+				class Purple
+				{
+					label = "Purple";
+					image = "#(rgb,255,215,0)color(0.0000,0.1490,0.8078,0.1373)";
+				};
+			};
+		};
+
+ 
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////// Apollo ////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+		class ApolloArmor
+		{
+			label = "53rd Apollo Armor";
+			author = "Body";
+			options[] = {"Section","Camo","Variant"};
+			class Section
+			{
+				label = "Section";
+				values[] = {"Crewman","Engineer"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+
+				class Crewman
+				{
+					label = "Crewman";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class Engineer
+				{
+					label = "Engineer";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};				
+			};
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+			};
+			class Variant
+			{
+				label = "Variant";
+				values[] = {"Base","Full","Top","Bottom"};
+				class Base
+				{
+					label = "Base";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Full
+				{
+					label = "Full";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Top
+				{
+					label = "Top";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Bottom
+				{
+					label = "Bottom";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+
+		class ApolloCustomArmor
+		{
+			label = "53rd Apollo Custom Armor";
+			author = "Body";
+			options[] = {"Person","Camo","Variant"};
+			class Person
+			{
+				label = "Person";
+				values[] = {"Ryuu","Saiko"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+
+				class Ryuu
+				{
+					label = "Ryuu";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class Saiko
+				{
+					label = "Saiko";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};				
+			};
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+			};
+			class Variant
+			{
+				label = "Variant";
+				values[] = {"Base","Full","Top","Bottom"};
+				class Base
+				{
+					label = "Base";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Full
+				{
+					label = "Full";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Top
+				{
+					label = "Top";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Bottom
+				{
+					label = "Bottom";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+
+		class ApolloHelmets
+		{
+			label = "53rd Apollo Helmets";
+			author = "Body";
+			options[] = {"Helmet","Camo","Visor"};
+			class Helmet
+			{
+				label = "Helmet";
+				values[] = {"Marine","Crewman","Engineer"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+
+				class Marine
+				{
+					label = "Marine";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class Crewman
+				{
+					label = "Crewman";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+				class Engineer
+				{
+					label = "Engineer";
+					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class Camo
+			{
+				label = "Camo";
+				values[] = {"Urban","Woodland"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+			};
+
+			class Visor
+			{
+				label = "Visor";
+				values[] = {"No","Yes"};
+				class No
+				{
+					label = "No";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Yes
+				{
+					label = "Yes";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+
+		class ApolloCustomHelmet
+		{
+			label = "Apollo Custom Helmet"
+			author = "53rd Aux Team";
+			options[] = {"Person","Helm_Camo","Type"};
+
+			class Person
+			{
+				label = "Person";
+				values[] = {"Crunchy","Ryuu","Helix","Saiko","Kantus"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+				changedelay  = 0;
+				class Crunchy
+				{
+					label = "Crunchy";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Ryuu
+				{
+					label = "Ryuu";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Helix
+				{
+					label = "Helix";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};			
+				class Saiko
+				{
+					label = "Saiko";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};	
+				class Kantus
+				{
+					label = "Kantus";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};	
+			};
+			class Helm_Camo
+			{
+				label = "Helm Camo";
+				values[] = {"Urban","Woodland"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+			};
+			class Type
+			{
+				label = "Type";
+				values[] = {"Visor","NoVISOR"};
+				class Visor
+				{
+					label = "Visor";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class NoVISOR
+				{
+					label = "NoVISOR";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};			
+		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////// Ares //////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
+		class AresHelmets
+		{
+			label = "53rd Ares Helmets";
+			author = "Body";
+			options[] = {"Camo","MOS","Visor"};
+			class MOS
+			{
+				label = "MOS";
+				values[] = {"RA","Rifleman","Medic","SL","TL","Platoon"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class RA
+				{
+					label = "Ride Along";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Regular
+				{
+					label = "Rifleman";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+                class Sealed
+				{
+					label = "Sealed";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Medic
+				{
+					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Platoon
+				{
+					label = "Platoon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Mike
+				{
+					label = "Mike";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class SL
+				{
+					label = "SL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class TL
+				{
+					label = "TL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+
+
+		class AresArmor
+		{
+			label = "Ares Vests";
+			author = "Body";
+			options[] = {"Shoulders","MOS"};
+			class Shoulders
+			{
+				label = "Shoulders";
+				values[] = {"Normal","CQB","Sniper"};
+				changeingame = 1;
+                changedelay  = 0;
+				class Normal
+				{
+					label = "Normal";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class CQB
+				{
+					label = "CQB";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Sniper
+				{
+					label = "Sniper";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+			class MOS
+			{
+				label = "MOS";
+				values[] = {"Rifleman","RA","Medic","PL","TL","SL"};
+				class Regular
+				{
+					label = "Rifleman";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class RA
+				{
+					label = "RA";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Medic
+				{
+					label = "Medic";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class PL
+				{
+					label = "Platoon";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class TL
+				{
+					label = "TL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class SL
+				{
+					label = "SL";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+			};
+		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////// Hephaestus ////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
 		class HephaestusArmor
 		{
 			label = "53rd Hephaestus Armor";
@@ -182,69 +889,7 @@ class XtdGearModels
 				};
 			};
 		};
-		class AresArmor
-		{
-			label = "Ares Vests";
-			author = "Body";
-			options[] = {"Shoulders","MOS"};
-			class Shoulders
-			{
-				label = "Shoulders";
-				values[] = {"Normal","CQB","Sniper"};
-				changeingame = 1;
-                changedelay  = 0;
-				class Normal
-				{
-					label = "Normal";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
-				};
-				class CQB
-				{
-					label = "CQB";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
-				class Sniper
-				{
-					label = "Sniper";
-					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-			};
-			class MOS
-			{
-				label = "MOS";
-				values[] = {"Rifleman","RA","Medic","PL","TL","SL"};
-				class Regular
-				{
-					label = "Rifleman";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class RA
-				{
-					label = "RA";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Medic
-				{
-					label = "Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class PL
-				{
-					label = "Platoon";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class TL
-				{
-					label = "TL";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class SL
-				{
-					label = "SL";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-			};
-		};
+
 		class HephaestusCamoHelmets
 		{
 			label = "53rd Headwear";
@@ -253,7 +898,8 @@ class XtdGearModels
 			class Section
 			{
 				label = "Section";
-				values[] = {"Reservist","S1_1","S1_2","S1_3","Atlas","Apollo","Ares"};
+				values[] = {"Reservist","S1_1","S1_2","S1_3"};
+				alwaysSelectable = 1;
 				changeingame = 1;
                 changedelay  = 0;
 				class Reservist
@@ -275,21 +921,6 @@ class XtdGearModels
 				{
 					label = "1-3";
 					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
-				};
-				class Atlas
-				{
-					label = "Atlas";
-					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
-				};
-				class Apollo
-				{
-					label = "Apollo";
-					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
-				};
-				class Ares
-				{
-					label = "Ares";
-					image = "#(rgb,210,180,140)color(0.4,0.4,0.4,1)";
 				};
 			};
 			class Camo
@@ -380,278 +1011,11 @@ class XtdGearModels
 				};
 			};
 		};
-		class AtlasCustomHelms
-		{
-			label = "Atlas Custom Helmets";
-			author = "Tsuki";
-			options[] = {"Camo","Person",};
-			
-			class Camo
-			{
-				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
-				changeingame = 1;
-                changedelay  = 0;
-				class Urban
-				{
-					label = "Urban";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Woodland
-				{
-					label = "Woodland";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
-				};
-				class Desert
-				{
-					label = "Desert";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
-				class Snow
-				{
-					label = "Snow";
-					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-			};
-			class Person
-			{
-				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas", "Axe","Scarecrow"};
-				class Hellfire
-				{
-					label = "Hellfire";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class LoneWulf
-				{
-					label = "LoneWulf";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Serpent
-				{
-					label = "Serpent";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Tsuki
-				{
-					label = "Tsuki";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Texas
-				{
-					label = "Texas";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};			
-				class Axe
-				{
-					label = "Axe";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};				
-				class Scarecrow
-				{
-					label = "Scarecrow";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};				
-			};
-		};
-        class Atlashelms
-		{
-			label = "Atlas Helmets";
-			author = "Tsuki";
-			options[] = {"MOS","Camo"};
-			
-			class MOS
-			{
-				label = "MOS";
-				values[] = {"Normal","NormalV","Medic","MedicV","Scout_Gold","Scout_Purple","Scout_PL"};
-				class Normal
-				{
-					label = "Normal";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class NormalV
-				{
-					label = "Normal Visor";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Medic
-				{
-					label = "Medic";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class MedicV
-				{
-					label = "Medic Visor";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Scout_Gold
-				{
-					label = "Scout Gold";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Scout_Purple
-				{
-					label = "Scout Purple";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Scout_PL
-				{
-					label = "Scout PL";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				
-			};
-            class Camo
-			{
-				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
-				changeingame = 1;
-                changedelay  = 0;
-				class Urban
-				{
-					label = "Urban";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Woodland
-				{
-					label = "Woodland";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
-				};
-				class Desert
-				{
-					label = "Desert";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
-				class Snow
-				{
-					label = "Snow";
-					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-			};
-        };
-		class AtlasCustomArmors
-		{
-			label = "Atlas Custom Armors"
-			author = "Tsuki";
-			options[] = {"Camo","Person"};
-			
-			class Camo
-			{
-				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
-				changeingame = 1;
-                changedelay  = 0;
-				class Urban
-				{
-					label = "Urban";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Woodland
-				{
-					label = "Woodland";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
-				};
-				class Desert
-				{
-					label = "Desert";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
-				class Snow
-				{
-					label = "Snow";
-					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-			};
-			class Person
-			{
-				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas","Axe"};
-				class Hellfire
-				{
-					label = "Hellfire";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class LoneWulf
-				{
-					label = "LoneWulf";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Serpent
-				{
-					label = "Serpent";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Tsuki
-				{
-					label = "Tsuki";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Texas
-				{
-					label = "Texas";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Axe
-				{
-					label = "Axe";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};				
-			};
-		};   
-        class AtlasTeamArmors
-		{
-			label = "Atlas Team Armors"
-			author = "Tsuki";
-			options[] = {"Camo","MOS"};
-			
-			class Camo
-			{
-				label = "Camo";
-				values[] = {"Urban","Woodland","Desert","Snow"};
-				changeingame = 1;
-                changedelay  = 0;
-				class Urban
-				{
-					label = "Urban";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Woodland
-				{
-					label = "Woodland";
-					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
-				};
-				class Desert
-				{
-					label = "Desert";
-					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
-				};
-				class Snow
-				{
-					label = "Snow";
-					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
-				};
-			};
-			class MOS
-			{
-				label = "MOS";
-				values[] = {"Command","Gold","Purple"};
-				class Command
-				{
-					label = "Command";
-					image = "#(rgb,254,50,178)color(0.0000,0.8000,0.2980,0.0039)";
-				};
-				class Gold
-				{
-					label = "Gold";
-					image = "#(rgb,255,215,0)color(0.0000,0.1490,0.8078,0.1373)";
-				};
-				class Purple
-				{
-					label = "Purple";
-					image = "#(rgb,255,215,0)color(0.0000,0.1490,0.8078,0.1373)";
-				};
-			};
-		};
+
+//////////////////////////////////////////////////////////////////////////////
+////////////////////////// Extra /////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
 
         class SoftCover
 		{
@@ -768,7 +1132,10 @@ class XtdGearModels
 			};		
 		};
 	};
+		
 };
+
+
 
 class XtdGearInfos
 {
@@ -1171,13 +1538,16 @@ class XtdGearInfos
 		{
 		Section = "S1_3";
 		};
-		
-		//Atlas Reservist/////////////////////////////////////
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Atlas Helmets///////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////
+
 		//No Visor
 		class 53rd_A_Rifleman_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
 		MOS = "Rifleman";
 		Visor = "No";
@@ -1199,8 +1569,8 @@ class XtdGearInfos
 		//Visor
 		class 53rd_A_Rifleman_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
 		MOS = "Rifleman";
 		Visor = "Yes";
@@ -1218,14 +1588,13 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 		
-		
-		
-		//Atlas Medic
-		// NO Visor
+
+//////////////////////
+		//No Visor
 		class 53rd_A_Medic_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
 		MOS = "Medic";
 		Visor = "No";
@@ -1243,12 +1612,12 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 		
-		//Atlas Medic
+		//Atlas Reservist
 		//Visor
 		class 53rd_A_Medic_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
 		MOS = "Medic";
 		Visor = "Yes";
@@ -1270,8 +1639,8 @@ class XtdGearInfos
 		// NO Visor
 		class 53rd_A_P_Rifleman_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
 		MOS = "Platoon";
 		Visor = "No";
@@ -1293,8 +1662,8 @@ class XtdGearInfos
 		//Visor
 		class 53rd_A_P_Rifleman_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
 		MOS = "Platoon";
 		Visor = "Yes";
@@ -1311,15 +1680,15 @@ class XtdGearInfos
 		{
 		Camo = "Winter";
 		};
-		
-		//Atlas Platoon Mike
+
+		//Atlas Platoon
 		// NO Visor
 		class 53rd_A_P_M_Rifleman_Helmet_Urban_No_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
-		MOS = "Mike";
+		MOS = "PlatoonM";
 		Visor = "No";
 		};
 		class 53rd_A_P_M_Rifleman_Helmet_Woodland_No_Visor:53rd_A_P_M_Rifleman_Helmet_Urban_No_Visor
@@ -1335,14 +1704,14 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 		
-		//Atlas Platoon Mike
+		//Atlas Platoon
 		//Visor
 		class 53rd_A_P_M_Rifleman_Helmet_Urban_Visor
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Atlas";
+		model = "AtlasHelmets";
+		Helmet = "Marine";
 		Camo = "Urban";
-		MOS = "Mike";
+		MOS = "PlatoonM";
 		Visor = "Yes";
 		};
 		class 53rd_A_P_M_Rifleman_Helmet_Woodland_Visor:53rd_A_P_M_Rifleman_Helmet_Urban_Visor
@@ -1358,57 +1727,60 @@ class XtdGearInfos
 		Camo = "Winter";
 		};
 
-		//No Visor
-		class 53rd_Apollo_Helmet_Urban_No_Visor
+        //Atlas Team Helmets
+        //Gold Helmet
+		class Atlas_Scout_Urban
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Apollo";
+		model = "AtlasHelmets";
+		Helmet = "Scout";
 		Camo = "Urban";
 		MOS = "Rifleman";
-		Visor = "No";
 		};
-		class 53rd_Apollo_Helmet_Woodland_No_Visor:53rd_Apollo_Helmet_Urban_No_Visor
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Apollo_Helmet_Desert_No_Visor:53rd_Apollo_Helmet_Urban_No_Visor
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Apollo_Helmet_Winter_No_Visor:53rd_Apollo_Helmet_Urban_No_Visor
-		{
-		Camo = "Winter";
-		};
+        class Atlas_Scout_Winter:Atlas_Scout_Urban
+        {
+        Camo = "Winter";
+        };
+		class Atlas_Scout_Desert:Atlas_Scout_Urban
+        {
+        Camo = "Desert";
+        };
+		class Atlas_Scout_Woodland:Atlas_Scout_Urban
+        {
+        Camo = "Woodland";
+        };
 		
-		//Visor
-		class 53rd_Apollo_Helmet_Urban_Visor
+        //Platoon Helmet
+		class Atlas_P_Scout_Urban
 		{
-		model = "HephaestusCamoHelmets";
-		Section = "Apollo";
+		model = "AtlasHelmets";
+		Helmet = "Scout";
 		Camo = "Urban";
-		MOS = "Rifleman";
-		Visor = "Yes";
+		MOS = "Platoon";
 		};
-		class 53rd_Apollo_Helmet_Woodland_Visor:53rd_Apollo_Helmet_Urban_Visor
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Apollo_Helmet_Desert_Visor:53rd_Apollo_Helmet_Urban_Visor
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Apollo_Helmet_Winter_Visor:53rd_Apollo_Helmet_Urban_Visor
-		{
-		Camo = "Winter";
-		};
+        class Atlas_P_Scout_Winter:Atlas_P_Scout_Urban
+        {
+        Camo = "Winter";
+        };
+		class Atlas_P_Scout_Desert:Atlas_P_Scout_Urban
+        {
+        Camo = "Desert";
+        };
+		class Atlas_P_Scout_Woodland:Atlas_P_Scout_Urban
+        {
+        Camo = "Woodland";
+        };
+ 
+
+
+ 
 
 
 //////////////////////////////////////////////////////////////////////////////
-//////////////////////////Hephaestus Armor////////////////////////////////
+//////////////////////////Hephaestus Armor///////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
 //////////////////////////////////////////////////////////////////////////////
-//////////////////////////Mino Armors////////////////////////////////////////
+//////////////////////////Mino Armors/////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 		//Urban
 		class 53rd_MinoRifle_Urban
@@ -1873,56 +2245,13 @@ class XtdGearInfos
 
 
 //////////////////////////////////////////////////////////////////////////////
-//////////////////////////Apollo Helmets////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////
-		class 53rd_Apollo_UB
-		{
-		model = "HephaestusCamoArmor";
-		Section = "Apollo";
-		Camo = "Urban";
-		MOS = "Rifleman";
-		};
-		class 53rd_Apollo_DS:53rd_Apollo_UB
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Apollo_WD:53rd_Apollo_UB
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Apollo_SN:53rd_Apollo_UB
-		{
-		Camo = "Winter";
-		};
-		//Apollo Armor - No Shoulders
-		class 53rd_Apollo_UB_NS
-		{
-		model = "HephaestusCamoArmor";
-		Section = "Apollo";
-		Camo = "Urban";
-		MOS = "NoShoulders";
-		};
-		class 53rd_Apollo_DS_NS:53rd_Apollo_UB_NS
-		{
-		Camo = "Desert";
-		};
-		class 53rd_Apollo_WD_NS:53rd_Apollo_UB_NS
-		{
-		Camo = "Woodland";
-		};
-		class 53rd_Apollo_WT_NS:53rd_Apollo_UB_NS
-		{
-		Camo = "Winter";
-		};
-		
-//////////////////////////////////////////////////////////////////////////////
 //////////////////////////Atlas Armors////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 		
 		//Atlas Armor
 		class 53rd_A_Rifleman_UB
 		{
-		model = "HephaestusCamoArmor";
+		model = "AtlasArmor";
 		Section = "Atlas";
 		Camo = "Urban";
 		MOS = "Rifleman";
@@ -1943,7 +2272,7 @@ class XtdGearInfos
 		//Atlas Platoon Armor
 		class 53rd_A_P_Rifleman_UB
 		{
-		model = "HephaestusCamoArmor";
+		model = "AtlasArmor";
 		Section = "Atlas";
 		Camo = "Urban";
 		MOS = "Platoon";
@@ -1960,18 +2289,380 @@ class XtdGearInfos
 		{
 		Camo = "Desert";
 		};
-	
+
+
+
+
 //////////////////////////////////////////////////////////////////////////////
-//////////////////////////Ares Helmets////////////////////////////////
+//////////////////////////Apollo Helmets////////////////////////////////////////	
+//////////////////////////////////////////////////////////////////////////////	
+
+		//No Visor
+		class 53rd_Apollo_Helmet_Urban_No_Visor
+		{
+		model = "ApolloHelmets";
+		Helmet = "Marine";
+		Camo = "Urban";
+		Visor = "No";
+		};
+		class 53rd_Apollo_Helmet_Woodland_No_Visor:53rd_Apollo_Helmet_Urban_No_Visor
+		{
+		Camo = "Woodland";
+		};
+
+		
+		//Visor
+		class 53rd_Apollo_Helmet_Urban_Visor
+		{
+		model = "ApolloHelmets";
+		Helmet = "Marine";
+		Camo = "Urban";
+		Visor = "Yes";
+		};
+		class 53rd_Apollo_Helmet_Woodland_Visor:53rd_Apollo_Helmet_Urban_Visor
+		{
+		Camo = "Woodland";
+		};
+
+		////CREW////
+		class 53rd_Apollo_Crew_Helmet_Urban
+		{
+		model = "ApolloHelmets";
+		Helmet = "Crewman";
+		Camo = "Urban";
+
+		};
+		class 53rd_Apollo_Crew_Helmet_Woodland:53rd_Apollo_Crew_Helmet_Urban
+		{
+		Camo = "Woodland";
+		};
+
+		////EOD////
+		class 53rd_Apollo_Engineer_Helmet_Urban
+		{
+		model = "ApolloHelmets";
+		Helmet = "Engineer";
+		Camo = "Urban";
+
+		};
+		class 53rd_Apollo_Engineer_Helmet_Woodland:53rd_Apollo_Engineer_Helmet_Urban
+		{
+		Camo = "Woodland";
+		};
+
+	//Crunchy
+		class 53rd_Crunchy_Engineer_Helmet_Urban
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Crunchy";
+		Type = "Visor";
+		};
+		class 53rd_Crunchy_Engineer_Helmet_Woodland:53rd_Crunchy_Engineer_Helmet_Urban
+		{
+		Helm_Camo = "Woodland";
+		};
+
+	//Kantus
+		class 53rd_Kantus_Engineer_Helmet_Urban
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Kantus";
+		Type = "Visor";
+		};
+		class 53rd_Kantus_Engineer_Helmet_Woodland:53rd_Kantus_Engineer_Helmet_Urban
+		{
+		Helm_Camo = "Woodland";
+		};
+
+
+		//Helix
+		class 53rd_Helix_Helmet_Urban_No_Visor
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Helix";
+		Type = "NoVISOR";
+		};
+		class 53rd_Helix_Helmet_Woodland_No_Visor:53rd_Helix_Helmet_Urban_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+		
+		class 53rd_Helix_Helmet_Urban_Visor
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Helix";
+		Type = "Visor";
+		};
+		class 53rd_Helix_Helmet_Woodland_Visor:53rd_Helix_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+
+
+		//RYUU
+		class 53rd_Ryuu_Helmet_Urban_No_Visor
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Ryuu";
+		Type = "NoVISOR";
+		};
+		class 53rd_Ryuu_Helmet_Woodland_No_Visor:53rd_Ryuu_Helmet_Urban_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+
+		class 53rd_Ryuu_Helmet_Urban_Visor
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Ryuu";
+		Type = "Visor";
+		};
+		class 53rd_Ryuu_Helmet_Woodland_Visor:53rd_Ryuu_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+
+
+		//Saiko
+		class 53rd_Saiko_Helmet_Urban_No_Visor
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Saiko";
+		Type = "NoVISOR";
+		};
+		class 53rd_Saiko_Helmet_Woodland_No_Visor:53rd_Saiko_Helmet_Urban_No_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+
+		class 53rd_Saiko_Helmet_Urban_Visor
+		{
+		model = "ApolloCustomHelmet";
+		Helm_Camo = "Urban";
+		Person = "Saiko";
+		Type = "Visor";
+		};
+		class 53rd_Saiko_Helmet_Woodland_Visor:53rd_Saiko_Helmet_Urban_Visor
+		{
+		Helm_Camo = "Woodland";
+		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Apollo Armor////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////	
+
+		class 53rd_Apollo_Urban_Crewman
+		{
+		model = "ApolloArmor";
+		Section = "Crewman";
+		Camo = "Urban";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Crewman_Urban_Camo:53rd_Apollo_Urban_Crewman
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Crewman_Urban_Camo_3:53rd_Apollo_Urban_Crewman
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Crewman_Urban_Camo_4:53rd_Apollo_Urban_Crewman
+		{
+		Variant = "Bottom";
+		};
+
+		class 53rd_Apollo_Woodland_Crewman
+		{
+		model = "ApolloArmor";
+		Section = "Crewman";
+		Camo = "Woodland";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Crewman_Woodland_Camo:53rd_Apollo_Woodland_Crewman
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Crewman_Woodland_Camo_3:53rd_Apollo_Woodland_Crewman
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Crewman_Woodland_Camo_4:53rd_Apollo_Woodland_Crewman
+		{
+		Variant = "Bottom";
+		};
+
+		class 53rd_Apollo_Urban_Engineer
+		{
+		model = "ApolloArmor";
+		Section = "Engineer";
+		Camo = "Urban";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Engineer_Urban_Camo:53rd_Apollo_Urban_Engineer
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Engineer_Urban_Camo_3:53rd_Apollo_Urban_Engineer
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Engineer_Urban_Camo_4:53rd_Apollo_Urban_Engineer
+		{
+		Variant = "Bottom";
+		};	
+
+		class 53rd_Apollo_Woodland_Engineer
+		{
+		model = "ApolloArmor";
+		Section = "Engineer";
+		Camo = "Woodland";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Engineer_Woodland_Camo:53rd_Apollo_Woodland_Engineer
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Engineer_Woodland_Camo_3:53rd_Apollo_Woodland_Engineer
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Engineer_Woodland_Camo_4:53rd_Apollo_Woodland_Engineer
+		{
+		Variant = "Bottom";
+		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Apollo Custom Armor////////////////////////////////////////	
+//////////////////////////////////////////////////////////////////////////////	
+
+
+		class 53rd_Apollo_Urban_Ryuu
+		{
+		model = "ApolloCustomArmor";
+		Person = "Ryuu";
+		Camo = "Urban";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Ryuu_Urban_Camo:53rd_Apollo_Urban_Ryuu
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Ryuu_Urban_Camo_3:53rd_Apollo_Urban_Ryuu
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Ryuu_Urban_Camo_4:53rd_Apollo_Urban_Ryuu
+		{
+		Variant = "Bottom";
+		};
+
+		class 53rd_Apollo_Woodland_Ryuu
+		{
+		model = "ApolloCustomArmor";
+		Person = "Ryuu";
+		Camo = "Woodland";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Ryuu_Woodland_Camo:53rd_Apollo_Woodland_Ryuu
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Ryuu_Woodland_Camo_3:53rd_Apollo_Woodland_Ryuu
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Ryuu_Woodland_Camo_4:53rd_Apollo_Woodland_Ryuu
+		{
+		Variant = "Bottom";
+		};
+
+
+
+		class 53rd_Apollo_Urban_Saiko
+		{
+		model = "ApolloCustomArmor";
+		Person = "Saiko";
+		Camo = "Urban";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Saiko_Urban_Camo:53rd_Apollo_Urban_Saiko
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Saiko_Urban_Camo_3:53rd_Apollo_Urban_Saiko
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Saiko_Urban_Camo_4:53rd_Apollo_Urban_Saiko
+		{
+		Variant = "Bottom";
+		};
+
+		class 53rd_Apollo_Woodland_Saiko
+		{
+		model = "ApolloCustomArmor";
+		Person = "Saiko";
+		Camo = "Woodland";
+		Variant = "Base";
+		};
+
+		class 53rd_Apollo_Saiko_Woodland_Camo:53rd_Apollo_Woodland_Saiko
+		{
+		Variant = "Full";
+		};
+
+		class 53rd_Apollo_Saiko_Woodland_Camo_3:53rd_Apollo_Woodland_Saiko
+		{
+		Variant = "Top";
+		};
+
+		class 53rd_Apollo_Saiko_Woodland_Camo_4:53rd_Apollo_Woodland_Saiko
+		{
+		Variant = "Bottom";
+		};
+
+
+
+//////////////////////////////////////////////////////////////////////////////
+//////////////////////////Ares Helmets////////////////////////////////////////	
 //////////////////////////////////////////////////////////////////////////////	
 
 		class 53rd_Ares_RA_H3_Helmet
 		{
-		model = "HephaestusCamoHelmets";
+		model = "AresHelmets";
 		Section = "Ares";
 		Camo = "Urban";
 		MOS = "RA";
-		Visor = "No";
 		};
 		class 53rd_Ares_Rifleman_H3_Helmet:53rd_Ares_RA_H3_Helmet
 		{
@@ -2204,7 +2895,46 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		}; 
+
+		//Toxic
+		class 53rd_Toxic_Helmet_Urban
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Urban";
+		Person = "Toxic";
+		};
+		class 53rd_Toxic_Helmet_Winter:53rd_Toxic_Helmet_Urban
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Toxic_Helmet_Desert:53rd_Toxic_Helmet_Urban
+		{
+		Camo = "Desert";
+		}; 
+		class 53rd_Toxic_Helmet_Woodland:53rd_Toxic_Helmet_Urban
+		{
+		Camo = "Woodland";
+		}; 
 		
+		//Axe
+		class 53rd_Axe_Helmet_Urban
+		{
+		model = "AtlasCustomHelms";
+		Camo = "Urban";
+		Person = "Axe";
+		};
+		class 53rd_Axe_Helmet_Winter:53rd_Axe_Helmet_Urban
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Axe_Helmet_Desert:53rd_Axe_Helmet_Urban
+		{
+		Camo = "Desert";
+		}; 
+		class 53rd_Axe_Helmet_Woodland:53rd_Axe_Helmet_Urban
+		{
+		Camo = "Woodland";
+		}; 		
 
 //////////////////////////////////////////////////////////////////////////////
 //////////////////////////Atlas Custom Armor////////////////////////////////
@@ -2358,47 +3088,7 @@ class XtdGearInfos
 		MOS = "Medic";
 		}; 
         
-        //Atlas Team Helmets
-        //Gold Helmet
-		class Atlas_Scout_Urban
-		{
-		model = "Atlashelms";
-		MOS = "Scout_Gold";
-        Camo = "Urban";
-		};
-        class Atlas_Scout_Winter:Atlas_Scout_Urban
-        {
-        Camo = "Snow";
-        };
-		class Atlas_Scout_Desert:Atlas_Scout_Urban
-        {
-        Camo = "Desert";
-        };
-		class Atlas_Scout_Woodland:Atlas_Scout_Urban
-        {
-        Camo = "Woodland";
-        };
-		
-        //Platoon Helmet
-		class Atlas_P_Scout_Urban
-		{
-		model = "Atlashelms";
-		MOS = "Scout_PL";
-        Camo = "Urban";
-		};
-        class Atlas_P_Scout_Winter:Atlas_P_Scout_Urban
-        {
-        Camo = "Snow";
-        };
-		class Atlas_P_Scout_Desert:Atlas_P_Scout_Urban
-        {
-        Camo = "Desert";
-        };
-		class Atlas_P_Scout_Woodland:Atlas_P_Scout_Urban
-        {
-        Camo = "Woodland";
-        };
-        
+
         //Atlas Team Armor
         //Command
 		class 53rd_Atlas_PL_uniform
@@ -2554,8 +3244,6 @@ class XtdGearInfos
 		
 	};
 };
-
-
 
 
 

@@ -442,6 +442,7 @@ class CfgPatches
 				"53rd_SC_aux\Armor\Spartan Armor\Gold_Hex_test.paa"
 			};
 		};
+
 		class 53rd_EOD_Helmet_WD: MA_M56E_Helmet
 		{
 		scope=2;

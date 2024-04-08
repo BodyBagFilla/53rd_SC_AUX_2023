@@ -28,7 +28,7 @@ class CfgPatches {
 		requiredAddons[] = {"53rd_Weapons"};
 	};
 };
-#include "xtdGear.hpp"
+
 class Mode_SemiAuto;
 class Mode_Burst;
 class Mode_FullAuto;
@@ -76,7 +76,8 @@ class CfgVehicles
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\bulldog\gey-bulldog.paa"
+            "\53rd_sc_aux\Vehicles\Bulldog\BulldogRepairHull.paa"
+			
         };
         ace_repair_canRepair = 1;
 		ace_rearm_defaultSupply=1200;
@@ -90,14 +91,9 @@ class CfgVehicles
             item_xx(ITC_Land_B_AR2i_Packed,2);
             item_xx(OPTRE_Biofoam,20);
             item_xx(ChemicalDetector_01_watch_F,2);
-            item_xx(Chemlight_blue,10);
-            item_xx(ACE_Chemlight_HiBlue,10);
-            item_xx(ACE_Chemlight_HiWhite,2);
-            item_xx(ACE_Chemlight_IR,2);
+            item_xx(ACE_Chemlight_IR,10);
             item_xx(ACE_EntrenchingTool,2);
             item_xx(ACE_Fortify,2);
-            item_xx(OPTRE_Smartfinder,2);
-            item_xx(OPTRE_M8_Flare_Blue,10);
             item_xx(Toolkit,2);
             item_xx(ACE_UAVBattery,2);
             item_xx(B_UavTerminal,2);
@@ -106,7 +102,6 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-            mag_xx(DMNS_400Rnd_762x51_Mag_Tracer,2);
             mag_xx(APERSMineDispenser_Mag,3);
             mag_xx(C7_Remote_Mag,5);
             mag_xx(C12_Remote_Mag,2);
@@ -152,7 +147,7 @@ class CfgVehicles
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\bulldog\grey-bulldog.paa"
+            "\53rd_sc_aux\Vehicles\Bulldog\BulldogHull.paa"
         };
         ace_repair_canRepair = 1;
 		ace_rearm_defaultSupply=1200;
@@ -354,7 +349,7 @@ class CfgVehicles
         hiddenSelections[] = {"Camo1"};
         hiddenSelectionsTextures[] = 
         {
-            "53rd_SC_aux\tex\bulldog\grey-bulldog.paa"
+            "\53rd_sc_aux\Vehicles\Bulldog\BulldogHull.paa"
         };
 		class TransportBackpacks
 		{
@@ -403,6 +398,7 @@ class CfgVehicles
             };
         };
 	};
+/*
 	class 53rd_Bulldog_Heph: DMNS_Bulldog_LRV_AGL
 	{
 		dlc = "53rd";
@@ -539,6 +535,7 @@ class CfgVehicles
             };
         };
 	};
+*/
 	class 53rd_Bulldog_Panzer: DMNS_Bulldog_LRV_AGL
 	{
 		dlc = "53rd";

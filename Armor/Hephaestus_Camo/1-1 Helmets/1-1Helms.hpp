@@ -2,13 +2,13 @@
 	//Rifleman
 	class 53rd_1_1_Rifleman_Helmet_Winter_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Winter / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Winter / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -27,8 +27,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Winter / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Winter / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -43,13 +43,13 @@
 	//MEDIC
 	class 53rd_1_1_Medic_Helmet_Winter_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Winter / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Winter / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -68,8 +68,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Winter / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Winter / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -86,13 +86,13 @@
 	//Rifleman
 	class 53rd_1_1_Rifleman_Helmet_Desert_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Desert / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Desert / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -111,8 +111,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Desert / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Desert / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -127,13 +127,13 @@
 	//MEDIC
 	class 53rd_1_1_Medic_Helmet_Desert_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Desert / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Desert / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -152,8 +152,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Desert / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Desert / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -170,13 +170,13 @@
 	//Rifleman
 	class 53rd_1_1_Rifleman_Helmet_Urban_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Urban / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Urban / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -195,8 +195,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Urban / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Urban / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -211,13 +211,13 @@
 	//MEDIC
 	class 53rd_1_1_Medic_Helmet_Urban_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Urban / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Urban / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -236,8 +236,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Urban / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Urban / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -254,13 +254,13 @@
 	//Rifleman
 	class 53rd_1_1_Rifleman_Helmet_Woodland_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Woodland / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Woodland / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -279,8 +279,8 @@
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Rifleman (Woodland / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Rifleman (Woodland / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -295,13 +295,13 @@
 	//MEDIC
 	class 53rd_1_1_Medic_Helmet_Woodland_NVisor: 53rd_Base_NV_headgear
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Woodland / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Woodland / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -315,13 +315,13 @@
 	};
 	class 53rd_1_1_Medic_Helmet_Woodland_Visor: 53rd_Base_headgear
 	{
-		author="Cherri&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Helmet 1-1 Medic (Woodland / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Helmet 1-1 Medic (Woodland / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{

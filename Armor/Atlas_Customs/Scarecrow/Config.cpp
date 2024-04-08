@@ -29,7 +29,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Frankie";
-		displayName="[53rd] Scarecrow (Urban)";
+		displayName="[53rd] Atlas Custom (Scarecrow / Urban)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -45,7 +45,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Frankie";
-		displayName="[53rd] Scarecrow (Winter)";
+		displayName="[53rd] Atlas Custom (Scarecrow / Winter)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -61,7 +61,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Frankie";
-		displayName="[53rd] Scarecrow (Woodland)";
+		displayName="[53rd] Atlas Custom (Scarecrow / Woodland)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -77,7 +77,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		side=1;
 		author="Frankie";
-		displayName="[53rd] Scarecrow (Desert)";
+		displayName="[53rd] Atlas Custom (Scarecrow / Desert)";
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{

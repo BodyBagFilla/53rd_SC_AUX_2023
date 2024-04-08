@@ -36,6 +36,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Scout (Gold / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -51,6 +52,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Scout (Gold / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -66,6 +68,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Scout (Gold / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -81,6 +84,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Scout (Gold / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -97,6 +101,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Platoon Scout (Gold / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -112,6 +117,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Platoon Scout (Gold / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -127,6 +133,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Platoon Scout (Gold / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -142,6 +149,7 @@ class cfgWeapons
 		side=1;
 		author="Tsuki";
 		displayName="[53rd] Atlas Platoon Scout (Gold / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa"
 		model="TCF_Equipment\Helmets\Scout\Reach_Scout_Helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{

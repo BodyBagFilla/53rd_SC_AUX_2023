@@ -996,7 +996,7 @@ class cfgVehicles
 	class 53rd_crewman_unit: 53rd_smg_Hephaestus_unit
 	{
 		displayName="(Hephaestus) Crewman";
-		uniformClass="53rd_Apollo_UB_NS";
+		uniformClass="53rd_Apollo_Urban_Engineer";
 		linkedItems[]=
 		{
 			"53rd_Armor_Rifleman_Urban",

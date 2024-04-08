@@ -19,7 +19,7 @@ class cfgGlasses
 	class G_Balaclava_TI_blk_F;
 	class 53rd_Balaclava_Woodland: G_Balaclava_TI_blk_F
 	{
-		author="Cherryy";
+		author="53rd Aux Team";
 		displayName="[53rd] Balaclava (Woodland)";
 		picture="\A3\Characters_F_Bootcamp\Data\UI\icon_G_Balaclava_clean_ca.paa";
 		hiddenSelectionsTextures[]=

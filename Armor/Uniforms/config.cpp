@@ -1,3 +1,5 @@
+
+/*
 class CfgPatches {
 	class Hephaestus_Uniforms {
 		units[] = 

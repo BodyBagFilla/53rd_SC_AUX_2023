@@ -82,7 +82,7 @@ class cfgWeapons
 		scopeArsenal=1;
 		side=1;
 		displayName="[53rd] Base CH252 Visor ";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -135,13 +135,13 @@ class cfgWeapons
 	/////HELMETS/////
 	class 53rd_Foster_Helmet_Urban_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Urban / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Urban / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -155,13 +155,13 @@ class cfgWeapons
 	};
 	class 53rd_Foster_Helmet_Urban_Visor: 53rd_Base_headgear
 	{
-		author="Cherri&Scarecrow";
+		author="53rd Aux Team";
 		scope=1;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Urban / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Urban / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -176,13 +176,13 @@ class cfgWeapons
 	//Woodland
 	class 53rd_Foster_Helmet_Woodland_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Woodland / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Woodland / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -196,13 +196,13 @@ class cfgWeapons
 	};
 	class 53rd_Foster_Helmet_Woodland_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Woodland / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Woodland / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -217,13 +217,13 @@ class cfgWeapons
 	//Desert
 	class 53rd_Foster_Helmet_Desert_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Desert / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Desert / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -237,13 +237,13 @@ class cfgWeapons
 	};
 	class 53rd_Foster_Helmet_Desert_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Desert / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Desert / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -258,13 +258,13 @@ class cfgWeapons
 	//Winter
 	class 53rd_Foster_Helmet_Winter_No_Visor: 53rd_Base_NV_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Winter / No Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Winter / No Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -278,13 +278,13 @@ class cfgWeapons
 	};
 	class 53rd_Foster_Helmet_Winter_Visor: 53rd_Base_headgear //works
 	{
-		author="Cherryy&Scarecrow";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=0;
 		scopeArsenal=2;
 		side=1;
-		displayName="[53rd] Foster Helmet (Winter / Visor)";
-		picture="\A3\characters_f\Data\UI\icon_H_Cap_blk_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Winter / Visor)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
 		hiddenSelections[]=
 		{
@@ -313,7 +313,7 @@ class cfgWeapons
 		scope=1;
 		allowedSlots[]={901};
 		displayName="[53rd] Rifleman Base ";
-		picture="\A3\characters_f\data\ui\icon_U_BasicFoster_CA.paa";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelectionsTextures[]=
 		{
@@ -342,8 +342,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Winter Foster";
-		picture="\A3\characters_f\data\ui\icon_U_BasicFoster_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Winter)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -383,8 +383,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Woodland Foster";
-		picture="\A3\characters_f\data\ui\icon_U_BasicFoster_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -424,8 +424,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Urban Foster";
-		picture="\A3\characters_f\data\ui\icon_U_BasicFoster_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -465,8 +465,8 @@ class cfgWeapons
 		scope=2;
 		scopeArsenal=2;
 		allowedSlots[]={901};
-		displayName="[53rd] Desert Foster";
-		picture="\A3\characters_f\data\ui\icon_U_BasicFoster_CA.paa";
+		displayName="[53rd] Hephaestus Custom (Foster / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Heph.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

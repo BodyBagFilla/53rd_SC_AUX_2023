@@ -51,21 +51,13 @@ class CfgWeapons
 			magazines[]=
 			{
 				"32Rnd_155mm_Mo_shells",
-				"32Rnd_155mm_Mo_shells_O",
 				"6Rnd_155mm_Mo_smoke",
-				"6Rnd_155mm_Mo_smoke_O",
-				"2Rnd_155mm_Mo_guided",
 				"4Rnd_155mm_Mo_guided",
-				"4Rnd_155mm_Mo_guided_O",
-				"2Rnd_155mm_Mo_LG",
 				"4Rnd_155mm_Mo_LG",
-				"4Rnd_155mm_Mo_LG_O",
 				"6Rnd_155mm_Mo_mine",
-				"6Rnd_155mm_Mo_mine_O",
 				"2Rnd_155mm_Mo_Cluster",
-				"2Rnd_155mm_Mo_Cluster_O",
+				"12Rnd_230mm_rockets_cluster",
 				"6Rnd_155mm_Mo_AT_mine",
-				"6Rnd_155mm_Mo_AT_mine_O"
 			};
 			modes[]=
 			{
@@ -251,13 +243,7 @@ class CfgVehicles
 		{
 			class MainTurret;
 		};
-		class HitPoints;
-		class CargoTurret;
-		class ViewPilot;
-		class ViewOptics;
-		class RCWSOptics;
-		class ViewCargo;
-		class HeadLimits;
+
 	};
 	class OPTRE_M808BM_Base;
 	class OPTRE_M875_SPH;
@@ -687,6 +673,9 @@ class CfgVehicles
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa"
 		};
 	};
+
+
+
 	class 53rd_M808B_Arty_Base: OPTRE_M808B_Arty_Base
 	{
 		fuelCapacity=20;
@@ -721,11 +710,27 @@ class CfgVehicles
 				magazines[]=
 				{
 					"32Rnd_155mm_Mo_shells",
+					"32Rnd_155mm_Mo_shells",
+					"4Rnd_155mm_Mo_guided",
+					"4Rnd_155mm_Mo_guided",
+					"4Rnd_155mm_Mo_guided",
 					"4Rnd_155mm_Mo_guided",
 					"6Rnd_155mm_Mo_mine",
+					"12Rnd_230mm_rockets_cluster",
+					"2Rnd_155mm_Mo_Cluster",
+					"2Rnd_155mm_Mo_Cluster",
+					"2Rnd_155mm_Mo_Cluster",
+					"2Rnd_155mm_Mo_Cluster",
+					"2Rnd_155mm_Mo_Cluster",
 					"2Rnd_155mm_Mo_Cluster",
 					"6Rnd_155mm_Mo_smoke",
-					"2Rnd_155mm_Mo_LG",
+					"6Rnd_155mm_Mo_smoke",
+					"6Rnd_155mm_Mo_smoke",
+					"6Rnd_155mm_Mo_smoke",
+					"4Rnd_155mm_Mo_LG",
+					"4Rnd_155mm_Mo_LG",					
+					"4Rnd_155mm_Mo_LG",
+					"4Rnd_155mm_Mo_LG",	
 					"6Rnd_155mm_Mo_AT_mine",
 					"SmokeLauncherMag"
 				};
@@ -953,7 +958,7 @@ class CfgVehicles
 		scopeArsenal=2;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Tank";
-		displayName="[53rd] M875 SPH - Popped Cherry";
+		displayName="[53rd] M875 SPH - Arbalest";
 		tf_range=25000;
 		tf_isolatedAmount=0.40000001;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
@@ -987,6 +992,9 @@ class CfgVehicles
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa"
 		};
 	};
+
+
+
 	class B_MBT_01_cannon_F;
 	class DMNS_M808B:B_MBT_01_cannon_F
 	{
