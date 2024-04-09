@@ -1085,6 +1085,184 @@ class cfgWeapons
 			mass=80;
 		};
 	};
+
+	//Theta
+		class 53rd_Atlas_Theta_Armor: haloinfmar_U_WDL_uniform
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Atlas Custom (Theta / Urban)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Urban.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Top_Urban.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Urban.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Theta_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Atlas_Theta_Armor_SN: haloinfmar_U_WDL_uniform
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Atlas Custom (Theta / Snow)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Winter.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Winter.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Theta_SN_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Atlas_Theta_Armor_WD: haloinfmar_U_WDL_uniform
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Atlas Custom (Theta / Woodland)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Woodland.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Woodland.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Theta_WD_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+	class 53rd_Atlas_Theta_Armor_DS: haloinfmar_U_WDL_uniform
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		side=1;
+		allowedSlots[]={901};
+		displayName="[53rd] Atlas Custom (Theta / Desert)";
+		picture="\53rd_sc_aux\tex\Arsenal\Atlas.paa";
+		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"Camo2",
+			"Camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Desert.paa" 
+		};
+		class ItemInfo: UniformItem
+		{
+			hiddenSelections[]=
+			{
+				"Camo1",
+				"Camo2",
+				"Camo3"
+			};
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Desert.paa" 
+			};
+			uniformModel="-";
+			uniformType = "Neopren";
+			uniformClass="53rd_Theta_DS_V";
+			containerClass="Supply150";
+			mass=80;
+		};
+	};
+
+
+
+
 	//Custom Helmets
 	class 53rd_Atlas_Hellfire_Custom_Helmet: TCF_Reach_Scout_Helmet
 	{
@@ -1648,6 +1826,11 @@ class cfgWeapons
 			"53rd_SC_aux\Armor\Atlas_Customs\Visor_CO.paa"
 		};
 	};
+
+
+
+
+
 };
 //Rifleman 2
 class cfgvehicles
@@ -2024,4 +2207,56 @@ class cfgvehicles
 			};
 			uniformClass="53rd_Atlas_Axe_Armor_DS";
 	};
+
+	//Theta
+	class 53rd_Theta_V: 53rd_base_F
+	{
+			scope=1;
+			scopeArsenal=1;
+			side=1;
+			displayName="[53rd] Theta";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Urban_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Urban.paa"
+			};
+			uniformClass="53rd_Atlas_Theta_Armor";
+	};
+	class 53rd_Theta_SN_V: 53rd_Theta_V
+	{
+			displayName="[53rd] Theta_Snow_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Winter_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Winter.paa" 
+			};
+			uniformClass="53rd_Atlas_Theta_Armor_SN";
+	};
+	class 53rd_Theta_WD_V: 53rd_Theta_V
+	{
+			displayName="[53rd] Theta_Woodland_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Woodland_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Woodland.paa" 
+			};
+			uniformClass="53rd_Atlas_Theta_Armor_WD";
+	};
+	class 53rd_Theta_DS_V: 53rd_Theta_V
+	{
+			displayName="[53rd] Theta_Desert_V";
+			hiddenSelectionsTextures[]=
+			{
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_A_Rifleman_Top_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Camo\Rifleman\53rd_Camo_Pants_Desert_co.paa",
+			"53rd_SC_aux\Armor\Atlas_Customs\Theta\Theta_Custom_Armor_Desert.paa" 
+			};
+			uniformClass="53rd_Atlas_Theta_Armor_DS";
+	};
+
+
+
 };

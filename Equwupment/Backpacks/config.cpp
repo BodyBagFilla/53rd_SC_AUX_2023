@@ -235,25 +235,53 @@ class CfgVehicles
         tf_dialog = "anarc210_radio_dialog";
         tf_subtype = "digital_lr";
         tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_range = 1;
+        tf_hasLRradio = 0;
+        picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
+		model="\OPTRE_weapons\backpacks\jetpack_on.p3d";
+		NSM_jumppack_is_jumppack = 1;
+		NSM_jumppack_spam_delay = 1;
+		NSM_jumppack_energy_capacity = 170;
+		NSM_jumppack_recharge = .4;
+		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
+		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
+		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv53rdart.ogg"};
+		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
+		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
+		NSM_jumppack_jump_types[] = {{"High Jump",{5,15,40,0,0,0}},{"Landing/Adjust Flare",{5,10,5,0,1,1}}};
+		maximumload = 250;
+		hiddenSelections[] = {"camo1"};
+		hiddenSelectionsTextures[] = {""};
+    };
+
+	class Series_8LR_Jumpack : 53rd_ILCS_rucksack
+    {
+        author = MACRO_AUTHOR;
+        displayName = "[53rd] Series 8LR SOLA";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
         tf_range = 120000;
         tf_hasLRradio = 1;
         picture="\OPTRE_weapons\backpacks\icons\icon_jetpack_ca.paa";
 		model="\OPTRE_weapons\backpacks\jetpack_on.p3d";
 		NSM_jumppack_is_jumppack = 1;
 		NSM_jumppack_spam_delay = 1;
-		NSM_jumppack_energy_capacity = 100;
-		NSM_jumppack_recharge = 4;
+		NSM_jumppack_energy_capacity = 170;
+		NSM_jumppack_recharge = .4;
 		NSM_jumppack_jump_effect_script = "NSM_jumppack_effect_fnc_jt_21";
 		NSM_jumppack_effect_points[] = {{"spine3",{0,-0.3,-0.1}}};
 		NSM_jumppack_sound_ignite[] = {"NSM_Main\sounds\cdv53rdart.ogg"};
 		NSM_jumppack_sound_land[] = {"NSM_Main\sounds\cdv21End.ogg"};
 		NSM_jumppack_sound_idle[] = {"NSM_Main\sounds\cdv21Idle.ogg"};
-		NSM_jumppack_jump_types[] = {{"Short Jump",{14,7,20,0,1,1}}};
+		NSM_jumppack_jump_types[] = {{"High Jump",{5,15,40,0,0,0}},{"Landing/Adjust Flare",{5,10,5,0,1,1}}};
 		maximumload = 250;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {""};
     };
-
+	
 	// Misc Backpacks
 	class 53rd_legbag_black: 53rd_ILCS_rucksack
 	{

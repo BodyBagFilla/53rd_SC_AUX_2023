@@ -25,7 +25,6 @@ class XtdGearModels
 					label = "Atlas";
 					image = "#(rgb,255,215,0)color(0.8,0.8,0.8,1)";
 				};
-				
 			};
 			class Camo
 			{
@@ -113,7 +112,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas", "Axe","Scarecrow","Toxic"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Texas","Axe","Scarecrow","Toxic"};
 				class Hellfire
 				{
 					label = "Hellfire";
@@ -127,11 +126,6 @@ class XtdGearModels
 				class Serpent
 				{
 					label = "Serpent";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Tsuki
-				{
-					label = "Tsuki";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Texas
@@ -288,7 +282,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","LoneWulf","Serpent","Tsuki","Texas","Axe"};
+				values[] = {"Hellfire","LoneWulf","Serpent","Texas","Axe","Theta"};
 				class Hellfire
 				{
 					label = "Hellfire";
@@ -304,14 +298,14 @@ class XtdGearModels
 					label = "Serpent";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Tsuki
-				{
-					label = "Tsuki";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
 				class Texas
 				{
 					label = "Texas";
+					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
+				};
+				class Theta
+				{
+					label = "Theta";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Axe
@@ -2836,7 +2830,7 @@ class XtdGearInfos
 		Camo = "Woodland";
 		}; 
 		
-		//Tsuki
+/*		//Tsuki
 		class 53rd_Atlas_Tsuki_Custom_Helmet
 		{
 		model = "AtlasCustomHelms";
@@ -2855,7 +2849,7 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
-		
+*/		
 		//Texas
 		class 53rd_Atlas_Texas_Custom_Helmet
 		{
@@ -3000,7 +2994,7 @@ class XtdGearInfos
 		Camo = "Woodland";
 		};
 
-		
+/*		
 		//Tsuki
 		class 53rd_Atlas_Tsuki_Armor
 		{
@@ -3020,7 +3014,7 @@ class XtdGearInfos
 		{
 		Camo = "Woodland";
 		};
-		
+*/	
 		//Texas
 		class 53rd_Atlas_Texas_Armor
 		{
@@ -3057,6 +3051,26 @@ class XtdGearInfos
 		Camo = "Desert";
 		};
 		class 53rd_Atlas_Axe_Armor_WD:53rd_Atlas_Axe_Armor
+		{
+		Camo = "Woodland";
+		};
+
+		//Theta
+		class 53rd_Atlas_Theta_Armor
+		{
+		model = "AtlasCustomArmors";
+		Camo = "Urban";
+		Person = "Theta";
+		};
+		class 53rd_Atlas_Theta_Armor_SN:53rd_Atlas_Theta_Armor
+		{
+		Camo = "Snow";
+		};
+		class 53rd_Atlas_Theta_Armor_DS:53rd_Atlas_Theta_Armor
+		{
+		Camo = "Desert";
+		};
+		class 53rd_Atlas_Theta_Armor_WD:53rd_Atlas_Theta_Armor
 		{
 		Camo = "Woodland";
 		};

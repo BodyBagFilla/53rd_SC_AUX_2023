@@ -38,7 +38,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Body","Panzer","Tikals","Saiko","Theta","Limitz","Cap","Angel","Dalton","Foster","Roberto","Icon","Lyssa"};
+				values[] = {"Body","Panzer","Tikals","Saiko","Limitz","Cap","Angel","Dalton","Foster","Roberto","Icon","Lyssa"};
 				class Body
 				{
 					label = "Body";
@@ -63,11 +63,6 @@ class XtdGearModels
 				class Saiko
 				{
 					label = "Saiko";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
-				class Theta
-				{
-					label = "Theta";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
 				class Limitz
@@ -185,7 +180,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer",,"Ryu","Saiko","Theta","Dalton","Foster","Mercy","Limitz"};
+				values[] = {"Fixer","Body","Panzer",,"Ryu","Saiko","Dalton","Foster","Mercy","Limitz"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -201,12 +196,7 @@ class XtdGearModels
 					label = "Panzer";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-
-				class Theta
-				{
-					label = "Theta";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};		
+	
 				class Dalton
 				{
 					label = "Dalton";
@@ -345,49 +335,6 @@ class XtdGearInfos
 		{
 		Helm_Camo = "Woodland";
 		};
-		
-		//Saiko
-		class 53rd_Saiko_Helmet_Winter_NV
-		{
-		model = "HephaestusCustomHelmets";
-		Helm_Camo = "Snow";
-		Person = "Saiko";
-		Type = "NoVISOR";
-        dp="no";
-		};
-		class 53rd_Saiko_Helmet_Woodland_NV:53rd_Saiko_Helmet_Winter_NV
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Saiko_Helmet_Desert_NV:53rd_Saiko_Helmet_Winter_NV
-		{
-		Helm_Camo = "Desert";
-		};
-		class 53rd_Saiko_Helmet_Urban_NV:53rd_Saiko_Helmet_Winter_NV
-		{
-		Helm_Camo = "Urban";
-		};
-		
-		class 53rd_Saiko_Helmet_Urban
-		{
-		model = "HephaestusCustomHelmets";
-		Helm_Camo = "Urban";
-		Person = "Saiko";
-		Type = "Visor";
-        dp="no";
-		};
-		class 53rd_Saiko_Helmet_Woodland:53rd_Saiko_Helmet_Urban
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Saiko_Helmet_Desert:53rd_Saiko_Helmet_Urban
-		{
-		Helm_Camo = "Desert";
-		};
-		class 53rd_Saiko_Helmet_Winter:53rd_Saiko_Helmet_Urban
-		{
-		Helm_Camo = "Snow";
-		};
 	
 	
 		//Panzer
@@ -432,50 +379,7 @@ class XtdGearInfos
 		{
 		Helm_Camo = "Snow";
 		};
-	/* // PENDING HELMET MODEL UPDATE // 
-		//Theta
-		class 53rd_Theta_Helmet_Winter_No_Visor
-		{
-		model = "HephaestusCustomHelmets";
-		Helm_Camo = "Snow";
-		Person = "Theta";
-		Type = "NoVISOR";
-        dp="no";
-		};
-		class 53rd_Theta_Helmet_Woodland_No_Visor:53rd_Theta_Helmet_Winter_No_Visor
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Theta_Helmet_Desert_No_Visor:53rd_Theta_Helmet_Winter_No_Visor
-		{
-		Helm_Camo = "Desert";
-		};
-		class 53rd_Theta_Helmet_Urban_No_Visor:53rd_Theta_Helmet_Winter_No_Visor
-		{
-		Helm_Camo = "Urban";
-		};
 
-		class 53rd_Theta_Helmet_Urban_Visor
-		{
-		model = "HephaestusCustomHelmets";
-		Helm_Camo = "Urban";
-		Person = "Theta";
-		Type = "Visor";
-        dp="no";
-		};
-		class 53rd_Theta_Helmet_Woodland_Visor:53rd_Theta_Helmet_Urban_Visor
-		{
-		Helm_Camo = "Woodland";
-		};
-		class 53rd_Theta_Helmet_Desert_Visor:53rd_Theta_Helmet_Urban_Visor
-		{
-		Helm_Camo = "Desert";
-		};
-		class 53rd_Theta_Helmet_Winter_Visor:53rd_Theta_Helmet_Urban_Visor
-		{
-		Helm_Camo = "Snow";
-		};
-   */ 
 		//Cap
 		class 53rd_Cap_Helmet_Winter_No_Visor
 		{
@@ -958,25 +862,7 @@ class XtdGearInfos
 		Vest_Camo = "Woodland";
 		};
 */
-        //Theta
-		class 53rd_Armor_Theta_Woodland
-		{
-		model = "HephaestusCustomCamo";
-		Vest_Camo = "Woodland";
-		Person = "Theta";
-		};
-		class 53rd_Armor_Theta_Desert:53rd_Armor_Theta_Woodland
-		{
-		Vest_Camo = "Desert";
-		};
-		class 53rd_Armor_Theta_Winter:53rd_Armor_Theta_Woodland
-		{
-		Vest_Camo = "Snow";
-		};
-		class 53rd_Armor_Theta_Urban:53rd_Armor_Theta_Woodland
-		{
-		Vest_Camo = "Urban";
-		};
+
 		
         //Dalton
 		class 53rd_Armor_Dalton_Woodland
