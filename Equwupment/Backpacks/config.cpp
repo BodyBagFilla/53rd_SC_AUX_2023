@@ -121,21 +121,21 @@ class CfgVehicles
     {
         author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS Corpsman Rucksack (Desert)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_Rucksack_Desert.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_Rucksack_Desert.paa"};
     };
 
 	class 53rd_ILCS_corpsman_rucksack_woodland : 53rd_ILCS_corpsman_rucksack
     {
         author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS Corpsman Rucksack (Woodland)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_Rucksack_Woodland.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_Rucksack_Woodland.paa"};
     };
 
 	class 53rd_ILCS_corpsman_rucksack_snow : 53rd_ILCS_corpsman_rucksack
     {
         author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS Corpsman Rucksack (Snow)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_Rucksack_Snow.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_Rucksack_Snow.paa"};
     };
 
 	class 53rd_ILCS_corpsman_heavy_rucksack : 53rd_ILCS_rucksack
@@ -150,21 +150,21 @@ class CfgVehicles
     {
         author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS Corpsman Heavy Rucksack (Desert)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_Rucksack_Desert.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_Rucksack_Desert.paa"};
     };
 
 	class 53rd_ILCS_corpsman_heavy_rucksack_woodland : 53rd_ILCS_corpsman_heavy_rucksack
     {
         author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS Corpsman Heavy Rucksack (Woodland)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_Rucksack_Woodland.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_Rucksack_Woodland.paa"};
     };
 
 	class 53rd_ILCS_corpsman_heavy_rucksack_snow : 53rd_ILCS_corpsman_heavy_rucksack
     {
         author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS Corpsman Heavy Rucksack (Snow)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_Rucksack_Snow.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_Rucksack_Snow.paa"};
     };
 
 	class 53rd_ILCS_recon_rucksack : 53rd_ILCS_rucksack
@@ -179,7 +179,7 @@ class CfgVehicles
     {
         displayName = "[53rd] ILCS AN/PRC-515";
         maximumLoad = 250;
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\ILCS_ANPRC_515.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_515.paa"};
         tf_isolatedAmount = 0.65;
         tf_encryptionCode = "tf_west_radio_code";
         tf_dialog = "anarc210_radio_dialog";
@@ -193,7 +193,7 @@ class CfgVehicles
 	{
 		author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS AN/PRC-521 (Urban)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\Soft_Backpack_Urban.paa", "53rd_gear\data\backpacks\ILCS_ANPRC_521_Urban.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Urban.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Urban.paa"};
 		maximumLoad = 200;
         descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
         tf_isolatedAmount = 0.65;
@@ -209,21 +209,21 @@ class CfgVehicles
 	{
 		author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS AN/PRC-521 (Woodland)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\Soft_Backpack_Woodland.paa", "53rd_gear\data\backpacks\ILCS_ANPRC_521_Woodland.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Woodland.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Woodland.paa"};
 	};
 
 	class 53rd_ILCS_ANPRC_521_Desert: 53rd_ILCS_ANPRC_521_Urban
 	{
 		author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS AN/PRC-521 (Desert)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\Soft_Backpack_Desert.paa", "53rd_gear\data\backpacks\ILCS_ANPRC_521_Desert.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Desert.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Desert.paa"};
 	};
 
 	class 53rd_ILCS_ANPRC_521_Snow: 53rd_ILCS_ANPRC_521_Urban
 	{
 		author = MACRO_AUTHOR;
         displayName = "[53rd] ILCS AN/PRC-521 (Snow)";
-		hiddenSelectionsTextures[] = {"53rd_gear\data\backpacks\Soft_Backpack_Snow.paa", "53rd_gear\data\backpacks\ILCS_ANPRC_521_Snow.paa"};
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Snow.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Snow.paa"};
 	};
 
 	class Series_8_Jumpack : 53rd_ILCS_rucksack
@@ -391,7 +391,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Urban.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Urban.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -410,7 +410,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Woodland.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Woodland.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -429,7 +429,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Desert.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Desert.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -448,7 +448,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Winter.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Winter.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -468,8 +468,8 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Urban.paa",
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Pouches.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Urban.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -489,8 +489,8 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Winter.paa",
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Pouches.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Winter.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -510,8 +510,8 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Desert.paa",
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Pouches.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Desert.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -531,8 +531,8 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Woodland.paa",
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_Ruck_Pouches.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Woodland.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -553,7 +553,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_LR_Urban.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Urban.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -579,7 +579,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_LR_Woodland.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Woodland.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -605,7 +605,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_LR_Desert.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Desert.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -631,7 +631,7 @@ class CfgVehicles
 		picture="";
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Equwupment\Backpacks\\53rd_LR_Winter.paa"
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Winter.paa"
 		};
 		hiddenSelections[]=
 		{
@@ -668,7 +668,7 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\Equwupment\Backpacks\\53rd_Medic_Satchel.paa"
+            "53rd_SC_aux\Equwupment\Backpacks\53rd_Medic_Satchel.paa"
         };
         maximumLoad=300;
 		mass=1;
