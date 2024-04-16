@@ -82,7 +82,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Ullr"};
+				values[] = {"Ullr","Aqyrys"};
 				alwaysSelectable = 1;
 				changeingame = 1;
                 changedelay  = 0;		
@@ -90,7 +90,12 @@ class XtdGearModels
 				{
 					label = "Ullr";
 					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
-				};					
+				};
+				class Aqyrys
+				{
+					label = "Aqyrys";
+					image = "#(rgb255,215,0)color(0.8,0.8,0.8,1)";
+				};		
 			};
 			class Camo
 			{
@@ -205,6 +210,24 @@ class XtdGearInfos
 		Camo = "Desert";
 		};
 
+		class 53rd_Ares_Aqyrys_Vest_Urban
+		{
+		model = "AresCustomArmor";
+		Person = "Aqyrys";
+		Camo = "Urban"
+		};	
+		class 53rd_Ares_Aqyrys_Vest_Urban: 53rd_Ares_Aqyrys_Vest_Urban
+		{
+		Camo = "Winter";
+		};
+		class 53rd_Ares_Aqyrys_Vest_Urban: 53rd_Ares_Aqyrys_Vest_Urban
+		{
+		Camo = "Woodland";
+		};
+		class 53rd_Ares_Aqyrys_Vest_Urban: 53rd_Ares_Aqyrys_Vest_Urban
+		{
+		Camo = "Desert";
+		};
 
 
 
