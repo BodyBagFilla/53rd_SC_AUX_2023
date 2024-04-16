@@ -255,110 +255,56 @@ class ACEX_Fortify_Presets
 		displayName="BigHalo";
 		objects[]=
 		{
-			
 			{
 				"Land_OPTRE_Landingpad",
 				1
 			},
-			
 			{
-				"Land_ModularOutPostBuildingQuarters",
-				1
-			},
-			
-			{
-				"DMNS_CE_Floor_25x25",
-				1
-			},
-			
-			{
-				"Land_OPTRE_watchtower_woodland",
-				1
-			},
-			
-			{
-				"Land_optre_milwal_gateXL",
-				1
-			},
-			
-			{
-				"Land_optre_milwal_segment",
-				1
-			},
-			
-			{
-				"Land_optre_milwal_corner",
-				1
-			},
-			
-			{
-				"Land_optre_milwal_hub",
-				1
-			},
-			
-			{
-				"Land_OPTRE_hard_tent_grn",
-				5
-			},
-			
-			{
-				"Land_OPTRE_medical_tent_grn",
+				"Land_OPTRE_watchtower_urban",
 				1
 			},
 			{
-				"Land_OPTRE_M72_barrier",
-				1
-			},
-			
-			{
-				"Land_OPTRE_M72S_barrier",
-				1
-			},
-			
-			{
-				"DMNS_CE_Floor_25x25",
-				1
-			},
-			
-			{
-				"Land_ConcreteHedgehog_01_F",
-				1
-			},
-			
-			{
-				"Land_Bunker_Garage",
+				"Land_OPTRE_medical_tent_gry",
 				1
 			},
 			{
-				"53rd_Oryx",
-				1
-			},
-			
-			{
-				"53rd_M12R_AA",
-				1
-			},
-			
-			{
-				"53rd_M12G1_LRV",
-				1
-			},
-			
-			{
-				"53rd_M12_LRV",
-				1
-			},
-			
-			{
-				"53rd_M914_RV",
+				"Land_HBarrierTower_F",
 				1
 			},
 			{
-				"53rd_Scorpion",
+				"Land_HBarrier_Big_F",
 				1
 			},
 			{
-				"53rd_UNSC_D77_TC_Pelican",
+				"Land_HBarrier_5_F",
+				1
+			},
+			{
+				"Land_HBarrierWall6_F",
+				1
+			},
+			{
+				"Land_HBarrierWall4_F",
+				1
+			},
+			{
+				"Land_HBarrierWall_corner_F",
+				1
+			},
+			{
+				"Land_HBarrierWall_corridor_F",
+				1
+			},
+			{
+				"53rd_Hardbox_3R",
+				1
+			},
+			{
+				"53rd_Bulldog_RV",
+				1
+			},
+			{
+				"NDS_M224_mortar",
 				1
 			},
 		};
