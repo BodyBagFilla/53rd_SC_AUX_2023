@@ -38,7 +38,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Body","Panzer","Tikals","Saiko","Limitz","Cap","Angel","Dalton","Foster","Roberto","Icon","Lyssa"};
+				values[] = {"Body","Panzer","Tikals","Limitz","Cap","Angel","Dalton","Foster","Roberto","Icon","Lyssa"};
 				class Body
 				{
 					label = "Body";
@@ -60,11 +60,7 @@ class XtdGearModels
 					label = "Tikals";
 					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
 				};
-				class Saiko
-				{
-					label = "Saiko";
-					image = "#(rgb,8,8,3)color(0.2,0.2,0.2,0.4)";
-				};
+
 				class Limitz
 				{
 					label = "Limitz";
@@ -180,7 +176,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Fixer","Body","Panzer",,"Ryu","Saiko","Dalton","Foster","Mercy","Limitz"};
+				values[] = {"Fixer","Body","Panzer","Dalton","Foster","Mercy","Limitz"};
 				class Fixer
 				{
 					label = "Fixer";
@@ -783,45 +779,6 @@ class XtdGearInfos
 		Vest_Camo = "Woodland";
 		};
 		
-		//Body
-		class 53rd_Saiko_UB
-		{
-		model = "HephaestusCustomCamo";
-		Vest_Camo = "Urban";
-		Person = "Saiko";
-		};
-		class 53rd_Saiko_DS:53rd_Saiko_UB
-		{
-		Vest_Camo = "Desert";
-		};
-		class 53rd_Saiko_SN:53rd_Saiko_UB
-		{
-		Vest_Camo = "Snow";
-		};
-		class 53rd_Saiko_WD:53rd_Saiko_UB
-		{
-		Vest_Camo = "Woodland";
-		};
-		//RYU
-		class 53rd_Ryu_UB
-		{
-		model = "HephaestusCustomCamo";
-		Vest_Camo = "Urban";
-		Person = "Ryu";
-		};
-		class 53rd_Ryu_DS:53rd_Ryu_UB
-		{
-		Vest_Camo = "Desert";
-		};
-		class 53rd_Ryu_SN:53rd_Ryu_UB
-		{
-		Vest_Camo = "Snow";
-		};
-		class 53rd_Ryu_WD:53rd_Ryu_UB
-		{
-		Vest_Camo = "Woodland";
-		};
-
         //Panzer
 		class 53rd_Armor_Panzer_Desert
 		{
