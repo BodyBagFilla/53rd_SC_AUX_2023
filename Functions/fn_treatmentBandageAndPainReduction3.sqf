@@ -20,6 +20,7 @@ params ["_caller", "_target", "_selection", "_className"];
 _this call ace_medical_treatment_fnc_bandage;
 _this call ace_medical_treatment_fnc_bandage;
 _this call ace_medical_treatment_fnc_bandage;
+_this call kat_breathing_fnc_treatmentAdvanced_chestSeal;
 
 // execute local function to manage pain
 [_target, _className] remoteExecCall ["F53rd_fnc_treatmentBandageAndPainReductionLocal", _target];

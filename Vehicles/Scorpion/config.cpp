@@ -251,7 +251,7 @@ class CfgVehicles
 	class 53rd_Scorpion: OPTRE_M808BM_Base
 	{
 		displayName="[53rd] M808BM";
-		author="53rd & Seven";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -275,8 +275,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Scorpion\Scorp_base_53rd_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Scorp_tur_53rd_co.paa",
+			"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Hull.paa",
+			"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Turret.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
@@ -284,6 +284,9 @@ class CfgVehicles
 			"OPTRE_Vehicles\Scorpion\data\texture\mine_roller_co.paa",
 			"53rd_SC_aux\tex\Scorpion\Scorpion_mg_grey_co.paa"
 		};
+
+
+
 		class TextureSources
         {
 			class colorstand
@@ -292,8 +295,8 @@ class CfgVehicles
 				author="Article 2 Studios";
 				textures[]=
 				{
-					"OPTRE_Vehicles\Scorpion\data\texture\scorp_lopo_co.paa",
-					"OPTRE_Vehicles\Scorpion\data\texture\scorp_tur_wood_co.paa",
+					"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Hull.paa",
+					"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Turret.paa",
 					"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
 					"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
 					"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
@@ -401,7 +404,7 @@ class CfgVehicles
 	class 53rd_Scorpion_125: 53rd_Scorpion
 	{
 		displayName="[53rd] M808BM 125MM";
-		author="53rd & Seven";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -429,8 +432,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Scorpion\Scorp_base_125mm_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Scorp_tur_53rd_co.paa",
+					"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Hull.paa",
+					"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Turret.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
@@ -555,7 +558,7 @@ class CfgVehicles
 	class 53rd_ONI_Scorpion: OPTRE_M808BM_Base
 	{
 		displayName="[ONI] M808BM";
-		author="53rd & Seven";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -594,7 +597,7 @@ class CfgVehicles
 	class 53rd_CORP_Scorpion: OPTRE_M808BM_Base
 	{
 		displayName="[CORP] M808BM";
-		author="53rd & Seven";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -632,7 +635,7 @@ class CfgVehicles
 	};
 	class 53rd_M875_SPH: OPTRE_M875_SPH
 	{
-		author="53rd & Seven";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -663,8 +666,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Scorpion\Scorp_base_53rd_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Scorp_53rd_art_co.paa",
+			"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Hull.paa",
+			"53rd_sc_aux\Vehicles\Scorpion\53rd_ScorpArty_Turret.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_art_camo_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
@@ -673,7 +676,6 @@ class CfgVehicles
 			"OPTRE_Vehicles\Scorpion\data\texture\det_3_co.paa"
 		};
 	};
-
 
 
 	class 53rd_M808B_Arty_Base: OPTRE_M808B_Arty_Base
@@ -951,7 +953,7 @@ class CfgVehicles
 	};
 	class 53rd_M875_SPH_SPC: 53rd_M808B_Arty_Base
 	{
-		author="53rd & Seven";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -982,8 +984,8 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Scorpion\Scorp_base_53rd_co.paa",
-			"53rd_SC_aux\tex\Scorpion\Scorp_53rd_art_co.paa",
+			"53rd_sc_aux\Vehicles\Scorpion\53rd_Scorp_Hull.paa",
+			"53rd_sc_aux\Vehicles\Scorpion\53rd_ScorpArty_Turret.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_net_wood_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_art_camo_ca.paa",
 			"OPTRE_Vehicles\Scorpion\data\texture\scorp_decals_ca.paa",
@@ -1031,7 +1033,7 @@ class CfgVehicles
 	};
 	class 53rd_M808B_Base: DMNS_M808B_F
 	{
-		author="DemonicOnPc & Body";
+		author="53rd Aux Team";
 		scope=2;
 		scopeArsenal=2;
 		scopeCurator=2;

@@ -18,6 +18,7 @@ class CfgPatches
             "53rd_Ammo_SupplyPod_Explosives",
             "53rd_Ammo_SupplyPod_Equipment",
             "53rd_Hardbox_3R",
+			"53rd_Dissposable_Pod",
 		};
 		weapons[]={};
 		requiredVersion=0.1;
@@ -28,9 +29,8 @@ class CfgPatches
 };
 class CfgVehicles
 {
-    class Box_NATO_Support_F;
-	class OPTRE_Ammo_Rack_Weapons;
-	class 53rd_Ammo_SupplyPod_Empty: OPTRE_Ammo_Rack_Weapons
+	class OPTRE_Ammo_SupplyPod_Empty;
+	class 53rd_Ammo_SupplyPod_Empty: OPTRE_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
        	scopeCurator = 2;
@@ -192,6 +192,8 @@ class CfgVehicles
 			mag_xx(TCF_64Rnd_57x31_Mag_JHP,20);
 			mag_xx(TCF_30Rnd_30x06_Mag_JHP,20);
 			mag_xx(36Rnd_95x40_jhp_br_55,20);
+			mag_xx(Titan_AT,2);	
+			mag_xx(53rd_M15_Single_Slight,2);	
 		};
 		class TransportWeapons
 		{
@@ -206,6 +208,33 @@ class CfgVehicles
 			item_xx(optre_m73_smartlink,4);
 			item_xx(acc_flashlight,4);
 			item_xx(optre_ma5suppressor,4);
+		};
+	};
+	class 53rd_Dissposable_Pod: 53rd_Ammo_SupplyPod_Empty
+	{
+		scope = 2;
+       	scopeCurator = 2;
+		dlc="OPTRE";
+		editorCategory = "53rd_cat_faction";
+		displayName="[53rd] Supply Pod (Disposable)";
+		author="53rd aux";
+		hiddenSelections[]=
+		{
+			"camo"
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            "53rd_SC_aux\tex\Crates\SupplyPod_heavy_co.paa"
+        };
+		class TransportMagazines
+		{
+		};
+		class TransportWeapons
+		{
+			weap_xx(53rd_Pod_Launcher,5);
+		};
+		class TransportItems
+		{
 		};
 	};
 	class 53rd_Ammo_SupplyPod_CQB: 53rd_Ammo_SupplyPod_Empty
@@ -381,7 +410,7 @@ class CfgVehicles
         ace_cargo_canLoad = 0;
         ace_cargo_noRename = 1;
     };
-	class 53rd_Hardbox_3R: Box_NATO_Support_F
+	class 53rd_Hardbox_3R: 53rd_Ammo_SupplyPod_Empty
 	{
 		editorCategory = "53rd_cat_faction";
 		scope = 2;
@@ -430,11 +459,9 @@ class CfgVehicles
             };
         };      
 	};
-    
     //Define the Pods
-	class OPTRE_Ammo_SupplyPod_Empty;
-	class OPTRE_Ammo_SupplyPod_Launcher;
     class Module_F;
+	
     class Module_OPTRE_PelicanSupplyDrop: Module_F
     {
         class Arguments
@@ -467,6 +494,11 @@ class CfgVehicles
 						{
 							name = "Heavy/AT [53rd]";
 							value = "53rd_Ammo_SupplyPod_Heavy";
+						};
+						class n542
+						{
+							name = "Disposable Supply [53rd]";
+							value = "53rd_Dissposable_Pod";
 						};
 						class n534
 						{

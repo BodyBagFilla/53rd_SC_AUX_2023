@@ -9,15 +9,15 @@ class CfgPatches {
 
 class CfgVehicles
 {
-	class SensorTemplateActiveRadar;
-	class OPTRE_VTOLV_01;
-	class 53rd_Wyvern: OPTRE_VTOLV_01
+	class OPTRE_VTOLI_01;
+	class 53rd_Wyvern: OPTRE_VTOLI_01
 	{
 		author="1Lt. Body";
 		displayName="[53rd] Amatus - Wyvren";
 		scope=2;
 		scopeCurator=2;
 		side=1
+		transportSoldier=21;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
 		crew="53rd_Volare_airmen_unit";

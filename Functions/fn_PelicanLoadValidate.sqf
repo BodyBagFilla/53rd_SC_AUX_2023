@@ -4,7 +4,7 @@ _loaded = false;
 	
 switch true do {
 
-	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2" or _veh isKindOf "53rd_Scorpion" or _veh isKindOf "53rd_Scorpion_125" or _veh isKindOf "53rd_Grizzly" or _veh isKindOf "53rd_M875_SPH"): 
+	case (_veh isKindOf "OPTRE_M808B_base" or _veh isKindOf "OPTRE_M808B2" or _veh isKindOf "53rd_Scorpion" or _veh isKindOf "53rd_Scorpion_125" or _veh isKindOf "53rd_Grizzly" or _veh isKindOf "53rd_M875_SPH" or _veh isKindOf "53rd_M875_SPH_SPC" ): 
 	{
 		_veh attachTo [_pelican,[0,-9, -4]];
 		_veh setDir 180;
@@ -16,7 +16,7 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
-	case (_veh isKindOf "53rd_IFV76_A"):
+	case (_veh isKindOf "53rd_IFV76_A" or _veh isKindOf "53rd_IFV76_ATGM" or _veh isKindOf "53rd_IFV76_C" or _veh isKindOf "53rd_IFV76_M"):
 	{
 		_veh attachTo [_pelican,[0,-6,-4]]; 
 		_loaded = true;  
@@ -66,6 +66,11 @@ switch true do {
 		_veh setDir 180;
 		_loaded = true;
 	};
+	case ( _veh isKindOf "53rd_Silverback_LRV" or _veh isKindOf "53rd_Silverback_TOW" or _veh isKindOf "53rd_Silverback_FAV"):
+    {  
+		_veh attachTo [_pelican,[0,-7.5,-1.3]];   
+		_loaded = true; 
+    };
 	case ( _veh isKindOf "53rd_Crocodile_APC" or _veh isKindOf "53rd_Crocodile_IFV" or _veh isKindOf "53rd_Crocodile_MGS" or _veh isKindOf "53rd_Crocodile_AA"or _veh isKindOf "53rd_Coyote_RV"):
     {  
 		_veh attachTo [_pelican,[0,-10,-1.5]];
@@ -74,7 +79,7 @@ switch true do {
     };
 	case (_veh isKindOf "53rd_M12_FAV" or _veh isKindOf "53rd_M914_RV"):
 	{
-		_veh attachTo [_pelican,[0,-7.5,0.8]];  
+		_veh attachTo [_pelican,[0,-7.5,-1.3]];  
 		_loaded = true;  
 	};
 	case (_veh isKindOf "53rd_M12_FAV_APC" or _veh isKindOf "53rd_M813_TT" or _veh isKindOf "53rd_M12A1_LRV" or _veh isKindOf "53rd_M12_LRV" or _veh isKindOf "53rd_M12G1_LRV" or _veh isKindOf "53rd_M12R_AA"):

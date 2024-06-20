@@ -16,14 +16,8 @@
 	};
 	class CfgVehicles
 	{
-		class OPTRE_UNSC_falcon 
-		{ 
-			class Components; 
-		}; 
-		class OPTRE_UNSC_falcon_armed_S 
-		{ 
-			class Components; 
-		}; 
+		class OPTRE_UNSC_falcon;
+		class OPTRE_UNSC_falcon_armed_S; 
 		class 53rd_CMA_falcon: OPTRE_UNSC_falcon
 		{
 			editorPreview="\OPTRE_Core\Data\logo_ca.paa";
@@ -201,69 +195,7 @@
 					hideOnUse = 1;
 				};
 			};
-			class Components:Components 
-			{ 
-				class TransportPylonsComponent 
-				{ 
-					UIPicture="\optre_vehicles_air\falcon\FalconPylonPic.paa"; 
-					class pylons 
-					{ 
-						class WingPylonRight1 
-						{ 
-							maxweight=560; 
-							hardpoints[]= 
-							{ 
-								"OPAEX_Hardpoint_UH144" 
-							}; 
-							attachment="OPTRE_16Rnd_Anvil1_missiles"; 
-							bay=-1; 
-							priority=3; 
-							UIposition[]={0.34999999,0.1}; 
-							turret[]={}; 
-						}; 
-						class WingPylonLeft1: WingPylonRight1 
-						{ 
-							mirroredMissilePos=1; 
-							UIposition[]={0.34999999,0.46700001}; 
-						}; 
-					}; 
-					class Presets 
-					{ 
-						class Default 
-						{ 
-							displayName="Empty"; 
-							attachment[]={}; 
-						}; 
-						class CAS_Rockets 
-						{ 
-							displayName="CAS: ANVIL I"; 
-							attachment[]= 
-							{ 
-								"OPTRE_16Rnd_Anvil1_missiles", 
-								"OPTRE_16Rnd_Anvil1_missiles" 
-							}; 
-						}; 
-						class CAS_Rockets_Guided 
-						{ 
-							displayName="CAS: ANVIL II & III"; 
-							attachment[]= 
-							{ 
-								"OPTRE_16Rnd_Anvil2_missiles", 
-								"OPTRE_16Rnd_Anvil3_missiles" 
-							}; 
-						}; 
-						class CAS_AT 
-						{ 
-							displayName="AT"; 
-							attachment[]= 
-							{ 
-								"OPTRE_1Rnd_Jackknife_missile", 
-								"OPTRE_1Rnd_Jackknife_missile" 
-							}; 
-						}; 
-					}; 
-				}; 
-			};
+
 		};
 		class 53rd_UNSC_falcon_armed: OPTRE_UNSC_falcon_armed_S
 		{
@@ -466,69 +398,6 @@
 					onlyforplayer = "False";
 					hideOnUse = 1;
 				};
-			};
-			class Components:Components 
-			{ 
-				class TransportPylonsComponent 
-				{ 
-					UIPicture="\optre_vehicles_air\falcon\FalconPylonPic.paa"; 
-					class pylons 
-					{ 
-						class WingPylonRight1 
-						{ 
-							maxweight=560; 
-							hardpoints[]= 
-							{ 
-								"OPAEX_Hardpoint_UH144" 
-							}; 
-							attachment="OPTRE_16Rnd_Anvil1_missiles"; 
-							bay=-1; 
-							priority=3; 
-							UIposition[]={0.34999999,0.1}; 
-							turret[]={}; 
-						}; 
-						class WingPylonLeft1: WingPylonRight1 
-						{ 
-							mirroredMissilePos=1; 
-							UIposition[]={0.34999999,0.46700001}; 
-						}; 
-					}; 
-					class Presets 
-					{ 
-						class Default 
-						{ 
-							displayName="Empty"; 
-							attachment[]={}; 
-						}; 
-						class CAS_Rockets 
-						{ 
-							displayName="CAS: ANVIL I"; 
-							attachment[]= 
-							{ 
-								"OPTRE_16Rnd_Anvil1_missiles", 
-								"OPTRE_16Rnd_Anvil1_missiles" 
-							}; 
-						}; 
-						class CAS_Rockets_Guided 
-						{ 
-							displayName="CAS: ANVIL II & III"; 
-							attachment[]= 
-							{ 
-								"OPTRE_16Rnd_Anvil2_missiles", 
-								"OPTRE_16Rnd_Anvil3_missiles" 
-							}; 
-						}; 
-						class CAS_AT 
-						{ 
-							displayName="AT"; 
-							attachment[]= 
-							{ 
-								"OPTRE_1Rnd_Jackknife_missile", 
-								"OPTRE_1Rnd_Jackknife_missile" 
-							}; 
-						}; 
-					}; 
-				}; 
 			}; 
 		};
 	};

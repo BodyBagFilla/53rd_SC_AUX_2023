@@ -16,7 +16,7 @@ class CfgVehicles
 	class 53rd_MGS_01D: B_AFV_Wheeled_01_cannon_F
     {
         displayName="[53rd] MGS-53D Cougar";
-        author="Body";
+		author="53rd Aux Team";
         dlc = "53rd";
         scope=2;
         scopeCurator=2;
@@ -33,9 +33,9 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\Vehicles\Timberwolf\MGS_MC_B_Grey.paa",
-            "53rd_SC_aux\Vehicles\Timberwolf\MGS_AR_Grey_Turret.paa",
-            "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa",
+            "53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Hull.paa",
+            "53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Turret.paa",
+            "53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Wheels.paa",
             "a3\Armor_F\Data\camonet_NATO_Green_CO.paa",
             "a3\Armor_F\Data\cage_olive_CO.paa"
         };
@@ -58,9 +58,9 @@ class CfgVehicles
                 author="$STR_A3_Bohemia_Interactive";
                 textures[]=
                 {
-                    "53rd_SC_aux\Vehicles\Timberwolf\MGS_MC_B_Grey.paa",
-                    "53rd_SC_aux\Vehicles\Timberwolf\MGS_AR_Grey_Turret.paa",
-                    "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_green_CO.paa",
+					"53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Hull.paa",
+					"53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Turret.paa",
+					"53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Wheels.paa",
                     "53rd_SC_aux\Vehicles\Timberwolf\camonet_NATO_Green_CO.paa",
                     "a3\Armor_F\Data\cage_olive_CO.paa"
                 };
@@ -85,7 +85,7 @@ class CfgVehicles
     class 53rd_MGS_01E: B_AFV_Wheeled_01_up_cannon_F
     {
         displayName="[53rd] MGS-53E Cougar";
-        author="Body";
+		author="53rd Aux Team";
         dlc = "53rd";
         scope=2;
         scopeCurator=2;
@@ -104,13 +104,13 @@ class CfgVehicles
         };
         hiddenSelectionsTextures[]=
         {
-            "53rd_SC_aux\Vehicles\Timberwolf\MGS_MC_B_Grey.paa",
-            "53rd_SC_aux\Vehicles\Timberwolf\MGS_AR_Grey_Turret.paa",
-            "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_CO.paa",
-            "53rd_SC_aux\Vehicles\Timberwolf\afv_wheeled_01_EXT3_Grey_CO.paa",
-            "53rd_SC_aux\Vehicles\Timberwolf\afv_commander_tow_Grey_CO.paa",
+             "53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Hull.paa",
+            "53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Turret.paa",
+            "53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Wheels.paa",
+            "53rd_SC_aux\Vehicles\Timberwolf\53rd_Cougar_BoomGuard.paa",
+            "53rd_SC_aux\Vehicles\Timberwolf\53rd_Cougar_Commander.paa",
             "53rd_SC_aux\Vehicles\Timberwolf\camonet_NATO_Green_CO.paa",
-            "53rd_SC_aux\Vehicles\Timberwolf\afv_wheeled_01_EXT3_Grey_CO.paa"
+            "53rd_SC_aux\Vehicles\Timberwolf\53rd_Cougar_BoomGuard.paa"
         };
         hiddenSelectionsMaterials[]=
         {
@@ -131,13 +131,13 @@ class CfgVehicles
                 author="$STR_A3_Bohemia_Interactive";
                 textures[]=
                 {
-                    "53rd_SC_aux\Vehicles\Timberwolf\MGS_MC_B_Grey.paa",
-                    "53rd_SC_aux\Vehicles\Timberwolf\MGS_AR_Grey_Turret.paa",
-                    "a3\Armor_F_Tank\AFV_Wheeled_01\data\afv_wheeled_01_wheel_CO.paa",
-                    "53rd_SC_aux\Vehicles\Timberwolf\afv_wheeled_01_EXT3_Grey_CO.paa",
-                    "53rd_SC_aux\Vehicles\Timberwolf\afv_commander_tow_Grey_CO.paa",
+					"53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Hull.paa",
+					"53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Turret.paa",
+					"53rd_sc_aux\Vehicles\Timberwolf\53rd_Cougar_Wheels.paa",
+                    "53rd_SC_aux\Vehicles\Timberwolf\53rd_Cougar_BoomGuard.paa",
+                    "53rd_SC_aux\Vehicles\Timberwolf\53rd_Cougar_Commander.paa",
                     "53rd_SC_aux\Vehicles\Timberwolf\camonet_NATO_Green_CO.paa",
-                    "53rd_SC_aux\Vehicles\Timberwolf\afv_wheeled_01_EXT3_Grey_CO.paa"
+                    "53rd_SC_aux\Vehicles\Timberwolf\53rd_Cougar_BoomGuard.paa"
                 };
                 factions[]=
                     {

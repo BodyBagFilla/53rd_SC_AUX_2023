@@ -20,7 +20,7 @@ class CfgVehicles
 	class 53rd_M12_FAV_APC: OPTRE_M12_FAV_APC
 	{
 		displayName="[53rd] M12 APC Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		dlc = "53rd";
 		scope=2;
 		scopeCurator=2;
@@ -35,14 +35,13 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa",
-			"\OPTRE_Vehicles\Warthog\data\night\hog_apc_night_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_APCBar.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_APCBay.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa"
+
 		};
 	};
 	class OPTRE_M813_TT;
@@ -50,7 +49,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M813 Transport Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -64,13 +63,11 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\transp_lopo_Grey_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_APCBar.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa"
 		};
 	};
 	class OPTRE_M12A1_LRV;
@@ -78,7 +75,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12A1 AT Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -92,21 +89,22 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_LAAG.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa",
 			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+
 		};
 	};
+
 	class OPTRE_M12_FAV;
 	class 53rd_M12_FAV: OPTRE_M12_FAV
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12 Recon Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -120,146 +118,20 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa",
+			"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 		};
 	};
-	
-	
-//////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////TEST /////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-	class Components;
-	class SensorTemplatePassiveRadar;
-	class SensorTemplateAntiRadiation;
-	class SensorTemplateActiveRadar;
-	class SensorTemplateIR;
-	class SensorTemplateVisual;
-	class SensorTemplateMan;
-	class SensorTemplateLaser;
-	class SensorTemplateNV;
-	class SensorTemplateDataLink;
-	class VehicleSystemsTemplateLeftGunner;
-	class VehicleSystemsTemplateRightGunner;
-	class 53rd_M12_Radar: OPTRE_M12_FAV
-	{
-		dlc = "53rd";
-		displayName="[53rd] M12 Radar TEST ";
-		author="Six";
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;
-		faction="53rd_faction";
-		editorCategory = "53rd_cat_faction";
-		editorSubCategory = "53rd_Motor";
-		crew="53rd_crewman_unit";
-		typicalCargo[]=
-		{
-			"53rd_crewman_unit"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
-		};
-
-
-
-		artilleryScanner = 0;
-		irScanGround = 0;
-		irScanRangeMax = 10000;
-		irScanRangeMin = 2000;
-		irScanToEyeFactor = 2;
-		radarType = 2;
-		reportRemoteTargets = 1;
-		receiveRemoteTargets = 1;
-
-		class Components: Components
-		{
-			class SensorsManagerComponent
-			{
-				class Components
-				{
-					class ActiveRadarSensorComponent: SensorTemplateActiveRadar
-					{
-						class AirTarget
-						{
-							minRange = 9000;
-							maxRange = 16000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						class GroundTarget
-						{
-							minRange = 2000;
-							maxRange = 8000;
-							objectDistanceLimitCoef = -1;
-							viewDistanceLimitCoef = -1;
-						};
-						typeRecognitionDistance = 10000;
-						angleRangeHorizontal = 360;
-						angleRangeVertical = 100;
-						aimDown = -45;
-						maxTrackableSpeed = 694.444;
-					};
-					class DataLinkSensorComponent: SensorTemplateDataLink{};
-					class VehicleSystemsDisplayManagerComponentLeft: VehicleSystemsTemplateLeftGunner
-					{
-						class Components: components
-						{
-							class SensorDisplay
-							{
-								componentType = "SensorsDisplayComponent";
-								range[] = {16000,8000,4000,2000};
-								resource = "RscCustomInfoSensors";
-							};
-						};
-					};
-					class VehicleSystemsDisplayManagerComponentRight: VehicleSystemsTemplateRightGunner
-					{
-						defaultDisplay = "SensorDisplay";
-						class Components: components
-						{
-							class SensorDisplay
-							{
-								componentType = "SensorsDisplayComponent";
-								range[] = {16000,8000,4000,2000};
-								resource = "RscCustomInfoSensors";
-							};
-						};
-					};
-				};
-
-			};
-
-		};
-	};
-	
-
-
-
-
-
-//////////////////////////////////////////////////////////////////////////////////////////
-////////////////////////////////TEST END /////////////////////////////////////////////////////
-//////////////////////////////////////////////////////////////////////////////////////////
-
-
 
 	class OPTRE_M12_LRV;
 	class 53rd_M12_LRV: OPTRE_M12_LRV
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12 LAAG Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -273,13 +145,13 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_LAAG.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa",
+			"",
+			"\OPTRE_Vehicles\warthog\data\turrets\sight_co.paa"
 		};
 	};
 	class OPTRE_M12G1_LRV;
@@ -287,7 +159,7 @@ class CfgVehicles
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12G1 Gauss Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -301,20 +173,22 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m68_turret_Grey_co.paa",
-			"53rd_SC_aux\tex\Hogs\m12_turret_grey_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Gauss.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_LAAG.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa"
 		};
 	};
+	
+
 	class OPTRE_M12R_AA;
 	class 53rd_M12R_AA: OPTRE_M12R_AA
 	{
 		dlc = "53rd";
 		displayName="[53rd] M12 AA Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -328,21 +202,20 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\m79_turret_Grey_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_AA.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa"
 		};
 	};
+
 	class OPTRE_M914_RV;
 	class 53rd_M914_RV: OPTRE_M914_RV
 	{
 		dlc = "53rd";
 		displayName="[53rd] M914 RV Warthog";
-		author="Six";
+		author="53rd Aux Team";
 		scope=2;
 		scopeCurator=2;
 		scopeArsenal=2;
@@ -356,28 +229,21 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_53rd_wood_co.paa",
-			"53rd_SC_aux\tex\Hogs\M12HogMaav_extunder_wood_co.paa",
-			"\OPTRE_Vehicles\warthog\data\decals_ca.paa",
-			"\OPTRE_Vehicles\warthog\data\m12hogmaav_interior_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m39_turret_co.paa",
-			"\OPTRE_Vehicles\warthog\data\turrets\m12_turret_decals_ca.paa"
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Hull.paa",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_UnderHull.paa",
+			"",
+			"53rd_sc_aux\Vehicles\Warthog\53rd_Warthog_Interior.paa",
+			"\OPTRE_Vehicles\warthog\data\net_ca.paa"
 		};
 		ace_rearm_defaultSupply=1200;
 		ace_refuel_fuelCargo=1000;
-		class TransportBackpacks
-		{
-            pack_xx(OPTRE_UNSC_Rucksack_53rd_Athena_LR,2);
-		};
+
 		class TransportItems
 		{
             item_xx(53rd_Copium,20);
             item_xx(ITC_Land_B_AR2i_Packed,2);
             item_xx(OPTRE_Biofoam,20);
             item_xx(ChemicalDetector_01_watch_F,2);
-            item_xx(Chemlight_blue,10);
-            item_xx(ACE_Chemlight_HiBlue,10);
-            item_xx(ACE_Chemlight_HiWhite,2);
             item_xx(ACE_Chemlight_IR,2);
             item_xx(ACE_EntrenchingTool,2);
             item_xx(ACE_Fortify,2);
@@ -390,7 +256,6 @@ class CfgVehicles
 		};
 		class TransportMagazines
 		{
-            mag_xx(DMNS_400Rnd_762x51_Mag_Tracer,2);
             mag_xx(APERSMineDispenser_Mag,3);
             mag_xx(C7_Remote_Mag,5);
             mag_xx(C12_Remote_Mag,2);

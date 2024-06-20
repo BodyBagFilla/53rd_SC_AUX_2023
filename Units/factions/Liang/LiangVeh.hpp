@@ -27,7 +27,6 @@
 	class I_Heli_Transport_02_F;				
 	class I_Heli_light_03_unarmed_F;
 	class I_Heli_light_03_F;
-	class B_MBT_01_cannon_F;
 	class I_APC_Wheeled_03_cannon_F;
 
 	class Splits_Pelican_base;

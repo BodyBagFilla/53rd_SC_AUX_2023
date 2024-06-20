@@ -9,7 +9,6 @@ class CfgPatches {
 
 class CfgVehicles
 {
-	class SensorTemplateActiveRadar;
 	class B_Heli_Attack_01_dynamicLoadout_F;
 	class 53rd_Raven : B_Heli_Attack_01_dynamicLoadout_F
 	{

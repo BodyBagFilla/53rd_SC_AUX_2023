@@ -48,7 +48,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 			"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 		};
@@ -60,7 +60,7 @@ class CfgVehicles
 				author="DemonicOnPc";
 				textures[]=
 				{
-				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 				"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 				};
@@ -112,7 +112,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 			"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 		};
@@ -124,7 +124,7 @@ class CfgVehicles
 				author="DemonicOnPc";
 				textures[]=
 				{
-				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 				"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 				};
@@ -175,7 +175,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 			"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 		};
@@ -187,7 +187,7 @@ class CfgVehicles
 				author="DemonicOnPc";
 				textures[]=
 				{
-				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 				"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 				};
@@ -233,7 +233,7 @@ class CfgVehicles
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 			"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 			"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 		};
@@ -245,7 +245,7 @@ class CfgVehicles
 				author="DemonicOnPc";
 				textures[]=
 				{
-				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Body_co.paa",
+				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_M511_Body.paa",
 				"DMNS\DMNS_Armour\M511_Springbok\Data\M511_Interior_co.paa",
 				"53rd_SC_aux\Vehicles\M3 Crocodile\53rd_Apollo_Details_co.paa"
 				};
