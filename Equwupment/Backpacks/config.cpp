@@ -164,7 +164,62 @@ class CfgVehicles
 		maximumLoad = 250;
 		model = "\A3\weapons_f\empty";
     };
+<<<<<<< HEAD
 	//JUMP PACKS
+=======
+
+	class 53rd_ILCS_ANPRC_515: OPTRE_ANPRC_515
+    {
+        displayName = "[53rd] ILCS AN/PRC-515";
+        maximumLoad = 250;
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_515.paa"};
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+    };	
+
+	class 53rd_ILCS_ANPRC_521_Urban: OPTRE_ANPRC_521_black
+	{
+		author = MACRO_AUTHOR;
+        displayName = "[53rd] ILCS AN/PRC-521 (Urban)";
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Urban.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Urban.paa"};
+		maximumLoad = 200;
+        descriptionShort = "AN/PRC-521<br>UNSC Long Range Radio<br>30km Effective Range";
+        tf_isolatedAmount = 0.65;
+        tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
+	};
+
+	class 53rd_ILCS_ANPRC_521_Woodland: 53rd_ILCS_ANPRC_521_Urban
+	{
+		author = MACRO_AUTHOR;
+        displayName = "[53rd] ILCS AN/PRC-521 (Woodland)";
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Woodland.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Woodland.paa"};
+	};
+
+	class 53rd_ILCS_ANPRC_521_Desert: 53rd_ILCS_ANPRC_521_Urban
+	{
+		author = MACRO_AUTHOR;
+        displayName = "[53rd] ILCS AN/PRC-521 (Desert)";
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Desert.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Desert.paa"};
+	};
+
+	class 53rd_ILCS_ANPRC_521_Snow: 53rd_ILCS_ANPRC_521_Urban
+	{
+		author = MACRO_AUTHOR;
+        displayName = "[53rd] ILCS AN/PRC-521 (Snow)";
+		hiddenSelectionsTextures[] = {"53rd_SC_aux\Equwupment\Backpacks\Soft_Backpack_Snow.paa", "53rd_SC_aux\Equwupment\Backpacks\ILCS_ANPRC_521_Snow.paa"};
+	};
+
+>>>>>>> 4e7b081074f3d8ad93d77b082dddb2fa70372805
 	class Series_8_Jumpack : 53rd_ILCS_rucksack
     {
         author = MACRO_AUTHOR;
@@ -458,6 +513,114 @@ class CfgVehicles
 		hiddenSelectionsTextures[]=
 		{
 			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Winter.paa"
+<<<<<<< HEAD
+=======
+		};
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		maximumLoad=200;
+		mass=1;
+	};
+    //Heavy
+	class 53rd_Rucksack_Heavy_Urban: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Rucksack Heavy [Urban]";
+		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Urban.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		maximumLoad=350;
+		mass=1;
+	};
+    class 53rd_Rucksack_Heavy_Winter: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Rucksack Heavy [Winter]";
+		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Winter.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		maximumLoad=350;
+		mass=1;
+	};
+    class 53rd_Rucksack_Heavy_Desert: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Rucksack Heavy [Desert]";
+		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Desert.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		maximumLoad=350;
+		mass=1;
+	};
+    class 53rd_Rucksack_Heavy_Woodland: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Rucksack Heavy [Woodland]";
+		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Woodland.paa",
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		maximumLoad=350;
+		mass=1;
+	};
+    //LR
+	class 53rd_LR_Urban: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Long Range [Urban]";
+		model="\Halo_marine_02\Backpacks\Longrange";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Urban.paa"
+>>>>>>> 4e7b081074f3d8ad93d77b082dddb2fa70372805
 		};
 		hiddenSelections[]=
 		{
@@ -466,6 +629,181 @@ class CfgVehicles
 		maximumLoad=300;
 		mass=1;
 	};
+<<<<<<< HEAD
+=======
+    class 53rd_LR_Woodland: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Long Range [Woodland]";
+		model="\Halo_marine_02\Backpacks\Longrange";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Woodland.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		maximumLoad=300;
+		mass=1;
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+    class 53rd_LR_Desert: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Long Range [Desert]";
+		model="\Halo_marine_02\Backpacks\Longrange";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Desert.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		maximumLoad=300;
+		mass=1;
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+    class 53rd_LR_Winter: B_Carryall_Base
+	{
+		author="53rd Aux Team";
+		mapSize=0.44999999;
+		scope=2;
+		displayName="53rd Long Range [Winter]";
+		model="\Halo_marine_02\Backpacks\Longrange";
+		picture="";
+		hiddenSelectionsTextures[]=
+		{
+			"53rd_SC_aux\Equwupment\Backpacks\53rd_LR_Winter.paa"
+		};
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		maximumLoad=300;
+		mass=1;
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+	};
+    //Medic Satchel
+	class 53rd_Hephaestus_Medical_Satchel_V2: OPTRE_ONI_Researcher_Suitcase
+    {
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+        scope=2;
+        scopeArsenal=2;
+        displayName="[53rd] Satchel (Medical)";
+        tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "53rd_SC_aux\Equwupment\Backpacks\53rd_Medic_Satchel.paa"
+        };
+        maximumLoad=300;
+		mass=1;
+    };
+	
+//Atlas Packs
+	class 53rd_Atlas_RTO_Pack: B_AssaultPack_Base
+	{
+		author="Body & Split Jaw";
+		scope=2;
+		picture="";
+		displayName="[53rd] Atlas RTO Pack";
+		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Pouches",
+			"Biofoam",
+			"Antenna"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"19thVests_Kelp\Backpack\Standard\Main_ca.paa",
+			"19thVests_Kelp\Backpack\Standard\Addon_Pouch_ca.paa",
+			"19thVests_Kelp\Backpack\Base\Addon_biofoam_ca.paa",
+			"19thVests_Kelp\Backpack\Base\Addon_antenna_ca.paa"
+		};
+		maximumLoad=300;
+		mass=20;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="rt1523g_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=25000;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+	};	
+	class 53rd_Atlas_Heavy_Pack: B_AssaultPack_Base
+	{
+		author="Body & Split Jaw";
+		scope=2;
+		picture="";
+		displayName="[53rd] Atlas Heavy Pack";
+		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
+		hiddenSelections[]=
+		{
+			"Main",
+			"Pouches",
+			"Biofoam",
+			"Antenna"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"19thVests_Kelp\Backpack\Standard\Main_ca.paa",
+			"19thVests_Kelp\Backpack\Standard\Addon_Pouch_ca.paa",
+			"19thVests_Kelp\Backpack\Base\Addon_biofoam_ca.paa",
+			""
+		};
+		maximumLoad=400;
+		mass=20;
+		class TransportMagazines
+		{
+		};
+		class TransportItems
+		{
+		};
+	};		
+>>>>>>> 4e7b081074f3d8ad93d77b082dddb2fa70372805
 	class 53rd_Atlas_Standard_Pack: B_AssaultPack_Base
 	{
 		author="Body & Split Jaw";
