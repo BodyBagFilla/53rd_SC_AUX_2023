@@ -1,0 +1,3904 @@
+class CfgPatches
+{
+	class 53rd_Ares_New_PlaceHolder
+	{
+		author="53rd Aux Team";
+		requiredAddons[]=
+		{
+		};
+		requiredVersion=0.1;
+		units[]={};
+		weapons[]=
+		{
+			"53rd_Ares_RA_H3_Helmet",
+			"53rd_Ares_Rifleman_H3_Helmet",
+			"53rd_Ares_Medic_H3_Helmet",
+			"53rd_Ares_TL_H3_Helmet",
+			"53rd_Ares_SL_H3_Helmet",
+			"53rd_Ares_PL_H3_Helmet",
+			"53rd_Ares_MA_Vest_Rifleman_Normal",
+			"53rd_Ares_MA_Vest_Rifleman_CQB",
+			"53rd_Ares_MA_Vest_Rifleman_Sniper",
+			"53rd_Ares_MA_Vest_PL",
+			"53rd_Ares_MA_Vest_PL_CQB",
+			"53rd_Ares_MA_Vest_PL_Sniper",
+			"53rd_Ares_MA_Vest_SL",
+			"53rd_Ares_MA_Vest_SL_CQB",
+			"53rd_Ares_MA_Vest_SL_Sniper",
+			"53rd_Ares_MA_Vest_TL",
+			"53rd_Ares_MA_Vest_TL_CQB",
+			"53rd_Ares_MA_Vest_TL_SNIPER",
+			"53rd_Ares_MA_Vest_Medic",
+			"53rd_Ares_MA_Vest_Medic_Sniper",
+			"53rd_Ares_MA_Vest_Medic_CQB",
+			
+		};
+	};
+};
+
+#include "AresGear.hpp"
+
+
+class cfgVehicles
+{
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////Uniform//////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+	class MA_M56S_BDU_Base;
+	class 53rd_Ares_Uniform_Base_F: MA_M56S_BDU_Base
+	{
+		scope=1;
+		UniformClass="53rd_ODST_Uniform_Urban";
+		model="MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Urban.paa"
+		};
+	};
+	
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////ARES/////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+
+	class 53rd_Nox_Urban_F: 53rd_Ares_Uniform_Base_F
+	{
+		scope=1;
+		UniformClass="53rd_Nox_Uniform_Urban";
+		model="MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Urban.paa"
+		};
+	};
+
+	class 53rd_Nox_Winter_F: 53rd_Ares_Uniform_Base_F
+	{
+		scope=1;
+		UniformClass="53rd_Nox_Uniform_Winter";
+		model="MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Winter.paa"
+		};
+	};
+
+	class 53rd_Nox_Woodland_F: 53rd_Ares_Uniform_Base_F
+	{
+		scope=1;
+		UniformClass="53rd_Nox_Uniform_Woodland";
+		model="MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Woodland.paa"
+		};
+	};
+
+	class 53rd_Nox_Woodland2_F: 53rd_Ares_Uniform_Base_F
+	{
+		scope=1;
+		UniformClass="53rd_Nox_Uniform_Woodland2";
+		model="MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Woodland.paa"
+		};
+	};
+
+	class 53rd_Nox_Arid_F: 53rd_Ares_Uniform_Base_F
+	{
+		scope=1;
+		UniformClass="53rd_Nox_Uniform_Arid";
+		model="MA_Armor\data\Uniforms\H3_ODST\H3_ODST_Uniform.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Arid.paa"
+		};
+	};
+};
+
+class CfgWeapons
+{
+    class UniformItem;		
+	class Uniform_Base;
+	class VestItem;
+	class MA_Vest_Base;
+	class MA_M56R_Vest;
+	class ItemInfo;
+	class HeadgearItem;
+
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////Uniform//////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////ARES/////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_ODST_Uniform_Urban: Uniform_Base
+	{
+		scope=2;
+		displayName="[53rd] ODST Uniform (Urban)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Urban.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "53rd_Ares_Uniform_Base_F";
+			containerClass = "Supply150";
+			mass = 10;
+		};
+	};
+
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////NOX//////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_Nox_Uniform_Urban: 53rd_ODST_Uniform_Urban
+	{
+		scope=2;
+		displayName="[53rd] ODST Uniform (Urban)";
+		picture = "\53rd_Aux\Functions\Arsenal\Nox.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Urban.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "53rd_Nox_Urban_F";
+			containerClass = "Supply150";
+			mass = 10;
+		};
+	};
+
+	class 53rd_Nox_Uniform_Winter: 53rd_Nox_Uniform_Urban
+	{
+		scope=2;
+		displayName="[53rd] ODST Uniform (Winter)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Winter.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "53rd_Nox_Winter_F";
+			containerClass = "Supply150";
+			mass = 10;
+		};
+	};
+	
+	class 53rd_Nox_Uniform_Woodland: 53rd_Nox_Uniform_Urban
+	{
+		scope=2;
+		displayName="[53rd] ODST Uniform (Woodland)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Woodland.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "53rd_Nox_Woodland_F";
+			containerClass = "Supply150";
+			mass = 10;
+		};
+	};
+
+	class 53rd_Nox_Uniform_Woodland2: 53rd_Nox_Uniform_Urban
+	{
+		scope=2;
+		displayName="[53rd] ODST Uniform (Woodland)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Woodland.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "53rd_Nox_Woodland2_F";
+			containerClass = "Supply150";
+			mass = 10;
+		};
+	};
+
+	class 53rd_Nox_Uniform_Arid: 53rd_Nox_Uniform_Urban
+	{
+		scope=2;
+		displayName="[53rd] ODST Uniform TT (Arid)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelectionsTextures[] = 
+		{
+			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Arid.paa"
+		};
+		class ItemInfo: UniformItem
+		{
+			uniformClass = "53rd_Nox_Arid_F";
+			containerClass = "Supply150";
+			mass = 10;
+		};
+	};
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////Armor////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////Base/////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_Ares_Vest_Base: MA_Vest_Base
+	{
+		scope=1;
+		scopeArsenal=1;
+		author="Styx";
+		displayName="[53rd] Ares Base";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			"Canisters"
+		};
+		hiddenSelectionsTextures[]={};
+		class ItemInfo: VestItem
+		{
+			vestType="Rebreather";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3",
+				"camo4",
+				"camo5",
+				"camo6",
+				"camo7",
+				"camo8",
+				"camo9",
+				"camo10",
+				"H3_Forearm_Left",
+				"H3_Forearm_Right",
+				"Reach_Forearm_Left",
+				"Reach_Forearm_Right",
+				"H3_Pauldron_Left",
+				"H3_Pauldron_Right",
+				"Reach_Pauldron_Left",
+				"Reach_Pauldron_Right",
+				"Reach_Shoulder_Radio_Left",
+				"Reach_Shoulder_Radio_Right",
+				"Reach_Sniper_Pauldron_Left",
+				"Reach_Sniper_Pauldron_Right",
+				"Reach_CQB_Pauldron_Left",
+				"Reach_CQB_Pauldron_Right",
+				"Thigh_Pouch",
+				"H3_Armor_Upper",
+				"H3_Armor_Lower",
+				"Reach_Armor_Upper",
+				"Reach_Armor_Lower",
+				"Forearm_Vent_Left",
+				"Forearm_Vent_Right",
+				"Canisters"
+			};
+			hiddenSelectionsTextures[]=
+			{
+				"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+				"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Upper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Reach_Armor_Lower_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Forearm_Vents_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\Sniper_Shoulders\Sniper_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\CQB_Shoulders\CQB_co.paa",
+				"MA_Armor\data\Vests\Reach_ODST\Addons\Reach_Shoulder_Radio\Shoulder_Radio_Green_co.paa"
+			};
+			containerClass="Supply200";
+			mass=20;
+			passThrough=0.1;
+			modelSides[]={6};
+			class HitpointsProtectionInfo
+			{
+				class Neck
+				{
+					hitpointName="HitNeck";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=50;
+					passThrough=0.1;
+				};
+				class Chest
+				{
+					hitpointName="HitChest";
+					armor=55;
+					passThrough=0.1;
+				};
+				class Diaphragm
+				{
+					hitpointName="HitDiaphragm";
+					armor=55;
+					passThrough=0.1;
+				};
+				class Abdomen
+				{
+					hitpointName="HitAbdomen";
+					armor=55;
+					passThrough=0.1;
+				};
+				class Body
+				{
+					hitpointName="HitBody";
+					passThrough=0.1;
+					armor=50;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=50;
+					passThrough=0.1;
+				};
+			};
+		};
+	};
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////Ride Along/////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+		/*
+	class 53rd_Ares_Vest_NoShoulder_RideAlong: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares RideAlong Armor (Shoulderless)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+		*/
+	class 53rd_Ares_Vest_Base_RideAlong: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares RideAlong Armor (Base)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseLR_RideAlong: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares RideAlong Armor (Base / Left Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseRR_RideAlong: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares RideAlong Armor (Base / Right Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Lower_RideAlong.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\RideAlong\53rd_Ares_Armor_Upper_RideAlong.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////Rifleman/////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_Ares_Vest_NoShoulder_Rifleman: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Armor (Shoulderless)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Base_Rifleman: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Armor (Base)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseLR_Rifleman: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Armor (Base / Left Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseRR_Rifleman: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Armor (Base / Right Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_CQB_Rifleman: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Armor (CQB)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Sniper_Rifleman: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Rifleman Armor (Sniper)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Lower_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Upper_Rifleman.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_Sniper_Rifleman.paa",
+			"\53rd_Aux\Ares\Rifleman\53rd_Ares_Armor_Shoulder_CQB_Rifleman.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+
+/////////////////////////////////////////////////////////////////////////////
+///////////////////////////////Medic/////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_Ares_Vest_NoShoulder_Medic: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Armor (Shoulderless)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Base_Medic: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Armor (Base)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+
+	class 53rd_Ares_Vest_BaseLR_Medic: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Armor (Base / Left Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseRR_Medic: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Armor (Base / Right Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_CQB_Medic: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Armor (CQB)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Sniper_Medic: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Medic Armor (Sniper)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Lower_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Upper_Medic.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_Sniper_Medic.paa",
+			"\53rd_Aux\Ares\Medic\53rd_Ares_Armor_Shoulder_CQB_Medic.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+/////////////////////////////////////////////////////////////////////////////
+////////////////////////////////Lead////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_Ares_Vest_NoShoulder_Lead: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Lead Armor (Shoulderless)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Base_Lead: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Lead Armor (Base)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseLR_Lead: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Lead Armor (Base / Left Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseRR_Lead: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Lead Armor (Base / Right Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_CQB_Lead: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Lead Armor (CQB)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Sniper_Lead: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Lead Armor (Sniper)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Lower_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Upper_Lead.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_Sniper_Lead.paa",
+			"\53rd_Aux\Ares\SL\53rd_Ares_Armor_Shoulder_CQB_Lead.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////////Platoon////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class 53rd_Ares_Vest_NoShoulder_Platoon: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares PL Armor (Shoulderless)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			"Reach_Forearm_Left",
+			"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Base_Platoon: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares PL Armor";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseLR_Platoon: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Platoon Armor (Base / Left Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			//"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_BaseRR_Platoon: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Platoon Armor (Base / Right Radio)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			//"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			//"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+
+	class 53rd_Ares_Vest_CQB_Platoon: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares PL Armor";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			"Reach_Sniper_Pauldron_Right",
+			//"Reach_CQB_Pauldron_Left",
+			//"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Sniper_Platoon: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares PL Armor";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			//"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			//"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Lower_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Thigh_Pouch.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Upper_Platoon.paa",
+			"",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Canisters.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Armor_Forearm_Vents.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_Sniper_Platoon.paa",
+			"\53rd_Aux\Ares\PL\53rd_Ares_Armor_Shoulder_CQB_Platoon.paa",
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		vestType = "Rebreather";
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+/////////////////////////////////////////////////////////////////////////////
+/////////////////////////Helmets////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////
+
+	class MA_M56SR_Helmet;
+	class 53rd_Ares_Helmet_Rifleman: MA_M56SR_Helmet
+	{
+
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Helmet (Rifleman) ";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\Rifleman\53rd_Ares_Helmet_Rifleman.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};	
+		class ItemInfo: HeadgearItem
+		{
+			mass=20;
+			uniformModel="MA_Armor\data\Helmets\HR_ODST\HR_ODST.p3d";
+			modelSides[]={6};
+			allowedSlots[]={801,901,701,605};
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2"
+			};
+			hiddenSelectionsTextures[]={};
+			class HitpointsProtectionInfo
+				{
+					class Head
+					{
+						hitpointName="HitHead";
+						armor=50;
+						passThrough=0.1;
+					};
+					class Face
+					{
+						hitpointName="HitFace";
+						armor=50;
+						passThrough=0.1;
+					};
+					class Neck
+					{
+						hitpointName="HitNeck";
+						armor=50;
+						passThrough=0.1;
+					};
+				};
+		};		
+		CTAB_Camera = true;
+	};
+	
+	class 53rd_Ares_Helmet_Medic: 53rd_Ares_Helmet_Rifleman
+	{
+
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Helmet (Medic) ";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\Medic\53rd_Ares_Helmet_Medic.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+
+	};
+	
+	class 53rd_Ares_Helmet_Lead: 53rd_Ares_Helmet_Rifleman
+	{
+
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Helmet (Lead) ";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\SL\53rd_Ares_Helmet_Lead.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+
+	};
+	
+	class 53rd_Ares_Helmet_Platoon: 53rd_Ares_Helmet_Rifleman
+	{
+
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Helmet (Platoon ";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\PL\53rd_Ares_Helmet_Platoon.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+
+	};
+	
+	class 53rd_Ares_Helmet_RideAlong: 53rd_Ares_Helmet_Rifleman
+	{
+
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Ares Helmet (RideAlong) ";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\RideAlong\53rd_Ares_Helmet_RideAlong.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+		CTAB_Camera = true;
+	};
+
+
+/////////////////////////Recon////////////////////////////////////////////
+
+
+
+	class OPTRE_UNSC_Recon_Helmet;
+	class 53rd_Ares_Recon_Base: OPTRE_UNSC_Recon_Helmet
+	{
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName = "[53rd] R/B5 Recon Helmet (Base)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
+		hiddenSelections[] = {"camo","camo2","H_Ghillie"};
+		hiddenSelectionsTextures[] = 
+		{
+				"optre_unsc_units\army\data\recon_co.paa",
+				"optre_unsc_units\army\data\recon_visor_co.paa"
+
+		};
+		class ItemInfo: HeadgearItem
+		{
+			uniformModel = "\OPTRE_UNSC_Units\Army\recon_helmet.p3d";
+			hiddenSelections[] = {"camo","camo2","H_Ghillie"};
+			hiddenSelectionsTextures[] = 
+				{
+					"optre_unsc_units\army\data\recon_co.paa",
+					"optre_unsc_units\army\data\recon_visor_co.paa"
+				};
+			class HitpointsProtectionInfo
+				{
+					class Head
+					{
+						hitpointName="HitHead";
+						armor=50;
+						passThrough=0.1;
+					};
+					class Face
+					{
+						hitpointName="HitFace";
+						armor=50;
+						passThrough=0.1;
+					};
+					class Neck
+					{
+						hitpointName="HitNeck";
+						armor=50;
+						passThrough=0.1;
+					};
+				};
+
+		};
+		CTAB_Camera = true;
+	};
+
+
+
+
+
+
+
+
+
+
+
+};

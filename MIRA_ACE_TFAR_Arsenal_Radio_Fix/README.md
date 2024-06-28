@@ -1,0 +1,2 @@
+# Ace TFAR Arsenal Fix
+Fixes issue with TFAR 0.9.7 which prevents tfar radios from being saved. Simple config copy from what TFAR has already -- added a single line radio_ids.hpp `ace_arsenal_UniqueBase` which prevents non prototype radios from being selected for saving (which broke ace arsenal, and made them get discarded as invalid). Aside from this single line all code is from [task force radio's repo](https://github.com/michail-nikolaev/task-force-arma-3-radio/tree/0.9.7/arma3/%40task_force_radio/addons/task_force_radio_items). 
