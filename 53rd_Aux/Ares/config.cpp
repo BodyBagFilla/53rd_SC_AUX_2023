@@ -3845,8 +3845,8 @@ class CfgWeapons
 	class 53rd_Ares_Recon_Base: OPTRE_UNSC_Recon_Helmet
 	{
 		author="Styx Team";
-		scope=2;
-		scopeArsenal=2;
+		scope=1;
+		scopeArsenal=1;
 		displayName = "[53rd] R/B5 Recon Helmet (Base)";
 		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
 		hiddenSelections[] = {"camo","camo2","H_Ghillie"};

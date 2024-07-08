@@ -7,7 +7,7 @@ class XtdGearModels
 ////////////////////////// Atlas //////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
-		class AtlasHelmetsPLACEHOLDER
+		class AtlasHelmets
 		{
 			label = "53rd Atlas Helmets";
 			author = "Styx";
@@ -106,7 +106,7 @@ class XtdGearModels
 			};
 		};
 
-		class AtlasUniformPLACEHOLDER
+		class AtlasUniform
 		{
 			label = "53rd Atlas Armor";
 			author = "Styx";
@@ -165,7 +165,7 @@ class XtdGearModels
 		};
 	
 
-		class AtlasHelmetsCustomPLACEHOLDER
+		class AtlasHelmetsCustom
 		{
 			label = "53rd Atlas Custom Helmets";
 			author = "Styx";
@@ -173,30 +173,11 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","Scarecrow","Serpent","Toxic"};
+				values[] = {"Hellfire","Scarecrow","Toxic"};
 				alwaysSelectable = 1;
-				changeingame = 1;
-                changedelay  = 0;
-				class Hellfire
-				{
-					label = "Hellfire";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Scarecrow
-				{
-					label = "Scarecrow";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Serpent
-				{
-					label = "Serpent";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Toxic
-				{
-					label = "Toxic";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};			
+				changeingame = 0;
+                changedelay  = 0;			
+
 			};
 			class HelmetCamo
 			{
@@ -246,7 +227,7 @@ class XtdGearModels
 			};
 		};
 
-		class AtlasUniformCustomPLACEHOLDER
+		class AtlasUniformCustom
 		{
 			label = "53rd Atlas Custom Armor";
 			author = "Styx";
@@ -254,20 +235,10 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","Serpent"};
+				values[] = {"Hellfire"};
 				alwaysSelectable = 1;
-				changeingame = 1;
+				changeingame = 0;
                 changedelay  = 0;
-				class Hellfire
-				{
-					label = "Hellfire";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
-				class Serpent
-				{
-					label = "Serpent";
-					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
-				};
 			};
 			class ArmorCamo
 			{
@@ -298,14 +269,6 @@ class XtdGearModels
 				};
 			};
 		};
-	
-		
-	
-	
-	
-	
-	
-	
 	};
 };
 
@@ -324,28 +287,28 @@ class XtdGearInfos
 
 		class 53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Urban";
 		MOS = "Rifleman";
 		};
 		class 53rd_Atlas_AAHelmet_Woodland:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Woodland";
 		MOS = "Rifleman";
 		};
 		class 53rd_Atlas_AAHelmet_Desert:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Desert";
 		MOS = "Rifleman";
 		};
 		class 53rd_Atlas_AAHelmet_Winter:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Winter";
 		MOS = "Rifleman";
@@ -355,28 +318,28 @@ class XtdGearInfos
 
 		class 53rd_Atlas_AAHelmet_Medic_Urban:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Urban";
 		MOS = "Medic";
 		};
 		class 53rd_Atlas_AAHelmet_Medic_Woodland:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Woodland";
 		MOS = "Medic";
 		};
 		class 53rd_Atlas_AAHelmet_Medic_Desert:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Desert";
 		MOS = "Medic";
 		};
 		class 53rd_Atlas_AAHelmet_Medic_Winter:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Winter";
 		MOS = "Medic";
@@ -386,28 +349,28 @@ class XtdGearInfos
 
 		class 53rd_Atlas_AAHelmet_Platoon_Urban:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Urban";
 		MOS = "Platoon";
 		};
 		class 53rd_Atlas_AAHelmet_Platoon_Woodland:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Woodland";
 		MOS = "Platoon";
 		};
 		class 53rd_Atlas_AAHelmet_Platoon_Desert:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Desert";
 		MOS = "Platoon";
 		};
 		class 53rd_Atlas_AAHelmet_Platoon_Winter:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Winter";
 		MOS = "Platoon";
@@ -417,28 +380,28 @@ class XtdGearInfos
 
 		class 53rd_Atlas_AAHelmet_PlatoonM_Urban:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Urban";
 		MOS = "PlatoonM";
 		};
 		class 53rd_Atlas_AAHelmet_PlatoonM_Woodland:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Woodland";
 		MOS = "PlatoonM";
 		};
 		class 53rd_Atlas_AAHelmet_PlatoonM_Desert:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Desert";
 		MOS = "PlatoonM";
 		};
 		class 53rd_Atlas_AAHelmet_PlatoonM_Winter:53rd_Atlas_AAHelmet_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "AA";
 		HelmetCamo = "Winter";
 		MOS = "PlatoonM";
@@ -451,7 +414,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "Rifleman";
@@ -459,7 +422,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Rifleman_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "Rifleman";
@@ -467,7 +430,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Rifleman_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "Rifleman";
@@ -475,7 +438,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Rifleman_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "Rifleman";
@@ -486,7 +449,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_Rifleman_NoVisor_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "Rifleman";
@@ -494,7 +457,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Rifleman_NoVisor_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "Rifleman";
@@ -502,7 +465,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Rifleman_NoVisor_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "Rifleman";
@@ -510,7 +473,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Rifleman_NoVisor_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "Rifleman";
@@ -521,7 +484,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_Medic_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "Medic";
@@ -529,7 +492,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Medic_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "Medic";
@@ -537,7 +500,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Medic_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "Medic";
@@ -545,7 +508,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Medic_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "Medic";
@@ -556,7 +519,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_Medic_NoVisor_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "Medic";
@@ -564,7 +527,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Medic_NoVisor_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "Medic";
@@ -572,7 +535,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Medic_NoVisor_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "Medic";
@@ -580,7 +543,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Medic_NoVisor_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "Medic";
@@ -591,7 +554,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_Platoon_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "Platoon";
@@ -599,7 +562,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Platoon_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "Platoon";
@@ -607,7 +570,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Platoon_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "Platoon";
@@ -615,7 +578,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Platoon_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "Platoon";
@@ -626,7 +589,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_Platoon_NoVisor_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "Platoon";
@@ -634,7 +597,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Platoon_NoVisor_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "Platoon";
@@ -642,7 +605,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Platoon_NoVisor_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "Platoon";
@@ -650,7 +613,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_Platoon_NoVisor_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "Platoon";
@@ -661,7 +624,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_PlatoonM_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "PlatoonM";
@@ -669,7 +632,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_PlatoonM_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "PlatoonM";
@@ -677,7 +640,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_PlatoonM_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "PlatoonM";
@@ -685,7 +648,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_PlatoonM_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "PlatoonM";
@@ -696,7 +659,7 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Helmet_PlatoonM_NoVisor_Urban:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Urban";
 		MOS = "PlatoonM";
@@ -704,7 +667,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_PlatoonM_NoVisor_Woodland:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Woodland";
 		MOS = "PlatoonM";
@@ -712,7 +675,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_PlatoonM_NoVisor_Winter:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Winter";
 		MOS = "PlatoonM";
@@ -720,7 +683,7 @@ class XtdGearInfos
 		};
 		class 53rd_Atlas_Helmet_PlatoonM_NoVisor_Desert:53rd_Atlas_Helmet_Rifleman_Urban
 		{
-		model = "AtlasHelmetsPLACEHOLDER";
+		model = "AtlasHelmets";
 		Type = "Marine";
 		HelmetCamo = "Desert";
 		MOS = "PlatoonM";
@@ -738,25 +701,25 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Uni_Rifleman_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Urban";
 		MOS = "Rifleman";
 		};
 		class 53rd_Atlas_Uni_Rifleman_Woodland:53rd_Atlas_Uni_Rifleman_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Woodland";
 		MOS = "Rifleman";
 		};
 		class 53rd_Atlas_Uni_Rifleman_Winter:53rd_Atlas_Uni_Rifleman_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Winter";
 		MOS = "Rifleman";
 		};
 		class 53rd_Atlas_Uni_Rifleman_Desert:53rd_Atlas_Uni_Rifleman_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Desert";
 		MOS = "Rifleman";
 		};
@@ -767,25 +730,25 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Uni_Medic_Urban:53rd_Atlas_Uni_Rifleman_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Urban";
 		MOS = "Medic";
 		};
 		class 53rd_Atlas_Uni_Medic_Woodland:53rd_Atlas_Uni_Medic_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Woodland";
 		MOS = "Medic";
 		};
 		class 53rd_Atlas_Uni_Medic_Winter:53rd_Atlas_Uni_Medic_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Winter";
 		MOS = "Medic";
 		};
 		class 53rd_Atlas_Uni_Medic_Desert:53rd_Atlas_Uni_Medic_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Desert";
 		MOS = "Medic";
 		};
@@ -796,25 +759,25 @@ class XtdGearInfos
 
 		class 53rd_Atlas_Uni_Platoon_Urban:53rd_Atlas_Uni_Rifleman_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Urban";
 		MOS = "Platoon";
 		};
 		class 53rd_Atlas_Uni_Platoon_Woodland:53rd_Atlas_Uni_Platoon_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Woodland";
 		MOS = "Platoon";
 		};
 		class 53rd_Atlas_Uni_Platoon_Winter:53rd_Atlas_Uni_Platoon_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Winter";
 		MOS = "Platoon";
 		};
 		class 53rd_Atlas_Uni_Platoon_Desert:53rd_Atlas_Uni_Platoon_Urban
 		{
-		model = "AtlasUniformPLACEHOLDER";
+		model = "AtlasUniform";
 		ArmorCamo = "Desert";
 		MOS = "Platoon";
 		};
@@ -826,93 +789,6 @@ class XtdGearInfos
 ///////////////////////// CUSTOMS ////////////////////////////////////////////	
 //////////////////////////////////////////////////////////////////////////////
 
-//////////////////////////////////////////////////////////////////////////////
-///////////////////////// Serpent ////////////////////////////////////////////	
-//////////////////////////////////////////////////////////////////////////////
-
-///////////////////////// Helmet ///////////////////////////////////////////	
-
-		class 53rd_Serpent_Helmet_Urban
-		{
-		model = "AtlasHelmetsCustomPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Urban";
-		};
-		class 53rd_Serpent_Helmet_Woodland:53rd_Serpent_Helmet_Urban
-		{
-		model = "AtlasHelmetsCustomPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Woodland";
-		};
-		class 53rd_Serpent_Helmet_Winter:53rd_Serpent_Helmet_Urban
-		{
-		model = "AtlasHelmetsCustomPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Winter";
-		};
-		class 53rd_SerpentHelmet_Desert:53rd_Serpent_Helmet_Urban
-		{
-		model = "AtlasHelmetsCustomPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Desert";
-		};
-
-////////////////////////// No Visor ////////////////////////////////////////////
-
-		class 53rd_Serpent_Helmet_NoVisor_Urban
-		{
-		model = "AtlasHelmetsPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Urban";
-		};
-		class 53rd_Serpent_Helmet_NoVisor_Woodland:53rd_Serpent_Helmet_NoVisor_Urban
-		{
-		model = "AtlasHelmetsPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Woodland";
-		};
-		class 53rd_SerpentHelmet_NoVisor_Winter:53rd_Serpent_Helmet_NoVisor_Urban
-		{
-		model = "AtlasHelmetsPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Winter";
-		MOS = "PlatoonM";
-		Visor = "Off";
-		};
-		class 53rd_Serpent_Helmet_NoVisor_Desert:53rd_Serpent_Helmet_NoVisor_Urban
-		{
-		model = "AtlasHelmetsPLACEHOLDER";
-		Person = "Serpent";
-		HelmetCamo = "Desert";
-		};
-
-
-///////////////////////// Armor ///////////////////////////////////////////	
-
-		class 53rd_Serpent_Uni_Urban
-		{
-		model = "AtlasUniformCustomPLACEHOLDER";
-		Person = "Serpent";
-		ArmorCamo = "Urban";
-		};
-		class 53rd_Serpent_Uni_Woodland:53rd_Serpent_Uni_Urban
-		{
-		model = "AtlasUniformCustomPLACEHOLDER";
-		Person = "Serpent";
-		ArmorCamo = "Woodland";
-		};
-		class 53rd_Serpent_Uni_Winter:53rd_Serpent_Uni_Urban
-		{
-		model = "AtlasUniformCustomPLACEHOLDER";
-		Person = "Serpent";
-		ArmorCamo = "Winter";
-		};
-		class 53rd_Serpent_Uni_Desert:53rd_Serpent_Uni_Urban
-		{
-		model = "AtlasUniformCustomPLACEHOLDER";
-		Person = "Serpent";
-		ArmorCamo = "Desert";
-		};
 
 //////////////////////////////////////////////////////////////////////////////
 ///////////////////////// Hellfire ////////////////////////////////////////////	
@@ -925,30 +801,47 @@ class XtdGearInfos
 
 ///////////////////////// Armor ///////////////////////////////////////////	
 
-		class 53rd_Hellfire_Uni_Urban
+		class 53rd_Atlas_Uni_Hellfire_Urban
 		{
-		model = "AtlasUniformCustomPLACEHOLDER";
+		model = "AtlasUniformCustom";
 		Person = "Hellfire";
 		ArmorCamo = "Urban";
 		};
-		class 53rd_Hellfire_Uni_Woodland:53rd_Hellfire_Uni_Urban
+		class 53rd_Atlas_Uni_Hellfire_Woodland:53rd_Atlas_Uni_Hellfire_Urban
 		{
-		model = "AtlasUniformCustomPLACEHOLDER";
+		model = "AtlasUniformCustom";
 		Person = "Hellfire";
 		ArmorCamo = "Woodland";
 		};
-		class 53rd_Hellfire_Uni_Winter:53rd_Hellfire_Uni_Urban
+		class 53rd_Atlas_Uni_Hellfire_Winter:53rd_Atlas_Uni_Hellfire_Urban
 		{
-		model = "AtlasUniformCustomPLACEHOLDER";
+		model = "AtlasUniformCustom";
 		Person = "Hellfire";
 		ArmorCamo = "Winter";
 		};
-		class 53rd_Hellfire_Uni_Desert:53rd_Hellfire_Uni_Urban
+		class 53rd_Atlas_Uni_Hellfire_Desert:53rd_Atlas_Uni_Hellfire_Urban
 		{
-		model = "AtlasUniformCustomPLACEHOLDER";
+		model = "AtlasUniformCustom";
 		Person = "Hellfire";
 		ArmorCamo = "Desert";
 		};
+
+
+//////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

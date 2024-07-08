@@ -24,6 +24,10 @@ class CfgPatches
 		"53rd_Backpacks_LR_ANPRC521_Desert",
 		"53rd_Backpacks_LR_ANPRC521_Winter",
 		"53rd_ILCS_ANPRC_515",
+		"53rd_LR_Parachute",
+		"53rd_Atlas_Jumpack_Base",
+		"Series_8LR_Jumpack_M",
+		"Series_8LR_Jumpack",
 		"53rd_Backpacks_Rucksack_Base",
 		"53rd_Backpacks_Heavy_Rucksack_Base",
 		"53rd_Backpacks_Radio_Rucksack_Base",
@@ -383,6 +387,28 @@ class cfgVehicles
 		};
 	};
 
+	class 53rd_Backpacks_Medic_Rucksack_Base: Halo_Rucksack_01
+	{
+		author="53rd Aux Team";
+		displayName="[53rd] Infantry Rucksack (Base / Heavy)";
+ 		scope=1;
+		scopeArsenal=1;
+		maximumLoad=250;
+		mass=20;
+		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Medic_Urban.paa",
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+	};
+
+
 	class 53rd_Backpacks_Heavy_Rucksack_Base: Halo_Rucksack_01
 	{
 		author="53rd Aux Team";
@@ -477,6 +503,78 @@ class cfgVehicles
 			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Desert.paa"
 		};
 	};	
+
+
+
+
+////////////////////////// Medic ///////////////////////////////
+	class 53rd_Backpacks_Rucksack_Medic_Urban: 53rd_Backpacks_Medic_Rucksack_Base
+	{
+		displayName="[53rd] Infantry Rucksack (Urban / Medic)";
+ 		scope=2;
+		scopeArsenal=2;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Medic_Urban.paa",
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+	};	
+
+	class 53rd_Backpacks_Rucksack_Medic_Woodland: 53rd_Backpacks_Rucksack_Medic_Urban
+	{
+		displayName="[53rd] Infantry Rucksack (Woodland / Medic)";
+ 		scope=2;
+		scopeArsenal=2;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Medic_Woodland.paa",
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+	};	
+
+	class 53rd_Backpacks_Rucksack_Medic_Winter: 53rd_Backpacks_Rucksack_Medic_Urban
+	{
+		displayName="[53rd] Infantry Rucksack (Winter / Medic)";
+ 		scope=2;
+		scopeArsenal=2;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Medic_Winter.paa",
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+	};	
+
+	class 53rd_Backpacks_Rucksack_Medic_Desert: 53rd_Backpacks_Rucksack_Medic_Urban
+	{
+		displayName="[53rd] Infantry Rucksack (Desert / Medic)";
+ 		scope=2;
+		scopeArsenal=2;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Medic_Desert.paa",
+			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
+		};
+	};	
+
 
 
 ////////////////////////// Heavy ///////////////////////////////
@@ -602,7 +700,7 @@ class cfgVehicles
 	{
 		author="53rd Aux Team";
 
-		displayName="[53rd] Infantry Rucksack B (Base)";
+		displayName="[53rd] Atlas Rucksack (Base)";
  		scope=2;
 		scopeArsenal=2;
 		maximumLoad=200;
@@ -628,7 +726,7 @@ class cfgVehicles
 	{
 		author="53rd Aux Team";
 
-		displayName="[53rd] Medic Rucksack B (Base)";
+		displayName="[53rd] Atlas Medic Rucksack (Medic)";
  		scope=2;
 		scopeArsenal=2;
 		maximumLoad=250;
@@ -654,7 +752,7 @@ class cfgVehicles
 	{
 		author="53rd Aux Team";
 
-		displayName="[53rd] Infantry Rucksack B (Base / Heavy)";
+		displayName="[53rd] Atlas Rucksack (Heavy)";
  		scope=2;
 		scopeArsenal=2;
 		maximumLoad=250;
@@ -680,7 +778,7 @@ class cfgVehicles
 	{
 		author="53rd Aux Team";
 
-		displayName="[53rd] Infantry Radiopack B (Base)";
+		displayName="[53rd] Atlas Radiopack";
  		scope=2;
 		scopeArsenal=2;
 		maximumLoad=200;
@@ -887,6 +985,26 @@ class cfgVehicles
     };
 
 
+	class B_Parachute;
+	class 53rd_LR_Parachute: B_Parachute
+	{
+		author="53rd Aux";
+		scope=2;
+		displayName="[53rd] Parachute (LR)";
+		maximumLoad=50;
+		mass=1;
+		tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+		backpackSimulation="ParachuteSteerable";
+		ParachuteClass="Steerable_Parachute_F";
+        ace_reserveParachute = "53rd_LR_Parachute";
+        ace_hasReserveParachute = 1;
+	};
 
 
 

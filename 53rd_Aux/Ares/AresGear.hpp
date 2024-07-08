@@ -180,7 +180,8 @@ class XtdGearModels
 					"Bjorn",
 					"BooBen",
 					"Kenobi",
-					"Ullr"
+					"Ullr",
+					"Lonewulf"
 
 				};
 				alwaysSelectable = 0;
@@ -1281,6 +1282,12 @@ class XtdGearInfos
 		{
 		model = "AresCustomHelmets_PLACEHOLDER";
 		Person = "Ullr";
+		};
+
+		class 53rd_Ares_Lonewulf_Helmet_Urban
+		{
+		model = "AresCustomHelmets_PLACEHOLDER";
+		Person = "Lonewulf";
 		};
 
 		class 53rd_Ares_Aqyrys_Vest

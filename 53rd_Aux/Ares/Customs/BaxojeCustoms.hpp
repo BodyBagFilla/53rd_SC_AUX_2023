@@ -19,7 +19,6 @@
 				"\53rd_Aux\Ares\Customs\Baxoje\53rd_Ares_Baxoje_Helmet.paa",
 				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
 		};
-
 	};
 	
 	

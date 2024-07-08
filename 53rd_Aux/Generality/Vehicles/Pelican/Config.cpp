@@ -1,13 +1,6 @@
-class CfgPatches 
-{
-	class 53rd_Air_Pelican 
-	{
-		units[] = 
-		{
-			"53rd_Pelican",
-			"53rd_UNSC_D77_TC_Pelican",
-			"53rd_UNSC_D77_FL_Pelican",
-			};
+class CfgPatches {
+	class 53rd_Air_Pelican {
+		units[] = {"53rd_Pelican","53rd_UNSC_D77_TC_Pelican","53rd_UNSC_D77_FL_Pelican_Test"};
 		weapons[] = {};
 		requiredVersion = 0.100000;
 		requiredAddons[] = {};
@@ -16,19 +9,94 @@ class CfgPatches
 
 class CfgVehicles
 {
-
+	class Turrets;
+	class ACE_SelfActions;
+	class CargoTurret;
 	class Eventhandlers;
-	class UserActions;
-	class Components;
+	class Optre_Pelican_armed;
+	class VES_D77HTCI_A
+	{
+		class Components
+		{
+			class TransportPylonsComponent;
+		};
+		class UserActions
+		{
 
-/////////////////////// OPTRE Small Peli ///////////////////////
-	class VES_D77HTCI_A;
+		};
+		class EventHandlers
+		{};
+
+	};
+	class OPTRE_Pelican_armed_SOCOM;
+	class Splits_Pelican_base;
+	class Splits_UNSC_D77_TC_Pelican: Splits_Pelican_base 
+	{
+		class Components
+		{
+			class TransportPylonsComponent;
+		};
+		class UserActions
+		{
+
+		};
+		class EventHandlers
+		{};
+		class SensorsManagerComponent
+		{};
+	};
+	class 53rd_FOU_Pelican_Base: Splits_UNSC_D77_TC_Pelican
+    {
+		scope=0;
+		scopeCurator=0;
+		scopeArsenal=0;	
+        displayName="[53rd] D77H FOUNDARY BASE";
+        editorCategory = "53rd_cat_faction";
+        editorSubCategory = "53rd_Rotary";
+        crew="53rd_Volare_airmen_unit";
+		class UserActions: UserActions
+		{
+			class AMS_LiteOpen
+			{
+			displayName = "<t color='#739eff'>Open AMS Lite</t>";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User3";
+				condition = "player in this and (speed this < 1)";
+				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\AMS\AMS_Lite\AMS_Lite_GUI_Open.sqf""";
+				onlyforplayer = "false";
+				priority = 6;
+				hideOnUse = 1;
+			};		
+			class Aircraft_MFD_Open_N
+			{
+				displayName="Open I-TGT System";
+				position="pilotcontrol";
+				radius=15;
+				shortcut="User4";
+				condition="('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";
+				statement="this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf""";
+				onlyforplayer="false";
+				hideOnUse=1;
+			};
+		};
+		class EventHandlers: EventHandlers
+		{
+			class FIR_AWS_Common_EH
+			{
+				Init="[_this select 0,'yes'] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
+				hit="_this call bis_fnc_planeAiEject";
+			};
+		};
+    };
+    // Ves Pelican Base
     class 53rd_VES_Pelican_Base: VES_D77HTCI_A
     {
 		scope=0;
 		scopeCurator=0;
 		scopeArsenal=0;	
         displayName="[53rd] D77H Pelican/AV";
+
         editorCategory = "53rd_cat_faction";
         editorSubCategory = "53rd_Rotary";
         crew="53rd_Volare_airmen_unit";
@@ -76,6 +144,7 @@ class CfgVehicles
 		crewCrashProtection=9.9999997e-005;
 		crewExplosionProtection=9.9999997e-005;
 		displayName="[53rd] D77H Pelican/AV";
+
 		transportSoldier=21;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
@@ -143,7 +212,66 @@ class CfgVehicles
 			delete _xx_Titan_AT;
 			delete _xx_Titan_AP;
 			delete _xx_Titan_AA;
-
+			class _xx_OPTRE_60Rnd_762x51_Mag_AP
+			{
+				magazine="OPTRE_60Rnd_762x51_Mag_AP";
+				count=20;
+			};
+			class _xx_OPTRE_60Rnd_762x51_Mag_APT
+			{
+				magazine="OPTRE_60Rnd_762x51_Mag_APT";
+				count=20;
+			};
+			class _xx_OPTRE_36Rnd_95x40_Mag_HPSAP
+			{
+				magazine="OPTRE_36Rnd_95x40_Mag_HPSAP";
+				count=20;
+			};
+			class _xx_OPTRE_36Rnd_95x40_Mag_HPSAPT
+			{
+				magazine="OPTRE_36Rnd_95x40_Mag_HPSAPT";
+				count=20;
+			};
+			class _xx_OPTRE_60Rnd_5x23mm_Mag_FMJ
+			{
+				magazine="OPTRE_60Rnd_5x23mm_Mag_FMJ";
+				count=20;
+			};
+			class _xx_OPTRE_60Rnd_5x23mm_Mag_FMJT
+			{
+				magazine="OPTRE_60Rnd_5x23mm_Mag_FMJT";
+				count=20;
+			};
+			class _xx_OPTRE_20Rnd_86x70_Mag_AP
+			{
+				magazine="OPTRE_20Rnd_86x70_Mag_AP";
+				count=20;
+			};
+			class _xx_30rnd_556x45_mag_AP
+			{
+				magazine="30rnd_556x45_mag_AP";
+				count=20;
+			};
+			class _xx_30rnd_65x39_mag_AP
+			{
+				magazine="30rnd_65x39_mag_AP";
+				count=20;
+			};
+			class _xx_30rnd_65x39_mag_msbs_AP
+			{
+				magazine="30rnd_65x39_mag_msbs_AP";
+				count=20;
+			};
+			class _xx_M41_Twin_HEAT
+			{
+				magazine="M41_Twin_HEAT";
+				count=4;
+			};
+			class _xx_M41_Twin_HEAT_WireGuided
+			{
+				magazine="M41_Twin_HEAT_WireGuided";
+				count=2;
+			};
 		};
 		class TransportWeapons
 		{
@@ -401,27 +529,10 @@ class CfgVehicles
 				author="Body";
 				textures[]=
 				{
-					""
+					"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Veh_Pelican_Small.paa"
 				};
 			};
-			class DGrey
-			{
-				displayName="Dark Grey";
-				author="Body";
-				textures[]=
-				{
-					""
-				};
-			};
-			class FDGrey
-			{
-				displayName="Flight Lead";
-				author="Body";
-				textures[]=
-				{
-					""
-				};
-			};
+
 			class ves_desert
 			{
 				author="Vespade";
@@ -514,61 +625,7 @@ class CfgVehicles
 			};
 		};
 	};
-
-
-
-/////////////////////// DMNS Large Peli ///////////////////////
-
-	class Splits_UNSC_D77_TC_Pelican;
-	class 53rd_FOU_Pelican_Base: Splits_UNSC_D77_TC_Pelican
-    {
-		scope=2;
-		scopeCurator=2;
-		scopeArsenal=2;	
-		side=1;
-        displayName="[53rd] D77H BASE";
-        editorCategory = "53rd_cat_faction";
-        editorSubCategory = "53rd_Rotary";
-        crew="53rd_Volare_airmen_unit";
-		class UserActions: UserActions
-		{
-			class AMS_LiteOpen
-			{
-			displayName = "<t color='#739eff'>Open AMS Lite</t>";
-				position = "pos cano";
-				radius = 15;
-				shortcut = "User3";
-				condition = "player in this and (speed this < 1)";
-				statement = "this execVM ""\FIR_AirWeaponSystem_US\Script\AMS\AMS_Lite\AMS_Lite_GUI_Open.sqf""";
-				onlyforplayer = "false";
-				priority = 6;
-				hideOnUse = 1;
-			};		
-			class Aircraft_MFD_Open_N
-			{
-				displayName="Open I-TGT System";
-				position="pilotcontrol";
-				radius=15;
-				shortcut="User4";
-				condition="('FIR_TGTPOD' in weapons this or 'Laserdesignator_pilotCamera' in weapons this) and player in this and isengineon this";
-				statement="this execVM ""\FIR_AirWeaponSystem_US\Script\TGTSystem\FIR_AWS_MFD_N_Open.sqf""";
-				onlyforplayer="false";
-				hideOnUse=1;
-			};
-		};
-		class EventHandlers: EventHandlers
-		{
-			class FIR_AWS_Common_EH
-			{
-				Init="[_this select 0,'yes'] execVM ""\FIR_AirWeaponSystem_US\Script\init\init.sqf"";";
-				hit="_this call bis_fnc_planeAiEject";
-			};
-		};
-    };
- 
-
-
-	class 53rd_UNSC_D77_FL_Pelican: 53rd_FOU_Pelican_Base
+	class 53rd_UNSC_D77_TC_Pelican: 53rd_FOU_Pelican_Base
 	{
 		scope=2;
 		scopeCurator=2;
@@ -576,14 +633,15 @@ class CfgVehicles
 		forceInGarage=1;
 		editorCategory = "53rd_cat_faction";
 		editorSubCategory = "53rd_Rotary";
+		author="SplitJaw & DemonicOnPC,Body";
 		crew="53rd_Volare_airmen_unit";
-		displayName="[53rd] D77-FL Pelican";
+		displayName="[53rd] D77-TC Pelican";
 		hiddenSelectionsTextures[]=
-			{
+		{
 				"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull.paa",
 				"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings.paa",
 				"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
-			};
+		};
 		tf_range=25000;		
 		tf_isolatedAmount=0.40000001;
 		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
@@ -688,7 +746,319 @@ class CfgVehicles
 					};
 				};
 		};
+		class UserActions:UserActions
+		{
+			class PelLift_LoadVehicle
+			{
+				condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND (str (this getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]]) == ""[]"") AND (vehicle player != player)";
+				displayName="<t color='#00BF00'>Maglock Cargo";
+				displayNameDefault="<t color='#00BF00'>Maglock Cargo";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=2;
+				radius=15;
+				showWindow=0;
+				statement="0 = [this,vehicle player] spawn F53rd_fnc_PelicanMaglockLoad";
+				textToolTip="<t color='#00BF00'>Maglock Cargo";
+				userActionID=6;
+			};
+			class PelLift_UnLoadVehicle
+			{
+				condition="(player in [gunner this, driver this]) AND ((count (vehicle player getVariable [""OPTRE_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+				displayName="<t color='#DF3A01'>Release Maglock";
+				displayNameDefault="<t color='#DF3A01'>Release Maglock";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=3;
+				radius=5;
+				showWindow=0;
+				statement="0 = [this] spawn V_FZ_fnc_PelicanUnLoadValidate;";
+				textToolTip="<t color='#DF3A01'>Release Maglock";
+				userActionID=7;
+			};
+			class PelLift_LoadPodMenu
+			{
+				userActionID=9;
+				displayName="Load Supply Pods";
+				displayNameDefault="Load Supply Pods";
+				textToolTip="Load Supply Pods";
+				position="cargo_door_handle";
+				showWindow=0;
+				radius=15;
+				priority=2;
+				onlyForPlayer=0;
+				condition="!(player in [gunner this, driver this]) AND (player == driver vehicle player) AND ((vehicle player) isKindOf ""OPTRE_cart_base"")";
+				statement="Splits_pelicanloadSupplyPods_Menu_PelicanObject = this; createDialog ""Splits_pelicanloadSupplyPods_Menu""; Splits_pelicanloadSupplyPods_Menu_cam = ""camera"" CamCreate getPosATL Splits_pelicanloadSupplyPods_Menu_PelicanObject;  Splits_pelicanloadSupplyPods_Menu_cam CamSetTarget Splits_pelicanloadSupplyPods_Menu_PelicanObject; Splits_pelicanloadSupplyPods_Menu_cam CameraEffect [""Internal"",""Back""]; Splits_pelicanloadSupplyPods_Menu_cam camSetRelPos [4,-12,-2.4]; Splits_pelicanloadSupplyPods_Menu_cam CamCommit 0; showCinemaBorder false; if (sunOrMoon == 0) then {camUseNVG true;};";
+			};
+			class PelLift_OpenDetachPodMenu
+			{
+				userActionID=8;
+				displayName="Detach Individual Supply Pod Menu";
+				displayNameDefault="Detach Individual Supply Pod Menu";
+				textToolTip="Detach Individual Supply Pod Menu";
+				position="cargo_door_handle";
+				showWindow=0;
+				radius=5;
+				priority=3;
+				onlyForPlayer=0;
+				condition="(player in [gunner this, driver this]) AND (({_x isKindOf ""OPTRE_Ammo_SupplyPod_Empty""} count (this getVariable [""Splits_Pelican_AttachedToVehiclesEffect"",[]])) > 0)";
+				statement="0 = this spawn Splits_fnc_PelicanLoadSupplyPodMenuDetachMenu;";
+			};
+			class RampOpen
+			{
+				userActionID=50;
+				displayName="Close Ramp";
+				displayNameDefault="Close Ramp";
+				textToolTip="Close Ramp";
+				position="cargo_door_handle";
+				showWindow=0;
+				radius=100000;
+				priority=4;
+				onlyForPlayer=0;
+				condition="((this animationPhase ""cargoDoor_1"" < 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement="this animate [""cargoDoor_1"",1]";
+				animPeriod=5;
+			};
+			class RampClose: RampOpen
+			{
+				userActionID=51;
+				displayName="Open Ramp";
+				displayNameDefault="Open Ramp";
+				textToolTip="Open Ramp";
+				priority=4;
+				condition="((this animationPhase ""cargoDoor_1"" > 0.5) AND (alive this) AND (player in [gunner this, driver this]))";
+				statement="this animate [""cargoDoor_1"",0]";
+				animPeriod=5;
+			};
+			class FullAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 100)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes";
+				displayNameDefault="<t color='#FE2E2E'>Engage Airbrakes";
+				onlyForPlayer=0;
+				shortcut="user20";
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_FullAirbrakeEngageFast";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes";
+				userActionID=57;
+			};
+			class HalfAirbrakeEngageFast
+			{
+				animPeriod=5;
+				condition="(player == driver this) AND (alive this) AND ((speed this) > 450)";
+				displayName="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				displayNameDefault="<t color='#F28D00'>Engage Airbrakes (Half)";
+				onlyForPlayer=0;
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_HalfAirbrakeEngageFast";
+				textToolTip="<t color='#FE2E2E'>Engage Airbrakes (Half)";
+				userActionID=58;
+			};
+			class Thruster400Engage
+			{
+				animPeriod=5;
+				condition="(!(this getvariable [""OPTRE_Thruster_EngagedStatus"",false])) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this) AND  ((getPosATL this) select 2) > 1";
+				displayName="<t color='#04B45F'>Engage Forward Thrusters";
+				displayNameDefault="<t color='#04B45F'>Engage Forward Thrusters";
+				onlyForPlayer=0;
+				shortcut="user19";
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Thruster400Engage";
+				textToolTip="<t color='#04B45F'>Engage Forward Thrusters";
+				userActionID=52;
+			};
+			class Thruster400Disengage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Forward Thrusters";
+				displayNameDefault="<t color='#FCE205'>Disengage Forward Thrusters";
+				onlyForPlayer=0;
+				shortcut="user17";
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Thruster400Disengage";
+				textToolTip="<t color='#FCE205'>Disengage Forward Thrusters";
+				userActionID=53;
+			};
+			class Afterburners900Engage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Thruster_EngagedStatus"",false]) AND (!(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false])) AND (player == driver this) AND (alive this) AND (isEngineOn this)";
+				displayName="<t color='#04B45F'>Engage Afterburners";
+				displayNameDefault="<t color='#04B45F'>Engage Afterburners";
+				onlyForPlayer=0;
+				shortcut="user19";
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Afterburners900Engage";
+				textToolTip="<t color='#04B45F'>Engage Afterburners";
+				userActionID=54;
+			};
+			class Afterburners900Disengage
+			{
+				animPeriod=5;
+				condition="(this getvariable [""OPTRE_Afterburners_EngagedStatus"",false]) AND (player == driver this) AND (alive this)";
+				displayName="<t color='#FCE205'>Disengage Afterburners";
+				displayNameDefault="<t color='#FCE205'>Disengage Afterburners";
+				onlyForPlayer=0;
+				shortcut="user17";
+				position="cargo_door_handle";
+				priority=10;
+				radius=100000;
+				showWindow=0;
+				statement="0 = this spawn V_FZ_fnc_Afterburners900Disengage";
+				textToolTip="<t color='#FCE205'>Disengage Afterburners";
+				userActionID=55;
+			};
+			class ECM_ON
+			{
+				displayName = "ECM JAMMER ON";
+				position = "pos cano";
+				radius = 15;
+				shortcut = "User2";
+				condition = "player in this and isengineon this and (this getvariable 'ECMJAMMER' == 'yes' or 'FIR_ECMPOD' in weapons this)";
+				statement = "[this] execVM ""\FIR_AirWeaponSystem_US\Script\ECM\ECM_ON.sqf"";";
+				onlyforplayer = "False";
+				hideOnUse = 1;
+			};
+		};
+	};
+	
+	class 53rd_UNSC_D77_FL_Pelican_Test: 53rd_FOU_Pelican_Base
+	{
+		scope=2;
+		scopeCurator=2;
+		scopeArsenal=2;
+		forceInGarage=1;
+		editorCategory = "53rd_cat_faction";
+		editorSubCategory = "53rd_Rotary";
+		author="SplitJaw & DemonicOnPC,";
+		crew="53rd_Volare_airmen_unit";
+		displayName="[53rd] D77-FL Pelican";
+		hiddenSelectionsTextures[]=
+		{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+		};
+		tf_range=25000;		
+		tf_isolatedAmount=0.40000001;
+		tf_dialogUpdate="call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
+		enableRadio=1;
+		class textureSources
+		{
+				class Standard
+				{
+					displayName="53rd - Base";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
 
+				class Volare
+				{
+					displayName="53rd - Volare";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull_Volare.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings_Volare.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
+
+				class Red
+				{
+					displayName="53rd - Red";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull_Red.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings_Red.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
+
+				class Blue
+				{
+					displayName="53rd - Blue";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull_Blue.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings_Blue.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
+
+				class Green
+				{
+					displayName="53rd - Green";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull_Green.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings_Green.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
+
+				class Purple
+				{
+					displayName="53rd - Purple";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Hull_Purple.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Wings_Purple.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
+
+				class BigBen
+					{
+					displayName="Custom BigBen";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Ben_Custom_D77_Body_co.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Ben_Custom_D77_Wings_co.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Pelican_Weapons.paa"
+					};
+				};
+
+				class AK
+					{
+					displayName="Custom AK";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\PelicanHullAK.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\PelicanWingsAK.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\PelicanWeaponsAK.paa"
+					};
+				};
+		};
 		class UserActions
 		{
 			class PelLift_LoadVehicle
@@ -999,5 +1369,7 @@ class CfgVehicles
 	};
 };
 
-
+		
+		
+		
 };

@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 class CfgPatches
 {
 	class 53rd_Apollo_PLACEHOLDER
@@ -799,7 +798,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Apollo Crewman (Woodland)";
-		picture = "\53rd_Aux\Functions\Arsenal\Apollo.paa"
+		picture = "\53rd_Aux\Functions\Arsenal\Apollo.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{
@@ -841,7 +840,7 @@ class cfgWeapons
 		scopeArsenal=2;
 		allowedSlots[]={901};
 		displayName="[53rd] Apollo Crewman (Woodland / BDU)";
-		picture = "\53rd_Aux\Functions\Arsenal\Apollo.paa"
+		picture = "\53rd_Aux\Functions\Arsenal\Apollo.paa";
 		model="\A3\Characters_F\Common\Suitpacks\suitpack_blufor_diver";
 		hiddenSelections[]=
 		{

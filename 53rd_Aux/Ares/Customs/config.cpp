@@ -31,5 +31,5 @@ class CfgPatches
 	#include "BooBenCustoms.hpp"	
 	#include "KenobiCustoms.hpp"	
 	#include "UllrCustoms.hpp"	
-
+	/* #include "LonewulfCustoms.hpp"	*/
 };

@@ -22,10 +22,7 @@
 				"\53rd_Aux\Ares\Customs\Ullr\53rd_Ullr_Helmet_Urban.paa",
 				"\53rd_Aux\Ares\Customs\Ullr\53rd_Ullr_Visor.paa"
 		};
-		hiddenSelectionsMaterials[]=
-		{
-			"\53rd_Aux\Ares\Customs\Ullr\Ullr.rvmat"
-		};
+
 	};
 	
 	

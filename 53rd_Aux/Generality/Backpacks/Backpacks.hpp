@@ -411,10 +411,6 @@ class XtdGearInfos
 		};	
 
 
-
-
-
-
 		class 53rd_Backpacks_Rucksack_Urban
 		{
 		model = "InfBackpack";
@@ -439,7 +435,7 @@ class XtdGearInfos
 
 
 
-		class 53rd_Backpacks_Rucksack_Heavy_Urban:53rd_Backpacks_ILCS_Black
+		class 53rd_Backpacks_Rucksack_Heavy_Urban:53rd_Backpacks_Rucksack_Urban
 		{
 		model = "InfBackpack";
 		Camo = "Urban";
@@ -461,6 +457,29 @@ class XtdGearInfos
 		MOS = "Heavy";
 		};
 
+
+
+		class 53rd_Backpacks_Rucksack_Medic_Urban:53rd_Backpacks_Rucksack_Urban
+		{
+		model = "InfBackpack";
+		Camo = "Urban";
+		MOS = "Medic";
+		};
+		class 53rd_Backpacks_Rucksack_Medic_Woodland:53rd_Backpacks_Rucksack_Medic_Urban
+		{
+		Camo = "Woodland";
+		MOS = "Medic";
+		};
+		class 53rd_Backpacks_Rucksack_Medic_Winter:53rd_Backpacks_Rucksack_Medic_Urban
+		{
+		Camo = "Winter";
+		MOS = "Medic";
+		};
+		class 53rd_Backpacks_Rucksack_Medic_Desert:53rd_Backpacks_Rucksack_Medic_Urban
+		{
+		Camo = "Desert";
+		MOS = "Medic";
+		};
 
 
 
@@ -493,12 +512,12 @@ class XtdGearInfos
 		Type = "Jumpapck";
 		MOS = "Rifleman";
 		};
-		class Series_8LR_Jumpack:53rd_Atlas_Jumpack_Base
+		class Series_8LR_Jumpack_M:53rd_Atlas_Jumpack_Base
 		{
 		Type = "Jumpapck";
 		MOS = "Medic";
 		};
-		class Series_8LR_Jumpack_M:53rd_Atlas_Jumpack_Base
+		class Series_8LR_Jumpack:53rd_Atlas_Jumpack_Base
 		{
 		Type = "Jumpapck";
 		MOS = "RTO";

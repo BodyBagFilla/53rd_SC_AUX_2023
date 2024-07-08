@@ -304,10 +304,9 @@ class cfgWeapons
 {
     class UniformItem;		
 	class Uniform_Base;
+	class 53rd_Nox_Uniform_Urban;
 
-
-	class 53rd_Ares_Helmet_Rifleman;
-	class 53rd_Ares_Nox_Ghillie_Winter_Half: 53rd_Ares_Helmet_Rifleman
+	class 53rd_Ares_Nox_Ghillie_Winter_Half: 53rd_Nox_Uniform_Urban
 	{
 		author="53rd Aux Team";
 		scope=2;
@@ -328,8 +327,6 @@ class cfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Winter_Half_F";
-			containerClass="Supply100";
-			mass=80;
 		};
 	};
 
@@ -354,8 +351,6 @@ class cfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Urban_Half_F";
-			containerClass="Supply100";
-			mass=80;
 		};
 	};
 
@@ -380,8 +375,6 @@ class cfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Arid_Half_F";
-			containerClass="Supply100";
-			mass=80;
 		};
 	};
 
@@ -406,8 +399,6 @@ class cfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Woodland_Half_F";
-			containerClass="Supply100";
-			mass=80;
 		};
 	};
 
@@ -432,8 +423,6 @@ class cfgWeapons
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_SemiArid_Half_F";
-			containerClass="Supply100";
-			mass=80;
 		};
 	};
 
@@ -450,8 +439,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Winter_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -468,8 +455,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Urban_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -486,8 +471,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Arid_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -504,8 +487,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Jungle_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -522,8 +503,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Jungle2_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -540,8 +519,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Lush_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -558,8 +535,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Lush2_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 
@@ -576,8 +551,6 @@ class cfgWeapons
 		class ItemInfo: UniformItem
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_SemiArid_Full_F";
-			containerClass = "Supply100";
-			mass = 10;
 		};
 	};
 

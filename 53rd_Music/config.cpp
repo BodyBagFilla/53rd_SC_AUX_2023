@@ -1,143 +1,340 @@
-#include "BIS_AddonInfo.hpp"
+
 class CfgPatches
 {
-	class AuxModmsuic
-	{
-		units[] = {};
-		weapons[] = {};
-		requiredVersion = 0.1;
-		requiredAddons[] = {};
-	};
-};
+    class 53rd_Music
+    {
+        units[] = {};
+        weapons[] = {};
+        requiredVersion = 0.1;
+        requiredAddons[] = {};
+    };
 
-class CfgMusicClasses
+};
+	class CfgMusicClasses
 {
-	class AuxModmsuic
-	{
-		displayName = "53rd Music Pack" 
-	};
+
+	class 53_Meme
+    {
+        displayName = "[53rd] Meme";
+    };
+	class 53_Misc
+    {
+        displayName = "[53rd] Misc";
+    };
+	class 53rd_RvB
+    {
+        displayName = "Red vs Blue";
+    };
+	class 53_HaloWars
+    {
+        displayName = "[53rd] Spirit of Fire";
+    };
+	class 53_HaloLegends
+    {
+        displayName = "[53rd] Legends";
+    };
+	class 53_Other
+    {
+        displayName = "[53rd] Other";
+    };
+
 };
 
 class CfgMusic
 {
-	class Da1
-	{
-		name = "Alan Silverstri - You Did Good";
-		sound[] = {"53rd_Music\Alan_Silvestri_-_You_Did_Good_From_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "123";
-		musicClass = "AuxModmsuic";
+ 
+    class BackgroundFirefightExplosions
+    {
+        name = "Background Firefight and Explosions";
+        sound[] = {"53rd_Music\All_Music\battle2.ogg",1,1};
+        duration = "240";
+        musicClass = "53_Misc";
+    };
+    class HaloPillarAutumnAlarm
+    {
+        name = "Pillar of Autumn Alarm";
+        sound[] = {"53rd_Music\All_Music\shipalarm.ogg",1,1};
+        duration = "1";
+        musicClass = "53_Misc";
+    };
+    class CreepySpireSound
+    {
+        name = "Creepy Spire Sound";
+        sound[] = {"53rd_Music\All_Music\spire.ogg",1,1};
+        duration = "151";
+        musicClass = "53_Misc";
+    };
+    class EnterTeleporter
+    {
+        name = "Enter Teleporter";
+        sound[] = {"53rd_Music\All_Music\teleporter.ogg",1,1};
+        duration = "1";
+        musicClass = "53_Misc";
+    };
+    class IdleTeleporter
+    {
+        name = "Idle Teleporter";
+        sound[] = {"53rd_Music\All_Music\teleporterloop.ogg",1,1};
+        duration = "24";
+        musicClass = "53_Misc";
+    };
+
+
+
+
+
+    class Ineedhero
+    {
+        name = "I NEED A HERO";
+        sound[] = {"53rd_Music\All_Music\Bonnie Tyler - I need a hero.ogg",1,1};
+        duration = "265";
+        musicClass = "53_Meme";
+    };
+	
+    class SillyRedTeamMusic
+    {
+        name = "Silly Red Team Music";
+        sound[] = {"53rd_Music\All_Music\warthogmusic.ogg",1,1};
+        duration = "224";
+        musicClass = "53_Meme";
+    };
+
+    class SillyRedTeamMusicAlt
+    {
+        name = "Silly Red Team Music Alt";
+        sound[] = {"53rd_Music\All_Music\warthogmusic2.ogg",1,1};
+        duration = "90";
+        musicClass = "53_Meme";
+    };
+	
+	
+	
+	
+	
+	
+    class AvengersDidGood
+    {
+        name = "Avengers - You Did Good";
+        sound[] = {"53rd_Music\All_Music\Alan_Silvestri_-_You_Did_Good_From.ogg",1,1};
+        duration = "123";
+        musicClass = "53_Other";
+    };
+    class TLoUAllGone
+    {
+        name = "LoU - All Gone (No Escape)";
+        sound[] = {"53rd_Music\All_Music\All_Gone_No_Escape.ogg",1,1};
+        duration = "174";
+        musicClass = "53_Other";
+    };
+    class Transformers01
+    {
+        name = "Transformers (2007) - OST 01 Autobots";
+        sound[] = {"53rd_Music\All_Music\Autobots.ogg",1,1};
+        duration = "153";
+        musicClass = "53_Other";
+    };
+
+    class DestinyTheTakenKing
+    {
+        name = "Destiny Soundtrack - The Taken King";
+        sound[] = {"53rd_Music\All_Music\VIRGIN_MUSIC_SUPREME.ogg",1,1};
+        duration = "99";
+        musicClass = "53_Other";
+    };
+    class Transformers14
+    {
+        name = "Transformers (2007) - OST 14 Downtown Battle";
+        sound[] = {"53rd_Music\All_Music\Downtown_Battle.ogg",1,1};
+        duration = "92";
+        musicClass = "53_Other";
+    };
+    class MSG5Invisible
+    {
+        name = "MSG 5:TPP Invisible";
+        sound[] = {"53rd_Music\All_Music\Duran Duran - INVISIBLE.ogg",1,1};
+        duration = "191";
+        musicClass = "53_Other";
+    };
+    class ShelbyMerryGallows
+    {
+        name = "Recruitment Video - Shelby Merry - Gallows";
+        sound[] = {"53rd_Music\All_Music\Gallows.ogg",1,1};
+        duration = "163";
+        musicClass = "53_Other";
+    };
+    class Godzilla01
+    {
+        name = "Godzilla (2014) - OST 01 Godzilla";
+        sound[] = {"53rd_Music\All_Music\Godzilla_2014_Soundtrack_-_Godzilla.ogg",1,1};
+        duration = "126";
+        musicClass = "53_Other";
+    };
+    class InterstellarEpilogue
+    {
+        name = "Interstellar - OST Epilogue";
+        sound[] = {"53rd_Music\All_Music\Hans_Zimmer_-_Epilogue_Main_Theme.ogg",1,1};
+        duration = "197";
+        musicClass = "53_Other";
+    };
+    class Interstellar22
+    {
+        name = "Interstellar - OST 22 No Time For Caution";
+        sound[] = {"53rd_Music\All_Music\Hans_Zimmer_-_No_Time_For_Caution.ogg",1,1};
+        duration = "240";
+        musicClass = "53_Other";
+    };
+    class HearMyVoice
+    {
+        name = "Unknown Artist - Hear My Voice";
+        sound[] = {"53rd_Music\All_Music\Hear_my_voice.ogg",1,1};
+        duration = "189";
+        musicClass = "53_Other";
+    };
+    class Inception12
+    {
+        name = "Inception - OST 12 Time";
+        sound[] = {"53rd_Music\All_Music\Inception_Soundtrack_-_12_Time.ogg",1,1};
+        duration = "275";
+        musicClass = "53_Other";
+    };
+    class SurviveTide
+    {
+        name = "To Survive The Tide, Love Divides";
+        sound[] = {"53rd_Music\All_Music\Journey - Separate Ways.ogg",1,1};
+        duration = "163";
+        musicClass = "53_Other";
+    };
+    class LeavesofSadness
+    {
+        name = "Uncle_Iroh - Leaves From The Vine Little Soldier";
+        sound[] = {"53rd_Music\All_Music\Uncle_Iroh_-_Leaves_From_The_Vine_Little_Soldier.ogg",1,1};
+        duration = "191";
+        musicClass = "53_Other";
+    };
+    class TransformersScorponok
+    {
+        name = "Transformers (2007) - OST 10 Scorponok";
+        sound[] = {"53rd_Music\All_Music\Transformers_2007_-_OST_10_Scorponok.ogg",1,1};
+        duration = "296";
+        musicClass = "53_Other";
+    };
+    class DarkKnightTheme
+    {
+        name = "The Dark Knight Main Theme";
+        sound[] = {"53rd_Music\All_Music\The_Dark_Knight_Main_Theme_-_Hans_Z.ogg",1,1};
+        duration = "462";
+        musicClass = "53_Other";
+    };
+    class HobbitExtended
+    {
+        name = "The Hobbit - Extended Theme Mix";
+        sound[] = {"53rd_Music\All_Music\The_Hobbit_-_Extended_Theme_Mix.ogg",1,1};
+        duration = "384";
+        musicClass = "53_Other";
+    };
+    class TLoUTheme
+    {
+        name = "The Last Of Us - Theme Song";
+        sound[] = {"53rd_Music\All_Music\The_Last_Of_us_-_Theme_song.ogg",1,1};
+        duration = "189";
+        musicClass = "53_Other";
+    };
+    class EmpireAngels
+    {
+        name = "Empire of Angels";
+        sound[] = {"53rd_Music\All_Music\Thomas_Bergersen_-_Empire_of_Angels_-_Sun.ogg",1,1};
+        duration = "316";
+        musicClass = "53_Other";
+    };
+    class TransformersAoE
+    {
+        name = "Transformers AoE - L";
+        sound[] = {"53rd_Music\All_Music\Transformers_Age_of_Extinction_-_L.ogg",1,1};
+        duration = "301";
+        musicClass = "53_Other";
+    };
+    class TSFHBlackheartSkyworld
+    {
+        name = "TSFH - Blackheart Skyworld";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Blackheart_-_SkyWorld.ogg",1,1};
+        duration = "272";
+        musicClass = "53_Other";
+    };
+    class TSFHCannonMinor
+    {
+        name = "TSFH - Cannon in D Minor";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Cannon_in_D_Minor.ogg",1,1};
+        duration = "190";
+        musicClass = "53_Other";
+    };
+    class TSFHImpossible
+    {
+        name = "TSFH - Impossible";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Impossible.ogg",1,1};
+        duration = "534";
+        musicClass = "53_Other";
+    };
+    class TSFHNeverDown
+    {
+        name = "TSFH - Never Back Down";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Never_Back_Down.ogg",1,1};
+        duration = "179";
+        musicClass = "53_Other";
+    };
+    class TSFHNeverGiveDreams
+    {
+        name = "TSFH - Never Give Up On Your Dreams";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Never_Give_Up_On_Your_Dreams.ogg",1,1};
+        duration = "320";
+        musicClass = "53_Other";
+    };
+    class TSFHStarSky
+    {
+        name = "TSFH - Star Sky";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Star_Sky.ogg",1,1};
+        duration = "334";
+        musicClass = "53_Other";
 	};
-		class Da2
-	{
-		name = "Last of Us - All is Gone";
-		sound[] = {"53rd_Music\All_Gone_No_Escape_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "174";
-		musicClass = "AuxModmsuic";
-	};
-		class Da3
-	{
-		name = "Transformers - Autobots";
-		sound[] = {"53rd_Music\Autobots_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "153";
-		musicClass = "AuxModmsuic";
-	};
-		class Da4
-	{
-		name = "Transformers - Downtown Battle";
-		sound[] = {"53rd_Music\Downtown_Battle_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "148";
-		musicClass = "AuxModmsuic";
-	};
-		class Da5
-	{
-		name = "Transformers - Scorponok";
-		sound[] = {"53rd_Music\Scorponok_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "296";
-		musicClass = "AuxModmsuic";
-	};
-		class Da6
-	{
-		name = "Destiny - The Taken King";
-		sound[] = {"53rd_Music\Destiny_Soundtrack_-_Taken_King_The_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "329";
-		musicClass = "AuxModmsuic";
-	};
-		class Da7
-	{
-		name = "The Dark Knight - Theme";
-		sound[] = {"53rd_Music\The_Dark_Knight_Main_Theme_-_Hans_Z_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "462";
-		musicClass = "AuxModmsuic";
-	};
-		class Da8
-	{
-		name = "Warframe - This is What You Get";
-		sound[] = {"53rd_Music\WARFRAME_OST_-_01_This_is_What_You_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "374";
-		musicClass = "AuxModmsuic";
-	};
-		class Da9
-	{
-		name = "World of Warcraft - Warlord of Draenor";
-		sound[] = {"53rd_Music\Warlords_of_Draenor_Soundtrack_-_3_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "259";
-		musicClass = "AuxModmsuic";
-	};
-		class Da10
-	{
-		name = "World of Warcraft - Wrath of the Lich King";
-		sound[] = {"53rd_Music\Wrath_of_the_Lich_King_Music_-_Arth__getmp3.pro_.ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "192";
-		musicClass = "AuxModmsuic";
-	};
-		class Da11
-	{
-		name = "Godzilla 2014 - Theme";
-		sound[] = {"53rd_Music\Godzilla_2014_Soundtrack_-_Godzilla_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "126";
-		musicClass = "AuxModmsuic";
-	};
-		class Da12
-	{
-		name = "Hanz Zimmer - Crysis Main Theme ";
-		sound[] = {"53rd_Music\Hans_Zimmer_-_Epilogue_Main_Theme_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "197";
-		musicClass = "AuxModmsuic";
-	};
-		class Da13
-	{
-		name = "Hans Zimmer - No Time for Caution";
-		sound[] = {"53rd_Music\Hans_Zimmer_-_No_Time_For_Caution__(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "240";
-		musicClass = "AuxModmsuic";
-	};
-		class Da14
-	{
-		name = "TLA - Leaves From the Vine";
-		sound[] = {"53rd_Music\Leaves_From_The_Vine_Little_Soldie_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = 191";
-		musicClass = "AuxModmsuic";
-	};
-		class Da15
-	{
-		name = "86 - Hear My Voice";
-		sound[] = {"53rd_Music\Hear_my_voice_(getmp3.pro).ogg",1,1};
-		theme = "AuxModmsuic";
-		duration = "189";
-		musicClass = "AuxModmsuic";
-	};
+    class TSFHVictory
+    {
+        name = "TSFH - Victory";
+        sound[] = {"53rd_Music\All_Music\Two_Steps_From_Hell_-_Victory.ogg",1,1};
+        duration = "328";
+        musicClass = "53_Other";
+    };
+    class PowerwolfVenomVenus
+    {
+        name = "Powerwolf - Venom of Venus (Orchestral)";
+        sound[] = {"53rd_Music\All_Music\Venom_of_Venus_-_Orchestral_Version.ogg",1,1};
+        duration = "211";
+        musicClass = "53_Other";
+    };
+    class LondonAirRaids
+    {
+        name = "The London Air Raids";
+        sound[] = {"53rd_Music\All_Music\Vian_Izak_-_The_London_Air_Raids.ogg",1,1};
+        duration = "213";
+        musicClass = "53_Other";
+    };
+    class WARFRAME1
+    {
+        name = "WARFRAME OST - 01 This is What You";
+        sound[] = {"53rd_Music\All_Music\WARFRAME_OST_-_01_This_is_What_You.ogg",1,1};
+        duration = "374";
+        musicClass = "53_Other";
+    };
+    class WarlordsDraenor
+    {
+        name = "Warlords of Draenor";
+        sound[] = {"53rd_Music\All_Music\Warlords_of_Draenor_Soundtrack_-_3.ogg",1,1};
+        duration = "259";
+        musicClass = "53_Other";
+    };
+
+#include "Halo.hpp"
+#include "RvB.hpp"
+
+
 };
+	
+

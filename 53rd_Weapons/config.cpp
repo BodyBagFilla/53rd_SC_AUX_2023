@@ -1,62 +1,80 @@
 enum {
-DESTRUCTENGINE 																					= 2,
-DESTRUCTDEFAULT 																				= 6,
-DESTRUCTWRECK 																					= 7,
-DESTRUCTTREE 																					= 3,
-DESTRUCTTENT 																					= 4,
-STABILIZEDINAXISX 																				= 1,
-STABILIZEDINAXESXYZ 																			= 4,
-STABILIZEDINAXISY 																				= 2,
-STABILIZEDINAXESBOTH 																			= 3,
-DESTRUCTNO 																						= 0,
-STABILIZEDINAXESNONE 																			= 0,
-DESTRUCTMAN 																					= 5,
-DESTRUCTBUILDING 																				= 1,
+	DESTRUCTENGINE = 2,
+	DESTRUCTDEFAULT = 6,
+	DESTRUCTWRECK = 7,
+	DESTRUCTTREE = 3,
+	DESTRUCTTENT = 4,
+	STABILIZEDINAXISX = 1,
+	STABILIZEDINAXESXYZ = 4,
+	STABILIZEDINAXISY = 2,
+	STABILIZEDINAXESBOTH = 3,
+	DESTRUCTNO = 0,
+	STABILIZEDINAXESNONE = 0,
+	DESTRUCTMAN = 5,
+	DESTRUCTBUILDING = 1,
 };
 
 #include "Main\_macros\main.hpp"
 #include "_macros\main.hpp"
+#include "Ammo\cfgMagazineWells.hpp"
+#include "XTD.hpp"
 
 class CfgPatches //This configures the identification of the pbo to the game
 {
 	class 53rd_Weapons
 	{
-		units[] 																				= {""};
-		requiredVersion 																		= 0.1;
-		requiredAddons[] 																		= {"OPTRE_Core"};
-		author[] 																				= {"Frakenburg"};
-		weapons[] = 
+		units[] = {""};
+		requiredVersion = 0.1;
+		requiredAddons[] = {"OPTRE_Core"};
+		author[] = {"Frakenburg"};
+		weapons[] =
 		{
 			"53rd_MA37",
 			"53rd_MA37GL",
 			"53rd_MA32",
 			"53rd_MA32GL",
-			"53rd_m6_carbine", 
-			"53rd_M247_hmg", 
-			"53rd_M33", 
-			"53rd_M73H", 
-			"53rd_AR0M37", 
-			"53rd_AR0M37_M420", 
+			"53rd_m6_carbine",
+			"53rd_M247_hmg",
+			"53rd_M33",
+			"53rd_M73H",
+			"53rd_AR0M37",
+			"53rd_AR0M37_M420",
 			"53rd_AR0M37_M45U",
-			"53rd_DMR0M37", 
-			"OPTRE_M301X", 
+			"53rd_DMR0M37",
+			"OPTRE_M301X",
 			"Throw",
 			"53rd_UNSC_M90",
 			"53rd_UNSC_br55_HB",
 			"53rd_UNSC_br55_HB_gl",
 			"53rd_UNSC_br55",
+			"53rd_UNSC_br55_gl",
 			"53rd_UNSC_Bulldog",
 			"53rd_UNSC_CR77",
 			"53rd_UNSC_MA5C",
 			"53rd_UNSC_MA5B",
 			"53rd_UNSC_MA5BGL",
 			"53rd_UNSC_MA5CGL",
+			"53rd_UNSC_MA5A",
+			"53rd_UNSC_MA5AGL",
 			"53rd_UNSC_MMG",
 			"53rd_UNSC_M45",
+			"53rd_UNSC_ARM37",
+			"53rd_UNSC_M6C",
+			"53rd_UNSC_M6G",
+			"53rd_UNSC_M392",
+			"53rd_UNSC_CM12",
+			"53rd_UNSC_Commando",
+			"53rd_UNSC_SRS99_Fang",
+			"53rd_UNSC_SRS99_AM",
+			"53rd_M6G_Riot_Shield",
+			"53rd_Bulldog_Riot_Shield",
+			"53rd_M7_Riot_Shield",
+			"53rd_M6C_Riot_Shield",
+			"53rd_M247H_Etilka",
+			"53rd_GRL_45"
 		};
 	};
 };
-
 class Mode_SemiAuto;
 class Mode_FullAuto;
 class SlotInfo;
@@ -66,14 +84,47 @@ class PointerSlot;
 class WeaponSlotsInfo;
 class UnderBarrelSlot;
 class Grenadelauncher;
-class TCF_AR0M37;
-class TCF_AR0M37_GL;
-class TCF_AR0M37_SHT;
-class TCF_DMR0M37;	
+
 class ThrowMuzzle;
 
 class CfgWeapons
 {
+	class MA_GRL_45;
+	class OPTRE_M247H_Etilka;
+	class OPTRE_M7_Folded;
+	class OPTRE_Bulldog_Riot_Shield;
+	class OPTRE_M7_Riot_Shield;
+	class OPTRE_M6C_Riot_Shield;
+	class OPTRE_CQS48S_Chihuahua_Automatic;
+	class OPTRE_M6G_Riot_Shield {
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_SRS99C {
+		class WeaponSlotsInfo;
+	};
+	class TCF_AR0M37 {
+		class WeaponSlotsInfo;
+	};
+	class TCF_AR0M37_GL {
+		class WeaponSlotsInfo;
+	};
+	class TCF_AR0M37_SHT {
+		class WeaponSlotsInfo;
+	};
+	class TCF_DMR0M37 {
+		class WeaponSlotsInfo;
+	};
+	class TCF_ARM37 {
+		class WeaponSlotsInfo;
+	};
+	class TCF_ARM37_DMR {
+	};
+	class TCF_ARM37_SHT {
+		class WeaponSlotsInfo;
+	};
+	class TCF_ARM37_GL {
+		class WeaponSlotsInfo;
+	};
 	class OPTRE_MachineGun_Base;
 	class OPTRE_M73
 	{
@@ -93,7 +144,9 @@ class CfgWeapons
 	};
 	class UGL_F;
 	class UBS_F;
-	class OPTRE_M7;
+	class OPTRE_M7 {
+		class FullAuto;
+	};
 	class weapon_AMRAAMLauncher;
 	class weapon_BIM9xLauncher;
 	class weapon_AGM_65Launcher;
@@ -102,6 +155,14 @@ class CfgWeapons
 	//Base Weapons
 	class OPTRE_MA37
 	{
+		class WeaponSlotsInfo;
+	};
+	class OPTRE_M6B
+	{
+		class WeaponSlotsInfo;
+		class Single;
+	};
+	class OPTRE_M6D {
 		class WeaponSlotsInfo;
 	};
 	class OPTRE_MA32
@@ -121,441 +182,971 @@ class CfgWeapons
 	class 19_UNSC_br55_HB;
 	class 19_UNSC_br55_HB_gl;
 	class 19_UNSC_br55;
+	class 19_UNSC_br55_gl;
+	class 19_UNSC_M392;
+	class Dmns_CM_12;
+	class OPTRE_Commando_Black;
 	class OPTRE_CQS48_Bulldog_Automatic;
 	class TCF_CR77;
 	class OPTRE_MA5C;
 	class OPTRE_MA5B;
 	class OPTRE_MA5BGL;
 	class OPTRE_MA5CGL;
+	class 19_UNSC_MA5A;
+	class 19_UNSC_MA5A_gl;
 	class MMG_02_black_F;
 	class OPTRE_M45;
-/////////////    53rd Weapons   ///////////////////
-	class 53rd_UNSC_M90: 19_UNSC_M90
+	class 19_UNSC_M7_Side;
+	class 19_UNSC_SRS99AM;
+		/////////////    53rd Weapons   ///////////////////
+
+	//////ARs (MA5 and MA32/MA37)
+	class 53rd_UNSC_MA5A : 19_UNSC_MA5A
 	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] M90 Shotgun";
-		baseWeapon="53rd_UNSC_M90";
-		cursor="19_UNSC_M90";
-		magazines[]=
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA5A";
+		baseWeapon = "53rd_UNSC_MA5A";
+		cursor = "OPTRE_MA5";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-		"12Rnd_8Gauge",
-		"12Rnd_8Gauge_slug",
-		"12Rnd_8Gauge_slug_tracer",
-		};
-    };
-	class 53rd_UNSC_br55_HB: 19_UNSC_br55_HB
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] BR55-HB";
-		baseWeapon="53rd_UNSC_br55_HB";
-		cursor="19_UNSC_br55_HB";
-		magazines[]=
-		{
-		"36Rnd_95x40_ap_br_55",
-		"36Rnd_95x40_ap_br_55_tracer",
-		"36Rnd_95x40_br_55",
-		"36Rnd_95x40_br_55_tracer",
-		"36Rnd_95x40_slap_br_55",
-		"36Rnd_95x40_slap_br_55_tracer",
-		"TCF_36Rnd_95x40_Mag_JHP",
-		"TCF_36Rnd_95x40_Mag_JHPT",
-		"OPTRE_36Rnd_95x40_Mag",
-		"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
-		"OPTRE_36Rnd_95x40_Mag_Tracer",
-		"TCF_36Rnd_95x40_Mag_SS",
-		};
-    };
-	class 53rd_UNSC_br55_HB_gl: 19_UNSC_br55_HB_gl
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] BR55-HB/GL";
-		baseWeapon="53rd_UNSC_br55_HB_gl";
-		cursor="19_UNSC_br55_HB_gl";
-		magazines[]=
-		{
-		"36Rnd_95x40_ap_br_55",
-		"36Rnd_95x40_ap_br_55_tracer",
-		"36Rnd_95x40_br_55",
-		"36Rnd_95x40_br_55_tracer",
-		"36Rnd_95x40_slap_br_55",
-		"36Rnd_95x40_slap_br_55_tracer",
-		"TCF_36Rnd_95x40_Mag_JHP",
-		"TCF_36Rnd_95x40_Mag_JHPT",
-		"OPTRE_36Rnd_95x40_Mag",
-		"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
-		"OPTRE_36Rnd_95x40_Mag_Tracer",
-		"TCF_36Rnd_95x40_Mag_SS",
-		};
-    };
-	class 53rd_UNSC_br55: 19_UNSC_br55
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] BR-55";
-		baseWeapon="53rd_UNSC_br55";
-		cursor="19_UNSC_br55";
-		magazines[]=
-		{
-		"36Rnd_95x40_ap_br_55",
-		"36Rnd_95x40_ap_br_55_tracer",
-		"36Rnd_95x40_br_55",
-		"36Rnd_95x40_br_55_tracer",
-		"36Rnd_95x40_slap_br_55",
-		"36Rnd_95x40_slap_br_55_tracer",
-		"TCF_36Rnd_95x40_Mag_JHP",
-		"TCF_36Rnd_95x40_Mag_JHPT",
-		"OPTRE_36Rnd_95x40_Mag",
-		"OPTRE_36Rnd_95x40_Mag_Tracer_Yellow",
-		"OPTRE_36Rnd_95x40_Mag_Tracer",
-		"TCF_36Rnd_95x40_Mag_SS",
-		};
-    };
-	class 53rd_UNSC_Bulldog: OPTRE_CQS48_Bulldog_Automatic
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] Bulldog Combat Shotgun";
-		baseWeapon="53rd_UNSC_Bulldog";
-		cursor="OPTRE_CQS48_Bulldog_Automatic";
-		magazines[]=
-		{
-		"OPTRE_12Rnd_12Gauge_Pellets",
-		"OPTRE_12Rnd_12Gauge_Pellets_Tracer",
-		"OPTRE_12Rnd_12Gauge_Smoke",
-		"OPTRE_12Rnd_12Gauge_Smoke_Tracer",
-		};
-    };
-	class 53rd_UNSC_CR77: TCF_CR77
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] CR-77 Marksmen Rifle";
-		baseWeapon="53rd_UNSC_CR77";
-		cursor="TCF_CR77";
-		magazines[]=
-		{
-		"TCF_20Rnd_86x70_Mag_AP",
-		"TCF_20Rnd_86x70_Mag_APT",
-		"TCF_20Rnd_86x70_Mag_JHP",
-		"TCF_20Rnd_86x70_Mag_JHPT",
-		"TCF_20Rnd_86x70_Mag",
-		"TCF_20Rnd_86x70_Mag_Tracer",
-		"TCF_20Rnd_86x70_Mag_SLAP",
-		"TCF_20Rnd_86x70_Mag_SLAPT",
-		"TCF_20Rnd_86x70_Mag_SS",
-		"TCF_20Rnd_86x70_Mag_SST",
-		"OPTRE_25Rnd_762x51_AP_Mag",
-		"OPTRE_25Rnd_762x51_AP_Mag_Tracer",
-		"OPTRE_25Rnd_762x51_Mag",
-		"OPTRE_25Rnd_762x51_Mag_Tracer_Yellow",
-		"OPTRE_25Rnd_762x51_Mag_Tracer",
-		"TCF_32Rnd_762x51_Mag_AP",
-		"TCF_32Rnd_762x51_Mag_APT",
-		"TCF_32Rnd_762x51_Mag_JHP",
-		"TCF_32Rnd_762x51_Mag_JHPT",
-		"TCF_32Rnd_762x51_Mag_SS",
-		};
-    };
-	class 53rd_UNSC_MA5C: OPTRE_MA5C
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA5C";
-		baseWeapon="53rd_UNSC_MA5C";
-		cursor="OPTRE_MA5C";
-		magazines[]=
-		{
-		    "OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST"
-		};
-    };
-	class 53rd_UNSC_MA5B: OPTRE_MA5B
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA5BGL";
-		baseWeapon="53rd_UNSC_MA5B";
-		cursor="OPTRE_MA5B";
-		magazines[]=
-		{
-		    "OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST"
-		};
-    };
-	class 53rd_UNSC_MA5BGL: OPTRE_MA5BGL
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA5BGL";
-		baseWeapon="53rd_UNSC_MA5BGL";
-		cursor="OPTRE_MA5BGL";
-		magazines[]=
-		{
-		    "OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST",
-		};
-    };
-	class 53rd_UNSC_MA5CGL: OPTRE_MA5CGL
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA5CGL";
-		baseWeapon="53rd_UNSC_MA5CGL";
-		cursor="OPTRE_MA5CGL";
-		magazines[]=
-		{
-         	"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST",
-		};
-    };
-	class 53rd_UNSC_MMG: MMG_02_black_F
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] Lapua MG";
-		baseWeapon="53rd_UNSC_MMG";
-		cursor="MMG_02_black_F";
-		magazines[]=
-		{
-		"130Rnd_338_Mag",
-		"OPTRE_100Rnd_95x40_Box",
-		"OPTRE_100Rnd_95x40_Box_Tracer",
-		"TCF_100Rnd_95x40_Box_JHP",
-		"TCF_100Rnd_95x40_Box_JHPT",
-		"TCF_100Rnd_95x40_Box_SS",
-		"TCF_100Rnd_95x40_Box_SST",
-		"OPTRE_200Rnd_95x40_Box",
-		"OPTRE_200Rnd_95x40_Box_Tracer",
-		"TCF_200Rnd_95x40_Box_JHP",
-		"TCF_200Rnd_95x40_Box_JHPT",
-		"TCF_200Rnd_95x40_Box_SS",
-		"TCF_200Rnd_95x40_Box_SST",
-		};
-    };
-	class 53rd_UNSC_M45: OPTRE_M45
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] M45";
-		baseWeapon="53rd_UNSC_M45";
-		cursor="OPTRE_M45";
-		magazines[]=
-		{
-			"OPTRE_6Rnd_8Gauge_Pellets",
-			"OPTRE_6Rnd_8Gauge_Slugs",
-			"TCF_6Rnd_8Gauge_Beanbag",
-			"OPTRE_12Rnd_8Gauge_Slugs",
-			"OPTRE_12Rnd_8Gauge_Pellets",
-		};
-    };
-//Working 5-21-2024	
-	class 53rd_MA37: OPTRE_MA37
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA37A";
-		baseWeapon="53rd_MA37";
-		cursor="OPTRE_MA37";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST",
-		};
-    };
-	class 53rd_MA37GL: OPTRE_MA37GL
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA37A + GL";
-		baseWeapon="53rd_MA37GL";
-		cursor="OPTRE_MA37";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST",
-		};
-    };
-	class 53rd_MA32: OPTRE_MA32
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA32A";
-		baseWeapon="53rd_MA32";
-		cursor="OPTRE_MA32";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST",
-		};
-    };
-	class 53rd_MA32GL: OPTRE_MA32GL
-	{
-		dlc="53rdAux";
-		author="53rd Aux Team";
-		displayName="[53rd] MA32A + GL";
-		baseWeapon="53rd_MA32GL";
-		cursor="OPTRE_MA37";
-		magazines[]=
-		{
-			"OPTRE_60Rnd_762x51_Mag",
-			"OPTRE_60Rnd_762x51_Mag_Tracer",
-			"OPTRE_60Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_60Rnd_762x51_Mag_AP",
-			"TCF_60Rnd_762x51_Mag_APT",
-			"TCF_60Rnd_762x51_Mag_JHP",
-			"TCF_60Rnd_762x51_Mag_JHPT",
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST",
-		};
-    };
-	class 53rd_M247_hmg: OPTRE_M247
-	{
-		author="53rd SC";
-		displayName="[53rd] M247 (HMG)";
-		baseWeapon="Optre_M247_hmg";
-		scope=2;
-		picture="\TCF_WEAPONRY\Weapons\Icons\gpmg_icon.paa";
-		model="\TCF_WEAPONRY\Weapons\Machineguns\M247GPMG\TCF_M247_GPMG.p3d";
-		HUD_BulletInARows=2;
-		HUD_TotalPosibleBullet=100;
-		magazines[]=
-		{
-			"OPTRE_100Rnd_127x99_BOX_AP",
-			"OPTRE_100Rnd_127x99_BOX_APT",
-			"OPTRE_100Rnd_127x99_BOX_HE",
-			"OPTRE_100Rnd_127x99_BOX_HET",
-		};
-		class GunParticles
-		{
-			class SecondEffect
+			class MuzzleSlot : MuzzleSlot
 			{
-				positionName="Nabojnicestart";
-				directionName="Nabojniceend";
-				effectName="CaselessAmmoCloud";
+				compatibleitems[] = { "OPTRE_MA5Suppressor", "19_UNSC_MA5A_Suppressor"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"19_UNSC_MA5A_smartlink"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"TCF_Rifle_Flashlight_IR",
+					"19_UNSC_MA5A_LAM"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+	};
+	class 53rd_UNSC_MA5AGL : 19_UNSC_MA5A_gl
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA5AGL";
+		baseWeapon = "53rd_UNSC_MA5AGL";
+		cursor = "OPTRE_MA5";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			class CowsSlot: CowsSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[]=
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
 				{
-					"optic_Nightstalker",
-					"optic_tws_mg",
-					"optic_SOS",
-					"optic_MRCO",
-					"optic_hamr",
-					"optic_Arco_blk_F",
-					"optic_ERCO_blk_F",
-					"optic_Holosight_blk_F",
+					"19_UNSC_MA5A_smartlink",
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"TCF_Rifle_Flashlight_IR",
+					"19_UNSC_MA5A_LAM"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_UNSC_MA5B : OPTRE_MA5B
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA5B";
+		baseWeapon = "53rd_UNSC_MA5B";
+		cursor = "OPTRE_MA5";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"TCF_MA5_SmartLink_v2",
+					"TCF_MA5_SmartLink_legacy",
+					"OPTRE_MA5_SmartLink",
+					"OPTRE_MA5_BUIS"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"TCF_Rifle_Flashlight_IR",
+					"OPTRE_M12_Laser"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_UNSC_MA5BGL : OPTRE_MA5BGL
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA5BGL";
+		baseWeapon = "53rd_UNSC_MA5BGL";
+		cursor = "OPTRE_MA5";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"TCF_MA5_SmartLink_v2",
+					"TCF_MA5_SmartLink_legacy",
+					"OPTRE_MA5_SmartLink",
+					"OPTRE_MA5_BUIS"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"TCF_Rifle_Flashlight_IR",
+					"OPTRE_M12_Laser"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	class 53rd_UNSC_MA5C : OPTRE_MA5C
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA5C";
+		baseWeapon = "53rd_UNSC_MA5C";
+		cursor = "OPTRE_MA5";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"TCF_MA5C_SmartLink_v2",
+					"TCF_MA5C_SmartLink_legacy",
+					"OPTRE_MA5C_SmartLink",
+					"OPTRE_MA5_BUIS"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"TCF_Rifle_Flashlight_IR",
+					"OPTRE_M12_Laser"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_UNSC_MA5CGL : OPTRE_MA5CGL
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA5CGL";
+		baseWeapon = "53rd_UNSC_MA5CGL";
+		cursor = "OPTRE_MA5";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"TCF_MA5C_SmartLink_v2",
+					"TCF_MA5C_SmartLink_legacy",
+					"OPTRE_MA5C_SmartLink",
+					"OPTRE_MA5_BUIS"
+
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"TCF_Rifle_Flashlight_IR",
+					"OPTRE_M12_Laser"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_MA32 : OPTRE_MA32
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA32A";
+		baseWeapon = "53rd_MA32";
+		cursor = "OPTRE_MA37";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA37KSuppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "TCF_M393_EOTECH_v2",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_MA5_BUIS" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_MA32GL : OPTRE_MA32GL
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA32A + GL";
+		baseWeapon = "53rd_MA32GL";
+		cursor = "OPTRE_MA37";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA37KSuppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "TCF_M393_EOTECH_v2",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_MA5_BUIS" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_MA37 : OPTRE_MA37
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA37A";
+		baseWeapon = "53rd_MA37";
+		cursor = "OPTRE_MA37";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA37KSuppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_MA37_Smartlink_Scope", "OPTRE_MA5_BUIS" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	//done
+	class 53rd_MA37GL : OPTRE_MA37GL
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] MA37A + GL";
+		baseWeapon = "53rd_MA37GL";
+		cursor = "OPTRE_MA37";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA37KSuppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_MA37_Smartlink_Scope", "OPTRE_MA5_BUIS" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+
+
+	//////BRs (55 and 55HB)
+	class 53rd_UNSC_br55 : 19_UNSC_br55
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] BR-55";
+		baseWeapon = "53rd_UNSC_br55";
+		cursor = "OPTRE_BR55";
+		magazines[] = {"53rd_36Rnd_95x40_Mag"};
+		magazineWell[] = { "53rd_Magwell_BR" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] +=
+				{
+					"OPTRE_BR45_Scope",
+					"OPTRE_BR55HB_Scope"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] +=
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+					"19_UNSC_BR55_LAM"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	class 53rd_UNSC_br55_gl : 19_UNSC_br55_gl
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] BR55/GL";
+		baseWeapon = "53rd_UNSC_br55_gl";
+		cursor = "OPTRE_BR55";
+		magazines[] = {"53rd_36Rnd_95x40_Mag"};
+		magazineWell[] = {"53rd_Magwell_BRHB"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] +=
+				{
+					"OPTRE_BR45_Scope",
+						"OPTRE_BR55HB_Scope"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] +=
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+					"19_UNSC_BR55_LAM"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	//done
+	class 53rd_UNSC_br55_HB : 19_UNSC_br55_HB
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] BR55-HB";
+		baseWeapon = "53rd_UNSC_br55_HB";
+		cursor = "OPTRE_BR55";
+		magazines[] = {"53rd_36Rnd_95x40_Mag"};
+		magazineWell[] = {"53rd_Magwell_BRHB"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] +=
+				{
+					"OPTRE_BR45_Scope",
+						"OPTRE_BR55HB_Scope"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] +=
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+
+			{
+				compatibleItems[] = {
+					"19_UNSC_BR55_LAM"
+				};
+
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	//done
+	class 53rd_UNSC_br55_HB_gl : 19_UNSC_br55_HB_gl
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] BR55-HB/GL";
+		baseWeapon = "53rd_UNSC_br55_HB_gl";
+		cursor = "OPTRE_BR55";
+		magazines[] = {"53rd_36Rnd_95x40_Mag"};
+		magazineWell[] = {"53rd_Magwell_BRHB"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] +=
+				{
+					"OPTRE_BR45_Scope",
+					"OPTRE_BR55HB_Scope"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] +=
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] +=
+				{
+						"19_UNSC_BR55_LAM"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+
+	//////DMRs (CR-77, M392, ARM)
+	
+	class 53rd_UNSC_CR77 : TCF_CR77
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] CR-77 Marksmen Rifle";
+		baseWeapon = "53rd_UNSC_CR77";
+		cursor = "OPTRE_M392";
+		magazines[] = {"53rd_15Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_BR" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Red",
+					"Optre_Recon_Sight_Green",
+					"19_UNSC_evo"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"OPTRE_m12_Laser",
+					"OPTRE_DMR_Light"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = { "bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk" };
+			};
+		};
+	};
+	class 53rd_UNSC_M392 : 19_UNSC_M392
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M392";
+		baseWeapon = "53rd_UNSC_M392";
+		cursor = "arifle";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"19_UNSC_evosd",
+					"19_UNSC_evo"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+					"OPTRE_M12_Laser",
+					"19_UNSC_MA5A_LAM"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	class 53rd_UNSC_ARM37 : TCF_ARM37
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] ARM-37";
+		baseWeapon = "53rd_UNSC_ARM37";
+		cursor = "arifle";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+				"OPTRE_M12_Laser",
+				"TCF_Rifle_Flashlight_IR"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	class 53rd_UNSC_ARM37_DMR : TCF_ARM37_DMR
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] ARM-37 DMR";
+		baseWeapon = "53rd_UNSC_ARM37_DMR";
+		cursor = "arifle";
+		magazines[] = {};
+		magazineWell[] = { "53rd_Magwell_BRHB" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+				"OPTRE_M12_Laser",
+				"TCF_Rifle_Flashlight_IR"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	class 53rd_UNSC_ARM37_GL : TCF_ARM37_GL
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] ARM-37 GL";
+		baseWeapon = "53rd_UNSC_ARM37_GL";
+		cursor = "arifle";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+				"OPTRE_M12_Laser",
+				"TCF_Rifle_Flashlight_IR"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	class 53rd_UNSC_ARM37_SHT : TCF_ARM37_SHT
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] ARM-37 SHT";
+		baseWeapon = "53rd_UNSC_ARM37_SHT";
+		cursor = "arifle";
+		magazines[] = {"53rd_32Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_MAx" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = {
+				"OPTRE_M12_Laser",
+				"TCF_Rifle_Flashlight_IR"
+				};
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+
+			};
+		};
+	};
+	class 53rd_UNSC_Commando : OPTRE_Commando_Black
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] Commando";
+		baseWeapon = "53rd_UNSC_Commando";
+		cursor = "OPTRE_M392";
+		magazines[] = {"53rd_15Rnd_762x51_Mag"};
+		magazineWell[] = { "53rd_Magwell_CR77" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "OPTRE_MA5Suppressor" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Red",
+					"Optre_Recon_Sight_Green",
+					"19_UNSC_evo"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {
+					"OPTRE_m12_Laser",
+					"OPTRE_DMR_Light"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = { "bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk" };
+			};
+		};
+	};
+
+	//////Shotguns (M90, M45, Bulldog)
+	class 53rd_UNSC_M90 : 19_UNSC_M90
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M90 Shotgun";
+		baseWeapon = "53rd_UNSC_M90";
+		cursor = "OPTRE_M45";
+		magazines[] = {"53rd_6Rnd_8Gauge_Pellets"};
+		magazineWell[] = { "53rd_Magwell_8Gauge" };
+	};
+	//done
+	class 53rd_UNSC_M45 : OPTRE_M45
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M45";
+		baseWeapon = "53rd_UNSC_M45";
+		cursor = "OPTRE_M45";
+		magazines[] = {"53rd_6Rnd_8Gauge_Pellets"};
+		magazineWell[] = { "53rd_Magwell_8Gauge" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"TCF_muzzle_cylinder",
+					"TCF_muzzle_IMP_CYL",
+					"TCF_muzzle_Modified"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Laser",
+					"OPTRE_M45_Flashlight"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+
+				};
+			};
+		};
+	};
+	//done
+	class 53rd_UNSC_Bulldog : OPTRE_CQS48_Bulldog_Automatic
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] Bulldog Combat Shotgun";
+		baseWeapon = "53rd_UNSC_Bulldog";
+		cursor = "OPTRE_M45";
+		magazines[] = {"53rd_12Rnd_12Gauge_Pellets"};
+		magazineWell[] = {"53rd_Magwell_12Gauge"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Laser",
+					"OPTRE_M45_Flashlight"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+
+				};
+			};
+		};
+	};
+
+	//////MGs (MMG, M247, M33
+	class 53rd_UNSC_MMG : MMG_02_black_F
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] Lapua MG";
+		baseWeapon = "53rd_UNSC_MMG";
+		cursor = "mg";
+		magazines[] =
+		{
+			"53rd_100Rnd_95x40_Box"
+		};
+		magazineWell[] = { "53rd_Magwell_Lapua" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
 					"OPTRE_M393_Scope",
@@ -563,23 +1154,24 @@ class CfgWeapons
 					"OPTRE_M393_EOTECH",
 				};
 			};
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[]={};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[]=
+				compatibleItems[] =
 				{
-					"acc_pointer_ir",
-					"acc_flashlight",
-					"OPTRE_BMR_Laser",
-					"optre_m12_laser"
+					"OPTRE_MA5Suppressor"
 				};
 			};
-			class UnderBarrelSlot: UnderBarrelSlot
+			class PointerSlot : PointerSlot
 			{
-				compatibleitems[]=
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Laser",
+					"TCF_Rifle_Flashlight_IR"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
 				{
 					"bipod_01_f_blk",
 					"bipod_02_f_blk",
@@ -587,23 +1179,83 @@ class CfgWeapons
 				};
 			};
 		};
-		initSpeed=1100;
-		modes[]=
+	};
+	class 53rd_M247_hmg : OPTRE_M247
+	{
+		author = "53rd SC";
+		displayName = "[53rd] M247 (HMG)";
+		baseWeapon = "Optre_M247_hmg";
+		scope = 2;
+		picture = "\TCF_WEAPONRY\Weapons\Icons\gpmg_icon.paa";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\M247GPMG\TCF_M247_GPMG.p3d";
+		HUD_BulletInARows = 2;
+		HUD_TotalPosibleBullet = 100;
+		magazines[] = { "53rd_100Rnd_762x51_Box" };
+		magazineWell[] = {"53rd_Magwell_M247"};
+		class GunParticles
+		{
+			class SecondEffect
+			{
+				positionName = "Nabojnicestart";
+				directionName = "Nabojniceend";
+				effectName = "CaselessAmmoCloud";
+			};
+		};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_Scope",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Laser",
+					"TCF_Rifle_Flashlight_IR"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+					"bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk"
+				};
+			};
+		};
+		initSpeed = 1100;
+		modes[] =
 		{
 			"FullAuto"
 		};
-		class FullAuto: Mode_FullAuto
+		class FullAuto : Mode_FullAuto
 		{
-			sounds[]=
+			sounds[] =
 			{
 				"StandardSound"
 			};
 			class BaseSoundModeType
 			{
-				weaponSoundEffect="DefaultRifle";
-				closure1[]={};
-				closure2[]={};
-				soundClosure[]=
+				weaponSoundEffect = "DefaultRifle";
+				closure1[] = {};
+				closure2[] = {};
+				soundClosure[] =
 				{
 					"closure1",
 					0.5,
@@ -611,23 +1263,23 @@ class CfgWeapons
 					0.5
 				};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
-				begin1[]=
+				begin1[] =
 				{
 					"\OPTRE_Weapons\MG\data\sounds\M247_1.wss",
 					1,
 					1,
 					2000
 				};
-				begin2[]=
+				begin2[] =
 				{
 					"\OPTRE_Weapons\MG\data\sounds\M247_2.wss",
 					1,
 					1,
 					2000
 				};
-				soundBegin[]=
+				soundBegin[] =
 				{
 					"begin1",
 					0.34,
@@ -638,77 +1290,77 @@ class CfgWeapons
 				{
 					class TailTrees
 					{
-						sound[]=
+						sound[] =
 						{
 							"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_trees",
 							1,
 							1,
 							1200
 						};
-						frequency=1;
-						volume="(1-interior/1.4)*trees";
+						frequency = 1;
+						volume = "(1-interior/1.4)*trees";
 					};
 					class TailForest
 					{
-						sound[]=
+						sound[] =
 						{
 							"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_forest",
 							1,
 							1,
 							1200
 						};
-						frequency=1;
-						volume="(1-interior/1.4)*forest";
+						frequency = 1;
+						volume = "(1-interior/1.4)*forest";
 					};
 					class TailInterior
 					{
-						sound[]=
+						sound[] =
 						{
 							"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_interior",
 							1.9952624,
 							1,
 							1200
 						};
-						frequency=1;
-						volume="interior";
+						frequency = 1;
+						volume = "interior";
 					};
 					class TailMeadows
 					{
-						sound[]=
+						sound[] =
 						{
 							"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_meadows",
 							1,
 							1,
 							1200
 						};
-						frequency=1;
-						volume="(1-interior/1.4)*(meadows/2 max sea/2)";
+						frequency = 1;
+						volume = "(1-interior/1.4)*(meadows/2 max sea/2)";
 					};
 					class TailHouses
 					{
-						sound[]=
+						sound[] =
 						{
 							"A3\Sounds_F\arsenal\weapons\Machineguns\Mk200\MK200_tail_houses",
 							1,
 							1,
 							1200
 						};
-						frequency=1;
-						volume="(1-interior/1.4)*houses";
+						frequency = 1;
+						volume = "(1-interior/1.4)*houses";
 					};
 				};
 			};
-			reloadTime=0.097499996;
-			dispersion=0.00105;
-			minRange=2;
-			minRangeProbab=0.0099999998;
-			midRange=200;
-			midRangeProbab=0.0099999998;
-			maxRange=800;
-			maxRangeProbab=0.0099999998;
+			reloadTime = 0.097499996;
+			dispersion = 0.00105;
+			minRange = 2;
+			minRangeProbab = 0.0099999998;
+			midRange = 200;
+			midRangeProbab = 0.0099999998;
+			maxRange = 800;
+			maxRangeProbab = 0.0099999998;
 		};
-		descriptionShort="M247 HMG";
-		handAnim[]=
+		descriptionShort = "M247 HMG";
+		handAnim[] =
 		{
 			"OFP2_ManSkeleton",
 			"\OPTRE_Weapons\MG\data\anim\OPTRE_M247_handanim.rtm",
@@ -716,7 +1368,159 @@ class CfgWeapons
 			"\OPTRE_MJOLNIR\data\anims\OPTRE_anims\Weapons\M247_Spartan.rtm"
 		};
 	};
-	class 53rd_m6_carbine: pdw2000_base_F
+	class 53rd_M33 : TCF_M33_T
+	{
+		dlc = MACRO_AUTHOR;
+		author = MACRO_AUTHOR;
+		baseWeapon = "53rd_M33";
+		scope = 2;
+		displayName = "[53rd] M33 (SAW)";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\M33\TCF_M33_T.p3d";
+		mass = 75;
+		reloadAction = "GestureReloadSPAR_01";
+		picture = "\TCF_WEAPONRY\Weapons\Machineguns\CM12\CM12_Icon.paa";
+		UiPicture = "\TCF_WEAPONRY\Weapons\Machineguns\CM12\CM12_Icon.paa";
+		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\Machineguns\MMG_01\Data\Anim\mmg_01.rtm"};
+		muzzles[] = {"this"};
+		cursor = "OPTRE_M73";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\MachineGun\MG_IRON.paa";
+		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_LMG";
+		Glasses = "OPTRE_GLASS_HUD_AmmoCount_LMG";
+		Eye = "OPTRE_EYE_HUD_AmmoCount_LMG";
+		HUD_BulletInARows = 3;
+		HUD_TotalPosibleBullet = 150;
+		magazines[] = {"53rd_128Rnd_762x51_Drum"};
+		magazineWell[] = { "53rd_Magwell_M33" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				inkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
+				displayName = "Muzzle Slot";
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+				iconPosition[] = {0,0.4};
+			};
+			class CowsSlot : CowsSlot
+			{
+				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
+				displayName = "$STR_A3_CowsSlot0";
+				compatibleitems[] =
+				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+				iconPosition[] = {0.5,0.3};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"TCF_Rifle_Flashlight_IR",
+					"OPTRE_M12_Laser"
+				};
+				iconPosition[] = {0.2,0.4};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				linkProxy = "\A3\Data_f_Mark\proxies\weapon_slots\UNDERBARREL";
+				compatibleItems[] =
+				{
+					"bipod_01_F_blk",
+					"bipod_02_F_blk",
+					"bipod_03_F_blk"
+				};
+			};
+		};
+	};
+	class 53rd_UNSC_CM12 : Dmns_CM_12
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] CM-12";
+		baseWeapon = "53rd_UNSC_CM12";
+		cursor = "mg";
+		magazines[] =
+		{
+			"53rd_100Rnd_95x40_Box"
+		};
+		magazineWell[] = { "53rd_Magwell_Lapua" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_Scope",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Laser",
+					"TCF_Rifle_Flashlight_IR"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+					"bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk"
+				};
+			};
+		};
+	};
+	class 53rd_M247H_Etilka : OPTRE_M247H_Etilka{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M247H Etilka";
+		baseWeapon = "53rd_M247H_Etilka";
+		cursor = "OPTRE_M41";
+		magazines[] =
+		{
+			"OPTRE_200Rnd_127x99_M247H_Etilka"
+		};
+		magazineWell[] = {};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = {};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = {};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = {};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+
+	//////SMGs (M7, M6 Carbine)
+	class 53rd_m6_carbine : pdw2000_base_F
 	{
 		dlc = MACRO_AUTHOR;
 		author = MACRO_AUTHOR;
@@ -725,7 +1529,7 @@ class CfgWeapons
 		picture = "\A3\Weapons_F_gamma\Smgs\pdw2000\data\UI\gear_pdw2X_X_CA.paa";
 		UiPicture = "\A3\Weapons_F\data\UI\icon_regular_CA.paa";
 		model = "\A3\Weapons_F_gamma\Smgs\pdw2000\pdw2000_F.p3d";
-		modelOptics = "-";		
+		modelOptics = "-";
 		baseWeapon = "53rd_m6_carbine";
 		cursor = "OPTRE_M6C";
 		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\SMG\SMG_IRON.paa";
@@ -733,69 +1537,18 @@ class CfgWeapons
 		Glasses = "OPTRE_GLASS_HUD_AmmoCount_PistolODST";
 		Eye = "OPTRE_EYE_HUD_AmmoCount_PistolSmart";
 		scope = 2;
-		magazines[] += 
-		{
-			"OPTRE_8Rnd_127x40_Mag",
-			"OPTRE_8Rnd_127x40_Mag_Tracer",
-			"TCF_8Rnd_127x40_Mag_AP",
-			"TCF_8Rnd_127x40_Mag_APT",
-			"TCF_8Rnd_127x40_Mag_HE",
-			"TCF_8Rnd_127x40_Mag_HET",
-			"TCF_8Rnd_127x40_Mag_HVAP",
-			"TCF_8Rnd_127x40_Mag_HVAPT",
-			"TCF_8Rnd_127x40_Mag_JHP",
-			"TCF_8Rnd_127x40_Mag_JHPT",
-			"TCF_8Rnd_127x40_Mag_SAPHE",
-			"TCF_8Rnd_127x40_Mag_SAPHET",
-			"TCF_8Rnd_127x40_Mag_SS",
-			"TCF_8Rnd_127x40_Mag_SST",
-			"TCF_8Rnd_127x40_Mag_NARQ",
-			"TCF_8Rnd_127x40_Mag_NARQT",
-			"TCF_8Rnd_127x40_Mag_FR",
-			"TCF_8Rnd_127x40_Mag_FG",
-			"OPTRE_12Rnd_127x40_Mag",
-			"OPTRE_12Rnd_127x40_Mag_Tracer",
-			"TCF_12Rnd_127x40_Mag_AP",
-			"TCF_12Rnd_127x40_Mag_APT",
-			"TCF_12Rnd_127x40_Mag_HE",
-			"TCF_12Rnd_127x40_Mag_HET",
-			"TCF_12Rnd_127x40_Mag_HVAP",
-			"TCF_12Rnd_127x40_Mag_HVAPT",
-			"TCF_12Rnd_127x40_Mag_JHP",
-			"TCF_12Rnd_127x40_Mag_JHPT",
-			"TCF_12Rnd_127x40_Mag_SAPHE",
-			"TCF_12Rnd_127x40_Mag_SAPHET",
-			"TCF_12Rnd_127x40_Mag_SS",
-			"TCF_12Rnd_127x40_Mag_SST",
-			"TCF_12Rnd_127x40_Mag_NARQ",
-			"TCF_12Rnd_127x40_Mag_NARQT",
-			"TCF_16Rnd_127x40_Mag",
-			"TCF_16Rnd_127x40_Mag_Tracer",
-			"TCF_16Rnd_127x40_Mag_AP",
-			"TCF_16Rnd_127x40_Mag_APT",
-			"TCF_16Rnd_127x40_Mag_HE",
-			"TCF_16Rnd_127x40_Mag_HET",
-			"TCF_16Rnd_127x40_Mag_HVAP",
-			"TCF_16Rnd_127x40_Mag_HVAPT",
-			"TCF_16Rnd_127x40_Mag_JHP",
-			"TCF_16Rnd_127x40_Mag_JHPT",
-			"TCF_16Rnd_127x40_Mag_SAPHE",
-			"TCF_16Rnd_127x40_Mag_SAPHET",
-			"TCF_16Rnd_127x40_Mag_SS",
-			"TCF_16Rnd_127x40_Mag_SST",
-			"TCF_16Rnd_127x40_Mag_NARQ",
-			"TCF_16Rnd_127x40_Mag_NARQT"
-		};
-				
+		magazines[] = { "53rd_12Rnd_127x40_Mag" };
+		magazineWell[] = { "53rd_Magwell_M6C" };
+
 		reloadAction = "GestureReloadSMG_03";
 		recoil = "recoil_pdw";
 		distanceZoomMin = 50;
 		distanceZoomMax = 50;
-		modes[]=
+		modes[] =
 		{
 			"Single"
 		};
-		class Single: Mode_SemiAuto
+		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound","CompSound"};
 			class BaseSoundModeType
@@ -805,7 +1558,7 @@ class CfgWeapons
 				closure2[] = {"",1.0,1,200};
 				soundClosure[] = {"closure1",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\Pistol\data\sounds\Magnum_1.wss",1.3,1,200};
 				soundBegin[] = {"begin1",1};
@@ -843,7 +1596,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\4-Five\Silencer_4-Five_short_01",1.0,1,600};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\4-Five\Silencer_4-Five_short_02",1.0,1,600};
@@ -883,7 +1636,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class CompSound: BaseSoundModeType
+			class CompSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Pistols\4-Five\Silencer_4-Five_short_01",1.0,1,600};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Pistols\4-Five\Silencer_4-Five_short_02",1.0,1,600};
@@ -936,36 +1689,28 @@ class CfgWeapons
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 500;
 		};
-		
-		class WeaponSlotsInfo: WeaponSlotsInfo
+	
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
 					"OPTRE_M6_silencer"
 				};
-				iconPosition[]={0.1,0.41};
-				iconScale=0.2;
+				iconPosition[] = {0.1,0.41};
+				iconScale = 0.2;
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
 					"optre_m393_eotech",
 					"optre_m7_sight",
 					"optre_m6c_scope"
 				};
-				iconPosition[]={0.40000001,0.31999999};
-				iconScale=0.15000001;
+				iconPosition[] = {0.40000001,0.31999999};
+				iconScale = 0.15000001;
 			};
 			class PointerSlot
 			{
@@ -978,14 +1723,54 @@ class CfgWeapons
 		initSpeed = 600;
 		class ItemInfo
 		{
-			priority=2;
+			priority = 2;
 		};
 	};
-	class 53rd_MASR: DMR_04_base_F
+	class 53rd_M7 : 19_UNSC_M7
+	{
+		dlc = MACRO_AUTHOR;
+		author = MACRO_AUTHOR;
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[53rd] M7 Caseless SMG";
+		baseweapon = "53rd_M7";
+		recoil = "recoil_M7X";
+		class Single;
+		class FullAuto;
+		magazines[] = { "53rd_60Rnd_5x23mm_Mag" };
+		magazineWell[] = {"53rd_Magwell_M7"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 100;
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = {"optre_m7_silencer"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = {"OPTRE_M7_Sight"};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Laser",
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+
+	//////Snipers (MASR, SRS)
+	class 53rd_MASR : DMR_04_base_F
 	{
 		author = "Operative Peroski";
 		_generalMacro = "srifle_DMR_04_F";
-		scope= 2;
+		scope = 2;
 		model = "\A3\Weapons_F_Mark\LongRangeRifles\DMR_04\DMR_04_F.p3d";
 		dexterity = 1.6799999;
 		displayName = "[53rd] MASR-1";
@@ -994,101 +1779,46 @@ class CfgWeapons
 		descriptionShort = "$STR_A3_CfgWeapons_srifle_DMR_04_F1";
 		inertia = 0.60000002;
 		aimTransitionSpeed = 0.80000001;
-		magazines[] = 
-		{ 
-			"OPTRE_4Rnd_145x114_APFSDS_Mag",
-			"OPTRE_4Rnd_145x114_HVAP_Mag",
-			"OPTRE_4Rnd_145x114_HEDP_Mag",
-			"21st_10Rnd_145x114_APFSDS_Mag",
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		magazines[] = {"53rd_4Rnd_145x114_APFSDS_Mag"};
+		magazineWell[] = { "53rd_Magwell_Snipers" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass=30;
-		};
-		class ItemInfo
-		{
-			priority=1;
-		};
-	};
-	class 53rd_M33: TCF_M33_T
-	{
-		dlc = MACRO_AUTHOR;
-		author = MACRO_AUTHOR;
-		baseWeapon = "53rd_M33";
-		scope = 2;
-		displayName = "[53rd] M33 (SAW)";
-		model = "\TCF_WEAPONRY\Weapons\Machineguns\M33\TCF_M33_T.p3d";
-		mass = 75;
-		reloadAction = "GestureReloadSPAR_01";
-		picture = "\TCF_WEAPONRY\Weapons\Machineguns\CM12\CM12_Icon.paa";
-		UiPicture = "\TCF_WEAPONRY\Weapons\Machineguns\CM12\CM12_Icon.paa";
-		handAnim[] = {"OFP2_ManSkeleton","\A3\Weapons_F_Mark\Machineguns\MMG_01\Data\Anim\mmg_01.rtm"};
-		muzzles[] = {"this"};
-		cursor = "OPTRE_M73";
-		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\MachineGun\MG_IRON.paa";
-		ODST_1 = "OPTRE_ODST_HUD_AmmoCount_LMG";
-		Glasses = "OPTRE_GLASS_HUD_AmmoCount_LMG";
-		Eye = "OPTRE_EYE_HUD_AmmoCount_LMG";
-		HUD_BulletInARows = 3;
-		HUD_TotalPosibleBullet = 150;
-		magazines[] = 
-		{
-			"TCF_Gamma_762_mag",
-			"TCF_Gamma_762_mag_Tracer",
-			"TCF_762_jhp_mag",
-			"TCF_762_jhp_mag_tracer",
-			"TCF_762_slap_mag",
-			"TCF_762_slap_mag_tracer",
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			class MuzzleSlot: MuzzleSlot
+			mass = 30;
+			class MuzzleSlot
 			{
 				inkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
 				displayName = "Muzzle Slot";
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
-                    "OPTRE_srs99d_suppressor"
+					"OPTRE_MA5Suppressor"
 				};
-				iconPosition[] = {0,0.4};
+				iconPosition[] = { 0,0.4 };
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot
 			{
 				linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
 				displayName = "$STR_A3_CowsSlot0";
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
-					"optic_Nightstalker",
-					"optic_tws_mg",
-					"optic_SOS",
-					"optic_MRCO",
-					"optic_hamr",
-					"optic_Arco_blk_F",
-					"optic_ERCO_blk_F",
-					"optic_Holosight_blk_F",
-					"OPTRE_M392_Scope",
-					"OPTRE_M7_Sight",
-					"OPTRE_M393_Scope",
-					"OPTRE_M393_ACOG",
-					"OPTRE_M393_EOTECH"
+					"OPTRE_BMR_Scope",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
 				};
-				iconPosition[] = {0.5,0.3};
+				iconPosition[] = { 0.5,0.3 };
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot
 			{
 				compatibleitems[] =
-                {
-                    "acc_pointer_ir",
-                    "acc_flashlight",
-                    "OPTRE_BMR_Laser",
-                    "optre_m12_laser"
-                };
-				iconPosition[] = {0.2,0.4};
+				{
+					"TCF_Rifle_Flashlight_IR",
+					"OPTRE_BMR_Laser"
+				};
+				iconPosition[] = { 0.2,0.4 };
 			};
-			class UnderBarrelSlot: UnderBarrelSlot
+			class UnderBarrelSlot
 			{
 				linkProxy = "\A3\Data_f_Mark\proxies\weapon_slots\UNDERBARREL";
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
 					"bipod_01_F_blk",
 					"bipod_02_F_blk",
@@ -1096,8 +1826,792 @@ class CfgWeapons
 				};
 			};
 		};
+		class ItemInfo
+		{
+			priority = 1;
+		};
 	};
-	class 53rd_M73H: OPTRE_M73
+	class 53rd_UNSC_SRS99_AM : 19_UNSC_SRS99AM
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] SRS-99AM";
+		baseWeapon = "53rd_UNSC_SRS99_AM";
+		cursor = "OPTRE_SRS99";
+		magazines[] = {"53rd_4Rnd_145x114_APFSDS_Mag"};
+		magazineWell[] = {"53rd_Magwell_Snipers"};
+		maxZeroing = 2000;
+	};
+	class 53rd_UNSC_SRS99_Fang : OPTRE_SRS99C
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] SRS-99 (Fang)";
+		baseWeapon = "53rd_UNSC_SRS99_Fang";
+		cursor = "OPTRE_SRS99";
+		hiddenSelections[] = {"camo","camo1"};
+		hiddenSelectionsTextures[] = {"53rd_Weapons\SRS99 (NornFang)\Norn_MainBody_CO.paa","53rd_Weapons\SRS99 (NornFang)\Mag_CO.paa"};
+		magazines[] = {"53rd_4Rnd_145x114_APFSDS_Mag"};
+		magazineWell[] = {"53rd_Magwell_Snipers"};
+		maxZeroing = 2000;
+	};
+
+	//////Pistols (M6C, M6G)
+	class 53rd_UNSC_M6C : OPTRE_M6B
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M6C";
+		baseWeapon = "53rd_UNSC_M6C";
+		cursor = "OPTRE_M6B";
+		magazines[] = {"53rd_12Rnd_127x40_Mag"};
+		magazineWell[] = { "53rd_Magwell_M6C" };
+		linkedItems[] = { "OPTRE_M6C_compensator", "OPTRE_M6C_Laser" };
+
+		picture = "\OPTRE_weapons\pistol\icons\m6c_icon.paa";
+		model = "\OPTRE_Weapons\Pistol\m6c.p3d";
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Pistols\M6F_IRON.paa";
+		hiddenSelections[] = { "camo1" };
+		hiddenSelectionsTextures[] = { "\optre_weapons\pistol\data\m6c_m6c_co.paa" };
+
+		class Single : Single {
+			reloadTime = .1875;
+		};
+
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = { "OPTRE_M6C_compensator", "OPTRE_M6_silencer"};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_M6C_Scope" };
+			};
+		};
+	};
+	class 53rd_UNSC_M6G : OPTRE_M6B
+	{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M6G";
+		baseWeapon = "53rd_UNSC_M6G";
+		cursor = "OPTRE_M6B";
+		magazines[] = {"53rd_8Rnd_127x40_Mag"};
+		magazineWell[] = { "53rd_Magwell_M6G" };
+
+		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Pistols\M6F_IRON.paa";
+		model = "\OPTRE_Weapons\Pistol\m6g.p3d";
+		hiddenSelections[] = { "camo1" };
+		hiddenSelectionsTextures[] = { "\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+		picture = "\OPTRE_weapons\pistol\icons\m6g_icon.paa";
+
+
+		class Single : Single {
+			reloadTime = .25;
+		};
+
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = { "OPTRE_M6_silencer" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_M6C_Scope" };
+			};
+
+		};
+	};
+
+	//////Riot Shields
+	//Mostly taken from OPTRE as we need to recreate the item entirely to customize magazines and magwells
+	//Required for riot shields to be implemented properly
+	class OPTRE_Riot_Shield_Icon_Attachments : UnderBarrelSlot
+	{
+		iconPinpoint = "center";
+		iconPosition[] = { 1,0 };
+		iconScale = 0.0099999998;
+		iconPicture = "\A3\weapons_f_mark\data\UI\attachment_under.paa";
+		class compatibleItems
+		{
+			OPTRE_Riot_Shield_Icon_A2S = 1;
+			OPTRE_Riot_Shield_Icon_UNSC = 1;
+			OPTRE_Riot_Shield_Icon_Police = 1;
+			OPTRE_Riot_Shield_Icon_CMA = 1;
+			OPTRE_Riot_Shield_Icon_MEU = 1;
+			OPTRE_Riot_Shield_Icon_Fist = 1;
+			OPTRE_Riot_Shield_Icon_Innie = 1;
+			OPTRE_Riot_Shield_Icon_Jolly = 1;
+			OPTRE_Riot_Shield_Icon_ODST = 1;
+			OPTRE_Riot_Shield_Icon_ODSTBlue = 1;
+			OPTRE_Riot_Shield_Icon_Virgil = 1;
+		};
+	};
+
+	
+	class 53rd_M6G_Riot_Shield : 53rd_UNSC_M6G
+	{
+		author = "53rd Aux Team";
+		baseWeapon = "53rd_M6G_Riot_Shield";
+		scope = 2;
+		displayName = "[53rd] Riot Shield (M6G)";
+		magazines[] = { "53rd_8Rnd_127x40_Mag" };
+		magazineWell[] = { "53rd_Magwell_M6G" };
+
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = { "OPTRE_M6_silencer" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_M6C_Scope" };
+			};
+		};
+		model = "\OPTRE_Weapons\RiotShield\riotshield_M6G.p3d";
+		hiddenSelections[] =
+		{
+			"camoShield",
+			"camoWindshield",
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\Body_co.paa",
+			"OPTRE_Weapons\riotshield\data\body_ca.paa",
+			"\OPTRE_Weapons\Pistol\data\M6G_CO.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\body.rvmat",
+			"OPTRE_Weapons\riotshield\data\glass.rvmat",
+			"optre_weapons\pistol\data\m6g.rvmat"
+		};
+		handAnim[] =
+		{
+			"OFP2_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\m6g_human.rtm",
+			"Spartan_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\spartan\m6g_spartan.rtm"
+		};
+		type = 1;
+		inertia = 0.5;
+		dexterity = 1.25;
+		class OpticsModes
+		{
+			class ironsight
+			{
+				cameraDir = "eye_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 0;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+			class shieldView
+			{
+				cameraDir = "eye2_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye2"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye2";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 1;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
+		class FlashLight
+		{
+			color[] = { 180,180,180 };
+			ambient[] = { 0.89999998,0.89999998,0.89999998 };
+			intensity = 750;
+			size = 1;
+			innerAngle = 5;
+			outerAngle = 45;
+			coneFadeCoef = 10;
+			position = "flash_dir";
+			direction = "flash";
+			useFlare = 1;
+			flareSize = 1.5;
+			flareMaxDistance = 150;
+			dayLight = 0;
+			class Attenuation
+			{
+				start = 0;
+				constant = 0.5;
+				linear = 0.1;
+				quadratic = 0.2;
+				hardLimitStart = 100;
+				hardLimitEnd = 170;
+			};
+			scale[] = { 0 };
+		};
+	};
+	class 53rd_Bulldog_Riot_Shield : OPTRE_CQS48S_Chihuahua_Automatic
+	{
+		author = "53rd Aux Team";
+		baseWeapon = "53rd_Bulldog_Riot_Shield";
+		scope = 2;
+		displayName = "[53rd] Riot Shield (Bulldog)";
+		magazines[] = { "53rd_12Rnd_12Gauge_Pellets" };
+		magazineWell[] = { "53rd_Magwell_12Gauge" };
+		model = "\OPTRE_Weapons\RiotShield\riotshield_Bulldog.p3d";
+		hiddenSelections[] =
+		{
+			"camoShield",
+			"camoWindshield",
+			"camoBody",
+			"camoDecal"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\Body_co.paa",
+			"OPTRE_Weapons\riotshield\data\body_ca.paa",
+			"\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa",
+			"\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\body.rvmat",
+			"OPTRE_Weapons\riotshield\data\glass.rvmat",
+			"\OPTRE_Weapons\bulldog\data\chihuahua\body.rvmat",
+			"\OPTRE_Weapons\bulldog\data\decal\cqs48as\decal.rvmat"
+		};
+		handAnim[] =
+		{
+			"OFP2_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\bulldog_human.rtm",
+			"Spartan_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\spartan\bulldog_spartan.rtm"
+		};
+		type = 1;
+		inertia = 0.5;
+		dexterity = 1.25;
+		class OpticsModes
+		{
+			class ironsight
+			{
+				cameraDir = "eye_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 0;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+			class shieldView
+			{
+				cameraDir = "eye2_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye2"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye2";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 1;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
+		class FlashLight
+		{
+			color[] = { 180,180,180 };
+			ambient[] = { 0.89999998,0.89999998,0.89999998 };
+			intensity = 750;
+			size = 1;
+			innerAngle = 5;
+			outerAngle = 45;
+			coneFadeCoef = 10;
+			position = "flash_dir";
+			direction = "flash";
+			useFlare = 1;
+			flareSize = 1.5;
+			flareMaxDistance = 150;
+			dayLight = 0;
+			class Attenuation
+			{
+				start = 0;
+				constant = 0.5;
+				linear = 0.1;
+				quadratic = 0.2;
+				hardLimitStart = 100;
+				hardLimitEnd = 170;
+			};
+			scale[] = { 0 };
+		};
+
+		
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_BMR_Laser",
+					"OPTRE_M45_Flashlight"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+
+				};
+			};
+		};
+	};
+	class 53rd_M7_Riot_Shield : OPTRE_M7
+	{
+		author = "53rd Aux Team";
+		baseWeapon = "53rd_M7_Riot_Shield";
+		scope = 2;
+		displayName = "[53rd] Riot Shield (M7)";
+		
+		magazines[] = { "53rd_48Rnd_5x23mm_Mag" };
+		magazineWell[] = { "53rd_Magwell_M7" };
+
+		model = "\OPTRE_Weapons\RiotShield\riotshield_M7.p3d";
+		hiddenSelections[] =
+		{
+			"camoShield",
+			"camoWindshield",
+			"camo",
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\Body_co.paa",
+			"OPTRE_Weapons\riotshield\data\body_ca.paa",
+			"OPTRE_Weapons\smg\data\m7_m7_co.paa",
+			"OPTRE_Weapons\smg\data\m7_magazine_co.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\body.rvmat",
+			"OPTRE_Weapons\riotshield\data\glass.rvmat",
+			"optre_weapons\smg\data\m7_m7.rvmat",
+			"optre_weapons\smg\data\m7_magazine.rvmat"
+		};
+		handAnim[] =
+		{
+			"OFP2_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\m7_human.rtm",
+			"Spartan_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\spartan\m7_spartan.rtm"
+		};
+		type = 1;
+		inertia = 0.5;
+		dexterity = 1.25; 
+		class OpticsModes
+		{
+			class ironsight
+			{
+				cameraDir = "eye_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 0;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+			class shieldView
+			{
+				cameraDir = "eye2_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye2"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye2";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 1;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
+		class FlashLight
+		{
+			color[] = { 180,180,180 };
+			ambient[] = { 0.89999998,0.89999998,0.89999998 };
+			intensity = 750;
+			size = 1;
+			innerAngle = 5;
+			outerAngle = 45;
+			coneFadeCoef = 10;
+			position = "flash_dir";
+			direction = "flash";
+			useFlare = 1;
+			flareSize = 1.5;
+			flareMaxDistance = 150;
+			dayLight = 0;
+			class Attenuation
+			{
+				start = 0;
+				constant = 0.5;
+				linear = 0.1;
+				quadratic = 0.2;
+				hardLimitStart = 100;
+				hardLimitEnd = 170;
+			};
+			scale[] = { 0 };
+		};
+		class close : FullAuto
+		{
+			burst = 10;
+			aiRateOfFire = 0.5;
+			aiRateOfFireDistance = 50;
+			minRange = 0;
+			minRangeProbab = 0.050000001;
+			midRange = 30;
+			midRangeProbab = 0.69999999;
+			maxRange = 50;
+			maxRangeProbab = 0.039999999;
+			showToPlayer = 0;
+		};
+		class short : close
+		{
+			burst = 8;
+			aiRateOfFire = 2;
+			aiRateOfFireDistance = 300;
+			minRange = 50;
+			minRangeProbab = 0.050000001;
+			midRange = 150;
+			midRangeProbab = 0.69999999;
+			maxRange = 300;
+			maxRangeProbab = 0.039999999;
+		};
+		class medium : close
+		{
+			burst = 5;
+			aiRateOfFire = 4;
+			aiRateOfFireDistance = 600;
+			minRange = 200;
+			minRangeProbab = 0.050000001;
+			midRange = 400;
+			midRangeProbab = 0.60000002;
+			maxRange = 600;
+			maxRangeProbab = 0.1;
+		};
+		class far : close
+		{
+			burst = 3;
+			aiRateOfFire = 6;
+			aiRateOfFireDistance = 700;
+			minRange = 350;
+			minRangeProbab = 0.039999999;
+			midRange = 550;
+			midRangeProbab = 0.5;
+			maxRange = 700;
+			maxRangeProbab = 0.0099999998;
+		};
+		aiDispersionCoefY = 10;
+		aiDispersionCoefX = 10;
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 100;
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = { "optre_m7_silencer" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_M7_Sight" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Laser",
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	class 53rd_M6C_Riot_Shield : 53rd_UNSC_M6C
+	{
+		author = "53rd Aux Team";
+		baseWeapon = "53rd_M6C_Riot_Shield";
+		scope = 2;
+		displayName = "[53rd] Riot Shield (M6C)";
+		magazines[] = { "53rd_12Rnd_127x40_Mag" };
+		magazineWell[] = { "53rd_Magwell_M6C" };
+
+		class WeaponSlotsInfo : WeaponSlotsInfo {
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] = { "OPTRE_M6C_compensator", "OPTRE_M6_silencer" };
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = { "OPTRE_M6C_Scope" };
+			};
+		};
+		model = "\OPTRE_Weapons\RiotShield\riotshield_M6C.p3d";
+		hiddenSelections[] =
+		{
+			"camoShield",
+			"camoWindshield",
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\Body_co.paa",
+			"OPTRE_Weapons\riotshield\data\body_ca.paa",
+			"\optre_weapons\pistol\data\m6c_m6c_co.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\body.rvmat",
+			"OPTRE_Weapons\riotshield\data\glass.rvmat",
+			"optre_weapons\pistol\data\m6c_m6c.rvmat"
+		};
+		handAnim[] =
+		{
+			"OFP2_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\m6c_human.rtm",
+			"Spartan_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\spartan\m6c_spartan.rtm"
+		};
+		type = 1;
+		inertia = 0.5;
+		dexterity = 1.25;
+		class OpticsModes
+		{
+			class ironsight
+			{
+				cameraDir = "eye_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 0;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+			class shieldView
+			{
+				cameraDir = "eye2_dir";
+				discreteDistance[] = { 100 };
+				discreteDistanceCameraPoint[] =
+				{
+					"eye2"
+				};
+				discreteDistanceInitIndex = 0;
+				discretefov[] = {};
+				discreteInitIndex = 0;
+				distancezoommax = 100;
+				distancezoommin = 100;
+				maxZeroing = 100;
+				memorypointcamera = "eye2";
+				opticsDisablePeripherialVision = 0;
+				opticsFlare = 0;
+				opticsID = 1;
+				opticsPPEffects[] =
+				{
+					"",
+					""
+				};
+				opticsZoomMin = 0.375;
+				opticsZoomMax = 1.1;
+				opticsZoomInit = 0.75;
+				useModelOptics = 0;
+				visionMode[] = {};
+			};
+		};
+		class FlashLight
+		{
+			color[] = { 180,180,180 };
+			ambient[] = { 0.89999998,0.89999998,0.89999998 };
+			intensity = 750;
+			size = 1;
+			innerAngle = 5;
+			outerAngle = 45;
+			coneFadeCoef = 10;
+			position = "flash_dir";
+			direction = "flash";
+			useFlare = 1;
+			flareSize = 1.5;
+			flareMaxDistance = 150;
+			dayLight = 0;
+			class Attenuation
+			{
+				start = 0;
+				constant = 0.5;
+				linear = 0.1;
+				quadratic = 0.2;
+				hardLimitStart = 100;
+				hardLimitEnd = 170;
+			};
+			scale[] = { 0 };
+		};
+	};
+
+
+
+	//////NOT VISIBLE OR SOMETHING WRONG
+	//Not visible
+	class 53rd_M73H : OPTRE_M73
 	{
 		dlc = MACRO_AUTHOR;
 		author = MACRO_AUTHOR;
@@ -1107,7 +2621,7 @@ class CfgWeapons
 		model = "\OPTRE_Weapons\MG\M73.p3d";
 		displayName = "[53rd] M73H Medium Machine Gun";
 		descriptionShort = "UNSC Medium Machine Gun";
-		magazines[] = 
+		magazines[] =
 		{
 			"OPTRE_150Rnd_95x60_Box_JHP",
 			"OPTRE_150Rnd_95x60_Box_HPSAP",
@@ -1128,20 +2642,20 @@ class CfgWeapons
 				effectName = "CaselessAmmoCloud";
 			};
 		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 100;
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
-                    "optre_m7_silencer",
+					"optre_m7_silencer",
 					"OPTRE_srs99d_suppressor"
 				};
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
 					"optic_Nightstalker",
 					"optic_tws_mg",
@@ -1159,14 +2673,14 @@ class CfgWeapons
 					"OPTRE_M73_SmartLink"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] = {};
 			};
-			class UnderBarrelSlot: UnderBarrelSlot
+			class UnderBarrelSlot : UnderBarrelSlot
 			{
 				linkProxy = "\A3\Data_f_Mark\proxies\weapon_slots\UNDERBARREL";
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
 					"bipod_01_F_blk",
 					"bipod_02_F_blk",
@@ -1175,7 +2689,9 @@ class CfgWeapons
 			};
 		};
 	};
-	class 53rd_AR0M37: TCF_AR0M37
+	//Not visible
+	//done
+	class 53rd_AR0M37 : TCF_AR0M37
 	{
 		dlc = MACRO_AUTHOR;
 		author = MACRO_AUTHOR;
@@ -1190,35 +2706,24 @@ class CfgWeapons
 		HUD_TotalPosibleBullet = 32;
 		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR.paa";
 		recoil = "recoil_trg21";
-		magazines[] += 
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST"
-		};
-		magazineWell[] += {};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		magazines[] = {};
+		magazineWell[] = {"53rd_Magwell_AR0"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 50;
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
 					"OPTRE_MA5Suppressor",
 					"OPTRE_M6_silencer",
 					"optre_m7_silencer"
 				};
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = 
-				{					
+				compatibleitems[] =
+				{
 					"optic_Nightstalker",
 					"optic_tws_mg",
 					"optic_SOS",
@@ -1235,23 +2740,23 @@ class CfgWeapons
 					"optic_ico_01_black_f"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
 					"acc_pointer_ir",
-                    "acc_flashlight",
-                    "OPTRE_BMR_Laser",
-                    "optre_m12_laser"
+					"acc_flashlight",
+					"OPTRE_BMR_Laser",
+					"optre_m12_laser"
 				};
 			};
-			class UnderBarrelSlot: UnderBarrelSlot
+			class UnderBarrelSlot : UnderBarrelSlot
 			{
 				compatibleItems[] = {};
 			};
 		};
 		modes[] = {"FullAuto","Single","close","short","medium","far"};
-		class Single: Mode_SemiAuto
+		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -1261,7 +2766,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -1308,7 +2813,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -1359,7 +2864,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class FullAuto: Mode_FullAuto
+		class FullAuto : Mode_FullAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -1369,7 +2874,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -1416,7 +2921,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -1467,7 +2972,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class close: FullAuto
+		class close : FullAuto
 		{
 			burst = 10;
 			aiRateOfFire = 0.5;
@@ -1480,7 +2985,7 @@ class CfgWeapons
 			maxRangeProbab = 0.04;
 			showToPlayer = 0;
 		};
-		class short: close
+		class short : close
 		{
 			burst = 8;
 			aiRateOfFire = 2;
@@ -1492,7 +2997,7 @@ class CfgWeapons
 			maxRange = 300;
 			maxRangeProbab = 0.04;
 		};
-		class medium: close
+		class medium : close
 		{
 			burst = 5;
 			aiRateOfFire = 4;
@@ -1504,7 +3009,7 @@ class CfgWeapons
 			maxRange = 600;
 			maxRangeProbab = 0.1;
 		};
-		class far: close
+		class far : close
 		{
 			burst = 3;
 			aiRateOfFire = 6;
@@ -1519,7 +3024,9 @@ class CfgWeapons
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 10;
 	};
-	class 53rd_AR0M37_M420: TCF_AR0M37_GL
+	//Not visible
+	//done
+	class 53rd_AR0M37_M420 : TCF_AR0M37_GL
 	{
 		dlc = MACRO_AUTHOR;
 		author = MACRO_AUTHOR;
@@ -1534,35 +3041,24 @@ class CfgWeapons
 		HUD_TotalPosibleBullet = 32;
 		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR.paa";
 		recoil = "recoil_trg21";
-		magazines[] += 
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST"
-		};
-		magazineWell[] += {};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		magazines[] = {};
+		magazineWell[] = { "53rd_Magwell_AR0" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 50;
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
 					"OPTRE_MA5Suppressor",
 					"OPTRE_M6_silencer",
 					"optre_m7_silencer"
 				};
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = 
-				{					
+				compatibleitems[] =
+				{
 					"optic_Nightstalker",
 					"optic_tws_mg",
 					"optic_SOS",
@@ -1579,19 +3075,19 @@ class CfgWeapons
 					"optic_ico_01_black_f"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
 					"acc_pointer_ir",
-                    "acc_flashlight",
-                    "OPTRE_BMR_Laser",
-                    "optre_m12_laser"
+					"acc_flashlight",
+					"OPTRE_BMR_Laser",
+					"optre_m12_laser"
 				};
 			};
 		};
 		modes[] = {"FullAuto","Single","close","short","medium","far"};
-		class Single: Mode_SemiAuto
+		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -1601,7 +3097,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -1648,7 +3144,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -1699,7 +3195,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class FullAuto: Mode_FullAuto
+		class FullAuto : Mode_FullAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -1709,7 +3205,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -1756,7 +3252,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -1807,7 +3303,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class close: FullAuto
+		class close : FullAuto
 		{
 			burst = 10;
 			aiRateOfFire = 0.5;
@@ -1820,7 +3316,7 @@ class CfgWeapons
 			maxRangeProbab = 0.04;
 			showToPlayer = 0;
 		};
-		class short: close
+		class short : close
 		{
 			burst = 8;
 			aiRateOfFire = 2;
@@ -1832,7 +3328,7 @@ class CfgWeapons
 			maxRange = 300;
 			maxRangeProbab = 0.04;
 		};
-		class medium: close
+		class medium : close
 		{
 			burst = 5;
 			aiRateOfFire = 4;
@@ -1844,7 +3340,7 @@ class CfgWeapons
 			maxRange = 600;
 			maxRangeProbab = 0.1;
 		};
-		class far: close
+		class far : close
 		{
 			burst = 3;
 			aiRateOfFire = 6;
@@ -1859,7 +3355,9 @@ class CfgWeapons
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 10;
 	};
-	class 53rd_AR0M37_M45U: TCF_AR0M37_SHT
+	//Not visible
+	//done
+	class 53rd_AR0M37_M45U : TCF_AR0M37_SHT
 	{
 		dlc = MACRO_AUTHOR;
 		author = MACRO_AUTHOR;
@@ -1874,35 +3372,24 @@ class CfgWeapons
 		HUD_TotalPosibleBullet = 32;
 		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR.paa";
 		recoil = "recoil_trg21";
-		magazines[] += 
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST"
-		};
-		magazineWell[] += {};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		magazines[] = {};
+		magazineWell[] = { "53rd_Magwell_AR0" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 50;
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
 					"OPTRE_MA5Suppressor",
 					"OPTRE_M6_silencer",
 					"optre_m7_silencer"
 				};
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = 
-				{					
+				compatibleitems[] =
+				{
 					"optic_Nightstalker",
 					"optic_tws_mg",
 					"optic_SOS",
@@ -1919,19 +3406,19 @@ class CfgWeapons
 					"optic_ico_01_black_f"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
 					"acc_pointer_ir",
-                    "acc_flashlight",
-                    "OPTRE_BMR_Laser",
-                    "optre_m12_laser"
+					"acc_flashlight",
+					"OPTRE_BMR_Laser",
+					"optre_m12_laser"
 				};
 			};
 		};
 		modes[] = {"FullAuto","Single","close","short","medium","far"};
-		class Single: Mode_SemiAuto
+		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -1941,7 +3428,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -1988,7 +3475,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -2039,7 +3526,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class FullAuto: Mode_FullAuto
+		class FullAuto : Mode_FullAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -2049,7 +3536,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -2096,7 +3583,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -2147,7 +3634,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class close: FullAuto
+		class close : FullAuto
 		{
 			burst = 10;
 			aiRateOfFire = 0.5;
@@ -2160,7 +3647,7 @@ class CfgWeapons
 			maxRangeProbab = 0.04;
 			showToPlayer = 0;
 		};
-		class short: close
+		class short : close
 		{
 			burst = 8;
 			aiRateOfFire = 2;
@@ -2172,7 +3659,7 @@ class CfgWeapons
 			maxRange = 300;
 			maxRangeProbab = 0.04;
 		};
-		class medium: close
+		class medium : close
 		{
 			burst = 5;
 			aiRateOfFire = 4;
@@ -2184,7 +3671,7 @@ class CfgWeapons
 			maxRange = 600;
 			maxRangeProbab = 0.1;
 		};
-		class far: close
+		class far : close
 		{
 			burst = 3;
 			aiRateOfFire = 6;
@@ -2199,7 +3686,9 @@ class CfgWeapons
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 10;
 	};
-	class 53rd_DMR0M37: TCF_DMR0M37
+	//Not visible
+	//done
+	class 53rd_DMR0M37 : TCF_DMR0M37
 	{
 		dlc = MACRO_AUTHOR;
 		author = MACRO_AUTHOR;
@@ -2214,35 +3703,24 @@ class CfgWeapons
 		HUD_TotalPosibleBullet = 32;
 		pictureWire = "\OPTRE_Weapons\data\Pictures\WireWeaponIcons\Prime\AssaultRifle\AR.paa";
 		recoil = "recoil_trg21";
-		magazines[] += 
-		{
-			"OPTRE_32Rnd_762x51_Mag",
-			"OPTRE_32Rnd_762x51_Mag_Tracer",
-			"OPTRE_32Rnd_762x51_Mag_Tracer_Yellow",
-			"TCF_32Rnd_762x51_Mag_AP",
-			"TCF_32Rnd_762x51_Mag_APT",
-			"TCF_32Rnd_762x51_Mag_JHP",
-			"TCF_32Rnd_762x51_Mag_JHPT",
-			"TCF_32Rnd_762x51_Mag_SS",
-			"TCF_32Rnd_762x51_Mag_SST"
-		};
-		magazineWell[] += {};
-		class WeaponSlotsInfo: WeaponSlotsInfo
+		magazines[] = {};
+		magazineWell[] = { "53rd_Magwell_AR0" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 50;
-			class MuzzleSlot: MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
-				compatibleitems[] = 
+				compatibleitems[] =
 				{
 					"OPTRE_MA5Suppressor",
 					"OPTRE_M6_silencer",
 					"optre_m7_silencer"
 				};
 			};
-			class CowsSlot: CowsSlot
+			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = 
-				{					
+				compatibleitems[] =
+				{
 					"optic_Nightstalker",
 					"optic_tws_mg",
 					"optic_SOS",
@@ -2259,19 +3737,19 @@ class CfgWeapons
 					"optic_ico_01_black_f"
 				};
 			};
-			class PointerSlot: PointerSlot
+			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = 
+				compatibleItems[] =
 				{
 					"acc_pointer_ir",
-                    "acc_flashlight",
-                    "OPTRE_BMR_Laser",
-                    "optre_m12_laser"
+					"acc_flashlight",
+					"OPTRE_BMR_Laser",
+					"optre_m12_laser"
 				};
 			};
 		};
 		modes[] = {"FullAuto","Single","close","short","medium","far"};
-		class Single: Mode_SemiAuto
+		class Single : Mode_SemiAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -2281,7 +3759,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -2328,7 +3806,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -2379,7 +3857,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class FullAuto: Mode_FullAuto
+		class FullAuto : Mode_FullAuto
 		{
 			sounds[] = {"StandardSound","SilencedSound"};
 			class BaseSoundModeType
@@ -2389,7 +3867,7 @@ class CfgWeapons
 				closure2[] = {};
 				soundClosure[] = {"closure1",0.5,"closure2",0.5};
 			};
-			class StandardSound: BaseSoundModeType
+			class StandardSound : BaseSoundModeType
 			{
 				begin1[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-01.ogg","db8",1,2000};
 				begin2[] = {"\OPTRE_Weapons\AR\Data\sounds\MA5K\MA5K-02.ogg","db8",1,2000};
@@ -2436,7 +3914,7 @@ class CfgWeapons
 					};
 				};
 			};
-			class SilencedSound: BaseSoundModeType
+			class SilencedSound : BaseSoundModeType
 			{
 				begin1[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_01",1.0,1,400};
 				begin2[] = {"A3\Sounds_F\arsenal\weapons\Rifles\TRG20\Silencer_TRG20_short_02",1.0,1,400};
@@ -2487,7 +3965,7 @@ class CfgWeapons
 			maxRange = 400;
 			maxRangeProbab = 0.01;
 		};
-		class close: FullAuto
+		class close : FullAuto
 		{
 			burst = 10;
 			aiRateOfFire = 0.5;
@@ -2500,7 +3978,7 @@ class CfgWeapons
 			maxRangeProbab = 0.04;
 			showToPlayer = 0;
 		};
-		class short: close
+		class short : close
 		{
 			burst = 8;
 			aiRateOfFire = 2;
@@ -2512,7 +3990,7 @@ class CfgWeapons
 			maxRange = 300;
 			maxRangeProbab = 0.04;
 		};
-		class medium: close
+		class medium : close
 		{
 			burst = 5;
 			aiRateOfFire = 4;
@@ -2524,7 +4002,7 @@ class CfgWeapons
 			maxRange = 600;
 			maxRangeProbab = 0.1;
 		};
-		class far: close
+		class far : close
 		{
 			burst = 3;
 			aiRateOfFire = 6;
@@ -2539,180 +4017,18 @@ class CfgWeapons
 		aiDispersionCoefY = 10;
 		aiDispersionCoefX = 10;
 	};
-	class 53rd_M7: 19_UNSC_M7
-	{
-		dlc = MACRO_AUTHOR;
-		author = MACRO_AUTHOR;
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[53rd] M7 Caseless SMG";
-		baseweapon = "53rd_M7";
-		recoil = "recoil_M7X";
-		class Single;
-		class FullAuto;
-		magazines[] += 
-		{
-			"OPTRE_60Rnd_5x23mm_Mag",
-			"OPTRE_60Rnd_5x23mm_Mag_Tracer",
-			"OPTRE_60Rnd_5x23mm_Mag_Tracer_Yellow",
-			"TCF_60Rnd_5x23mm_Mag_FMJ",
-			"TCF_60Rnd_5x23mm_Mag_FMJT",
-			"TCF_60Rnd_5x23mm_Mag_HV",
-			"TCF_60Rnd_5x23mm_Mag_HVT",
-			"TCF_60Rnd_5x23mm_Mag_JHP",
-			"TCF_60Rnd_5x23mm_Mag_JHPT",
-			"TCF_60Rnd_5x23mm_Mag_SS",
-			"TCF_60Rnd_5x23mm_Mag_SST",
-			"OPTRE_48Rnd_5x23mm_Mag",
-			"OPTRE_48Rnd_5x23mm_Mag_Tracer",
-			"OPTRE_48Rnd_5x23mm_Mag_Tracer_Yellow",
-			"TCF_48Rnd_5x23mm_Mag_FMJ",
-			"TCF_48Rnd_5x23mm_Mag_FMJT",
-			"TCF_48Rnd_5x23mm_Mag_HV",
-			"TCF_48Rnd_5x23mm_Mag_HVT",
-			"TCF_48Rnd_5x23mm_Mag_JHP",
-			"TCF_48Rnd_5x23mm_Mag_JHPT",
-			"TCF_48Rnd_5x23mm_Mag_SS",
-			"TCF_48Rnd_5x23mm_Mag_SST"
-		};
-		magazineWell[] = {};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 100;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[] = 
-				{
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_l",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer",
-					"OPTRE_M393_Suppressor",
-					"OPTRE_M12_Suppressor",
-					"OPTRE_MA37KSuppressor",
-					"OPTRE_M6C_compensator"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[] = 
-				{
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m6c_scope"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[] = 
-				{
-					"OPTRE_BMR_Laser",
-					"OPTRE_BMR_Flashlight",
-					"OPTRE_M7_Flashlight",
-					"OPTRE_M7_Laser",
-					"OPTRE_M12_Laser",
-					"OPTRE_M45_Flashlight_green",
-					"OPTRE_M45_Flashlight_blue",
-					"OPTRE_DMR_Light",
-					"OPTRE_M6C_Laser",
-					"OPTRE_M6G_Flashlight"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[] = {};
-			};
-		};
+
+
+	
+	
+	//////UB Launchers
+	class 53rd_GRL_45 : MA_GRL_45{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] GRL-45";
+		baseWeapon = "53rd_GRL_45";
 	};
-	class 53rd_M7_Folded: 53rd_M7
-	{
-		dlc = MACRO_AUTHOR;
-		author = MACRO_AUTHOR;
-		scope = 2;
-		scopeArsenal = 2;
-		displayName = "[53rd] M7 Caseless SMG (Folded)";
-		descriptionShort = "UNSC M7X SMG (Folded)";
-		baseweapon = "53rd_M7_Folded";
-		handAnim[] = {"OFP2_ManSkeleton"};
-		reloadAction = "GestureReloadPistol";
-		type = 2;
-		class Single: Single
-		{
-			recoil = "recoil_single_mx";
-			recoilProne = "recoil_single_prone_mx";
-		};
-		class FullAuto: FullAuto
-		{
-			recoil = "recoil_single_mx";
-			recoilProne = "recoil_single_prone_mx";
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			mass = 100;
-			class MuzzleSlot: MuzzleSlot
-			{
-				compatibleitems[] = 
-				{
-					"muzzle_snds_h_mg_blk_f",
-					"muzzle_snds_l",
-					"optre_ma5suppressor",
-					"optre_m7_silencer",
-					"optre_m6_silencer",
-					"OPTRE_M393_Suppressor",
-					"OPTRE_M12_Suppressor",
-					"OPTRE_MA37KSuppressor",
-					"OPTRE_M6C_compensator"
-				};
-			};
-			class CowsSlot: CowsSlot
-			{
-				compatibleitems[] = 
-				{
-					"optic_aco_grn",
-					"optic_aco",
-					"optic_holosight_blk_f",
-					"optic_yorris",
-					"optic_aco_smg",
-					"optic_aco_grn_smg",
-					"optic_holosight_smg_blk_f",
-					"optic_mrd_black",
-					"optre_m393_eotech",
-					"optre_m7_sight",
-					"optre_m6c_scope"
-				};
-			};
-			class PointerSlot: PointerSlot
-			{
-				compatibleitems[] = 
-				{
-					"OPTRE_BMR_Laser",
-					"OPTRE_BMR_Flashlight",
-					"OPTRE_M7_Flashlight",
-					"OPTRE_M7_Laser",
-					"OPTRE_M12_Laser",
-					"OPTRE_M45_Flashlight_green",
-					"OPTRE_M45_Flashlight_blue",
-					"OPTRE_DMR_Light",
-					"OPTRE_M6C_Laser",
-					"OPTRE_M6G_Flashlight"
-				};
-			};
-			class UnderBarrelSlot: UnderBarrelSlot
-			{
-				compatibleitems[] = {};
-			};
-		};
-	};
-	class OPTRE_M301X: UGL_F
+	class OPTRE_M301X : UGL_F
 	{
 		magazines[] =
 		{
@@ -2759,59 +4075,60 @@ class CfgWeapons
 			"53rd_1Rnd_9bang",
 			"53rd_1Rnd_ANM14"
 		};
+		magazineWell[] = {};
 	};
 	class Throw : Grenadelauncher
 	{
 		muzzles[] +=
 		{
 			"C7_Muzzle",
-			"C12_Muzzle",
-			"C168_Muzzle",
-			"9bang_Muzzle",			
-			"ANM14_Muzzle",
-			"M9_Frag_Muzzle",
-			"Thermobaric_Grenade_Muzzle",
-			"Bubble_Shield_Muzzle"			
+				"C12_Muzzle",
+				"C168_Muzzle",
+				"9bang_Muzzle",
+				"ANM14_Muzzle",
+				"M9_Frag_Muzzle",
+				"Thermobaric_Grenade_Muzzle",
+				"Bubble_Shield_Muzzle"
 		};
 		class C7_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"c7_remote_throwable_Mag"};
-        };
-        class C12_Muzzle : ThrowMuzzle
+			reloadtime = 0;
+			magazines[] = { "c7_remote_throwable_Mag" };
+		};
+		class C12_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"c12_remote_throwable_Mag"};
+			reloadtime = 0;
+			magazines[] = { "c12_remote_throwable_Mag" };
 		};
 		class C168_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"C168_Mag"};
+			reloadtime = 0;
+			magazines[] = { "C168_Mag" };
 		};
-        class 9bang_Muzzle : ThrowMuzzle
+		class 9bang_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
+			reloadtime = 0;
 			magazines[] = {"9bang_Mag"};
 		};
 		class ANM14_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"ANM14_Thermite_Grenade_Mag"};
-		};   
+			reloadtime = 0;
+			magazines[] = { "ANM14_Thermite_Grenade_Mag" };
+		};
 		class M9_Frag_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"M9_Frag_Mag"};
-		};  
+			reloadtime = 0;
+			magazines[] = { "M9_Frag_Mag" };
+		};
 		class Thermobaric_Grenade_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"Thermobaric_Grenade_Mag"};
-		};       
+			reloadtime = 0;
+			magazines[] = { "Thermobaric_Grenade_Mag" };
+		};
 		class Bubble_Shield_Muzzle : ThrowMuzzle
 		{
-            reloadtime = 0;
-			magazines[] = {"Bubble_Shield_Mag"};
+			reloadtime = 0;
+			magazines[] = { "Bubble_Shield_Mag" };
 		};
-    };
+	};
 };

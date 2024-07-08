@@ -1,20 +1,19 @@
 
 class CfgPatches {
-	class 53rd_MedicalPLACEHOLDER {
+	class 53rd_equwupment {
 		units[] = 
         {
 
         };
 		weapons[] = 
         {
-			"53rd_biofoam",
-			"53rd_medigel",
+
 			"53rd_r_biofoam",
 			"53rd_r_medigel"
 
         };
 		requiredVersion = 0.100000;
-		requiredAddons[] = {};
+		requiredAddons[] = {"ace_interaction"};
 	};
 };
 
@@ -30,11 +29,12 @@ class ace_medical_treatment
         class nr_medigel: OPTRE_Medigel {};
     };
 
+
 };
 
 class ace_medical_treatment_actions
 {
-    class Morphine;
+
     class OPTRE_Biofoam;
     class OPTRE_Medigel;
 
@@ -43,19 +43,18 @@ class ace_medical_treatment_actions
 		displayName="[R] Biofoam";
 		consumeItem=0;
 		medicRequired="ace_medical_treatment_medicIV";
-		callbackSuccess="fn_treatmentBandageAndPainReduction3.sqf";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction3";
 		items[]=
 		{
 			"53rd_r_biofoam"
 		};
 	};
-
 	class r_medigel: OPTRE_Medigel
 	{
 		displayName="[R] Medigel";
 		consumeItem=0;
 		medicRequired="ace_medical_treatment_medicIV";
-		callbackSuccess="fn_treatmentBandageAndPainReduction3.sqf";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction3";
 		items[]=
 		{
 			"53rd_r_medigel"
@@ -64,7 +63,7 @@ class ace_medical_treatment_actions
 	class nr_biofoam: OPTRE_Biofoam
 	{
 		displayName="Biofoam";
-		callbackSuccess="fn_treatmentBandageAndPainReduction2.sqf";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction2";
 		items[]=
 		{
 			"53rd_biofoam"
@@ -73,7 +72,7 @@ class ace_medical_treatment_actions
 	class nr_medigel: OPTRE_Medigel
 	{
 		displayName="Medigel";
-		callbackSuccess="fn_treatmentBandageAndPainReduction2.sqf";
+		callbackSuccess="F53rd_fnc_treatmentBandageAndPainReduction2";
 		items[]=
 		{
 			"53rd_medigel"
@@ -82,9 +81,13 @@ class ace_medical_treatment_actions
     
 };
 
+
+
+
 class cfgWeapons 
 {
 
+    //medical
     class OPTRE_Medigel;
     class OPTRE_Biofoam;
 
@@ -112,4 +115,9 @@ class cfgWeapons
 		author="53rd Aux";
 		displayName="[53rd] Medigel";
 	};
+
+
+
 };
+
+
