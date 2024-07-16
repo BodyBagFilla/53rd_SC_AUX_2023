@@ -10,7 +10,6 @@ class CfgPatches
 			"53rd_Ares_Launcher",
 			"53rd_Apollo_Launcher",
 			"53rd_Atlas_Launcher",
-			"53rd_Pod_Launcher",
 		};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -24,14 +23,38 @@ class CfgPatches
 		author="53rd AUX Team";
 	};
 };
+class PointerSlot;
+class CowsSlot_Rail;
+class CowsSlot_Rail_Pistol;
+class CowsSlot_Pistol;
+class CowsSlot_MSBS65;
+class CowsSlot_Dovetail;
+class CowsSlot_Dovetail_RPG;
+class MuzzleSlot_45ACP;
+class MuzzleSlot_9mm;
+class MuzzleSlot_65;
+class MuzzleSlot_65MG;
+class MuzzleSlot_556;
+class MuzzleSlot_762;
+class MuzzleSlot_338;
+class MuzzleSlot_93;
+class MuzzleSlot_57;
+class MuzzleSlot_58;
+class MuzzleSlot_545R;
+class MuzzleSlot_762R;
+class UnderBarrelSlot_rail;
+class PointerSlot_Rail;
+class PointerSlot_Pistol;
+class PointerSlot_Launcher;
 class Mode_SemiAuto;
+class Single;
+class Components;
+class SensorTemplateIR;
+class SensorTemplateVisual;
+class SensorTemplateDataLink;
+class SensorTemplateLaser;
 class CfgWeapons
 {
-	class Launcher;
-	class Launcher_Base_F: Launcher
-	{
-		class WeaponSlotsInfo;
-	};
 	class TCF_M57_Pilum;
 	class TCF_CBN_Camera_Holder;
 	class launch_Titan_short_F;
@@ -153,57 +176,6 @@ class CfgWeapons
 		};
 		magazineWell[]={};
 	};
-	class tf47_at4_heat: Launcher_Base_F
-	{
-	};
-	class 53rd_Pod_Launcher: tf47_at4_heat
-	{
-		tf47_disposable=1;
-		tf47_disposableMag="tf47_at4_m_heat";
-		tf47_disposableTube="tf47_at4_tube";
-		author="Baseplate & Demonic , Edited: Body";
-		scope=2;
-		scopeArsenal=2;
-		baseWeapon="53rd_Pod_Launcher";
-		displayName="[53rd] M96 LAW - Mk VIII";
-		model="DMNS\Weapons\Launchers\DMNS_M96_LAW_loaded.p3d";
-		picture="\DMNS\Weapons\Launchers\Data\Law_Icon.paa";
-		UiPicture="\DMNS\Weapons\Launchers\Data\Law_Icon.paa";
-		recoil="recoil_nlaw";
-		maxZeroing=500;
-		hiddenSelections[]=
-		{
-			"Camo"
-		};
-		hiddenSelectionsTextures[]=
-		{
-			"TCF_WEAPONRY\Weapons\Launchers\m96\data\M96_cls_co.paa"
-		};
-		magazines[]=
-		{
-			"tf47_at4_m_HEAT"
-		};
-		modes[]=
-		{
-			"Single"
-		};
-		class WeaponSlotsInfo: WeaponSlotsInfo
-		{
-			allowedslots[]={901};
-			mass=174;
-			class MuzzleSlot
-			{
-				access=1;
-				compatibleitems[]=
-				{
-					"tf47_fakeitem_at4"
-				};
-				displayname="Muzzle Slot";
-				linkproxy="-";
-				scope=1;
-			};
-		};
-	};
 };
 
 class CfgMagazines
@@ -220,6 +192,8 @@ class CfgMagazines
 };
 class CfgAmmo
 {
+	
+	
 	class ACE_Javelin_FGM148;
 	class 53rd_M15_Slight: ACE_Javelin_FGM148
 	{
