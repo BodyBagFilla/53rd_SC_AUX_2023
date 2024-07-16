@@ -2195,7 +2195,7 @@ class CfgWeapons
 
 		};
 	};
-	class 53rd_UNSC_SRS99_Fang : OPTRE_SRS99D
+	class 53rd_UNSC_SRS99_Fang : OPTRE_SRS99C
 	{
 		dlc = "53rdAux";
 		author = "53rd Aux Team";
@@ -2225,8 +2225,7 @@ class CfgWeapons
 					"OPTRE_SRS99_Scope",
 					"OPTRE_SRS99C_Scope",
 					"19_UNSC_SRS99AM_Scope",
-					"optic_MRCO",
-					"ACE_optic_MRCO_2D"
+
 				};
 			};
 			class PointerSlot
