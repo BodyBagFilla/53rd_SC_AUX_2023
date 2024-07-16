@@ -11,6 +11,9 @@ class CfgMagazines {
 	class OPTRE_4Rnd_145x114_APFSDS_Mag;
 	class OPTRE_8Rnd_127x40_Mag;
 	class OPTRE_60Rnd_5x23mm_Mag;
+	class Commando_20Rnd_65_Mag;
+	class OPTRE_M41_Twin_HEAT_SACLOS_ProximityFuse;
+	class OPTRE_M41_Twin_HEAT_Thermal;
 	class 53rd_M41_Rocket_Twin_MEME : TCF_1Rnd_50x137_HEAT
 	{
 		displayname = "M19 Death Rocket";
@@ -25,7 +28,7 @@ class CfgMagazines {
 		//SS
 		//JHP
 		//128 DRUM SLAP (make 19th M392 DMR's HVAP?)
-
+#pragma region 60Rnd 7.62x51
 	//Standard (19TH FMJ)
 	class 53rd_60Rnd_762x51_Mag : OPTRE_60Rnd_762x51_Mag{
 	dlc = "53rd Aux";
@@ -47,7 +50,7 @@ class CfgMagazines {
 		dlc = "53rd Aux Team";
 		displayname = "60Rnd 7.62x51mm Magazine (Tracer) [53rd]";
 		displaynameshort = "M118 7.62x51mm Tracer";
-		ammo = "OPTRE_B_762x51_Tracer";
+		ammo = "B_762x51_19_FMJ";
 		descriptionshort = "60 Round Magazine<br/>7.62x51mm<br/>Tracer";
 		tracersEvery = 1;
 		lastRoundsTracer = 60;
@@ -83,7 +86,7 @@ class CfgMagazines {
 	class 53rd_60Rnd_762x51_Mag_JHP : 53rd_60Rnd_762x51_Mag
 	{
 		initspeed = 905;
-		ammo = "TCF_B_762x51_JHP";
+		ammo = "53rd_B_762x51_JHP";
 		displayname = "60Rnd 7.62x51mm JHP Magazine [53rd]";
 		displaynameshort = "7.62x51mm JHP";
 		descriptionShort = "60 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point";
@@ -101,7 +104,8 @@ class CfgMagazines {
 
 
 
-
+#pragma endregion
+#pragma region 32Rnd 7.62x51
 	//Standard
 	class 53rd_32Rnd_762x51_Mag : 53rd_60Rnd_762x51_Mag{
 		displayname = "32Rnd 7.62x51mm Magazine";
@@ -114,6 +118,8 @@ class CfgMagazines {
 		displayname = "32Rnd 7.62x51mm Magazine (Tracers)";
 		count = 32;
 		descriptionshort = "32 Round Magazine<br/>7.62x51mm<br/>Tracer";
+		tracersevery = 1;
+		lastRoundTracer = 32;
 	};
 	//OPTRE Ball
 	class 53rd_32Rnd_762x51_Mag_Ball : 53rd_60Rnd_762x51_Mag{
@@ -121,10 +127,10 @@ class CfgMagazines {
 		count = 32;
 		initspeed = 950;
 		scopeArsenal = 0;
-		ammo = "OPTRE_B_762x51_Ball";
+		ammo = "OPTRE_B_762x51_Ball"
 		descriptionshort = "32 Round Magazine<br/>7.62x51mm";
 		mass = 10;
-	};
+	}
 	//AP
 	class 53rd_32Rnd_762x51_Mag_AP : 53rd_60Rnd_762x51_Mag_AP{
 		displayname = "32Rnd 7.62x51mm AP Magazine [53rd]";
@@ -138,8 +144,8 @@ class CfgMagazines {
 		displayname = "32Rnd 7.62x51mm AP Magazine (Tracer) [53rd]";
 		displaynameshort = "7.62x51mm AP Tracer";
 		descriptionShort = "32 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
-		count = 32;
-	};
+		tracersevery = 1;
+		lastRoundTracer = 32; };
 	//JHP
 	class 53rd_32Rnd_762x51_Mag_JHP : 53rd_60Rnd_762x51_Mag_JHP
 	{
@@ -154,8 +160,8 @@ class CfgMagazines {
 		displayname = "32Rnd 7.62x51mm JHP Magazine (Tracer) [53rd]";
 		displaynameshort = "7.62x51mm JHP Tracer";
 		descriptionShort = "32 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
-		count = 32;
-	};
+		tracersevery = 1;
+		lastRoundTracer = 32; };
 	//SS
 	class 53rd_32Rnd_762x51_Mag_SS : 53rd_32Rnd_762x51_Mag
 	{
@@ -174,8 +180,10 @@ class CfgMagazines {
 		displaynameshort = "7.62x51mm SS Tracer";
 		descriptionShort = "32 Round Magazine<br/>7.62x51mm<br/>Subsonic Tracers";
 		tracersevery = 1;
+		lastRoundTracer = 32;
 	};
-
+#pragma endregion
+#pragma region 25Rnd 7.62x51
 	//Standard (19TH FMJ)
 	class 53rd_25Rnd_762x51_Mag : 53rd_60Rnd_762x51_Mag{
 		displayname = "25Rnd 7.62x51mm Magazine [53rd]";
@@ -220,7 +228,8 @@ class CfgMagazines {
 		count = 25;
 		mass = 15;
 	};
-
+#pragma endregion 
+#pragma region Boxes 7.62x51
 	//Standard 100
 	class 53rd_100Rnd_762x51_Box : 53rd_60Rnd_762x51_Mag
 	{
@@ -264,7 +273,8 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundTracer = 400;
 	};
-
+#pragma endregion 
+#pragma region 15Rnd 7.62x51
 	//Standard (19th FMJ)
 	class 53rd_15Rnd_762x51_Mag : 53rd_60Rnd_762x51_Mag{
 		displayname = "15Rnd 7.62x51mm Magazine";
@@ -305,7 +315,25 @@ class CfgMagazines {
 		tracersevery = 1;
 		lastRoundsTracer = 15;
 	};
-
+	//JHP
+	class 53rd_15Rnd_762x51_Mag_JHP : 53rd_60Rnd_762x51_Mag_JHP
+	{
+		displayname = "15Rnd 7.62x51mm JHP Magazine [53rd]";
+		displaynameshort = "7.62x51mm JHP";
+		descriptionShort = "15 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point";
+		count = 15;
+		mass = 10;
+	};
+	class 53rd_15Rnd_762x51_Mag_JHPT : 53rd_15Rnd_762x51_Mag_JHP
+	{
+		displayname = "15Rnd 7.62x51mm JHP Magazine (Tracer) [53rd]";
+		displaynameshort = "7.62x51mm JHP Tracer";
+		descriptionShort = "15 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery = 1;
+		lastRoundsTracer = 15;
+	};
+#pragma endregion
+#pragma region 128Rnd 7.62x51
 	//Standard
 	class 53rd_128Rnd_762x51_Drum : 53rd_60Rnd_762x51_Mag{
 		displayname = "128Rnd 7.62x51mm Drum [53rd]";
@@ -365,7 +393,7 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundsTracer = 128;
 	};
-
+#pragma endregion
 	///////////////    9.5x40 (BR Variants, Lapua)    ///////////////
 	//NEEDED:
 		//STANDARD/FMJ
@@ -375,15 +403,15 @@ class CfgMagazines {
 		//AP
 		//HP-SAP
 		//HVAP/SLAP
-
+#pragma region 36Rnd 9.5x40
 	//Standard
 	class 53rd_36Rnd_95x40_Mag : OPTRE_36Rnd_95x40_Mag{
 		dlc = "53rd Aux";
-		author = "53rd Aux Team";
+		author = "53rd Aux Team"
 		model = "\OPTRE_Weapons\Ammo\BR55Ammo.p3d";
 		displayname = "36Rnd 9.5x40mm Magazine [53rd]";
 		displaynameshort = "9.5x40mm";
-		ammo = "OPTRE_B_95x40_Ball";
+		ammo = "53rd_B_95x40_FMJ";
 		count = 36;
 		initspeed = 925;
 		picture = "\OPTRE_weapons\br\icons\magazine.paa";
@@ -395,7 +423,7 @@ class CfgMagazines {
 	class 53rd_36Rnd_95x40_Mag_Tracer : 53rd_36Rnd_95x40_Mag{
 		displayname = "36Rnd 9.5x40mm Magazine (Tracer) [53rd]";
 		displaynameshort = "9.5x40mm Tracer";
-		ammo = "OPTRE_B_95x40_Tracer";
+		ammo = "53rd_B_95x40_FMJ";
 		descriptionshort = "36 Round Magazine<br/>9.5x40mm<br/>Tracer";
 		tracersEvery = 1;
 		lastRoundsTracer = 36;
@@ -474,7 +502,7 @@ class CfgMagazines {
 	//JHP
 	class 53rd_36Rnd_95x40_Mag_JHP : 53rd_36Rnd_95x40_Mag
 	{
-		ammo = "TCF_B_95x40_JHP";
+		ammo = "53rd_B_95x40_JHP";
 		displayname = "36Rnd 9.5x40mm JHP Magazine [53rd]";
 		displaynameshort = "9.5x60mm JHP";
 		descriptionShort = "36 Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point";
@@ -505,13 +533,14 @@ class CfgMagazines {
 		descriptionShort = "36 Round Magazine<br/>9.5x40mm<br/>Sub-Sonic Tracers";
 		initspeed = 340;
 	};
-
+#pragma endregion
+#pragma region Boxes 9.5x40
 	//Standard 100
 	class 53rd_100Rnd_95x40_Box : OPTRE_100Rnd_95x40_Box{
 		author = "53rd Aux Team";
 		displayname = "100Rnd 9.5x40mm Box Magazine [53rd]";
 		displaynameshort = "9.5x40mm";
-		ammo = "OPTRE_B_95x40_Ball";
+		ammo = "53rd_B_95x40_FMJ";
 		count = 100;
 		initspeed = 925;
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
@@ -529,7 +558,7 @@ class CfgMagazines {
 		displayname = "100Rnd 9.5x40mm Box Magazine (Tracer) [53rd]";
 		displaynameshort = "9.5x40mm Tracer";
 		descriptionshort = "100 Round Box Magazine<br/>9.5x40mm<br/>Tracer";
-		ammo = "OPTRE_B_95x40_Tracer";
+		ammo = "53rd_B_95x40_FMJ";
 		tracersEvery = 1;
 		lastRoundsTracer = 100;
 	};
@@ -616,11 +645,11 @@ class CfgMagazines {
 		descriptionShort = "200 Round Magazine<br/>9.5x40mm<br/>Sub-Sonic Tracers";
 		initspeed = 340;
 	};
-
+#pragma endregion
 	/////////////////////    8.6x70 (CR-77)    //////////////////////
 	//Not existent in 19th. Suggest make more powerful than MAx ammo
 	//Alternatively, shoot 9.5x40?
-
+#pragma region 20Rnd 8.6x70
 	//Standard
 	class 53rd_20Rnd_86x70_Mag : TCF_20Rnd_86x70_Mag{
 		dlc = "53rd Aux";
@@ -704,11 +733,11 @@ class CfgMagazines {
 		lastRoundsTracer = 20;
 	};
 
-
+#pragma endregion
 	////////////////////////    Shotguns    /////////////////////////
 	//Needed: 12 Gauge (More powerful that 8 Gauge presumably
 //UPDATED TO 19TH
-
+#pragma region 6Rnd 8Gauge
 	//Pellets
 	class 53rd_6Rnd_8Gauge_Pellets : OPTRE_6Rnd_8Gauge_Pellets{
 		dlc = "53rd Aux";
@@ -778,9 +807,9 @@ class CfgMagazines {
 		descriptionshort = "6 Rounds of 8 Gauge Beanbags";
 		mass = 10;
 	};
-
+#pragma endregion
 //UPDATED TO 19TH
-
+#pragma region 12Rnd 8Gauge
 	//Pellets
 	class 53rd_12Rnd_8Gauge_Pellets : 53rd_6Rnd_8Gauge_Pellets{
 		displayname = "12Rnd 8 Gauge Pellets";
@@ -791,7 +820,7 @@ class CfgMagazines {
 	};
 	//Slugs
 	class 53rd_12Rnd_8Gauge_Slugs : 53rd_6Rnd_8Gauge_Slugs{
-		displayname = "12Rnd 8 Gauge Pellets";
+		displayname = "12Rnd 8 Gauge Slugs";
 		displaynameshort = "8 Gauge Pellets";
 		descriptionshort = "12 Rounds of 8 Gauge Slugs";
 		count = 12;
@@ -811,6 +840,7 @@ class CfgMagazines {
 		displayname = "12Rnd 8 Gauge Slugs";
 		displaynameshort = "8 Gauge Pellets";
 		descriptionshort = "12 Rounds of 8 Gauge Slugs";
+		scopeArsenal = 0;
 		count = 12;
 		mass = 16;
 	};
@@ -821,7 +851,8 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundsTracer = 12;
 	};
-
+#pragma endregion
+#pragma region 12Rnd 12Gauge
 	//Pellets
 	class 53rd_12Rnd_12Gauge_Pellets : OPTRE_12Rnd_12Gauge_Pellets{
 		dlc = "53rd Aux";
@@ -871,10 +902,10 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundsTracer = 12;
 	};
-
+#pragma endregion
 	////////////////////////    Snipers     /////////////////////////
 //UPDATED TO 19TH
-
+#pragma region 4Rnd 14.5x114
 	//APFSDS
 	class 53rd_4Rnd_145x114_APFSDS_Mag : OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
@@ -908,9 +939,9 @@ class CfgMagazines {
 		initspeed = 850;
 		mass = 15;
 	};
-
+#pragma endregion
 	//////////////////////    12.7x40 (M6)    ///////////////////////
-
+#pragma region 8Rnd 12.7x40
 	//Standard
 	class 53rd_8Rnd_127x40_Mag : OPTRE_8Rnd_127x40_Mag
 	{
@@ -1034,7 +1065,8 @@ class CfgMagazines {
 		tracersEvery = 1;
 		lastRoundsTracer = 8;
 	};
-
+#pragma endregion
+#pragma region 12Rnd 12.7x40
 		//Standard
 		class 53rd_12Rnd_127x40_Mag : 53rd_8Rnd_127x40_Mag
 	{
@@ -1124,7 +1156,7 @@ class CfgMagazines {
 		displaynameshort = "12.7x40mm NARQ";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
 		count = 12;
-		mass = 8.5;
+		mass = 8.5
 	};
 	class 53rd_12Rnd_127x40_Mag_NARQT : 53rd_12Rnd_127x40_Mag_NARQ{
 		displayname = "12Rnd 12.7x40mm NARQ Magazine (Tracer)";
@@ -1133,7 +1165,8 @@ class CfgMagazines {
 		tracerEvery = 1;
 		lastRoundsTracer = 12;
 	};
-
+#pragma endregion
+#pragma region 16Rnd 12.7x40
 	class 53rd_16Rnd_127x40_Mag : 53rd_8Rnd_127x40_Mag
 	{
 		displayname = "16Rnd 12.7x40mm Magazine";
@@ -1221,7 +1254,7 @@ class CfgMagazines {
 		displayname = "16Rnd 12.7x40mm NARQ Magazine";
 		displaynameshort = "12.7x40mm NARQ";
 		descriptionShort = "16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
-		mass = 9;
+		mass = 9
 	};
 	class 53rd_16Rnd_127x40_Mag_NARQT : 53rd_16Rnd_127x40_Mag_NARQ{
 		displayname = "16Rnd 12.7x40mm NARQ Magazine (Tracer)";
@@ -1230,7 +1263,7 @@ class CfgMagazines {
 		tracerEvery = 1;
 		lastRoundsTracer = 16;
 	};
-
+#pragma endregion
 	///////////////////////    5x23 (M7)     ////////////////////////
 	//NEEDED:
 		//HV
@@ -1238,12 +1271,12 @@ class CfgMagazines {
 		//SS
 	//DONE:
 		//Standard (FMJ)
-
+#pragma region 60Rnd 5x23
 	//19TH FMJ
 	class 53rd_60Rnd_5x23mm_Mag : OPTRE_60Rnd_5x23mm_Mag
 	{
 		dlc = "53rd Aux";
-		author = "53rd Aux Team";
+		author = "53rd Aux Team"
 		model = "\OPTRE_Weapons\Ammo\M7Ammo.p3d";
 		displayname = "60Rnd 5x23mm Magazine";
 		displaynameshort = "5x23mm";
@@ -1267,7 +1300,7 @@ class CfgMagazines {
 	class 53rd_60Rnd_5x23mm_Mag_Caseless : OPTRE_60Rnd_5x23mm_Mag
 	{
 		dlc = "53rd Aux";
-		author = "53rd Aux Team";
+		author = "53rd Aux Team"
 		model = "\OPTRE_Weapons\Ammo\M7Ammo.p3d";
 		displayname = "60Rnd 5x23mm Magazine";
 		displaynameshort = "5x23mm";
@@ -1329,7 +1362,8 @@ class CfgMagazines {
 		tracerEvery = 1;
 		lastRoudsTracer = 60;
 	};
-
+#pragma endregion
+#pragma region 48Rnd 5x23
 	class 53rd_48Rnd_5x23mm_Mag : 53rd_60Rnd_5x23mm_Mag
 	{
 		displayname = "48Rnd 5x23mm Magazine";
@@ -1363,7 +1397,7 @@ class CfgMagazines {
 		mass = 6;
 	};
 	//JHP
-	class 53rd_48Rnd_5x23mm_Mag_JHP : 53rd_60Rnd_5x23mm_Mag{
+	class 53rd_48Rnd_5x23mm_Mag_JHP : 53rd_60Rnd_5x23mm_Mag_JHP{
 		displayname = "48Rnd 5x23mm JHP Magazine";
 		displaynameshort = "5x23mm JHP";
 		descriptionshort = "48 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point";
@@ -1378,7 +1412,7 @@ class CfgMagazines {
 		lastRoudsTracer = 48;
 	};
 	//HV
-	class 53rd_48Rnd_5x23mm_Mag_HV : 53rd_60Rnd_5x23mm_Mag{
+	class 53rd_48Rnd_5x23mm_Mag_HV : 53rd_60Rnd_5x23mm_Mag_HV{
 		displayname = "48Rnd 5x23mm HV Magazine";
 		displaynameshort = "5x23mm HV";
 		descriptionshort = "48 Round Magazine<br/>5x23mm<br/>High-Velocity";
@@ -1407,5 +1441,153 @@ class CfgMagazines {
 		tracerEvery = 1;
 		lastRoudsTracer = 48;
 	};
+#pragma endregion
 
+	/////////////////////// 6.5x48 (Commando) ////////////////////////
+	//OPTRE Pellets
+	class 53rd_20Rnd_65x48_Mag_OPTRE : Commando_20Rnd_65_Mag{
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		model = "\OPTRE_Weapons\Commando\Commando_Mag.p3d";
+		scope = 2;
+		scopeArsenal = 0;
+		displayname = "20Rnd 6.5x48 Magazine";
+		displaynameshort = "M259 6.5x48";
+		ammo = "OPTRE_65_Creedmoor";
+		count = 20;
+		initspeed = 900;
+		picture = "\OPTRE_weapons\ar\icons\magazine.paa";
+		descriptionshort = "6 Rounds of 8 Gauge Pellets";
+		mass = 12;
+	};
+	class 53rd_20Rnd_65x48_Mag : 53rd_20Rnd_65x48_Mag_OPTRE{
+		displayname = "20Rnd 65x48mm FMJ Magazine";
+		displaynameshort = "65x48mm FMJ";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
+		ammo = "53rd_B_65x48_FMJ";
+		initspeed = 800;
+		mass = 12;
+	};
+	class 53rd_20Rnd_65x48_Mag_Tracer : 53rd_20Rnd_65x48_Mag{
+		displayname = "20Rnd 65x48mm FMJ Magazine (Tracer)";
+		displaynameshort = "65x48mm FMJ Tracer";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket Tracer";
+		tracerEvery = 1;
+		lastRoudsTracer = 20;
+	};
+	class 53rd_20Rnd_65x48_Mag_JHP : 53rd_20Rnd_65x48_Mag{
+		displayname = "20Rnd 65x48mm FMJ Magazine";
+		displaynameshort = "65x48mm FMJ";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Jacketed Hollow-Point";
+		ammo = "53rd_B_65x48_JHP";
+		initspeed = 900;
+		mass = 12;
+	};
+	class 53rd_20Rnd_65x48_Mag_JHPT : 53rd_20Rnd_65x48_Mag_JHP{
+		displayname = "20Rnd 65x48mm JHP Magazine (Tracer)";
+		displaynameshort = "65x48mm JHP Tracer";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Jacketed Hollow-Point Tracer";
+		tracerEvery = 1;
+		lastRoudsTracer = 20;
+	};
+	class 53rd_20Rnd_65x48_Mag_AP : 53rd_20Rnd_65x48_Mag{
+		displayname = "20Rnd 65x48mm AP Magazine";
+		displaynameshort = "65x48mm AP";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Armor-Piercing";
+		ammo = "53rd_B_65x48_AP";
+		initspeed = 950;
+		mass = 12;
+	};
+	class 53rd_20Rnd_65x48_Mag_APT : 53rd_20Rnd_65x48_Mag_AP{
+		displayname = "20Rnd 65x48mm AP Magazine (Tracer)";
+		displaynameshort = "65x48mm AP Tracer";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Armor-Piercing Tracer";
+		tracerEvery = 1;
+		lastRoudsTracer = 20;
+	};
+	class 53rd_20Rnd_65x48_Mag_SLAP : 53rd_20Rnd_65x48_Mag{
+		displayname = "20Rnd 65x48mm SLAP Magazine";
+		displaynameshort = "65x48mm SLAP";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Saboted Light-Armor-Penetrator";
+		ammo = "53rd_B_65x48_SLAP";
+		initspeed = 950;
+		mass = 12;
+	};
+	class 53rd_20Rnd_65x48_Mag_SLAPT : 53rd_20Rnd_65x48_Mag_SLAP{
+		displayname = "20Rnd 65x48mm SLAP Magazine (Tracer)";
+		displaynameshort = "65x48mm SLAP Tracer";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Saboted Light-Armor-Penetrator Tracer";
+		tracerEvery = 1;
+		lastRoudsTracer = 20;
+	};
+	//model = "\OPTRE_Weapons\Commando\Commando_Mag.p3d";
+
+	class 53rd_M41_Twin_HEAT_Thermal : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\heat_thermal.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HEAT_Thermal";
+		displayname = "M19 HEAT Thermal";
+
+	};
+	class 53rd_M41_Twin_HEAT_Guided : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\heat_g.paa";
+	dlc = "53rd Aux";
+	author = "53rd Aux Team";
+	ammo = "53rd_M41_Rocket_HEAT_Guided";
+	displayname = "M19 HEAT Guided";
+
+	};
+	class 53rd_M41_Twin_HEAT_SACLOS : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\heat_saclos.paa";
+	dlc = "53rd Aux";
+	author = "53rd Aux Team";
+	ammo = "53rd_M41_Rocket_HEAT_SACLOS";
+	displayname = "M19 HEAT SACLOS";
+
+	};
+	class 53rd_M41_Twin_HEAT_Laser : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he_salh_fuse.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HEAT_Thermal";
+		displayname = "M19 HEAT LASER";
+
+	};
+	class 53rd_M41_Twin_HEAT: OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\heat.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HEAT";
+		displayname = "M19 HEAT";
+
+	};
+	class 53rd_M41_Twin_HE_SACLOS : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he_saclos_fuse.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HE_SACLOS";
+		displayname = "M19 HE SACLOS";
+	};
+	class 53rd_M41_Twin_HE : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HE";
+		displayname = "M19 HE";
+	};
+	class 53rd_M41_Twin_HE_Thermal : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he_thermal_fuse.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HE_Thermal";
+		displayname = "M19 HE Thermal";
+	};
+	class 53rd_M41_Twin_HE_Laser : OPTRE_M41_Twin_HEAT_Thermal{
+		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\heat_salh.paa";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HE_Laser";
+		displayname = "M19 HE LASER";
+	};
 };

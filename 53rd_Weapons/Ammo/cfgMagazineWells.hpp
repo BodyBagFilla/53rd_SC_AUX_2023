@@ -53,6 +53,19 @@ class cfgMagazineWells {
 			"53rd_36Rnd_95x40_Mag_Ball"
 		};
 	};
+	class 53rd_Magwell_Commando{
+		53rd_65x48_20Rnd[] = {
+			"53rd_20Rnd_65x48_Mag_OPTRE",
+			"53rd_20Rnd_65x48_Mag",
+			"53rd_20Rnd_65x48_Mag_Tracer",
+			"53rd_20Rnd_65x48_Mag_JHP",
+			"53rd_20Rnd_65x48_Mag_JHPT",
+			"53rd_20Rnd_65x48_Mag_AP",
+			"53rd_20Rnd_65x48_Mag_APT",
+			"53rd_20Rnd_65x48_Mag_SLAP",
+			"53rd_20Rnd_65x48_Mag_SLAPT"
+		};
+	};
 	class 53rd_Magwell_8Gauge{
 		53rd_8Gauge_6Rnd[] = {
 			"53rd_6Rnd_8Gauge_Pellets",
@@ -79,6 +92,18 @@ class cfgMagazineWells {
 			"53rd_12Rnd_12Gauge_Pellets_OPTRE"
 		};
 	};
+	class 53rd_Magwell_M392{
+		53rd_762x51_15Rnd[] = {
+			"53rd_15Rnd_762x51_Mag_AP",
+			"53rd_15Rnd_762x51_Mag_APT",
+			"53rd_15Rnd_762x51_Mag",
+			"53rd_15Rnd_762x51_Mag_Tracer",
+			"53rd_15Rnd_762x51_Mag_HVAP",
+			"53rd_15Rnd_762x51_Mag_HVAPT",
+			"53rd_15Rnd_762x51_Mag_JHP",
+			"53rd_15Rnd_762x51_Mag_JHPT"
+		};
+	};
 	class 53rd_Magwell_CR77{
 		53rd_762x51_15Rnd[] = {
 			"53rd_15Rnd_762x51_Mag_AP",
@@ -86,7 +111,9 @@ class cfgMagazineWells {
 			"53rd_15Rnd_762x51_Mag",
 			"53rd_15Rnd_762x51_Mag_Tracer",
 			"53rd_15Rnd_762x51_Mag_HVAP",
-			"53rd_15Rnd_762x51_Mag_HVAPT"
+			"53rd_15Rnd_762x51_Mag_HVAPT",
+			"53rd_15Rnd_762x51_Mag_JHP",
+			"53rd_15Rnd_762x51_Mag_JHPT"
 		};
 		53rd_762x51_25Rnd[] = {
 			"53rd_25Rnd_762x51_Mag_AP",
@@ -177,6 +204,18 @@ class cfgMagazineWells {
 		"53rd_12Rnd_127x40_Mag_NARQT",
 	};
 	};
+	class 53rd_Magwell_M6Carbine{
+		53rd_127x40_8Rnd[] = {
+			"53rd_16Rnd_127x40_Mag",
+			"53rd_16Rnd_127x40_Mag_Tracer",
+			"53rd_16Rnd_127x40_Mag_AP",
+			"53rd_16Rnd_127x40_Mag_APT",,
+			"53rd_16Rnd_127x40_Mag_JHP",
+			"53rd_16Rnd_127x40_Mag_JHPT",
+			"53rd_16Rnd_127x40_Mag_SS",
+			"53rd_16Rnd_127x40_Mag_SST",
+	};
+	}
 	class 53rd_Magwell_M33{
 		53rd_762x51_128Rnd[] = {
 			"53rd_128Rnd_762x51_Drum",
@@ -237,6 +276,21 @@ class cfgMagazineWells {
 		53rd_145x114_4Rnd[] = {
 			"53rd_4Rnd_145x114_APFSDS_Mag",
 			"53rd_4Rnd_145x114_HVAP_Mag",
+		};
+	};
+	class 53rd_Magwell_SPANKr{
+		53rd_HE[] = {
+			"53rd_M41_Twin_HE",
+			"53rd_M41_Twin_HE_SACLOS",
+			"53rd_M41_Twin_HE_Thermal",
+			"53rd_M41_Twin_HE_Laser"
+		};
+		53rd_HEAT[] = {
+			"53rd_M41_Twin_HEAT_SACLOS",
+			"53rd_M41_Twin_HEAT_Thermal",
+			"53rd_M41_Twin_HEAT_Guided",
+			"53rd_M41_Twin_HEAT_Laser",
+			"53rd_M41_Twin_HEAT"
 		};
 	};
 };
