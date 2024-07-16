@@ -93,6 +93,7 @@ class ThrowMuzzle;
 class CfgWeapons
 {
 	//class TCF_M73H;
+	class TCF_Saw_Gamma_Stealth;
 	class OPTRE_M41_SSR;
 	class optre_hgun_sas10_F;
 	class MA_GRL_45;
@@ -1105,7 +1106,7 @@ class CfgWeapons
 					"OPTRE_m12_Laser",
 					"OPTRE_m12_Flashlight",
 					"OPTRE_m12_Vis_Red_Laser",
-					"OPTRE_DMR_Light"
+					"TCF_Rifle_Flashlight_IR"
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -1240,9 +1241,11 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
-					"OPTRE_M393_Scope",
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
 					"optic_MRCO",
@@ -1294,12 +1297,14 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
 					"OPTRE_M393_Scope",
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
-					"OPTRE_M73_SmartLink",
 					"optic_MRCO",
 					"ACE_optic_MRCO_2D"
 				};
@@ -1315,7 +1320,9 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
-					"OPTRE_BMR_Laser",
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
 					"TCF_Rifle_Flashlight_IR"
 				};
 			};
@@ -1358,6 +1365,9 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
 					"OPTRE_M393_Scope",
@@ -1378,7 +1388,9 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
-					"OPTRE_BMR_Laser",
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
 					"TCF_Rifle_Flashlight_IR"
 				};
 			};
@@ -1527,7 +1539,7 @@ class CfgWeapons
 		author = MACRO_AUTHOR;
 		baseWeapon = "53rd_M33";
 		scope = 2;
-		displayName = "[53rd] M33 (SAW)";
+		displayName = "[53rd] M33";
 		model = "\TCF_WEAPONRY\Weapons\Machineguns\M33\TCF_M33_T.p3d";
 		mass = 75;
 		reloadAction = "GestureReloadSPAR_01";
@@ -1565,8 +1577,13 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_Scope",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
 					"optic_MRCO",
-					"ACE_optic_MRCO_2D",
+					"ACE_optic_MRCO_2D"
 				};
 				iconPosition[] = {0.5,0.3};
 			};
@@ -1631,7 +1648,9 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
-					"OPTRE_BMR_Laser",
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
 					"TCF_Rifle_Flashlight_IR"
 				};
 			};
@@ -1646,6 +1665,63 @@ class CfgWeapons
 			};
 		};
 	};
+	class 53rd_UNSC_M739 : TCF_Saw_Gamma_Stealth{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M739 (Saw)";
+		baseWeapon = "53rd_UNSC_M739";
+		cursor = "mg";
+		magazines[] =
+		{
+			"53rd_128Rnd_762x51_Drum"
+		};
+		magazineWell[] = { "53rd_Magwell_M739" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_Scope",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
+					"TCF_Rifle_Flashlight_IR"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+					"bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk"
+				};
+			};
+		};
+	}
 	class 53rd_M247H_Etilka : OPTRE_M247H_Etilka{
 		dlc = "53rdAux";
 		author = "53rd Aux Team";
@@ -2336,10 +2412,7 @@ class CfgWeapons
 			};
 			class CowsSlot
 			{
-				compatibleitems[] =
-				{
-					"OPTRE_M7_Sight"
-				};
+				compatibleitems[] = {};
 			};
 			class PointerSlot
 			{

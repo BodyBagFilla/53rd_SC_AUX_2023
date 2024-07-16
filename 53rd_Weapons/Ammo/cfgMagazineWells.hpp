@@ -223,8 +223,20 @@ class cfgMagazineWells {
 			"53rd_128Rnd_762x51_Drum_AP",
 			"53rd_128Rnd_762x51_Drum_APT",
 			"53rd_128Rnd_762x51_Drum_JHP",
-			"53rd_128Rnd_762x51_Drum_JHP"
+			"53rd_128Rnd_762x51_Drum_JHPT"
 		};
+	};
+	class 53rd_Magwell_M739{
+	53rd_762x51_128Rnd[] = {
+		"53rd_128Rnd_762x51_Drum",
+		"53rd_128Rnd_762x51_Drum_Tracer",
+		"53rd_128Rnd_762x51_Drum_AP",
+		"53rd_128Rnd_762x51_Drum_APT",
+		"53rd_128Rnd_762x51_Drum_JHP",
+		"53rd_128Rnd_762x51_Drum_JHPT",
+		"53rd_128Rnd_762x51_Drum_SLAP",
+		"53rd_128Rnd_762x51_Drum_SLAPT"
+	};
 	};
 	class 53rd_Magwell_AR0{
 		53rd_762x51_60Rnd[] = {

@@ -291,6 +291,12 @@ class cfgAmmo
 		initspeed = 1000;
 		typicalSpeed = 1000;
 	};
+	class 53rd_B_762x51_SLAP : B_762x51_19_FMJ{
+	caliber = 7;
+	hit = 16;
+	initspeed = 1000;
+	typicalSpeed = 1000;
+	};
 	class 53rd_B_5x23_HV : B_5x23_19_FMJ{
 		caliber = 3;
 		hit = 11;

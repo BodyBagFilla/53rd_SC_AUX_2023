@@ -14,6 +14,7 @@ class CfgMagazines {
 	class Commando_20Rnd_65_Mag;
 	class OPTRE_M41_Twin_HEAT_SACLOS_ProximityFuse;
 	class OPTRE_M41_Twin_HEAT_Thermal;
+	class TCF_Gamma_762_mag;
 	class 53rd_M41_Rocket_Twin_MEME : TCF_1Rnd_50x137_HEAT
 	{
 		displayname = "M19 Death Rocket";
@@ -335,11 +336,15 @@ class CfgMagazines {
 #pragma endregion
 #pragma region 128Rnd 7.62x51
 	//Standard
-	class 53rd_128Rnd_762x51_Drum : 53rd_60Rnd_762x51_Mag{
+	class 53rd_128Rnd_762x51_Drum : TCF_Gamma_762_mag{
 		displayname = "128Rnd 7.62x51mm Drum [53rd]";
 		displaynameshort = "7.62x51mm";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm";
 		mass = 45;
+		ammo = "B_762x51_19_FMJ";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_slap_co.paa" };
 	};
 	class 53rd_128Rnd_762x51_Drum_Tracer : 53rd_128Rnd_762x51_Drum{
 		displayname = "128Rnd 7.62x51mm Drum (Tracer) [53rd]";
@@ -353,7 +358,10 @@ class CfgMagazines {
 		displayname = "128Rnd 7.62x51mm JHP Drum [53rd]";
 		displaynameshort = "7.62x51mm JHP";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Jacketed Hollow-Point";
-		ammo = "TCF_B_762x51_JHP";
+		ammo = "53rd_B_762x51_JHP";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_JHP_co.paa" };
 		mass = 45;
 	};
 	class 53rd_128Rnd_762x51_Drum_JHPT : 53rd_128Rnd_762x51_Drum_JHP{
@@ -368,7 +376,11 @@ class CfgMagazines {
 		displayname = "128Rnd 7.62x51mm AP Drum [53rd]";
 		displaynameshort = "7.62x51mm AP";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Armor-Piercing";
-		ammo = "TCF_B_762x51_AP";
+		ammo = "B_762x51_19_AP";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_ap_co.paa" };
+		count = 128;
 		mass = 45;
 	};
 	class 53rd_128Rnd_762x51_Drum_APT : 53rd_128Rnd_762x51_Drum_AP{
@@ -380,14 +392,18 @@ class CfgMagazines {
 	};
 	//SLAP
 	class 53rd_128Rnd_762x51_Drum_SLAP : 53rd_128Rnd_762x51_Drum{
-		displayname = "128Rnd 7.62x51mm JHP Drum [53rd]";
+		displayname = "128Rnd 7.62x51mm SLAP Drum [53rd]";
 		displaynameshort = "7.62x51mm SLAP";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Saboted Light Armor Penetrator";
-		ammo = "TCF_B_M118_SLAP_Caseless";
+		ammo = "53rd_B_762x51_SLAP"
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_slap_co.paa" };
+		count = 128;
 		mass = 45;
 	};
 	class 53rd_128Rnd_762x51_Drum_SLAPT : 53rd_128Rnd_762x51_Drum_SLAP{
-		displayname = "128Rnd 7.62x51mm JHP Drum (Tracer) [53rd]";
+		displayname = "128Rnd 7.62x51mm SLAP Drum (Tracer) [53rd]";
 		displaynameshort = "7.62x51mm SLAP Tracer";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Saboted Light Armor Penetrator Tracer";
 		tracersEvery = 1;
