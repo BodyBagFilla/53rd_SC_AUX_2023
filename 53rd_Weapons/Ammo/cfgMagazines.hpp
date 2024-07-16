@@ -1457,7 +1457,7 @@ class CfgMagazines {
 		count = 20;
 		initspeed = 900;
 		picture = "\OPTRE_weapons\ar\icons\magazine.paa";
-		descriptionshort = "6 Rounds of 8 Gauge Pellets";
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag : 53rd_20Rnd_65x48_Mag_OPTRE{
@@ -1465,6 +1465,7 @@ class CfgMagazines {
 		displaynameshort = "65x48mm FMJ";
 		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
 		ammo = "53rd_B_65x48_FMJ";
+		scopeArsenal = 2;
 		initspeed = 800;
 		mass = 12;
 	};
