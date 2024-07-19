@@ -74,7 +74,9 @@ class CfgPatches //This configures the identification of the pbo to the game
 			"53rd_GRL_45",
 			"53rd_SAS10",
 			"53rd_UNSC_M41-SSR",
-			"53rd_UNSC_M73H"
+			"53rd_UNSC_M73H",
+			"53rd_UNSC_M739",
+			"53rd_M7_OPTRE"
 		};
 	};
 };
@@ -92,7 +94,7 @@ class ThrowMuzzle;
 
 class CfgWeapons
 {
-	//class TCF_M73H;
+	class TCF_M73H;
 	class TCF_Saw_Gamma_Stealth;
 	class OPTRE_M41_SSR;
 	class optre_hgun_sas10_F;
@@ -1314,7 +1316,7 @@ class CfgWeapons
 		};
 	};
 
-	class 53rd_UNSC_M73H : OPTRE_M73
+	class 53rd_UNSC_M73H : TCF_M73H
 	{
 		dlc = "53rdAux";
 		author = "53rd Aux Team";
@@ -1341,7 +1343,8 @@ class CfgWeapons
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
 					"optic_MRCO",
-					"ACE_optic_MRCO_2D"
+					"ACE_optic_MRCO_2D",
+					"OPTRE_M73_SmartLink"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -2151,7 +2154,7 @@ class CfgWeapons
 		author = MACRO_AUTHOR;
 		scope = 2;
 		scopeArsenal = 2;
-		displayName = "[53rd] M7 Caseless SMG";
+		displayName = "[53rd] M7 SMG";
 		baseweapon = "53rd_M7";
 		recoil = "recoil_M7X";
 		class Single;
@@ -2181,9 +2184,56 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
-					"OPTRE_M12_Laser",
-					"OPTRE_m12_Flashlight",
-					"OPTRE_m12_Vis_Red_Laser"
+					"OPTRE_M7_Laser",
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Vis_Red_Laser"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	class 53rd_M7_OPTRE : OPTRE_M7
+	{
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[53rd] M7 Caseless SMG";
+		baseweapon = "53rd_M7_OPTRE";
+		recoil = "recoil_M7X";
+		class Single;
+		class FullAuto;
+		magazines[] = { "53rd_60Rnd_5x23mm_Mag" };
+		magazineWell[] = {"53rd_Magwell_M7"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			mass = 100;
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = {"optre_m7_silencer"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{"OPTRE_M7_Sight",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"19_UNSC_M7_optic"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M7_Laser",
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Vis_Red_Laser"
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot

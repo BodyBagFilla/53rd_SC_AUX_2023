@@ -273,6 +273,27 @@ class XtdGearModels {
 				};
 			};
 		};
+
+		class M7 {
+			label = "M7";
+			author = "Sigma";
+			options[] = { "variant" };
+			class variant {
+				alwaysSelectable = 1;
+				label = "Model";
+				values[] =
+				{
+					"Caseless",
+					"Fleet"
+				};
+				class Caseless {
+					label = "Caseless";
+				};
+				class Fleet {
+					label = "Fleet";
+				};
+			};
+		};
 	};
 };
 class XtdGearInfos {
@@ -463,6 +484,7 @@ class XtdGearInfos {
 			camo = "Desert";
 		};
 		
+		//Commando
 		class 53rd_UNSC_Commando{
 			model = "Commando";
 			camo = "Black";
@@ -496,6 +518,16 @@ class XtdGearInfos {
 		class 53rd_UNSC_SRS99_Fang{
 			model = "SRS";
 			weapon = "Fang";
+		};
+
+		//M7
+		class 53rd_M7{
+			model = "M7";
+			variant = "Fleet";
+		};
+		class  53rd_M7_OPTRE{
+			model = "M7";
+			variant = "Caseless";
 		};
 	};
 };
