@@ -153,7 +153,7 @@ class XtdGearModels {
 		class RiotShield {
 			label = "Riot Shield";
 			author = "Sigma";
-			options[] = { "weapon" };
+			options[] = { "weapon", "camo"};
 
 			class weapon {
 				alwaysSelectable = 1;
@@ -177,19 +177,37 @@ class XtdGearModels {
 					label = "Bulldog";
 				};
 			};
-			/*class camo
-			{
+			class camo {
 				alwaysSelectable = 1;
-				label = "Underbarrel";
-				values[] = { "none","GL" };
-				class none
+				label = "Camo";
+				values[] =
 				{
-					label = "None";
+					"Standard",
+					"Urban",
+					"Snow",
+					"Desert"
 				};
-				class GL
+				class Standard
 				{
-					label = "GL";
-				};*/
+					label = "Standard";
+					image = "#(rgb,8,8,3)color(0.404,0.427,0.329,1)";
+				};
+				class Snow
+				{
+					label = "Snow";
+					image = "#(rgb,8,8,3)color(0.804,0.804,0.804,1)";
+				};
+				class Desert
+				{
+					label = "Desert";
+					image = "#(rgb,8,8,3)color(0.494,0.439,0.361,1)";
+				};
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.255,0.255,0.255,1)";
+				};
+			};
 		};
 		class SRS {
 			label = "SRS99";
@@ -210,6 +228,49 @@ class XtdGearModels {
 					label = "SRS99 (Fang)";
 				};
 
+			};
+		};
+
+		class Commando {
+			label = "Commando";
+			author = "Sigma";
+			options[] = { "camo" };
+			class camo {
+				alwaysSelectable = 1;
+				label = "Camo";
+				values[] =
+				{
+					"Olive",
+					"Black",
+					"White",
+					"Red",
+					"Blue",
+					"Tan"
+				};
+				class Olive {
+					label = "Olive";
+					image = "#(rgb,8,8,3)color(0.404,0.427,0.329,1)";
+				};
+				class Black {
+					label = "Black";
+					image = "#(rgb,8,8,3)color(0,0,0,1)";
+				};
+				class White {
+					label = "White";
+					image = "#(rgb,8,8,3)color(0.7,0.7,0.7,1)";
+				};
+				class Red {
+					label = "Red";
+					image = "#(rgb,8,8,3)color(0.69,0.12,0.2,1)";
+				};
+				class Blue {
+					label = "Blue";
+					image = "#(rgb,8,8,3)color(0.07,0.12,0.75,1)";
+				};
+				class Tan {
+					label = "Tan";
+					image = "#(rgb,8,8,3)color(0.82,0.70,0.54,1)";
+				};
 			};
 		};
 	};
@@ -258,19 +319,16 @@ class XtdGearInfos {
 			variant = "BR55";
 			other = "none";
 		};
-
 		class 53rd_UNSC_br55_gl{
 			model = "BR55";
 			variant = "BR55";
 			other = "GL";
 		};
-
 		class 53rd_UNSC_br55_HB{
 			model = "BR55";
 			variant = "BR55HB";
 			other = "none";
 		};
-
 		class 53rd_UNSC_br55_HB_gl{
 			model = "BR55";
 			variant = "BR55HB";
@@ -323,18 +381,111 @@ class XtdGearInfos {
 		class 53rd_M6G_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M6G";
+			camo = "Standard"
 		};
+		class 53rd_M6G_Riot_Shield_Urban{
+			model = "RiotShield";
+			weapon = "M6G";
+			camo = "Urban"
+		};
+		class 53rd_M6G_Riot_Shield_Snow{
+			model = "RiotShield";
+			weapon = "M6G";
+			camo = "Snow"
+		};
+		class 53rd_M6G_Riot_Shield_Desert{
+			model = "RiotShield";
+			weapon = "M6G";
+			camo = "Desert"
+
+		};
+
 		class 53rd_M6C_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M6C";
+			camo = "Standard"
 		};
+		class 53rd_M6C_Riot_Shield_Urban{
+			model = "RiotShield";
+			weapon = "M6C";
+			camo = "Urban"
+		};
+		class 53rd_M6C_Riot_Shield_Snow{
+			model = "RiotShield";
+			weapon = "M6C";
+			camo = "Snow"
+		};		
+		class 53rd_M6C_Riot_Shield_Desert{
+			model = "RiotShield";
+			weapon = "M6C";
+			camo = "Desert"
+		};
+
 		class 53rd_M7_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M7";
+			camo = "Standard";
 		};
+		class 53rd_M7_Riot_Shield_Urban{
+			model = "RiotShield";
+			weapon = "M7";
+			camo = "Urban";
+		};
+		class 53rd_M7_Riot_Shield_Snow{
+			model = "RiotShield";
+			weapon = "M7";
+			camo = "Snow";
+		};
+		class 53rd_M7_Riot_Shield_Desert{
+			model = "RiotShield";
+			weapon = "M7";
+			camo = "Desert";
+		};
+
 		class 53rd_Bulldog_Riot_Shield{
 			model = "RiotShield";
 			weapon = "Bulldog";
+			camo = "Standard";
+		};
+		class 53rd_Bulldog_Riot_Shield_Urban{
+			model = "RiotShield";
+			weapon = "Bulldog";
+			camo = "Urban";
+		};
+		class 53rd_Bulldog_Riot_Shield_Snow{
+			model = "RiotShield";
+			weapon = "Bulldog";
+			camo = "Snow";
+		};
+		class 53rd_Bulldog_Riot_Shield_Desert{
+			model = "RiotShield";
+			weapon = "Bulldog";
+			camo = "Desert";
+		};
+		
+		class 53rd_UNSC_Commando{
+			model = "Commando";
+			camo = "Black";
+		};
+		class 53rd_UNSC_Commando_Blue{
+			model = "Commando";
+			camo = "Blue";
+		};
+		class 53rd_UNSC_Commando_Standard{
+			model = "Commando";
+			camo = "Olive";
+		};
+		class 53rd_UNSC_Commando_Red{
+			model = "Commando";
+			camo = "Red";
+		};
+		class 53rd_UNSC_Commando_White{
+			model = "Commando";
+			camo = "White";
+		};
+		class 53rd_UNSC_Commando_Tan{
+			model = "Commando";
+			camo = "Tan";
 		};
 
 		//SRS

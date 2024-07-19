@@ -108,6 +108,10 @@ class CfgWeapons
 	};
 	class OPTRE_SRS99C {
 		class WeaponSlotsInfo;
+		class MuzzleSlot;
+		class CowsSlot;
+		class UnderBarrelSlot;
+		class PointerSlot;
 	};
 	class TCF_AR0M37 {
 		class WeaponSlotsInfo;
@@ -1075,7 +1079,7 @@ class CfgWeapons
 	{
 		dlc = "53rdAux";
 		author = "53rd Aux Team";
-		displayName = "[53rd] Commando";
+		displayName = "[53rd] Commando (Black)";
 		baseWeapon = "53rd_UNSC_Commando";
 		cursor = "OPTRE_M392";
 		magazines[] = {"53rd_20Rnd_65x48_Mag"};
@@ -1117,6 +1121,37 @@ class CfgWeapons
 			};
 		};
 	};
+	class 53rd_UNSC_Commando_Blue : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Blue";
+		displayName = "[53rd] Commando (Police)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_police_co.paa","OPTRE_Weapons\Commando\data\commando2_police_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_Standard : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Standard";
+		displayName = "[53rd] Commando";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_olive_co.paa","OPTRE_Weapons\Commando\data\commando2_olive_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_Red : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Red";
+		displayName = "[53rd] Commando (Red)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_red_co.paa","OPTRE_Weapons\Commando\data\commando2_red_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_White : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_White";
+		displayName = "[53rd] Commando (White)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_snow_co.paa","OPTRE_Weapons\Commando\data\commando2_snow_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	}
+	class 53rd_UNSC_Commando_Tan : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Tan";
+		displayName = "[53rd] Commando (Tan)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_tan_co.paa","OPTRE_Weapons\Commando\data\commando2_tan_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	}
+
 
 	//////Shotguns (M90, M45, Bulldog)
 	class 53rd_UNSC_M90 : 19_UNSC_M90
@@ -1222,7 +1257,7 @@ class CfgWeapons
 		};
 	};
 
-	//////MGs (MMG, M247, M33
+	//////MGs (MMG, M247, M33, CM12, M739)
 	class 53rd_UNSC_MMG : MMG_02_black_F
 	{
 		dlc = "53rdAux";
@@ -1730,7 +1765,7 @@ class CfgWeapons
 		cursor = "OPTRE_M41";
 		magazines[] =
 		{
-			"OPTRE_200Rnd_127x99_M247H_Etilka"
+			"OPTRE_200Rnd_127x99_M247H_Etilka_Ball"
 		};
 		magazineWell[] = {};
 		class WeaponSlotsInfo : WeaponSlotsInfo
@@ -2243,28 +2278,26 @@ class CfgWeapons
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 30;
-			class MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
 				compatibleItems[] =
 				{
 					
 				};
 			};
-			class CowsSlot
+			class CowsSlot : CowsSlot
 			{
 				compatibleitems[] =
 				{
-					"OPTRE_SRS99_Scope",
-					"OPTRE_SRS99C_Scope",
-					"19_UNSC_SRS99AM_Scope",
+					"19_UNSC_SRS99AM_Scope"
 				};
 			};
-			class PointerSlot
+			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] = {};
 
 			};
-			class UnderBarrelSlot
+			class UnderBarrelSlot : UnderBarrelSlot
 			{
 				compatibleItems[] = {};
 			};
@@ -2286,7 +2319,7 @@ class CfgWeapons
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			mass = 30;
-			class MuzzleSlot
+			class MuzzleSlot : MuzzleSlot
 			{
 				compatibleItems[] =
 				{
@@ -2294,22 +2327,20 @@ class CfgWeapons
 				};
 
 			};
-			class CowsSlot
+			class CowsSlot : CowsSlot
 			{
 				compatibleitems[] =
 				{
 					"OPTRE_SRS99_Scope",
-					"OPTRE_SRS99C_Scope",
-					"19_UNSC_SRS99AM_Scope",
-
+					"OPTRE_SRS99C_Scope"
 				};
 			};
-			class PointerSlot
+			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] = {};
 
 			};
-			class UnderBarrelSlot
+			class UnderBarrelSlot : UnderBarrelSlot
 			{
 				compatibleItems[] = {};
 			};
@@ -2346,7 +2377,7 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser" };
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser", "OPTRE_M6C_Flashlight", "OPTRE_M6C_Vis_Red_Laser"};
 			};
 			class CowsSlot : CowsSlot
 			{
@@ -2382,7 +2413,7 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight" };
+				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight", "OPTRE_M6G_Laser", "OPTRE_M6G_Vis_Red_Laser"};
 			};
 			class CowsSlot : CowsSlot
 			{
@@ -2593,6 +2624,23 @@ class CfgWeapons
 			scale[] = { 0 };
 		};
 	};
+	class 53rd_M6G_Riot_Shield_Desert : 53rd_M6G_Riot_Shield{
+		baseWeapon = "53rd_M6G_Riot_Shield_Desert";
+		displayName = "[53rd] Riot Shield(M6G) (Desert)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+	};
+	class 53rd_M6G_Riot_Shield_Snow : 53rd_M6G_Riot_Shield{
+		baseWeapon = "53rd_M6G_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield(M6G) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+	};
+	class 53rd_M6G_Riot_Shield_Urban : 53rd_M6G_Riot_Shield{
+		baseWeapon = "53rd_M6G_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield(M6G) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+	};
+
+
 	class 53rd_Bulldog_Riot_Shield : OPTRE_CQS48S_Chihuahua_Automatic
 	{
 		author = "53rd Aux Team";
@@ -2756,6 +2804,21 @@ class CfgWeapons
 				};
 			};
 		};
+	};
+	class 53rd_Bulldog_Riot_Shield_Desert : 53rd_Bulldog_Riot_Shield{
+		baseWeapon = "53rd_Bulldog_Riot_Shield_Desert";
+		displayName = "[53rd] Riot Shield (Bulldog) (Desert)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa","\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa" }; 
+	};
+	class 53rd_Bulldog_Riot_Shield_Snow : 53rd_Bulldog_Riot_Shield{
+		baseWeapon = "53rd_Bulldog_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield (Bulldog) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa","\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa" }; 
+	};
+	class 53rd_Bulldog_Riot_Shield_Urban : 53rd_Bulldog_Riot_Shield{
+		baseWeapon = "53rd_Bulldog_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield (Bulldog) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa","\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa" }; 
 	};
 	class 53rd_M7_Riot_Shield : OPTRE_M7
 	{
@@ -2962,6 +3025,22 @@ class CfgWeapons
 			};
 		};
 	};
+	class 53rd_M7_Riot_Shield_Desert : 53rd_M7_Riot_Shield{
+		baseWeapon = "53rd_M7_Riot_Shield_Desert";
+		displayName = "[53rd] Riot Shield (M7) (Desert)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","OPTRE_Weapons\smg\data\m7_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa" };
+	};
+	class 53rd_M7_Riot_Shield_Snow : 53rd_M7_Riot_Shield{
+		baseWeapon = "53rd_M7_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield (M7) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","OPTRE_Weapons\smg\data\m7_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa" };
+	};
+	class 53rd_M7_Riot_Shield_Urban : 53rd_M7_Riot_Shield{
+		baseWeapon = "53rd_M7_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield (M7) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","OPTRE_Weapons\smg\data\m7_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa" };
+	};
+
 	class 53rd_M6C_Riot_Shield : 53rd_UNSC_M6C
 	{
 		author = "53rd Aux Team";
@@ -3102,7 +3181,21 @@ class CfgWeapons
 			scale[] = { 0 };
 		};
 	};
-
+	class 53rd_M6C_Riot_Shield_Desert : 53rd_M6C_Riot_Shield{
+	baseWeapon = "53rd_M6C_Riot_Shield_Desert";
+	displayName = "[53rd] Riot Shield (M6C) (Desert)";
+	hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\optre_weapons\pistol\data\m6c_m6c_co.paa" }; 
+	};
+	class 53rd_M6C_Riot_Shield_Snow : 53rd_M6C_Riot_Shield{
+		baseWeapon = "53rd_M6C_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield (M6C) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\optre_weapons\pistol\data\m6c_m6c_co.paa" };
+	};
+	class 53rd_M6C_Riot_Shield_Urban : 53rd_M6C_Riot_Shield{
+		baseWeapon = "53rd_M6C_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield (M6C) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\optre_weapons\pistol\data\m6c_m6c_co.paa" };
+	};
 
 
 	// 
