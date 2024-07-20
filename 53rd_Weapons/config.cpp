@@ -823,7 +823,9 @@ class CfgWeapons
 			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] = {
-					"OPTRE_m12_Laser",
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
 					"OPTRE_DMR_Light"
 				};
 			};
@@ -2180,7 +2182,6 @@ class CfgWeapons
 		magazineWell[] = {"53rd_Magwell_M7"};
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 100;
 			class MuzzleSlot : MuzzleSlot
 			{
 				compatibleitems[] = {"optre_m7_silencer"};
@@ -2228,7 +2229,6 @@ class CfgWeapons
 		magazineWell[] = {"53rd_Magwell_M7"};
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
-			mass = 100;
 			class MuzzleSlot : MuzzleSlot
 			{
 				compatibleitems[] = {"optre_m7_silencer"};
@@ -3085,8 +3085,9 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
-					"OPTRE_M7_Flashlight",
 					"OPTRE_M7_Laser",
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Vis_Red_Laser"
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot

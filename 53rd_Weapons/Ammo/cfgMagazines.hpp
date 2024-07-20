@@ -240,7 +240,7 @@ class CfgMagazines {
 		modelSpecialIsProxy = 1;
 		displayname = "100Rnd 7.62x51mm Box Magazine";
 		displaynameshort = "7.62x51mm";
-		ammo = "OPTRE_B_762x51_Ball";
+		ammo = "B_762x51_19_FMJ";
 		count = 100;
 		initspeed = 950;
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
@@ -256,7 +256,7 @@ class CfgMagazines {
 	{
 		displayname = "100Rnd 7.62x51mm Box Magazine (Tracers)";
 		displaynameshort = "7.62x51mm Tracer";
-		ammo = "OPTRE_B_762x51_Tracer";
+		ammo = "B_762x51_19_FMJ";
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort = "100 Round Box Magazine<br/>7.62x51mm<br/>Tracer";
 		tracersEvery = 1;
@@ -301,8 +301,8 @@ class CfgMagazines {
 		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>Tracer";
 	};
 	class 53rd_15Rnd_762x51_Mag_HVAP : 53rd_60Rnd_762x51_Mag{
-		displayname = "15Rnd 7.62x51mm Magazine";	
-		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>(Increased Muzzle Velocity)";
+		displayname = "15Rnd 7.62x51mm HVAP Magazine";	
+		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator";
 		displaynameshort = "7.62x51mm HVAP";
 		ammo = "B_762x51_19_HVAP";
 		initspeed = 1000;
@@ -310,9 +310,9 @@ class CfgMagazines {
 		mass = 10;
 	};
 	class 53rd_15Rnd_762x51_Mag_HVAPT : 53rd_15Rnd_762x51_Mag_HVAP{
-		displayname = "15Rnd 7.62x51mm Magazine (Tracers)";
+		displayname = "15Rnd 7.62x51mm HVAP Magazine (Tracers)";
 		displaynameshort = "7.62x51mm HVAP Tracer";
-		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator";
+		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator Tracer";
 		tracersevery = 1;
 		lastRoundsTracer = 15;
 	};
@@ -1386,7 +1386,7 @@ class CfgMagazines {
 		displaynameshort = "5x23mm";
 		descriptionshort = "48 Round Magazine<br/>5x23mm";
 		count = 48;
-		initspeed = 700;
+		initspeed = 450;
 		tracersEvery = 0;
 		lastRoundsTracer = 5;
 		mass = 6;
