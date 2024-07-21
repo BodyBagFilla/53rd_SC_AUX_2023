@@ -2686,45 +2686,45 @@ class CfgWeapons
 			class CowsSlot : CowsSlot
 			{
 				compatibleitems[] = {
-					"OPTRE_M6G_Scope", 
+					"OPTRE_M6G_Scope",
 					"OPTRE_M7_Sight",
 					"Optre_Recon_Sight",
-					"Optre_Recon_Sight_Green", 
-					"Optre_Recon_Sight_Red"	
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
 				};
 			};
 		};
 
-model = "\OPTRE_Weapons\RiotShield\riotshield_M6G.p3d";
-hiddenSelections[] =
-{
-	"camoShield",
-	"camoWindshield",
-	"camo1"
-};
-hiddenSelectionsTextures[] =
-{
-	"OPTRE_Weapons\RiotShield\data\Body_co.paa",
-	"OPTRE_Weapons\riotshield\data\body_ca.paa",
-	"\OPTRE_Weapons\Pistol\data\M6G_CO.paa"
-};
-hiddenSelectionsMaterials[] =
-{
-	"OPTRE_Weapons\RiotShield\data\body.rvmat",
-	"OPTRE_Weapons\riotshield\data\glass.rvmat",
-	"optre_weapons\pistol\data\m6g.rvmat"
-};
-handAnim[] =
-{
-	"OFP2_ManSkeleton",
-	"\OPTRE_Weapons\RiotShield\data\anim\m6g_human.rtm",
-	"Spartan_ManSkeleton",
-	"\OPTRE_Weapons\RiotShield\data\anim\spartan\m6g_spartan.rtm"
-};
-type = 1;
-inertia = 0.5;
-dexterity = 1.25;
-class OpticsModes
+		model = "\OPTRE_Weapons\RiotShield\riotshield_M6G.p3d";
+		hiddenSelections[] =
+		{
+			"camoShield",
+			"camoWindshield",
+			"camo1"
+		};
+		hiddenSelectionsTextures[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\Body_co.paa",
+			"OPTRE_Weapons\riotshield\data\body_ca.paa",
+			"\OPTRE_Weapons\Pistol\data\M6G_CO.paa"
+		};
+		hiddenSelectionsMaterials[] =
+		{
+			"OPTRE_Weapons\RiotShield\data\body.rvmat",
+			"OPTRE_Weapons\riotshield\data\glass.rvmat",
+			"optre_weapons\pistol\data\m6g.rvmat"
+		};
+		handAnim[] =
+		{
+			"OFP2_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\m6g_human.rtm",
+			"Spartan_ManSkeleton",
+			"\OPTRE_Weapons\RiotShield\data\anim\spartan\m6g_spartan.rtm"
+		};
+		type = 1;
+		inertia = 0.5;
+		dexterity = 1.25;
+		class OpticsModes
 {
 	class ironsight
 	{
@@ -2785,7 +2785,7 @@ class OpticsModes
 		visionMode[] = {};
 	};
 };
-class FlashLight
+		class FlashLight
 {
 	color[] = { 180,180,180 };
 	ambient[] = { 0.89999998,0.89999998,0.89999998 };
@@ -3251,12 +3251,12 @@ class FlashLight
 			};
 			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = { 
+				compatibleitems[] = {
 					"OPTRE_M6C_Scope",
-					"OPTRE_M7_Sight"
+					"OPTRE_M7_Sight",
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
-					"Optre_Recon_Sight_Red" 
+					"Optre_Recon_Sight_Red"
 				};
 			};
 		};
