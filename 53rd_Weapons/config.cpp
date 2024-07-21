@@ -486,7 +486,7 @@ class CfgWeapons
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
 					"OPTRE_M12_Optic"
-				
+
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -1231,7 +1231,7 @@ class CfgWeapons
 	};
 
 
-		//////Shotguns (M90, M45, Bulldog)
+	//////Shotguns (M90, M45, Bulldog)
 	class 53rd_UNSC_M90 : 19_UNSC_M90
 	{
 		dlc = "53rdAux";
@@ -2226,6 +2226,9 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
 					"optre_m393_eotech",
 					"optre_m7_sight",
 					"optre_m6c_scope",
@@ -2548,7 +2551,13 @@ class CfgWeapons
 			};
 			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = { "OPTRE_M6C_Scope", "OPTRE_M7_Sight" };
+				compatibleitems[] = {
+					"OPTRE_M6C_Scope",
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+				};
 			};
 		};
 	};
@@ -2580,13 +2589,18 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight", "OPTRE_M6G_Laser", "OPTRE_M6G_Vis_Red_Laser"};
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6G_Flashlight", "OPTRE_M6G_Laser", "OPTRE_M6G_Vis_Red_Laser"};
 			};
 			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = { "OPTRE_M6G_Scope", "OPTRE_M7_Sight"};
+				compatibleitems[] = {
+					"OPTRE_M6G_Scope",
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
 			};
-
 		};
 	};
 	class 53rd_UNSC_SAS10 : optre_hgun_sas10_F{
@@ -2667,129 +2681,136 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight" };
+				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight", "OPTRE_M6G_Vis_Red_Laser", "TCF_M6_Flashlight_IR"};
 			};
 			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = { "OPTRE_M6G_Scope", "OPTRE_M7_Sight"};
+				compatibleitems[] = {
+					"OPTRE_M6G_Scope", 
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green", 
+					"Optre_Recon_Sight_Red"	
+				};
 			};
 		};
-		model = "\OPTRE_Weapons\RiotShield\riotshield_M6G.p3d";
-		hiddenSelections[] =
+
+model = "\OPTRE_Weapons\RiotShield\riotshield_M6G.p3d";
+hiddenSelections[] =
+{
+	"camoShield",
+	"camoWindshield",
+	"camo1"
+};
+hiddenSelectionsTextures[] =
+{
+	"OPTRE_Weapons\RiotShield\data\Body_co.paa",
+	"OPTRE_Weapons\riotshield\data\body_ca.paa",
+	"\OPTRE_Weapons\Pistol\data\M6G_CO.paa"
+};
+hiddenSelectionsMaterials[] =
+{
+	"OPTRE_Weapons\RiotShield\data\body.rvmat",
+	"OPTRE_Weapons\riotshield\data\glass.rvmat",
+	"optre_weapons\pistol\data\m6g.rvmat"
+};
+handAnim[] =
+{
+	"OFP2_ManSkeleton",
+	"\OPTRE_Weapons\RiotShield\data\anim\m6g_human.rtm",
+	"Spartan_ManSkeleton",
+	"\OPTRE_Weapons\RiotShield\data\anim\spartan\m6g_spartan.rtm"
+};
+type = 1;
+inertia = 0.5;
+dexterity = 1.25;
+class OpticsModes
+{
+	class ironsight
+	{
+		cameraDir = "eye_dir";
+		discreteDistance[] = { 100 };
+		discreteDistanceCameraPoint[] =
 		{
-			"camoShield",
-			"camoWindshield",
-			"camo1"
+			"eye"
 		};
-		hiddenSelectionsTextures[] =
+		discreteDistanceInitIndex = 0;
+		discretefov[] = {};
+		discreteInitIndex = 0;
+		distancezoommax = 100;
+		distancezoommin = 100;
+		maxZeroing = 100;
+		memorypointcamera = "eye";
+		opticsDisablePeripherialVision = 0;
+		opticsFlare = 0;
+		opticsID = 0;
+		opticsPPEffects[] =
 		{
-			"OPTRE_Weapons\RiotShield\data\Body_co.paa",
-			"OPTRE_Weapons\riotshield\data\body_ca.paa",
-			"\OPTRE_Weapons\Pistol\data\M6G_CO.paa"
+			"",
+			""
 		};
-		hiddenSelectionsMaterials[] =
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		useModelOptics = 0;
+		visionMode[] = {};
+	};
+	class shieldView
+	{
+		cameraDir = "eye2_dir";
+		discreteDistance[] = { 100 };
+		discreteDistanceCameraPoint[] =
 		{
-			"OPTRE_Weapons\RiotShield\data\body.rvmat",
-			"OPTRE_Weapons\riotshield\data\glass.rvmat",
-			"optre_weapons\pistol\data\m6g.rvmat"
+			"eye2"
 		};
-		handAnim[] =
+		discreteDistanceInitIndex = 0;
+		discretefov[] = {};
+		discreteInitIndex = 0;
+		distancezoommax = 100;
+		distancezoommin = 100;
+		maxZeroing = 100;
+		memorypointcamera = "eye2";
+		opticsDisablePeripherialVision = 0;
+		opticsFlare = 0;
+		opticsID = 1;
+		opticsPPEffects[] =
 		{
-			"OFP2_ManSkeleton",
-			"\OPTRE_Weapons\RiotShield\data\anim\m6g_human.rtm",
-			"Spartan_ManSkeleton",
-			"\OPTRE_Weapons\RiotShield\data\anim\spartan\m6g_spartan.rtm"
+			"",
+			""
 		};
-		type = 1;
-		inertia = 0.5;
-		dexterity = 1.25;
-		class OpticsModes
-		{
-			class ironsight
-			{
-				cameraDir = "eye_dir";
-				discreteDistance[] = { 100 };
-				discreteDistanceCameraPoint[] =
-				{
-					"eye"
-				};
-				discreteDistanceInitIndex = 0;
-				discretefov[] = {};
-				discreteInitIndex = 0;
-				distancezoommax = 100;
-				distancezoommin = 100;
-				maxZeroing = 100;
-				memorypointcamera = "eye";
-				opticsDisablePeripherialVision = 0;
-				opticsFlare = 0;
-				opticsID = 0;
-				opticsPPEffects[] =
-				{
-					"",
-					""
-				};
-				opticsZoomMin = 0.375;
-				opticsZoomMax = 1.1;
-				opticsZoomInit = 0.75;
-				useModelOptics = 0;
-				visionMode[] = {};
-			};
-			class shieldView
-			{
-				cameraDir = "eye2_dir";
-				discreteDistance[] = { 100 };
-				discreteDistanceCameraPoint[] =
-				{
-					"eye2"
-				};
-				discreteDistanceInitIndex = 0;
-				discretefov[] = {};
-				discreteInitIndex = 0;
-				distancezoommax = 100;
-				distancezoommin = 100;
-				maxZeroing = 100;
-				memorypointcamera = "eye2";
-				opticsDisablePeripherialVision = 0;
-				opticsFlare = 0;
-				opticsID = 1;
-				opticsPPEffects[] =
-				{
-					"",
-					""
-				};
-				opticsZoomMin = 0.375;
-				opticsZoomMax = 1.1;
-				opticsZoomInit = 0.75;
-				useModelOptics = 0;
-				visionMode[] = {};
-			};
-		};
-		class FlashLight
-		{
-			color[] = { 180,180,180 };
-			ambient[] = { 0.89999998,0.89999998,0.89999998 };
-			intensity = 750;
-			size = 1;
-			innerAngle = 5;
-			outerAngle = 45;
-			coneFadeCoef = 10;
-			position = "flash_dir";
-			direction = "flash";
-			useFlare = 1;
-			flareSize = 1.5;
-			flareMaxDistance = 150;
-			dayLight = 0;
-			class Attenuation
-			{
-				start = 0;
-				constant = 0.5;
-				linear = 0.1;
-				quadratic = 0.2;
-				hardLimitStart = 100;
-				hardLimitEnd = 170;
-			};
-			scale[] = { 0 };
-		};
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		useModelOptics = 0;
+		visionMode[] = {};
+	};
+};
+class FlashLight
+{
+	color[] = { 180,180,180 };
+	ambient[] = { 0.89999998,0.89999998,0.89999998 };
+	intensity = 750;
+	size = 1;
+	innerAngle = 5;
+	outerAngle = 45;
+	coneFadeCoef = 10;
+	position = "flash_dir";
+	direction = "flash";
+	useFlare = 1;
+	flareSize = 1.5;
+	flareMaxDistance = 150;
+	dayLight = 0;
+	class Attenuation
+	{
+		start = 0;
+		constant = 0.5;
+		linear = 0.1;
+		quadratic = 0.2;
+		hardLimitStart = 100;
+		hardLimitEnd = 170;
+	};
+	scale[] = { 0 };
+};
 	};
 	class 53rd_M6G_Riot_Shield_Desert : 53rd_M6G_Riot_Shield{
 		baseWeapon = "53rd_M6G_Riot_Shield_Desert";
@@ -3226,11 +3247,17 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
-				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser" };
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser", "OPTRE_M6C_Flashlight", "OPTRE_M6C_Vis_Red_Laser" };
 			};
 			class CowsSlot : CowsSlot
 			{
-				compatibleitems[] = { "OPTRE_M6C_Scope", "OPTRE_M7_Sight" };
+				compatibleitems[] = { 
+					"OPTRE_M6C_Scope",
+					"OPTRE_M7_Sight"
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red" 
+				};
 			};
 		};
 		model = "\OPTRE_Weapons\RiotShield\riotshield_M6C.p3d";

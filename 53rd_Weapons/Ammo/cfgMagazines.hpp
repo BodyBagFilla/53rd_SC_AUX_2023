@@ -1493,8 +1493,8 @@ class CfgMagazines {
 		lastRoudsTracer = 20;
 	};
 	class 53rd_20Rnd_65x48_Mag_JHP : 53rd_20Rnd_65x48_Mag{
-		displayname = "20Rnd 65x48mm FMJ Magazine";
-		displaynameshort = "65x48mm FMJ";
+		displayname = "20Rnd 65x48mm JHP Magazine";
+		displaynameshort = "65x48mm JHP";
 		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Jacketed Hollow-Point";
 		ammo = "53rd_B_65x48_JHP";
 		initspeed = 900;
