@@ -74,7 +74,13 @@ class CfgPatches //This configures the identification of the pbo to the game
 			"53rd_GRL_45",
 			"53rd_SAS10",
 			"53rd_UNSC_M41-SSR",
+<<<<<<< HEAD
 			"53rd_UNSC_M73H"
+=======
+			"53rd_UNSC_M73H",
+			"53rd_UNSC_M739",
+			"53rd_M7_OPTRE"
+>>>>>>> SigmaWeaponsTesting
 		};
 	};
 };
@@ -92,7 +98,12 @@ class ThrowMuzzle;
 
 class CfgWeapons
 {
+<<<<<<< HEAD
 	//class TCF_M73H;
+=======
+	class TCF_M73H;
+	class TCF_Saw_Gamma_Stealth;
+>>>>>>> SigmaWeaponsTesting
 	class OPTRE_M41_SSR;
 	class optre_hgun_sas10_F;
 	class MA_GRL_45;
@@ -107,6 +118,13 @@ class CfgWeapons
 	};
 	class OPTRE_SRS99C {
 		class WeaponSlotsInfo;
+<<<<<<< HEAD
+=======
+		class MuzzleSlot;
+		class CowsSlot;
+		class UnderBarrelSlot;
+		class PointerSlot;
+>>>>>>> SigmaWeaponsTesting
 	};
 	class TCF_AR0M37 {
 		class WeaponSlotsInfo;
@@ -204,9 +222,18 @@ class CfgWeapons
 	class OPTRE_M45;
 	class 19_UNSC_M7_Side;
 	class 19_UNSC_SRS99AM;
+<<<<<<< HEAD
 		/////////////    53rd Weapons   ///////////////////
 
 	//////ARs (MA5 and MA32/MA37)
+=======
+	class OPTRE_SRS99D {
+		class WeaponSlotsInfo;
+	};
+	/////////////    53rd Weapons   ///////////////////
+
+//////ARs (MA5 and MA32/MA37)
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_UNSC_MA5A : 19_UNSC_MA5A
 	{
 		dlc = "53rdAux";
@@ -233,7 +260,14 @@ class CfgWeapons
 			{
 				compatibleitems[] = {
 					"TCF_Rifle_Flashlight_IR",
+<<<<<<< HEAD
 					"19_UNSC_MA5A_LAM"
+=======
+					"19_UNSC_MA5A_LAM",
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -261,14 +295,25 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"19_UNSC_MA5A_smartlink",
+=======
+					"19_UNSC_MA5A_smartlink"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] = {
 					"TCF_Rifle_Flashlight_IR",
+<<<<<<< HEAD
 					"19_UNSC_MA5A_LAM"
+=======
+					"19_UNSC_MA5A_LAM",
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -423,7 +468,10 @@ class CfgWeapons
 					"TCF_MA5C_SmartLink_legacy",
 					"OPTRE_MA5C_SmartLink",
 					"OPTRE_MA5_BUIS"
+<<<<<<< HEAD
 
+=======
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -464,7 +512,19 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+<<<<<<< HEAD
 					"OPTRE_MA5_BUIS" };
+=======
+					"OPTRE_MA5_BUIS",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+
+				};
+>>>>>>> SigmaWeaponsTesting
 			};
 			class PointerSlot : PointerSlot
 			{
@@ -498,7 +558,17 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+<<<<<<< HEAD
 					"OPTRE_MA5_BUIS" };
+=======
+					"OPTRE_MA5_BUIS",
+				"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+									"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic" };
+>>>>>>> SigmaWeaponsTesting
 			};
 			class PointerSlot : PointerSlot
 			{
@@ -528,7 +598,11 @@ class CfgWeapons
 			};
 			class CowsSlot : CowsSlot
 			{
+<<<<<<< HEAD
 				compatibleitems[] = { "OPTRE_MA37_Smartlink_Scope", "OPTRE_MA5_BUIS" };
+=======
+				compatibleitems[] = { "OPTRE_MA37_Smartlink_Scope" };
+>>>>>>> SigmaWeaponsTesting
 			};
 			class PointerSlot : PointerSlot
 			{
@@ -558,7 +632,11 @@ class CfgWeapons
 			};
 			class CowsSlot : CowsSlot
 			{
+<<<<<<< HEAD
 				compatibleitems[] = { "OPTRE_MA37_Smartlink_Scope", "OPTRE_MA5_BUIS" };
+=======
+				compatibleitems[] = { "OPTRE_MA37_Smartlink_Scope" };
+>>>>>>> SigmaWeaponsTesting
 			};
 			class PointerSlot : PointerSlot
 			{
@@ -589,7 +667,24 @@ class CfgWeapons
 				compatibleitems[] +=
 				{
 					"OPTRE_BR45_Scope",
+<<<<<<< HEAD
 					"OPTRE_BR55HB_Scope"
+=======
+					"OPTRE_BR55HB_Scope",
+					"OPTRE_M393_EOTECH",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Red",
+					"Optre_Recon_Sight_Green",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_ERCO_blk_F",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -602,12 +697,23 @@ class CfgWeapons
 			class PointerSlot : PointerSlot
 			{
 				compatibleItems[] = {
+<<<<<<< HEAD
 					"19_UNSC_BR55_LAM"
+=======
+					"19_UNSC_BR55_LAM",
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
+<<<<<<< HEAD
 			{				
+=======
+			{
+>>>>>>> SigmaWeaponsTesting
 				compatibleItems[] = {};
 			};
 		};
@@ -628,7 +734,24 @@ class CfgWeapons
 				compatibleitems[] +=
 				{
 					"OPTRE_BR45_Scope",
+<<<<<<< HEAD
 						"OPTRE_BR55HB_Scope"
+=======
+						"OPTRE_M393_EOTECH",
+						"Optre_Recon_Sight",
+						"Optre_Recon_Sight_Red",
+						"Optre_Recon_Sight_Green",
+					"OPTRE_BR55HB_Scope",
+						"optic_MRCO",
+						"ACE_optic_MRCO_2D",
+						"19_UNSC_evosd",
+						"19_UNSC_evo",
+						"optic_ERCO_blk_F",
+						"optic_Hamr",
+						"ACE_optic_Hamr_2D",
+						"ACE_optic_Hamr_PIP",
+						"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -641,7 +764,14 @@ class CfgWeapons
 			class PointerSlot : PointerSlot
 			{
 				compatibleItems[] = {
+<<<<<<< HEAD
 					"19_UNSC_BR55_LAM"
+=======
+					"19_UNSC_BR55_LAM",
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 
 			};
@@ -668,7 +798,24 @@ class CfgWeapons
 				compatibleitems[] +=
 				{
 					"OPTRE_BR45_Scope",
+<<<<<<< HEAD
 						"OPTRE_BR55HB_Scope"
+=======
+					"OPTRE_BR55HB_Scope",
+						"OPTRE_M393_EOTECH",
+						"Optre_Recon_Sight",
+						"Optre_Recon_Sight_Red",
+						"Optre_Recon_Sight_Green",
+						"optic_Hamr",
+						"ACE_optic_Hamr_2D",
+						"ACE_optic_Hamr_PIP",
+						"OPTRE_M12_Optic",
+						"optic_MRCO",
+						"ACE_optic_MRCO_2D",
+						"19_UNSC_evosd",
+						"19_UNSC_evo",
+						"optic_ERCO_blk_F"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -682,7 +829,14 @@ class CfgWeapons
 
 			{
 				compatibleItems[] = {
+<<<<<<< HEAD
 					"19_UNSC_BR55_LAM"
+=======
+					"19_UNSC_BR55_LAM",
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 
 
@@ -710,7 +864,24 @@ class CfgWeapons
 				compatibleitems[] +=
 				{
 					"OPTRE_BR45_Scope",
+<<<<<<< HEAD
 					"OPTRE_BR55HB_Scope"
+=======
+					"OPTRE_BR55HB_Scope",
+						"OPTRE_M393_EOTECH",
+						"Optre_Recon_Sight",
+						"Optre_Recon_Sight_Red",
+						"Optre_Recon_Sight_Green",
+						"optic_Hamr",
+						"ACE_optic_Hamr_2D",
+						"ACE_optic_Hamr_PIP",
+						"OPTRE_M12_Optic",
+						"optic_MRCO",
+						"ACE_optic_MRCO_2D",
+						"19_UNSC_evosd",
+						"19_UNSC_evo",
+						"optic_ERCO_blk_F"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -724,7 +895,14 @@ class CfgWeapons
 			{
 				compatibleItems[] +=
 				{
+<<<<<<< HEAD
 						"19_UNSC_BR55_LAM"
+=======
+						"19_UNSC_BR55_LAM",
+						"OPTRE_M12_Laser",
+						"OPTRE_m12_Flashlight",
+						"OPTRE_m12_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -735,7 +913,11 @@ class CfgWeapons
 	};
 
 	//////DMRs (CR-77, M392, ARM)
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_UNSC_CR77 : TCF_CR77
 	{
 		dlc = "53rdAux";
@@ -743,7 +925,11 @@ class CfgWeapons
 		displayName = "[53rd] CR-77 Marksmen Rifle";
 		baseWeapon = "53rd_UNSC_CR77";
 		cursor = "OPTRE_M392";
+<<<<<<< HEAD
 		magazines[] = {"53rd_15Rnd_762x51_Mag"};
+=======
+		magazines[] = {"53rd_36Rnd_95x40_Mag"};
+>>>>>>> SigmaWeaponsTesting
 		magazineWell[] = { "53rd_Magwell_BR" };
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -760,13 +946,31 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Red",
 					"Optre_Recon_Sight_Green",
+<<<<<<< HEAD
 					"19_UNSC_evo"
+=======
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"optic_ERCO_blk_F",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] = {
+<<<<<<< HEAD
 					"OPTRE_m12_Laser",
+=======
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
+>>>>>>> SigmaWeaponsTesting
 					"OPTRE_DMR_Light"
 				};
 			};
@@ -799,7 +1003,18 @@ class CfgWeapons
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
 					"19_UNSC_evosd",
+<<<<<<< HEAD
 					"19_UNSC_evo"
+=======
+					"19_UNSC_evo",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"optic_ERCO_blk_F",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -845,7 +1060,15 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+<<<<<<< HEAD
 					"optic_ERCO_blk_F"
+=======
+					"optic_ERCO_blk_F",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -892,7 +1115,19 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+<<<<<<< HEAD
 					"optic_ERCO_blk_F"
+=======
+					"optic_ERCO_blk_F",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -938,7 +1173,19 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+<<<<<<< HEAD
 					"optic_ERCO_blk_F"
+=======
+					"optic_ERCO_blk_F",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -984,7 +1231,19 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+<<<<<<< HEAD
 					"optic_ERCO_blk_F"
+=======
+					"optic_ERCO_blk_F",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1014,10 +1273,17 @@ class CfgWeapons
 	{
 		dlc = "53rdAux";
 		author = "53rd Aux Team";
+<<<<<<< HEAD
 		displayName = "[53rd] Commando";
 		baseWeapon = "53rd_UNSC_Commando";
 		cursor = "OPTRE_M392";
 		magazines[] = {"53rd_20Rnd_65x48_Mag_OPTRE"};
+=======
+		displayName = "[53rd] Commando (Black)";
+		baseWeapon = "53rd_UNSC_Commando";
+		cursor = "OPTRE_M392";
+		magazines[] = {"53rd_20Rnd_65x48_Mag"};
+>>>>>>> SigmaWeaponsTesting
 		magazineWell[] = { "53rd_Magwell_Commando" };
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
@@ -1034,7 +1300,19 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Red",
 					"Optre_Recon_Sight_Green",
+<<<<<<< HEAD
 					"19_UNSC_evo"
+=======
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic",
+					"optic_ERCO_blk_F"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -1043,7 +1321,11 @@ class CfgWeapons
 					"OPTRE_m12_Laser",
 					"OPTRE_m12_Flashlight",
 					"OPTRE_m12_Vis_Red_Laser",
+<<<<<<< HEAD
 					"OPTRE_DMR_Light"
+=======
+					"TCF_Rifle_Flashlight_IR"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -1054,6 +1336,40 @@ class CfgWeapons
 			};
 		};
 	};
+<<<<<<< HEAD
+=======
+	class 53rd_UNSC_Commando_Blue : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Blue";
+		displayName = "[53rd] Commando (Police)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_police_co.paa","OPTRE_Weapons\Commando\data\commando2_police_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_Standard : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Standard";
+		displayName = "[53rd] Commando";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_olive_co.paa","OPTRE_Weapons\Commando\data\commando2_olive_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_Red : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_Red";
+		displayName = "[53rd] Commando (Red)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_red_co.paa","OPTRE_Weapons\Commando\data\commando2_red_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_White : 53rd_UNSC_Commando{
+		baseWeapon = "53rd_UNSC_Commando_White";
+		displayName = "[53rd] Commando (White)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_snow_co.paa","OPTRE_Weapons\Commando\data\commando2_snow_co.paa" };
+		picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+	class 53rd_UNSC_Commando_Tan : 53rd_UNSC_Commando{
+			baseWeapon = "53rd_UNSC_Commando_Tan";
+			displayName = "[53rd] Commando (Tan)";
+			hiddenSelectionsTextures[] = { "OPTRE_Weapons\Commando\data\commando_tan_co.paa","OPTRE_Weapons\Commando\data\commando2_tan_co.paa" };
+			picture = "\OPTRE_Weapons\Commando\icons\vk78pd_icon.paa";
+	};
+
+>>>>>>> SigmaWeaponsTesting
 
 	//////Shotguns (M90, M45, Bulldog)
 	class 53rd_UNSC_M90 : 19_UNSC_M90
@@ -1159,7 +1475,11 @@ class CfgWeapons
 		};
 	};
 
+<<<<<<< HEAD
 	//////MGs (MMG, M247, M33
+=======
+	//////MGs (MMG, M247, M33, CM12, M739)
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_UNSC_MMG : MMG_02_black_F
 	{
 		dlc = "53rdAux";
@@ -1178,11 +1498,29 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
 					"OPTRE_M393_Scope",
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
+=======
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1212,7 +1550,11 @@ class CfgWeapons
 		};
 	};
 
+<<<<<<< HEAD
 	class 53rd_UNSC_M73H : OPTRE_M73
+=======
+	class 53rd_UNSC_M73H : TCF_M73H
+>>>>>>> SigmaWeaponsTesting
 	{
 		dlc = "53rdAux";
 		author = "53rd Aux Team";
@@ -1230,11 +1572,30 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
 					"OPTRE_M393_Scope",
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
+=======
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"OPTRE_M73_SmartLink",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1248,7 +1609,13 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_BMR_Laser",
+=======
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
+>>>>>>> SigmaWeaponsTesting
 					"TCF_Rifle_Flashlight_IR"
 				};
 			};
@@ -1291,11 +1658,29 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
 					"OPTRE_M393_Scope",
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
+=======
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1309,7 +1694,13 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_BMR_Laser",
+=======
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
+>>>>>>> SigmaWeaponsTesting
 					"TCF_Rifle_Flashlight_IR"
 				};
 			};
@@ -1458,7 +1849,11 @@ class CfgWeapons
 		author = MACRO_AUTHOR;
 		baseWeapon = "53rd_M33";
 		scope = 2;
+<<<<<<< HEAD
 		displayName = "[53rd] M33 (SAW)";
+=======
+		displayName = "[53rd] M33";
+>>>>>>> SigmaWeaponsTesting
 		model = "\TCF_WEAPONRY\Weapons\Machineguns\M33\TCF_M33_T.p3d";
 		mass = 75;
 		reloadAction = "GestureReloadSPAR_01";
@@ -1495,7 +1890,23 @@ class CfgWeapons
 				{
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
+<<<<<<< HEAD
 					"Optre_Recon_Sight_Red"
+=======
+					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 				iconPosition[] = {0.5,0.3};
 			};
@@ -1542,9 +1953,22 @@ class CfgWeapons
 				{
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
+<<<<<<< HEAD
 					"OPTRE_M393_Scope",
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
+=======
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1558,7 +1982,75 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_BMR_Laser",
+=======
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
+					"TCF_Rifle_Flashlight_IR"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] =
+				{
+					"bipod_01_f_blk",
+					"bipod_02_f_blk",
+					"bipod_03_f_blk"
+				};
+			};
+		};
+	};
+	class 53rd_UNSC_M739 : TCF_Saw_Gamma_Stealth{
+		dlc = "53rdAux";
+		author = "53rd Aux Team";
+		displayName = "[53rd] M739 (Saw)";
+		baseWeapon = "53rd_UNSC_M739";
+		cursor = "mg";
+		magazines[] =
+		{
+			"53rd_128Rnd_762x51_Drum"
+		};
+		magazineWell[] = { "53rd_Magwell_M739" };
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"OPTRE_M392_Scope",
+					"OPTRE_M7_Sight",
+					"OPTRE_M393_ACOG",
+					"OPTRE_M393_EOTECH",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+				};
+			};
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+					"OPTRE_MA5Suppressor"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_m12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser",
+>>>>>>> SigmaWeaponsTesting
 					"TCF_Rifle_Flashlight_IR"
 				};
 			};
@@ -1581,7 +2073,11 @@ class CfgWeapons
 		cursor = "OPTRE_M41";
 		magazines[] =
 		{
+<<<<<<< HEAD
 			"OPTRE_200Rnd_127x99_M247H_Etilka"
+=======
+			"OPTRE_200Rnd_127x99_M247H_Etilka_Ball"
+>>>>>>> SigmaWeaponsTesting
 		};
 		magazineWell[] = {};
 		class WeaponSlotsInfo : WeaponSlotsInfo
@@ -1916,7 +2412,11 @@ class CfgWeapons
 			aiRateOfFire = 2;
 			aiRateOfFireDistance = 500;
 		};
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> SigmaWeaponsTesting
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			class MuzzleSlot : MuzzleSlot
@@ -1932,15 +2432,36 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"optre_m393_eotech",
 					"optre_m7_sight",
 					"optre_m6c_scope"
+=======
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"optre_m393_eotech",
+					"optre_m7_sight",
+					"optre_m6c_scope",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"19_UNSC_evo"
+>>>>>>> SigmaWeaponsTesting
 				};
 				iconPosition[] = {0.40000001,0.31999999};
 				iconScale = 0.15000001;
 			};
 			class PointerSlot
 			{
+<<<<<<< HEAD
+=======
+				compatibleItems[] =
+				{
+					"OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser"
+				};
+>>>>>>> SigmaWeaponsTesting
 			};
 			mass = 30;
 		};
@@ -1959,7 +2480,11 @@ class CfgWeapons
 		author = MACRO_AUTHOR;
 		scope = 2;
 		scopeArsenal = 2;
+<<<<<<< HEAD
 		displayName = "[53rd] M7 Caseless SMG";
+=======
+		displayName = "[53rd] M7 SMG";
+>>>>>>> SigmaWeaponsTesting
 		baseweapon = "53rd_M7";
 		recoil = "recoil_M7X";
 		class Single;
@@ -1968,21 +2493,92 @@ class CfgWeapons
 		magazineWell[] = {"53rd_Magwell_M7"};
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
+<<<<<<< HEAD
 			mass = 100;
+=======
+>>>>>>> SigmaWeaponsTesting
 			class MuzzleSlot : MuzzleSlot
 			{
 				compatibleitems[] = {"optre_m7_silencer"};
 			};
 			class CowsSlot : CowsSlot
 			{
+<<<<<<< HEAD
 				compatibleitems[] = {"OPTRE_M7_Sight"};
+=======
+				compatibleitems[] =
+				{
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"19_UNSC_M7_optic",
+					"19_UNSC_evo",
+					"OPTRE_M12_Optic"
+				};
+>>>>>>> SigmaWeaponsTesting
 			};
 			class PointerSlot : PointerSlot
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_M7_Flashlight",
 					"OPTRE_M7_Laser",
+=======
+					"OPTRE_M7_Laser",
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Vis_Red_Laser"
+				};
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleitems[] = {};
+			};
+		};
+	};
+	class 53rd_M7_OPTRE : OPTRE_M7
+	{
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		scope = 2;
+		scopeArsenal = 2;
+		displayName = "[53rd] M7 Caseless SMG";
+		baseweapon = "53rd_M7_OPTRE";
+		recoil = "recoil_M7X";
+		class Single;
+		class FullAuto;
+		magazines[] = { "53rd_60Rnd_5x23mm_Mag" };
+		magazineWell[] = {"53rd_Magwell_M7"};
+		class WeaponSlotsInfo : WeaponSlotsInfo
+		{
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleitems[] = {"optre_m7_silencer"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M7_Sight",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+					"19_UNSC_evo",
+					"OPTRE_M12_Optic"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] =
+				{
+					"OPTRE_M7_Laser",
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -2029,7 +2625,21 @@ class CfgWeapons
 				{
 					"OPTRE_BMR_Scope",
 					"Optre_Recon_Sight_Green",
+<<<<<<< HEAD
 					"Optre_Recon_Sight_Red"
+=======
+					"Optre_Recon_Sight_Red",
+					"optic_MRCO",
+					"ACE_optic_MRCO_2D",
+					"optic_ERCO_blk_F",
+					"OPTRE_SRM_Sight",
+					"19_UNSC_evosd",
+					"19_UNSC_evo",
+					"optic_Hamr",
+					"ACE_optic_Hamr_2D",
+					"ACE_optic_Hamr_PIP",
+					"OPTRE_M12_Optic"
+>>>>>>> SigmaWeaponsTesting
 				};
 				iconPosition[] = { 0.5,0.3 };
 			};
@@ -2072,6 +2682,7 @@ class CfgWeapons
 		maxZeroing = 2000;
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
+<<<<<<< HEAD
 			mass = 30;
 			class MuzzleSlot
 			{
@@ -2090,11 +2701,34 @@ class CfgWeapons
 				};
 			};
 			class PointerSlot
+=======
+			class MuzzleSlot : MuzzleSlot
+			{
+				compatibleItems[] =
+				{
+
+				};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] =
+				{
+					"19_UNSC_SRS99AM_Scope",
+					"OPTRE_SRS99_Scope",
+					"OPTRE_SRS99C_Scope"
+				};
+			};
+			class PointerSlot : PointerSlot
+>>>>>>> SigmaWeaponsTesting
 			{
 				compatibleitems[] = {};
 
 			};
+<<<<<<< HEAD
 			class UnderBarrelSlot
+=======
+			class UnderBarrelSlot : UnderBarrelSlot
+>>>>>>> SigmaWeaponsTesting
 			{
 				compatibleItems[] = {};
 			};
@@ -2115,8 +2749,12 @@ class CfgWeapons
 		maxZeroing = 2000;
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
+<<<<<<< HEAD
 			mass = 30;
 			class MuzzleSlot
+=======
+			class MuzzleSlot : MuzzleSlot
+>>>>>>> SigmaWeaponsTesting
 			{
 				compatibleItems[] =
 				{
@@ -2124,11 +2762,16 @@ class CfgWeapons
 				};
 
 			};
+<<<<<<< HEAD
 			class CowsSlot
+=======
+			class CowsSlot : CowsSlot
+>>>>>>> SigmaWeaponsTesting
 			{
 				compatibleitems[] =
 				{
 					"OPTRE_SRS99_Scope",
+<<<<<<< HEAD
 					"OPTRE_SRS99C_Scope",
 					"19_UNSC_SRS99AM_Scope"
 				};
@@ -2143,6 +2786,22 @@ class CfgWeapons
 				compatibleItems[] = {};
 			};
 			
+=======
+					"OPTRE_SRS99C_Scope"
+				};
+			};
+			class PointerSlot : PointerSlot
+			{
+				compatibleitems[] = { "OPTRE_M12_Laser",
+					"OPTRE_m12_Flashlight",
+					"OPTRE_m12_Vis_Red_Laser" };
+
+			};
+			class UnderBarrelSlot : UnderBarrelSlot
+			{
+				compatibleItems[] = {};
+			};
+>>>>>>> SigmaWeaponsTesting
 		};
 	};
 
@@ -2175,6 +2834,7 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
+<<<<<<< HEAD
 				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser" };
 			};
 			class CowsSlot : CowsSlot
@@ -2183,6 +2843,22 @@ class CfgWeapons
 			};
 		};
 	}
+=======
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser", "OPTRE_M6C_Flashlight", "OPTRE_M6C_Vis_Red_Laser"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = {
+					"OPTRE_M6C_Scope",
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red",
+				};
+			};
+		};
+	};
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_UNSC_M6G : OPTRE_M6B
 	{
 		dlc = "53rdAux";
@@ -2211,6 +2887,7 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
+<<<<<<< HEAD
 				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight" };
 			};
 			class CowsSlot : CowsSlot
@@ -2218,6 +2895,20 @@ class CfgWeapons
 				compatibleitems[] = { "OPTRE_M6G_Scope" };
 			};
 
+=======
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6G_Flashlight", "OPTRE_M6G_Laser", "OPTRE_M6G_Vis_Red_Laser"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = {
+					"OPTRE_M6G_Scope",
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+>>>>>>> SigmaWeaponsTesting
 		};
 	};
 	class 53rd_UNSC_SAS10 : optre_hgun_sas10_F{
@@ -2241,10 +2932,14 @@ class CfgWeapons
 			};
 			class CowsSlot
 			{
+<<<<<<< HEAD
 				compatibleitems[] =
 				{
 					"OPTRE_M7_Sight"
 				};
+=======
+				compatibleitems[] = {};
+>>>>>>> SigmaWeaponsTesting
 			};
 			class PointerSlot
 			{
@@ -2284,7 +2979,11 @@ class CfgWeapons
 		};
 	};
 
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_M6G_Riot_Shield : 53rd_UNSC_M6G
 	{
 		author = "53rd Aux Team";
@@ -2301,6 +3000,7 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
+<<<<<<< HEAD
 				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight" };
 			};
 			class CowsSlot : CowsSlot
@@ -2308,6 +3008,22 @@ class CfgWeapons
 				compatibleitems[] = { "OPTRE_M6G_Scope" };
 			};
 		};
+=======
+				compatibleItems[] = { "OPTRE_M6G_Laser", "OPTRE_M6G_Flashlight", "OPTRE_M6G_Vis_Red_Laser", "TCF_M6_Flashlight_IR"};
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = {
+					"OPTRE_M6G_Scope",
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+			};
+		};
+
+>>>>>>> SigmaWeaponsTesting
 		model = "\OPTRE_Weapons\RiotShield\riotshield_M6G.p3d";
 		hiddenSelections[] =
 		{
@@ -2338,6 +3054,7 @@ class CfgWeapons
 		inertia = 0.5;
 		dexterity = 1.25;
 		class OpticsModes
+<<<<<<< HEAD
 		{
 			class ironsight
 			{
@@ -2425,6 +3142,112 @@ class CfgWeapons
 			scale[] = { 0 };
 		};
 	};
+=======
+{
+	class ironsight
+	{
+		cameraDir = "eye_dir";
+		discreteDistance[] = { 100 };
+		discreteDistanceCameraPoint[] =
+		{
+			"eye"
+		};
+		discreteDistanceInitIndex = 0;
+		discretefov[] = {};
+		discreteInitIndex = 0;
+		distancezoommax = 100;
+		distancezoommin = 100;
+		maxZeroing = 100;
+		memorypointcamera = "eye";
+		opticsDisablePeripherialVision = 0;
+		opticsFlare = 0;
+		opticsID = 0;
+		opticsPPEffects[] =
+		{
+			"",
+			""
+		};
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		useModelOptics = 0;
+		visionMode[] = {};
+	};
+	class shieldView
+	{
+		cameraDir = "eye2_dir";
+		discreteDistance[] = { 100 };
+		discreteDistanceCameraPoint[] =
+		{
+			"eye2"
+		};
+		discreteDistanceInitIndex = 0;
+		discretefov[] = {};
+		discreteInitIndex = 0;
+		distancezoommax = 100;
+		distancezoommin = 100;
+		maxZeroing = 100;
+		memorypointcamera = "eye2";
+		opticsDisablePeripherialVision = 0;
+		opticsFlare = 0;
+		opticsID = 1;
+		opticsPPEffects[] =
+		{
+			"",
+			""
+		};
+		opticsZoomMin = 0.375;
+		opticsZoomMax = 1.1;
+		opticsZoomInit = 0.75;
+		useModelOptics = 0;
+		visionMode[] = {};
+	};
+};
+		class FlashLight
+{
+	color[] = { 180,180,180 };
+	ambient[] = { 0.89999998,0.89999998,0.89999998 };
+	intensity = 750;
+	size = 1;
+	innerAngle = 5;
+	outerAngle = 45;
+	coneFadeCoef = 10;
+	position = "flash_dir";
+	direction = "flash";
+	useFlare = 1;
+	flareSize = 1.5;
+	flareMaxDistance = 150;
+	dayLight = 0;
+	class Attenuation
+	{
+		start = 0;
+		constant = 0.5;
+		linear = 0.1;
+		quadratic = 0.2;
+		hardLimitStart = 100;
+		hardLimitEnd = 170;
+	};
+	scale[] = { 0 };
+};
+	};
+	class 53rd_M6G_Riot_Shield_Desert : 53rd_M6G_Riot_Shield{
+		baseWeapon = "53rd_M6G_Riot_Shield_Desert";
+		displayName = "[53rd] Riot Shield(M6G) (Desert)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+	};
+	class 53rd_M6G_Riot_Shield_Snow : 53rd_M6G_Riot_Shield{
+		baseWeapon = "53rd_M6G_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield(M6G) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+	};
+	class 53rd_M6G_Riot_Shield_Urban : 53rd_M6G_Riot_Shield{
+		baseWeapon = "53rd_M6G_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield(M6G) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\Pistol\data\M6G_CO.paa" };
+	};
+
+
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_Bulldog_Riot_Shield : OPTRE_CQS48S_Chihuahua_Automatic
 	{
 		author = "53rd Aux Team";
@@ -2553,7 +3376,11 @@ class CfgWeapons
 			scale[] = { 0 };
 		};
 
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> SigmaWeaponsTesting
 		class WeaponSlotsInfo : WeaponSlotsInfo
 		{
 			class CowsSlot : CowsSlot
@@ -2589,13 +3416,36 @@ class CfgWeapons
 			};
 		};
 	};
+<<<<<<< HEAD
+=======
+	class 53rd_Bulldog_Riot_Shield_Desert : 53rd_Bulldog_Riot_Shield{
+		baseWeapon = "53rd_Bulldog_Riot_Shield_Desert";
+		displayName = "[53rd] Riot Shield (Bulldog) (Desert)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa","\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa" };
+	};
+	class 53rd_Bulldog_Riot_Shield_Snow : 53rd_Bulldog_Riot_Shield{
+		baseWeapon = "53rd_Bulldog_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield (Bulldog) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa","\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa" };
+	};
+	class 53rd_Bulldog_Riot_Shield_Urban : 53rd_Bulldog_Riot_Shield{
+		baseWeapon = "53rd_Bulldog_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield (Bulldog) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\OPTRE_Weapons\bulldog\data\chihuahua\Body_co.paa","\OPTRE_Weapons\bulldog\data\decal\cqs48as\DecalSheet_co.paa" };
+	};
+
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_M7_Riot_Shield : OPTRE_M7
 	{
 		author = "53rd Aux Team";
 		baseWeapon = "53rd_M7_Riot_Shield";
 		scope = 2;
 		displayName = "[53rd] Riot Shield (M7)";
+<<<<<<< HEAD
 		
+=======
+
+>>>>>>> SigmaWeaponsTesting
 		magazines[] = { "53rd_48Rnd_5x23mm_Mag" };
 		magazineWell[] = { "53rd_Magwell_M7" };
 
@@ -2630,7 +3480,11 @@ class CfgWeapons
 		};
 		type = 1;
 		inertia = 0.5;
+<<<<<<< HEAD
 		dexterity = 1.25; 
+=======
+		dexterity = 1.25;
+>>>>>>> SigmaWeaponsTesting
 		class OpticsModes
 		{
 			class ironsight
@@ -2784,8 +3638,14 @@ class CfgWeapons
 			{
 				compatibleitems[] =
 				{
+<<<<<<< HEAD
 					"OPTRE_M7_Flashlight",
 					"OPTRE_M7_Laser",
+=======
+					"OPTRE_M7_Laser",
+					"OPTRE_M7_Flashlight",
+					"OPTRE_M7_Vis_Red_Laser"
+>>>>>>> SigmaWeaponsTesting
 				};
 			};
 			class UnderBarrelSlot : UnderBarrelSlot
@@ -2794,6 +3654,25 @@ class CfgWeapons
 			};
 		};
 	};
+<<<<<<< HEAD
+=======
+	class 53rd_M7_Riot_Shield_Desert : 53rd_M7_Riot_Shield{
+		baseWeapon = "53rd_M7_Riot_Shield_Desert";
+		displayName = "[53rd] Riot Shield (M7) (Desert)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","OPTRE_Weapons\smg\data\m7_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa" };
+	};
+	class 53rd_M7_Riot_Shield_Snow : 53rd_M7_Riot_Shield{
+		baseWeapon = "53rd_M7_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield (M7) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","OPTRE_Weapons\smg\data\m7_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa" };
+	};
+	class 53rd_M7_Riot_Shield_Urban : 53rd_M7_Riot_Shield{
+		baseWeapon = "53rd_M7_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield (M7) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","OPTRE_Weapons\smg\data\m7_m7_co.paa","OPTRE_Weapons\smg\data\m7_magazine_co.paa" };
+	};
+
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_M6C_Riot_Shield : 53rd_UNSC_M6C
 	{
 		author = "53rd Aux Team";
@@ -2810,11 +3689,25 @@ class CfgWeapons
 			};
 			class PointerSlot : PointerSlot
 			{
+<<<<<<< HEAD
 				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser" };
 			};
 			class CowsSlot : CowsSlot
 			{
 				compatibleitems[] = { "OPTRE_M6C_Scope" };
+=======
+				compatibleItems[] = { "TCF_M6_Flashlight_IR", "OPTRE_M6C_Laser", "OPTRE_M6C_Flashlight", "OPTRE_M6C_Vis_Red_Laser" };
+			};
+			class CowsSlot : CowsSlot
+			{
+				compatibleitems[] = {
+					"OPTRE_M6C_Scope",
+					"OPTRE_M7_Sight",
+					"Optre_Recon_Sight",
+					"Optre_Recon_Sight_Green",
+					"Optre_Recon_Sight_Red"
+				};
+>>>>>>> SigmaWeaponsTesting
 			};
 		};
 		model = "\OPTRE_Weapons\RiotShield\riotshield_M6C.p3d";
@@ -2934,7 +3827,25 @@ class CfgWeapons
 			scale[] = { 0 };
 		};
 	};
+<<<<<<< HEAD
 
+=======
+	class 53rd_M6C_Riot_Shield_Desert : 53rd_M6C_Riot_Shield{
+	baseWeapon = "53rd_M6C_Riot_Shield_Desert";
+	displayName = "[53rd] Riot Shield (M6C) (Desert)";
+	hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\desert\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\optre_weapons\pistol\data\m6c_m6c_co.paa" };
+	};
+	class 53rd_M6C_Riot_Shield_Snow : 53rd_M6C_Riot_Shield{
+		baseWeapon = "53rd_M6C_Riot_Shield_Snow";
+		displayName = "[53rd] Riot Shield (M6C) (Snow)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\snow\Body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\optre_weapons\pistol\data\m6c_m6c_co.paa" };
+	};
+	class 53rd_M6C_Riot_Shield_Urban : 53rd_M6C_Riot_Shield{
+		baseWeapon = "53rd_M6C_Riot_Shield_Urban";
+		displayName = "[53rd] Riot Shield (M6C) (Urban)";
+		hiddenSelectionsTextures[] = { "OPTRE_Weapons\RiotShield\data\police\body_co.paa","OPTRE_Weapons\riotshield\data\body_ca.paa","\optre_weapons\pistol\data\m6c_m6c_co.paa" };
+	};
+>>>>>>> SigmaWeaponsTesting
 
 
 	// 
@@ -2996,7 +3907,10 @@ class CfgWeapons
 					"optic_Holosight_blk_F",
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
+<<<<<<< HEAD
 					"OPTRE_M393_Scope",
+=======
+>>>>>>> SigmaWeaponsTesting
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
 					"OPTRE_M73_SmartLink"
@@ -3063,7 +3977,10 @@ class CfgWeapons
 					"optic_Holosight_blk_F",
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
+<<<<<<< HEAD
 					"OPTRE_M393_Scope",
+=======
+>>>>>>> SigmaWeaponsTesting
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
 					"optic_ico_01_black_f"
@@ -3398,7 +4315,10 @@ class CfgWeapons
 					"optic_Holosight_blk_F",
 					"OPTRE_M392_Scope",
 					"OPTRE_M7_Sight",
+<<<<<<< HEAD
 					"OPTRE_M393_Scope",
+=======
+>>>>>>> SigmaWeaponsTesting
 					"OPTRE_M393_ACOG",
 					"OPTRE_M393_EOTECH",
 					"optic_ico_01_black_f"
@@ -4348,8 +5268,13 @@ class CfgWeapons
 	};
 
 
+<<<<<<< HEAD
 	
 	
+=======
+
+
+>>>>>>> SigmaWeaponsTesting
 	//////UB Launchers
 	class 53rd_GRL_45 : MA_GRL_45{
 		dlc = "53rdAux";

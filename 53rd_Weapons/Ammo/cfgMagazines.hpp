@@ -14,6 +14,10 @@ class CfgMagazines {
 	class Commando_20Rnd_65_Mag;
 	class OPTRE_M41_Twin_HEAT_SACLOS_ProximityFuse;
 	class OPTRE_M41_Twin_HEAT_Thermal;
+<<<<<<< HEAD
+=======
+	class TCF_Gamma_762_mag;
+>>>>>>> SigmaWeaponsTesting
 	class 53rd_M41_Rocket_Twin_MEME : TCF_1Rnd_50x137_HEAT
 	{
 		displayname = "M19 Death Rocket";
@@ -239,7 +243,11 @@ class CfgMagazines {
 		modelSpecialIsProxy = 1;
 		displayname = "100Rnd 7.62x51mm Box Magazine";
 		displaynameshort = "7.62x51mm";
+<<<<<<< HEAD
 		ammo = "OPTRE_B_762x51_Ball";
+=======
+		ammo = "B_762x51_19_FMJ";
+>>>>>>> SigmaWeaponsTesting
 		count = 100;
 		initspeed = 950;
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
@@ -255,7 +263,11 @@ class CfgMagazines {
 	{
 		displayname = "100Rnd 7.62x51mm Box Magazine (Tracers)";
 		displaynameshort = "7.62x51mm Tracer";
+<<<<<<< HEAD
 		ammo = "OPTRE_B_762x51_Tracer";
+=======
+		ammo = "B_762x51_19_FMJ";
+>>>>>>> SigmaWeaponsTesting
 		picture = "\OPTRE_Weapons\MG\icons\magazine.paa";
 		descriptionshort = "100 Round Box Magazine<br/>7.62x51mm<br/>Tracer";
 		tracersEvery = 1;
@@ -300,8 +312,13 @@ class CfgMagazines {
 		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>Tracer";
 	};
 	class 53rd_15Rnd_762x51_Mag_HVAP : 53rd_60Rnd_762x51_Mag{
+<<<<<<< HEAD
 		displayname = "15Rnd 7.62x51mm Magazine";	
 		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>(Increased Muzzle Velocity)";
+=======
+		displayname = "15Rnd 7.62x51mm HVAP Magazine";	
+		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator";
+>>>>>>> SigmaWeaponsTesting
 		displaynameshort = "7.62x51mm HVAP";
 		ammo = "B_762x51_19_HVAP";
 		initspeed = 1000;
@@ -309,9 +326,15 @@ class CfgMagazines {
 		mass = 10;
 	};
 	class 53rd_15Rnd_762x51_Mag_HVAPT : 53rd_15Rnd_762x51_Mag_HVAP{
+<<<<<<< HEAD
 		displayname = "15Rnd 7.62x51mm Magazine (Tracers)";
 		displaynameshort = "7.62x51mm HVAP Tracer";
 		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator";
+=======
+		displayname = "15Rnd 7.62x51mm HVAP Magazine (Tracers)";
+		displaynameshort = "7.62x51mm HVAP Tracer";
+		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator Tracer";
+>>>>>>> SigmaWeaponsTesting
 		tracersevery = 1;
 		lastRoundsTracer = 15;
 	};
@@ -335,11 +358,22 @@ class CfgMagazines {
 #pragma endregion
 #pragma region 128Rnd 7.62x51
 	//Standard
+<<<<<<< HEAD
 	class 53rd_128Rnd_762x51_Drum : 53rd_60Rnd_762x51_Mag{
+=======
+	class 53rd_128Rnd_762x51_Drum : TCF_Gamma_762_mag{
+>>>>>>> SigmaWeaponsTesting
 		displayname = "128Rnd 7.62x51mm Drum [53rd]";
 		displaynameshort = "7.62x51mm";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm";
 		mass = 45;
+<<<<<<< HEAD
+=======
+		ammo = "B_762x51_19_FMJ";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_slap_co.paa" };
+>>>>>>> SigmaWeaponsTesting
 	};
 	class 53rd_128Rnd_762x51_Drum_Tracer : 53rd_128Rnd_762x51_Drum{
 		displayname = "128Rnd 7.62x51mm Drum (Tracer) [53rd]";
@@ -353,7 +387,14 @@ class CfgMagazines {
 		displayname = "128Rnd 7.62x51mm JHP Drum [53rd]";
 		displaynameshort = "7.62x51mm JHP";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Jacketed Hollow-Point";
+<<<<<<< HEAD
 		ammo = "TCF_B_762x51_JHP";
+=======
+		ammo = "53rd_B_762x51_JHP";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_JHP_co.paa" };
+>>>>>>> SigmaWeaponsTesting
 		mass = 45;
 	};
 	class 53rd_128Rnd_762x51_Drum_JHPT : 53rd_128Rnd_762x51_Drum_JHP{
@@ -368,7 +409,15 @@ class CfgMagazines {
 		displayname = "128Rnd 7.62x51mm AP Drum [53rd]";
 		displaynameshort = "7.62x51mm AP";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Armor-Piercing";
+<<<<<<< HEAD
 		ammo = "TCF_B_762x51_AP";
+=======
+		ammo = "B_762x51_19_AP";
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_ap_co.paa" };
+		count = 128;
+>>>>>>> SigmaWeaponsTesting
 		mass = 45;
 	};
 	class 53rd_128Rnd_762x51_Drum_APT : 53rd_128Rnd_762x51_Drum_AP{
@@ -380,6 +429,7 @@ class CfgMagazines {
 	};
 	//SLAP
 	class 53rd_128Rnd_762x51_Drum_SLAP : 53rd_128Rnd_762x51_Drum{
+<<<<<<< HEAD
 		displayname = "128Rnd 7.62x51mm JHP Drum [53rd]";
 		displaynameshort = "7.62x51mm SLAP";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Saboted Light Armor Penetrator";
@@ -388,6 +438,20 @@ class CfgMagazines {
 	};
 	class 53rd_128Rnd_762x51_Drum_SLAPT : 53rd_128Rnd_762x51_Drum_SLAP{
 		displayname = "128Rnd 7.62x51mm JHP Drum (Tracer) [53rd]";
+=======
+		displayname = "128Rnd 7.62x51mm SLAP Drum [53rd]";
+		displaynameshort = "7.62x51mm SLAP";
+		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Saboted Light Armor Penetrator";
+		ammo = "53rd_B_762x51_SLAP"
+		model = "\TCF_WEAPONRY\Weapons\Machineguns\saw\Gamma_magsaw.p3d";
+		hiddenSelections[] = { "Camo1" };
+		hiddenSelectionsTextures[] = { "\TCF_WEAPONRY\Weapons\Machineguns\SAW\data\Drum_slap_co.paa" };
+		count = 128;
+		mass = 45;
+	};
+	class 53rd_128Rnd_762x51_Drum_SLAPT : 53rd_128Rnd_762x51_Drum_SLAP{
+		displayname = "128Rnd 7.62x51mm SLAP Drum (Tracer) [53rd]";
+>>>>>>> SigmaWeaponsTesting
 		displaynameshort = "7.62x51mm SLAP Tracer";
 		descriptionShort = "128 Round Drum<br/>7.62x51mm<br/>Saboted Light Armor Penetrator Tracer";
 		tracersEvery = 1;
@@ -1370,7 +1434,11 @@ class CfgMagazines {
 		displaynameshort = "5x23mm";
 		descriptionshort = "48 Round Magazine<br/>5x23mm";
 		count = 48;
+<<<<<<< HEAD
 		initspeed = 700;
+=======
+		initspeed = 450;
+>>>>>>> SigmaWeaponsTesting
 		tracersEvery = 0;
 		lastRoundsTracer = 5;
 		mass = 6;
@@ -1457,7 +1525,11 @@ class CfgMagazines {
 		count = 20;
 		initspeed = 900;
 		picture = "\OPTRE_weapons\ar\icons\magazine.paa";
+<<<<<<< HEAD
 		descriptionshort = "6 Rounds of 8 Gauge Pellets";
+=======
+		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
+>>>>>>> SigmaWeaponsTesting
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag : 53rd_20Rnd_65x48_Mag_OPTRE{
@@ -1465,6 +1537,10 @@ class CfgMagazines {
 		displaynameshort = "65x48mm FMJ";
 		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
 		ammo = "53rd_B_65x48_FMJ";
+<<<<<<< HEAD
+=======
+		scopeArsenal = 2;
+>>>>>>> SigmaWeaponsTesting
 		initspeed = 800;
 		mass = 12;
 	};
@@ -1476,8 +1552,13 @@ class CfgMagazines {
 		lastRoudsTracer = 20;
 	};
 	class 53rd_20Rnd_65x48_Mag_JHP : 53rd_20Rnd_65x48_Mag{
+<<<<<<< HEAD
 		displayname = "20Rnd 65x48mm FMJ Magazine";
 		displaynameshort = "65x48mm FMJ";
+=======
+		displayname = "20Rnd 65x48mm JHP Magazine";
+		displaynameshort = "65x48mm JHP";
+>>>>>>> SigmaWeaponsTesting
 		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Jacketed Hollow-Point";
 		ammo = "53rd_B_65x48_JHP";
 		initspeed = 900;
