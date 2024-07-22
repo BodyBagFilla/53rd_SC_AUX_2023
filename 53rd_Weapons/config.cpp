@@ -1179,7 +1179,8 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"optic_ERCO_blk_F"
 				};
 			};
 			class PointerSlot : PointerSlot
