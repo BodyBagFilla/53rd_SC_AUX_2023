@@ -21,7 +21,7 @@ enum {
 
 class CfgPatches //This configures the identification of the pbo to the game
 {
-	class 53rd_Weapons
+	class 53rd_Weapons //test for troubleshooting merge
 	{
 		units[] = {""};
 		requiredVersion = 0.1;
