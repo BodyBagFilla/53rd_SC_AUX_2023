@@ -485,7 +485,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 
 				};
 			};
@@ -522,12 +524,15 @@ class CfgWeapons
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
 					"OPTRE_MA5_BUIS",
-				"optic_MRCO",
+					"optic_MRCO",
 					"ACE_optic_MRCO_2D",
-									"optic_Hamr",
+					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic" };
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
+				};
 			};
 			class PointerSlot : PointerSlot
 			{
@@ -631,7 +636,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -686,7 +693,9 @@ class CfgWeapons
 						"optic_Hamr",
 						"ACE_optic_Hamr_2D",
 						"ACE_optic_Hamr_PIP",
-						"OPTRE_M12_Optic"
+						"OPTRE_M12_Optic",
+						"Optre_Evo_Sight_Riser",
+						"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -742,7 +751,9 @@ class CfgWeapons
 						"ACE_optic_MRCO_2D",
 						"19_UNSC_evosd",
 						"19_UNSC_evo",
-						"optic_ERCO_blk_F"
+						"Optre_Evo_Sight_Riser",
+						"Optre_Evo_Sight",
+						"optic_ERCO_blk_F",
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -800,7 +811,9 @@ class CfgWeapons
 						"ACE_optic_MRCO_2D",
 						"19_UNSC_evosd",
 						"19_UNSC_evo",
-						"optic_ERCO_blk_F"
+						"optic_ERCO_blk_F",
+						"Optre_Evo_Sight_Riser",
+						"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -861,7 +874,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -909,7 +924,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -959,7 +976,9 @@ class CfgWeapons
 					"optic_MRCO",
 					"ACE_optic_MRCO_2D",
 					"19_UNSC_evosd",
-					"19_UNSC_evo"
+					"19_UNSC_evo",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1014,7 +1033,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1068,7 +1089,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1122,7 +1145,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1180,7 +1205,9 @@ class CfgWeapons
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
 					"OPTRE_M12_Optic",
-					"optic_ERCO_blk_F"
+					"optic_ERCO_blk_F",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -1369,7 +1396,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1432,7 +1461,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1505,7 +1536,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1719,7 +1752,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 				iconPosition[] = {0.5,0.3};
 			};
@@ -1775,7 +1810,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -1837,7 +1874,9 @@ class CfgWeapons
 					"optic_Hamr",
 					"ACE_optic_Hamr_2D",
 					"ACE_optic_Hamr_PIP",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight_Riser",
+					"Optre_Evo_Sight"
 				};
 			};
 			class MuzzleSlot : MuzzleSlot
@@ -2235,7 +2274,8 @@ class CfgWeapons
 					"optre_m6c_scope",
 					"optic_MRCO",
 					"ACE_optic_MRCO_2D",
-					"19_UNSC_evo"
+					"19_UNSC_evo",
+					"Optre_Evo_Sight"
 				};
 				iconPosition[] = {0.40000001,0.31999999};
 				iconScale = 0.15000001;
@@ -2290,7 +2330,8 @@ class CfgWeapons
 					"Optre_Recon_Sight_Red",
 					"19_UNSC_M7_optic",
 					"19_UNSC_evo",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight"
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -2338,7 +2379,8 @@ class CfgWeapons
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
 					"19_UNSC_evo",
-					"OPTRE_M12_Optic"
+					"OPTRE_M12_Optic",
+					"Optre_Evo_Sight"
 				};
 			};
 			class PointerSlot : PointerSlot
@@ -2558,6 +2600,7 @@ class CfgWeapons
 					"Optre_Recon_Sight",
 					"Optre_Recon_Sight_Green",
 					"Optre_Recon_Sight_Red",
+					"Optre_Evo_Sight"
 				};
 			};
 		};

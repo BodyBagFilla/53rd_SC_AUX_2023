@@ -1074,7 +1074,7 @@ class CfgMagazines {
 		descriptionShort = "8 Round Magazine<br/>12.7x40mm<br/>Saboted Light-Armor-Penetrator";
 		ammo = "53rd_B_127x40_SLAP";
 	};
-	class 53rd_8Rnd_127x40_Mag_SLAPT : 53rd_8Rnd_127x40_Mag{
+	class 53rd_8Rnd_127x40_Mag_SLAPT : 53rd_8Rnd_127x40_Mag_SLAP{
 		displayname = "8Rnd 12.7x40mm SLAP Magazine (Tracer)";
 		displaynameshort = "12.7x40mm SLAP Tracer";
 		descriptionShort = "8 Round Magazine<br/>12.7x40mm<br/>Saboted Light-Armor-Penetrator Tracer";
