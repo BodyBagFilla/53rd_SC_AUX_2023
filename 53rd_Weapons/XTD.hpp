@@ -153,11 +153,7 @@ class XtdGearModels {
 		class RiotShield {
 			label = "Riot Shield";
 			author = "Sigma";
-<<<<<<< HEAD
-			options[] = { "weapon" };
-=======
 			options[] = { "weapon", "camo"};
->>>>>>> SigmaWeaponsTesting
 
 			class weapon {
 				alwaysSelectable = 1;
@@ -181,21 +177,6 @@ class XtdGearModels {
 					label = "Bulldog";
 				};
 			};
-<<<<<<< HEAD
-			/*class camo
-			{
-				alwaysSelectable = 1;
-				label = "Underbarrel";
-				values[] = { "none","GL" };
-				class none
-				{
-					label = "None";
-				};
-				class GL
-				{
-					label = "GL";
-				};*/
-=======
 			class camo {
 				alwaysSelectable = 1;
 				label = "Camo";
@@ -227,7 +208,6 @@ class XtdGearModels {
 					image = "#(rgb,8,8,3)color(0.255,0.255,0.255,1)";
 				};
 			};
->>>>>>> SigmaWeaponsTesting
 		};
 		class SRS {
 			label = "SRS99";
@@ -250,8 +230,6 @@ class XtdGearModels {
 
 			};
 		};
-<<<<<<< HEAD
-=======
 
 		class Commando {
 			label = "Commando";
@@ -316,7 +294,6 @@ class XtdGearModels {
 				};
 			};
 		};
->>>>>>> SigmaWeaponsTesting
 	};
 };
 class XtdGearInfos {
@@ -363,28 +340,16 @@ class XtdGearInfos {
 			variant = "BR55";
 			other = "none";
 		};
-<<<<<<< HEAD
-
-=======
->>>>>>> SigmaWeaponsTesting
 		class 53rd_UNSC_br55_gl{
 			model = "BR55";
 			variant = "BR55";
 			other = "GL";
 		};
-<<<<<<< HEAD
-
-=======
->>>>>>> SigmaWeaponsTesting
 		class 53rd_UNSC_br55_HB{
 			model = "BR55";
 			variant = "BR55HB";
 			other = "none";
 		};
-<<<<<<< HEAD
-
-=======
->>>>>>> SigmaWeaponsTesting
 		class 53rd_UNSC_br55_HB_gl{
 			model = "BR55";
 			variant = "BR55HB";
@@ -437,58 +402,44 @@ class XtdGearInfos {
 		class 53rd_M6G_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M6G";
-<<<<<<< HEAD
-		};
-		class 53rd_M6C_Riot_Shield{
-			model = "RiotShield";
-			weapon = "M6C";
-		};
-		class 53rd_M7_Riot_Shield{
-			model = "RiotShield";
-			weapon = "M7";
-		};
-		class 53rd_Bulldog_Riot_Shield{
-			model = "RiotShield";
-			weapon = "Bulldog";
-=======
-			camo = "Standard"
+			camo = "Standard";
 		};
 		class 53rd_M6G_Riot_Shield_Urban{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Urban"
+			camo = "Urban";
 		};
 		class 53rd_M6G_Riot_Shield_Snow{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Snow"
+			camo = "Snow";
 		};
 		class 53rd_M6G_Riot_Shield_Desert{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Desert"
+			camo = "Desert";
 
 		};
 
 		class 53rd_M6C_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Standard"
+			camo = "Standard";
 		};
 		class 53rd_M6C_Riot_Shield_Urban{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Urban"
+			camo = "Urban";
 		};
 		class 53rd_M6C_Riot_Shield_Snow{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Snow"
+			camo = "Snow";
 		};		
 		class 53rd_M6C_Riot_Shield_Desert{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Desert"
+			camo = "Desert";
 		};
 
 		class 53rd_M7_Riot_Shield{
@@ -557,7 +508,6 @@ class XtdGearInfos {
 		class 53rd_UNSC_Commando_Tan{
 			model = "Commando";
 			camo = "Tan";
->>>>>>> SigmaWeaponsTesting
 		};
 
 		//SRS
@@ -569,8 +519,6 @@ class XtdGearInfos {
 			model = "SRS";
 			weapon = "Fang";
 		};
-<<<<<<< HEAD
-=======
 
 		//M7
 		class 53rd_M7{
@@ -581,6 +529,5 @@ class XtdGearInfos {
 			model = "M7";
 			variant = "Caseless";
 		};
->>>>>>> SigmaWeaponsTesting
 	};
 };

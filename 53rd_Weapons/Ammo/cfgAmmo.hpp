@@ -177,7 +177,7 @@ class cfgAmmo
 		};
 
 		//Seeker, motor, and aerodynamics configuration are found in the included file.
-#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_SACLOS.hpp"
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_SACLOS.hpp"
 	};
 	class 53rd_M41_Rocket_HEAT_Thermal : M_Titan_AA {
 		model = "\OPTRE_Weapons\Rockets\M41_rocket.p3d";
@@ -185,11 +185,11 @@ class cfgAmmo
 
 
 		//Seeker, motor, and aerodynamics configuration are found in the included file.
-#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_HeatSeek.hpp"
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_HeatSeek.hpp"
 	};
 	class 53rd_M41_Rocket_HEAT_Laser : M_Titan_AT{
 		//Seeker, motor, and aerodynamics configuration are found in the included file.
-#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_Laser.hpp"
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_Laser.hpp"
 	};
 
 	class 53rd_M41_Rocket_HE: M_Titan_AT{
@@ -212,7 +212,7 @@ class cfgAmmo
 		explosive = 1;
 		submunitionAmmo = "";
 
-#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_Laser.hpp"
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_Laser.hpp"
 
 	};
 	class 53rd_M41_Rocket_HE_SACLOS : M_Titan_AT{
@@ -238,7 +238,7 @@ class cfgAmmo
 			minDistance = 150.0;
 			ascendAngle = 70.0;
 		};
-#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_SACLOS.hpp"
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_SACLOS.hpp"
 
 	};
 	class 53rd_M41_Rocket_HE_Thermal : M_Titan_AA {
@@ -253,23 +253,23 @@ class cfgAmmo
 		indirectHitRange = 10;
 		explosive = 1;
 		submunitionAmmo = "";
-		#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_HeatSeek.hpp"
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_HeatSeek.hpp"
 		proximityExplosionDistance = 10;
 	};
 	class 53rd_M41_Rocket_HE_Laser : M_Titan_AT {
-	model = "\OPTRE_Weapons\Rockets\M41_rocket.p3d";
-	effectsMissile = "missile3";
-	timeToLive = 30;
-	cost = 500;
+		model = "\OPTRE_Weapons\Rockets\M41_rocket.p3d";
+		effectsMissile = "missile3";
+		timeToLive = 30;
+		cost = 500;
 
-	//Warhead
-	hit = 125;
-	indirectHit = 125;
-	indirectHitRange = 10;
-	explosive = 1;
-	submunitionAmmo = "";
-	//Seeker, motor, and aerodynamics configuration are found in the included file.
-#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_Laser.hpp"
+		//Warhead
+		hit = 125;
+		indirectHit = 125;
+		indirectHitRange = 10;
+		explosive = 1;
+		submunitionAmmo = "";
+		//Seeker, motor, and aerodynamics configuration are found in the included file.
+		//#include"\OPTRE_Weapons\Rockets\_includes\M41_Ammo_Laser.hpp"
 		proximityExplosionDistance = 10;
 	};
 
@@ -294,23 +294,23 @@ class cfgAmmo
 <<<<<<< HEAD
 =======
 	class 53rd_B_762x51_SLAP : B_762x51_19_FMJ{
-	caliber = 7;
-	hit = 16;
-	initspeed = 1000;
-	typicalSpeed = 1000;
+		caliber = 7;
+		hit = 16;
+		initspeed = 1000;
+		typicalSpeed = 1000;
 	};
 >>>>>>> SigmaWeaponsTesting
 	class 53rd_B_5x23_HV : B_5x23_19_FMJ{
 		caliber = 3;
 		hit = 11;
 		initspeed = 750;
-		typicalSpeed = 750
+		typicalSpeed = 750;
 	};
 	class 53rd_B_5x23_JHP : B_5x23_19_FMJ{
 		caliber = 0.5;
 		hit = 16;
 		initspeed = 450;
-		typicalSpeed = 450
+		typicalSpeed = 450;
 	};
 	class 53rd_B_127x40 : OPTRE_B_127x40_Ball{
 		caliber = 4;
