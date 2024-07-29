@@ -402,44 +402,44 @@ class XtdGearInfos {
 		class 53rd_M6G_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Standard"
+			camo = "Standard";
 		};
 		class 53rd_M6G_Riot_Shield_Urban{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Urban"
+			camo = "Urban";
 		};
 		class 53rd_M6G_Riot_Shield_Snow{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Snow"
+			camo = "Snow";
 		};
 		class 53rd_M6G_Riot_Shield_Desert{
 			model = "RiotShield";
 			weapon = "M6G";
-			camo = "Desert"
+			camo = "Desert";
 
 		};
 
 		class 53rd_M6C_Riot_Shield{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Standard"
+			camo = "Standard";
 		};
 		class 53rd_M6C_Riot_Shield_Urban{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Urban"
+			camo = "Urban";
 		};
 		class 53rd_M6C_Riot_Shield_Snow{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Snow"
+			camo = "Snow";
 		};		
 		class 53rd_M6C_Riot_Shield_Desert{
 			model = "RiotShield";
 			weapon = "M6C";
-			camo = "Desert"
+			camo = "Desert";
 		};
 
 		class 53rd_M7_Riot_Shield{

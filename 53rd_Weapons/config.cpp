@@ -11,7 +11,7 @@ enum {
 	DESTRUCTNO = 0,
 	STABILIZEDINAXESNONE = 0,
 	DESTRUCTMAN = 5,
-	DESTRUCTBUILDING = 1,
+	DESTRUCTBUILDING = 1
 };
 
 #include "Main\_macros\main.hpp"
@@ -1959,7 +1959,6 @@ class CfgWeapons
 		scope = 2;
 		magazines[] = { "53rd_16Rnd_127x40_Mag" };
 		magazineWell[] = { "53rd_Magwell_M6Carbine" };
-
 		reloadAction = "GestureReloadSMG_03";
 		recoil = "recoil_pdw";
 		distanceZoomMin = 50;

@@ -207,34 +207,34 @@ class cfgMagazineWells {
 		};
 	};
 	class 53rd_Magwell_M6C{
-	53rd_127x40_8Rnd[] = {
-		"53rd_8Rnd_127x40_Mag",
-		"53rd_8Rnd_127x40_Mag_Tracer",
-		"53rd_8Rnd_127x40_Mag_AP",
-		"53rd_8Rnd_127x40_Mag_APT",,
-		"53rd_8Rnd_127x40_Mag_JHP",
-		"53rd_8Rnd_127x40_Mag_JHPT",
-		"53rd_8Rnd_127x40_Mag_SS",
-		"53rd_8Rnd_127x40_Mag_SST",
-		"53rd_8Rnd_127x40_Mag_NARQ",
-		"53rd_8Rnd_127x40_Mag_NARQT",
-		"53rd_8Rnd_127x40_Mag_FR",
-		"53rd_8Rnd_127x40_Mag_FG",
-		"OPTRE_8Rnd_127x40_Mag",
-		"OPTRE_8Rnd_127x40_Mag_Tracer"
+		53rd_127x40_8Rnd[] = {
+			"53rd_8Rnd_127x40_Mag",
+			"53rd_8Rnd_127x40_Mag_Tracer",
+			"53rd_8Rnd_127x40_Mag_AP",
+			"53rd_8Rnd_127x40_Mag_APT",,
+			"53rd_8Rnd_127x40_Mag_JHP",
+			"53rd_8Rnd_127x40_Mag_JHPT",
+			"53rd_8Rnd_127x40_Mag_SS",
+			"53rd_8Rnd_127x40_Mag_SST",
+			"53rd_8Rnd_127x40_Mag_NARQ",
+			"53rd_8Rnd_127x40_Mag_NARQT",
+			"53rd_8Rnd_127x40_Mag_FR",
+			"53rd_8Rnd_127x40_Mag_FG",
+			"OPTRE_8Rnd_127x40_Mag",
+			"OPTRE_8Rnd_127x40_Mag_Tracer"
 	};
 	53rd_127x40_12Rnd[] = {
-		"53rd_12Rnd_127x40_Mag",
-		"53rd_12Rnd_127x40_Mag_Tracer",
-		"53rd_12Rnd_127x40_Mag_AP",
-		"53rd_12Rnd_127x40_Mag_APT",
-		"53rd_12Rnd_127x40_Mag_JHP",
-		"53rd_12Rnd_127x40_Mag_JHPT",
-		"53rd_12Rnd_127x40_Mag_SS",
-		"53rd_12Rnd_127x40_Mag_SST",
-		"53rd_12Rnd_127x40_Mag_NARQ",
-		"53rd_12Rnd_127x40_Mag_NARQT",
-	};
+			"53rd_12Rnd_127x40_Mag",
+			"53rd_12Rnd_127x40_Mag_Tracer",
+			"53rd_12Rnd_127x40_Mag_AP",
+			"53rd_12Rnd_127x40_Mag_APT",
+			"53rd_12Rnd_127x40_Mag_JHP",
+			"53rd_12Rnd_127x40_Mag_JHPT",
+			"53rd_12Rnd_127x40_Mag_SS",
+			"53rd_12Rnd_127x40_Mag_SST",
+			"53rd_12Rnd_127x40_Mag_NARQ",
+			"53rd_12Rnd_127x40_Mag_NARQT",
+		};
 	};
 	class 53rd_Magwell_M6Carbine{
 		53rd_127x40_8Rnd[] = {
@@ -248,8 +248,8 @@ class cfgMagazineWells {
 			"53rd_16Rnd_127x40_Mag_SST",
 			"OPTRE_8Rnd_127x40_Mag",
 			"OPTRE_8Rnd_127x40_Mag_Tracer"
+		};
 	};
-	}
 	class 53rd_Magwell_M33{
 		53rd_762x51_128Rnd[] = {
 			"53rd_128Rnd_762x51_Drum",
@@ -261,18 +261,18 @@ class cfgMagazineWells {
 		};
 	};
 	class 53rd_Magwell_M739{
-	53rd_762x51_128Rnd[] = {
-		"53rd_128Rnd_762x51_Drum",
-		"53rd_128Rnd_762x51_Drum_Tracer",
-		"53rd_128Rnd_762x51_Drum_AP",
-		"53rd_128Rnd_762x51_Drum_APT",
-		"53rd_128Rnd_762x51_Drum_JHP",
-		"53rd_128Rnd_762x51_Drum_JHPT",
-		"53rd_128Rnd_762x51_Drum_SLAP",
-		"53rd_128Rnd_762x51_Drum_SLAPT",
-		"TCF_Gamma_762_mag",
-		"TCF_Gamma_762_mag_Tracer"
-	};
+		53rd_762x51_128Rnd[] = {
+			"53rd_128Rnd_762x51_Drum",
+			"53rd_128Rnd_762x51_Drum_Tracer",
+			"53rd_128Rnd_762x51_Drum_AP",
+			"53rd_128Rnd_762x51_Drum_APT",
+			"53rd_128Rnd_762x51_Drum_JHP",
+			"53rd_128Rnd_762x51_Drum_JHPT",
+			"53rd_128Rnd_762x51_Drum_SLAP",
+			"53rd_128Rnd_762x51_Drum_SLAPT",
+			"TCF_Gamma_762_mag",
+			"TCF_Gamma_762_mag_Tracer"
+		};
 	};
 	class 53rd_Magwell_AR0{
 		53rd_762x51_60Rnd[] = {
@@ -324,7 +324,8 @@ class cfgMagazineWells {
 			"53rd_48Rnd_5x23mm_Mag_SS",
 			"53rd_48Rnd_5x23mm_Mag_SST",
 			"OPTRE_48Rnd_5x23mm_Mag",
-			"OPTRE_48Rnd_5x23mm_Mag_tracer" };
+			"OPTRE_48Rnd_5x23mm_Mag_tracer"
+		};
 	};
 	class 53rd_Magwell_Snipers{
 		53rd_145x114_4Rnd[] = {
