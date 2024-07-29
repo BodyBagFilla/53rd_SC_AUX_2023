@@ -149,7 +149,6 @@ class XtdGearModels {
 			};
 		};
 		
-		//add camo to these later
 		class RiotShield {
 			label = "Riot Shield";
 			author = "Sigma";
@@ -291,6 +290,27 @@ class XtdGearModels {
 				};
 				class Fleet {
 					label = "Fleet";
+				};
+			};
+		};
+		
+		class MRS {
+			label = "MRS";
+			author = "Sigma";
+			options[] = {"variant"};
+			class variant {
+				alwaysSelectable = 1;
+				label = "Model";
+				values[] =
+				{
+					"MRS10",
+					"MRS10LS1"
+				};
+				class MRS10 {
+					label = "MRS-10";
+				};
+				class MRS10LS1 {
+					label = "MRS-10L-S1";
 				};
 			};
 		};
@@ -528,6 +548,16 @@ class XtdGearInfos {
 		class  53rd_M7_OPTRE{
 			model = "M7";
 			variant = "Caseless";
+		};
+
+		//MRS10
+		class 53rd_UNSC_MRS10{
+			model = "MRS";
+			variant = "MRS10";
+		};
+		class 53rd_UNSC_MRS10S1{
+			model = "MRS";
+			variant = "MRS10LS1";
 		};
 	};
 };

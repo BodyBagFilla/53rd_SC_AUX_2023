@@ -1,4 +1,3 @@
-#include "BIS_AddonInfo.hpp"
 class CfgPatches {
 	class 53rd_Weapons_Ammo{
 		units[] = {};
