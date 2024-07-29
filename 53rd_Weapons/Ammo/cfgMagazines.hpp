@@ -14,6 +14,7 @@ class CfgMagazines {
 	class Commando_20Rnd_65_Mag;
 	class OPTRE_M41_Twin_HEAT_SACLOS_ProximityFuse;
 	class OPTRE_M41_Twin_HEAT_Thermal;
+	class OPTRE_M41_Twin_HE;
 	class TCF_Gamma_762_mag;
 	class 53rd_M41_Rocket_Twin_MEME : TCF_1Rnd_50x137_HEAT
 	{
@@ -1520,8 +1521,7 @@ class CfgMagazines {
 		tracerEvery = 1;
 		lastRoudsTracer = 20;
 	};
-	//model = "\OPTRE_Weapons\Commando\Commando_Mag.p3d";
-
+	///////////////////  Rockets  /////////////////////////
 	class 53rd_M41_Twin_HEAT_Thermal : OPTRE_M41_Twin_HEAT_Thermal{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\heat_thermal.paa";
 		dlc = "53rd Aux";
@@ -1532,19 +1532,19 @@ class CfgMagazines {
 	};
 	class 53rd_M41_Twin_HEAT_Guided : OPTRE_M41_Twin_HEAT_Thermal{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\heat_g.paa";
-	dlc = "53rd Aux";
-	author = "53rd Aux Team";
-	ammo = "53rd_M41_Rocket_HEAT_Guided";
-	displayname = "M19 HEAT Guided";
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HEAT_Guided";
+		displayname = "M19 HEAT Guided";
 
 	};
 	class 53rd_M41_Twin_HEAT_SACLOS : OPTRE_M41_Twin_HEAT_Thermal{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\heat_saclos.paa";
-	dlc = "53rd Aux";
-	author = "53rd Aux Team";
-	ammo = "53rd_M41_Rocket_HEAT_SACLOS";
-	displayname = "M19 HEAT SACLOS";
-
+		dlc = "53rd Aux";
+		author = "53rd Aux Team";
+		ammo = "53rd_M41_Rocket_HEAT_SACLOS";
+		displayname = "M19 HEAT SACLOS";
+		
 	};
 	class 53rd_M41_Twin_HEAT_Laser : OPTRE_M41_Twin_HEAT_Thermal{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he_salh_fuse.paa";
@@ -1562,32 +1562,36 @@ class CfgMagazines {
 		displayname = "M19 HEAT";
 
 	};
-	class 53rd_M41_Twin_HE_SACLOS : OPTRE_M41_Twin_HEAT_Thermal{
+	class 53rd_M41_Twin_HE_SACLOS : OPTRE_M41_Twin_HE{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he_saclos_fuse.paa";
 		dlc = "53rd Aux";
 		author = "53rd Aux Team";
 		ammo = "53rd_M41_Rocket_HE_SACLOS";
 		displayname = "M19 HE SACLOS";
+		//hiddenSelectionsTextures[] = { "\OPTRE_Weapons\Rockets\data\mag_types\he.paa","\optre_weapons\rockets\data\logos_ca.paa" };
 	};
-	class 53rd_M41_Twin_HE : OPTRE_M41_Twin_HEAT_Thermal{
+	class 53rd_M41_Twin_HE : OPTRE_M41_Twin_HE{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he.paa";
 		dlc = "53rd Aux";
 		author = "53rd Aux Team";
 		ammo = "53rd_M41_Rocket_HE";
 		displayname = "M19 HE";
+		//hiddenSelectionsTextures[] = { "\OPTRE_Weapons\Rockets\data\mag_types\he.paa","\optre_weapons\rockets\data\logos_ca.paa" };
 	};
-	class 53rd_M41_Twin_HE_Thermal : OPTRE_M41_Twin_HEAT_Thermal{
+	class 53rd_M41_Twin_HE_Thermal : OPTRE_M41_Twin_HE{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\he_thermal_fuse.paa";
 		dlc = "53rd Aux";
 		author = "53rd Aux Team";
 		ammo = "53rd_M41_Rocket_HE_Thermal";
 		displayname = "M19 HE Thermal";
+		//hiddenSelectionsTextures[] = { "\OPTRE_Weapons\Rockets\data\mag_types\he.paa","\optre_weapons\rockets\data\logos_ca.paa" };
 	};
-	class 53rd_M41_Twin_HE_Laser : OPTRE_M41_Twin_HEAT_Thermal{
+	class 53rd_M41_Twin_HE_Laser : OPTRE_M41_Twin_HE{
 		picture = "\OPTRE_Weapons\Rockets\icons\magazine\opaex\heat_salh.paa";
 		dlc = "53rd Aux";
 		author = "53rd Aux Team";
 		ammo = "53rd_M41_Rocket_HE_Laser";
 		displayname = "M19 HE LASER";
+		//hiddenSelectionsTextures[] = { "\OPTRE_Weapons\Rockets\data\mag_types\he.paa","\optre_weapons\rockets\data\logos_ca.paa" };
 	};
 };
