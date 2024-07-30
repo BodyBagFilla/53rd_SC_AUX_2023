@@ -302,7 +302,7 @@ class cfgVehicles
 
 class cfgWeapons
 {
-    class UniformItem;		
+    class ItemInfo;		
 	class Uniform_Base;
 	class 53rd_Nox_Uniform_Urban;
 
@@ -323,7 +323,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Half_Urban.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Half_Urban.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Winter_Half_F";
@@ -347,7 +347,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Half_Urban.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Half_Urban.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Urban_Half_F";
@@ -371,7 +371,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Half_Desert.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Half_Desert.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Arid_Half_F";
@@ -395,7 +395,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Half_Woodland.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Half_Woodland.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_Woodland_Half_F";
@@ -419,7 +419,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Half_Woodland.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Half_SemiArid.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformModel="-";
 			uniformClass="53rd_Ares_Nox_Ghillie_SemiArid_Half_F";
@@ -436,7 +436,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Winter.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Winter.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Winter_Full_F";
 		};
@@ -452,7 +452,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Urban.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Urban.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Urban_Full_F";
 		};
@@ -468,7 +468,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Arid.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Arid.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Arid_Full_F";
 		};
@@ -484,7 +484,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Woodland.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Jungle.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Jungle_Full_F";
 		};
@@ -500,7 +500,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Woodland.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Jungle2.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Jungle2_Full_F";
 		};
@@ -516,7 +516,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Woodland.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Lush.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Lush_Full_F";
 		};
@@ -532,7 +532,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Woodland.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_Lush2.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_Lush2_Full_F";
 		};
@@ -548,7 +548,7 @@ class cfgWeapons
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Uni_Full_Arid.paa",
 			"\53rd_Aux\Ares\Nox\53rd_Ghillie_Full_SemiArid.paa"
 		};
-		class ItemInfo: UniformItem
+		class ItemInfo: ItemInfo
 		{
 			uniformClass = "53rd_Ares_Nox_Ghillie_SemiArid_Full_F";
 		};

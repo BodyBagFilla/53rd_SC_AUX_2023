@@ -1,7 +1,7 @@
    class Ballet_Breakup
     {
         name = "Ballet Breakup";
-        sound[] = {"\All_Music\balletbreakup99.ogg",1,1};
+        sound[] = {"\53rd_Music\All_Music\balletbreakup99.ogg",1,1};
         duration = "99";
         musicClass = "53_RvB";
     };

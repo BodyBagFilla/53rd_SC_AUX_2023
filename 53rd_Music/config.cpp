@@ -37,7 +37,54 @@ class CfgPatches
     {
         displayName = "[53rd] Other";
     };
-
+	class 53_HALO4
+    {
+        displayName = "[53rd] Reclaimer";
+    };
+	class 53_ODST
+    {
+        displayName = "[53rd] ODST";
+    };
+	class 53_HALOCE
+    {
+        displayName = "[53rd] Combat Evolved";
+    };
+	class 53_Reach
+    {
+        displayName = "[53rd] Reach";
+    };
+	class 53_Three
+    {
+        displayName = "[53rd] Halo 3";
+    };
+	class 53_Two
+    {
+        displayName = "[53rd] Halo 2";
+    };
+	class 53_Two_Anniversary
+    {
+        displayName = "[53rd] Halo 2A";
+    };
+	class 53_Guardians
+    {
+        displayName = "[53rd] Halo Guardians";
+    };
+	class 53_CE_Anniversary
+    {
+        displayName = "[53rd] Halo Anniversary";
+    };
+	class 53_Forward_Unto_Dawn
+    {
+        displayName = "[53rd] Dawn's Anthem";
+    };
+	class 53_Halo_6
+    {
+        displayName = "[53rd] Infinite";
+    };
+	class FrankiesPicks
+    {
+        displayName = "[Frank] Frankie's Picks";
+    };
 };
 
 class CfgMusic
@@ -80,9 +127,6 @@ class CfgMusic
     };
 
 
-
-
-
     class Ineedhero
     {
         name = "I NEED A HERO";
@@ -107,11 +151,90 @@ class CfgMusic
         musicClass = "53_Meme";
     };
 	
+
+
+
+    class BestLaidPlans
+    {
+        name = "Star Trek: Best Laid Plans";
+        sound[] = {"53rd_Music\All_Music\Best Laid Plans.ogg",1,1};
+        duration = "290";
+        musicClass = "FrankiesPicks";
+    };
+
+    class Comewitheme
+    {
+        name = "Oden Ogan: Come with me to the other side";
+        sound[] = {"53rd_Music\All_Music\Come with Me to the Other Side.ogg",1,1};
+        duration = "374";
+        musicClass = "FrankiesPicks";
+    };
+
+    class DrunkenDreams
+    {
+        name = "The Covenant: Drunken Dream";
+        sound[] = {"53rd_Music\All_Music\Drunken Dream.ogg",1,1};
+        duration = "135";
+        musicClass = "FrankiesPicks";
+    };
 	
-	
-	
-	
-	
+    class Ferro
+    {
+        name = "TitanFall: Ferro";
+        sound[] = {"53rd_Music\All_Music\Ferro.ogg",1,1};
+        duration = "330";
+        musicClass = "FrankiesPicks";
+    };
+
+    class HoldRidge
+    {
+        name = "Horizon: Hold The Ridge";
+        sound[] = {"53rd_Music\All_Music\Hold The Ridge.ogg",1,1};
+        duration = "234";
+        musicClass = "FrankiesPicks";
+    };
+
+    class LeaveNo
+    {
+        name = "Blackhawk Down: Leave No Man Behind";
+        sound[] = {"53rd_Music\All_Music\Leave No Man Behind.ogg",1,1};
+        duration = "379";
+        musicClass = "FrankiesPicks";
+    };
+
+    class DyingLight1
+    {
+        name = "Dying Light: Now they are coming";
+        sound[] = {"53rd_Music\All_Music\Now They Are Coming.ogg",1,1};
+        duration = "222";
+        musicClass = "FrankiesPicks";
+    };
+
+    class HellMarch
+    {
+        name = "Command and Conqure: Hell March";
+        sound[] = {"53rd_Music\All_Music\Hell March.ogg",1,1};
+        duration = "383";
+        musicClass = "FrankiesPicks";
+    };
+
+    class Triptych
+    {
+        name = "Titanfall: Triptych";
+        sound[] = {"53rd_Music\All_Music\Triptych.ogg",1,1};
+        duration = "325";
+        musicClass = "FrankiesPicks";
+    };
+
+    class WolvesAmongst
+    {
+        name = "For Honor: Wolves Among Sheep";
+        sound[] = {"53rd_Music\All_Music\Wolves Among Sheep.ogg",1,1};
+        duration = "330";
+        musicClass = "FrankiesPicks";
+    };
+
+
     class AvengersDidGood
     {
         name = "Avengers - You Did Good";
@@ -330,6 +453,16 @@ class CfgMusic
         duration = "259";
         musicClass = "53_Other";
     };
+	
+
+	
+
+	
+	
+	
+	
+	
+
 
 #include "Halo.hpp"
 #include "RvB.hpp"

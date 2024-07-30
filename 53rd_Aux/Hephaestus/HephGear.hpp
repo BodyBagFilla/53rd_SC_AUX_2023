@@ -386,6 +386,45 @@ class XtdGearInfos
 		Visor = "On";
 		};
 
+
+		class 53rd_Heph_Mino_Medic_Helmet_Urban:53rd_Heph_Reservist_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"
+		HelmetCamo = "Urban";
+		MOS = "Medic";
+		Visor = "On";
+		};
+		class 53rd_Heph_Mino_Medic_Helmet_Woodland:53rd_Heph_Mino_Medic_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"	
+		HelmetCamo = "Woodland";
+		MOS = "Medic";
+		Visor = "On";
+		};
+		class 53rd_Heph_Mino_Medic_Helmet_Winter:53rd_Heph_Mino_Medic_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"
+		HelmetCamo = "Winter";
+		MOS = "Medic";
+		Visor = "On";
+		};
+		class 53rd_Heph_Mino_Medic_Helmet_Desert:53rd_Heph_Mino_Medic_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"
+		HelmetCamo = "Desert";
+		MOS = "Medic";
+		Visor = "On";
+		};
+
+
 ///////////////////////// 1-2 ///////////////////////////////////////////	
 		class 53rd_Heph_Kerb_Helmet_Urban:53rd_Heph_Reservist_Helmet_Urban
 		{
@@ -423,6 +462,45 @@ class XtdGearInfos
 		MOS = "Rifleman";
 		Visor = "On";
 		};
+
+
+		class 53rd_Heph_Kerb_Medic_Helmet_Urban:53rd_Heph_Reservist_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Urban";
+		MOS = "Medic";
+		Visor = "On";
+		};
+		class 53rd_Heph_Kerb_Medic_Helmet_Woodland:53rd_Heph_Kerb_Medic_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"	
+		HelmetCamo = "Woodland";
+		MOS = "Medic";
+		Visor = "On";
+		};
+		class 53rd_Heph_Kerb_Medic_Helmet_Winter:53rd_Heph_Kerb_Medic_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Winter";
+		MOS = "Medic";
+		Visor = "On";
+		};
+		class 53rd_Heph_Kerb_Medic_Helmet_Desert:53rd_Heph_Kerb_Medic_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Desert";
+		MOS = "Medic";
+		Visor = "On";
+		};
+
 
 ///////////////////////// 1-3 ///////////////////////////////////////////	
 		class 53rd_Heph_Hydra_Helmet_Urban:53rd_Heph_Reservist_Helmet_Urban
@@ -543,6 +621,44 @@ class XtdGearInfos
 		};
 
 
+		class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Urban:53rd_Heph_Reservist_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"
+		HelmetCamo = "Urban";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+		class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Woodland:53rd_Heph_Mino_Medic_Helmet_NoVisor_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"	
+		HelmetCamo = "Woodland";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+		class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Winter:53rd_Heph_Mino_Medic_Helmet_NoVisor_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"
+		HelmetCamo = "Winter";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+		class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Desert:53rd_Heph_Mino_Medic_Helmet_NoVisor_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Asterion"
+		HelmetCamo = "Desert";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+
+
 ///////////////////////// 1-2 ///////////////////////////////////////////
 		class 53rd_Heph_Kerb_Helmet_NoVisor_Urban:53rd_Heph_Kerb_Helmet_Urban
 		{
@@ -578,6 +694,44 @@ class XtdGearInfos
 		Section = "Kerberos"
 		HelmetCamo = "Desert";
 		MOS = "Rifleman";
+		Visor = "Off";
+		};
+
+
+		class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Urban:53rd_Heph_Kerb_Helmet_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Urban";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+		class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Woodland:53rd_Heph_Kerb_Medic_Helmet_NoVisor_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Woodland";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+		class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Winter:53rd_Heph_Kerb_Medic_Helmet_NoVisor_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Winter";
+		MOS = "Medic";
+		Visor = "Off";
+		};
+		class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Desert:53rd_Heph_Kerb_Medic_Helmet_NoVisor_Urban
+		{
+		model = "HephHelmets";
+		Type = "Marine";
+		Section = "Kerberos"
+		HelmetCamo = "Desert";
+		MOS = "Medic";
 		Visor = "Off";
 		};
 

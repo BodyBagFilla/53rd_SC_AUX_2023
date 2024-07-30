@@ -53,7 +53,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Red)";
+		displayName="[53rd] Nox Armor (Urban / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -169,7 +169,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Red)";
+		displayName="[53rd] Nox Armor (Urban / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -285,7 +285,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Woodland / Red)";
+		displayName="[53rd] Nox Armor (Woodland / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -401,7 +401,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Winter / Red)";
+		displayName="[53rd] Nox Armor (Winter / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -517,7 +517,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Desert / Red)";
+		displayName="[53rd] Nox Armor (Desert / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -636,7 +636,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Blue)";
+		displayName="[53rd] Nox Armor (Urban / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -753,7 +753,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Blue)";
+		displayName="[53rd] Nox Armor (Urban / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -869,7 +869,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Woodland / Blue)";
+		displayName="[53rd] Nox Armor (Woodland / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -985,7 +985,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Winter / Blue)";
+		displayName="[53rd] Nox Armor (Winter / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1101,7 +1101,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Desert / Blue)";
+		displayName="[53rd] Nox Armor (Desert / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1223,7 +1223,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Red)";
+		displayName="[53rd] Nox Armor (Urban / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1339,7 +1339,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Red)";
+		displayName="[53rd] Nox Armor (Urban / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1455,7 +1455,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Woodland / Red)";
+		displayName="[53rd] Nox Armor (Woodland / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1571,7 +1571,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Winter / Red)";
+		displayName="[53rd] Nox Armor (Winter / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1687,7 +1687,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Desert / Red)";
+		displayName="[53rd] Nox Armor (Desert / Red)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1806,7 +1806,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Blue)";
+		displayName="[53rd] Nox Armor (Urban / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -1922,7 +1922,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Urban / Blue)";
+		displayName="[53rd] Nox Armor (Urban / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -2038,7 +2038,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Woodland / Blue)";
+		displayName="[53rd] Nox Armor (Woodland / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -2154,7 +2154,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Winter / Blue)";
+		displayName="[53rd] Nox Armor (Winter / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=
@@ -2270,7 +2270,7 @@ class cfgWeapons
 	{
 		scope=2;
 		scopeArsenal=2;
-		displayName="[53rd] Nox (Desert / Blue)";
+		displayName="[53rd] Nox Armor (Desert / Blue)";
 		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
 		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
 		hiddenSelections[]=

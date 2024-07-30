@@ -147,6 +147,7 @@ class CfgWeapons
 		};
 		class ItemInfo: UniformItem
 		{
+			uniformType = "Neopren";
 			uniformClass = "53rd_Ares_Uniform_Base_F";
 			containerClass = "Supply150";
 			mass = 10;
@@ -158,27 +159,34 @@ class CfgWeapons
 ////////////////////////////NOX//////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////
 
+
+
 	class 53rd_Nox_Uniform_Urban: 53rd_ODST_Uniform_Urban
 	{
 		scope=2;
-		displayName="[53rd] ODST Uniform (Urban)";
-		picture = "\53rd_Aux\Functions\Arsenal\Nox.paa";
+		displayName="[53rd] Nox Uniform (Urban)";
+		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
 		hiddenSelectionsTextures[] = 
 		{
 			"\53rd_Aux\Ares\Nox\53rd_Undersuit_Urban.paa"
 		};
 		class ItemInfo: UniformItem
 		{
+			uniformType = "Neopren";
 			uniformClass = "53rd_Nox_Urban_F";
 			containerClass = "Supply150";
 			mass = 10;
 		};
 	};
 
+
+
+
+
 	class 53rd_Nox_Uniform_Winter: 53rd_Nox_Uniform_Urban
 	{
 		scope=2;
-		displayName="[53rd] ODST Uniform (Winter)";
+		displayName="[53rd] Nox Uniform (Winter)";
 		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
 		hiddenSelectionsTextures[] = 
 		{
@@ -186,6 +194,7 @@ class CfgWeapons
 		};
 		class ItemInfo: UniformItem
 		{
+			uniformType = "Neopren";
 			uniformClass = "53rd_Nox_Winter_F";
 			containerClass = "Supply150";
 			mass = 10;
@@ -195,7 +204,7 @@ class CfgWeapons
 	class 53rd_Nox_Uniform_Woodland: 53rd_Nox_Uniform_Urban
 	{
 		scope=2;
-		displayName="[53rd] ODST Uniform (Woodland)";
+		displayName="[53rd] Nox Uniform (Woodland)";
 		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
 		hiddenSelectionsTextures[] = 
 		{
@@ -203,6 +212,7 @@ class CfgWeapons
 		};
 		class ItemInfo: UniformItem
 		{
+			uniformType = "Neopren";
 			uniformClass = "53rd_Nox_Woodland_F";
 			containerClass = "Supply150";
 			mass = 10;
@@ -212,7 +222,7 @@ class CfgWeapons
 	class 53rd_Nox_Uniform_Woodland2: 53rd_Nox_Uniform_Urban
 	{
 		scope=2;
-		displayName="[53rd] ODST Uniform (Woodland)";
+		displayName="[53rd] Nox Uniform (Woodland)";
 		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
 		hiddenSelectionsTextures[] = 
 		{
@@ -220,6 +230,7 @@ class CfgWeapons
 		};
 		class ItemInfo: UniformItem
 		{
+			uniformType = "Neopren";
 			uniformClass = "53rd_Nox_Woodland2_F";
 			containerClass = "Supply150";
 			mass = 10;
@@ -229,7 +240,7 @@ class CfgWeapons
 	class 53rd_Nox_Uniform_Arid: 53rd_Nox_Uniform_Urban
 	{
 		scope=2;
-		displayName="[53rd] ODST Uniform TT (Arid)";
+		displayName="[53rd] Nox Uniform TT (Arid)";
 		picture = "\53rd_Aux\Functions\Arsenal\Ares.paa";
 		hiddenSelectionsTextures[] = 
 		{
@@ -237,6 +248,7 @@ class CfgWeapons
 		};
 		class ItemInfo: UniformItem
 		{
+			uniformType = "Neopren";
 			uniformClass = "53rd_Nox_Arid_F";
 			containerClass = "Supply150";
 			mass = 10;
@@ -3085,8 +3097,8 @@ class CfgWeapons
 			//"H3_Armor_Lower",
 			//"Reach_Armor_Upper",
 			"Reach_Armor_Lower",
-			//"Forearm_Vent_Left",
-			//"Forearm_Vent_Right",
+			"Forearm_Vent_Left",
+			"Forearm_Vent_Right",
 			//"Canisters"
 			};
 		hiddenSelectionsTextures[]=

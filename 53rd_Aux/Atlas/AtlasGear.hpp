@@ -173,7 +173,7 @@ class XtdGearModels
 			class Person
 			{
 				label = "Person";
-				values[] = {"Hellfire","Scarecrow","Toxic"};
+				values[] = {"Axe","Hellfire","Ranger","Toxic"};
 				alwaysSelectable = 1;
 				changeingame = 0;
                 changedelay  = 0;			
@@ -829,9 +829,57 @@ class XtdGearInfos
 
 //////////////////////////////////////////////////////////////////////////////
 
+		class 53rd_Ranger_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Ranger";
+		HelmetCamo = "Urban";
+		};
+		class 53rd_Ranger_AAHelmet_Woodland:53rd_Ranger_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Ranger";
+		HelmetCamo = "Woodland";
+		};
+		class 53rd_Ranger_AAHelmet_Winter:53rd_Ranger_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Ranger";
+		HelmetCamo = "Winter";
+		};
+		class 53rd_Ranger_AAHelmet_Desert:53rd_Ranger_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Ranger";
+		HelmetCamo = "Desert";
+		};
 
+//////////////////////////////////////////////////////////////////////////////
 
-
+		class 53rd_Toxic_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Toxic";
+		HelmetCamo = "Urban";
+		};
+		class 53rd_Toxic_AAHelmet_Woodland:53rd_Toxic_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Toxic";
+		HelmetCamo = "Woodland";
+		};
+		class 53rd_Toxic_AAHelmet_Winter:53rd_Toxic_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Toxic";
+		HelmetCamo = "Winter";
+		};
+		class 53rd_Toxic_AAHelmet_Desert:53rd_Toxic_AAHelmet_Urban
+		{
+		model = "AtlasHelmetsCustom";
+		Person = "Toxic";
+		HelmetCamo = "Desert";
+		};
 
 
 

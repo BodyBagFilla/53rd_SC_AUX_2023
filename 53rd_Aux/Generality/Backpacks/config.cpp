@@ -153,7 +153,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Corpsman Rucksack (Urban)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad = 300;
+		maximumLoad = 400;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -167,7 +167,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Corpsman Rucksack (Woodland)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad = 300;
+		maximumLoad = 400;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -181,7 +181,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Corpsman Rucksack (Winter)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad = 300;
+		maximumLoad = 400;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -196,7 +196,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Corpsman Rucksack (Desert)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad = 300;
+		maximumLoad = 400;
 		hiddenSelections[] = {"camo1","AP_Heavy"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -214,7 +214,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Heavy Rucksack (Black)";
  		scope=2;
 		scopeArsenal=2;
-        maximumLoad = 350;
+        maximumLoad = 450;
 		hiddenSelections[] = {"camo1","biofoam"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -228,7 +228,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Heavy Rucksack (Woodland)";
  		scope=2;
 		scopeArsenal=2;
-        maximumLoad = 350;
+        maximumLoad = 450;
 		hiddenSelections[] = {"camo1","biofoam"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -242,7 +242,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Heavy Rucksack (Winter)";
  		scope=2;
 		scopeArsenal=2;
-        maximumLoad = 350;
+        maximumLoad = 450;
 		hiddenSelections[] = {"camo1","biofoam"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -255,7 +255,7 @@ class cfgVehicles
         displayName = "[53rd] ILCS Heavy Rucksack (Desert)";
  		scope=2;
 		scopeArsenal=2;
-        maximumLoad = 350;
+        maximumLoad = 450;
 		hiddenSelections[] = {"camo1","biofoam"};
 		hiddenSelectionsTextures[] = 
 		{
@@ -276,7 +276,7 @@ class cfgVehicles
 		displayName="[53rd] Radiopack AN/PRC-521 (Urban)";
  		scope=1;
 		scopeArsenal=1;
-		maximumLoad=200;
+		maximumLoad=400;
 		mass = 20;
 		hiddenSelectionsTextures[]=
 		{
@@ -349,7 +349,7 @@ class cfgVehicles
 	class 53rd_ILCS_ANPRC_515: OPTRE_ANPRC_515
     {
         displayName = "[53rd] ILCS AN/PRC-515";
-        maximumLoad = 300;
+        maximumLoad = 400;
 		hiddenSelectionsTextures[] = 
 		{
 			"\53rd_Aux\Generality\Backpacks\ILCS_ANPRC_515.paa"
@@ -393,7 +393,7 @@ class cfgVehicles
 		displayName="[53rd] Infantry Rucksack (Base / Heavy)";
  		scope=1;
 		scopeArsenal=1;
-		maximumLoad=250;
+		maximumLoad=400;
 		mass=20;
 		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
 		hiddenSelections[]=
@@ -406,6 +406,12 @@ class cfgVehicles
 			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Medic_Urban.paa",
 			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
 		};
+		tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
 	};
 
 
@@ -415,7 +421,7 @@ class cfgVehicles
 		displayName="[53rd] Infantry Rucksack (Base / Heavy)";
  		scope=1;
 		scopeArsenal=1;
-		maximumLoad=250;
+		maximumLoad=450;
 		mass=20;
 		model="\Halo_marine_02\Backpacks\Rucksack_pouches";
 		hiddenSelections[]=
@@ -436,7 +442,7 @@ class cfgVehicles
 		displayName="[53rd] Infantry Rucksack (Base)";
  		scope=1;
 		scopeArsenal=1;
-		maximumLoad=200;
+		maximumLoad=400;
 		mass=20;
 		model="\Halo_marine_02\Backpacks\Rucksack";
 		hiddenSelections[]=
@@ -502,6 +508,12 @@ class cfgVehicles
 		{
 			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Desert.paa"
 		};
+		tf_encryptionCode = "tf_west_radio_code";
+        tf_dialog = "anarc210_radio_dialog";
+        tf_subtype = "digital_lr";
+        tf_range = 120000;
+        tf_dialogUpdate = "[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio = 1;
 	};	
 
 
@@ -574,6 +586,33 @@ class cfgVehicles
 			"\53rd_Aux\Generality\Backpacks\53rd_Ruck_Pouches.paa"
 		};
 	};	
+
+	class OPTRE_ONI_Researcher_Suitcase;
+	class 53rd_Hephaestus_Medical_Satchel_V2: OPTRE_ONI_Researcher_Suitcase
+    {
+		author="53rd AUX Team";
+        dlc="53rd AUX";
+        scope=2;
+        scopeArsenal=2;
+        displayName="[53rd] Satchel (Medical)";
+        tf_isolatedAmount=0.64999998;
+        tf_encryptionCode="tf_west_radio_code";
+        tf_dialog="anarc210_radio_dialog";
+        tf_subtype="digital_lr";
+        tf_range=120000;
+        tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+        tf_hasLRradio=1;
+        hiddenSelections[]=
+        {
+            "camo"
+        };
+        hiddenSelectionsTextures[]=
+        {
+            "\53rd_Aux\Generality\Backpacks\53rd_Medical_Satchel.paa"
+        };
+        maximumLoad=300;
+		mass=1;
+    };	
 
 
 
@@ -703,7 +742,7 @@ class cfgVehicles
 		displayName="[53rd] Atlas Rucksack (Base)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad=200;
+		maximumLoad=300;
 		mass=20;
 		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
 		hiddenSelections[]=
@@ -729,7 +768,7 @@ class cfgVehicles
 		displayName="[53rd] Atlas Medic Rucksack (Medic)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad=250;
+		maximumLoad=400;
 		mass=20;
 		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
 		hiddenSelections[]=
@@ -746,6 +785,13 @@ class cfgVehicles
 			"19thVests_Kelp\Backpack\Base\Addon_biofoam_ca.paa",
 			""
 		};
+		tf_isolatedAmount=0.64999998;
+		tf_encryptionCode="tf_west_radio_code";
+		tf_dialog="anarc210_radio_dialog";
+		tf_subtype="digital_lr";
+		tf_range=120000;
+		tf_dialogUpdate="[""%1""] call TFAR_fnc_updateLRDialogToChannel;";
+		tf_hasLRradio=1;
 	};
 
 	class 53rd_Backpacks_Heavy_Rucksack2_Base: Halo_Rucksack_01
@@ -755,7 +801,7 @@ class cfgVehicles
 		displayName="[53rd] Atlas Rucksack (Heavy)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad=250;
+		maximumLoad=450;
 		mass=20;
 		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
 		hiddenSelections[]=
@@ -781,7 +827,7 @@ class cfgVehicles
 		displayName="[53rd] Atlas Radiopack";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad=200;
+		maximumLoad=400;
 		mass=20;
 		model="\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
 		hiddenSelections[]=
@@ -820,7 +866,7 @@ class cfgVehicles
 		displayName="[53rd] Engineer Rucksack B (Toolkit)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad=300;
+		maximumLoad=450;
 		mass=20;
 		model= "\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
 		hiddenSelections[]=
@@ -854,7 +900,7 @@ class cfgVehicles
 		displayName="[53rd] Engineer Rucksack B (UAV)";
  		scope=2;
 		scopeArsenal=2;
-		maximumLoad=400;
+		maximumLoad=450;
 		mass=20;
 		model= "\19thVests_Kelp\Backpack\12thKelpBackpack.p3d";
 		hiddenSelections[]=
@@ -914,7 +960,7 @@ class cfgVehicles
 			{"Long Jump",{15,10,25,0,1,1}}
 		};
 			
-		maximumload = 250;
+		maximumload = 300;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {""};
     };
@@ -947,7 +993,7 @@ class cfgVehicles
 			{"Landing/Adjust Flare",{5,10,10,0,1,1}},
 			{"Long Jump",{15,10,25,0,1,1}}
 		};
-		maximumload = 250;
+		maximumload = 400;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {""};
     };
@@ -979,7 +1025,7 @@ class cfgVehicles
 			{"Landing/Adjust Flare",{5,10,10,0,1,1}},
 			{"Long Jump",{15,10,25,0,1,1}}
 		};
-		maximumload = 300;
+		maximumload = 400;
 		hiddenSelections[] = {"camo1"};
 		hiddenSelectionsTextures[] = {""};
     };
@@ -991,7 +1037,7 @@ class cfgVehicles
 		author="53rd Aux";
 		scope=2;
 		displayName="[53rd] Parachute (LR)";
-		maximumLoad=50;
+		maximumLoad=250;
 		mass=1;
 		tf_isolatedAmount=0.64999998;
         tf_encryptionCode="tf_west_radio_code";

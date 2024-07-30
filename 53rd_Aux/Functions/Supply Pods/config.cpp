@@ -5,7 +5,7 @@
 
 class CfgPatches
 {
-	class 53rd_Supply_PodsPLACEHOLDER
+	class 53rd_Supply_Pods
 	{
 		units[]=
 		{
@@ -37,7 +37,7 @@ class CfgVehicles
 		editorCategory = "53rd_cat_faction";
 		displayName="[53rd] Supply Pod (Empty)";
 		model="\OPTRE_misc\crates\Supply_pod.p3d";
-		aauthor="53rd aux";
+		author="53rd aux";
 		icon="iconCrateWpns";
 		transportMaxWeapons=8;
 		transportMaxMagazines=50;
@@ -58,6 +58,76 @@ class CfgVehicles
 		{
 		};
 	};
+
+	class 53rd_Ammo_SupplyPod_Rifle: 53rd_Ammo_SupplyPod_Empty
+	{
+		scope = 2;
+       	scopeCurator = 2;
+		dlc=OPTRE;
+		editorCategory = 53rd_cat_faction;
+		displayName=[53rd] Supply Pod (Rifle);
+		author=53rd aux;
+		hiddenSelections[]=
+		{
+			camo
+		};
+        hiddenSelectionsTextures[] = 
+        {
+            \53rd_Aux\Functions\Supply Pods\SupplyPod_Rifle_co.paa
+        };
+		class TransportMagazines
+		{
+			
+			mag_xx(53rd_32Rnd_762x51_Mag,50);
+			mag_xx(53rd_32Rnd_762x51_Mag_AP,50);
+			mag_xx(53rd_32Rnd_762x51_Mag_JHP,50);
+			mag_xx(53rd_32Rnd_762x51_Mag_Ball,50);
+
+			mag_xx(53rd_60Rnd_762x51_Mag,50);
+			mag_xx(53rd_60Rnd_762x51_Mag_AP,50);
+			mag_xx(53rd_60Rnd_762x51_Mag_JHP,50);
+			mag_xx(53rd_60Rnd_762x51_Mag_Ball,50);
+
+			mag_xx(53rd_36Rnd_95x40_Mag,50);
+			mag_xx(53rd_36Rnd_95x40_Mag_JHP,50);
+			mag_xx(53rd_36Rnd_95x40_Mag_AP,50);
+			mag_xx(53rd_36Rnd_95x40_Mag_Ball,50);
+			mag_xx(53rd_36Rnd_95x40_Mag_SLAP,50);
+
+			mag_xx(3Rnd_Smoke_Grenarde_shell,20);
+			mag_xx(3Rnd_SmokeRed_Grenarde_shell,20);
+			mag_xx(3Rnd_HE_Grenade_shell,20);
+			mag_xx(1Rnd_HE_Grenade_shell,20);
+			mag_xx(OPTRE_1Rnd_SmokeWhite_Grenade_shell,20);
+			mag_xx(OPTRE_1Rnd_SmokePurple_Grenade_shell,20);
+			mag_xx(OPTRE_1Rnd_SmokeRed_Grenade_shell,20);
+			mag_xx(OPTRE_1Rnd_SmokeGreen_Grenade_shell,20);
+			
+		};
+		class TransportWeapons
+		{
+			weap_xx(53rd_UNSC_ARM37,5);
+			weap_xx(53rd_MA37,5);
+			weap_xx(53rd_MA37GL,5);
+			weap_xx(53rd_UNSC_MA5A,5);
+			weap_xx(53rd_UNSC_MA5C,5);
+			weap_xx(53rd_UNSC_MA5B,5);
+			weap_xx(53rd_UNSC_MA5AGL,5);
+			weap_xx(53rd_UNSC_br55_HB,5);
+			weap_xx(53rd_UNSC_br55,5);
+			weap_xx(53rd_UNSC_br55_gl,5);
+		};
+		class TransportItems
+		{
+			item_xx(optre_m7_sight,10);
+			item_xx(optre_br55hb_scope,10);
+			item_xx(optre_m73_smartlink,5);
+			item_xx(acc_flashlight,20);
+			item_xx(optre_m6_silencer,10);
+			item_xx(optre_ma5suppressor,10);
+		};
+	};
+
 	class 53rd_Ammo_SupplyPod_Marksmen: 53rd_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
@@ -76,43 +146,64 @@ class CfgVehicles
         };
 		class TransportMagazines
 		{
-			mag_xx(OPTRE_36Rnd_95x40_Mag,50);
-			mag_xx(OPTRE_36Rnd_95x40_Mag_JHP,50);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_AP,20);
-			mag_xx(OPTRE_20Rnd_86x70_Mag_JHP,20);
-			mag_xx(OPTRE_15Rnd_762x51_Mag_JHP,20);
-			mag_xx(OPTRE_15Rnd_762x51_Mag_AP,20);
-			mag_xx(OPTRE_4Rnd_145x114_APFSDS_Mag,12);
-			mag_xx(OPTRE_4Rnd_145x114_HEDP_Mag,4);
-			mag_xx(TCF_20Rnd_86x70_Mag_JHP,20);
+		mag_xx(53rd_4Rnd_145x114_APFSDS_Mag,12);
+		mag_xx(53rd_4Rnd_145x114_HVAP_Mg,12);
+
+		mag_xx(53rd_15Rnd_762x51_Mag_AP,12);
+		mag_xx(53rd_15Rnd_762x51_Mag,12);
+		mag_xx(53rd_15Rnd_762x51_Mag_HVAP,12);
+		mag_xx(53rd_15Rnd_762x51_Mag_JHP,12);
+
+		mag_xx(53rd_20Rnd_65x48_Mag,12);
+		mag_xx(53rd_20Rnd_65x48_Mag_JHP,12);
+		mag_xx(53rd_20Rnd_65x48_Mag_AP,12);
+		mag_xx(53rd_20Rnd_65x48_Mag_SLAP,12);
+
 		};
 		class TransportWeapons
 		{
-			weap_xx(OPTRE_BR45,5);
-			weap_xx(OPTRE_BR55,10);
-			weap_xx(TCF_M14,2);
-			weap_xx(TCF_CR77,2);
-			weap_xx(OPTRE_M393_DMR,2);
-			weap_xx(OPTRE_SRS99C,2);
+		weap_xx(53rd_UNSC_SRS99_Fang,2);
+		weap_xx(53rd_UNSC_SRS99_AM,2);
+		weap_xx(53rd_UNSC_CR77,5);
+		weap_xx(53rd_UNSC_M392,5);
 		};
+		
 		class TransportItems
 		{
-			item_xx(optre_srs99c_scope,2);
-			item_xx(optre_m7_sight,10);
-			item_xx(optre_br55hb_scope,10);
-			item_xx(optre_m73_smartlink,5);
-			item_xx(acc_flashlight,20);
-			item_xx(optre_m6_silencer,10);
-			item_xx(optre_ma5suppressor,10);
+			item_xx(OPTRE_BMR_Scope,2);
+			item_xx(OPTRE_M393_EOTECH,10);
+			item_xx(Optre_Recon_Sight,10);
+			item_xx(Optre_Recon_Sight_Green,5);
+			item_xx(Optre_Recon_Sight_Red,20);
+			item_xx(OPTRE_MA5Suppressor,10);
+			item_xx(OPTRE_M12_Laser,10);
+			item_xx(TCF_Rifle_Flashlight_IR,2);
+			item_xx(OPTRE_BR45_Scope,10);
+			item_xx(OPTRE_BR55HB_Scope,10);
+			item_xx(19_UNSC_BR55_LAM,5);
+			item_xx(19_UNSC_evo,20);
+			item_xx(OPTRE_DMR_Light,10);
+			item_xx(bipod_02_f_blk,10);
+			item_xx(bipod_03_f_blk,2);
+			item_xx(bipod_01_f_blk,10);
+			item_xx(19_UNSC_evosd,10);
+			item_xx(OPTRE_M6C_compensator,5);
+			item_xx(OPTRE_M6_silencer,20);
+			item_xx(TCF_M6_Flashlight_IR,10);
+			item_xx(OPTRE_M6C_Laser,10);
+			item_xx(OPTRE_M6C_Scope,20);
+			item_xx(OPTRE_M6G_Laser,10);
+			item_xx(OPTRE_M6G_Flashlight,10);
 		};
 	};
-	class 53rd_Ammo_SupplyPod_Basic: 53rd_Ammo_SupplyPod_Empty
+
+	class 53rd_Ammo_SupplyPod_CQB: 53rd_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
        	scopeCurator = 2;
 		dlc="OPTRE";
 		editorCategory = "53rd_cat_faction";
-		displayName="[53rd] Supply Pod (Basic)";
+		displayName="[53rd] Supply Pod (CQB)";
 		author="53rd aux";
 		hiddenSelections[]=
 		{
@@ -120,44 +211,51 @@ class CfgVehicles
 		};
         hiddenSelectionsTextures[] = 
         {
-            "\53rd_Aux\Functions\Supply Pods\SupplyPod_basic_co.paa"
+            "\53rd_Aux\Functions\Supply Pods\SupplyPod_CQB_co.paa"
         };
 		class TransportMagazines
 		{
-			mag_xx(OPTRE_60RND_762x51_Mag,50);
-			mag_xx(OPTRE_60RND_762x51_Mag_JHPT,50);
-			mag_xx(OPTRE_60RND_762x51_Mag_Tracer_Yellow,50);
-			mag_xx(OPTRE_60RND_762x51_Mag_Tracer,50);
-			mag_xx(3Rnd_Smoke_Grenarde_shell,20);
-			mag_xx(3Rnd_SmokeRed_Grenarde_shell,20);
-			mag_xx(3Rnd_HE_Grenade_shell,20);
-			mag_xx(1Rnd_HE_Grenade_shell,20);
-			mag_xx(OPTRE_1Rnd_SmokeWhite_Grenade_shell,20);
-			mag_xx(OPTRE_1Rnd_SmokePurple_Grenade_shell,20);
-			mag_xx(OPTRE_1Rnd_SmokeRed_Grenade_shell,20);
-			mag_xx(OPTRE_1Rnd_SmokeGreen_Grenade_shell,20);
-			mag_xx(DMNS_42Rnd_762x54_Mag,20);
-			mag_xx(Commando_20Rnd_65_Mag,50);
-			mag_xx(Commando_20Rnd_65_ReloadR_Mag,50);
+			mag_xx(53rd_8Rnd_127x40_Mag,8);
+			mag_xx(53rd_8Rnd_127x40_Mag_AP,8);
+			mag_xx(53rd_8Rnd_127x40_Mag_JHP,8);
+			mag_xx(53rd_8Rnd_127x40_Mag_NARQ,8);
+			mag_xx(53rd_8Rnd_127x40_Mag_FR,8);
+			mag_xx(53rd_8Rnd_127x40_Mag_FG,8);
+			mag_xx(53rd_8Rnd_127x40_Mag_SLAP,8);
+
+			mag_xx(53rd_12Rnd_12Gauge_Pellets,8);
+			mag_xx(53rd_12Rnd_12Gauge_Smoke,8);
+
+			mag_xx(53rd_12Rnd_8Gauge_Slugs,8);
+			mag_xx(53rd_12Rnd_8Gauge_Pellets,8);
+
+			mag_xx(53rd_48Rnd_5x23mm_Mag,8);
+			mag_xx(53rd_48Rnd_5x23mm_Mag_HV,8);
+			mag_xx(53rd_48Rnd_5x23mm_Mag_JHP,8);
+
 		};
 		class TransportWeapons
 		{
-			weap_xx(53rd_MA32,5);
-			weap_xx(53rd_MA32GL,5);
-			weap_xx(53rd_MA37,5);
-			weap_xx(53rd_MA37GL,5);
-			weap_xx(OPTRE_Commando,5);
+			weap_xx(53rd_M7_OPTRE,5);
+			weap_xx(53rd_M6C_Riot_Shield,5);
+			weap_xx(53rd_M7_Riot_Shield,5);
+			weap_xx(53rd_Bulldog_Riot_Shield,5);
+			weap_xx(53rd_M6G_Riot_Shield,5);
+
+			weap_xx(53rd_UNSC_M45,5);
+			weap_xx(53rd_UNSC_Bulldog,5);
+			weap_xx(53rd_UNSC_M90,5);
 		};
 		class TransportItems
 		{
-			item_xx(optre_m7_sight,10);
-			item_xx(optre_br55hb_scope,10);
-			item_xx(optre_m73_smartlink,5);
-			item_xx(acc_flashlight,20);
-			item_xx(optre_m6_silencer,10);
-			item_xx(optre_ma5suppressor,10);
+			item_xx(optre_m7_sight,2);
+			item_xx(acc_flashlight,2);
+			item_xx(optre_m7_silencer,2);
+			item_xx(optre_m7_laser,2);
+			item_xx(optre_m7_flashlight,2);
 		};
 	};
+
 	class 53rd_Ammo_SupplyPod_Heavy: 53rd_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
@@ -194,64 +292,37 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			weap_xx(OPTRE_M41_SSR,2);
-			weap_xx(OPTRE_M73,4);
-			weap_xx(53rd_NLAW,2);
-			weap_xx(launch_MRAWS_green_rail_F,2);
+			weap_xx(53rd_M247_hmg,3);
+			weap_xx(53rd_M33,3);
+			weap_xx(53rd_UNSC_M73H,3);
+			weap_xx(53rd_UNSC_M739,3);
+			weap_xx(53rd_M247H_Etilka,3);
+			weap_xx(53rd_UNSC_MMG,3);
+			weap_xx(53rd_UNSC_CM12,3);
+
 		};
 		class TransportItems
 		{
-			item_xx(optre_m7_sight,4);
-			item_xx(optre_m73_smartlink,4);
-			item_xx(acc_flashlight,4);
+			item_xx(OPTRE_M392_Scope,4);
+			item_xx(OPTRE_M7_Sight,4);
+			item_xx(OPTRE_M393_Scope,4);
+			item_xx(OPTRE_M393_ACOG,4);
+			item_xx(OPTRE_M393_EOTECH,4);
+			item_xx(OPTRE_BMR_Laser,4);
+			item_xx(TCF_Rifle_Flashlight_IR,4);
 			item_xx(optre_ma5suppressor,4);
+			item_xx(M247, MMG,4);
+			item_xx(bipod_01_f_blk,4);
+			item_xx(bipod_02_f_blk,4);
+			item_xx(bipod_03_f_blk,4);
+			item_xx(Optre_Recon_Sight,4);
+			item_xx(Optre_Recon_Sight_Green,4);
+			item_xx(Optre_Recon_Sight_Red,4);
+			item_xx(OPTRE_M12_Laser,4);
 		};
 	};
-	class 53rd_Ammo_SupplyPod_CQB: 53rd_Ammo_SupplyPod_Empty
-	{
-		scope = 2;
-       	scopeCurator = 2;
-		dlc="OPTRE";
-		editorCategory = "53rd_cat_faction";
-		displayName="[53rd] Supply Pod (CQB)";
-		author="53rd aux";
-		hiddenSelections[]=
-		{
-			"camo"
-		};
-        hiddenSelectionsTextures[] = 
-        {
-            "\53rd_Aux\Functions\Supply Pods\SupplyPod_cqb_co.paa"
-        };
-		class TransportMagazines
-		{
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag,30);
-			mag_xx(OPTRE_60Rnd_5x23mm_Mag_JHP,20);
-			mag_xx(OPTRE_64Rnd_57x31_Mag,10);
-			mag_xx(OPTRE_12Rnd_8Gauge_Pellets,10);
-			mag_xx(OPTRE_12Rnd_8Gauge_Slugs,10);
-			mag_xx(OPTRE_6Rnd_8Gauge_Pellet,10);
-			mag_xx(OPTRE_6Rnd_8Gauge_Slug,10);
-			mag_xx(TCF_64Rnd_57x31_Mag_JHP,10);
-			mag_xx(TCF_30Rnd_30x06_Mag_JHP,10);
-			mag_xx(36Rnd_95x40_jhp_br_55,10);
-		};
-		class TransportWeapons
-		{
-			weap_xx(OPTRE_M7,5);
-			weap_xx(OPTRE_M90A,4);
-			weap_xx(OPTRE_M45TAC,4);
-			weap_xx(OPTRE_M12_SOC,4);
-		};
-		class TransportItems
-		{
-			item_xx(optre_m7_sight,2);
-			item_xx(acc_flashlight,2);
-			item_xx(optre_m7_silencer,2);
-			item_xx(optre_m7_laser,2);
-			item_xx(optre_m7_flashlight,2);
-		};
-	};
+
+
 	class 53rd_Ammo_SupplyPod_Explosives: 53rd_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
@@ -279,21 +350,30 @@ class CfgVehicles
 			mag_xx(APERSMine_Range_Mag,8);
 			mag_xx(UNSCMine_Range_Mag,8);
 			mag_xx(DemoCharge_Remote_Mag,8);
-			mag_xx(ACE_1Rnd_82mm_Mo_HE_Guided,20);
-			mag_xx(ACE_1Rnd_82mm_Mo_HE,20);
-			mag_xx(ACE_1Rnd_82mm_Mo_Illum,20);
-			mag_xx(ACE_1Rnd_82mm_Mo_Smoke,20);
+			mag_xx(Titan_AT,10);
+			mag_xx(53rd_M15_Single_Slight,10);
+			mag_xx(53rd_M41_Twin_HEAT_Thermal,20);
+			mag_xx(53rd_M41_Twin_HEAT_SACLOS,20);
+			mag_xx(53rd_M41_Twin_HEAT,20);
+			mag_xx(GRL45_6rnd_HE,15);
+			mag_xx(GRL45_6rnd_HEDP,15);
+			mag_xx(GRL45_6rnd_Smoke_White,15);
+			mag_xx(GRL45_6rnd_Smoke_Orange,15);
+			mag_xx(GRL45_6rnd_Smoke_Purple,15);
 		};
 		class TransportWeapons
 		{
-			weap_xx(ace_csw_carryMortarBaseplate,3);
-			weap_xx(ace_csw_staticMortarCarry,3);
+			weap_xx(53rd_GRL_45,3);
+			weap_xx(53rd_UNSC_M41_SSR,5);
+			weap_xx(53rd_M57_Pilum_b,10);
 		};
 		class TransportItems
 		{
 			item_xx(ACE_M26_Clacker,4);
 		};
 	};
+
+
 	class 53rd_Ammo_SupplyPod_Equipment: 53rd_Ammo_SupplyPod_Empty
 	{
 		scope = 2;
@@ -336,6 +416,8 @@ class CfgVehicles
 			item_xx(B_UavTerminal,20);
 		};
 	};
+
+
     class 53rd_SupplyPod_Medical: 53rd_Ammo_SupplyPod_Empty
     {
 		scope = 2;
@@ -380,6 +462,8 @@ class CfgVehicles
         ace_cargo_canLoad = 0;
         ace_cargo_noRename = 1;
     };
+
+
 	class 53rd_Hardbox_3R: 53rd_Ammo_SupplyPod_Empty
 	{
 		editorCategory = "53rd_cat_faction";
@@ -429,6 +513,15 @@ class CfgVehicles
             };
         };      
 	};
+
+
+
+
+
+
+
+
+
     //Define the Pods
     class Module_F;
 	
@@ -458,7 +551,7 @@ class CfgVehicles
 						class n532
 						{
 							name = "AR/GL [53rd]";
-							value = "53rd_Ammo_SupplyPod_Basic";
+							value = "53rd_Ammo_SupplyPod_Rifle";
 						};
 						class n533
 						{

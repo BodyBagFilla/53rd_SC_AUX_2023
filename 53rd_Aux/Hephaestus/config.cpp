@@ -550,6 +550,86 @@ class CfgWeapons
 		};
 	};
 
+
+
+	class 53rd_Heph_Mino_Medic_Helmet_Urban: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Urban / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Urban_1-1.paa"
+		};
+	};
+
+	class 53rd_Heph_Mino_Medic_Helmet_Woodland: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Woodland / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Woodland_1-1.paa"
+		};
+	};
+
+	class 53rd_Heph_Mino_Medic_Helmet_Winter: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Winter / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Winter_1-1.paa"
+		};
+	};
+
+	class 53rd_Heph_Mino_Medic_Helmet_Desert: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Desert / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Desert_1-1.paa"
+		};
+	};
+
+
+
 ////////////////////////// 1-2 /////////////////////////////////////////////
 
 	class 53rd_Heph_Kerb_Helmet_Urban: 53rd_Heph_Helmet_Base
@@ -627,6 +707,88 @@ class CfgWeapons
 			"\53rd_Aux\Hephaestus\Helmets\53rd_Heph_Helmet_Rifleman_Desert_1-2.paa"
 		};
 	};
+
+
+////////////////////////// Medic /////////////////////////////////////////////
+
+	class 53rd_Heph_Kerb_Medic_Helmet_Urban: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Urban / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Urban_1-2.paa"
+		};
+	};
+
+	class 53rd_Heph_Kerb_Medic_Helmet_Woodland: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Woodland / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Woodland_1-2.paa"
+		};
+	};
+
+	class 53rd_Heph_Kerb_Medic_Helmet_Winter: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Winter / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Winter_1-2.paa"
+		};
+	};
+
+	class 53rd_Heph_Kerb_Medic_Helmet_Desert: 53rd_Heph_Helmet_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Desert / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Desert_1-2.paa"
+		};
+	};
+
+
+
 
 ////////////////////////// 1-3 /////////////////////////////////////////////
 
@@ -864,6 +1026,86 @@ class CfgWeapons
 		};
 	};
 
+
+////////////////////////// Medic /////////////////////////////////////////////
+
+	class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Urban: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Urban / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Urban_1-1.paa"
+		};
+	};
+
+	class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Woodland: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Woodland / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Woodland_1-1.paa"
+		};
+	};
+
+	class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Winter: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Winter / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Winter_1-1.paa"
+		};
+	};
+
+	class 53rd_Heph_Mino_Medic_Helmet_NoVisor_Desert: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Asterion / Desert / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Desert_1-1.paa"
+		};
+	};
+
+
 ////////////////////////// 1-2 /////////////////////////////////////////////
 
 	class 53rd_Heph_Kerb_Helmet_NoVisor_Urban: 53rd_Heph_Helmet_NoVisor_Base
@@ -941,6 +1183,91 @@ class CfgWeapons
 			"\53rd_Aux\Hephaestus\Helmets\53rd_Heph_Helmet_Rifleman_Desert_1-2.paa"
 		};
 	};
+
+
+////////////////////////// Medic /////////////////////////////////////////////
+
+	class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Urban: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Urban / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Urban_1-2.paa"
+		};
+	};
+
+	class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Woodland: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Woodland / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Woodland_1-2.paa"
+		};
+	};
+
+	class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Winter: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Winter / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Winter_1-2.paa"
+		};
+	};
+
+	class 53rd_Heph_Kerb_Medic_Helmet_NoVisor_Desert: 53rd_Heph_Helmet_NoVisor_Base
+	{
+		author="53rd Aux Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Hephaestus Medic Helmet (Kerberos/ Desert / Visor)";
+		picture="\53rd_Aux\Functions\Arsenal\Hephaestus.paa";
+		model="\Halo_marine_02\Halo_Marine_02_Helmet_F.p3d";
+		hiddenSelections[]=
+		{
+			"Camo1",
+			"_Visor"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\53rd_Aux\Hephaestus\Helmets\Medic\53rd_Hephaestus_Helmet_Medic_Desert_1-2.paa"
+		};
+	};
+
+
+
+
+
+
 
 ////////////////////////// 1-3 /////////////////////////////////////////////
 

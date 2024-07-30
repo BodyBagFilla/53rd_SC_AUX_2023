@@ -7,7 +7,7 @@ class XtdGearModels
 ////////////////////////// Ares //////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////
 
-		class AresHelmets_PLACEHOLDER
+		class AresHelmets
 		{
 			label = "53rd Ares Helmets";
 			author = "Styx";
@@ -60,7 +60,7 @@ class XtdGearModels
 			};
 		};
 
-		class AresArmor_PLACEHOLDER
+		class AresArmor
 		{
 			label = "53rd Ares Armor";
 			author = "Styx";
@@ -162,7 +162,7 @@ class XtdGearModels
 			};
 		};
 
-		class AresCustomHelmets_PLACEHOLDER
+		class AresCustomHelmets
 		{
 			label = "53rd Ares Custom Armor";
 			author = "Styx";
@@ -179,10 +179,8 @@ class XtdGearModels
 					"Baxoje",
 					"Bjorn",
 					"BooBen",
-					"Kenobi",
-					"Ullr",
-					"Lonewulf"
-
+					"Riku",
+					"Sellka"
 				};
 				alwaysSelectable = 0;
 				changeingame = 1;
@@ -191,7 +189,7 @@ class XtdGearModels
 
 		};
 
-		class AresCustomArmor_PLACEHOLDER
+		class AresCustomArmor
 		{
 			label = "53rd Ares Custom Armor";
 			author = "Styx";
@@ -204,7 +202,7 @@ class XtdGearModels
 				label = "Person";
 				values[] = 
 				{
-					"Aqyrys"
+					"Aqyrys", "Riku"
 
 				};
 				alwaysSelectable = 0;
@@ -481,6 +479,103 @@ class XtdGearModels
 			};
 			
 		};
+
+
+		class NoxCustomHelmets
+		{
+			label = "53rd Nox Custom Helmets";
+			author = "Styx";
+			options[] = {"Person","HelmetCamo"};
+			class Person
+			{
+				label = "Person";
+				values[] = {"Kenobi","Lonewulf","Ullr"};
+				alwaysSelectable = 1;
+				changeingame = 0;
+                changedelay  = 0;
+			};
+			class HelmetCamo
+			{
+				label = "Helmet Camo";
+				values[] = {"Urban","Woodland","Arid","Winter"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Arid
+				{
+					label = "Arid";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Winter
+				{
+					label = "Winter";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+		};	
+
+
+
+		class NoxCustomArmor
+		{
+			label = "53rd Nox Custom Armor";
+			author = "Styx";
+			options[] = {"Person","VestCamo"};
+			class Person
+			{
+				label = "Person";
+				values[] = {"Kenobi","Lonewulf","Ullr"};
+				alwaysSelectable = 1;
+				changeingame = 0;
+                changedelay  = 0;
+			};
+			class VestCamo
+			{
+				label = "Armor Camo";
+				values[] = {"Urban","Woodland","Arid","Winter"};
+				alwaysSelectable = 1;
+				changeingame = 1;
+                changedelay  = 0;
+				class Urban
+				{
+					label = "Urban";
+					image = "#(rgb,8,8,3)color(0.4,0.4,0.4,1)";
+				};
+				class Woodland
+				{
+					label = "Woodland";
+					image = "#(rgb,8,8,3)color(0.295,0.325,0.126,1)";
+				};
+				class Arid
+				{
+					label = "Arid";
+					image = "#(rgb,8,8,3)color(0.66,0.58,0.09,1)";
+				};
+				class Winter
+				{
+					label = "Winter";
+					image = "#(rgb,8,8,3)color(0.8,0.8,0.8,1)";
+				};
+			};
+		};	
+
+
+
+
+
+
+
+
 	};
 };
 
@@ -496,7 +591,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Helmet_Rifleman
 		{
-		model = "AresHelmets_PLACEHOLDER";
+		model = "AresHelmets";
 		Type = "M56SR";
 		HelmetMOS = "Rifleman";
 		};
@@ -526,7 +621,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Vest_NoShoulder_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "NoShoulder";
 		ArmorMOS ="Rifleman";
 		Radio = "None";		
@@ -555,7 +650,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Vest_Base_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "Base";
 		ArmorMOS ="Rifleman";
 		Radio = "None";		
@@ -580,7 +675,7 @@ class XtdGearInfos
 		};
 		class 53rd_Ares_Vest_Base_RideAlong:53rd_Ares_Vest_Base_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "Base";
 		ArmorMOS ="RA";
 		Radio = "None";		
@@ -592,7 +687,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Vest_BaseLR_Rifleman:53rd_Ares_Vest_Base_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "Base";
 		ArmorMOS ="Rifleman";
 		Radio = "Left";		
@@ -627,7 +722,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Vest_BaseRR_Rifleman:53rd_Ares_Vest_Base_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "Base";
 		ArmorMOS ="Rifleman";
 		Radio = "Right";		
@@ -661,7 +756,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Vest_CQB_Rifleman:53rd_Ares_Vest_Base_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "CQB";
 		ArmorMOS ="Rifleman";
 		Shoulders = "Yes";		
@@ -690,7 +785,7 @@ class XtdGearInfos
 
 		class 53rd_Ares_Vest_Sniper_Rifleman:53rd_Ares_Vest_Base_Rifleman
 		{
-		model = "AresArmor_PLACEHOLDER";
+		model = "AresArmor";
 		Type = "Sniper";
 		ArmorMOS ="Rifleman";
 		Shoulders = "Yes";		
@@ -1250,51 +1345,189 @@ class XtdGearInfos
 
 		class 53rd_Aqua_Recon
 		{
-		model = "AresCustomHelmets_PLACEHOLDER";
+		model = "AresCustomHelmets";
 		Person = "Aqyrys";
 		};
 
 		class 53rd_Ares_Baxoje_Helmet
 		{
-		model = "AresCustomHelmets_PLACEHOLDER";
+		model = "AresCustomHelmets";
 		Person = "Baxoje";
 		};
 
 		class 53rd_Ares_Bjorn_Helmet
 		{
-		model = "AresCustomHelmets_PLACEHOLDER";
+		model = "AresCustomHelmets";
 		Person = "Bjorn";
 		};
 
 		class 53rd_Ares_BooBen_Helmet
 		{
-		model = "AresCustomHelmets_PLACEHOLDER";
+		model = "AresCustomHelmets";
 		Person = "BooBen";
 		};
 
-		class 53rd_Kenobi_Recon
+
+		class 53rd_Ares_Riku_Helmet
 		{
-		model = "AresCustomHelmets_PLACEHOLDER";
-		Person = "Kenobi";
+		model = "AresCustomHelmets";
+		Person = "Riku";
 		};
 
-		class 53rd_Ares_Ullr_Helmet_Urban
+
+		class 53rd_Ares_Sellka_Helmet
 		{
-		model = "AresCustomHelmets_PLACEHOLDER";
-		Person = "Ullr";
+		model = "AresCustomHelmets";
+		Person = "Sellka";
 		};
 
-		class 53rd_Ares_Lonewulf_Helmet_Urban
-		{
-		model = "AresCustomHelmets_PLACEHOLDER";
-		Person = "Lonewulf";
-		};
+
+
 
 		class 53rd_Ares_Aqyrys_Vest
 		{
-		model = "AresCustomArmor_PLACEHOLDER";
+		model = "AresCustomArmor";
 		Person = "Aqyrys";
 		};
+
+		class 53rd_Riku_Vest_Rifleman
+		{
+		model = "AresCustomArmor";
+		Person = "Riku";
+		};
+
+
+
+////////////////////////////////////////////////////
+////////////////////// NOX //////////////////////	
+
+
+////////////////////// Kenobi //////////////////////	 
+		class 53rd_Kenobi_Recon
+		{
+		model = "NoxCustomHelmets";
+		Person = "Kenobi";
+		};
+
+////////////////////// Ullr //////////////////////	 
+
+		class 53rd_Ares_Ullr_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Ullr";
+		HelmetCamo = "Urban";
+		};
+
+		class 53rd_Ares_Ullr_Helmet_Woodland : 53rd_Ares_Ullr_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Ullr";
+		HelmetCamo = "Woodland";
+		};
+
+		class 53rd_Ares_Ullr_Helmet_Desert : 53rd_Ares_Ullr_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Ullr";
+		HelmetCamo = "Arid";
+		};
+
+		class 53rd_Ares_Ullr_Helmet_Winter : 53rd_Ares_Ullr_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Ullr";
+		HelmetCamo = "Winter";
+		};
+///////
+		class 53rd_Ares_Vest_Ullr_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Ullr";
+		VestCamo = "Urban";
+		};
+
+		class 53rd_Ares_Vest_Ullr_Woodland : 53rd_Ares_Vest_Ullr_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Ullr";
+		VestCamo = "Woodland";
+		};
+
+		class 53rd_Ares_Vest_Ullr_Desert : 53rd_Ares_Vest_Ullr_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Ullr";
+		VestCamo = "Arid";
+		};
+
+		class 53rd_Ares_Vest_Ullr_Winter : 53rd_Ares_Vest_Ullr_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Ullr";
+		VestCamo = "Winter";
+		};
+
+
+////////////////////// Lonewulf //////////////////////	 
+
+		class 53rd_Ares_Lonewulf_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Lonewulf";
+		HelmetCamo = "Urban";
+		};
+
+		class 53rd_Ares_Lonewulf_Helmet_Woodland : 53rd_Ares_Lonewulf_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Lonewulf";
+		HelmetCamo = "Woodland";
+		};
+
+		class 53rd_Ares_Lonewulf_Helmet_Desert : 53rd_Ares_Lonewulf_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Lonewulf";
+		HelmetCamo = "Arid";
+		};
+
+		class 53rd_Ares_Lonewulf_Helmet_Winter : 53rd_Ares_Lonewulf_Helmet_Urban
+		{
+		model = "NoxCustomHelmets";
+		Person = "Lonewulf";
+		HelmetCamo = "Winter";
+		};
+//////////
+		class 53rd_Ares_Vest_Lonewulf_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Lonewulf";
+		VestCamo = "Urban";
+		};
+
+		class 53rd_Ares_Vest_Lonewulf_Woodland : 53rd_Ares_Vest_Lonewulf_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Lonewulf";
+		VestCamo = "Woodland";
+		};
+
+		class 53rd_Ares_Vest_Lonewulf_Desert : 53rd_Ares_Vest_Lonewulf_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Lonewulf";
+		VestCamo = "Arid";
+		};
+
+		class 53rd_Ares_Vest_Lonewulf_Winter : 53rd_Ares_Vest_Lonewulf_Urban
+		{
+		model = "NoxCustomArmor";
+		Person = "Lonewulf";
+		VestCamo = "Winter";
+		};
+
+
+
 
 	};
 };

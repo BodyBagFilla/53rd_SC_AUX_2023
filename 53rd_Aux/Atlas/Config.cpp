@@ -331,7 +331,7 @@ class CfgVehicles
 		{
 			"\53rd_Aux\Atlas\Uniform\Top\53rd_Atlas_Top_Platoon_Urban.paa",
 			"\53rd_Aux\Atlas\Uniform\Pants\53rd_Atlas_Pants_Urban.paa",
-			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Rifleman_Urban.paa"
+			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Platoon_Urban.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Atlas_Uni_Platoon_Urban";
@@ -353,7 +353,7 @@ class CfgVehicles
 		{
 			"\53rd_Aux\Atlas\Uniform\Top\53rd_Atlas_Top_Platoon_Woodland.paa",
 			"\53rd_Aux\Atlas\Uniform\Pants\53rd_Atlas_Pants_Woodland.paa",
-			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Rifleman_Urban.paa"
+			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Platoon_Woodland.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Atlas_Uni_Platoon_Woodland";
@@ -375,7 +375,7 @@ class CfgVehicles
 		{
 			"\53rd_Aux\Atlas\Uniform\Top\53rd_Atlas_Top_Platoon_Winter.paa",
 			"\53rd_Aux\Atlas\Uniform\Pants\53rd_Atlas_Pants_Winter.paa",
-			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Rifleman_Winter.paa"
+			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Platoon_Winter.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Atlas_Uni_Platoon_Winter";
@@ -397,7 +397,7 @@ class CfgVehicles
 		{
 			"\53rd_Aux\Atlas\Uniform\Top\53rd_Atlas_Top_Platoon_Desert.paa",
 			"\53rd_Aux\Atlas\Uniform\Pants\53rd_Atlas_Pants_Desert.paa",
-			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Rifleman_Desert.paa"
+			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Platoon_Desert.paa"
 		};
 		model="\Halo_marine_02\Halo_Marine_02_Uniform_F.p3d";
 		uniformClass="53rd_Atlas_Uni_Platoon_Desert";
@@ -1926,7 +1926,7 @@ class CfgWeapons
 		{
 			"\53rd_Aux\Atlas\Uniform\Top\53rd_Atlas_Top_Platoon_Woodland.paa",
 			"\53rd_Aux\Atlas\Uniform\Pants\53rd_Atlas_Pants_Woodland.paa",
-			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Rifleman_Urban.paa"
+			"\53rd_Aux\Atlas\Uniform\Armor\53rd_Atlas_Armor_Rifleman_Woodland.paa"
 		};
 		class ItemInfo: ItemInfo
 		{

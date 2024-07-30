@@ -7,6 +7,7 @@ class cfgAmmo
 	class Titan_AT;
     class OPTRE_M41_Rocket_HEAT;
 	class OPTRE_65_Creedmoor;
+	class TCF_B_86x70_Ball;
 	class OPTRE_M41_Rocket_HEAT_SACLOS;
 	class OPTRE_M41_Rocket_HEAT_Thermal;
 	class M_NLAW_AT_F;
@@ -273,6 +274,7 @@ class cfgAmmo
 		proximityExplosionDistance = 10;
 	};
 
+	//9.5x40
 	class 53rd_B_95x40_FMJ : B_95x40_ap{
 		caliber = 4;
 		hit = 15;
@@ -285,21 +287,20 @@ class cfgAmmo
 		initspeed = 1000;
 		typicalSpeed = 1000;
 	};
+	//762x51
 	class 53rd_B_762x51_JHP : B_762x51_19_FMJ{
 		caliber = 1;
 		hit = 24;
 		initspeed = 1000;
 		typicalSpeed = 1000;
 	};
-<<<<<<< HEAD
-=======
 	class 53rd_B_762x51_SLAP : B_762x51_19_FMJ{
 		caliber = 7;
 		hit = 16;
 		initspeed = 1000;
 		typicalSpeed = 1000;
 	};
->>>>>>> SigmaWeaponsTesting
+	//5x23
 	class 53rd_B_5x23_HV : B_5x23_19_FMJ{
 		caliber = 3;
 		hit = 11;
@@ -312,6 +313,7 @@ class cfgAmmo
 		initspeed = 450;
 		typicalSpeed = 450;
 	};
+	//12.7x40
 	class 53rd_B_127x40 : OPTRE_B_127x40_Ball{
 		caliber = 4;
 		hit = 45;
@@ -336,6 +338,7 @@ class cfgAmmo
 		initspeed = 750;
 		typicalSpeed = 750;
 	};
+	//6.5x48
 	class 53rd_B_65x48_FMJ : OPTRE_65_Creedmoor{
 		caliber = 2.2;
 		hit = 14;
@@ -354,6 +357,25 @@ class cfgAmmo
 	class 53rd_B_65x48_SLAP : 53rd_B_65x48_FMJ{
 		caliber = 5;
 		hit = 20;
+		typicalSpeed = 1000;
+	};
+	//8.6x70
+	class 53rd_B_86x70 : TCF_B_86x70_Ball
+	{
+		caliber = 2.2;
+		hit = 15;
+		typicalSpeed = 750;
+	};
+	class 53rd_B_86x70_JHP : 53rd_B_86x70
+	{
+		caliber = 1;
+		hit = 22;
+		typicalSpeed = 1150;
+	};
+	class 53rd_B_86x70_SLAP : 53rd_B_86x70
+	{
+		caliber = 4;
+		hit = 18;
 		typicalSpeed = 1000;
 	};
 };
