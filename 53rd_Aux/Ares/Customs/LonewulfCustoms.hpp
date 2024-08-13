@@ -1,0 +1,556 @@
+
+////////////////////////////////////////////////////
+////////////////////// Helmet //////////////////////	
+
+	class 53rd_Ares_Lonewulf_Helmet_Urban: 53rd_Ares_Helmet_Rifleman
+	{
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Helmet (Lonewulf / Urban)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Ares_Helmet_Lonewulf_Urban.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+	};
+	
+
+	class 53rd_Ares_Lonewulf_Helmet_Woodland: 53rd_Ares_Lonewulf_Helmet_Urban
+	{
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Helmet (Lonewulf / Woodland)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Ares_Helmet_Lonewulf_Woodland.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+	};
+	
+
+	class 53rd_Ares_Lonewulf_Helmet_Desert: 53rd_Ares_Lonewulf_Helmet_Urban
+	{
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Helmet (Lonewulf / Desert)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Ares_Helmet_Lonewulf_Desert.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+	};
+	
+	class 53rd_Ares_Lonewulf_Helmet_Winter: 53rd_Ares_Lonewulf_Helmet_Urban
+	{
+		author="Styx Team";
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Helmet (Lonewulf / Winter)";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+				"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Ares_Helmet_Lonewulf_Winter.paa",
+				"\53rd_Aux\Ares\Pieces\53rd_Ares_Helmet_Visor.paa"
+		};
+	};
+	
+
+////////////////////////////////////////////////////
+////////////////////// Armor //////////////////////	
+
+
+
+
+	class 53rd_Ares_Vest_Lonewulf_Urban: 53rd_Ares_Vest_Base
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Armor (Urban / Blue)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Urban.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Urban_Rifleman.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Urban.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Urban_Rifleman.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Urban.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Urban_Rifleman.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Urban.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Urban_Rifleman.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+
+
+	class 53rd_Ares_Vest_Lonewulf_Woodland: 53rd_Ares_Vest_Lonewulf_Urban
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Armor (Lonewulf / Woodland / Blue)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Woodland.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Woodland_Blue.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Woodland.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Woodland.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Woodland.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Woodland_Blue.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Woodland.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Woodland.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Lonewulf_Winter: 53rd_Ares_Vest_Lonewulf_Urban
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Armor (Lonewulf / Winter / Blue)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Winter.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Winter_Blue.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Winter.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Winter.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Winter.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Winter_Blue.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Winter.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Winter.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+	class 53rd_Ares_Vest_Lonewulf_Desert: 53rd_Ares_Vest_Lonewulf_Urban
+	{
+		scope=2;
+		scopeArsenal=2;
+		displayName="[53rd] Nox Custom Armor (Lonewulf / Desert / Blue)";
+		model="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+		picture="\53rd_Aux\Functions\Arsenal\Nox.paa";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Desert.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Desert_Blue.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Desert.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Desert.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+		};
+		class ItemInfo: ItemInfo
+		{
+			vestType="Rebreather";
+			uniformModel="MA_Armor\data\Vests\H3_ODST\H3_ODST_Armor.p3d";
+			containerClass="Supply200";
+			hiddenSelections[]=
+			{
+			"camo1",
+			"camo2",
+			"camo3",
+			"camo4",
+			"camo5",
+			"camo6",
+			"camo7",
+			"camo8",
+			"camo9",
+			"camo10",
+			"H3_Forearm_Left",
+			"H3_Forearm_Right",
+			//"Reach_Forearm_Left",
+			//"Reach_Forearm_Right",
+			"H3_Pauldron_Left",
+			"H3_Pauldron_Right",
+			//"Reach_Pauldron_Left",
+			"Reach_Pauldron_Right",
+			"Reach_Shoulder_Radio_Left",
+			"Reach_Shoulder_Radio_Right",
+			"Reach_Sniper_Pauldron_Left",
+			//"Reach_Sniper_Pauldron_Right",
+			"Reach_CQB_Pauldron_Left",
+			"Reach_CQB_Pauldron_Right",
+			"Thigh_Pouch",
+			"H3_Armor_Upper",
+			"H3_Armor_Lower",
+			//"Reach_Armor_Upper",
+			//"Reach_Armor_Lower",
+			//"Forearm_Vent_Left",
+			//"Forearm_Vent_Right",
+			//"Canisters"
+			};
+		hiddenSelectionsTextures[]=
+			{
+			"MA_Armor\data\Vests\H3_ODST\H3_Upper_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\H3_Lower_Armor_co.paa",
+			"MA_Armor\data\Vests\H3_ODST\Addons\Thigh_Pouch_co.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Upper_Desert.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Lower_Desert_Blue.paa",
+			"MA_Armor\data\Vests\Reach_ODST\Canisters_co.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Nox_Forearm.paa",
+			"\53rd_Aux\Ares\Customs\Lonewulf\53rd_Lonewulf_Shoulder_Desert.paa",
+			"\53rd_Aux\Ares\Nox\vests\53rd_Shoulder_CQB_Desert.paa",	
+			"\53rd_Aux\Ares\Pieces\53rd_Ares_Shoulder_Radio.paa"
+
+			};
+		};
+		containerClass="Supply200";
+		mass=20;
+		passThrough=0.1;
+		modelSides[]={6};
+	};
+
+
+
+
+
+
+
