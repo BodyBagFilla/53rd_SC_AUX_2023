@@ -1036,7 +1036,7 @@ class CfgVehicles
 				};
 
 				class BigBen
-					{
+				{
 					displayName="Custom BigBen";
 					author="Icarus";
 					textures[]=
@@ -1048,7 +1048,7 @@ class CfgVehicles
 				};
 
 				class AK
-					{
+				{
 					displayName="Custom AK";
 					author="Icarus";
 					textures[]=
@@ -1058,6 +1058,20 @@ class CfgVehicles
 						"\53rd_Aux\Generality\Vehicles\Pelican\PelicanWeaponsAK.paa"
 					};
 				};
+
+				class Falcon
+				{
+					displayName="Custom Falcon";
+					author="Icarus";
+					textures[]=
+					{
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Custom_Falcon_Hull.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Custom_Falcon_Wings.paa",
+						"\53rd_Aux\Generality\Vehicles\Pelican\53rd_Custom_Falcon_Weapons.paa"
+					};
+				};
+
+
 		};
 		class UserActions
 		{

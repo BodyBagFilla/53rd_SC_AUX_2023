@@ -218,15 +218,37 @@ class XtdGearModels {
 				label = "Model";
 				values[] = {
 					"AM",
-					"Fang"
+					"Fang",
+					"C",
+					"D"
 				};
 				class AM {
 					label = "SRS99-AM";
 				};
 				class Fang {
-					label = "SRS99 (Fang)";
+					label = "SRS99C (Fang)";
 				};
+				class C {
+					label = "SRS99C";
+				};
+				class D {
+					label = "SRS99D";
+				};
+			};
+		};
 
+		class Mk11 {
+			label = "Mk11";
+			author = "Sigma";
+			options[] = { "camo" };
+			class camo {
+				alwaysSelectable = 1;
+				label = "Camo";
+				values[] = {
+					"Black",
+					"Olive",
+					"Desert"
+				};
 			};
 		};
 
@@ -314,11 +336,142 @@ class XtdGearModels {
 				};
 			};
 		};
+		
+		class M45 {
+			label = "M45";
+			author = "Sigma";
+			options[] = { "variant" };
+			class variant {
+				alwaysSelectable = 1;
+				label = "Model";
+				values[] =
+				{
+					"M45",
+					"M45_Tac",
+					"M45E",
+					"M45E_Tac"
+				};
+				class M45 {
+					label = "M45";
+				};
+				class M45_Tac {
+					label = "M45 Tac";
+				};
+				class M45E {
+					label = "M45E";
+				};
+				class M45E_Tac {
+					label = "M45E Tac";
+				};
+			};
+		};
+		class Bulldog {
+			label = "Bulldog";
+			author = "Sigma";
+			options[] = { "variant" };
+			class variant {
+				alwaysSelectable = 1;
+				label = "Camo";
+				values[] =
+				{
+					"Base",
+					"Winter",
+					"Desert",
+					"Olive",
+					"Innie"
+				};
+				class Base {
+					label = "Standard";
+				};
+				class Winter {
+					label = "Winter";
+				};
+				class Desert {
+					label = "Desert";
+				};
+				class Olive {
+					label = "Olive";
+				};
+				class Innie {
+					label = "Innie";
+				};
+			};
+		};
+		class M739 {
+			label = "M739";
+			author = "Sigma";
+			options[] = { "variant" };
+			class variant {
+				alwaysSelectable = 1;
+				label = "Camo";
+				values[] =
+				{
+					"Black",
+					"White"
+				};
+				class Black {
+					label = "Black";
+				};
+				class White {
+					label = "White";
+				};
+			};
+		};
 	};
 };
 class XtdGearInfos {
 	class CfgWeapons {
-		 //MA5A Configurations
+		//M739
+		class 53rd_UNSC_M739{
+			model = "M739";
+			variant = "Black";
+		};	
+		class 53rd_UNSC_M739_White{
+			model = "M739";
+			variant = "White";
+		};
+
+		//M45
+		class 53rd_UNSC_M45{
+			model = "M45";
+			variant = "M45";
+		};
+		class 53rd_UNSC_M45_Tac{
+			model = "M45";
+			variant = "M45_Tac";
+		};
+		class 53rd_UNSC_M45E{
+			model = "M45";
+			variant = "M45E";
+		};
+		class 53rd_UNSC_M45E_Tac{
+			model = "M45";
+			variant = "M45E_Tac";
+		};
+
+		//Bulldog
+		class 53rd_UNSC_Bulldog{
+			model = "Bulldog";
+			variant = "Base";
+		};
+		class 53rd_UNSC_Bulldog_Winter{
+			model = "Bulldog";
+			variant = "Winter";
+		};
+		class 53rd_UNSC_Bulldog_Desert{
+			model = "Bulldog";
+			variant = "Desert";
+		};
+		class 53rd_UNSC_Bulldog_Olive{
+			model = "Bulldog";
+			variant = "Olive";
+		};
+		class 53rd_UNSC_Bulldog_Innie{
+			model = "Bulldog";
+			variant = "Innie";
+		};
+
+		//MA5A Configurations
 		class 53rd_UNSC_MA5A{
 			model = "MA5";
 			variant = "MA5A";
@@ -539,7 +692,28 @@ class XtdGearInfos {
 			model = "SRS";
 			weapon = "Fang";
 		};
+		class 53rd_UNSC_SRS99C{
+			model = "SRS";
+			weapon = "C";
+		};
+		class 53rd_UNSC_SRS99D{
+			model = "SRS";
+			weapon = "D";
+		};
 
+		//Mk11
+		class 53rd_UNSC_MK11{
+			model = "Mk11";
+			camo = "Black";
+		};
+		class 53rd_UNSC_MK11_Olive{
+			model = "Mk11";
+			camo = "Olive";
+		};		
+		class 53rd_UNSC_MK11_Desert{
+			model = "Mk11";
+			camo = "Desert";
+		};
 		//M7
 		class 53rd_M7{
 			model = "M7";

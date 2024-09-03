@@ -40,7 +40,7 @@ class CfgVehicles
 		author="53rd aux";
 		icon="iconCrateWpns";
 		transportMaxWeapons=8;
-		transportMaxMagazines=50;
+		transportMaxMagazines=25;
 		maximumLoad=2000;
 		transportMaxBackpacks=0;
 		transportAmmo=0;
@@ -78,21 +78,21 @@ class CfgVehicles
 		class TransportMagazines
 		{
 			
-			mag_xx(53rd_32Rnd_762x51_Mag,50);
-			mag_xx(53rd_32Rnd_762x51_Mag_AP,50);
-			mag_xx(53rd_32Rnd_762x51_Mag_JHP,50);
-			mag_xx(53rd_32Rnd_762x51_Mag_Ball,50);
+			mag_xx(53rd_32Rnd_762x51_Mag,25);
+			mag_xx(53rd_32Rnd_762x51_Mag_AP,25);
+			mag_xx(53rd_32Rnd_762x51_Mag_JHP,25);
+			mag_xx(53rd_32Rnd_762x51_Mag_Ball,25);
 
-			mag_xx(53rd_60Rnd_762x51_Mag,50);
-			mag_xx(53rd_60Rnd_762x51_Mag_AP,50);
-			mag_xx(53rd_60Rnd_762x51_Mag_JHP,50);
-			mag_xx(53rd_60Rnd_762x51_Mag_Ball,50);
+			mag_xx(53rd_60Rnd_762x51_Mag,25);
+			mag_xx(53rd_60Rnd_762x51_Mag_AP,25);
+			mag_xx(53rd_60Rnd_762x51_Mag_JHP,25);
+			mag_xx(53rd_60Rnd_762x51_Mag_Ball,25);
 
-			mag_xx(53rd_36Rnd_95x40_Mag,50);
-			mag_xx(53rd_36Rnd_95x40_Mag_JHP,50);
-			mag_xx(53rd_36Rnd_95x40_Mag_AP,50);
-			mag_xx(53rd_36Rnd_95x40_Mag_Ball,50);
-			mag_xx(53rd_36Rnd_95x40_Mag_SLAP,50);
+			mag_xx(53rd_36Rnd_95x40_Mag,25);
+			mag_xx(53rd_36Rnd_95x40_Mag_JHP,25);
+			mag_xx(53rd_36Rnd_95x40_Mag_AP,25);
+			mag_xx(53rd_36Rnd_95x40_Mag_Ball,25);
+			mag_xx(53rd_36Rnd_95x40_Mag_SLAP,25);
 
 			mag_xx(3Rnd_Smoke_Grenarde_shell,20);
 			mag_xx(3Rnd_SmokeRed_Grenarde_shell,20);
@@ -106,16 +106,6 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			weap_xx(53rd_UNSC_ARM37,5);
-			weap_xx(53rd_MA37,5);
-			weap_xx(53rd_MA37GL,5);
-			weap_xx(53rd_UNSC_MA5A,5);
-			weap_xx(53rd_UNSC_MA5C,5);
-			weap_xx(53rd_UNSC_MA5B,5);
-			weap_xx(53rd_UNSC_MA5AGL,5);
-			weap_xx(53rd_UNSC_br55_HB,5);
-			weap_xx(53rd_UNSC_br55,5);
-			weap_xx(53rd_UNSC_br55_gl,5);
 		};
 		class TransportItems
 		{
@@ -162,10 +152,6 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-		weap_xx(53rd_UNSC_SRS99_Fang,2);
-		weap_xx(53rd_UNSC_SRS99_AM,2);
-		weap_xx(53rd_UNSC_CR77,5);
-		weap_xx(53rd_UNSC_M392,5);
 		};
 		
 		class TransportItems
@@ -236,15 +222,6 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			weap_xx(53rd_M7_OPTRE,5);
-			weap_xx(53rd_M6C_Riot_Shield,5);
-			weap_xx(53rd_M7_Riot_Shield,5);
-			weap_xx(53rd_Bulldog_Riot_Shield,5);
-			weap_xx(53rd_M6G_Riot_Shield,5);
-
-			weap_xx(53rd_UNSC_M45,5);
-			weap_xx(53rd_UNSC_Bulldog,5);
-			weap_xx(53rd_UNSC_M90,5);
 		};
 		class TransportItems
 		{
@@ -277,13 +254,13 @@ class CfgVehicles
 			mag_xx(OPTRE_200Rnd_95x40_Box_Tracer,20);
 			mag_xx(OPTRE_200Rnd_95x40_Box_JHP,20);
 			mag_xx(OPTRE_400Rnd_762x51_Box_Tracer,10);
-			mag_xx(OPTRE_1Rnd_50x137_HEAT,10);
-			mag_xx(OPTRE_1Rnd_50x137_PEN,10);
-			mag_xx(OPTRE_1Rnd_50x137_HE,10);
+			mag_xx(OPTRE_1Rnd_25x137_HEAT,10);
+			mag_xx(OPTRE_1Rnd_25x137_PEN,10);
+			mag_xx(OPTRE_1Rnd_25x137_HE,10);
 			mag_xx(OPTRE_M41_Twin_HEAT_Thermal,10);
 			mag_xx(MRAWS_HEAT_F,10);
 			mag_xx(OPTRE_FC_Railgun_Slug,40);
-			mag_xx(DMNS_150Rnd_30x06_Mag,20);
+			mag_xx(DMNS_125Rnd_30x06_Mag,20);
 			mag_xx(TCF_100Rnd_762x51_Mag,20);
 			mag_xx(TCF_762_jhp_mag,20);
 			mag_xx(TCF_64Rnd_57x31_Mag_JHP,20);
@@ -292,14 +269,6 @@ class CfgVehicles
 		};
 		class TransportWeapons
 		{
-			weap_xx(53rd_M247_hmg,3);
-			weap_xx(53rd_M33,3);
-			weap_xx(53rd_UNSC_M73H,3);
-			weap_xx(53rd_UNSC_M739,3);
-			weap_xx(53rd_M247H_Etilka,3);
-			weap_xx(53rd_UNSC_MMG,3);
-			weap_xx(53rd_UNSC_CM12,3);
-
 		};
 		class TransportItems
 		{
@@ -407,7 +376,7 @@ class CfgVehicles
 			item_xx(ToolKit,20);
 			item_xx(ItemcTabHCam,8);
 			item_xx(ACE_Fortify,8);
-			item_xx(ACE_Flashlight_XL50,8);
+			item_xx(ACE_Flashlight_XL25,8);
 			item_xx(ItemcTab,20);
 			item_xx(ItemMap,20);
 			item_xx(Laserbatteries,20);
@@ -439,13 +408,13 @@ class CfgVehicles
 		class TransportItems
 		{
             item_xx(ACE_PlasmaIV,20);
-            item_xx(ACE_plasmaIV_500,20);
+            item_xx(ACE_plasmaIV_250,20);
             item_xx(53rd_Copium,40);
             item_xx(ACE_Tourniquet,20);
             item_xx(ACE_splint,20);
             item_xx(53rd_r_biofoam,3);
             item_xx(53rd_r_medigel,3);
-			item_xx(53rd_biofoam,50);
+			item_xx(53rd_biofoam,25);
             item_xx(ACE_packingBandage,40);
             item_xx(ACE_elasticBandage,40);
             item_xx(ACE_epinephrine,10);
@@ -473,7 +442,7 @@ class CfgVehicles
 		author="53rd aux";
 		displayName="[53rd] 3R Hardbox";
 		model = "\OPTRE_Buildings\Containers\optre_milcrate_h2smallcrate_nuclear";
-		maximumLoad=1500;
+		maximumLoad=1250;
 		class TransportBackpacks
 		{
 		};
@@ -583,7 +552,7 @@ class CfgVehicles
 							name = "Medical Hardbox [53rd]";
 							value = "53rd_Hardbox_Medical";
 						};
-						class n539
+/*						class n539
 						{
 							name = "Squad Hardbox [53rd]";
 							value = "53rd_Hardbox_Resupply";
@@ -593,7 +562,7 @@ class CfgVehicles
 							name = "Platoon Resupply [53rd]";
 							value = "53rd_Weapon_Resupply";
 						};
-						class n541
+*/						class n541
 						{
 							name = "3R Hardbox [53rd]";
 							value = "53rd_Hardbox_3R";

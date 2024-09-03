@@ -54,13 +54,13 @@ class CfgMagazines {
 	};
 	//OPTRE Ball
 	class 53rd_60Rnd_762x51_Mag_Ball : 53rd_60Rnd_762x51_Mag{
-	initspeed = 900;
-	ammo = "OPTRE_B_762x51_Ball";
-	displayname = "60Rnd 7.62x51mm Magazine";
-	displaynameshort = "7.62x51mm";
-	descriptionShort = "60 Round Magazine<br/>7.62x51mm<br/>";
-	scopeArsenal = 0;
-	mass = 18;
+		initspeed = 900;
+		ammo = "OPTRE_B_762x51_Ball";
+		displayname = "60Rnd 7.62x51mm Magazine";
+		displaynameshort = "7.62x51mm";
+		descriptionShort = "60 Round Magazine<br/>7.62x51mm<br/>";
+		scopeArsenal = 0;
+		mass = 18;
 	};
 	//AP
 	class 53rd_60Rnd_762x51_Mag_AP : 53rd_60Rnd_762x51_Mag{
@@ -175,9 +175,9 @@ class CfgMagazines {
 	class 53rd_25Rnd_762x51_Mag_Tracer : 53rd_60Rnd_762x51_Mag_Tracer{
 		displayname = "25Rnd 7.62x51mm Magazine (Tracers)";
 		displaynameshort = "7.62x51mm Tracer";
-		count = 25;
 		descriptionshort = "25 Round Magazine<br/>7.62x51mm<br/>Tracer";
-		mass = 15;
+		tracersevery = 1;
+		lastRoundTracer = 25;
 	};	
 	//OPTRE Ball
 	class 53rd_25Rnd_762x51_Mag_Ball : 53rd_60Rnd_762x51_Mag{
@@ -203,8 +203,8 @@ class CfgMagazines {
 		displayname = "25Rnd 7.62x51mm AP Magazine (Tracer)";
 		displaynameshort = "7.62x51mm AP Tracer";
 		descriptionShort = "25 Round Magazine<br/>7.62x51mm<br/>Armor-Piercing Tracers";
-		count = 25;
-		mass = 15;
+		tracersevery = 1;
+		lastRoundTracer = 25;
 	};
 
 	//Standard 100
@@ -262,8 +262,10 @@ class CfgMagazines {
 	};
 	class 53rd_15Rnd_762x51_Mag_Tracer : 53rd_60Rnd_762x51_Mag_Tracer{
 		displayname = "15Rnd 7.62x51mm Magazine (Tracers)";
-		count = 15;
+		displaynameshort = "7.62x51mm Tracer";
 		descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>Tracer";
+		tracersevery = 1;
+		lastRoundsTracer = 15;
 	};
 	//class 53rd_15Rnd_762x51_Mag_AP : 53rd_60Rnd_762x51_Mag_AP{
 	//	displayname = "15Rnd 7.62x51mm Magazine";
@@ -309,7 +311,65 @@ class CfgMagazines {
 		tracersevery = 1;
 		lastRoundsTracer = 15;
 	};
-
+	//Standard (19th FMJ)
+	class 53rd_20Rnd_762x51_Mag : 53rd_60Rnd_762x51_Mag{
+		displayname = "20Rnd 7.62x51mm Magazine";
+		displaynameshort = "7.62x51mm";
+		descriptionShort = "20 Round Magazine<br/>7.62x51mm<br/>";
+		count = 20;
+		mass = 10;
+	};
+	class 53rd_20Rnd_762x51_Mag_Tracer : 53rd_60Rnd_762x51_Mag_Tracer{
+		displayname = "20Rnd 7.62x51mm Magazine (Tracer)";
+		displaynameshort = "7.62x51mm Tracer";
+		descriptionShort = "20 Round Magazine<br/>7.62x51mm<br/>";
+		tracersevery = 1;
+		lastRoundsTracer = 20;
+	};
+	//class 53rd_15Rnd_762x51_Mag_AP : 53rd_60Rnd_762x51_Mag_AP{
+	//	displayname = "15Rnd 7.62x51mm Magazine";
+	//	count = 15;
+	//	descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>(Increased Muzzle Velocity)";
+	//	mass = 10;
+	//};
+	//class 53rd_15Rnd_762x51_Mag_APT : 53rd_60Rnd_762x51_Mag_APT{
+	//	displayname = "15Rnd 7.62x51mm Magazine (Tracers)";
+	//	count = 15;
+	//	descriptionshort = "15 Round Magazine<br/>7.62x51mm<br/>Tracer";
+	//};
+	class 53rd_20Rnd_762x51_Mag_HVAP : 53rd_60Rnd_762x51_Mag{
+		displayname = "20Rnd 7.62x51mm AP/HVAP Magazine";
+		descriptionshort = "20 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator";
+		displaynameshort = "7.62x51mm HVAP";
+		ammo = "B_762x51_19_HVAP";
+		initspeed = 1000;
+		count = 20;
+		mass = 12;
+	};
+	class 53rd_20Rnd_762x51_Mag_HVAPT : 53rd_20Rnd_762x51_Mag_HVAP{
+		displayname = "20Rnd 7.62x51mm AP/HVAP Magazine (Tracers)";
+		displaynameshort = "7.62x51mm HVAP Tracer";
+		descriptionshort = "20 Round Magazine<br/>7.62x51mm<br/>High Velocity Armor Penetrator Tracer";
+		tracersevery = 1;
+		lastRoundsTracer = 20;
+	};
+	//JHP
+	class 53rd_20Rnd_762x51_Mag_JHP : 53rd_60Rnd_762x51_Mag_JHP
+	{
+		displayname = "20Rnd 7.62x51mm JHP Magazine";
+		displaynameshort = "7.62x51mm JHP";
+		descriptionShort = "20 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point";
+		count = 20;
+		mass = 12;
+	};
+	class 53rd_20Rnd_762x51_Mag_JHPT : 53rd_20Rnd_762x51_Mag_JHP
+	{
+		displayname = "20Rnd 7.62x51mm JHP Magazine (Tracer)";
+		displaynameshort = "7.62x51mm JHP Tracer";
+		descriptionShort = "20 Round Magazine<br/>7.62x51mm<br/>Jacketed Hollow-Point Tracers";
+		tracersevery = 1;
+		lastRoundsTracer = 20;
+	};
 
 	//Standard
 	class 53rd_128Rnd_762x51_Drum : TCF_Gamma_762_mag{
@@ -538,7 +598,7 @@ class CfgMagazines {
 		count = 200;
 		mass = 65;
 	};
-	class 53rd_200Rnd_95x40_Box_Tracer : 53rd_100Rnd_95x40_Box_Tracer{
+	class 53rd_200Rnd_95x40_Box_Tracer : 53rd_200Rnd_95x40_Box{
 		displayname = "200Rnd 9.5x40mm Box Magazine (Tracer)";
 		displaynameshort = "9.5x40mm Tracer";
 		descriptionshort = "200 Round Box Magazine<br/>9.5x40mm<br/>Tracer";
@@ -554,7 +614,7 @@ class CfgMagazines {
 		initspeed = 1050;
 		mass = 35;
 	};
-	class 53rd_100Rnd_95x40_Box_JHPT : 53rd_100Rnd_95x40_Box{
+	class 53rd_100Rnd_95x40_Box_JHPT : 53rd_100Rnd_95x40_Box_JHP{
 		displayname = "100Rnd 9.5x40mm JHP Box Magazine (Tracer)";
 		displaynameshort = "9.5x60mm JHP Tracer";
 		descriptionShort = "100 Box Round Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
@@ -607,11 +667,11 @@ class CfgMagazines {
 		initspeed = 950;
 		mass = 65;
 	};
-	class 53rd_200Rnd_95x40_Box_HPSAPT : 53rd_200Rnd_95x40_Box_JHP
+	class 53rd_200Rnd_95x40_Box_HPSAPT : 53rd_200Rnd_95x40_Box_HPSAP
 	{
 		displayname = "200Rnd 9.5x40mm HP-SAP Box Magazine (Tracer) ";
 		displaynameshort = "9.5x60mm HP-SAP Tracer";
-		descriptionShort = "200 Round Box Magazine<br/>9.5x40mm<br/>Jacketed Hollow-Point Tracers";
+		descriptionShort = "200 Round Box Magazine<br/>9.5x40mm<br/>High-Powered Semi-Armor-Piercing Tracer";
 		tracersEvery = 1;
 		lastRoundsTracer = 200;
 	};
@@ -663,7 +723,7 @@ class CfgMagazines {
 		displaynameshort = "8.6x70mm JHP";
 		descriptionShort = "20 Round Magazine<br/>8.6x70mm<br/>Jacketed Hollow-Point";
 		ammo = "53rd_B_86x70_JHP";
-		weight = 9;
+		mass = 9;
 	};
 	class 53rd_20Rnd_86x70_Mag_JHPT : 53rd_20Rnd_86x70_Mag_JHP{
 		displayname = "20Rnd 8.6x70mm JHP Magazine (Tracer)";
@@ -678,7 +738,7 @@ class CfgMagazines {
 		displaynameshort = "8.6x70mm SLAP";
 		descriptionShort = "20 Round Magazine<br/>8.6x70mm<br/>Saboted Light-Armor-Penetrator";
 		ammo = "53rd_B_86x70_SLAP";
-		weight = 9;
+		mass = 9;
 	};
 	class 53rd_20Rnd_86x70_Mag_SLAPT : 53rd_20Rnd_86x70_Mag_SLAP{
 		displayname = "20Rnd 8.6x70mm AP/HVAP Magazine (Tracer)";
@@ -716,6 +776,13 @@ class CfgMagazines {
 		initspeed = 800;
 		mass = 10;
 	};
+	class 53rd_6Rnd_8Gauge_Slugs_Tracer : 53rd_6Rnd_8Gauge_Slugs{
+		displayname = "6Rnd 8 Gauge Slugs (Tracer)";
+		displaynameshort = "8 Gauge Tracer Slug";
+		descriptionshort = "6 Rounds of 8 Gauge Tracer Slugs";
+		tracersEvery = 1;
+		lastRoundsTracer = 6;
+	};
 	//OPTRE Pellets
 	class 53rd_6Rnd_8Gauge_Pellets_OPTRE : OPTRE_6Rnd_8Gauge_Pellets{
 		dlc = "53rd Aux";
@@ -743,13 +810,7 @@ class CfgMagazines {
 		initspeed = 800;
 		mass = 10;
 	};
-	class 53rd_6Rnd_8Gauge_Slugs_Tracer : 53rd_6Rnd_8Gauge_Slugs{
-		displayname = "6Rnd 8 Gauge Slugs (Tracer)";
-		displaynameshort = "8 Gauge Tracer Slug";
-		descriptionshort = "6 Rounds of 8 Gauge Tracer Slugs";
-		tracersEvery = 1;
-		lastRoundsTracer = 6;
-	};
+
 	//Beanbags
 	class 53rd_6Rnd_8Gauge_Beanbags : 53rd_6Rnd_8Gauge_Pellets{
 		displayname = "6Rnd 8 Gauge Beanbags";
@@ -802,6 +863,50 @@ class CfgMagazines {
 		descriptionshort = "12 Rounds of 8 Gauge Tracer Slugs";
 		tracersEvery = 1;
 		lastRoundsTracer = 12;
+	};
+
+	class 53rd_1Rnd_8Gauge_Slugs : 53rd_6Rnd_8Gauge_Slugs{
+		displayname = "1Rnd 8 Gauge Slug";
+		displaynameshort = "8 Gauge Slug";
+		descriptionshort = "1 Round of 8 Gauge Slug";
+		count = 1;
+		mass = 0.6;
+	};
+	class 53rd_1Rnd_8Gauge_Beanbags : 53rd_6Rnd_8Gauge_Beanbags{
+		displayname = "1Rnd 8 Gauge Beanbags";
+		displaynameshort = "8 Gauge Beanbags";
+		descriptionshort = "1 Rounds of 8 Gauge Beanbags";
+		count = 1;
+		mass = 0.6;
+	};
+	class 53rd_1Rnd_8Gauge_Pellets : 53rd_6Rnd_8Gauge_Pellets{
+		displayname = "1Rnd 8 Gauge Pellets";
+		displaynameshort = "8 Gauge Pellets";
+		descriptionshort = "1 Round of 8 Gauge Pellets";
+		count = 1;
+		mass = 0.6;
+	};
+
+	class 53rd_3Rnd_8Gauge_Slugs : 53rd_6Rnd_8Gauge_Slugs{
+		displayname = "3Rnd 8 Gauge Pellets";
+		displaynameshort = "8 Gauge Slug";
+		descriptionshort = "3 Rounds of 8 Gauge Pellets";
+		count = 3;
+		mass = 1.8;
+	};
+	class 53rd_3Rnd_8Gauge_Beanbags : 53rd_6Rnd_8Gauge_Beanbags{
+		displayname = "3Rnd 8 Gauge Beanbags";
+		displaynameshort = "8 Gauge Beanbags";
+		descriptionshort = "3 Rounds of 8 Gauge Beanbags";
+		count = 3;
+		mass = 1.8;
+	};
+	class 53rd_3Rnd_8Gauge_Pellets : 53rd_6Rnd_8Gauge_Pellets{  
+		displayname = "3Rnd 8 Gauge Pellets";
+		displaynameshort = "8 Gauge Pellets";
+		descriptionshort = "3 Rounds of 8 Gauge Pellets";
+		count = 3;
+		mass = 1.8;
 	};
 
 	//Pellets
@@ -860,7 +965,7 @@ class CfgMagazines {
 	//APFSDS
 	class 53rd_4Rnd_145x114_APFSDS_Mag : OPTRE_4Rnd_145x114_APFSDS_Mag
 	{
-		dlc = "OPTRE";
+		dlc = "53rd Aux";
 		displayname = "4Rnd 14.5x114mm APFSDS Magazine";
 		displaynameshort = "APFSDS";
 		ammo = "B_145x114_APFSDS";
@@ -992,6 +1097,7 @@ class CfgMagazines {
 		displaynameshort = "12.7x40mm SLAP";
 		descriptionShort = "8 Round Magazine<br/>12.7x40mm<br/>Saboted Light-Armor-Penetrator";
 		ammo = "53rd_B_127x40_SLAP";
+		mass = 8;
 	};
 	class 53rd_8Rnd_127x40_Mag_SLAPT : 53rd_8Rnd_127x40_Mag_SLAP{
 		displayname = "8Rnd 12.7x40mm SLAP Magazine (Tracer)";
@@ -1012,13 +1118,13 @@ class CfgMagazines {
 		initspeed = 600;
 		tracersEvery = 0;
 		lastRoundsTracer = 2;
-		mass = 8.5;
+		mass = 8;
 	};
 	class 53rd_12Rnd_127x40_Mag_Tracer : 53rd_12Rnd_127x40_Mag{
 		displayname = "12Rnd 12.7x40mm Magazine (Tracer)";
 		displaynameshort = "12.7x40mm";
 		descriptionshort = "12 Round Magazine<br/>12.7x40mm";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 12;
 	};
 	//AP
@@ -1027,13 +1133,13 @@ class CfgMagazines {
 		displaynameshort = "12.7x40mm AP";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing";
 		count = 12;
-		mass = 8.5;
+		mass = 8;
 	};
 	class 53rd_12Rnd_127x40_Mag_APT : 53rd_12Rnd_127x40_Mag_AP{
 		displayname = "12Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort = "12.7x40mm AP Tracer";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 12;
 	};
 	//JHP
@@ -1042,13 +1148,13 @@ class CfgMagazines {
 		displaynameshort = "12.7x40mm JHP";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point";
 		count = 12;
-		mass = 8.5;
+		mass = 8;
 	};
 	class 53rd_12Rnd_127x40_Mag_JHPT : 53rd_12Rnd_127x40_Mag_JHP{
 		displayname = "12Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort = "12.7x40mm JHP Tracer";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 12;
 	};
 	//Flare Red
@@ -1075,13 +1181,13 @@ class CfgMagazines {
 		displaynameshort = "12.7x40mm NARQ";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer";
 		count = 12;
-		mass = 8.5;
+		mass = 8;
 	};
 	class 53rd_12Rnd_127x40_Mag_NARQT : 53rd_12Rnd_127x40_Mag_NARQ{
 		displayname = "12Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort = "12.7x40mm NARQ Tracer";
 		descriptionShort = "12 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 12;
 	};
 
@@ -1101,7 +1207,7 @@ class CfgMagazines {
 		displayname = "16Rnd 12.7x40mm Magazine (Tracer)";
 		displaynameshort = "12.7x40mm";
 		descriptionshort = "16 Round Magazine<br/>12.7x40mm";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 16;
 	};
 	//AP
@@ -1116,7 +1222,7 @@ class CfgMagazines {
 		displayname = "16Rnd 12.7x40mm AP Magazine (Tracer)";
 		displaynameshort = "12.7x40mm AP Tracer";
 		descriptionShort = "16 Round Magazine<br/>12.7x40mm<br/>Armor-Piercing Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 16;
 	};
 	//JHP
@@ -1131,7 +1237,7 @@ class CfgMagazines {
 		displayname = "16Rnd 12.7x40mm JHP Magazine (Tracer)";
 		displaynameshort = "12.7x40mm JHP Tracer";
 		descriptionShort = "16 Round Magazine<br/>12.7x40mm<br/>Jacketed Hollow-Point Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 16;
 	};
 	//Flare Red
@@ -1163,7 +1269,7 @@ class CfgMagazines {
 		displayname = "16Rnd 12.7x40mm NARQ Magazine (Tracer)";
 		displaynameshort = "12.7x40mm NARQ Tracer";
 		descriptionShort = "16 Round Magazine<br/>12.7x40mm<br/>Tranquilizer Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoundsTracer = 16;
 	};
 
@@ -1229,7 +1335,7 @@ class CfgMagazines {
 		displayname = "60Rnd 5x23mm JHP Magazine (Tracer)";
 		displaynameshort = "5x23mm JHP Tracer";
 		descriptionshort = "60 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoudsTracer = 60;
 	};
 	//HV
@@ -1245,9 +1351,10 @@ class CfgMagazines {
 		displayname = "60Rnd 5x23mm HV Magazine (Tracer)";
 		displaynameshort = "5x23mm HV Tracer";
 		descriptionshort = "60 Round Magazine<br/>5x23mm<br/>High-Velocity Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoudsTracer = 60;
 	};
+	//48Rnd
 	class 53rd_48Rnd_5x23mm_Mag : 53rd_60Rnd_5x23mm_Mag
 	{
 		displayname = "48Rnd 5x23mm Magazine";
@@ -1292,7 +1399,7 @@ class CfgMagazines {
 		displayname = "48Rnd 5x23mm JHP Magazine (Tracer)";
 		displaynameshort = "5x23mm JHP Tracer";
 		descriptionshort = "48 Round Magazine<br/>5x23mm<br/>Jacketed Hollow-Point Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoudsTracer = 48;
 	};
 	//HV
@@ -1307,11 +1414,11 @@ class CfgMagazines {
 		displayname = "48Rnd 5x23mm HV Magazine (Tracer)";
 		displaynameshort = "5x23mm HV Tracer";
 		descriptionshort = "48 Round Magazine<br/>5x23mm<br/>High-Velocity Tracer";
-		tracerEvery = 1;
+		tracersEvery = 1;
 		lastRoudsTracer = 48;
 	};
 	/////////////////////// 6.5x48 (Commando) ////////////////////////
-	//OPTRE Pellets
+	//OPTRE Rounds
 	class 53rd_20Rnd_65x48_Mag_OPTRE : Commando_20Rnd_65_Mag{
 		dlc = "53rd Aux";
 		author = "53rd Aux Team";
@@ -1324,68 +1431,68 @@ class CfgMagazines {
 		count = 20;
 		initspeed = 900;
 		picture = "\OPTRE_weapons\ar\icons\magazine.paa";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Full Metal Jacket";
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag : 53rd_20Rnd_65x48_Mag_OPTRE{
-		displayname = "20Rnd 65x48mm Magazine";
-		displaynameshort = "65x48mm";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket";
+		displayname = "20Rnd 6.5x48mm Magazine";
+		displaynameshort = "6.5x48mm";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Full Metal Jacket";
 		ammo = "53rd_B_65x48_FMJ";
 		scopeArsenal = 2;
 		initspeed = 800;
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag_Tracer : 53rd_20Rnd_65x48_Mag{
-		displayname = "20Rnd 65x48mm Magazine (Tracer)";
-		displaynameshort = "65x48mm Tracer";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Full Metal Jacket Tracer";
-		tracerEvery = 1;
+		displayname = "20Rnd 6.5x48mm Magazine (Tracer)";
+		displaynameshort = "6.5x48mm Tracer";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Full Metal Jacket Tracer";
+		tracersEvery = 1;
 		lastRoudsTracer = 20;
 	};
 	class 53rd_20Rnd_65x48_Mag_JHP : 53rd_20Rnd_65x48_Mag{
-		displayname = "20Rnd 65x48mm JHP Magazine";
-		displaynameshort = "65x48mm JHP";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Jacketed Hollow-Point";
+		displayname = "20Rnd 6.5x48mm JHP Magazine";
+		displaynameshort = "6.5x48mm JHP";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Jacketed Hollow-Point";
 		ammo = "53rd_B_65x48_JHP";
 		initspeed = 900;
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag_JHPT : 53rd_20Rnd_65x48_Mag_JHP{
-		displayname = "20Rnd 65x48mm JHP Magazine (Tracer)";
-		displaynameshort = "65x48mm JHP Tracer";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Jacketed Hollow-Point Tracer";
-		tracerEvery = 1;
+		displayname = "20Rnd 6.5x48mm JHP Magazine (Tracer)";
+		displaynameshort = "6.5x48mm JHP Tracer";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Jacketed Hollow-Point Tracer";
+		tracersEvery = 1;
 		lastRoudsTracer = 20;
 	};
 	class 53rd_20Rnd_65x48_Mag_AP : 53rd_20Rnd_65x48_Mag{
-		displayname = "20Rnd 65x48mm AP Magazine";
-		displaynameshort = "65x48mm AP";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Armor-Piercing";
+		displayname = "20Rnd 6.5x48mm AP Magazine";
+		displaynameshort = "6.5x48mm AP";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Armor-Piercing";
 		ammo = "53rd_B_65x48_AP";
 		initspeed = 950;
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag_APT : 53rd_20Rnd_65x48_Mag_AP{
-		displayname = "20Rnd 65x48mm AP Magazine (Tracer)";
-		displaynameshort = "65x48mm AP Tracer";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Armor-Piercing Tracer";
-		tracerEvery = 1;
+		displayname = "20Rnd 6.5x48mm AP Magazine (Tracer)";
+		displaynameshort = "6.5x48mm AP Tracer";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Armor-Piercing Tracer";
+		tracersEvery = 1;
 		lastRoudsTracer = 20;
 	};
 	class 53rd_20Rnd_65x48_Mag_SLAP : 53rd_20Rnd_65x48_Mag{
-		displayname = "20Rnd 65x48mm SLAP Magazine";
-		displaynameshort = "65x48mm SLAP";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Saboted Light-Armor-Penetrator";
+		displayname = "20Rnd 6.5x48mm SLAP Magazine";
+		displaynameshort = "6.5x48mm SLAP";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Saboted Light-Armor-Penetrator";
 		ammo = "53rd_B_65x48_SLAP";
 		initspeed = 950;
 		mass = 12;
 	};
 	class 53rd_20Rnd_65x48_Mag_SLAPT : 53rd_20Rnd_65x48_Mag_SLAP{
-		displayname = "20Rnd 65x48mm SLAP Magazine (Tracer)";
-		displaynameshort = "65x48mm SLAP Tracer";
-		descriptionshort = "20 Round Magazine<br/>65x48mm<br/>Saboted Light-Armor-Penetrator Tracer";
-		tracerEvery = 1;
+		displayname = "20Rnd 6.5x48mm SLAP Magazine (Tracer)";
+		displaynameshort = "6.5x48mm SLAP Tracer";
+		descriptionshort = "20 Round Magazine<br/>6.5x48mm<br/>Saboted Light-Armor-Penetrator Tracer";
+		tracersEvery = 1;
 		lastRoudsTracer = 20;
 	};
 	///////////////////  Rockets  /////////////////////////

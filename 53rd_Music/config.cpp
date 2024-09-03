@@ -37,19 +37,19 @@ class CfgPatches
     {
         displayName = "[53rd] Other";
     };
-	class 53_HALO4
+	class 53rd_Reclaimer
     {
         displayName = "[53rd] Reclaimer";
     };
-	class 53_ODST
+	class 53rd_ODST
     {
         displayName = "[53rd] ODST";
     };
-	class 53_HALOCE
+	class 53rd_Combat_Evolved
     {
         displayName = "[53rd] Combat Evolved";
     };
-	class 53_Reach
+	class 53rd_Reach
     {
         displayName = "[53rd] Reach";
     };

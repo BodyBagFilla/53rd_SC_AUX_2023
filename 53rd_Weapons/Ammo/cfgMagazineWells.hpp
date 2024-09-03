@@ -94,6 +94,18 @@ class cfgMagazineWells {
 			"OPTRE_15Rnd_762x51_Mag_Tracer"
 		};
 	};
+	class 53rd_Magwell_Mk11{
+		53rd_762x51_15Rnd[] = {
+			"53rd_20Rnd_762x51_Mag",
+			"53rd_20Rnd_762x51_Mag_Tracer",
+			"53rd_20Rnd_762x51_Mag_HVAP",
+			"53rd_20Rnd_762x51_Mag_HVAPT",
+			"53rd_20Rnd_762x51_Mag_JHP",
+			"53rd_20Rnd_762x51_Mag_JHPT",
+			"OPTRE_15Rnd_762x51_Mag",
+			"OPTRE_15Rnd_762x51_Mag_Tracer"
+		};
+	};
 	class 53rd_Magwell_CR77{
 		53rd_762x51_15Rnd[] = {
 			"53rd_20Rnd_86x70_Mag",
@@ -161,7 +173,7 @@ class cfgMagazineWells {
 			"53rd_8Rnd_127x40_Mag",
 			"53rd_8Rnd_127x40_Mag_Tracer",
 			"53rd_8Rnd_127x40_Mag_AP",
-			"53rd_8Rnd_127x40_Mag_APT",,
+			"53rd_8Rnd_127x40_Mag_APT",
 			"53rd_8Rnd_127x40_Mag_JHP",
 			"53rd_8Rnd_127x40_Mag_JHPT",
 			"53rd_8Rnd_127x40_Mag_NARQ",
@@ -185,9 +197,11 @@ class cfgMagazineWells {
 			"53rd_16Rnd_127x40_Mag",
 			"53rd_16Rnd_127x40_Mag_Tracer",
 			"53rd_16Rnd_127x40_Mag_AP",
-			"53rd_16Rnd_127x40_Mag_APT",,
+			"53rd_16Rnd_127x40_Mag_APT",
 			"53rd_16Rnd_127x40_Mag_JHP",
 			"53rd_16Rnd_127x40_Mag_JHPT",
+			"53rd_16Rnd_127x40_Mag_NARQ",
+			"53rd_16Rnd_127x40_Mag_NARQT",
 			"OPTRE_8Rnd_127x40_Mag",
 			"OPTRE_8Rnd_127x40_Mag_Tracer"
 		};
@@ -196,8 +210,8 @@ class cfgMagazineWells {
 		53rd_762x51_128Rnd[] = {
 			"53rd_128Rnd_762x51_Drum",
 			"53rd_128Rnd_762x51_Drum_Tracer",
-			"53rd_128Rnd_762x51_Drum_AP",
-			"53rd_128Rnd_762x51_Drum_APT",
+			"53rd_128Rnd_762x51_Drum_SLAP",
+			"53rd_128Rnd_762x51_Drum_SLAPT",
 			"53rd_128Rnd_762x51_Drum_JHP",
 			"53rd_128Rnd_762x51_Drum_JHPT"
 		};
@@ -271,28 +285,38 @@ class cfgMagazineWells {
 	};
 	class 53rd_Magwell_SPANKr{
 		53rd_HE[] = {
-			"53rd_M41_Twin_HE",
-			"53rd_M41_Twin_HE_SACLOS",
-			"53rd_M41_Twin_HE_Thermal",
-			"53rd_M41_Twin_HE_Laser",
-			"OPTRE_M41_Twin_HE"
+			//"53rd_M41_Twin_HE",
+			//"53rd_M41_Twin_HE_SACLOS",
+			//"53rd_M41_Twin_HE_Thermal",
+			//"53rd_M41_Twin_HE_Laser",
+			//"OPTRE_M41_Twin_HE",
+			//"OPTRE_M41_Twin_HE_SALH_ProximityFuse",
+			//"OPTRE_M41_Twin_HE_SACLOS_ProximityFuse",
+			//"OPTRE_M41_Twin_HE_Thermal_ProximityFuse",
 		};
 		53rd_HEAT[] = {
-			"53rd_M41_Twin_HEAT_SACLOS",
-			"53rd_M41_Twin_HEAT_Thermal",
-			"53rd_M41_Twin_HEAT_Guided",
-			"53rd_M41_Twin_HEAT_Laser",
-			"53rd_M41_Twin_HEAT",
-			"OPTRE_M41_Twin_HEAT"
+			//"53rd_M41_Twin_HEAT_SACLOS",
+			//"53rd_M41_Twin_HEAT_Thermal",
+			//"53rd_M41_Twin_HEAT_Guided",
+			//"53rd_M41_Twin_HEAT_Laser",
+			//"53rd_M41_Twin_HEAT",
+			"OPTRE_M41_Twin_HEAT",
+			"OPTRE_M41_Twin_HEAT_G",
+			"OPTRE_M41_Twin_HEAT_SALH",
+			"OPTRE_M41_Twin_HEAT_SACLOS",
+			"OPTRE_M41_Twin_HEAT_Thermal",
 		};
 		53rd_Smoke[] = {
+			"OPTRE_M41_Twin_Smoke_W",
 			"OPTRE_M41_Twin_Smoke_B",
-			"OPTRE_M41_Twin_Smoke_G",
 			"OPTRE_M41_Twin_Smoke_R",
+			"OPTRE_M41_Twin_Smoke_G",
 			"OPTRE_M41_Twin_Smoke_O",
 			"OPTRE_M41_Twin_Smoke_P",
-			"OPTRE_M41_Twin_Smoke_W",
 			"OPTRE_M41_Twin_Smoke_Y"
+		};
+		53rd_HEAP[] = {
+			"OPTRE_M41_Twin_HEAP"
 		};
 	};
 	class 53rd_Magwell_MRS{
@@ -305,6 +329,65 @@ class cfgMagazineWells {
 			"53rd_20Rnd_86x70_Mag_JHPT",
 			"TCF_20Rnd_86x70_Mag",
 			"TCF_20Rnd_86x70_Mag_Tracer"
+		};
+	};
+	class 53rd_Magwell_UGL{
+		53rd_Grenades[] = {
+			"1Rnd_HE_Grenade_shell",
+			"3Rnd_HE_Grenade_shell",
+			"1Rnd_HEDP_Grenade_shell",
+			"3Rnd_HEDP_Grenade_shell"
+		};
+		53rd_Smokes[] = {
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeGreen_Grenade_shell",
+			"1Rnd_SmokeYellow_Grenade_shell",
+			"1Rnd_SmokePurple_Grenade_shell",
+			"1Rnd_SmokeBlue_Grenade_shell",
+			"1Rnd_SmokeOrange_Grenade_shell",
+			"3Rnd_Smoke_Grenade_shell",
+			"3Rnd_SmokeRed_Grenade_shell",
+			"3Rnd_SmokeGreen_Grenade_shell",
+			"3Rnd_SmokeYellow_Grenade_shell",
+			"3Rnd_SmokePurple_Grenade_shell",
+			"3Rnd_SmokeBlue_Grenade_shell",
+			"3Rnd_SmokeOrange_Grenade_shell"
+		};
+		53rd_Flares[] = {
+			"UGL_FlareWhite_F",
+			"UGL_FlareGreen_F",
+			"UGL_FlareRed_F",
+			"UGL_FlareYellow_F",
+			"UGL_FlareCIR_F",
+			"3Rnd_UGL_FlareWhite_F",
+			"3Rnd_UGL_FlareGreen_F",
+			"3Rnd_UGL_FlareRed_F",
+			"3Rnd_UGL_FlareYellow_F",
+			"3Rnd_UGL_FlareCIR_F"
+		};
+		53rd_Masterkey[] = {
+			"53rd_1Rnd_8Gauge_Slugs",
+			"53rd_1Rnd_8Gauge_Beanbags",
+			"53rd_1Rnd_8Gauge_Pellets",
+			"53rd_3Rnd_8Gauge_Slugs",
+			"53rd_3Rnd_8Gauge_Beanbags",
+			"53rd_3Rnd_8Gauge_Pellets"
+		};
+		53rd_Misc[] = {
+			"ACE_HuntIR_M203"
+		};
+	};
+	class 53rd_Magwell_UBS{
+		53rd_8Gauge_6Rnd[] = {
+			"53rd_6Rnd_8Gauge_Pellets",
+			"53rd_6Rnd_8Gauge_Slugs",
+			"53rd_6Rnd_8Gauge_Slugs_Tracer",
+			"53rd_6Rnd_8Gauge_Beanbags",
+			"53rd_6Rnd_8Gauge_Pellets_OPTRE",
+			"53rd_6Rnd_8Gauge_Slugs_OPTRE",
+			"OPTRE_6Rnd_8Gauge_Pellets",
+			"OPTRE_6Rnd_8Gauge_Slugs",
 		};
 	};
 };
